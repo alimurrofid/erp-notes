@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Quartz Build Output & Cache
+public/
+.quartz-cache/
+tsconfig.tsbuildinfo
+prof/
+
+# Obsidian / Editor
+.obsidian/
+.trash/
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example

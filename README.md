@@ -178,6 +178,40 @@ Panduan tambahan berada di:
 
 AI agent harus memeriksa dokumen yang sudah ada sebelum membuat dokumen baru untuk menghindari duplikasi.
 
+## Development & Deployment (Quartz v4)
+
+Knowledge base ini dipublikasikan menggunakan [Quartz v4](https://quartz.jzhao.xyz/) yang kompatibel dengan Obsidian dan dideploy secara otomatis ke GitHub Pages.
+
+### Menjalankan Secara Lokal
+
+```bash
+# Install dependencies
+npm install
+
+# Jalankan local development server dengan live preview
+npx quartz build --serve
+# atau: npm run serve
+```
+
+Buka `http://localhost:8080` pada browser.
+
+### Menjalankan Build
+
+```bash
+npx quartz build
+# atau: npm run build
+```
+
+Hasil build statis akan disimpan di folder `public/`.
+
+### Deployment ke GitHub Pages
+
+Deployment dijalankan otomatis melalui GitHub Actions workflow (`.github/workflows/deploy.yml`) setiap ada `push` ke branch `main`.
+
+Pengaturan awal di repository GitHub:
+1. Buka tab **Settings** > **Pages**.
+2. Pada bagian **Build and deployment** > **Source**, pilih **GitHub Actions**.
+
 ## Status
 
 Repository ini adalah **living knowledge base**. Informasi dapat diperbarui ketika sumber resmi, software version, accounting standards, atau regulatory requirements berubah.
