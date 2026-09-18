@@ -8,10 +8,10 @@ Disbursement menghubungkan modul [[04-purchasing/three-way-matching|Purchasing (
 
 ```mermaid
 flowchart LR
-    Inv["1. Open AP Invoices<br/>(Due & Approved)"] --> Prop["2. Payment Proposal<br/>(Kriteria Seleksi & Diskon)"]
-    Prop --> Appr["3. Multi-Tier Approval<br/>(Maker-Checker Matrix)"]
-    Appr --> Exec["4. Execution / Transmission<br/>(ISO 20022 PAIN.001 / API)"]
-    Exec --> Stat["5. Status & Clearing<br/>(PAIN.002 / EBS Recon)"]
+    Inv["(1) Open AP Invoices<br/>(Due & Approved)"] --> Prop["(2) Payment Proposal<br/>(Kriteria Seleksi & Diskon)"]
+    Prop --> Appr["(3) Multi-Tier Approval<br/>(Maker-Checker Matrix)"]
+    Appr --> Exec["(4) Execution / Transmission<br/>(ISO 20022 PAIN.001 / API)"]
+    Exec --> Stat["(5) Status & Clearing<br/>(PAIN.002 / EBS Recon)"]
 ```
 
 ---

@@ -29,7 +29,7 @@ Salah satu prinsip tata kelola terpenting dalam akuntansi persediaan ERP adalah 
 flowchart TD
     TotalSpend["Seluruh Pengeluaran Logistik Pengadaan"]
     
-    subgraph Capitalized["1. Boleh Dikapitalisasi ke Nilai Persediaan (IAS 2 Para 10-11)"]
+    subgraph Capitalized["(1) Boleh Dikapitalisasi ke Nilai Persediaan (IAS 2 Para 10-11)"]
         C1["Ongkos Angkut Masuk (Inbound Freight)"]
         C2["Bea Masuk Impor & Bea Cukai (Customs Duties)"]
         C3["Asuransi Pengiriman Perjalanan (Transit Insurance)"]
@@ -37,7 +37,7 @@ flowchart TD
         C5["Pajak yang Tidak Dapat Dikreditkan (Non-Recoverable Taxes)"]
     end
     
-    subgraph Expensed["2. DILARANG Dikapitalisasi / Wajib Beban P&L (IAS 2 Para 16)"]
+    subgraph Expensed["(2) DILARANG Dikapitalisasi / Wajib Beban P&L (IAS 2 Para 16)"]
         E1["Biaya Penyimpanan Barang Jadi di Gudang (Post-Receipt Storage)"]
         E2["Pemborosan Bahan Baku yang Tidak Normal (Abnormal Waste / Spoilage)"]
         E3["Beban Administrasi Umum & Gaji Tim Kantor Pembelian"]

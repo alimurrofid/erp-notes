@@ -28,25 +28,25 @@ Sistem ERP membagi analitik manufaktur ke dalam empat domain utama yang saling m
 flowchart TD
     subgraph Analytics["Kerangka Kerja Analitik Manufaktur Terpadu"]
         direction TB
-        subgraph Ops["1. Operational & Efficiency Metrics (Efisiensi Fisik Pabrik)"]
+        subgraph Ops["(1) Operational & Efficiency Metrics (Efisiensi Fisik Pabrik)"]
             M1["Overall Equipment Effectiveness (OEE)"]
             M2["Machine Downtime by Cause Category"]
             M3["Production Cycle Time & Throughput Rate"]
         end
         
-        subgraph Plan["2. Planning & Schedule Metrics (Kepatuhan Perencanaan)"]
+        subgraph Plan["(2) Planning & Schedule Metrics (Kepatuhan Perencanaan)"]
             M4["Schedule Adherence (Plan vs. Actual)"]
             M5["Manufacturing Lead Time Adherence"]
             M6["Order On-Time In-Full Completion (OTIF)"]
         end
         
-        subgraph Qual["3. Quality & Yield Metrics (Integritas Mutu Teknis)"]
+        subgraph Qual["(3) Quality & Yield Metrics (Integritas Mutu Teknis)"]
             M7["First Pass Yield (FPY)"]
             M8["Scrap Rate % by Product / Work Center"]
             M9["Rework Frequency & Defect Distribution (Pareto)"]
         end
         
-        subgraph Fin["4. Financial & Cost Metrics (Finansial & Biaya Pokok)"]
+        subgraph Fin["(4) Financial & Cost Metrics (Finansial & Biaya Pokok)"]
             M10["Cost per Unit (Standard vs. Actual)"]
             M11["Work in Process (WIP) Balance Valuation"]
             M12["Manufacturing Variances (MPV, MUV, LEV, Ovh)"]

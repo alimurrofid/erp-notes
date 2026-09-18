@@ -70,11 +70,11 @@ Salah satu fungsi terpenting dari Routing adalah menyediakan parameter waktu unt
 flowchart LR
     subgraph TotalLeadTime["Total Waktu Operasi di Lantai Pabrik"]
         direction LR
-        Queue["1. Queue Time<br/>(Waktu Antre Sebelum Dikerjakan)"]
-        --> Setup["2. Setup Time<br/>(Waktu Penyetelan Mesin)"]
-        --> Run["3. Run Time<br/>(Waktu Proses Per Unit x Qty)"]
-        --> Wait["4. Wait Time<br/>(Waktu Pendinginan / Pengeringan)"]
-        --> Move["5. Move Time<br/>(Waktu Angkut ke Stasiun Kerja Berikutnya)"]
+        Queue["(1) Queue Time<br/>(Waktu Antre Sebelum Dikerjakan)"]
+        --> Setup["(2) Setup Time<br/>(Waktu Penyetelan Mesin)"]
+        --> Run["(3) Run Time<br/>(Waktu Proses Per Unit x Qty)"]
+        --> Wait["(4) Wait Time<br/>(Waktu Pendinginan / Pengeringan)"]
+        --> Move["(5) Move Time<br/>(Waktu Angkut ke Stasiun Kerja Berikutnya)"]
     end
 ```
 

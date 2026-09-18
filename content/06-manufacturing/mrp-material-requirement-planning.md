@@ -29,14 +29,14 @@ Algoritma MRP bekerja secara berulang (*recursive looping*) dari level teratas (
 
 ```mermaid
 flowchart TD
-    Gross["1. Gross Requirements (Kebutuhan Kotor)<br/>Total permintaan dari MPS atau turunan BOM level atas"]
-    --> NetCalc["2. Netting Logic (Kalkulasi Kebutuhan Bersih)<br/>Mengurangkan stok on-hand & pasokan yang sedang dalam perjalanan"]
+    Gross["(1) Gross Requirements (Kebutuhan Kotor)<br/>Total permintaan dari MPS atau turunan BOM level atas"]
+    --> NetCalc["(2) Netting Logic (Kalkulasi Kebutuhan Bersih)<br/>Mengurangkan stok on-hand & pasokan yang sedang dalam perjalanan"]
     
-    NetCalc --> LotSize["3. Lot Sizing (Penentuan Ukuran Pesanan)<br/>Menerapkan aturan L4L, Min-Max, atau Kelipatan Kemasan"]
+    NetCalc --> LotSize["(3) Lot Sizing (Penentuan Ukuran Pesanan)<br/>Menerapkan aturan L4L, Min-Max, atau Kelipatan Kemasan"]
     
-    LotSize --> Offset["4. Lead Time Offsetting (Penyesuaian Waktu Mundur)<br/>Menggeser tanggal mulai pemesanan ke belakang sesuai Lead Time"]
+    LotSize --> Offset["(4) Lead Time Offsetting (Penyesuaian Waktu Mundur)<br/>Menggeser tanggal mulai pemesanan ke belakang sesuai Lead Time"]
     
-    Offset --> Explode["5. BOM Explosion (Ledakan ke Level Komponen Bawah)<br/>Kebutuhan bersih komponen menjadi kebutuhan kotor komponen anaknya"]
+    Offset --> Explode["(5) BOM Explosion (Ledakan ke Level Komponen Bawah)<br/>Kebutuhan bersih komponen menjadi kebutuhan kotor komponen anaknya"]
 ```
 
 ### Rumus Standar Kebutuhan Bersih (Net Requirements Formula):

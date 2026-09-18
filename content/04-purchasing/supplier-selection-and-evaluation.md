@@ -28,11 +28,11 @@ Penerapan seleksi dan evaluasi pemasok yang terstruktur bertujuan untuk:
 
 ```mermaid
 flowchart TD
-    Onboard["1. Vendor Onboarding & Due Diligence<br/>(Pemeriksaan legalitas, NPWP, rekening bank, sertifikasi)"]
-    --> Qual["2. Qualification & Audit<br/>(Pengujian sampel barang & audit kelayakan pabrik)"]
-    --> ASL["3. Approved Supplier List (ASL)<br/>(Vendor resmi yang berhak menerima Purchase Order)"]
-    --> Perf["4. Ongoing Performance Tracking<br/>(Sistem otomatis menghitung skor ketepatan kirim & mutu)"]
-    --> Review{"5. Periodic Review & Classification"}
+    Onboard["(1) Vendor Onboarding & Due Diligence<br/>(Pemeriksaan legalitas, NPWP, rekening bank, sertifikasi)"]
+    --> Qual["(2) Qualification & Audit<br/>(Pengujian sampel barang & audit kelayakan pabrik)"]
+    --> ASL["(3) Approved Supplier List (ASL)<br/>(Vendor resmi yang berhak menerima Purchase Order)"]
+    --> Perf["(4) Ongoing Performance Tracking<br/>(Sistem otomatis menghitung skor ketepatan kirim & mutu)"]
+    --> Review{"(5) Periodic Review & Classification"}
     
     Review -->|Skor Tinggi (Grade A)| Strat["Strategic / Preferred Partner<br/>(Prioritas tender & kontrak jangka panjang)"]
     Review -->|Skor Rendah (Di Bawah Standar)| Hold["Vendor Warning / On-Hold<br/>(Koreksi kualitas atau audit ulang)"]

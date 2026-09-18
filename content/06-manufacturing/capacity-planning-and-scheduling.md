@@ -27,9 +27,9 @@ Sistem perencanaan manufaktur yang tangguh menyeimbangkan tiga pilar pembatas ya
 ```mermaid
 flowchart TD
     subgraph Constraints["Segitiga Kendala Manufaktur (Triple Constraints)"]
-        MC["1. Material Constraints (Kendala Bahan Baku)<br/>Apakah komponen sudah tiba di gudang?<br/>Dikelola oleh algoritma MRP."]
-        CC["2. Capacity Constraints (Kendala Kapasitas Mesin & Tenaga Kerja)<br/>Apakah stasiun kerja mengalami kelebihan beban (overloaded)?<br/>Dikelola oleh algoritma CRP / Finite Scheduling."]
-        SC["3. Scheduling Constraints (Kendala Urutan & Waktu Pengiriman)<br/>Kapan tanggal janji serah terima ke pelanggan (Due Date)?<br/>Apakah operasi 20 harus menunggu operasi 10 selesai?"]
+        MC["(1) Material Constraints (Kendala Bahan Baku)<br/>Apakah komponen sudah tiba di gudang?<br/>Dikelola oleh algoritma MRP."]
+        CC["(2) Capacity Constraints (Kendala Kapasitas Mesin & Tenaga Kerja)<br/>Apakah stasiun kerja mengalami kelebihan beban (overloaded)?<br/>Dikelola oleh algoritma CRP / Finite Scheduling."]
+        SC["(3) Scheduling Constraints (Kendala Urutan & Waktu Pengiriman)<br/>Kapan tanggal janji serah terima ke pelanggan (Due Date)?<br/>Apakah operasi 20 harus menunggu operasi 10 selesai?"]
     end
     MC <--> CC
     CC <--> SC
@@ -56,7 +56,7 @@ Salah satu perbedaan arsitektur paling fundamental dalam sistem ERP adalah bagai
 
 ```mermaid
 flowchart LR
-    subgraph Infinite["1. Infinite Capacity Scheduling (Kapasitas Tak Terbatas)"]
+    subgraph Infinite["(1) Infinite Capacity Scheduling (Kapasitas Tak Terbatas)"]
         direction TB
         I1["Jadwalkan pesanan berdasarkan tanggal kebutuhan (Due Date) semata."]
         --> I2["Abaikan batas jam kerja harian mesin."]
@@ -64,7 +64,7 @@ flowchart LR
         --> I4["Planner manusia menyesuaikan jadwal secara manual."]
     end
 
-    subgraph Finite["2. Finite Capacity Scheduling (Kapasitas Terbatas)"]
+    subgraph Finite["(2) Finite Capacity Scheduling (Kapasitas Terbatas)"]
         direction TB
         F1["Jadwalkan pesanan dengan batas maksimum jam kerja mesin (misal: 16 jam/hari)."]
         --> F2["Jika mesin penuh, pesanan otomatis digeser ke slot waktu berikutnya."]
@@ -85,7 +85,7 @@ Sistem ERP menyediakan dua arah perhitungan penanggalan:
 
 ```mermaid
 flowchart TD
-    subgraph Forward["1. Forward Scheduling (Penjadwalan Maju / Earliest Possible)"]
+    subgraph Forward["(1) Forward Scheduling (Penjadwalan Maju / Earliest Possible)"]
         F_Start["Mulai pada tanggal paling awal yang memungkinkan (Hari Ini)"]
         --> F_Op1["Operasi 10: Setup & Run"]
         --> F_Op2["Operasi 20: Assembly"]
@@ -93,7 +93,7 @@ flowchart TD
         --> F_End["Dihasilkan: Tanggal Penyelesaian Paling Awal (Earliest Completion Date)"]
     end
 
-    subgraph Backward["2. Backward Scheduling (Penjadwalan Mundur / Just-in-Time)"]
+    subgraph Backward["(2) Backward Scheduling (Penjadwalan Mundur / Just-in-Time)"]
         B_Due["Mulai dari Tanggal Janji Kirim Pelanggan (Due Date: Hari ke-30)"]
         --> B_Op3["Mundur durasi Operasi 30"]
         --> B_Op2["Mundur durasi Operasi 20"]

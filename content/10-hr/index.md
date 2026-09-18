@@ -21,36 +21,36 @@ Tata kelola tenaga kerja dan kompensasi di dalam ERP dikelola melalui lima tahap
 ```mermaid
 flowchart TD
     subgraph S1["Tahap 1: Fondasi & Struktur Organisasi"]
-        N1["1. [[10-hr/hr-management-fundamentals|HR Management Fundamentals]]"]
-        N2["2. [[10-hr/employee-master-data|Employee Master Data]]"]
-        N3["3. [[10-hr/organization-and-position-structure|Organization & Position Structure]]"]
+        N1["(1) [[10-hr/hr-management-fundamentals|HR Management Fundamentals]]"]
+        N2["(2) [[10-hr/employee-master-data|Employee Master Data]]"]
+        N3["(3) [[10-hr/organization-and-position-structure|Organization & Position Structure]]"]
     end
 
     subgraph S2["Tahap 2: Siklus Hidup & Manajemen Waktu"]
-        N4["4. [[10-hr/employment-lifecycle|Employment Lifecycle]]"]
-        N5["5. [[10-hr/recruitment-and-onboarding|Recruitment & Onboarding]]"]
-        N6["6. [[10-hr/attendance-and-work-schedule|Attendance & Work Schedule]]"]
-        N7["7. [[10-hr/leave-management|Leave Management]]"]
-        N8["8. [[10-hr/overtime-and-time-management|Overtime & Time Management]]"]
-        N9["9. [[10-hr/employee-timesheet-and-labor-cost|Timesheet & Labor Cost]]"]
+        N4["(4) [[10-hr/employment-lifecycle|Employment Lifecycle]]"]
+        N5["(5) [[10-hr/recruitment-and-onboarding|Recruitment & Onboarding]]"]
+        N6["(6) [[10-hr/attendance-and-work-schedule|Attendance & Work Schedule]]"]
+        N7["(7) [[10-hr/leave-management|Leave Management]]"]
+        N8["(8) [[10-hr/overtime-and-time-management|Overtime & Time Management]]"]
+        N9["(9) [[10-hr/employee-timesheet-and-labor-cost|Timesheet & Labor Cost]]"]
     end
 
     subgraph S3["Tahap 3: Penggajian, Tunjangan & Akuntansi"]
-        N10["10. [[10-hr/payroll-fundamentals|Payroll Fundamentals]]"]
-        N11["11. [[10-hr/payroll-earnings-and-deductions|Earnings & Deductions]]"]
-        N12["12. [[10-hr/payroll-benefits-and-reimbursements|Benefits & Reimbursements]]"]
-        N13["13. [[10-hr/payroll-tax-and-statutory-compliance|Tax & Statutory Compliance]]"]
-        N14["14. [[10-hr/payroll-accounting-and-finance-integration|Payroll Accounting & Finance]]"]
+        N10["(10) [[10-hr/payroll-fundamentals|Payroll Fundamentals]]"]
+        N11["(11) [[10-hr/payroll-earnings-and-deductions|Earnings & Deductions]]"]
+        N12["(12) [[10-hr/payroll-benefits-and-reimbursements|Benefits & Reimbursements]]"]
+        N13["(13) [[10-hr/payroll-tax-and-statutory-compliance|Tax & Statutory Compliance]]"]
+        N14["(14) [[10-hr/payroll-accounting-and-finance-integration|Payroll Accounting & Finance]]"]
     end
 
     subgraph S4["Tahap 4: Kinerja & Perencanaan Tenaga Kerja"]
-        N15["15. [[10-hr/performance-and-employee-management|Performance Management]]"]
-        N16["16. [[10-hr/workforce-planning-and-hr-analytics|Workforce Planning & Analytics]]"]
+        N15["(15) [[10-hr/performance-and-employee-management|Performance Management]]"]
+        N16["(16) [[10-hr/workforce-planning-and-hr-analytics|Workforce Planning & Analytics]]"]
     end
 
     subgraph S5["Tahap 5: Pengendalian & Integrasi Lintas Modul"]
-        N17["17. [[10-hr/hr-controls-and-governance|HR Controls & Governance]]"]
-        N18["18. [[10-hr/hr-integration|Cross-Module HR Integration]]"]
+        N17["(17) [[10-hr/hr-controls-and-governance|HR Controls & Governance]]"]
+        N18["(18) [[10-hr/hr-integration|Cross-Module HR Integration]]"]
     end
 
     S1 --> S2 --> S3 --> S4 --> S5

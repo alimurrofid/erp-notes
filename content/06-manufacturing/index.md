@@ -29,35 +29,35 @@ Materi disusun mengikuti perkembangan alur manufaktur dari perancangan hingga pe
 ```mermaid
 flowchart TD
     subgraph Track1["Pilar 1: Fondasi & Master Data Teknik"]
-        M1["1. Manufacturing Fundamentals"]
-        M2["2. Product Structure & BOM"]
-        M3["3. Routing & Work Centers"]
+        M1["(1) Manufacturing Fundamentals"]
+        M2["(2) Product Structure & BOM"]
+        M3["(3) Routing & Work Centers"]
     end
 
     subgraph Track2["Pilar 2: Perencanaan & Perhitungan Kebutuhan"]
-        M4["4. Manufacturing Order Lifecycle"]
-        M5["5. Production Planning & MPS"]
-        M6["6. MRP Logic & Explosion"]
+        M4["(4) Manufacturing Order Lifecycle"]
+        M5["(5) Production Planning & MPS"]
+        M6["(6) MRP Logic & Explosion"]
     end
 
     subgraph Track3["Pilar 3: Eksekusi Lantai Pabrik & Material"]
-        M7["7. Material Availability & Reservation"]
-        M8["8. Shop Floor Control & Execution"]
-        M9["9. Material Consumption & Backflush"]
-        M10["10. Production Output & By-Products"]
+        M7["(7) Material Availability & Reservation"]
+        M8["(8) Shop Floor Control & Execution"]
+        M9["(9) Material Consumption & Backflush"]
+        M10["(10) Production Output & By-Products"]
     end
 
     subgraph Track4["Pilar 4: Biaya, Kapasitas & Tata Kelola Mutu"]
-        M11["11. Production Costing & WIP"]
-        M12["12. Capacity Planning & Scheduling"]
-        M13["13. Production Variance & Performance"]
-        M14["14. Subcontracting & External Processing"]
-        M15["15. Quality Control & Rework"]
+        M11["(11) Production Costing & WIP"]
+        M12["(12) Capacity Planning & Scheduling"]
+        M13["(13) Production Variance & Performance"]
+        M14["(14) Subcontracting & External Processing"]
+        M15["(15) Quality Control & Rework"]
     end
 
     subgraph Track5["Pilar 5: Analitik & Arsitektur Terpadu"]
-        M16["16. Manufacturing Reporting & Analytics"]
-        M17["17. Manufacturing Integration Architecture"]
+        M16["(16) Manufacturing Reporting & Analytics"]
+        M17["(17) Manufacturing Integration Architecture"]
     end
 
     Track1 --> Track2

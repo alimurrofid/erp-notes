@@ -30,14 +30,14 @@ Aliran data dari pengadaan barang bermuara ke buku pembantu utang melalui alur b
 
 ```mermaid
 flowchart LR
-    PO["1. Purchase Order (PO)<br/>(Kontrak Harga & Termin)"]
-    --> GR["2. Goods Receipt (GR)<br/>(Verifikasi Kuantitas Fisik)"]
-    --> VB["3. Vendor Bill Receipt<br/>(Faktur Fisik Tiba dari Pemasok)"]
-    --> Match{"4. 3-Way Match Validation<br/>(PO vs GR vs Bill)"}
+    PO["(1) Purchase Order (PO)<br/>(Kontrak Harga & Termin)"]
+    --> GR["(2) Goods Receipt (GR)<br/>(Verifikasi Kuantitas Fisik)"]
+    --> VB["(3) Vendor Bill Receipt<br/>(Faktur Fisik Tiba dari Pemasok)"]
+    --> Match{"(4) 3-Way Match Validation<br/>(PO vs GR vs Bill)"}
     
-    Match -->|Valid| AP_Sub["5. AP Subledger Update<br/>(Kartu Utang Vendor Bertambah)"]
-    AP_Sub --> GL["6. General Ledger Posting<br/>(Dr. GR/IR Clearing<br/>Dr. PPN Masukan<br/>Cr. 2110 - Utang Usaha)"]
-    GL --> Pay["7. Payment Disbursement<br/>(Transfer Kas-Bank & Settlement)"]
+    Match -->|Valid| AP_Sub["(5) AP Subledger Update<br/>(Kartu Utang Vendor Bertambah)"]
+    AP_Sub --> GL["(6) General Ledger Posting<br/>(Dr. GR/IR Clearing<br/>Dr. PPN Masukan<br/>Cr. 2110 - Utang Usaha)"]
+    GL --> Pay["(7) Payment Disbursement<br/>(Transfer Kas-Bank & Settlement)"]
 ```
 
 ---

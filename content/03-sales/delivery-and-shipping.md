@@ -29,15 +29,15 @@ Tidak semua industri atau perusahaan mengikuti urutan proses yang sama. Sistem E
 ```mermaid
 flowchart TD
     subgraph FlowA["Pola A: Delivery Before Invoice (Standar Distribusi & B2B)"]
-        SO1["Sales Order"] --> DO1["1. Delivery Order (Surat Jalan)"] --> INV1["2. Customer Invoice"] --> PAY1["3. Customer Payment"]
+        SO1["Sales Order"] --> DO1["(1) Delivery Order (Surat Jalan)"] --> INV1["(2) Customer Invoice"] --> PAY1["(3) Customer Payment"]
     end
 
     subgraph FlowB["Pola B: Invoice Before Delivery (Ritel / E-Commerce / DP)"]
-        SO2["Sales Order"] --> INV2["1. Customer Invoice"] --> PAY2["2. Customer Payment"] --> DO2["3. Delivery Order (Pengiriman)"]
+        SO2["Sales Order"] --> INV2["(1) Customer Invoice"] --> PAY2["(2) Customer Payment"] --> DO2["(3) Delivery Order (Pengiriman)"]
     end
 
     subgraph FlowC["Pola C: Service Sales (Tanpa Pengiriman Fisik)"]
-        SO3["Sales Order"] --> ACT["1. Berita Acara / Milestone Selesai"] --> INV3["2. Customer Invoice"] --> PAY3["3. Customer Payment"]
+        SO3["Sales Order"] --> ACT["(1) Berita Acara / Milestone Selesai"] --> INV3["(2) Customer Invoice"] --> PAY3["(3) Customer Payment"]
     end
 ```
 

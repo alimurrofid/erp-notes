@@ -8,9 +8,9 @@ Pembedaan ini tidak hanya krusial pada saat perolehan awal (*initial recognition
 
 ```mermaid
 flowchart TD
-    Cost["Pengeluaran Kas Terkait Aset Tetap<br/>(Subsequent Expenditure)"] --> Q1{"1. Apakah menambah kapasitas, efisiensi,<br/>atau memperpanjang masa manfaat?"}
+    Cost["Pengeluaran Kas Terkait Aset Tetap<br/>(Subsequent Expenditure)"] --> Q1{"(1) Apakah menambah kapasitas, efisiensi,<br/>atau memperpanjang masa manfaat?"}
     Q1 -- Tidak --> OPEX["OPEX (Beban Pemeliharaan)<br/>Langsung Masuk Laba Rugi Tahun Berjalan"]
-    Q1 -- Ya --> Q2{"2. Apakah biayanya dapat diukur andal<br/>dan melampaui batas materialitas (Threshold)?"}
+    Q1 -- Ya --> Q2{"(2) Apakah biayanya dapat diukur andal<br/>dan melampaui batas materialitas (Threshold)?"}
     Q2 -- Tidak --> OPEX
     Q2 -- Ya --> CAPEX["CAPEX (Kapitalisasi Aset)<br/>Masuk Neraca & Disusutkan Bertahap"]
 ```
@@ -34,10 +34,10 @@ Tidak ada satu angka nominal baku universal di dunia yang secara mutlak memisahk
 ```mermaid
 graph TD
     subgraph DecisionCriteria["Empat Uji Substantif Keputusan Kapitalisasi"]
-        U1["1. Future Economic Benefits: Apakah menghasilkan kenaikan output fisik,<br/>peningkatan kualitas produk, atau penghematan biaya operasional signifikan?"]
-        U2["2. Useful Life Extension: Apakah memperpanjang masa pakai ekonomis<br/>melebihi estimasi awal masa manfaat aset?"]
-        U3["3. Materiality & Policy: Apakah nominal pengeluaran melampaui ambang batas<br/>kapitalisasi yang disahkan dalam kebijakan Dewan Direksi?"]
-        U4["4. Reliable Measurement: Apakah biaya perolehan dan komponen yang diganti<br/>dapat diukur nilainya secara andal dan obyektif?"]
+        U1["(1) Future Economic Benefits: Apakah menghasilkan kenaikan output fisik,<br/>peningkatan kualitas produk, atau penghematan biaya operasional signifikan?"]
+        U2["(2) Useful Life Extension: Apakah memperpanjang masa pakai ekonomis<br/>melebihi estimasi awal masa manfaat aset?"]
+        U3["(3) Materiality & Policy: Apakah nominal pengeluaran melampaui ambang batas<br/>kapitalisasi yang disahkan dalam kebijakan Dewan Direksi?"]
+        U4["(4) Reliable Measurement: Apakah biaya perolehan dan komponen yang diganti<br/>dapat diukur nilainya secara andal dan obyektif?"]
     end
 ```
 

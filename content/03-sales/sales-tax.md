@@ -27,13 +27,13 @@ Sistem ERP enterprise menentukan jenis dan besaran tarif pajak secara dinamis me
 
 ```mermaid
 flowchart TD
-    Cust["1. Customer Tax Profile<br/>(PKP / Non-PKP, Ekspor / Domestik, Bebas Pajak?)"] 
+    Cust["(1) Customer Tax Profile<br/>(PKP / Non-PKP, Ekspor / Domestik, Bebas Pajak?)"] 
     --> Engine{"ERP Tax Determination Engine"}
     
-    Item["2. Item Tax Category<br/>(Barang Kena Pajak, Jasa Kena Pajak, Barang Pokok Bebas Pajak)"] 
+    Item["(2) Item Tax Category<br/>(Barang Kena Pajak, Jasa Kena Pajak, Barang Pokok Bebas Pajak)"] 
     --> Engine
     
-    Loc["3. Place of Supply / Destination<br/>(Wilayah Yuridiksi Pengiriman Barang)"] 
+    Loc["(3) Place of Supply / Destination<br/>(Wilayah Yuridiksi Pengiriman Barang)"] 
     --> Engine
 
     Engine --> Result["Hasil Penentuan:<br/>Kode Pajak: PPN 11%<br/>Sifat: Terutang / Dipungut Sendiri<br/>Akun GL: 2120 - Utang PPN Keluaran"]

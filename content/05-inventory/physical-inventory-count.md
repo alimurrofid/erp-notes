@@ -54,24 +54,24 @@ Alur pelaksanaan penghitungan fisik diatur melalui tahapan sistematis untuk menc
 
 ```mermaid
 flowchart TD
-    Plan["1. Perencanaan & Jadwal Count<br/>Sistem membangkitkan Physical Inventory Document"]
-    --> Freeze["2. Pembekuan Transaksi (System Snapshot / Freeze)<br/>Sistem merekam kuantitas buku tepat pada jam cut-off"]
+    Plan["(1) Perencanaan & Jadwal Count<br/>Sistem membangkitkan Physical Inventory Document"]
+    --> Freeze["(2) Pembekuan Transaksi (System Snapshot / Freeze)<br/>Sistem merekam kuantitas buku tepat pada jam cut-off"]
     
-    Freeze --> Sheet["3. Penerbitan Count Sheet (Lembar Hitung)<br/>Diserahkan ke tim pencacah fisik di lantai gudang"]
+    Freeze --> Sheet["(3) Penerbitan Count Sheet (Lembar Hitung)<br/>Diserahkan ke tim pencacah fisik di lantai gudang"]
     
-    Sheet --> Count["4. Pencacahan Fisik di Lapangan<br/>Staf menghitung fisik barang di rak/bin"]
+    Sheet --> Count["(4) Pencacahan Fisik di Lapangan<br/>Staf menghitung fisik barang di rak/bin"]
     
-    Count --> Entry["5. Pemasukan Data Hasil Hitung (Count Entry)<br/>ERP membandingkan Kuantitas Fisik vs Saldo Buku Sistem"]
+    Count --> Entry["(5) Pemasukan Data Hasil Hitung (Count Entry)<br/>ERP membandingkan Kuantitas Fisik vs Saldo Buku Sistem"]
     
     Entry --> VarCheck{Apakah Ada<br/>Selisih (Variance)?}
     
-    VarCheck -- "Ada Selisih (> Ambang Batas)" --> Recount["6. Penghitungan Ulang Independen (Recount)<br/>Dilakukan oleh tim auditor / pengawas berbeda"]
-    Recount --> Investigate["7. Investigasi Akar Masalah<br/>(Cek dokumen gantung, salah rak, salah ketik)"]
-    Investigate --> Approval["8. Persetujuan Manajerial (Approval Workflow)"]
+    VarCheck -- "Ada Selisih (> Ambang Batas)" --> Recount["(6) Penghitungan Ulang Independen (Recount)<br/>Dilakukan oleh tim auditor / pengawas berbeda"]
+    Recount --> Investigate["(7) Investigasi Akar Masalah<br/>(Cek dokumen gantung, salah rak, salah ketik)"]
+    Investigate --> Approval["(8) Persetujuan Manajerial (Approval Workflow)"]
     
     VarCheck -- "Nihil / Sesuai" --> Approval
     
-    Approval --> Post["9. Posting Adjustment Otomatis<br/>Penyelarasan Saldo Stock Ledger & General Ledger"]
+    Approval --> Post["(9) Posting Adjustment Otomatis<br/>Penyelarasan Saldo Stock Ledger & General Ledger"]
 ```
 
 ---
@@ -106,9 +106,9 @@ Salah satu prinsip terpenting dalam tata kelola persediaan adalah:
 flowchart TD
     Var["Selisih: -3 Unit Laptop Pro"] --> Investigate["Langkah Investigasi Wajib"]
     
-    Investigate --> C1["1. Cek Dokumen Terbuka (Unposted Documents):<br/>Apakah ada Surat Jalan yang barangnya sudah diambil<br/>tetapi staf lupa memvalidasi Delivery Order di sistem?"]
-    Investigate --> C2["2. Cek Kesalahan Lokasi (Misplaced Stock):<br/>Apakah 3 unit tersebut terselip di Rak B atau zona karantina?"]
-    Investigate --> C3["3. Cek Penerimaan Tertukar (Wrong UOM / Wrong SKU):<br/>Apakah ada salah input kode barang saat penerimaan?"]
+    Investigate --> C1["(1) Cek Dokumen Terbuka (Unposted Documents):<br/>Apakah ada Surat Jalan yang barangnya sudah diambil<br/>tetapi staf lupa memvalidasi Delivery Order di sistem?"]
+    Investigate --> C2["(2) Cek Kesalahan Lokasi (Misplaced Stock):<br/>Apakah 3 unit tersebut terselip di Rak B atau zona karantina?"]
+    Investigate --> C3["(3) Cek Penerimaan Tertukar (Wrong UOM / Wrong SKU):<br/>Apakah ada salah input kode barang saat penerimaan?"]
     
     C1 --> Result{Akar Masalah<br/>Ditemukan?}
     C2 --> Result

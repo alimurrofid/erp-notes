@@ -22,36 +22,36 @@ Tata kelola perpajakan di dalam ERP diorganisasikan ke dalam lima tahapan pembel
 ```mermaid
 flowchart TD
     subgraph S1["Tahap 1: Fondasi & Mesin Kalkulasi Pajak"]
-        N1["1. [[11-tax/tax-management-fundamentals|Tax Management Fundamentals]]"]
-        N2["2. [[11-tax/tax-master-data-and-tax-code|Tax Master Data & Tax Code]]"]
-        N3["3. [[11-tax/tax-determination-and-tax-rules|Tax Determination & Tax Rules]]"]
-        N4["4. [[11-tax/taxable-base-and-tax-calculation|Taxable Base & Tax Calculation]]"]
+        N1["(1) [[11-tax/tax-management-fundamentals|Tax Management Fundamentals]]"]
+        N2["(2) [[11-tax/tax-master-data-and-tax-code|Tax Master Data & Tax Code]]"]
+        N3["(3) [[11-tax/tax-determination-and-tax-rules|Tax Determination & Tax Rules]]"]
+        N4["(4) [[11-tax/taxable-base-and-tax-calculation|Taxable Base & Tax Calculation]]"]
     end
 
     subgraph S2["Tahap 2: Pajak Pertambahan Nilai (PPN / VAT)"]
-        N5["5. [[11-tax/vat-fundamentals|VAT Fundamentals]]"]
-        N6["6. [[11-tax/input-vat-and-output-vat|Input VAT & Output VAT]]"]
-        N7["7. [[11-tax/vat-transaction-and-tax-invoice|VAT Transaction & Tax Invoice (e-Faktur)]]"]
-        N8["8. [[11-tax/vat-return-and-reconciliation|VAT Return & Reconciliation (SPT Masa)]]"]
+        N5["(5) [[11-tax/vat-fundamentals|VAT Fundamentals]]"]
+        N6["(6) [[11-tax/input-vat-and-output-vat|Input VAT & Output VAT]]"]
+        N7["(7) [[11-tax/vat-transaction-and-tax-invoice|VAT Transaction & Tax Invoice (e-Faktur)]]"]
+        N8["(8) [[11-tax/vat-return-and-reconciliation|VAT Return & Reconciliation (SPT Masa)]]"]
     end
 
     subgraph S3["Tahap 3: Pemotongan Pajak & PPh Badan"]
-        N9["9. [[11-tax/withholding-tax-management|Withholding Tax Management (e-Bupot)]]"]
-        N10["10. [[11-tax/corporate-income-tax-fundamentals|Corporate Income Tax Fundamentals]]"]
-        N11["11. [[11-tax/taxable-income-and-fiscal-reconciliation|Taxable Income & Fiscal Reconciliation]]"]
-        N12["12. [[11-tax/corporate-income-tax-calculation|Corporate Income Tax Calculation (Pasal 31E)]]"]
+        N9["(9) [[11-tax/withholding-tax-management|Withholding Tax Management (e-Bupot)]]"]
+        N10["(10) [[11-tax/corporate-income-tax-fundamentals|Corporate Income Tax Fundamentals]]"]
+        N11["(11) [[11-tax/taxable-income-and-fiscal-reconciliation|Taxable Income & Fiscal Reconciliation]]"]
+        N12["(12) [[11-tax/corporate-income-tax-calculation|Corporate Income Tax Calculation (Pasal 31E)]]"]
     end
 
     subgraph S4["Tahap 4: Angsuran, Pembayaran & Penutupan"]
-        N13["13. [[11-tax/corporate-tax-installment-and-prepayment|Tax Installments & Prepayments (PPh 25/29)]]"]
-        N14["14. [[11-tax/tax-payment-and-tax-return|Tax Payment & Tax Return (Billing/NTPN/BPE)]]"]
-        N15["15. [[11-tax/tax-closing-and-period-end|Tax Closing & Period-End Procedures]]"]
+        N13["(13) [[11-tax/corporate-tax-installment-and-prepayment|Tax Installments & Prepayments (PPh 25/29)]]"]
+        N14["(14) [[11-tax/tax-payment-and-tax-return|Tax Payment & Tax Return (Billing/NTPN/BPE)]]"]
+        N15["(15) [[11-tax/tax-closing-and-period-end|Tax Closing & Period-End Procedures]]"]
     end
 
     subgraph S5["Tahap 5: Pengendalian, Analitika & Integrasi"]
-        N16["16. [[11-tax/tax-reporting-and-tax-analytics|Tax Reporting, Equalization & Analytics]]"]
-        N17["17. [[11-tax/tax-controls-audit-and-compliance|Tax Controls, Audit & Compliance (SP2DK)]]"]
-        N18["18. [[11-tax/tax-integration|Cross-Module Tax Integration]]"]
+        N16["(16) [[11-tax/tax-reporting-and-tax-analytics|Tax Reporting, Equalization & Analytics]]"]
+        N17["(17) [[11-tax/tax-controls-audit-and-compliance|Tax Controls, Audit & Compliance (SP2DK)]]"]
+        N18["(18) [[11-tax/tax-integration|Cross-Module Tax Integration]]"]
     end
 
     S1 --> S2 --> S3 --> S4 --> S5

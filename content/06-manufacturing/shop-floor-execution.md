@@ -26,9 +26,9 @@ Struktur pelaksanaan pesanan produksi di lantai pabrik diuraikan secara berjenja
 
 ```mermaid
 flowchart TD
-    MO["1. Manufacturing Order (Tingkat Pabrik)<br/>Target: 100 Unit Laptop Pro | Dokumen Induk"]
+    MO["(1) Manufacturing Order (Tingkat Pabrik)<br/>Target: 100 Unit Laptop Pro | Dokumen Induk"]
     
-    subgraph Ops["2. Work Orders / Job Operations (Tingkat Stasiun Kerja)"]
+    subgraph Ops["(2) Work Orders / Job Operations (Tingkat Stasiun Kerja)"]
         WO10["WO-10: SMT Surface Mount (Work Center 1: Mesin SMT)"]
         WO20["WO-20: Manual Perakitan Board (Work Center 2: Meja Rakit)"]
         WO30["WO-30: Pengujian QC & Diagnostik (Work Center 3: QC Lab)"]
@@ -40,7 +40,7 @@ flowchart TD
     WO20 --> WO30
     WO30 --> WO40
     
-    subgraph Exec["3. Shop Floor Execution (Lantai Kerja Nyata)"]
+    subgraph Exec["(3) Shop Floor Execution (Lantai Kerja Nyata)"]
         Track1["Pencatatan Operator: Budi (Start: 08.00, Stop: 12.00)"]
         Track2["Pencatatan Mesin: SMT-01 (Run: 3,5 Jam, Downtime: 0,5 Jam)"]
         Track3["Pelaporan Kuantitas: 98 Lolos, 2 Afkir (Scrap)"]
@@ -48,7 +48,7 @@ flowchart TD
     
     WO10 -.-> Exec
     
-    subgraph Confirm["4. Production Confirmation (Umpan Balik Sistem)"]
+    subgraph Confirm["(4) Production Confirmation (Umpan Balik Sistem)"]
         Back1["Update Kemajuan Pesanan (% Completed)"]
         Back2["Jurnal Penyerapan Biaya Tenaga Kerja & Overhead"]
         Back3["Pelepasan Pekerjaan ke Stasiun Kerja Berikutnya"]
@@ -65,14 +65,14 @@ Antarmuka lantai kerja (*Shop Floor Terminal*) dirancang untuk memudahkan operat
 
 ```mermaid
 flowchart LR
-    Badge["1. Pindai Lencana Operator (Badge Scan)"]
-    --> Barcode["2. Pindai Barcode Work Order (Job Scan)"]
+    Badge["(1) Pindai Lencana Operator (Badge Scan)"]
+    --> Barcode["(2) Pindai Barcode Work Order (Job Scan)"]
     --> Action{"Aksi Operator?"}
     
     Action -- "Mulai Setup Mesin" --> Setup["Catat Waktu Setup (Timer Aktif)"]
     Action -- "Mulai Produksi Massal" --> Run["Catat Waktu Run (Timer Aktif)"]
     Action -- "Mesin Rusak / Bahan Habis" --> Down["Catat Downtime + Pilih Reason Code"]
-    Action -- "Pekerjaan Selesai" --> Finish["3. Laporkan Hasil Produksi (Production Report)"]
+    Action -- "Pekerjaan Selesai" --> Finish["(3) Laporkan Hasil Produksi (Production Report)"]
     
     Finish --> Inputs["Input Data Kuantitas:<br/>Qty Good (Lolos)<br/>Qty Rejected (Cacat)<br/>Qty Rework (Perbaikan)"]
 ```

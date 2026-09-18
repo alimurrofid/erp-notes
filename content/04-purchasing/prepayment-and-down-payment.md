@@ -29,17 +29,17 @@ Implementasi alur uang muka pembelian di dalam ERP bertujuan untuk:
 
 ```mermaid
 flowchart TD
-    PO["1. Purchase Order Disahkan<br/>(Termin: Uang Muka 20% Dimuka)"]
-    --> Req["2. Prepayment Request / Advance Invoice<br/>(Permohonan pembayaran uang muka dari vendor)"]
-    --> Pay["3. Transfer Kas Bank<br/>(Dr. Uang Muka Pemasok / Cr. Bank)<br/>=> Tercatat sebagai Aset di Neraca"]
+    PO["(1) Purchase Order Disahkan<br/>(Termin: Uang Muka 20% Dimuka)"]
+    --> Req["(2) Prepayment Request / Advance Invoice<br/>(Permohonan pembayaran uang muka dari vendor)"]
+    --> Pay["(3) Transfer Kas Bank<br/>(Dr. Uang Muka Pemasok / Cr. Bank)<br/>=> Tercatat sebagai Aset di Neraca"]
     
-    PO --> Del["4. Pengiriman & Penerimaan Barang (GR)<br/>(Barang fisik tiba lengkap di gudang)"]
-    Del --> Bill["5. Faktur Tagihan Final Tiba (Vendor Bill)<br/>(Dr. Persediaan & PPN / Cr. Utang Usaha 100%)"]
+    PO --> Del["(4) Pengiriman & Penerimaan Barang (GR)<br/>(Barang fisik tiba lengkap di gudang)"]
+    Del --> Bill["(5) Faktur Tagihan Final Tiba (Vendor Bill)<br/>(Dr. Persediaan & PPN / Cr. Utang Usaha 100%)"]
     
-    Pay -.-> Settle{"6. Prepayment Application / Settlement"}
+    Pay -.-> Settle{"(6) Prepayment Application / Settlement"}
     Bill -.-> Settle
     
-    Settle --> Clear["7. Pemotongan Uang Muka:<br/>(Dr. Utang Usaha / Cr. Uang Muka Pemasok)<br/>=> Sisa Utang 80% Dilunasi via Bank"]
+    Settle --> Clear["(7) Pemotongan Uang Muka:<br/>(Dr. Utang Usaha / Cr. Uang Muka Pemasok)<br/>=> Sisa Utang 80% Dilunasi via Bank"]
 ```
 
 ---

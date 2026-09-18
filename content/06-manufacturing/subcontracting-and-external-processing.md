@@ -28,18 +28,18 @@ Proses maklon manufaktur diatur melalui tahapan siklus terstruktur:
 
 ```mermaid
 flowchart TD
-    MO["1. Kebutuhan Produksi Subcontracting<br/>(Diterbitkan Subcontract PO / MO)"]
-    --> Send["2. Pengiriman Komponen ke Vendor (Material Transfer Out)<br/>Bahan baku dikirim dari gudang kita ke Gudang Subcontractor.<br/>Status Kepemilikan: Tetap Milik Kita (Asset on Consignment)."]
+    MO["(1) Kebutuhan Produksi Subcontracting<br/>(Diterbitkan Subcontract PO / MO)"]
+    --> Send["(2) Pengiriman Komponen ke Vendor (Material Transfer Out)<br/>Bahan baku dikirim dari gudang kita ke Gudang Subcontractor.<br/>Status Kepemilikan: Tetap Milik Kita (Asset on Consignment)."]
     
-    Send --> Process["3. Pemrosesan di Pabrik Vendor<br/>Vendor melakukan pencetakan / pelapisan / perakitan."]
+    Send --> Process["(3) Pemrosesan di Pabrik Vendor<br/>Vendor melakukan pencetakan / pelapisan / perakitan."]
     
-    Process --> GR["4. Penerimaan Barang Jadi dari Vendor (Goods Receipt)<br/>Barang hasil proses diterima di gudang utama kita."]
+    Process --> GR["(4) Penerimaan Barang Jadi dari Vendor (Goods Receipt)<br/>Barang hasil proses diterima di gudang utama kita."]
     
-    GR --> Backflush["5. Pemotongan Stok Bahan di Gudang Vendor<br/>ERP otomatis memotong saldo bahan baku di lokasi vendor."]
+    GR --> Backflush["(5) Pemotongan Stok Bahan di Gudang Vendor<br/>ERP otomatis memotong saldo bahan baku di lokasi vendor."]
     
-    GR --> CostAdd["6. Penggabungan Biaya Produk Jadi<br/>Nilai Produk = Nilai Bahan Baku Terpakai + Biaya Jasa Vendor."]
+    GR --> CostAdd["(6) Penggabungan Biaya Produk Jadi<br/>Nilai Produk = Nilai Bahan Baku Terpakai + Biaya Jasa Vendor."]
     
-    CostAdd --> Bill["7. Verifikasi Faktur Jasa Vendor (Vendor Bill P2P)<br/>Pelunasan utang jasa maklon via 3-Way Match."]
+    CostAdd --> Bill["(7) Verifikasi Faktur Jasa Vendor (Vendor Bill P2P)<br/>Pelunasan utang jasa maklon via 3-Way Match."]
 ```
 
 ---

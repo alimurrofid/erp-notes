@@ -9,10 +9,10 @@ Dalam arsitektur ERP enterprise, biaya proyek tidak dicatat sebagai angka agrega
 ```mermaid
 flowchart TD
     subgraph CostSources["Empat Pilar Sumber Biaya Proyek ERP"]
-        Labor["1. Direct Labor Cost<br/>(Jam Kerja Timesheet x Cost Rate)"]
-        Proc["2. Procurement & Subcontracting<br/>(Faktur Vendor Jasa / Konsultan Pihak ke-3)"]
-        Mat["3. Material & Equipment Cost<br/>(Barang Gudang / Hardware yang Dikeluarkan)"]
-        Exp["4. Direct Travel & Other Expenses<br/>(Klaim Tiket, Hotel, Transportasi Staf)"]
+        Labor["(1) Direct Labor Cost<br/>(Jam Kerja Timesheet x Cost Rate)"]
+        Proc["(2) Procurement & Subcontracting<br/>(Faktur Vendor Jasa / Konsultan Pihak ke-3)"]
+        Mat["(3) Material & Equipment Cost<br/>(Barang Gudang / Hardware yang Dikeluarkan)"]
+        Exp["(4) Direct Travel & Other Expenses<br/>(Klaim Tiket, Hotel, Transportasi Staf)"]
     end
 
     subgraph ProjectWBS["WBS Cost Collector Node (PRJ-ERP-2026-001)"]

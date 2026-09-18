@@ -33,10 +33,10 @@ flowchart TD
     end
 
     subgraph TaxCredits["Kredit Pajak (Prepaid Taxes - Aset Lancar)"]
-        PPh25["1. PPh Pasal 25: Angsuran Bulanan Setor Sendiri"]
-        PPh22["2. PPh Pasal 22: Pungutan Pihak Ketiga (Impor/BUMN)"]
-        PPh23["3. PPh Pasal 23: Pemotongan oleh Pelanggan atas Jasa"]
-        PPh24["4. PPh Pasal 24: Pajak Dibayar di Luar Negeri"]
+        PPh25["(1) PPh Pasal 25: Angsuran Bulanan Setor Sendiri"]
+        PPh22["(2) PPh Pasal 22: Pungutan Pihak Ketiga (Impor/BUMN)"]
+        PPh23["(3) PPh Pasal 23: Pemotongan oleh Pelanggan atas Jasa"]
+        PPh24["(4) PPh Pasal 24: Pajak Dibayar di Luar Negeri"]
     end
 
     subgraph FinalPosition["Posisi Akhir Tahun (Settlement)"]

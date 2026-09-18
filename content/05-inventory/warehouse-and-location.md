@@ -24,14 +24,14 @@ Tingkat kerumitan pemodelan lokasi dalam ERP bervariasi dari struktur sederhana 
 
 ```mermaid
 flowchart TD
-    Comp["1. Legal Entity / Company (Perusahaan)"]
-    --> Site["2. Site / Facility (Kawasan / Kampus Pabrik)"]
-    --> WH["3. Warehouse (Gedung Gudang Tertentu)"]
-    --> Zone["4. Storage Zone (Zona Fungsional: Cold, Bulk, Pick)"]
-    --> Aisle["5. Aisle (Lorong Gudang: A, B, C...)"]
-    --> Rack["6. Rack / Bay (Kolom Rak Bertingkat: 01, 02...)"]
-    --> Shelf["7. Shelf / Level (Tingkat Ketinggian: L1, L2...)"]
-    --> Bin["8. Bin / Storage Slot (Kompartemen Terkecil: B-01-02-1)"]
+    Comp["(1) Legal Entity / Company (Perusahaan)"]
+    --> Site["(2) Site / Facility (Kawasan / Kampus Pabrik)"]
+    --> WH["(3) Warehouse (Gedung Gudang Tertentu)"]
+    --> Zone["(4) Storage Zone (Zona Fungsional: Cold, Bulk, Pick)"]
+    --> Aisle["(5) Aisle (Lorong Gudang: A, B, C...)"]
+    --> Rack["(6) Rack / Bay (Kolom Rak Bertingkat: 01, 02...)"]
+    --> Shelf["(7) Shelf / Level (Tingkat Ketinggian: L1, L2...)"]
+    --> Bin["(8) Bin / Storage Slot (Kompartemen Terkecil: B-01-02-1)"]
 ```
 
 ### Konvensi Pengalamatan Bin (*Bin Addressing Coordinate*)

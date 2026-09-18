@@ -12,13 +12,13 @@ graph TD
         Top["Aset Tetap Perusahaan (PPE)"]
         NonDep["Aset Tidak Disusutkan"]
         Dep["Aset yang Disusutkan"]
-        Land["1. Tanah (Land)"]
-        CIP["2. Konstruksi dalam Pengerjaan (CIP)"]
-        Bldg["3. Bangunan (Buildings)"]
-        Mach["4. Mesin Pabrik (Machinery)"]
-        Veh["5. Kendaraan (Vehicles)"]
-        IT["6. Perangkat IT & Kantor"]
-        Lease["7. Leasehold Improvements"]
+        Land["(1) Tanah (Land)"]
+        CIP["(2) Konstruksi dalam Pengerjaan (CIP)"]
+        Bldg["(3) Bangunan (Buildings)"]
+        Mach["(4) Mesin Pabrik (Machinery)"]
+        Veh["(5) Kendaraan (Vehicles)"]
+        IT["(6) Perangkat IT & Kantor"]
+        Lease["(7) Leasehold Improvements"]
     end
     Top --> NonDep
     Top --> Dep
@@ -65,13 +65,13 @@ Salah satu kekeliruan umum dalam implementasi ERP adalah menganggap bahwa klasif
 
 ```mermaid
 flowchart LR
-    subgraph AccountingDim["1. Dimensi Akuntansi (IAS 16)"]
+    subgraph AccountingDim["(1) Dimensi Akuntansi (IAS 16)"]
         A_PPE["Pelaporan Neraca & CALK<br/>(Land, Buildings, Machinery, IT, CIP)"]
     end
-    subgraph OperationalDim["2. Dimensi Operasional (Pabrik)"]
+    subgraph OperationalDim["(2) Dimensi Operasional (Pabrik)"]
         O_Dept["Lini Produksi, Maintenance Group,<br/>Fasilitas Kantor, Armada Logistik"]
     end
-    subgraph FiscalDim["3. Dimensi Fiskal (UU PPh Indonesia)"]
+    subgraph FiscalDim["(3) Dimensi Fiskal (UU PPh Indonesia)"]
         F_Tax["Golongan Harta Berwujud Bukan Bangunan<br/>(Kelompok 1, 2, 3, 4) & Bangunan"]
     end
     A_PPE <--> O_Dept

@@ -25,9 +25,9 @@ Sistem ERP enterprise mengklasifikasikan perpindahan internal berdasarkan jarak 
 ```mermaid
 flowchart TD
     subgraph Scopes["Tiga Tingkatan Ruang Lingkup Transfer Internal"]
-        Bin2Bin["1. Bin-to-Bin / Rak-ke-Rak<br/>(Dalam Satu Gedung Gudang yang Sama)<br/>Jarak: Meter | Durasi: Menit | Transit: Tidak Ada"]
-        WH2WH["2. Warehouse-to-Warehouse<br/>(Antar-Gudang Fisik Berbeda, Misal: Jakarta ke Surabaya)<br/>Jarak: Puluhan/Ratusan Km | Durasi: Hari | Transit: In-Transit Warehouse Wajib"]
-        InterCo["3. Inter-Company Transfer<br/>(Antar-Anak Perusahaan / Badan Hukum Berbeda)<br/>Melibatkan Jual-Beli Internal (Intercompany SO/PO & PPN)"]
+        Bin2Bin["(1) Bin-to-Bin / Rak-ke-Rak<br/>(Dalam Satu Gedung Gudang yang Sama)<br/>Jarak: Meter | Durasi: Menit | Transit: Tidak Ada"]
+        WH2WH["(2) Warehouse-to-Warehouse<br/>(Antar-Gudang Fisik Berbeda, Misal: Jakarta ke Surabaya)<br/>Jarak: Puluhan/Ratusan Km | Durasi: Hari | Transit: In-Transit Warehouse Wajib"]
+        InterCo["(3) Inter-Company Transfer<br/>(Antar-Anak Perusahaan / Badan Hukum Berbeda)<br/>Melibatkan Jual-Beli Internal (Intercompany SO/PO & PPN)"]
     end
 ```
 
@@ -77,14 +77,14 @@ Pada organisasi terstruktur, proses mutasi antar-gudang diatur melalui pemisahan
 
 ```mermaid
 flowchart TD
-    TR["1. Material / Transfer Request (TR)<br/>Gudang Cabang mengajukan permintaan barang karena stok menipis"]
-    --> Appr["2. Approval Workflow<br/>Manajer Rantai Pasok menyetujui kuantitas transfer"]
-    --> TO["3. Transfer Order (TO)<br/>Dokumen otorisasi resmi pemindahan barang"]
-    --> Pick["4. Outbound Picking & Goods Issue<br/>Gudang Pengirim mengeluarkan barang -> Status: IN-TRANSIT"]
+    TR["(1) Material / Transfer Request (TR)<br/>Gudang Cabang mengajukan permintaan barang karena stok menipis"]
+    --> Appr["(2) Approval Workflow<br/>Manajer Rantai Pasok menyetujui kuantitas transfer"]
+    --> TO["(3) Transfer Order (TO)<br/>Dokumen otorisasi resmi pemindahan barang"]
+    --> Pick["(4) Outbound Picking & Goods Issue<br/>Gudang Pengirim mengeluarkan barang -> Status: IN-TRANSIT"]
     --> Transport["Perjalanan Logistik Antar-Kota / Antar-Pulau"]
-    --> GR["5. Goods Receipt at Destination<br/>Gudang Penerima memverifikasi kuantitas & kondisi fisik"]
+    --> GR["(5) Goods Receipt at Destination<br/>Gudang Penerima memverifikasi kuantitas & kondisi fisik"]
     --> Diff{Ada Selisih /<br/>Barang Rusak?}
-    Diff -- "Lengkap" --> Close["6. Transfer Selesai (Closed)"]
+    Diff -- "Lengkap" --> Close["(6) Transfer Selesai (Closed)"]
     Diff -- "Kurang / Rusak" --> Claim["Investigasi Selisih & Klaim Asuransi / Write-off"]
 ```
 

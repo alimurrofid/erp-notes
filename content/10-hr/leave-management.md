@@ -29,9 +29,9 @@ Sistem ERP membagi permohonan ketidakhadiran terotorisasi ke dalam beberapa kate
 ```mermaid
 flowchart TD
     LEAVE["Kategori Cuti di ERP (Leave Types)"]
-    LEAVE --> PAID["1. Cuti Berbayar Penuh (Fully Paid Leave)"]
-    LEAVE --> UNPAID["2. Cuti di Luar Tanggungan (Unpaid Leave)"]
-    LEAVE --> COMP["3. Cuti Kompensasi (Time Off in Lieu - TOIL)"]
+    LEAVE --> PAID["(1) Cuti Berbayar Penuh (Fully Paid Leave)"]
+    LEAVE --> UNPAID["(2) Cuti di Luar Tanggungan (Unpaid Leave)"]
+    LEAVE --> COMP["(3) Cuti Kompensasi (Time Off in Lieu - TOIL)"]
 
     PAID --> P1["Cuti Tahunan (Annual Leave - e.g. 12 Hari/Tahun)"]
     PAID --> P2["Cuti Sakit dengan Surat Dokter (Medical/Sick Leave)"]

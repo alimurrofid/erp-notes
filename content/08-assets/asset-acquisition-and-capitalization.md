@@ -11,11 +11,11 @@ Perbedaan kedua konsep ini tercermin dalam pemisahan antara tanggal kedatangan f
 
 ```mermaid
 flowchart LR
-    subgraph Phase1["1. Siklus Pengadaan (Procurement)"]
+    subgraph Phase1["(1) Siklus Pengadaan (Procurement)"]
         PO["Purchase Order (PO)<br/>Belanja Modal (CAPEX)"] --> Rec["Goods Receipt (GRN)<br/>Penerimaan Fisik Mesin"]
         Rec --> Inv["Vendor Bill (Invoice)<br/>Verifikasi Tagihan P2P"]
     end
-    subgraph Phase2["2. Siklus Kapitalisasi (Capitalization)"]
+    subgraph Phase2["(2) Siklus Kapitalisasi (Capitalization)"]
         Cost["Akumulasi Biaya Sah<br/>(Beli + Kirim + Pasang + Tes)"] --> Cap["Kapitalisasi ke Aset Tetap<br/>(Asset Register Entry)"]
         Cap --> Serv["In-Service State<br/>(Penyusutan Dimulai)"]
     end
@@ -41,11 +41,11 @@ ERP enterprise memfasilitasi lima saluran perolehan aset tetap:
 ```mermaid
 graph TD
     subgraph AcquisitionChannels["Saluran Perolehan Aset Tetap di ERP"]
-        Ch1["1. Pembelian Langsung Siap Pakai (Direct Purchase P2P)"]
-        Ch2["2. Bangun Sendiri / Konstruksi Bertahap (Self-Construction / CWIP)"]
-        Ch3["3. Reklasifikasi Internal (Inventory to Asset Conversion)"]
-        Ch4["4. Kombinasi Bisnis / Akuisisi Korporasi (M&A)"]
-        Ch5["5. Hibah / Donasi / Bantuan Pemerintah (Government Grants)"]
+        Ch1["(1) Pembelian Langsung Siap Pakai (Direct Purchase P2P)"]
+        Ch2["(2) Bangun Sendiri / Konstruksi Bertahap (Self-Construction / CWIP)"]
+        Ch3["(3) Reklasifikasi Internal (Inventory to Asset Conversion)"]
+        Ch4["(4) Kombinasi Bisnis / Akuisisi Korporasi (M&A)"]
+        Ch5["(5) Hibah / Donasi / Bantuan Pemerintah (Government Grants)"]
     end
 ```
 

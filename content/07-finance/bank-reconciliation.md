@@ -8,13 +8,13 @@ Berbeda dengan perspektif akuntansi murni (yang berfokus pada penyusunan lembar 
 
 ```mermaid
 flowchart LR
-    subgraph Ingestion["1. Ingestion Data"]
+    subgraph Ingestion["(1) Ingestion Data"]
         MT["MT940 / CAMT.053<br/>/ API / CSV"]
     end
-    subgraph Matching["2. Matching Engine"]
+    subgraph Matching["(2) Matching Engine"]
         Rules["Rule 1: Exact Match (VA/Doc No)<br/>Rule 2: Partner + Amount Match<br/>Rule 3: Algorithmic / Fuzzy Match"]
     end
-    subgraph Execution["3. Resolution & Clearing"]
+    subgraph Execution["(3) Resolution & Clearing"]
         Auto["Auto-Reconciled & Cleared<br/>(80-95% Transaksi)"]
         Exc["Exception Workbench<br/>(Investigasi Manual)"]
     end

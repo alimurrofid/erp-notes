@@ -25,14 +25,14 @@ Sistem ERP enterprise menyediakan dua metode utama untuk mencatat konsumsi kompo
 
 ```mermaid
 flowchart TD
-    subgraph Manual["1. Manual Material Issue (Penerbitan Manual / Terencana)"]
+    subgraph Manual["(1) Manual Material Issue (Penerbitan Manual / Terencana)"]
         M1["Operator meminta bahan dari gudang"]
         --> M2["Petugas gudang memposting Material Issue Slip"]
         --> M3["Stok gudang berkurang seketika SEBELUM perakitan dimulai"]
         --> M4["Bahan fisik dipindahkan ke stasiun kerja"]
     end
 
-    subgraph Backflush["2. Backflushing (Pengurangan Otomatis Pasca-Produksi)"]
+    subgraph Backflush["(2) Backflushing (Pengurangan Otomatis Pasca-Produksi)"]
         B1["Bahan curah / floor stock diletakkan di samping mesin"]
         --> B2["Operator merakit produk hingga selesai"]
         --> B3["Operator mengonfirmasi output Barang Jadi (100 Unit)"]
@@ -71,9 +71,9 @@ Perbedaan mendasar antara kejadian fisik di lantai kerja dengan pencatatan buku 
 
 ```mermaid
 flowchart LR
-    Phys["Realitas Fisik di Lantai Pabrik:<br/>1. Baut diambil dari kotak di meja kerja.<br/>2. Baut dipasang ke dalam laptop.<br/>3. Laptop selesai dirakit."]
+    Phys["Realitas Fisik di Lantai Pabrik:<br/>(1) Baut diambil dari kotak di meja kerja.<br/>(2) Baut dipasang ke dalam laptop.<br/>(3) Laptop selesai dirakit."]
     
-    Sys["Pencatatan Sistemik di ERP:<br/>1. Selama 3 hari perakitan, baut masih tercatat di gudang.<br/>2. Tepat saat laptop diposting 'Finished',<br/>ERP memotong 400 baut seketika."]
+    Sys["Pencatatan Sistemik di ERP:<br/>(1) Selama 3 hari perakitan, baut masih tercatat di gudang.<br/>(2) Tepat saat laptop diposting 'Finished',<br/>ERP memotong 400 baut seketika."]
     
     Phys -.->|"Jeda Waktu Pencatatan (Timing Gap)"| Sys
 ```

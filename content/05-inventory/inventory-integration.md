@@ -40,10 +40,10 @@ flowchart TD
     end
 
     subgraph InventoryCore["Inti Persediaan & Pergudangan (Phase 6 Nexus)"]
-        ATP["1. Ketersediaan & Reservasi (ATP Engine)"]
-        WM["2. Operasi Pergudangan (Receiving, Putaway, Picking, Packing)"]
-        Ledger["3. Buku Persediaan (Stock Ledger Perpetual)"]
-        Valuation["4. Mesin Biaya Persediaan (Costing Engine: FIFO / Moving Avg)"]
+        ATP["(1) Ketersediaan & Reservasi (ATP Engine)"]
+        WM["(2) Operasi Pergudangan (Receiving, Putaway, Picking, Packing)"]
+        Ledger["(3) Buku Persediaan (Stock Ledger Perpetual)"]
+        Valuation["(4) Mesin Biaya Persediaan (Costing Engine: FIFO / Moving Avg)"]
     end
 
     subgraph FinancialImpact["Domain Finansial & Akuntansi (Phase 3)"]

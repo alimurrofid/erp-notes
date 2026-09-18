@@ -26,18 +26,18 @@ Proses pemenuhan pesanan di pergudangan modern dibagi menjadi tahapan terstruktu
 
 ```mermaid
 flowchart TD
-    Demand["1. Kebutuhan Pengiriman Disetujui<br/>Sales Order / Transfer Order Terkonfirmasi"]
-    --> PickWave["2. Wave / Batch Planning & Otorisasi<br/>ERP mengelompokkan pesanan & membangkitkan Pick List"]
+    Demand["(1) Kebutuhan Pengiriman Disetujui<br/>Sales Order / Transfer Order Terkonfirmasi"]
+    --> PickWave["(2) Wave / Batch Planning & Otorisasi<br/>ERP mengelompokkan pesanan & membangkitkan Pick List"]
     
-    PickWave --> Picking["3. Picking Execution (Lantai Gudang)<br/>Operator mengambil barang dari koordinat bin rak"]
+    PickWave --> Picking["(3) Picking Execution (Lantai Gudang)<br/>Operator mengambil barang dari koordinat bin rak"]
     
-    Picking --> Packing["4. Packing & Consolidation<br/>Pemeriksaan ulang, pengemasan ke kardus/palet, cetak Shipping Label"]
+    Picking --> Packing["(4) Packing & Consolidation<br/>Pemeriksaan ulang, pengemasan ke kardus/palet, cetak Shipping Label"]
     
-    Packing --> Staging["5. Outbound Staging (Dermaga Kirim)<br/>Paket diletakkan di dermaga berdasarkan rute kurir/truk"]
+    Packing --> Staging["(5) Outbound Staging (Dermaga Kirim)<br/>Paket diletakkan di dermaga berdasarkan rute kurir/truk"]
     
-    Staging --> GoodsIssue["6. Goods Issue / Loading<br/>Pemuatan ke armada truk; stok berkurang dari gudang"]
+    Staging --> GoodsIssue["(6) Goods Issue / Loading<br/>Pemuatan ke armada truk; stok berkurang dari gudang"]
     
-    GoodsIssue --> POD["7. Proof of Delivery (POD)<br/>Tanda terima fisik/digital dari penerima akhir"]
+    GoodsIssue --> POD["(7) Proof of Delivery (POD)<br/>Tanda terima fisik/digital dari penerima akhir"]
 ```
 
 ---
@@ -92,10 +92,10 @@ Sistem ERP enterprise membedakan secara tegas tiga peristiwa yang kerap kali sal
 
 ```mermaid
 flowchart TD
-    E1["1. Warehouse Operation (Picking & Packing)<br/>Status Stok: Dialokasikan (Allocated / Picked)<br/>Dampak Akuntansi: BELUM ADA (Barang masih di dalam gedung)"]
-    --> E2["2. Goods Issue / Delivery Outbound<br/>Status Stok: Berkurang dari On-Hand Gudang<br/>Dampak Akuntansi: Dr COGS, Cr Persediaan (Perpetual)"]
-    --> E3["3. Proof of Delivery (POD) / Customer Acceptance<br/>Status Hukum: Risiko dan manfaat barang beralih ke pembeli"]
-    --> E4["4. Financial Invoice (Vendor Bill / Customer Invoice)<br/>Dampak Akuntansi: Pengakuan Piutang Usaha (AR) & Pendapatan (IFRS 15)"]
+    E1["(1) Warehouse Operation (Picking & Packing)<br/>Status Stok: Dialokasikan (Allocated / Picked)<br/>Dampak Akuntansi: BELUM ADA (Barang masih di dalam gedung)"]
+    --> E2["(2) Goods Issue / Delivery Outbound<br/>Status Stok: Berkurang dari On-Hand Gudang<br/>Dampak Akuntansi: Dr COGS, Cr Persediaan (Perpetual)"]
+    --> E3["(3) Proof of Delivery (POD) / Customer Acceptance<br/>Status Hukum: Risiko dan manfaat barang beralih ke pembeli"]
+    --> E4["(4) Financial Invoice (Vendor Bill / Customer Invoice)<br/>Dampak Akuntansi: Pengakuan Piutang Usaha (AR) & Pendapatan (IFRS 15)"]
 ```
 
 * Mengambil barang dari rak (*picking*) **bukanlah** pengiriman ke pelanggan.

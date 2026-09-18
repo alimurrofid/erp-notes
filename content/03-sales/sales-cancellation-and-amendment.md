@@ -33,16 +33,16 @@ Tindakan perubahan atau pembatalan yang diizinkan oleh sistem ERP bergantung sep
 
 ```mermaid
 flowchart TD
-    Stage1["1. Status DRAFT<br/>(Pra-Persetujuan)"]
+    Stage1["(1) Status DRAFT<br/>(Pra-Persetujuan)"]
     --> Rule1["Dapat diedit bebas atau dihapus langsung.<br/>Tidak memengaruhi stok atau akuntansi."]
 
-    Stage2["2. Status CONFIRMED / APPROVED<br/>(Pra-Pengiriman)"]
+    Stage2["(2) Status CONFIRMED / APPROVED<br/>(Pra-Pengiriman)"]
     --> Rule2["Mekanisme Amandemen / Versi Baru (SO-Rev01).<br/>Reservasi stok dilepas, paparan kredit disesuaikan."]
 
-    Stage3["3. Status DELIVERED<br/>(Barang Sudah Keluar Gudang)"]
+    Stage3["(3) Status DELIVERED<br/>(Barang Sudah Keluar Gudang)"]
     --> Rule3["DILARANG BATALKAN SALES ORDER!<br/>Wajib melalui Retur Fisik Barang (RMA / Return Delivery)."]
 
-    Stage4["4. Status INVOICED / POSTED<br/>(Faktur Telah Diposting ke GL)"]
+    Stage4["(4) Status INVOICED / POSTED<br/>(Faktur Telah Diposting ke GL)"]
     --> Rule4["DILARANG EDIT / HAPUS FAKTUR!<br/>Wajib melalui penerbitan NOTA KREDIT (Credit Note)."]
 ```
 

@@ -19,34 +19,34 @@ Siklus hidup aset tetap di dalam ERP dikelola melalui delapan tahapan transisi s
 ```mermaid
 flowchart TD
     subgraph S1["Tahap 1: Inisiasi & Pengadaan"]
-        N1["1. [[08-assets/fixed-assets-fundamentals|Fixed Assets Fundamentals]]"]
-        N2["2. [[08-assets/asset-master-data|Asset Master Data]]"]
-        N3["3. [[08-assets/asset-classification|Asset Classification & Hierarchy]]"]
+        N1["(1) [[08-assets/fixed-assets-fundamentals|Fixed Assets Fundamentals]]"]
+        N2["(2) [[08-assets/asset-master-data|Asset Master Data]]"]
+        N3["(3) [[08-assets/asset-classification|Asset Classification & Hierarchy]]"]
     end
 
     subgraph S2["Tahap 2: Kapitalisasi & Komponen"]
-        N4["4. [[08-assets/asset-acquisition-and-capitalization|Asset Acquisition & Capitalization]]"]
-        N5["5. [[08-assets/asset-componentization|Asset Componentization]]"]
+        N4["(4) [[08-assets/asset-acquisition-and-capitalization|Asset Acquisition & Capitalization]]"]
+        N5["(5) [[08-assets/asset-componentization|Asset Componentization]]"]
     end
 
     subgraph S3["Tahap 3: Operasional, Nilai & Biaya"]
-        N6["6. [[08-assets/depreciation-management|Depreciation Schedule & Management]]"]
-        N7["7. [[08-assets/asset-transfer-and-location|Asset Transfer & Location Tracking]]"]
-        N8["8. [[08-assets/asset-revaluation|Asset Revaluation]]"]
-        N9["9. [[08-assets/asset-impairment|Asset Impairment Management]]"]
-        N10["10. [[08-assets/capex-vs-opex|CAPEX vs OPEX in Asset Lifecycle]]"]
-        N11["11. [[08-assets/asset-maintenance-integration|Asset Maintenance Integration]]"]
+        N6["(6) [[08-assets/depreciation-management|Depreciation Schedule & Management]]"]
+        N7["(7) [[08-assets/asset-transfer-and-location|Asset Transfer & Location Tracking]]"]
+        N8["(8) [[08-assets/asset-revaluation|Asset Revaluation]]"]
+        N9["(9) [[08-assets/asset-impairment|Asset Impairment Management]]"]
+        N10["(10) [[08-assets/capex-vs-opex|CAPEX vs OPEX in Asset Lifecycle]]"]
+        N11["(11) [[08-assets/asset-maintenance-integration|Asset Maintenance Integration]]"]
     end
 
     subgraph S4["Tahap 4: Verifikasi & Pelepasan"]
-        N12["12. [[08-assets/physical-asset-verification|Physical Asset Verification & Tagging]]"]
-        N13["13. [[08-assets/asset-disposal-and-retirement|Asset Disposal & Retirement]]"]
+        N12["(12) [[08-assets/physical-asset-verification|Physical Asset Verification & Tagging]]"]
+        N13["(13) [[08-assets/asset-disposal-and-retirement|Asset Disposal & Retirement]]"]
     end
 
     subgraph S5["Tahap 5: Pelaporan, Kontrol & Integrasi"]
-        N14["14. [[08-assets/asset-reporting-and-analytics|Asset Reporting & Analytics]]"]
-        N15["15. [[08-assets/asset-controls-and-governance|Asset Controls & Governance]]"]
-        N16["16. [[08-assets/fixed-assets-integration|Cross-Module Fixed Assets Integration]]"]
+        N14["(14) [[08-assets/asset-reporting-and-analytics|Asset Reporting & Analytics]]"]
+        N15["(15) [[08-assets/asset-controls-and-governance|Asset Controls & Governance]]"]
+        N16["(16) [[08-assets/fixed-assets-integration|Cross-Module Fixed Assets Integration]]"]
     end
 
     S1 --> S2 --> S3 --> S4 --> S5

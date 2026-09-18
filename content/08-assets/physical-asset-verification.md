@@ -8,10 +8,10 @@ Verifikasi fisik adalah pilar pengendalian internal (*Internal Control*) terpent
 
 ```mermaid
 flowchart LR
-    Plan["1. Perencanaan & Freeze<br/>(Jadwal & Target Lokasi)"] --> Scan["2. Pemindaian Fisik di Lapangan<br/>(Mobile Barcode / QR / RFID)"]
-    Scan --> Match["3. Mesin Rekonsiliasi Otomatis<br/>(Cek Fisik vs Asset Register)"]
-    Match --> Exc["4. Workbench Eksepsi<br/>(Hilang, Pindah, Rusak, Tak Tercatat)"]
-    Exc --> Adj["5. Eksekusi Penyesuaian Terotorisasi<br/>(Mutasi Lokasi / Write-Off / Pendaftaran)"]
+    Plan["(1) Perencanaan & Freeze<br/>(Jadwal & Target Lokasi)"] --> Scan["(2) Pemindaian Fisik di Lapangan<br/>(Mobile Barcode / QR / RFID)"]
+    Scan --> Match["(3) Mesin Rekonsiliasi Otomatis<br/>(Cek Fisik vs Asset Register)"]
+    Match --> Exc["(4) Workbench Eksepsi<br/>(Hilang, Pindah, Rusak, Tak Tercatat)"]
+    Exc --> Adj["(5) Eksekusi Penyesuaian Terotorisasi<br/>(Mutasi Lokasi / Write-Off / Pendaftaran)"]
 ```
 
 ---
@@ -56,11 +56,11 @@ Setelah pemindaian di lapangan selesai, mesin rekonsiliasi ERP mengelompokkan as
 ```mermaid
 graph TD
     subgraph ReconciliationOutcomes["Kategori Hasil Rekonsiliasi Fisik ERP"]
-        M["1. Matched Assets<br/>Aset Ada, Lokasi Sesuai, Penanggung Jawab Cocok, Kondisi Baik"]
-        G["2. Missing / Ghost Assets<br/>Tercatat di Sistem, Namun Fisik Tidak Ditemukan di Lapangan"]
-        U["3. Unrecorded / Found Assets<br/>Fisik Ditemukan di Lapangan, Namun Tidak Ada di Asset Register"]
-        L["4. Mislocated Assets<br/>Aset Ditemukan, Namun Berada di Lokasi / Cost Center Berbeda"]
-        D["5. Damaged / Idle Assets<br/>Aset Ditemukan, Namun Kondisi Rusak Berat / Terbengkalai"]
+        M["(1) Matched Assets<br/>Aset Ada, Lokasi Sesuai, Penanggung Jawab Cocok, Kondisi Baik"]
+        G["(2) Missing / Ghost Assets<br/>Tercatat di Sistem, Namun Fisik Tidak Ditemukan di Lapangan"]
+        U["(3) Unrecorded / Found Assets<br/>Fisik Ditemukan di Lapangan, Namun Tidak Ada di Asset Register"]
+        L["(4) Mislocated Assets<br/>Aset Ditemukan, Namun Berada di Lokasi / Cost Center Berbeda"]
+        D["(5) Damaged / Idle Assets<br/>Aset Ditemukan, Namun Kondisi Rusak Berat / Terbengkalai"]
     end
 ```
 

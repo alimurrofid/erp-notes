@@ -11,11 +11,11 @@ Untuk meningkatkan efisiensi dan standardisasi pelaksanaan, ERP enterprise menye
 ```mermaid
 graph TD
     subgraph MasterSegments["Segmen Master Data Proyek Terpadu"]
-        ID["1. Identifikasi & Tipe<br/>(Project ID, Nama, Tipe, Prioritas)"]
-        Comm["2. Komersial & Kontrak<br/>(Klien, Nilai Kontrak, Mata Uang, Billing Rule)"]
-        Org["3. Organisasi & Wewenang<br/>(Company, Project Manager, Cost/Profit Center)"]
-        Time["4. Penanggalan & Kalender<br/>(Start/End Dates, Working Day Calendar)"]
-        Fin["5. Aturan Finansial & GL<br/>(Budget Profile, Settlement Rule, Rev Rec Rule)"]
+        ID["(1) Identifikasi & Tipe<br/>(Project ID, Nama, Tipe, Prioritas)"]
+        Comm["(2) Komersial & Kontrak<br/>(Klien, Nilai Kontrak, Mata Uang, Billing Rule)"]
+        Org["(3) Organisasi & Wewenang<br/>(Company, Project Manager, Cost/Profit Center)"]
+        Time["(4) Penanggalan & Kalender<br/>(Start/End Dates, Working Day Calendar)"]
+        Fin["(5) Aturan Finansial & GL<br/>(Budget Profile, Settlement Rule, Rev Rec Rule)"]
     end
     Template["Project Template<br/>(Metodologi Standar Industri)"] -->|Instansiasi Proyek Baru| MasterSegments
 ```
@@ -88,7 +88,7 @@ flowchart TD
     end
 
     subgraph NewProject["Instansiasi Proyek Baru (PRJ-ERP-2026-001)"]
-        Inst["Duplikasi Otomatis:<br/>1. Struktur Hirarki WBS Lengkap<br/>2. Daftar Tugas Standar & Ketergantungan<br/>3. Kebutuhan Peran Keahlian (Skill Roles)<br/>4. Titik Milestone Penagihan Termin"]
+        Inst["Duplikasi Otomatis:<br/>(1) Struktur Hirarki WBS Lengkap<br/>(2) Daftar Tugas Standar & Ketergantungan<br/>(3) Kebutuhan Peran Keahlian (Skill Roles)<br/>(4) Titik Milestone Penagihan Termin"]
     end
 
     TemplateRepo -->|Pilih Templat & Input Tanggal Mulai| NewProject

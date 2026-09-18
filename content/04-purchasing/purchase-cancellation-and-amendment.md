@@ -51,7 +51,7 @@ flowchart TD
     
     HasBill -- "Hanya GR (Belum Billed)" --> GRAction["PO Tidak Bisa Dibatalkan!<br/>Lakukan Return to Vendor (RTV)<br/>Reverse Stock & GR/IR Accrual"]
     
-    HasBill -- "Sudah Billed / Paid" --> FullAction["PO Mutlak Terkunci!<br/>1. Return to Vendor (Fisik & Persediaan)<br/>2. Debit Note / Credit Memo (Finansial & Utang)<br/>3. Refund / Kompensasi Pembayaran"]
+    HasBill -- "Sudah Billed / Paid" --> FullAction["PO Mutlak Terkunci!<br/>(1) Return to Vendor (Fisik & Persediaan)<br/>(2) Debit Note / Credit Memo (Finansial & Utang)<br/>(3) Refund / Kompensasi Pembayaran"]
 ```
 
 ---

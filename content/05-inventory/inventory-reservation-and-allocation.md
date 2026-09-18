@@ -26,14 +26,14 @@ Proses penguncian persediaan bergerak dari komitmen abstrak hingga pelepasan fis
 
 ```mermaid
 flowchart TD
-    Demand["1. Business Demand Masuk<br/>(Sales Order / Work Order / Transfer Order disetujui)"]
-    --> Check["2. Cek Ketersediaan Stok Bebas (Available Stock)"]
+    Demand["(1) Business Demand Masuk<br/>(Sales Order / Work Order / Transfer Order disetujui)"]
+    --> Check["(2) Cek Ketersediaan Stok Bebas (Available Stock)"]
     
-    Check --> Res["3. Reservation (Soft Lock)<br/>Stok On-Hand: Tetap | Reserved Qty: +N | Available Qty: -N<br/>Belum ada koordinat rak/bin fisik yang dikunci."]
+    Check --> Res["(3) Reservation (Soft Lock)<br/>Stok On-Hand: Tetap | Reserved Qty: +N | Available Qty: -N<br/>Belum ada koordinat rak/bin fisik yang dikunci."]
     
-    Res --> Alloc["4. Allocation / Hard Lock (WMS Wave/Release)<br/>Sistem menunjuk Rak B-02-1, Lot #ST-2026-01<br/>Kuantitas berpindah dari Reserved ke Allocated."]
+    Res --> Alloc["(4) Allocation / Hard Lock (WMS Wave/Release)<br/>Sistem menunjuk Rak B-02-1, Lot #ST-2026-01<br/>Kuantitas berpindah dari Reserved ke Allocated."]
     
-    Alloc --> Pick["5. Picking & Goods Issue<br/>Operator mengambil barang; stok berkurang dari gudang.<br/>Komitmen reservasi selesai (Fulfilled)."]
+    Alloc --> Pick["(5) Picking & Goods Issue<br/>Operator mengambil barang; stok berkurang dari gudang.<br/>Komitmen reservasi selesai (Fulfilled)."]
 ```
 
 ---

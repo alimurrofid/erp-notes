@@ -37,10 +37,10 @@ Pengelolaan manufaktur di dalam ERP kelas enterprise dibagi ke dalam empat lapis
 flowchart TD
     subgraph Layers["Empat Lapisan Fungsional Manufaktur"]
         direction TB
-        L1["1. Production Planning (Perencanaan Strategis & Taktis)<br/>Apa yang harus dibuat, berapa banyak, dan kapan dibutuhkan?<br/>(Forecast, Sales Demand, MPS, MRP, Rough-Cut Capacity)"]
-        L2["2. Production Scheduling (Penjadwalan Operasional)<br/>Mesin mana yang mengeksekusi dan urutan operasi mana yang dijalankan?<br/>(Finite/Infinite Capacity Scheduling, Dispatching, Sequencing)"]
-        L3["3. Production Execution (Eksekusi & Transaksi Pabrik)<br/>Penerbitan dokumen kerja, pengeluaran bahan, dan konfirmasi output.<br/>(Manufacturing Order, Material Issue, Operation Confirmation)"]
-        L4["4. Shop Floor Control (Pengawasan Lapangan Real-Time)<br/>Pelacakan operator mesin, downtime, status mesin IoT, dan defect rate.<br/>(MES Integration, Andon, Operator Workstations)"]
+        L1["(1) Production Planning (Perencanaan Strategis & Taktis)<br/>Apa yang harus dibuat, berapa banyak, dan kapan dibutuhkan?<br/>(Forecast, Sales Demand, MPS, MRP, Rough-Cut Capacity)"]
+        L2["(2) Production Scheduling (Penjadwalan Operasional)<br/>Mesin mana yang mengeksekusi dan urutan operasi mana yang dijalankan?<br/>(Finite/Infinite Capacity Scheduling, Dispatching, Sequencing)"]
+        L3["(3) Production Execution (Eksekusi & Transaksi Pabrik)<br/>Penerbitan dokumen kerja, pengeluaran bahan, dan konfirmasi output.<br/>(Manufacturing Order, Material Issue, Operation Confirmation)"]
+        L4["(4) Shop Floor Control (Pengawasan Lapangan Real-Time)<br/>Pelacakan operator mesin, downtime, status mesin IoT, dan defect rate.<br/>(MES Integration, Andon, Operator Workstations)"]
     end
     L1 --> L2
     L2 --> L3

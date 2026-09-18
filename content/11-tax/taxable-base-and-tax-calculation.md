@@ -34,17 +34,17 @@ Mesin kalkulasi ERP mengeksekusi perhitungan pajak melalui urutan pemrosesan mat
 
 ```mermaid
 flowchart TD
-    A["1. Gross Line Amount (Qty x Unit Price)"] --> B["2. Potongan Harga Komersial (Trade Discount)"]
-    B --> C["3. Net Line Amount"]
+    A["(1) Gross Line Amount (Qty x Unit Price)"] --> B["(2) Potongan Harga Komersial (Trade Discount)"]
+    B --> C["(3) Net Line Amount"]
     C --> D{"Skema Penetapan Harga?"}
     D -- "Tax Exclusive (Pajak Belum Termasuk)" --> E1["DPP = Net Line Amount"]
     D -- "Tax Inclusive (Pajak Sudah Termasuk)" --> E2["DPP = Net Line Amount / (1 + Tarif Pajak)"]
-    E1 --> F["4. Evaluasi DPP Khusus (Nilai Lain / Proporsional)"]
+    E1 --> F["(4) Evaluasi DPP Khusus (Nilai Lain / Proporsional)"]
     E2 --> F
-    F --> G["5. Perkalian Tarif: Tax Amount = DPP x Rate%"]
-    G --> H["6. Penerapan Aturan Pembulatan (Rounding Engine)"]
-    H --> I["7. Konversi Mata Uang Asing (Kurs KMK jika Valas)"]
-    I --> J["8. Agregasi Header & Rekonsiliasi Line vs Header"]
+    F --> G["(5) Perkalian Tarif: Tax Amount = DPP x Rate%"]
+    G --> H["(6) Penerapan Aturan Pembulatan (Rounding Engine)"]
+    H --> I["(7) Konversi Mata Uang Asing (Kurs KMK jika Valas)"]
+    I --> J["(8) Agregasi Header & Rekonsiliasi Line vs Header"]
 ```
 
 ---

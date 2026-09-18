@@ -15,11 +15,11 @@ Modul analitik keuangan dalam ERP mengubah catatan transaksi buku besar mentah (
 ```mermaid
 graph TD
     subgraph AnalyticalMethods["Metode Analisis Finansial di ERP"]
-        Horiz["1. Horizontal / Trend Analysis (YoY / MoM)"]
-        Vert["2. Vertical / Common-Size (% Penjualan / % Aset)"]
-        Var["3. Variance Analysis (Price vs Volume Effect)"]
-        Ratio["4. Financial Ratio Matrix (Likuiditas & Solvabilitas)"]
-        DuPont["5. DuPont Decomposition (ROE Drivers)"]
+        Horiz["(1) Horizontal / Trend Analysis (YoY / MoM)"]
+        Vert["(2) Vertical / Common-Size (% Penjualan / % Aset)"]
+        Var["(3) Variance Analysis (Price vs Volume Effect)"]
+        Ratio["(4) Financial Ratio Matrix (Likuiditas & Solvabilitas)"]
+        DuPont["(5) DuPont Decomposition (ROE Drivers)"]
     end
     ERP_GL["Buku Besar Umum & Transaksi Operasional"] --> AnalyticalMethods
 ```

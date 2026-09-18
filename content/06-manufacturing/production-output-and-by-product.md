@@ -29,10 +29,10 @@ flowchart TD
     Input["Bahan Baku Masukan (Raw Materials & Conversion Cost)<br/>Total Nilai: Rp10.000.000"]
     --> Process["Proses Konversi Manufaktur (Shop Floor Process)"]
     
-    Process --> MainOut["1. Primary Finished Good (Produk Utama)<br/>Tujuan komersial utama pembuatan pesanan (Contoh: Laptop Pro)"]
-    Process --> CoProd["2. Co-Products (Produk Bersama)<br/>Produk sampingan bernilai tinggi yang dihasilkan simultan"]
-    Process --> ByProd["3. By-Products (Produk Sampingan)<br/>Keluaran residu bernilai komersial minor (Contoh: Potongan Logam)"]
-    Process --> Scrap["4. Scrap / Waste (Afkir & Limbah)<br/>Material cacat tanpa nilai ekonomis wajar (Contoh: Serbuk Gergaji)"]
+    Process --> MainOut["(1) Primary Finished Good (Produk Utama)<br/>Tujuan komersial utama pembuatan pesanan (Contoh: Laptop Pro)"]
+    Process --> CoProd["(2) Co-Products (Produk Bersama)<br/>Produk sampingan bernilai tinggi yang dihasilkan simultan"]
+    Process --> ByProd["(3) By-Products (Produk Sampingan)<br/>Keluaran residu bernilai komersial minor (Contoh: Potongan Logam)"]
+    Process --> Scrap["(4) Scrap / Waste (Afkir & Limbah)<br/>Material cacat tanpa nilai ekonomis wajar (Contoh: Serbuk Gergaji)"]
 ```
 
 ---

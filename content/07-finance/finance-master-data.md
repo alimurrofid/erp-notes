@@ -25,13 +25,13 @@ Sistem ERP enterprise membedakan secara tegas antara konfigurasi sistem, data in
 
 ```mermaid
 flowchart TD
-    subgraph Config["1. System Configuration (Aturan Perilaku Global)"]
+    subgraph Config["(1) System Configuration (Aturan Perilaku Global)"]
         C1["Aturan Pembulatan Mata Uang (Rounding Rules)"]
         C2["Kebijakan Toleransi Anggaran (Strict vs Soft Control)"]
         C3["Metode Rekonsiliasi Bank Otomatis (Matching Rules)"]
     end
 
-    subgraph Master["2. Finance Master Data (Entitas & Referensi Berkelanjutan)"]
+    subgraph Master["(2) Finance Master Data (Entitas & Referensi Berkelanjutan)"]
         M1["Entitas Legal Perusahaan (Legal Entities / Companies)"]
         M2["Institusi Bank & Rekening Perusahaan (Bank Accounts)"]
         M3["Kalender Fiskal & Periode Buku (Fiscal Calendar & Periods)"]
@@ -39,7 +39,7 @@ flowchart TD
         M5["Mata Uang & Tabel Kurs Valas (Currencies & FX Rates)"]
     end
 
-    subgraph Trans["3. Financial Transaction Data (Peristiwa Bisnis Atomik)"]
+    subgraph Trans["(3) Financial Transaction Data (Peristiwa Bisnis Atomik)"]
         T1["Proposal & Batch Pembayaran (Payment Batches)"]
         T2["Mutasi Rekening Koran Bank (Bank Statements)"]
         T3["Jurnal Realisasi Anggaran (Budget Consumptions)"]

@@ -19,10 +19,10 @@ Dalam perancangan dan operasional ERP, sering terjadi kerancuan antara istilah *
 
 ```mermaid
 flowchart TD
-    BE["1. Business Event<br/>(Pelanggan memesan barang via telepon/email)"]
-    --> BD["2. Business Document<br/>(Staf membuat dokumen Sales Order #SO-001)"]
-    --> TR["3. System Transaction<br/>(User menekan tombol 'Confirm' -> Validasi Credit Limit & Stok)"]
-    --> BI["4. Business / Accounting Impact<br/>(Stok dialokasikan / reserved; belum ada jurnal keuangan)"]
+    BE["(1) Business Event<br/>(Pelanggan memesan barang via telepon/email)"]
+    --> BD["(2) Business Document<br/>(Staf membuat dokumen Sales Order #SO-001)"]
+    --> TR["(3) System Transaction<br/>(User menekan tombol 'Confirm' -> Validasi Credit Limit & Stok)"]
+    --> BI["(4) Business / Accounting Impact<br/>(Stok dialokasikan / reserved; belum ada jurnal keuangan)"]
 
     BE2["1b. Business Event<br/>(Gudang menyerahkan barang ke kurir ekspedisi)"]
     --> BD2["2b. Business Document<br/>(Penerbitan Surat Jalan / Delivery Note #DN-001)"]
@@ -56,16 +56,16 @@ sequenceDiagram
     participant A as Accounting / AR
     participant B as Bank / Treasury
 
-    C->>S: 1. Event: Customer memesan 1 unit barang
+    C->>S: (1) Event: Customer memesan 1 unit barang
     Note over S: Document: Sales Order (Draft -> Confirmed)<br/>Impact: Stok dialokasikan (Reserved)
     
-    W->>C: 2. Event: Barang fisik dikirim ke customer
+    W->>C: (2) Event: Barang fisik dikirim ke customer
     Note over W: Document: Delivery Note / Goods Issue (Posted)<br/>Impact: Stok gudang berkurang 1 unit<br/>Accounting: Dr. HPP / Cr. Persediaan
     
-    S->>C: 3. Event: Faktur tagihan dikirim ke customer
+    S->>C: (3) Event: Faktur tagihan dikirim ke customer
     Note over A: Document: Sales Invoice (Posted)<br/>Accounting: Dr. Piutang Usaha / Cr. Pendapatan & PPN
     
-    C->>B: 4. Event: Customer mentransfer pembayaran via bank
+    C->>B: (4) Event: Customer mentransfer pembayaran via bank
     Note over B: Document: Payment Receipt (Posted)<br/>Accounting: Dr. Bank / Cr. Piutang Usaha<br/>Impact: Piutang lunas (Cleared)
 ```
 

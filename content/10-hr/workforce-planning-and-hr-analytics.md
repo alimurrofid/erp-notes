@@ -28,14 +28,14 @@ ERP mengelola siklus perencanaan tenaga kerja melalui integrasi data berjenjang:
 
 ```mermaid
 flowchart TD
-    STRAT["Rencana Bisnis Strategis Korporasi (Target Revenue & Proyek)"] --> HC_PLAN["1. Rencana Formasi Karyawan (Approved Headcount Plan)"]
-    HC_PLAN --> SAL_PLAN["2. Rencana Biaya Kompensasi (Salary & Allowances Plan)"]
-    SAL_PLAN --> BEN_PLAN["3. Rencana Tunjangan & Jaminan Sosial (Benefits Plan)"]
-    BEN_PLAN --> WF_BUDGET["4. Anggaran Tenaga Kerja Terpadu (Workforce Budget)"]
+    STRAT["Rencana Bisnis Strategis Korporasi (Target Revenue & Proyek)"] --> HC_PLAN["(1) Rencana Formasi Karyawan (Approved Headcount Plan)"]
+    HC_PLAN --> SAL_PLAN["(2) Rencana Biaya Kompensasi (Salary & Allowances Plan)"]
+    SAL_PLAN --> BEN_PLAN["(3) Rencana Tunjangan & Jaminan Sosial (Benefits Plan)"]
+    BEN_PLAN --> WF_BUDGET["(4) Anggaran Tenaga Kerja Terpadu (Workforce Budget)"]
     
     WF_BUDGET --> EXEC["Eksekusi Rekrutmen & Operasional Penggajian"]
     EXEC --> ACTUAL["Biaya Riil Penggajian & Jumlah Karyawan Aktual"]
-    WF_BUDGET & ACTUAL --> VAR["5. Analisis Varians Anggaran Tenaga Kerja (Labor Variance)"]
+    WF_BUDGET & ACTUAL --> VAR["(5) Analisis Varians Anggaran Tenaga Kerja (Labor Variance)"]
 ```
 
 ### Komponen Anggaran Belanja Tenaga Kerja (Workforce Budget Elements):

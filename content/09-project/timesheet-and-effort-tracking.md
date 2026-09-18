@@ -10,15 +10,15 @@ Dalam konteks ERP enterprise, *timesheet* bukan sekadar kartu absensi kehadiran 
 
 ```mermaid
 flowchart TD
-    subgraph Input["1. Input Jam Kerja"]
+    subgraph Input["(1) Input Jam Kerja"]
         TS["Staf Mengisi Timesheet:<br/>Proyek: PRJ-ERP-2026-001 | Task: 2.1<br/>Durasi: 8 Jam | Status: Billable"]
     end
 
-    subgraph Approval["2. Workflow Otorisasi"]
+    subgraph Approval["(2) Workflow Otorisasi"]
         PM["Persetujuan Manajer Proyek (PM)<br/>(Review Validitas Output & Aktivitas)"]
     end
 
-    subgraph ParallelPosting["3. Pemrosesan Paralel di ERP"]
+    subgraph ParallelPosting["(3) Pemrosesan Paralel di ERP"]
         CostRun["Akuntansi Biaya Internal:<br/>8 Jam x Rp120.000 (Cost Rate)<br/>= Rp960.000 (Direct Labor Cost)"]
         BillRun["Penagihan Piutang Klien:<br/>8 Jam x Rp300.000 (Billing Rate)<br/>= Rp2.400.000 (Billing Backlog)"]
     end

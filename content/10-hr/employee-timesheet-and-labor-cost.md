@@ -30,13 +30,13 @@ ERP enterprise memisahkan biaya pegawai ke dalam dua sudut pandang yang berbeda:
 flowchart TD
     EMP["Biaya Total Tenaga Kerja Pegawai (Workforce Cost)"]
     
-    EMP --> PERS1["1. Perspektif Penggajian (Payroll Perspective)<br/>'Berapa yang dibayarkan ke/atas nama pegawai?'"]
+    EMP --> PERS1["(1) Perspektif Penggajian (Payroll Perspective)<br/>'Berapa yang dibayarkan ke/atas nama pegawai?'"]
     PERS1 --> P1["Gaji Pokok & Tunjangan Tetap"]
     PERS1 --> P2["Kompensasi Lembur"]
     PERS1 --> P3["Kontribusi Jaminan Sosial Perusahaan (BPJS)"]
     P1 & P2 & P3 --> PNET["Total Biaya Pemberi Kerja (Total Employer Cost)"]
     
-    EMP --> PERS2["2. Perspektif Akuntansi Biaya (Cost Accounting Perspective)<br/>'Ke mana nilai kerja tersebut diserap?'"]
+    EMP --> PERS2["(2) Perspektif Akuntansi Biaya (Cost Accounting Perspective)<br/>'Ke mana nilai kerja tersebut diserap?'"]
     PERS2 --> T1["Proyek Klien: PRJ-ERP-2026-001 (80 Jam -> Debit Project WIP / Contract Cost)"]
     PERS2 --> T2["Operasional Departemen IT (80 Jam -> Debit Biaya Overhead)"]
     T1 & T2 --> TABS["Total Biaya Tenaga Kerja Terserap (Absorbed Labor Cost)"]

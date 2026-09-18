@@ -40,26 +40,26 @@ Dalam perancangan ERP, pemahaman terhadap dualisme pembukuan adalah mutlak:
 
 ```mermaid
 flowchart TD
-    subgraph YearEndClosing["1. Penutupan Buku Komersial (Phase 3 & 8)"]
+    subgraph YearEndClosing["(1) Penutupan Buku Komersial (Phase 3 & 8)"]
         Y1["Finalisasi Jurnal Penyesuaian & Akrual"]
         Y2["Penyusunan Neraca Percobaan (Trial Balance)"]
         Y3["Perolehan Laba Komersial Sebelum Pajak (EBT)"]
     end
 
-    subgraph FiscalReconciliation["2. Rekonsiliasi Fiskal (Tax Module)"]
+    subgraph FiscalReconciliation["(2) Rekonsiliasi Fiskal (Tax Module)"]
         R1["Tagging & Analisis Akun Laba Rugi"]
         R2["Identifikasi Koreksi Fiskal Positif"]
         R3["Identifikasi Koreksi Fiskal Negatif"]
         R4["Pembedaan Beda Tetap vs Beda Waktu (Temporer)"]
     end
 
-    subgraph TaxCalculation["3. Perhitungan Pajak Kini & Tangguhan"]
+    subgraph TaxCalculation["(3) Perhitungan Pajak Kini & Tangguhan"]
         C1["Penetapan Penghasilan Kena Pajak (PKP)"]
         C2["Kalkulasi Beban PPh Badan (Tarif Pasal 17 / 31E)"]
         C3["Perhitungan Aset/Liabilitas Pajak Tangguhan (IAS 12)"]
     end
 
-    subgraph CreditSettlement["4. Kompensasi Kredit Pajak & Pelaporan"]
+    subgraph CreditSettlement["(4) Kompensasi Kredit Pajak & Pelaporan"]
         S1["Kompensasi Kredit Pajak (PPh 22, 23, 25)"]
         S2["Penentuan Kurang Bayar (PPh 29) / Lebih Bayar (PPh 28A)"]
         S3["Penyusunan SPT Tahunan 1771 & Pembayaran Billing PPh 29"]

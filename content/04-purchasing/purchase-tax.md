@@ -32,13 +32,13 @@ Sistem ERP mengevaluasi perlakuan pajak pembelian melalui matriks aturan otomati
 
 ```mermaid
 flowchart TD
-    Supp["1. Supplier Tax Profile<br/>(PKP / Non-PKP, Wajib Pungut, Asing / Domestik)"]
+    Supp["(1) Supplier Tax Profile<br/>(PKP / Non-PKP, Wajib Pungut, Asing / Domestik)"]
     --> Engine{"ERP Tax Determination Engine"}
 
-    Item["2. Item Tax Classification<br/>(Barang Kena Pajak, Jasa Objek PPh 23, Barang Bebas PPN)"]
+    Item["(2) Item Tax Classification<br/>(Barang Kena Pajak, Jasa Objek PPh 23, Barang Bebas PPN)"]
     --> Engine
 
-    Use["3. Business Purpose / Intended Use<br/>(Operasional Produktif vs Konsumsi Pribadi Direksi)"]
+    Use["(3) Business Purpose / Intended Use<br/>(Operasional Produktif vs Konsumsi Pribadi Direksi)"]
     --> Engine
 
     Engine --> Out1["PPN Masukan Dapat Dikreditkan (Asset)"]

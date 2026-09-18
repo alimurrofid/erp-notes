@@ -22,19 +22,19 @@ Perbedaan saldo antara catatan buku perusahaan dan rekening koran bank hampir se
 flowchart TD
     Diff["Penyebab Selisih Rekonsiliasi Bank"]
     
-    subgraph TimingDiff["1. Perbedaan Waktu (Timing Differences)"]
+    subgraph TimingDiff["(1) Perbedaan Waktu (Timing Differences)"]
         T1["Setoran dalam Perjalanan (Deposits in Transit)<br/>Sudah dicatat perusahaan (+), belum masuk rekening bank."]
         T2["Cek Beredar (Outstanding Checks)<br/>Sudah dicatat perusahaan (-), belum dicairkan penerima di bank."]
     end
 
-    subgraph DirectBank["2. Transaksi Langsung Bank (Unrecorded in Books)"]
+    subgraph DirectBank["(2) Transaksi Langsung Bank (Unrecorded in Books)"]
         B1["Biaya Administrasi & Pajak Bunga Bank (-)<br/>Sudah didebit bank, belum dicatat perusahaan."]
         B2["Pendapatan Bunga / Jasa Giro (+)<br/>Sudah dikredit bank, belum dicatat perusahaan."]
         B3["Cek Kosong / Tolakan Kliring (NSF Checks) (-)<br/>Pelanggan membayar dengan cek yang dananya tidak mencukupi."]
         B4["Direct Transfer / Auto-Debit (+/-)<br/>Penerimaan atau pembayaran otomatis via virtual account."]
     end
 
-    subgraph Errors["3. Kesalahan Input (Errors)"]
+    subgraph Errors["(3) Kesalahan Input (Errors)"]
         E1["Kesalahan tulis angka / akun oleh staf perusahaan atau bank."]
     end
 

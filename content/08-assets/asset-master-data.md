@@ -9,10 +9,10 @@ Master data aset bertindak sebagai jembatan yang menghubungkan keberadaan fisik 
 ```mermaid
 graph TD
     subgraph AssetMasterRecord["Struktur Rekaman Master Aset Tetap"]
-        ID["1. Identifikasi & Teknis<br/>(Asset ID, Tag/Barcode, Serial No, Model, Warranty)"]
-        Org["2. Organisasi & Tanggung Jawab<br/>(Company, Cost Center, Lokasi, Custodian)"]
-        Dates["3. Penanggalan Siklus Hidup<br/>(Acquisition, Capitalization, In-Service Dates)"]
-        Fin["4. Buku Depresiasi & Akuntansi<br/>(Cost, Residual Value, Useful Life, GL Mapping)"]
+        ID["(1) Identifikasi & Teknis<br/>(Asset ID, Tag/Barcode, Serial No, Model, Warranty)"]
+        Org["(2) Organisasi & Tanggung Jawab<br/>(Company, Cost Center, Lokasi, Custodian)"]
+        Dates["(3) Penanggalan Siklus Hidup<br/>(Acquisition, Capitalization, In-Service Dates)"]
+        Fin["(4) Buku Depresiasi & Akuntansi<br/>(Cost, Residual Value, Useful Life, GL Mapping)"]
     end
     AssetMasterRecord --> Status["Status Siklus Hidup: PLANNED -> ACQUIRED -> IN_SERVICE -> DISPOSED"]
 ```

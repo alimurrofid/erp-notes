@@ -19,16 +19,16 @@ Secara konseptual di seluruh dunia, pajak dalam transaksi bisnis dibagi menjadi 
 ```mermaid
 flowchart TD
     subgraph IndirectTaxes["Pajak Tidak Langsung (VAT / GST / Sales Tax)"]
-        Output["1. Output Tax (Pajak Keluaran)<br/>Pajak yang dipungut dari pembeli saat menjual barang/jasa.<br/>=> LIABILITAS (Kewajiban menyetor ke kas negara)"]
-        Input["2. Input Tax (Pajak Masukan)<br/>Pajak yang dibayar ke pemasok saat membeli barang/jasa.<br/>=> ASET / TAX RECEIVABLE (Klaim pengurang utang pajak)"]
-        Net["3. Net Settlement (Penyelesaian Masa Pajak)<br/>Output Tax - Input Tax = Utang Pajak Bersih / Lebih Bayar"]
+        Output["(1) Output Tax (Pajak Keluaran)<br/>Pajak yang dipungut dari pembeli saat menjual barang/jasa.<br/>=> LIABILITAS (Kewajiban menyetor ke kas negara)"]
+        Input["(2) Input Tax (Pajak Masukan)<br/>Pajak yang dibayar ke pemasok saat membeli barang/jasa.<br/>=> ASET / TAX RECEIVABLE (Klaim pengurang utang pajak)"]
+        Net["(3) Net Settlement (Penyelesaian Masa Pajak)<br/>Output Tax - Input Tax = Utang Pajak Bersih / Lebih Bayar"]
         Output --> Net
         Input --> Net
     end
 
     subgraph DirectTaxes["Pajak Langsung & Pemotongan (Withholding & Income Tax)"]
-        WHT["4. Withholding Tax (Pajak Pemotongan)<br/>Memotong pajak pihak lain saat membayar jasa/sewa.<br/>=> LIABILITAS (Utang PPh Pemotongan)"]
-        CIT["5. Corporate Income Tax (Pajak Penghasilan Badan)<br/>Pajak atas laba bersih fiskal tahunan entitas (IAS 12)."]
+        WHT["(4) Withholding Tax (Pajak Pemotongan)<br/>Memotong pajak pihak lain saat membayar jasa/sewa.<br/>=> LIABILITAS (Utang PPh Pemotongan)"]
+        CIT["(5) Corporate Income Tax (Pajak Penghasilan Badan)<br/>Pajak atas laba bersih fiskal tahunan entitas (IAS 12)."]
     end
 ```
 

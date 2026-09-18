@@ -16,10 +16,10 @@ Dalam arsitektur Corporate Performance Management (CPM) modern yang terhubung ke
 ```mermaid
 graph TD
     subgraph PlanningHierarchy["Hierarki Perencanaan Finansial ERP"]
-        Strat["1. Strategic Plan (Rencana Jangka Panjang 3-5 Tahun)"]
-        Budget["2. Annual Master Budget (Target Statis Tahunan)"]
-        Roll["3. Rolling Forecast (Prakiraan Dinamis 4-6 Kuartal)"]
-        WhatIf["4. Scenario Modeling (Base / Optimistic / Stress Case)"]
+        Strat["(1) Strategic Plan (Rencana Jangka Panjang 3-5 Tahun)"]
+        Budget["(2) Annual Master Budget (Target Statis Tahunan)"]
+        Roll["(3) Rolling Forecast (Prakiraan Dinamis 4-6 Kuartal)"]
+        WhatIf["(4) Scenario Modeling (Base / Optimistic / Stress Case)"]
     end
     Strat --> Budget
     Budget --> Roll

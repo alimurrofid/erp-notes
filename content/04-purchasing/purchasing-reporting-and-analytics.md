@@ -36,19 +36,19 @@ Metrik dalam modul Purchasing diklasifikasikan ke dalam tiga domain utama:
 flowchart TD
     subgraph Analytics["Purchasing Analytics Framework"]
         direction TB
-        subgraph Ops["1. Operational Metrics (Efisiensi Proses)"]
+        subgraph Ops["(1) Operational Metrics (Efisiensi Proses)"]
             M1["PO Cycle Time (PR to PO)"]
             M2["Open PO & Backlog"]
             M3["Order Fulfillment Rate"]
         end
         
-        subgraph Sup["2. Supplier Performance (Kinerja Vendor)"]
+        subgraph Sup["(2) Supplier Performance (Kinerja Vendor)"]
             M4["On-Time Delivery (OTD)"]
             M5["On-Time In-Full (OTIF)"]
             M6["Quality Acceptance & Return Rate"]
         end
         
-        subgraph Fin["3. Financial & Cost Metrics (Finansial & Biaya)"]
+        subgraph Fin["(3) Financial & Cost Metrics (Finansial & Biaya)"]
             M7["Spend Analysis by Category / Vendor"]
             M8["Purchase Price Variance (PPV)"]
             M9["Payment Term Compliance & Discount Captured"]

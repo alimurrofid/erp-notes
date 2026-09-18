@@ -18,10 +18,10 @@ $$\text{Available Budget} = \text{Approved Budget} - \text{Actual Expenditure} -
 ```mermaid
 flowchart LR
     subgraph BudgetLifecycle["Siklus Konsumsi Anggaran di ERP"]
-        Appr["1. Approved Budget<br/>(Pagu Rp100 Juta)"]
-        Comm["2. Commitment (PO/PR)<br/>(Terkunci Rp30 Juta)"]
-        Act["3. Actual (Invoice/GRN)<br/>(Terealisasi Rp50 Juta)"]
-        Avail["4. Available Budget<br/>(Tersisa Rp20 Juta)"]
+        Appr["(1) Approved Budget<br/>(Pagu Rp100 Juta)"]
+        Comm["(2) Commitment (PO/PR)<br/>(Terkunci Rp30 Juta)"]
+        Act["(3) Actual (Invoice/GRN)<br/>(Terealisasi Rp50 Juta)"]
+        Avail["(4) Available Budget<br/>(Tersisa Rp20 Juta)"]
     end
     Appr --> Comm
     Comm --> Act

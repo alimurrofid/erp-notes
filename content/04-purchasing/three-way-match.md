@@ -30,11 +30,11 @@ Penerapan kontrol 3-Way Match dalam ERP bertujuan untuk:
 
 ```mermaid
 flowchart TD
-    PO["1. Purchase Order (PO)<br/>Item: Laptop Pro<br/>Ordered Qty: 10 Unit<br/>Unit Price: Rp700.000<br/>Payment Terms: Net 30"]
+    PO["(1) Purchase Order (PO)<br/>Item: Laptop Pro<br/>Ordered Qty: 10 Unit<br/>Unit Price: Rp700.000<br/>Payment Terms: Net 30"]
     
-    GR["2. Goods Receipt (GR)<br/>Item: Laptop Pro<br/>Accepted Qty: 10 Unit<br/>Rejected Qty: 0 Unit<br/>Receiving Wh: WH-01"]
+    GR["(2) Goods Receipt (GR)<br/>Item: Laptop Pro<br/>Accepted Qty: 10 Unit<br/>Rejected Qty: 0 Unit<br/>Receiving Wh: WH-01"]
     
-    VB["3. Vendor Bill (Tagihan)<br/>Item: Laptop Pro<br/>Invoiced Qty: 10 Unit<br/>Invoiced Price: Rp700.000<br/>Total Tax: Rp770.000 (11%)"]
+    VB["(3) Vendor Bill (Tagihan)<br/>Item: Laptop Pro<br/>Invoiced Qty: 10 Unit<br/>Invoiced Price: Rp700.000<br/>Total Tax: Rp770.000 (11%)"]
     
     PO -.-> Engine{"ERP 3-Way Matching Engine<br/>(Pencocokan Kuantitas & Harga)"}
     GR -.-> Engine

@@ -85,29 +85,29 @@ sequenceDiagram
     participant DJP as Otoritas Pajak (DJP/Coretax)
     participant Bank as Bank Persepsi (Treasury)
 
-    Note over ERP: 1. Siklus Pembelian (Procure-to-Pay)
+    Note over ERP: (1) Siklus Pembelian (Procure-to-Pay)
     V->>ERP: Kirim Laptop Pro 10 unit @ Rp700.000 (DPP: Rp7.000.000)
     ERP->>ERP: Akui Utang AP Rp7.770.000 & PPN Masukan Rp770.000 (Creditable)
     V->>ERP: Serahkan Faktur Pajak Masukan (Verifikasi QR Valid)
 
-    Note over ERP: 2. Siklus Penjualan (Order-to-Cash)
+    Note over ERP: (2) Siklus Penjualan (Order-to-Cash)
     ERP->>C: Kirim Laptop Pro 10 unit @ Rp1.000.000 (DPP: Rp10.000.000)
     ERP->>DJP: Buat Faktur Pajak (Nomor DUMMY-FP-001 via Coretax / mekanisme e-Faktur)
     DJP-->>ERP: Approval Sukses (PPN Keluaran Terutang: Rp1.100.000)
     ERP->>C: Tagih Piutang AR Rp11.100.000 (+Faktur Pajak)
 
-    Note over ERP: 3. Siklus Jasa & Withholding Tax
+    Note over ERP: (3) Siklus Jasa & Withholding Tax
     ERP->>ERP: Tagihan Pemeliharaan Server Rp10.000.000 dipotong PPh 23 (2% = Rp200.000)
     ERP->>DJP: Generate Bukti Pemotongan Unifikasi (DUMMY-BUPOT-001) untuk Vendor Servis
 
-    Note over ERP: 4. Penutupan Bulanan & Settlement PPN
+    Note over ERP: (4) Penutupan Bulanan & Settlement PPN
     ERP->>ERP: Rekonsiliasi 3 Arah PPN: Keluaran Rp1.100.000 vs Masukan Rp770.000
     ERP->>ERP: Posting Jurnal Settlement: Utang PPN Kurang Bayar Rp330.000
     ERP->>DJP: Request Kode Billing PPN (DUMMY-BILLING-001, KAP 411211 KJS 100)
     ERP->>Bank: Bayar Kas Rp330.000 -> Diterima NTPN DUMMY-NTPN-001
     ERP->>DJP: Lapor SPT Masa PPN via Coretax -> Terbit BPE DUMMY-BPE-PPN-001 & Kunci Periode
 
-    Note over ERP: 5. Penutupan Tahunan & PPh Badan
+    Note over ERP: (5) Penutupan Tahunan & PPh Badan
     ERP->>ERP: Laba Komersial EBT: Rp100.000.000
     ERP->>ERP: Rekonsiliasi Fiskal: Positif Rp10.000.000, Negatif Rp5.000.000 -> PKP Rp105.000.000
     ERP->>ERP: Beban Pajak Kini (22% x Rp105.000.000): Rp23.100.000

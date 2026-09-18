@@ -26,9 +26,9 @@ Dalam sistem ERP enterprise, pengelolaan produksi dipisahkan ke dalam tiga cakup
 ```mermaid
 flowchart LR
     subgraph Levels["Tiga Dimensi Manajemen Produksi"]
-        P1["1. Planning (MPS / S&OP)<br/>Cakupan: Mingguan / Bulanan (Horizon 3–12 Bulan)<br/>Fokus: Keseimbangan Agregat Permintaan vs Kapasitas Pabrik.<br/>Hasil: Rekomendasi Pesanan Rencana (Planned Supply)."]
-        --> P2["2. Scheduling (Penjadwalan Operasional)<br/>Cakupan: Harian / Jam (Horizon 1–14 Hari)<br/>Fokus: Penempatan Pesanan pada Mesin & Urutan Kerja Tertentu.<br/>Hasil: Urutan Antrean Mesin (Machine Dispatch List)."]
-        --> P3["3. Execution (Lantai Pabrik / SFC)<br/>Cakupan: Real-Time / Menit<br/>Fokus: Gerakan Fisik Nyata, Pengambilan Bahan, Operasi Operator.<br/>Hasil: Catatan Transaksi Aktual (Actual Labor, Material, Output)."]
+        P1["(1) Planning (MPS / S&OP)<br/>Cakupan: Mingguan / Bulanan (Horizon 3–12 Bulan)<br/>Fokus: Keseimbangan Agregat Permintaan vs Kapasitas Pabrik.<br/>Hasil: Rekomendasi Pesanan Rencana (Planned Supply)."]
+        --> P2["(2) Scheduling (Penjadwalan Operasional)<br/>Cakupan: Harian / Jam (Horizon 1–14 Hari)<br/>Fokus: Penempatan Pesanan pada Mesin & Urutan Kerja Tertentu.<br/>Hasil: Urutan Antrean Mesin (Machine Dispatch List)."]
+        --> P3["(3) Execution (Lantai Pabrik / SFC)<br/>Cakupan: Real-Time / Menit<br/>Fokus: Gerakan Fisik Nyata, Pengambilan Bahan, Operasi Operator.<br/>Hasil: Catatan Transaksi Aktual (Actual Labor, Material, Output)."]
     end
 ```
 
@@ -45,8 +45,8 @@ ERP mengklasifikasikan kebutuhan material ke dalam dua kategori mendasar:
 ```mermaid
 flowchart TD
     subgraph DemandTypes["Klasifikasi Permintaan Manufaktur"]
-        Indep["1. Independent Demand (Permintaan Bebas)<br/>Berasal dari luar pabrik (Pelanggan / Pasar).<br/>Dipengaruhi oleh perilaku konsumen dan fluktuasi pasar.<br/>Contoh: Laptop Pro Jadi (100 Unit)"]
-        -->|"Diledakkan Melalui BOM"| Dep["2. Dependent Demand (Permintaan Terikat)<br/>Dihitung secara matematis dari kebutuhan produk induk.<br/>Berasal dari dalam pabrik berdasarkan struktur resep BOM.<br/>Contoh: 100 Chipset, 200 RAM, 400 IC Power"]
+        Indep["(1) Independent Demand (Permintaan Bebas)<br/>Berasal dari luar pabrik (Pelanggan / Pasar).<br/>Dipengaruhi oleh perilaku konsumen dan fluktuasi pasar.<br/>Contoh: Laptop Pro Jadi (100 Unit)"]
+        -->|"Diledakkan Melalui BOM"| Dep["(2) Dependent Demand (Permintaan Terikat)<br/>Dihitung secara matematis dari kebutuhan produk induk.<br/>Berasal dari dalam pabrik berdasarkan struktur resep BOM.<br/>Contoh: 100 Chipset, 200 RAM, 400 IC Power"]
     end
 ```
 

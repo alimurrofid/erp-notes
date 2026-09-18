@@ -31,20 +31,20 @@ Penjualan merupakan motor penggerak dari aliran nilai utama **Order to Cash (O2C
 ```mermaid
 flowchart LR
     subgraph CustomerFacing["Customer-Facing (Front-End)"]
-        Inq["1. Customer Inquiry"]
-        --> Quot["2. Sales Quotation"]
-        --> SO["3. Sales Order"]
+        Inq["(1) Customer Inquiry"]
+        --> Quot["(2) Sales Quotation"]
+        --> SO["(3) Sales Order"]
     end
 
     subgraph InternalOps["Internal Operations (Back-End)"]
-        SO --> Ful["4. Fulfillment & Picking"]
-        Ful --> Del["5. Shipping & Delivery"]
+        SO --> Ful["(4) Fulfillment & Picking"]
+        Ful --> Del["(5) Shipping & Delivery"]
     end
 
     subgraph FinancialSettlement["Financial & Accounting"]
-        Del --> Inv["6. Customer Invoice"]
-        Inv --> Pay["7. Payment Collection"]
-        Pay --> Rec["8. Bank Reconciliation"]
+        Del --> Inv["(6) Customer Invoice"]
+        Inv --> Pay["(7) Payment Collection"]
+        Pay --> Rec["(8) Bank Reconciliation"]
     end
 ```
 
@@ -81,11 +81,11 @@ $$\mathbf{Sales\ Order \neq Customer\ Invoice \neq Revenue\ Recognition \neq Cas
 
 ```mermaid
 flowchart TD
-    SO["1. Sales Order (SO)<br/>Komitmen komersial hukum.<br/>TIDAK ADA pengakuan utang/piutang/pendapatan.<br/>Hanya reservasi kuantitas stok."]
-    --> DO["2. Delivery Order (DO)<br/>Penyerahan fisik barang.<br/>Persediaan berkurang di gudang.<br/>Pengakuan Beban Pokok Penjualan (COGS)."]
-    --> INV["3. Customer Invoice<br/>Hak tagih legal diterbitkan.<br/>Piutang Usaha (AR) bertambah di subledger.<br/>Utang Pajak Keluaran (PPN) diakui."]
-    --> REV["4. Revenue Recognition<br/>Pengakuan manfaat ekonomi (IFRS 15).<br/>Bisa bersamaan dengan DO, bersamaan dengan Invoice,<br/>atau bertahap sepanjang waktu (Over Time)."]
-    --> PAY["5. Payment & Settlement<br/>Uang kas masuk ke rekening bank perusahaan.<br/>Piutang pelanggan ditutup (cleared)."]
+    SO["(1) Sales Order (SO)<br/>Komitmen komersial hukum.<br/>TIDAK ADA pengakuan utang/piutang/pendapatan.<br/>Hanya reservasi kuantitas stok."]
+    --> DO["(2) Delivery Order (DO)<br/>Penyerahan fisik barang.<br/>Persediaan berkurang di gudang.<br/>Pengakuan Beban Pokok Penjualan (COGS)."]
+    --> INV["(3) Customer Invoice<br/>Hak tagih legal diterbitkan.<br/>Piutang Usaha (AR) bertambah di subledger.<br/>Utang Pajak Keluaran (PPN) diakui."]
+    --> REV["(4) Revenue Recognition<br/>Pengakuan manfaat ekonomi (IFRS 15).<br/>Bisa bersamaan dengan DO, bersamaan dengan Invoice,<br/>atau bertahap sepanjang waktu (Over Time)."]
+    --> PAY["(5) Payment & Settlement<br/>Uang kas masuk ke rekening bank perusahaan.<br/>Piutang pelanggan ditutup (cleared)."]
 ```
 
 1. **Sales Order Diterbitkan**: Pelanggan memesan 10 unit laptop seharga Rp10.000.000. Dokumen ini adalah **komitmen komersial**, bukan transaksi akuntansi. Tidak ada akun GL yang didebit atau dikredit.

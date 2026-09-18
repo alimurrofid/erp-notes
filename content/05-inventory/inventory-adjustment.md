@@ -38,13 +38,13 @@ Sistem ERP mengklasifikasikan penyesuaian persediaan ke dalam dua arah mutasi de
 flowchart TD
     Adj["Inventory Adjustment Event"]
     
-    subgraph Pos["1. Penyesuaian Positif (Stock Gain / Increase)"]
+    subgraph Pos["(1) Penyesuaian Positif (Stock Gain / Increase)"]
         G1["Found Stock (Barang ditemukan terselip di rak lain)"]
         G2["Supplier Excess / Bonus (Kelebihan kirim tanpa tagihan)"]
         G3["Data Entry Correction (Koreksi kesalahan input sebelumnya)"]
     end
     
-    subgraph Neg["2. Penyesuaian Negatif (Stock Loss / Decrease / Write-Off)"]
+    subgraph Neg["(2) Penyesuaian Negatif (Stock Loss / Decrease / Write-Off)"]
         L1["Shrinkage & Theft (Penyusutan, pencurian, atau pengutilan)"]
         L2["Physical Damage (Pecah, penyok, tumpah saat penanganan)"]
         L3["Obsolescence & Expiry (Kedaluwarsa, busuk, atau teknologi usang)"]
@@ -73,15 +73,15 @@ Untuk mencegah penyalahgunaan, setiap penyesuaian persediaan wajib melalui alur 
 
 ```mermaid
 flowchart LR
-    Detect["1. Identifikasi Selisih / Kerusakan Fisik"]
-    --> Draft["2. Input Draft Adjustment<br/>Wajib menyertakan Reason Code & Bukti Foto/Berita Acara"]
+    Detect["(1) Identifikasi Selisih / Kerusakan Fisik"]
+    --> Draft["(2) Input Draft Adjustment<br/>Wajib menyertakan Reason Code & Bukti Foto/Berita Acara"]
     --> ValueCheck{Berapa Total Nilai<br/>Moneter Penyesuaian?}
     
     ValueCheck -- "< Rp1.000.000" --> WHMgr["3a. Otorisasi Supervisor / Manajer Gudang"]
     ValueCheck -- "Rp1.000.000 - Rp20.000.000" --> FinMgr["3b. Otorisasi Manajer Keuangan / Controller"]
     ValueCheck -- "> Rp20.000.000" --> Dir["3c. Otorisasi Direktur Keuangan / CFO"]
     
-    WHMgr --> Post["4. Posting Otomatis ke Stock Ledger & General Ledger"]
+    WHMgr --> Post["(4) Posting Otomatis ke Stock Ledger & General Ledger"]
     FinMgr --> Post
     Dir --> Post
 ```

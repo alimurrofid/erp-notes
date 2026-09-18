@@ -58,9 +58,9 @@ Dalam implementasi ERP enterprise, milestone diklasifikasikan ke dalam tiga kate
 ```mermaid
 graph TD
     subgraph MilestoneCategories["Klasifikasi Kategori Milestone ERP"]
-        Tech["1. Technical / Internal Milestone<br/>Kunci Pengendalian Teknis Internal<br/>Contoh: Architecture Design Freeze, Code Complete"]
-        Gov["2. Governance / Contractual Milestone<br/>Pengesahan Formal Stakeholder Klien<br/>Contoh: UAT Sign-Off BAST, Final Commissioning"]
-        Comm["3. Commercial / Billing Milestone<br/>Pemicu Pembentukan Faktur Piutang Penjualan<br/>Contoh: Termin 1 (20%), Termin 2 (30%), Termin 3 (30%)"]
+        Tech["(1) Technical / Internal Milestone<br/>Kunci Pengendalian Teknis Internal<br/>Contoh: Architecture Design Freeze, Code Complete"]
+        Gov["(2) Governance / Contractual Milestone<br/>Pengesahan Formal Stakeholder Klien<br/>Contoh: UAT Sign-Off BAST, Final Commissioning"]
+        Comm["(3) Commercial / Billing Milestone<br/>Pemicu Pembentukan Faktur Piutang Penjualan<br/>Contoh: Termin 1 (20%), Termin 2 (30%), Termin 3 (30%)"]
     end
 ```
 

@@ -26,36 +26,36 @@ Diagram berikut memetakan bagaimana data dan transaksi mengalir melintasi seluru
 
 ```mermaid
 flowchart TD
-    subgraph DemandSide["1. Domain Permintaan Komersial (Phase 4: Sales / O2C)"]
+    subgraph DemandSide["(1) Domain Permintaan Komersial (Phase 4: Sales / O2C)"]
         SO["Sales Order (Pesanan Pelanggan)"]
         FC["Prakiraan Pasar (Demand Forecast)"]
     end
 
-    subgraph PlanningEngine["2. Domain Perencanaan Pabrik (Phase 7: Planning & MRP)"]
+    subgraph PlanningEngine["(2) Domain Perencanaan Pabrik (Phase 7: Planning & MRP)"]
         MPS["Master Production Schedule (MPS)"]
         MRP["Material Requirements Planning (MRP Engine)"]
     end
 
-    subgraph SupplyExecution["3. Domain Pengadaan & Gudang (Phase 5: P2P & Phase 6: WMS)"]
+    subgraph SupplyExecution["(3) Domain Pengadaan & Gudang (Phase 5: P2P & Phase 6: WMS)"]
         PR["Purchase Requisition (PR)"]
         PO["Purchase Order (PO Vendor)"]
         GR["Goods Receipt (Gudang Bahan Baku)"]
         StockVal["Valuasi Persediaan & Landed Cost"]
     end
 
-    subgraph ProductionCore["4. Domain Inti Manufaktur (Phase 7: Production Execution)"]
+    subgraph ProductionCore["(4) Domain Inti Manufaktur (Phase 7: Production Execution)"]
         MO["Manufacturing Order (MO Released)"]
         Issue["Material Issue (Bahan Masuk WIP)"]
         SFC["Shop Floor Operations (Work Center & Labor)"]
         FG_Out["Finished Goods Output (Barang Jadi Selesai)"]
     end
 
-    subgraph FulfillmentSide["5. Domain Pemenuhan Logistik (Phase 4 & 6: Outbound)"]
+    subgraph FulfillmentSide["(5) Domain Pemenuhan Logistik (Phase 4 & 6: Outbound)"]
         FG_Stock["Gudang Barang Jadi (Available ATP)"]
         DO["Delivery Order (Pengiriman ke Pelanggan)"]
     end
 
-    subgraph FinancialAccounting["6. Domain Akuntansi Keuangan (Phase 3: Financials)"]
+    subgraph FinancialAccounting["(6) Domain Akuntansi Keuangan (Phase 3: Financials)"]
         WIP_Acc["Akun Barang Dalam Proses (WIP)"]
         Var_Acc["Akun Varians Produksi (MUV, LEV, PPV)"]
         COGS_Acc["Beban Pokok Penjualan (COGS)"]

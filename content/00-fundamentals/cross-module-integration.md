@@ -27,12 +27,12 @@ Integrasi aliran penjualan menghubungkan modul **Sales**, **Inventory**, **Accou
 
 ```mermaid
 flowchart TD
-    A["1. Sales Module<br/>Customer memesan barang<br/>Sales Order Confirmed"] 
-    -->|Reserve Stock| B["2. Inventory Module<br/>Staf gudang kirim barang<br/>Delivery / Goods Issue"]
-    B -->|Automatic Perpetual Entry| C["3. Accounting (General Ledger)<br/>Persediaan berkurang<br/>Beban HPP diakui"]
-    A -->|Trigger Billing| D["4. Accounting (AR Module)<br/>Faktur diterbitkan<br/>Customer Invoice Posted"]
+    A["(1) Sales Module<br/>Customer memesan barang<br/>Sales Order Confirmed"] 
+    -->|Reserve Stock| B["(2) Inventory Module<br/>Staf gudang kirim barang<br/>Delivery / Goods Issue"]
+    B -->|Automatic Perpetual Entry| C["(3) Accounting (General Ledger)<br/>Persediaan berkurang<br/>Beban HPP diakui"]
+    A -->|Trigger Billing| D["(4) Accounting (AR Module)<br/>Faktur diterbitkan<br/>Customer Invoice Posted"]
     D -->|Posting Revenue & VAT| C
-    D -->|Wait for Payment| E["5. Finance Module<br/>Customer transfer ke Bank<br/>Bank Receipt Posted"]
+    D -->|Wait for Payment| E["(5) Finance Module<br/>Customer transfer ke Bank<br/>Bank Receipt Posted"]
     E -->|Reconcile & Clear AR| D
     E -->|Debit Cash/Bank| C
 ```
@@ -57,13 +57,13 @@ Integrasi aliran pengadaan menghubungkan modul **Purchasing**, **Inventory**, **
 
 ```mermaid
 flowchart TD
-    P1["1. Purchasing Module<br/>PO diterbitkan ke Vendor<br/>Purchase Order Approved"]
-    -->|Pending Receipt| P2["2. Inventory Module<br/>Barang tiba di gudang<br/>Goods Receipt Posted"]
-    P2 -->|Inventory Valuation & Accrual| P3["3. Accounting (General Ledger)<br/>Persediaan bertambah<br/>Akun Penampung GR/IR dikredit"]
-    P1 -->|Order Reference| P4["4. Accounting (AP Module)<br/>Vendor kirim tagihan<br/>Vendor Bill Matched"]
+    P1["(1) Purchasing Module<br/>PO diterbitkan ke Vendor<br/>Purchase Order Approved"]
+    -->|Pending Receipt| P2["(2) Inventory Module<br/>Barang tiba di gudang<br/>Goods Receipt Posted"]
+    P2 -->|Inventory Valuation & Accrual| P3["(3) Accounting (General Ledger)<br/>Persediaan bertambah<br/>Akun Penampung GR/IR dikredit"]
+    P1 -->|Order Reference| P4["(4) Accounting (AP Module)<br/>Vendor kirim tagihan<br/>Vendor Bill Matched"]
     P2 -->|Quantity Check| P4
     P4 -->|Clear GR/IR & Post AP| P3
-    P4 -->|Payment Due| P5["5. Finance Module<br/>Transfer pembayaran ke Vendor<br/>Bank Disbursement Posted"]
+    P4 -->|Payment Due| P5["(5) Finance Module<br/>Transfer pembayaran ke Vendor<br/>Bank Disbursement Posted"]
     P5 -->|Clear AP Liability| P4
     P5 -->|Credit Cash/Bank| P3
 ```

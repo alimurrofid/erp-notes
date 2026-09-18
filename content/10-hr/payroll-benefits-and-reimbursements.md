@@ -30,17 +30,17 @@ ERP enterprise membagi fasilitas tunjangan ke dalam tiga kategori:
 flowchart TD
     BEN["Tunjangan & Manfaat Pegawai (Employee Benefits)"]
     
-    BEN --> STAT["1. Kontribusi Statutori Pemberi Kerja (Mandatory Employer Cost)"]
+    BEN --> STAT["(1) Kontribusi Statutori Pemberi Kerja (Mandatory Employer Cost)"]
     STAT --> S1["Iuran Jaminan Kematian & Kecelakaan Kerja (JKK/JKM)"]
     STAT --> S2["Iuran Jaminan Hari Tua & Pensiun Porsi Perusahaan"]
     STAT --> S3["Iuran Asuransi Kesehatan Porsi Perusahaan (BPJS)"]
     
-    BEN --> NONSTAT["2. Fasilitas Kesejahteraan Sukarela (Voluntary Benefits)"]
+    BEN --> NONSTAT["(2) Fasilitas Kesejahteraan Sukarela (Voluntary Benefits)"]
     NONSTAT --> N1["Asuransi Kesehatan Komersial Tambahan (Swasta)"]
     NONSTAT --> N2["Dana Pensiun Lembaga Keuangan (DPLK) Perusahaan"]
     NONSTAT --> N3["Program Bantuan Pendidikan / Sertifikasi Keahlian"]
     
-    BEN --> FRINGE["3. Fasilitas Non-Tunai / Kenikmatan (Natura & Fringe Benefits)"]
+    BEN --> FRINGE["(3) Fasilitas Non-Tunai / Kenikmatan (Natura & Fringe Benefits)"]
     FRINGE --> F1["Pemberian Laptop & Ponsel Dinas (Aset Kustodian)"]
     FRINGE --> F2["Fasilitas Kendaraan Operasional / Antar-Jemput"]
     FRINGE --> F3["Fasilitas Konsumsi Bersama di Kantor / Kantin"]

@@ -28,25 +28,25 @@ Sistem ERP mengelompokkan laporan perpajakan ke dalam empat tingkatan fungsional
 
 ```mermaid
 flowchart TD
-    subgraph Layer1["1. Statutory Reports (Laporan Resmi Otoritas)"]
+    subgraph Layer1["(1) Statutory Reports (Laporan Resmi Otoritas)"]
         S1["SPT Masa PPN 1111 (Induk, Lampiran A1, A2, B1, B2, B3)"]
         S2["SPT Masa PPh Unifikasi (PPh 23, 26, 22, 4(2))"]
         S3["SPT Tahunan PPh Badan 1771 (Lampiran I s.d. VI)"]
     end
 
-    subgraph Layer2["2. Operational Tax Registers (Buku Pembantu Operasional)"]
+    subgraph Layer2["(2) Operational Tax Registers (Buku Pembantu Operasional)"]
         O1["Sales Tax Register (Daftar Faktur Pajak Keluaran)"]
         O2["Purchase Tax Register (Daftar Faktur Pajak Masukan)"]
         O3["Withholding Tax Register (Daftar Bukti Potong Terbit & Terima)"]
     end
 
-    subgraph Layer3["3. Tax Reconciliation & Equalization (Pengujian Ekualisasi)"]
+    subgraph Layer3["(3) Tax Reconciliation & Equalization (Pengujian Ekualisasi)"]
         R1["Ekualisasi Peredaran Usaha: Penjualan Komersial vs DPP PPN"]
         R2["Ekualisasi Beban Tenaga Kerja: Gaji/Upah vs DPP PPh 21"]
         R3["Ekualisasi Beban Operasional: Biaya Jasa/Sewa vs DPP PPh 23/4(2)"]
     end
 
-    subgraph Layer4["4. Tax Analytics & Management Cockpit (Dasbor Analitika)"]
+    subgraph Layer4["(4) Tax Analytics & Management Cockpit (Dasbor Analitika)"]
         A1["Effective Tax Rate (ETR) Trend Analysis"]
         A2["Tax Exposure Heatmap & Risk Scorecards"]
         A3["Prepaid Tax Aging & Expiry Tracker"]

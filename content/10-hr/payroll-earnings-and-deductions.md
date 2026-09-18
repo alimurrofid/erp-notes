@@ -28,18 +28,18 @@ ERP mengklasifikasikan penghasilan pegawai ke dalam tiga kategori besar:
 flowchart TD
     EARN["Komponen Penghasilan Pegawai (Payroll Earnings)"]
     
-    EARN --> FIXED["1. Penghasilan Tetap (Fixed Earnings)"]
+    EARN --> FIXED["(1) Penghasilan Tetap (Fixed Earnings)"]
     FIXED --> F1["Gaji Pokok (Basic Salary)"]
     FIXED --> F2["Tunjangan Jabatan / Posisi"]
     FIXED --> F3["Tunjangan Keahlian / Sertifikasi"]
     
-    EARN --> VAR["2. Penghasilan Variabel (Variable Earnings)"]
+    EARN --> VAR["(2) Penghasilan Variabel (Variable Earnings)"]
     VAR --> V1["Tunjangan Transport & Makan (Berbasis Hari Hadir)"]
     VAR --> V2["Upah Kerja Lembur Sah (Approved Overtime)"]
     VAR --> V3["Insentif Penjualan / Komisi Proyek (Sales Commission)"]
     VAR --> V4["Tunjangan Giliran Kerja (Shift Premium)"]
     
-    EARN --> IRREG["3. Penghasilan Tidak Teratur (Irregular Earnings)"]
+    EARN --> IRREG["(3) Penghasilan Tidak Teratur (Irregular Earnings)"]
     IRREG --> I1["Tunjangan Hari Raya Keagamaan (THR)"]
     IRREG --> I2["Bonus Kinerja Tahunan (Annual Performance Bonus)"]
     IRREG --> I3["Uang Pesangon / Uang Pisah (Severance Pay)"]
@@ -67,17 +67,17 @@ ERP mengorganisasikan elemen pemotong gaji ke dalam tiga kelompok:
 flowchart TD
     DED["Komponen Potongan Gaji (Payroll Deductions)"]
     
-    DED --> STAT["1. Potongan Wajib Statutori (Statutory Deductions)"]
+    DED --> STAT["(1) Potongan Wajib Statutori (Statutory Deductions)"]
     STAT --> S1["Pemotongan Pajak Penghasilan (Income Tax Withholding - PPh 21)"]
     STAT --> S2["Iuran Jaminan Pensiun & Hari Tua Porsi Pegawai (BPJS TK)"]
     STAT --> S3["Iuran Asuransi Kesehatan Porsi Pegawai (BPJS Kesehatan)"]
     
-    DED --> DISP["2. Potongan Disiplin & Absensi (Operational Deductions)"]
+    DED --> DISP["(2) Potongan Disiplin & Absensi (Operational Deductions)"]
     DISP --> D1["Potongan Cuti Tidak Berbayar (Unpaid Leave Deduction)"]
     DISP --> D2["Potongan Mangkir Kerja (Unauthorized Absence Penalty)"]
     DISP --> D3["Potongan Keterlambatan Masuk Kerja (Late Arrival Penalty)"]
     
-    DED --> VOL["3. Potongan Sukarela & Kontraktual (Voluntary Deductions)"]
+    DED --> VOL["(3) Potongan Sukarela & Kontraktual (Voluntary Deductions)"]
     VOL --> V1["Cicilan Pinjaman Karyawan / Kasbon (Loan Repayment)"]
     VOL --> V2["Iuran Anggota Koperasi Karyawan"]
     VOL --> V3["Iuran Serikat Pekerja / Klaim Tuntutan Ganti Rugi Aset"]

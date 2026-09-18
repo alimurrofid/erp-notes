@@ -20,19 +20,19 @@ Bagan berikut memetakan perjalanan data hulu-ke-hilir dalam sistem ERP:
 
 ```mermaid
 flowchart TD
-    CRM["1. CRM & Master Data<br/>(Customer Master, Price List, Tax Profile)"]
-    --> Quot["2. Sales Quotation<br/>(SQ: Proposal Komersial Berbatas Waktu)"]
-    --> SO["3. Sales Order<br/>(SO: Kontrak Mengikat & Reservasi Stok Gudang)"]
+    CRM["(1) CRM & Master Data<br/>(Customer Master, Price List, Tax Profile)"]
+    --> Quot["(2) Sales Quotation<br/>(SQ: Proposal Komersial Berbatas Waktu)"]
+    --> SO["(3) Sales Order<br/>(SO: Kontrak Mengikat & Reservasi Stok Gudang)"]
     
-    SO --> WMS["4. Warehouse Fulfillment<br/>(Pick List & Packing Slip)"]
-    WMS --> DO["5. Delivery Order / Goods Issue<br/>(Pengurangan Stok Fisik & Jurnal COGS)"]
+    SO --> WMS["(4) Warehouse Fulfillment<br/>(Pick List & Packing Slip)"]
+    WMS --> DO["(5) Delivery Order / Goods Issue<br/>(Pengurangan Stok Fisik & Jurnal COGS)"]
     
-    DO --> INV["6. Customer Invoice<br/>(Faktur Penjualan: Penambahan Piutang & Pengakuan Pendapatan)"]
-    INV --> AR["7. Accounts Receivable Subledger<br/>(Manajemen Saldo Terbuka & Aging Tagihan)"]
+    DO --> INV["(6) Customer Invoice<br/>(Faktur Penjualan: Penambahan Piutang & Pengakuan Pendapatan)"]
+    INV --> AR["(7) Accounts Receivable Subledger<br/>(Manajemen Saldo Terbuka & Aging Tagihan)"]
     
-    AR --> PAY["8. Customer Payment<br/>(Penerimaan Kas / Bank & Alokasi Pelunasan)"]
-    PAY --> REC["9. Bank Reconciliation<br/>(Kliring Rekening Koran Elektronik)"]
-    REC --> FIN["10. Financial Statements<br/>(Laporan Posisi Keuangan & Laba Rugi)"]
+    AR --> PAY["(8) Customer Payment<br/>(Penerimaan Kas / Bank & Alokasi Pelunasan)"]
+    PAY --> REC["(9) Bank Reconciliation<br/>(Kliring Rekening Koran Elektronik)"]
+    REC --> FIN["(10) Financial Statements<br/>(Laporan Posisi Keuangan & Laba Rugi)"]
 ```
 
 ---
@@ -62,23 +62,23 @@ Arsitektur ERP harus cukup fleksibel untuk mengakomodasi model bisnis yang berbe
 
 ```mermaid
 flowchart TD
-    subgraph MTS["1. Make-to-Stock (MTS)"]
+    subgraph MTS["(1) Make-to-Stock (MTS)"]
         M1["Sales Order"] --> M2["Pengiriman dari Stok Gudang Jadi"] --> M3["Faktur Penjualan"]
     end
 
-    subgraph MTO["2. Make-to-Order (MTO)"]
+    subgraph MTO["(2) Make-to-Order (MTO)"]
         T1["Sales Order"] --> T2["Penerbitan Work Order Manufaktur"] --> T3["Produksi Barang Jadi"] --> T4["Pengiriman & Faktur"]
     end
 
-    subgraph DS["3. Drop-Shipping"]
+    subgraph DS["(3) Drop-Shipping"]
         D1["Sales Order"] --> D2["Auto-PO ke Vendor Pihak Ketiga"] --> D3["Vendor Kirim Langsung ke Pelanggan"] --> D4["Faktur Penjualan"]
     end
 
-    subgraph SVC["4. Service / Subscription"]
+    subgraph SVC["(4) Service / Subscription"]
         S1["Sales Order / Kontrak"] --> S2["Penyelesaian Milestone Jasa"] --> S3["Faktur Berkala (Over Time)"]
     end
 
-    subgraph POS["5. Retail POS (Cash & Carry)"]
+    subgraph POS["(5) Retail POS (Cash & Carry)"]
         P1["Kasir Ritel:<br/>Pesanan + Serah Barang + Faktur + Bayar Kas<br/>(Terjadi Simultan dalam 1 Detik)"]
     end
 ```

@@ -33,32 +33,32 @@ Siklus hidup manajemen perpajakan di dalam ERP berjalan secara berkelanjutan mel
 
 ```mermaid
 flowchart TD
-    subgraph S1["1. Master Data & Rules Setup"]
+    subgraph S1["(1) Master Data & Rules Setup"]
         M1["Tax Master Data: Entities, Tax Codes, Accounts"]
         M2["Tax Determination Rules & Tax Jurisdictions"]
     end
 
-    subgraph S2["2. Transactional Calculation"]
+    subgraph S2["(2) Transactional Calculation"]
         T1["Transaction Trigger (SO, PO, AP, AR, Payroll)"]
         T2["Tax Engine: DPP, Rate Evaluation, Calculation"]
     end
 
-    subgraph S3["3. Accounting & Subledger Posting"]
+    subgraph S3["(3) Accounting & Subledger Posting"]
         A1["Posting to GL Tax Accounts (Prepaid vs Payable)"]
         A2["Posting to Tax Subledger / Tax Registers"]
     end
 
-    subgraph S4["4. Tax Document Preparation & Interface"]
+    subgraph S4["(4) Tax Document Preparation & Interface"]
         D1["Preparation: e-Tax Invoice Data (Coretax / e-Faktur)"]
         D2["Preparation: Withholding Slips (e-Bupot Unifikasi)"]
     end
 
-    subgraph S5["5. Tax Period Closing & Reconciliation"]
+    subgraph S5["(5) Tax Period Closing & Reconciliation"]
         R1["Tax Reconciliation (GL vs Subledger vs Official Data)"]
         R2["Tax Period Lock & Clearing Settlement Entries"]
     end
 
-    subgraph S6["6. Tax Settlement, Filing & Official Interaction"]
+    subgraph S6["(6) Tax Settlement, Filing & Official Interaction"]
         F1["Tax Settlement (Deposit Pajak / Kode Billing DJP)"]
         F2["Payment Execution via Treasury & Bank Integration"]
         F3["Submission to Official Tax Administration (Coretax DJP) & BPE"]

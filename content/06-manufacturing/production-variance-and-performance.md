@@ -38,10 +38,10 @@ Dalam sistem berbasis biaya standar (*Standard Costing System*), total varians p
 flowchart TD
     TotalVar["Total Manufacturing Variance (Selisih Biaya Total)"]
     
-    TotalVar --> MatVar["1. Varians Bahan Baku (Material Variances)"]
-    TotalVar --> LabVar["2. Varians Tenaga Kerja (Labor Variances)"]
-    TotalVar --> OvhVar["3. Varians Overhead Pabrik (Overhead Variances)"]
-    TotalVar --> YieldVar["4. Varians Hasil & Afkir (Yield & Scrap Variances)"]
+    TotalVar --> MatVar["(1) Varians Bahan Baku (Material Variances)"]
+    TotalVar --> LabVar["(2) Varians Tenaga Kerja (Labor Variances)"]
+    TotalVar --> OvhVar["(3) Varians Overhead Pabrik (Overhead Variances)"]
+    TotalVar --> YieldVar["(4) Varians Hasil & Afkir (Yield & Scrap Variances)"]
     
     MatVar --> MPV["Material Price Variance (MPV)<br/>Selisih Harga Beli Bahan"]
     MatVar --> MUV["Material Usage Variance (MUV)<br/>Selisih Kuantitas Pemakaian"]

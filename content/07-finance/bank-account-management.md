@@ -41,12 +41,12 @@ Siklus hidup rekening bank internal diatur melalui proses terstruktur:
 
 ```mermaid
 flowchart LR
-    Req["1. Permohonan Pembukaan<br/>(Business Need)"] --> Appr["2. Persetujuan Direksi<br/>& Treasury Policy"]
-    Appr --> Open["3. Pembukaan di Bank<br/>& Konfigurasi ERP"]
-    Open --> Active["4. Status Operasional Aktif<br/>(Transaksi Harian)"]
-    Active --> Review["5. Evaluasi Berkala<br/>(Dormancy Check)"]
-    Review -->|Tidak Aktif| Inactive["6. Freeze / Dormant<br/>(Blokir Transaksi di ERP)"]
-    Inactive --> Close["7. Penutupan Rekening<br/>(Saldo Dipindahkan)"]
+    Req["(1) Permohonan Pembukaan<br/>(Business Need)"] --> Appr["(2) Persetujuan Direksi<br/>& Treasury Policy"]
+    Appr --> Open["(3) Pembukaan di Bank<br/>& Konfigurasi ERP"]
+    Open --> Active["(4) Status Operasional Aktif<br/>(Transaksi Harian)"]
+    Active --> Review["(5) Evaluasi Berkala<br/>(Dormancy Check)"]
+    Review -->|Tidak Aktif| Inactive["(6) Freeze / Dormant<br/>(Blokir Transaksi di ERP)"]
+    Inactive --> Close["(7) Penutupan Rekening<br/>(Saldo Dipindahkan)"]
 ```
 
 ### 2. Pengelolaan Matriks Penandatangan (Signatory Matrix)

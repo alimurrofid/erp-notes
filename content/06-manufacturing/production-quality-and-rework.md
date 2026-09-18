@@ -26,7 +26,7 @@ Sistem ERP enterprise menanamkan titik-titik inspeksi (*Inspection Points*) sepa
 
 ```mermaid
 flowchart TD
-    subgraph Gate1["1. Incoming Material QC (Gerbang Bahan Masuk)"]
+    subgraph Gate1["(1) Incoming Material QC (Gerbang Bahan Masuk)"]
         Vend["Pemasok Kirim Bahan Baku"]
         --> In_Inspect["Pemeriksaan Sampel di Receiving Bay (AQL Sampling)"]
         --> In_Result{Hasil Uji Masuk?}
@@ -34,7 +34,7 @@ flowchart TD
         In_Result -- "Gagal" --> RTV["Tolak & Retur ke Pemasok (RTV)"]
     end
 
-    subgraph Gate2["2. In-Process QC (Gerbang Antara Operasi Perakitan)"]
+    subgraph Gate2["(2) In-Process QC (Gerbang Antara Operasi Perakitan)"]
         Op1["Operasi 10: SMT Perakitan"]
         --> IP_Inspect["Titik Inspeksi Operasi 20: Uji Solder X-Ray / AOI"]
         --> IP_Result{Hasil Uji Proses?}
@@ -43,7 +43,7 @@ flowchart TD
         IP_Result -- "Cacat Fatal" --> SCR["Afkir Permanen (Scrap)"]
     end
 
-    subgraph Gate3["3. Final Finished Goods QC (Gerbang Akhir Produk Jadi)"]
+    subgraph Gate3["(3) Final Finished Goods QC (Gerbang Akhir Produk Jadi)"]
         OpLast["Perakitan Akhir Selesai"]
         --> Fin_Inspect["Uji Fungsi Penuh: Burn-in Test, Baterai, Wi-Fi, Estetika"]
         --> Fin_Result{Hasil Uji Akhir?}
@@ -64,9 +64,9 @@ Ketika sebuah produk atau sampel gagal memenuhi parameter spesifikasi teknis, ER
 ```mermaid
 flowchart LR
     Fail["Deteksi Cacat Mutu (Defect Detected)"]
-    --> NCR["1. Terbitkan Dokumen NCR (Non-Conformance Report)"]
-    --> Lock["2. Kunci Status Barang (Lock to QUARANTINE)"]
-    --> MRB["3. Sidang Disposisi (Material Review Board / MRB)"]
+    --> NCR["(1) Terbitkan Dokumen NCR (Non-Conformance Report)"]
+    --> Lock["(2) Kunci Status Barang (Lock to QUARANTINE)"]
+    --> MRB["(3) Sidang Disposisi (Material Review Board / MRB)"]
     
     MRB --> D1["Disposisi A: Use As-Is (Konsesi Khusus jika Deviasi Minor)"]
     MRB --> D2["Disposisi B: Rework Order (Bongkar & Rakit Ulang)"]

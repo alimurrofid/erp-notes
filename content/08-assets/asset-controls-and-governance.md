@@ -9,9 +9,9 @@ Pengendalian internal aktiva tetap berpedoman pada kerangka kerja **COSO Interna
 ```mermaid
 flowchart TD
     subgraph COSOAssetControls["Tiga Lini Pengendalian Internal Aset Tetap"]
-        Prev["1. Preventive Controls (Pencegahan)<br/>Blokir Transaksi Liar Sebelum Terjadi<br/>Contoh: Matriks SoD, Pagu Anggaran CAPEX, Otorisasi DoA"]
-        Det["2. Detective Controls (Pendeteksian)<br/>Identifikasi Anomali & Selisih Fisik<br/>Contoh: Stock Opname Fisik, Rekonsiliasi Subledger, Audit Log"]
-        Corr["3. Corrective Controls (Koreksi)<br/>Pemulihan & Penyelarasan Buku<br/>Contoh: Berita Acara Hapus Buku, Uji Penurunan Nilai"]
+        Prev["(1) Preventive Controls (Pencegahan)<br/>Blokir Transaksi Liar Sebelum Terjadi<br/>Contoh: Matriks SoD, Pagu Anggaran CAPEX, Otorisasi DoA"]
+        Det["(2) Detective Controls (Pendeteksian)<br/>Identifikasi Anomali & Selisih Fisik<br/>Contoh: Stock Opname Fisik, Rekonsiliasi Subledger, Audit Log"]
+        Corr["(3) Corrective Controls (Koreksi)<br/>Pemulihan & Penyelarasan Buku<br/>Contoh: Berita Acara Hapus Buku, Uji Penurunan Nilai"]
     end
     Prev --> Det --> Corr
 ```

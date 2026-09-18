@@ -9,16 +9,16 @@ Dalam sistem ERP, **Project Planning (Perencanaan Proyek)** dan **Project Schedu
 
 ```mermaid
 flowchart LR
-    subgraph Planning["1. Project Planning (Scope & Cost)"]
+    subgraph Planning["(1) Project Planning (Scope & Cost)"]
         Scope["Ruang Lingkup WBS<br/>(Deliverables)"] --> Est["Estimasi Sumber Daya<br/>& Pagu Anggaran (Budget)"]
     end
 
-    subgraph Scheduling["2. Project Scheduling (Time & Resource)"]
+    subgraph Scheduling["(2) Project Scheduling (Time & Resource)"]
         Dur["Durasi & Ketergantungan<br/>(FS, SS, FF, SF)"] --> CPM["Analisis Jalur Kritis<br/>(Critical Path Method - CPM)"]
         CPM --> Level["Penyeimbangan Beban Kerja<br/>(Resource Leveling)"]
     end
 
-    subgraph Baseline["3. Baseline Lockdown"]
+    subgraph Baseline["(3) Baseline Lockdown"]
         Base["Schedule & Cost Baseline<br/>(Garis Tolok Ukur Kinerja)"]
     end
 
@@ -44,10 +44,10 @@ ERP mendukung empat logika hubungan ketergantungan standar industri konstruksi d
 
 ```mermaid
 graph TD
-    FS["1. Finish-to-Start (FS)<br/>Tugas B baru dapat MULAI setelah Tugas A SELESAI.<br/>Contoh: Konfigurasi sistem baru bisa mulai setelah Blueprint disetujui.<br/>(Paling Umum: 90% Kasus)"]
-    SS["2. Start-to-Start (SS)<br/>Tugas B dapat MULAI bersamaan saat Tugas A MULAI.<br/>Contoh: Penulisan manual pengguna mulai bersamaan dengan UAT."]
-    FF["3. Finish-to-Finish (FF)<br/>Tugas B baru dapat SELESAI jika Tugas A SELESAI.<br/>Contoh: Pengujian integrasi baru selesai saat perbaikan bug selesai."]
-    SF["4. Start-to-Finish (SF)<br/>Tugas B baru dapat SELESAI setelah Tugas A MULAI.<br/>Contoh: Sistem legacy baru boleh dimatikan setelah sistem baru live."]
+    FS["(1) Finish-to-Start (FS)<br/>Tugas B baru dapat MULAI setelah Tugas A SELESAI.<br/>Contoh: Konfigurasi sistem baru bisa mulai setelah Blueprint disetujui.<br/>(Paling Umum: 90% Kasus)"]
+    SS["(2) Start-to-Start (SS)<br/>Tugas B dapat MULAI bersamaan saat Tugas A MULAI.<br/>Contoh: Penulisan manual pengguna mulai bersamaan dengan UAT."]
+    FF["(3) Finish-to-Finish (FF)<br/>Tugas B baru dapat SELESAI jika Tugas A SELESAI.<br/>Contoh: Pengujian integrasi baru selesai saat perbaikan bug selesai."]
+    SF["(4) Start-to-Finish (SF)<br/>Tugas B baru dapat SELESAI setelah Tugas A MULAI.<br/>Contoh: Sistem legacy baru boleh dimatikan setelah sistem baru live."]
 ```
 
 ### Jeda Waktu (Lead Time & Lag Time):

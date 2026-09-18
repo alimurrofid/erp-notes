@@ -39,11 +39,11 @@ flowchart TD
     SO["Sales Order: Pesanan 100 Unit"]
     --> Check{"Pemeriksaan Stok Gudang:<br/>Tersedia 60 Unit (Defisit 40 Unit)"}
     
-    Check --> Part["1. Partial Fulfillment (Batch 1):<br/>Kirim 60 Unit via Delivery Order #01<br/>Tagih 60 Unit via Invoice #01"]
-    Check --> BO["2. Backorder (Outstanding):<br/>Sisa 40 Unit Tertahan di Sales Order<br/>Status SO: Partially Fulfilled"]
+    Check --> Part["(1) Partial Fulfillment (Batch 1):<br/>Kirim 60 Unit via Delivery Order #01<br/>Tagih 60 Unit via Invoice #01"]
+    Check --> BO["(2) Backorder (Outstanding):<br/>Sisa 40 Unit Tertahan di Sales Order<br/>Status SO: Partially Fulfilled"]
     
-    BO --> Repl["3. Pasokan Tiba dari Pabrik / Vendor:<br/>Stok 40 Unit Masuk Gudang"]
-    Repl --> Part2["4. Backorder Fulfillment (Batch 2):<br/>Kirim 40 Unit via Delivery Order #02<br/>Tagih 40 Unit via Invoice #02"]
+    BO --> Repl["(3) Pasokan Tiba dari Pabrik / Vendor:<br/>Stok 40 Unit Masuk Gudang"]
+    Repl --> Part2["(4) Backorder Fulfillment (Batch 2):<br/>Kirim 40 Unit via Delivery Order #02<br/>Tagih 40 Unit via Invoice #02"]
     
     Part --> Close["Sales Order Berstatus: CLOSED (100% Selesai)"]
     Part2 --> Close

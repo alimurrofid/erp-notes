@@ -32,7 +32,7 @@ $$\mathbf{Landed\ Cost = Harga\ Beli\ Faktur - Diskon\ Dagang + Ongkos\ Angkut +
 
 ```mermaid
 flowchart LR
-    BP["1. Harga Faktur Pemasok<br/>(Vendor Invoice Price)"]
+    BP["(1) Harga Faktur Pemasok<br/>(Vendor Invoice Price)"]
     --> Disc["Dikurangi (-) Diskon Dagang"]
     --> Freight["Ditambah (+) Ongkir Ekspedisi (Freight-In)"]
     --> Ins["Ditambah (+) Asuransi Pengiriman"]

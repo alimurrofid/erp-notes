@@ -46,8 +46,8 @@ flowchart TD
     --> Outbound["Pengiriman Penjualan<br/>(Delivery Order DO-881)"]
     --> Customer["Pelanggan Akhir<br/>(PT Mitra Niaga)"]
 
-    Customer -.->|"1. Backward Traceability (Investigasi Akar Masalah / Root Cause)"| Supplier
-    Supplier -.->|"2. Forward Traceability (Penarikan Produk / Targeted Recall)"| Customer
+    Customer -.->|"(1) Backward Traceability (Investigasi Akar Masalah / Root Cause)"| Supplier
+    Supplier -.->|"(2) Forward Traceability (Penarikan Produk / Targeted Recall)"| Customer
 ```
 
 ### 1. Backward Traceability (Pelacakan Mundur / Root-Cause Analysis)

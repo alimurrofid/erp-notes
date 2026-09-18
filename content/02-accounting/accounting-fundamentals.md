@@ -44,14 +44,14 @@ Berdasarkan *IASB Conceptual Framework for Financial Reporting*, terdapat lima e
 ```mermaid
 flowchart TD
     subgraph BalanceSheetElements["Posisi Keuangan (Neraca / Balance Sheet)"]
-        Asset["1. Aset (Assets)<br/>Sumber daya ekonomi yang dikendalikan entitas<br/>akibat peristiwa masa lalu yang memiliki potensi manfaat ekonomi."]
-        Liab["2. Liabilitas (Liabilities)<br/>Kewajiban kini entitas untuk mengalihkan sumber daya ekonomi<br/>akibat peristiwa masa lalu."]
-        Eq["3. Ekuitas (Equity)<br/>Hak residual atas aset entitas<br/>setelah dikurangi seluruh liabilitasnya."]
+        Asset["(1) Aset (Assets)<br/>Sumber daya ekonomi yang dikendalikan entitas<br/>akibat peristiwa masa lalu yang memiliki potensi manfaat ekonomi."]
+        Liab["(2) Liabilitas (Liabilities)<br/>Kewajiban kini entitas untuk mengalihkan sumber daya ekonomi<br/>akibat peristiwa masa lalu."]
+        Eq["(3) Ekuitas (Equity)<br/>Hak residual atas aset entitas<br/>setelah dikurangi seluruh liabilitasnya."]
     end
 
     subgraph PL_Elements["Kinerja Finansial (Laba Rugi / Income Statement)"]
-        Rev["4. Pendapatan (Revenue / Income)<br/>Peningkatan aset atau penurunan liabilitas yang menghasilkan<br/>peningkatan ekuitas, selain dari kontribusi pemilik."]
-        Exp["5. Beban (Expenses)<br/>Penurunan aset atau peningkatan liabilitas yang menghasilkan<br/>penurunan ekuitas, selain dari distribusi kepada pemilik."]
+        Rev["(4) Pendapatan (Revenue / Income)<br/>Peningkatan aset atau penurunan liabilitas yang menghasilkan<br/>peningkatan ekuitas, selain dari kontribusi pemilik."]
+        Exp["(5) Beban (Expenses)<br/>Penurunan aset atau peningkatan liabilitas yang menghasilkan<br/>penurunan ekuitas, selain dari distribusi kepada pemilik."]
     end
 
     Rev -->|Revenue - Expenses| Eq
@@ -99,12 +99,12 @@ Sistem ERP mengotomatisasi siklus akuntansi melalui alur data yang saling mengun
 
 ```mermaid
 flowchart LR
-    Doc["1. Operational Document<br/>(Delivery, Receipt, Invoice)"]
-    --> Rule["2. Posting Engine / Rules<br/>(Account Determination)"]
-    --> JE["3. Journal Entry<br/>(Debit = Credit Balancing)"]
-    --> GL["4. General Ledger & Subledgers<br/>(Updated Real-time)"]
-    --> TB["5. Trial Balance<br/>(Neraca Saldo)"]
-    --> FS["6. Financial Statements<br/>(Balance Sheet, P&L)"]
+    Doc["(1) Operational Document<br/>(Delivery, Receipt, Invoice)"]
+    --> Rule["(2) Posting Engine / Rules<br/>(Account Determination)"]
+    --> JE["(3) Journal Entry<br/>(Debit = Credit Balancing)"]
+    --> GL["(4) General Ledger & Subledgers<br/>(Updated Real-time)"]
+    --> TB["(5) Trial Balance<br/>(Neraca Saldo)"]
+    --> FS["(6) Financial Statements<br/>(Balance Sheet, P&L)"]
 ```
 
 1. **Operational Document**: Dokumen bisnis diterbitkan pada modul operasional (lihat [[00-fundamentals/documents-transactions-events|Documents, Transactions, and Events]]).

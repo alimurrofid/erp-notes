@@ -16,15 +16,15 @@ Sebagai salah satu aliran nilai utama (*core value stream*), O2C menghubungkan f
 
 ```mermaid
 flowchart TD
-    Q["1. Quotation<br/>(Penawaran Harga)"]
-    --> SO["2. Sales Order<br/>(Pesanan Penjualan)"]
+    Q["(1) Quotation<br/>(Penawaran Harga)"]
+    --> SO["(2) Sales Order<br/>(Pesanan Penjualan)"]
     --> CR{"Credit & Stock<br/>Check"}
-    CR -->|Approved| DO["3. Delivery / Goods Issue<br/>(Pengiriman Barang)"]
+    CR -->|Approved| DO["(3) Delivery / Goods Issue<br/>(Pengiriman Barang)"]
     CR -->|Blocked| HLD["Hold / Credit Approval"]
     HLD -->|Approved| DO
-    DO --> INV["4. Customer Invoice<br/>(Faktur Penjualan)"]
-    INV --> PAY["5. Payment & Settlement<br/>(Penerimaan Pembayaran)"]
-    PAY --> REC["6. Bank Reconciliation<br/>(Rekonsiliasi Kas-Bank)"]
+    DO --> INV["(4) Customer Invoice<br/>(Faktur Penjualan)"]
+    INV --> PAY["(5) Payment & Settlement<br/>(Penerimaan Pembayaran)"]
+    PAY --> REC["(6) Bank Reconciliation<br/>(Rekonsiliasi Kas-Bank)"]
 ```
 
 ---

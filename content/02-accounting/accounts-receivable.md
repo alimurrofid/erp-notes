@@ -18,9 +18,9 @@ Siklus operasional penagihan piutang merupakan bagian integral dari alur [[01-bu
 
 ```mermaid
 flowchart TD
-    Sale["1. Penjualan Kredit<br/>(Delivery Completed)"]
-    --> Inv["2. Penerbitan Faktur<br/>(Dr. AR / Cr. Revenue & Tax)"]
-    --> Coll["3. Pemantauan & Aging<br/>(Laporan Umur Piutang)"]
+    Sale["(1) Penjualan Kredit<br/>(Delivery Completed)"]
+    --> Inv["(2) Penerbitan Faktur<br/>(Dr. AR / Cr. Revenue & Tax)"]
+    --> Coll["(3) Pemantauan & Aging<br/>(Laporan Umur Piutang)"]
     
     Coll --> Pay["4a. Pelunasan Kas<br/>(Dr. Bank / Cr. AR)"]
     Coll --> Ret["4b. Retur / Koreksi<br/>(Dr. Retur / Cr. AR via Credit Note)"]

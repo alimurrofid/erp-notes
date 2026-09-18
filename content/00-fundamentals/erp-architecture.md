@@ -18,12 +18,12 @@ Aliran pemrosesan dalam sistem ERP mengikuti hierarki berjenjang:
 
 ```mermaid
 flowchart TD
-    MD["1. Master Data<br/>(Customer, Product, Warehouse, COA)"]
-    BT["2. Business Transaction<br/>(Sales Order, Purchase Order)"]
-    BP["3. Business Process<br/>(Order-to-Cash, Procure-to-Pay)"]
-    OD["4. Operational Execution<br/>(Pick, Pack, Ship, Goods Receipt)"]
-    Imp["5. Operational & Financial Impact<br/>(Stock Ledger Entry, GL Journal Entry)"]
-    Rep["6. Reporting & Analytics<br/>(Balance Sheet, P&L, Inventory Valuation)"]
+    MD["(1) Master Data<br/>(Customer, Product, Warehouse, COA)"]
+    BT["(2) Business Transaction<br/>(Sales Order, Purchase Order)"]
+    BP["(3) Business Process<br/>(Order-to-Cash, Procure-to-Pay)"]
+    OD["(4) Operational Execution<br/>(Pick, Pack, Ship, Goods Receipt)"]
+    Imp["(5) Operational & Financial Impact<br/>(Stock Ledger Entry, GL Journal Entry)"]
+    Rep["(6) Reporting & Analytics<br/>(Balance Sheet, P&L, Inventory Valuation)"]
 
     MD --> BT
     BT --> BP

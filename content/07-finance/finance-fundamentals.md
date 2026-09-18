@@ -36,9 +36,9 @@ Dalam organisasi skala menengah hingga enterprise, peran keuangan sering kali te
 flowchart TD
     subgraph CoreTriad["Tritunggal Pengelolaan Keuangan Perusahaan"]
         direction TB
-        ACC["1. Accounting (Akuntansi Keuangan)<br/>Fokus: Historis, Akrual, Kepatuhan Regulasi & Pajak.<br/>Output: Neraca, Laba Rugi, Buku Besar, Audit Trail."]
-        FIN["2. Corporate Finance (Keuangan Perusahaan)<br/>Fokus: Masa Depan, Anggaran, Perencanaan Finansial & Profitabilitas.<br/>Output: Budget vs Actual, Financial Modeling, Capex Plan."]
-        TRS["3. Treasury Operations (Perbendaharaan & Kas)<br/>Fokus: Hari Ini & Jangka Pendek, Likuiditas Kas Riil & Perbankan.<br/>Output: Cash Position, Bank Reconciliation, Payment Run, FX."]
+        ACC["(1) Accounting (Akuntansi Keuangan)<br/>Fokus: Historis, Akrual, Kepatuhan Regulasi & Pajak.<br/>Output: Neraca, Laba Rugi, Buku Besar, Audit Trail."]
+        FIN["(2) Corporate Finance (Keuangan Perusahaan)<br/>Fokus: Masa Depan, Anggaran, Perencanaan Finansial & Profitabilitas.<br/>Output: Budget vs Actual, Financial Modeling, Capex Plan."]
+        TRS["(3) Treasury Operations (Perbendaharaan & Kas)<br/>Fokus: Hari Ini & Jangka Pendek, Likuiditas Kas Riil & Perbankan.<br/>Output: Cash Position, Bank Reconciliation, Payment Run, FX."]
     end
     ACC <--> FIN
     FIN <--> TRS
@@ -63,27 +63,27 @@ Aliran data dalam sistem ERP bergerak dari transaksi operasional harian hingga m
 
 ```mermaid
 flowchart TD
-    subgraph Ops["1. Transaksi Bisnis Operasional"]
+    subgraph Ops["(1) Transaksi Bisnis Operasional"]
         SO["Sales Order (Phase 4)"]
         PO["Purchase Order (Phase 5)"]
         INV["Mutasi Gudang (Phase 6)"]
         MO["Produksi Pabrik (Phase 7)"]
     end
 
-    subgraph Acc["2. Lapisan Akuntansi & Pembukuan (Phase 3)"]
+    subgraph Acc["(2) Lapisan Akuntansi & Pembukuan (Phase 3)"]
         AR["Piutang Usaha (AR Subledger)"]
         AP["Utang Usaha (AP Subledger)"]
         GL["Buku Besar Umum (General Ledger)"]
     end
 
-    subgraph Fin["3. Lapisan Manajemen Keuangan (Phase 8)"]
+    subgraph Fin["(3) Lapisan Manajemen Keuangan (Phase 8)"]
         CashMgr["Cash & Bank Management (Posisi Kas & Rekonsiliasi)"]
         PayRun["Disbursement Engine (Otorisasi & Eksekusi Pembayaran)"]
         Budget["Budget Control (Pengecekan Komitmen Anggaran)"]
         Forecast["Cash Flow & Liquidity Forecast (Proyeksi Likuiditas)"]
     end
 
-    subgraph Exec["4. Keputusan Manajerial & Pengendalian"]
+    subgraph Exec["(4) Keputusan Manajerial & Pengendalian"]
         Dash["Financial Dashboards & Management Reporting"]
         Decide["Keputusan Investasi, Pendanaan, & Pembagian Dividen"]
     end

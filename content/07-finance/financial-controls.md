@@ -9,9 +9,9 @@ Sistem pengendalian internal dalam ERP modern merujuk pada standar **COSO Intern
 ```mermaid
 flowchart TD
     subgraph COSOControlTypes["Tiga Kategori Kontrol Finansial ERP"]
-        Prev["1. Preventive Controls (Pencegahan)<br/>Blokir Transaksi Ilegal di Titik Input<br/>Contoh: SoD Matrix, Budget AVC, Maker-Checker"]
-        Det["2. Detective Controls (Pendeteksian)<br/>Identifikasi Anomali Setelah Terjadi<br/>Contoh: Rekonsiliasi Bank, Audit Trail, Laporan Eksepsi"]
-        Corr["3. Corrective Controls (Koreksi)<br/>Pemulihan & Investigasi Masalah<br/>Contoh: Jurnal Pembalik, Pembatalan Batch Bayar"]
+        Prev["(1) Preventive Controls (Pencegahan)<br/>Blokir Transaksi Ilegal di Titik Input<br/>Contoh: SoD Matrix, Budget AVC, Maker-Checker"]
+        Det["(2) Detective Controls (Pendeteksian)<br/>Identifikasi Anomali Setelah Terjadi<br/>Contoh: Rekonsiliasi Bank, Audit Trail, Laporan Eksepsi"]
+        Corr["(3) Corrective Controls (Koreksi)<br/>Pemulihan & Investigasi Masalah<br/>Contoh: Jurnal Pembalik, Pembatalan Batch Bayar"]
     end
     Prev --> Det --> Corr
 ```

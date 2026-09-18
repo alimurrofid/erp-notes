@@ -69,12 +69,12 @@ Proses pemindahan data dari status rancangan (*Draft*) ke buku besar (*General L
 
 ```mermaid
 flowchart TD
-    Draft["1. Draft Journal Entry<br/>(Data dapat diedit bebas)"]
-    --> ValBalance{"2. Validasi Keseimbangan:<br/>Total Debit == Total Credit ?"}
+    Draft["(1) Draft Journal Entry<br/>(Data dapat diedit bebas)"]
+    --> ValBalance{"(2) Validasi Keseimbangan:<br/>Total Debit == Total Credit ?"}
     ValBalance -->|Tidak Seimbang| ErrBal["Error: Unbalanced Entry!<br/>Posting Ditolak"]
-    ValBalance -->|Seimbang| ValPeriod{"3. Validasi Periode Fiskal:<br/>Posting Date berada di periode Terbuka?"}
+    ValBalance -->|Seimbang| ValPeriod{"(3) Validasi Periode Fiskal:<br/>Posting Date berada di periode Terbuka?"}
     ValPeriod -->|Periode Terkunci| ErrPer["Error: Fiscal Period Locked!<br/>Posting Ditolak"]
-    ValPeriod -->|Periode Terbuka| Commit["4. Atomic Commit to Database:<br/>Status berubah menjadi 'Posted'<br/>Dokumen menjadi Read-Only (Immutable)<br/>Saldo Akun GL diperbarui seketika"]
+    ValPeriod -->|Periode Terbuka| Commit["(4) Atomic Commit to Database:<br/>Status berubah menjadi 'Posted'<br/>Dokumen menjadi Read-Only (Immutable)<br/>Saldo Akun GL diperbarui seketika"]
 ```
 
 ---

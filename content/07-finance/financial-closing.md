@@ -9,10 +9,10 @@ Berbeda dengan mekanisme jurnal penyesuaian teknis yang telah dibahas pada [[02-
 ```mermaid
 flowchart LR
     subgraph ClosingLayers["Empat Lapisan Penutupan Buku di ERP"]
-        Ops["1. Operational Close<br/>(Cut-off Gudang, Pengiriman, & PO)"]
-        Sub["2. Subledger Close<br/>(AR, AP, Asset, & Payroll Lock)"]
-        GL["3. Accounting / GL Close<br/>(Jurnal Akrual, Rekonsiliasi, & PPN)"]
-        Mgmt["4. Management Close<br/>(Laporan Varian, Konsolidasi, & Sign-off)"]
+        Ops["(1) Operational Close<br/>(Cut-off Gudang, Pengiriman, & PO)"]
+        Sub["(2) Subledger Close<br/>(AR, AP, Asset, & Payroll Lock)"]
+        GL["(3) Accounting / GL Close<br/>(Jurnal Akrual, Rekonsiliasi, & PPN)"]
+        Mgmt["(4) Management Close<br/>(Laporan Varian, Konsolidasi, & Sign-off)"]
     end
     Ops --> Sub --> GL --> Mgmt
 ```

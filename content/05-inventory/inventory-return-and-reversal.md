@@ -27,7 +27,7 @@ Sistem ERP membedakan dua arah utama logistik balik:
 flowchart TD
     subgraph ReverseLogistics["Dua Domain Logistik Balik dalam ERP"]
         direction TB
-        subgraph InboundReturn["1. Customer Return (Sales Return Inbound)"]
+        subgraph InboundReturn["(1) Customer Return (Sales Return Inbound)"]
             Cust["Pelanggan"] -->|"Pengembalian Barang (RMA)"| Dock["Dermaga Penerimaan Retur"]
             Dock --> QC["Karantina Mutu (QC Hold)"]
             QC --> Disp1["Restock (Kembali ke Rak Jual)"]
@@ -35,7 +35,7 @@ flowchart TD
             QC --> Disp3["Scrap (Pemusnahan Total)"]
         end
 
-        subgraph OutboundReturn["2. Supplier Return (Purchase Return Outbound)"]
+        subgraph OutboundReturn["(2) Supplier Return (Purchase Return Outbound)"]
             WH["Gudang Kita"] -->|"Retur ke Vendor (RTV)"| Supp["Pemasok Eksternal"]
             WH --> RepSupp["Penggantian Barang Baru (Replacement)"]
             WH --> DNSell["Pemotongan Utang (Debit Note)"]
@@ -51,9 +51,9 @@ Saat pelanggan mengembalikan barang, barang fisik **dilarang langsung dimasukkan
 
 ```mermaid
 flowchart LR
-    RMA["1. Otorisasi Retur (RMA)<br/>Disetujui Tim Sales"]
-    --> Gate["2. Tiba di Gudang Retur<br/>Status: QUARANTINE (Non-ATP)"]
-    --> Inspect["3. Inspeksi Teknis / Quality Check"]
+    RMA["(1) Otorisasi Retur (RMA)<br/>Disetujui Tim Sales"]
+    --> Gate["(2) Tiba di Gudang Retur<br/>Status: QUARANTINE (Non-ATP)"]
+    --> Inspect["(3) Inspeksi Teknis / Quality Check"]
     
     Inspect --> D1{"Hasil Evaluasi Mutu"}
     D1 -- "Kondisi Sempurna (Segel Utuh)" --> Restock["4a. Restock ke Rak Jual<br/>Status: Available ATP<br/>Pulihkan Nilai Persediaan"]
@@ -95,8 +95,8 @@ Dalam sistem ERP, koreksi persediaan dilakukan melalui dua pendekatan arsitektur
 ```mermaid
 flowchart TD
     subgraph CorrectionTypes["Dua Pendekatan Koreksi Persediaan"]
-        Rev["1. Transaction Reversal (Storno / Reversal Entry)<br/>Digunakan saat terjadi kesalahan input murni beberapa menit setelah posting.<br/>Sistem membuat mutasi cermin dengan tanda berlawanan (-N)<br/>menetralkan transaksi asal secara matematis."]
-        Ret["2. Business Return (RMA / RTV Transaction)<br/>Digunakan untuk peristiwa bisnis nyata di mana barang fisik benar-benar berpindah kembali.<br/>Menciptakan nomor dokumen legal baru lengkap dengan alasan retur dan audit trail."]
+        Rev["(1) Transaction Reversal (Storno / Reversal Entry)<br/>Digunakan saat terjadi kesalahan input murni beberapa menit setelah posting.<br/>Sistem membuat mutasi cermin dengan tanda berlawanan (-N)<br/>menetralkan transaksi asal secara matematis."]
+        Ret["(2) Business Return (RMA / RTV Transaction)<br/>Digunakan untuk peristiwa bisnis nyata di mana barang fisik benar-benar berpindah kembali.<br/>Menciptakan nomor dokumen legal baru lengkap dengan alasan retur dan audit trail."]
     end
 ```
 

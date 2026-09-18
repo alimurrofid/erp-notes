@@ -21,12 +21,12 @@ Perhitungan penyusutan didasarkan pada empat variabel kunci:
 
 ```mermaid
 flowchart LR
-    Cost["1. Harga Perolehan (Cost)<br/>Total biaya pengadaan hingga aset siap pakai"]
+    Cost["(1) Harga Perolehan (Cost)<br/>Total biaya pengadaan hingga aset siap pakai"]
     --> Minus["Dikurangi (-)"]
-    --> Res["2. Nilai Residu (Residual Value)<br/>Estimasi nilai jual sisa di akhir masa manfaat"]
-    --> Base["3. Dasar Penyusutan (Depreciable Amount)<br/>Nilai total yang boleh disusutkan selama masa pakai"]
+    --> Res["(2) Nilai Residu (Residual Value)<br/>Estimasi nilai jual sisa di akhir masa manfaat"]
+    --> Base["(3) Dasar Penyusutan (Depreciable Amount)<br/>Nilai total yang boleh disusutkan selama masa pakai"]
     --> Div["Dibagi (/)"]
-    --> Life["4. Masa Manfaat (Useful Life)<br/>Estimasi durasi waktu pemakaian (tahun / bulan)"]
+    --> Life["(4) Masa Manfaat (Useful Life)<br/>Estimasi durasi waktu pemakaian (tahun / bulan)"]
     --> DepExp["Beban Penyusutan Periodik"]
 ```
 

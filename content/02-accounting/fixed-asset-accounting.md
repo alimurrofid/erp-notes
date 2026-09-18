@@ -29,11 +29,11 @@ Salah satu keputusan akuntansi paling krusial adalah menentukan apakah suatu pen
 
 ```mermaid
 flowchart TD
-    Acq["1. Acquisition & WIP<br/>(Pembelian / Konstruksi / CIP)"]
-    --> Cap["2. Capitalization<br/>(Aktivasi Aset ke Fixed Asset Register)"]
-    --> Dep["3. Periodic Depreciation<br/>(Penyusutan Bulanan Otomatis - IAS 16)"]
-    --> Imp["4. Impairment Testing<br/>(Uji Penurunan Nilai - IAS 36)"]
-    --> Disp["5. Disposal & De-recognition<br/>(Penjualan / Pemusnahan / Laba-Rugi Pelepasan)"]
+    Acq["(1) Acquisition & WIP<br/>(Pembelian / Konstruksi / CIP)"]
+    --> Cap["(2) Capitalization<br/>(Aktivasi Aset ke Fixed Asset Register)"]
+    --> Dep["(3) Periodic Depreciation<br/>(Penyusutan Bulanan Otomatis - IAS 16)"]
+    --> Imp["(4) Impairment Testing<br/>(Uji Penurunan Nilai - IAS 36)"]
+    --> Disp["(5) Disposal & De-recognition<br/>(Penjualan / Pemusnahan / Laba-Rugi Pelepasan)"]
 ```
 
 ---

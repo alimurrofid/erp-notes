@@ -28,21 +28,21 @@ Sistem ERP mengoperasikan pengendalian pajak melalui tiga lapisan pertahanan:
 
 ```mermaid
 flowchart TD
-    subgraph Preventive["1. Pengendalian Pencegahan (Preventive Controls)"]
+    subgraph Preventive["(1) Pengendalian Pencegahan (Preventive Controls)"]
         P1["Validasi Format NPWP/NIK 16 Digit & Status PKP Rekanan"]
         P2["Pembatasan Akses Manual Override Kode Pajak Transaksi"]
         P3["Blokir Jurnal Manual Langsung ke Akun Buku Besar Pajak"]
         P4["Penegakan Pemisahan Tugas (SoD Matrix Perpajakan)"]
     end
 
-    subgraph Detective["2. Pengendalian Pendeteksian (Detective Controls)"]
+    subgraph Detective["(2) Pengendalian Pendeteksian (Detective Controls)"]
         D1["Dasbor Peringatan Dini Batas Waktu Unggah Faktur (Tgl 15)"]
         D2["Pendeteksian Selisih Ekualisasi Otomatis (GL vs SPT)"]
         D3["Peringatan Transaksi Tanpa Faktur Pajak Masukan / Bukti Potong"]
         D4["Pendeteksian Faktur Pajak Masukan Ganda (Anti-Duplicate Check)"]
     end
 
-    subgraph Corrective["3. Pengendalian Pemulihan (Corrective Controls)"]
+    subgraph Corrective["(3) Pengendalian Pemulihan (Corrective Controls)"]
         C1["Alur Kerja Faktur Pengganti Resmi & Pembatalan Faktur"]
         C2["Mekanisme Pembuatan Draf SPT Pembetulan Terisolasi"]
         C3["Alur Administrasi Pemindahbukuan Kas (Pbk Workflow)"]

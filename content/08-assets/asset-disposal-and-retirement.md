@@ -10,11 +10,11 @@ Sesuai standar **IAS 16 paragraf 67 s.d. 72**, nilai tercatat suatu aset tetap *
 
 ```mermaid
 flowchart LR
-    Req["1. Permohonan Pelepasan<br/>(Disposal Request & Justifikasi)"] --> Appr["2. Otorisasi Berjenjang<br/>(Manajemen & Keuangan)"]
-    Appr --> DepUp["3. Susutkan Hingga Tanggal Lepas<br/>(Depreciation Catch-Up Run)"]
-    DepUp --> Exec["4. Eksekusi Pelepasan Fisik<br/>(Jual, Lelang, Scrap, Donasi)"]
-    Exec --> Derec["5. Penghentian Pengakuan Akuntansi<br/>(Hapus Cost, Hapus Depr, Akui Gain/Loss)"]
-    Derec --> Close["6. Kunci Status Master Aset<br/>(Status: RETIRED / DISPOSED)"]
+    Req["(1) Permohonan Pelepasan<br/>(Disposal Request & Justifikasi)"] --> Appr["(2) Otorisasi Berjenjang<br/>(Manajemen & Keuangan)"]
+    Appr --> DepUp["(3) Susutkan Hingga Tanggal Lepas<br/>(Depreciation Catch-Up Run)"]
+    DepUp --> Exec["(4) Eksekusi Pelepasan Fisik<br/>(Jual, Lelang, Scrap, Donasi)"]
+    Exec --> Derec["(5) Penghentian Pengakuan Akuntansi<br/>(Hapus Cost, Hapus Depr, Akui Gain/Loss)"]
+    Derec --> Close["(6) Kunci Status Master Aset<br/>(Status: RETIRED / DISPOSED)"]
 ```
 
 ---
@@ -36,11 +36,11 @@ ERP enterprise memfasilitasi berbagai skenario pelepasan aset tetap:
 ```mermaid
 graph TD
     subgraph DisposalChannels["Bentuk Pelepasan Aset Tetap di ERP"]
-        S1["1. Penjualan ke Pihak Ketiga (Sale with Revenue / Invoice)"]
-        S2["2. Pemusnahan & Penjualan Besi Tua (Scrapping / Salvage Sale)"]
-        S3["3. Tukar Tambah Aset Baru (Trade-In / Exchange Transaction)"]
-        S4["4. Sumbangan / Donasi Sosial (Donation / Charitable Transfer)"]
-        S5["5. Kerusakan Total / Musibah / Hilang (Write-Off / Insurance Claim)"]
+        S1["(1) Penjualan ke Pihak Ketiga (Sale with Revenue / Invoice)"]
+        S2["(2) Pemusnahan & Penjualan Besi Tua (Scrapping / Salvage Sale)"]
+        S3["(3) Tukar Tambah Aset Baru (Trade-In / Exchange Transaction)"]
+        S4["(4) Sumbangan / Donasi Sosial (Donation / Charitable Transfer)"]
+        S5["(5) Kerusakan Total / Musibah / Hilang (Write-Off / Insurance Claim)"]
     end
 ```
 
@@ -80,13 +80,13 @@ sequenceDiagram
 
     Plant->>FA_Admin: Buat Pengajuan Pelepasan (Alasan: Usang / Rusak Berat)
     FA_Admin->>FA_Sys: Input Tanggal Rencana Lepas & Nilai Taksiran Jual
-    FA_Sys->>FA_Sys: 1. Jalankan Catch-Up Penyusutan Otomatis Hingga Tanggal Lepas
+    FA_Sys->>FA_Sys: (1) Jalankan Catch-Up Penyusutan Otomatis Hingga Tanggal Lepas
     FA_Admin->>FA_Admin: Dapatkan Persetujuan Pelepasan Sesuai Matriks Otorisasi
     alt Jika Pelepasan Melalui Penjualan
         FA_Sys->>AR: Terbitkan Faktur Penjualan Aset (Termasuk PPN Pasal 16D)
     end
-    FA_Sys->>GL: 2. Posting Jurnal Penghentian Pengakuan (Hapus Cost, Hapus Depr, Catat Selisih)
-    FA_Sys->>FA_Sys: 3. Kunci Status Master Aset Menjadi "DISPOSED" (Hentikan Depresiasi Masa Depan)
+    FA_Sys->>GL: (2) Posting Jurnal Penghentian Pengakuan (Hapus Cost, Hapus Depr, Catat Selisih)
+    FA_Sys->>FA_Sys: (3) Kunci Status Master Aset Menjadi "DISPOSED" (Hentikan Depresiasi Masa Depan)
     FA_Admin->>Plant: Berita Acara Pelepasan Aset Fisik Diterbitkan & Ditandatangani
 ```
 

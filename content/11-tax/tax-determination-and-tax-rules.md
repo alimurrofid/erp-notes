@@ -29,11 +29,11 @@ Mesin penentu pajak ERP mengevaluasi transaksi melalui analisis simultan terhada
 ```mermaid
 flowchart TD
     subgraph Dimensions["5 Dimensi Penentu Pajak"]
-        D1["1. Party Attributes: Pihak Terlibat (Customer/Vendor)"]
-        D2["2. Item Attributes: Sifat Barang/Jasa (Product/Service)"]
-        D3["3. Location Attributes: Yurisdiksi & Logistik (Origin/Destination)"]
-        D4["4. Transaction Attributes: Sifat Transaksi (Sale/Asset/Sample)"]
-        D5["5. Temporal Attributes: Waktu & Tanggal (Tax Point Date)"]
+        D1["(1) Party Attributes: Pihak Terlibat (Customer/Vendor)"]
+        D2["(2) Item Attributes: Sifat Barang/Jasa (Product/Service)"]
+        D3["(3) Location Attributes: Yurisdiksi & Logistik (Origin/Destination)"]
+        D4["(4) Transaction Attributes: Sifat Transaksi (Sale/Asset/Sample)"]
+        D5["(5) Temporal Attributes: Waktu & Tanggal (Tax Point Date)"]
     end
 
     subgraph Engine["Tax Determination Engine"]

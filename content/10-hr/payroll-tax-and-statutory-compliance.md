@@ -26,14 +26,14 @@ Mesin kepatuhan pajak penggajian ERP bekerja dengan membedakan beberapa istilah 
 
 ```mermaid
 flowchart TD
-    GROSS["1. Penghasilan Bruto (Gross Income)"] --> EXCL["2. Komponen Non-Objek Pajak / Fasilitas Tertentu"]
-    GROSS & EXCL --> DPP["3. Dasar Pengenaan Pajak (DPP / Taxable Gross)"]
-    DPP --> DEDUCT["4. Pengurang Sah (Biaya Jabatan, Iuran Pensiun Pegawai)"]
-    DEDUCT --> NET_INC["5. Penghasilan Neto Disetahunkan"]
-    NET_INC --> PTKP["6. Penghasilan Tidak Kena Pajak (PTKP Status: TK/0, K/1, etc.)"]
-    PTKP --> PKP["7. Penghasilan Kena Pajak (PKP Tahunan)"]
-    PKP --> BRACKET["8. Tarif Pajak Progresif / Tarif Efektif (TER)"]
-    BRACKET --> TAX_DUE["9. Pajak Penghasilan Terutang (PPh 21 Withholding)"]
+    GROSS["(1) Penghasilan Bruto (Gross Income)"] --> EXCL["(2) Komponen Non-Objek Pajak / Fasilitas Tertentu"]
+    GROSS & EXCL --> DPP["(3) Dasar Pengenaan Pajak (DPP / Taxable Gross)"]
+    DPP --> DEDUCT["(4) Pengurang Sah (Biaya Jabatan, Iuran Pensiun Pegawai)"]
+    DEDUCT --> NET_INC["(5) Penghasilan Neto Disetahunkan"]
+    NET_INC --> PTKP["(6) Penghasilan Tidak Kena Pajak (PTKP Status: TK/0, K/1, etc.)"]
+    PTKP --> PKP["(7) Penghasilan Kena Pajak (PKP Tahunan)"]
+    PKP --> BRACKET["(8) Tarif Pajak Progresif / Tarif Efektif (TER)"]
+    BRACKET --> TAX_DUE["(9) Pajak Penghasilan Terutang (PPh 21 Withholding)"]
 ```
 
 ### 1. Dasar Pengenaan Pajak (DPP) vs Penghasilan Bruto

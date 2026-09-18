@@ -16,13 +16,13 @@ Proses manufaktur mengintegrasikan modul **Sales** (sumber permintaan pesanan), 
 
 ```mermaid
 flowchart TD
-    DMD["1. Demand & Planning<br/>(Sales Demand / Safety Stock / MRP)"]
-    --> MO["2. Work Order Creation<br/>(BOM & Routing Explosion)"]
-    --> REL["3. Component Reservation & Release<br/>(Pemeriksaan Ketersediaan Bahan)"]
-    --> ISS["4. Material Issue / Consumption<br/>(Bahan Baku Keluar -> Masuk WIP)"]
-    --> OPS["5. Shop Floor Operations<br/>(Eksekusi Mesin & Jam Tenaga Kerja)"]
-    --> REC["6. Finished Goods Receipt<br/>(Barang Jadi Masuk Gudang -> Tutup WIP)"]
-    --> SET["7. Costing & Variance Settlement<br/>(Penyelesaian Varians Biaya)"]
+    DMD["(1) Demand & Planning<br/>(Sales Demand / Safety Stock / MRP)"]
+    --> MO["(2) Work Order Creation<br/>(BOM & Routing Explosion)"]
+    --> REL["(3) Component Reservation & Release<br/>(Pemeriksaan Ketersediaan Bahan)"]
+    --> ISS["(4) Material Issue / Consumption<br/>(Bahan Baku Keluar -> Masuk WIP)"]
+    --> OPS["(5) Shop Floor Operations<br/>(Eksekusi Mesin & Jam Tenaga Kerja)"]
+    --> REC["(6) Finished Goods Receipt<br/>(Barang Jadi Masuk Gudang -> Tutup WIP)"]
+    --> SET["(7) Costing & Variance Settlement<br/>(Penyelesaian Varians Biaya)"]
 ```
 
 ---

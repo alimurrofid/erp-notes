@@ -25,21 +25,21 @@ Proses penerimaan barang di pergudangan modern dibagi menjadi tahapan terstruktu
 
 ```mermaid
 flowchart TD
-    Truck["1. Kedatangan Truk & Pembongkaran (Unloading)<br/>Truk vendor tiba di Receiving Dock"]
-    --> Staging["2. Receiving Staging & Dokumen Check<br/>Pencocokan Surat Jalan Vendor vs Open PO"]
+    Truck["(1) Kedatangan Truk & Pembongkaran (Unloading)<br/>Truk vendor tiba di Receiving Dock"]
+    --> Staging["(2) Receiving Staging & Dokumen Check<br/>Pencocokan Surat Jalan Vendor vs Open PO"]
     
     Staging --> QCReq{Butuh Inspeksi<br/>Mutu (QC)?}
     
-    QCReq -- "Ya" --> Quarantine["3. Pemindahan ke QC Hold / Karantina<br/>Status: Non-ATP (Stok Tidak Boleh Dijual)"]
-    Quarantine --> QCInspect["4. Pemeriksaan Kualitas & Pengujian Sampel"]
+    QCReq -- "Ya" --> Quarantine["(3) Pemindahan ke QC Hold / Karantina<br/>Status: Non-ATP (Stok Tidak Boleh Dijual)"]
+    Quarantine --> QCInspect["(4) Pemeriksaan Kualitas & Pengujian Sampel"]
     
     QCInspect --> QCResult{Hasil QC?}
-    QCResult -- "Lolos / Accepted" --> Putaway["5. Putaway Process<br/>Penempatan ke Rak / Storage Bin Definitif"]
+    QCResult -- "Lolos / Accepted" --> Putaway["(5) Putaway Process<br/>Penempatan ke Rak / Storage Bin Definitif"]
     QCResult -- "Ditolak / Rejected" --> Rejection["Penanganan Barang Cacat<br/>Dipindahkan ke Rejection Bay<br/>Memicu Return to Vendor (RTV)"]
     
     QCReq -- "Tidak (Direct)" --> Putaway
     
-    Putaway --> FinalStock["6. Stok Berstatus Available (ATP Active)<br/>Siap untuk Reservasi Penjualan & Produksi"]
+    Putaway --> FinalStock["(6) Stok Berstatus Available (ATP Active)<br/>Siap untuk Reservasi Penjualan & Produksi"]
 ```
 
 ---

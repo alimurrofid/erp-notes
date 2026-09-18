@@ -19,35 +19,35 @@ Siklus hidup manajemen proyek di dalam ERP dikelola melalui lima tahapan terpadu
 ```mermaid
 flowchart TD
     subgraph S1["Tahap 1: Inisiasi & Struktur Data"]
-        N1["1. [[09-project/project-management-fundamentals|Project Management Fundamentals]]"]
-        N2["2. [[09-project/project-master-data|Project Master Data]]"]
-        N3["3. [[09-project/project-structure-and-work-breakdown|Project Structure & WBS]]"]
+        N1["(1) [[09-project/project-management-fundamentals|Project Management Fundamentals]]"]
+        N2["(2) [[09-project/project-master-data|Project Master Data]]"]
+        N3["(3) [[09-project/project-structure-and-work-breakdown|Project Structure & WBS]]"]
     end
 
     subgraph S2["Tahap 2: Perencanaan, Jadwal & Sumber Daya"]
-        N4["4. [[09-project/project-planning-and-scheduling|Project Planning & Scheduling]]"]
-        N5["5. [[09-project/project-task-and-milestone|Project Tasks & Milestones]]"]
-        N6["6. [[09-project/project-resource-management|Project Resource Management]]"]
+        N4["(4) [[09-project/project-planning-and-scheduling|Project Planning & Scheduling]]"]
+        N5["(5) [[09-project/project-task-and-milestone|Project Tasks & Milestones]]"]
+        N6["(6) [[09-project/project-resource-management|Project Resource Management]]"]
     end
 
     subgraph S3["Tahap 3: Eksekusi, Pelacakan Biaya & Logistik"]
-        N7["7. [[09-project/timesheet-and-effort-tracking|Timesheet & Effort Tracking]]"]
-        N8["8. [[09-project/project-cost-management|Project Cost Management]]"]
-        N9["9. [[09-project/project-budget-and-cost-control|Project Budget & Cost Control]]"]
-        N10["10. [[09-project/project-procurement|Project Procurement]]"]
-        N11["11. [[09-project/project-material-and-inventory|Project Material & Inventory]]"]
+        N7["(7) [[09-project/timesheet-and-effort-tracking|Timesheet & Effort Tracking]]"]
+        N8["(8) [[09-project/project-cost-management|Project Cost Management]]"]
+        N9["(9) [[09-project/project-budget-and-cost-control|Project Budget & Cost Control]]"]
+        N10["(10) [[09-project/project-procurement|Project Procurement]]"]
+        N11["(11) [[09-project/project-material-and-inventory|Project Material & Inventory]]"]
     end
 
     subgraph S4["Tahap 4: Penagihan, Profitabilitas & Pengendalian Perubahan"]
-        N12["12. [[09-project/project-billing-and-revenue|Project Billing & Revenue]]"]
-        N13["13. [[09-project/project-profitability|Project Profitability]]"]
-        N14["14. [[09-project/project-change-risk-and-issue-management|Change, Risk & Issue Management]]"]
+        N12["(12) [[09-project/project-billing-and-revenue|Project Billing & Revenue]]"]
+        N13["(13) [[09-project/project-profitability|Project Profitability]]"]
+        N14["(14) [[09-project/project-change-risk-and-issue-management|Change, Risk & Issue Management]]"]
     end
 
     subgraph S5["Tahap 5: Penutupan, Analitik & Integrasi"]
-        N15["15. [[09-project/project-completion-and-closing|Project Completion & Closing]]"]
-        N16["16. [[09-project/project-reporting-and-analytics|Project Reporting & Analytics]]"]
-        N17["17. [[09-project/project-integration|Cross-Module Project Integration]]"]
+        N15["(15) [[09-project/project-completion-and-closing|Project Completion & Closing]]"]
+        N16["(16) [[09-project/project-reporting-and-analytics|Project Reporting & Analytics]]"]
+        N17["(17) [[09-project/project-integration|Cross-Module Project Integration]]"]
     end
 
     S1 --> S2 --> S3 --> S4 --> S5

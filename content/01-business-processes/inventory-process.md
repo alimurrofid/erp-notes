@@ -12,9 +12,9 @@ Dalam sistem ERP modern, persediaan dikelola melalui hubungan segitiga yang tida
 
 ```mermaid
 flowchart TD
-    Phys["1. Kuantitas Fisik<br/>(Jumlah barang di rak/bin gudang)"]
-    <--> Mov["2. Mutasi Logistik / Stock Ledger<br/>(Riwayat kartu stok setiap transaksi)"]
-    <--> Val["3. Valuasi & Jurnal Finansial<br/>(Nilai saldo buku persediaan di General Ledger)"]
+    Phys["(1) Kuantitas Fisik<br/>(Jumlah barang di rak/bin gudang)"]
+    <--> Mov["(2) Mutasi Logistik / Stock Ledger<br/>(Riwayat kartu stok setiap transaksi)"]
+    <--> Val["(3) Valuasi & Jurnal Finansial<br/>(Nilai saldo buku persediaan di General Ledger)"]
 ```
 
 ---
@@ -23,18 +23,18 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    REC["1. Stock Receipt<br/>(Masuk: Pembelian / Retur / Produksi)"]
+    REC["(1) Stock Receipt<br/>(Masuk: Pembelian / Retur / Produksi)"]
     --> STK["Penyimpanan di Gudang<br/>(Stock on Hand / Bin Location)"]
     
-    STK --> TRF["2. Internal Transfer<br/>(Mutasi Gudang A ke Gudang B)"]
+    STK --> TRF["(2) Internal Transfer<br/>(Mutasi Gudang A ke Gudang B)"]
     TRF --> STK
     
-    STK --> ISS["3. Stock Issue / Consumption<br/>(Keluar: Produksi / R&D / Sampel)"]
+    STK --> ISS["(3) Stock Issue / Consumption<br/>(Keluar: Produksi / R&D / Sampel)"]
     
-    STK --> OP["4. Stock Count / Opname<br/>(Pencocokan Fisik vs Sistem)"]
-    OP -->|Selisih Fisik| ADJ["5. Stock Adjustment<br/>(Penyelarasan Nilai & Kuantitas)"]
+    STK --> OP["(4) Stock Count / Opname<br/>(Pencocokan Fisik vs Sistem)"]
+    OP -->|Selisih Fisik| ADJ["(5) Stock Adjustment<br/>(Penyelarasan Nilai & Kuantitas)"]
     
-    STK --> SCR["6. Scrap & Disposal<br/>(Pemusnahan Barang Cacat / Expired)"]
+    STK --> SCR["(6) Scrap & Disposal<br/>(Pemusnahan Barang Cacat / Expired)"]
 ```
 
 ---

@@ -28,19 +28,19 @@ Kerancuan batas wewenang sering terjadi dalam implementasi sistem penggajian. ER
 
 ```mermaid
 flowchart LR
-    subgraph PAY["1. Modul Payroll (HR)"]
+    subgraph PAY["(1) Modul Payroll (HR)"]
         P1["Kalkulasi Hak Pegawai"]
         P2["Gross Pay & Deductions"]
         P3["Net Pay to Employee"]
     end
 
-    subgraph ACCT["2. Modul Accounting (GL)"]
+    subgraph ACCT["(2) Modul Accounting (GL)"]
         A1["Pengakuan Beban Gaji (Expense)"]
         A2["Pengakuan Hutang Gaji (Payable)"]
         A3["Rekonsiliasi Kas/Bank"]
     end
 
-    subgraph TAX["3. Modul Pajak & Kepatuhan"]
+    subgraph TAX["(3) Modul Pajak & Kepatuhan"]
         T1["Pemotongan Pajak (Withholding)"]
         T2["Pelaporan SPT Masa PPh 21"]
         T3["Penyetoran ke Kas Negara"]
@@ -80,13 +80,13 @@ Proses pemrosesan penggajian bulanan di dalam ERP dijalankan melalui delapan tah
 
 ```mermaid
 flowchart TD
-    A["1. Pembukaan Periode Penggajian & Cut-Off Date"] --> B["2. Agregasi Data Input (Absensi, Cuti, Lembur, Klaim)"]
-    B --> C["3. Validasi Pra-Kalkulasi & Pemeriksaan Anomali"]
-    C --> D["4. Eksekusi Mesin Penggajian (Payroll Calculation Engine)"]
-    D --> E["5. Penelaahan & Persetujuan Berjenjang (Review & Approval)"]
-    E --> F["6. Pembuatan Berkas Transfer Bank (Bank Disbursement File)"]
-    F --> G["7. Posting Jurnal Buku Besar (GL Posting) & Kunci Periode"]
-    G --> H["8. Distribusi Slip Gaji Digital ke Portal ESS Pegawai"]
+    A["(1) Pembukaan Periode Penggajian & Cut-Off Date"] --> B["(2) Agregasi Data Input (Absensi, Cuti, Lembur, Klaim)"]
+    B --> C["(3) Validasi Pra-Kalkulasi & Pemeriksaan Anomali"]
+    C --> D["(4) Eksekusi Mesin Penggajian (Payroll Calculation Engine)"]
+    D --> E["(5) Penelaahan & Persetujuan Berjenjang (Review & Approval)"]
+    E --> F["(6) Pembuatan Berkas Transfer Bank (Bank Disbursement File)"]
+    F --> G["(7) Posting Jurnal Buku Besar (GL Posting) & Kunci Periode"]
+    G --> H["(8) Distribusi Slip Gaji Digital ke Portal ESS Pegawai"]
 ```
 
 ### Rincian Tahapan Siklus Penggajian:

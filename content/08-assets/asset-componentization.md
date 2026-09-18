@@ -62,10 +62,10 @@ sequenceDiagram
     participant GL as General Ledger
 
     Plant->>FA: Pengajuan Penggantian Komponen SMT Placement Head Lama dengan Baru
-    FA->>FA: 1. Identifikasi Nilai Buku Komponen Lama (Carrying Amount)
+    FA->>FA: (1) Identifikasi Nilai Buku Komponen Lama (Carrying Amount)
     FA->>GL: Derecognition: Hapus Nilai Perolehan & Akumulasi Depresiasi Komponen Lama
     FA->>GL: Akui Selisih Nilai Buku Sisa sebagai Rugi Pelepasan Komponen di Laba Rugi
-    Plant->>FA: 2. Pemasangan & Pembayaran Komponen SMT Head Baru (Rp40 Juta)
+    Plant->>FA: (2) Pemasangan & Pembayaran Komponen SMT Head Baru (Rp40 Juta)
     FA->>FA: Kapitalisasi Sub-Aset Baru di Bawah Nomor Aset Induk yang Sama
     FA->>GL: Debit Aset Tetap (Komponen Baru), Kredit Hutang/Kas
     FA->>FA: Mulai Jadwal Depresiasi Baru Selama 3 Tahun ke Depan

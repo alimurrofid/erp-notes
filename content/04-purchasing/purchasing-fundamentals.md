@@ -46,18 +46,18 @@ Dalam arsitektur ERP enterprise, fungsi pengadaan diorganisasikan ke dalam dua a
 ```mermaid
 flowchart LR
     subgraph S2P["Source to Pay (S2P) - Tingkat Strategis"]
-        Need["1. Strategic Sourcing & Demand"]
-        --> Supp["2. Supplier Qualification & Onboarding"]
-        --> Cont["3. Contract & Price Negotiation"]
+        Need["(1) Strategic Sourcing & Demand"]
+        --> Supp["(2) Supplier Qualification & Onboarding"]
+        --> Cont["(3) Contract & Price Negotiation"]
     end
 
     subgraph P2P["Procure to Pay (P2P) - Tingkat Operasional Transaksional"]
-        PR["4. Purchase Requisition"]
-        --> PO["5. Purchase Order"]
-        --> GR["6. Goods / Service Receipt"]
-        --> VB["7. Vendor Bill Verification"]
-        --> AP["8. Accounts Payable"]
-        --> Pay["9. Payment & Settlement"]
+        PR["(4) Purchase Requisition"]
+        --> PO["(5) Purchase Order"]
+        --> GR["(6) Goods / Service Receipt"]
+        --> VB["(7) Vendor Bill Verification"]
+        --> AP["(8) Accounts Payable"]
+        --> Pay["(9) Payment & Settlement"]
     end
 
     Cont --> PR
@@ -92,11 +92,11 @@ $$\mathbf{Purchase\ Order \neq Goods\ Receipt \neq Vendor\ Bill \neq Accounts\ P
 
 ```mermaid
 flowchart TD
-    PO["1. Purchase Order (PO)<br/>Komitmen komersial hukum.<br/>TIDAK ADA pengakuan utang atau beban di buku besar.<br/>Hanya mencatat komitmen anggaran."]
-    --> GR["2. Goods Receipt (GR)<br/>Barang fisik tiba di gudang.<br/>Persediaan bertambah di neraca.<br/>Diakui Utang Belum Difakturkan (GR/IR Interim Liability)."]
-    --> VB["3. Vendor Bill (Tagihan)<br/>Faktur resmi dan faktur pajak tiba dari pemasok.<br/>Verifikasi 3-Way Match (PO vs GR vs Bill).<br/>Akun GR/IR ditutup menjadi Utang Usaha (AP) resmi."]
-    --> AP["4. Accounts Payable Subledger<br/>Pengakuan kewajiban legal terikat jatuh tempo (Net 30).<br/>Pajak Masukan (PPN) diakui."]
-    --> PAY["5. Payment & Settlement<br/>Kas keluar dari rekening bank perusahaan via transfer.<br/>Utang pemasok ditutup (cleared)."]
+    PO["(1) Purchase Order (PO)<br/>Komitmen komersial hukum.<br/>TIDAK ADA pengakuan utang atau beban di buku besar.<br/>Hanya mencatat komitmen anggaran."]
+    --> GR["(2) Goods Receipt (GR)<br/>Barang fisik tiba di gudang.<br/>Persediaan bertambah di neraca.<br/>Diakui Utang Belum Difakturkan (GR/IR Interim Liability)."]
+    --> VB["(3) Vendor Bill (Tagihan)<br/>Faktur resmi dan faktur pajak tiba dari pemasok.<br/>Verifikasi 3-Way Match (PO vs GR vs Bill).<br/>Akun GR/IR ditutup menjadi Utang Usaha (AP) resmi."]
+    --> AP["(4) Accounts Payable Subledger<br/>Pengakuan kewajiban legal terikat jatuh tempo (Net 30).<br/>Pajak Masukan (PPN) diakui."]
+    --> PAY["(5) Payment & Settlement<br/>Kas keluar dari rekening bank perusahaan via transfer.<br/>Utang pemasok ditutup (cleared)."]
 ```
 
 1. **Purchase Order Disahkan**: Perusahaan memesan 10 unit bahan baku seharga Rp7.000.000. Dokumen ini adalah **komitmen komersial**, bukan transaksi akuntansi. Tidak ada debit atau kredit di buku besar.

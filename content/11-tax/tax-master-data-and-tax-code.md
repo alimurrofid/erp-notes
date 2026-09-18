@@ -113,12 +113,12 @@ Proses bisnis pemeliharaan data master pajak harus mengikuti prosedur tata kelol
 
 ```mermaid
 flowchart TD
-    A["1. Identifikasi Perubahan Regulasi / Tarif"] --> B["2. Pengajuan Permintaan Perubahan (RFC)"]
-    B --> C["3. Pembuatan Kode Baru atau Rate Schedule Baru"]
-    C --> D["4. Konfigurasi Pemetaan Akun GL & Pelaporan SPT"]
-    D --> E["5. Pengujian Skenario Transaksi di Lingkungan UAT"]
-    E --> F["6. Persetujuan Formal Tax Manager & Financial Controller"]
-    F --> G["7. Aktivasi di Lingkungan Produksi (Effective Dating Active)"]
+    A["(1) Identifikasi Perubahan Regulasi / Tarif"] --> B["(2) Pengajuan Permintaan Perubahan (RFC)"]
+    B --> C["(3) Pembuatan Kode Baru atau Rate Schedule Baru"]
+    C --> D["(4) Konfigurasi Pemetaan Akun GL & Pelaporan SPT"]
+    D --> E["(5) Pengujian Skenario Transaksi di Lingkungan UAT"]
+    E --> F["(6) Persetujuan Formal Tax Manager & Financial Controller"]
+    F --> G["(7) Aktivasi di Lingkungan Produksi (Effective Dating Active)"]
 ```
 
 ---

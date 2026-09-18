@@ -8,10 +8,10 @@ Berbeda dengan perspektif akuntansi murni yang telah dibahas pada [[02-accountin
 
 ```mermaid
 flowchart LR
-    InServ["1. In-Service Trigger<br/>(Tanggal Mulai Aktif)"] --> Setup["2. Parameter Formula<br/>(Metode, Umur, Residu, Kalender)"]
-    Setup --> Sched["3. Generate Schedule Table<br/>(Tabel Jadwal 60 Bulan)"]
-    Sched --> Run["4. Monthly Execution Run<br/>(Batch Posting Otomatis)"]
-    Run --> Adjust["5. Dynamic Revision<br/>(Perubahan Estimasi Prospektif)"]
+    InServ["(1) In-Service Trigger<br/>(Tanggal Mulai Aktif)"] --> Setup["(2) Parameter Formula<br/>(Metode, Umur, Residu, Kalender)"]
+    Setup --> Sched["(3) Generate Schedule Table<br/>(Tabel Jadwal 60 Bulan)"]
+    Sched --> Run["(4) Monthly Execution Run<br/>(Batch Posting Otomatis)"]
+    Run --> Adjust["(5) Dynamic Revision<br/>(Perubahan Estimasi Prospektif)"]
 ```
 
 ---
@@ -49,9 +49,9 @@ ERP enterprise mendukung tiga metode komputasi utama:
 ```mermaid
 graph TD
     Methods["Metode Penyusutan di ERP"]
-    SL["1. Straight-Line (Garis Lurus)<br/>Beban Konstan Setiap Periode Waktu"]
-    DB["2. Diminishing / Declining Balance (Saldo Menurun)<br/>Beban Dipercepat (Tinggi di Awal, Menurun di Akhir)"]
-    UOP["3. Units of Production / Machine Hours (Satuan Hasil)<br/>Beban Berfluktuasi Sesuai Utilisasi Pabrik"]
+    SL["(1) Straight-Line (Garis Lurus)<br/>Beban Konstan Setiap Periode Waktu"]
+    DB["(2) Diminishing / Declining Balance (Saldo Menurun)<br/>Beban Dipercepat (Tinggi di Awal, Menurun di Akhir)"]
+    UOP["(3) Units of Production / Machine Hours (Satuan Hasil)<br/>Beban Berfluktuasi Sesuai Utilisasi Pabrik"]
     Methods --> SL
     Methods --> DB
     Methods --> UOP

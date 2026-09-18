@@ -31,12 +31,12 @@ Salah satu keunggulan kontrol sistem ERP enterprise adalah kemampuannya membedak
 
 ```mermaid
 flowchart LR
-    O["1. Ordered Qty<br/>(Kuantitas Dipesan di PO)"]
-    --> R["2. Received Qty<br/>(Kuantitas Tiba di Gudang)"]
-    --> A["3. Accepted Qty<br/>(Kuantitas Lolos Inspeksi Mutu)"]
-    --> I["4. Invoiced Qty<br/>(Kuantitas Ditagihkan Vendor)"]
+    O["(1) Ordered Qty<br/>(Kuantitas Dipesan di PO)"]
+    --> R["(2) Received Qty<br/>(Kuantitas Tiba di Gudang)"]
+    --> A["(3) Accepted Qty<br/>(Kuantitas Lolos Inspeksi Mutu)"]
+    --> I["(4) Invoiced Qty<br/>(Kuantitas Ditagihkan Vendor)"]
     
-    R -.-> Ret["5. Returned Qty<br/>(Kuantitas Cacat / Ditolak)"]
+    R -.-> Ret["(5) Returned Qty<br/>(Kuantitas Cacat / Ditolak)"]
 ```
 
 | Parameter Kuantitas | Definisi & Titik Pencatatan | Dampak Fisik Pergudangan | Dampak Akuntansi |
@@ -53,20 +53,20 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    Truck["1. Truk Pemasok Tiba di Gudang<br/>(Membawa Surat Jalan Vendor / Delivery Note)"]
-    --> MatchPO{"2. Verifikasi Nomor PO:<br/>Apakah PO Valid & Masih Terbuka?"}
+    Truck["(1) Truk Pemasok Tiba di Gudang<br/>(Membawa Surat Jalan Vendor / Delivery Note)"]
+    --> MatchPO{"(2) Verifikasi Nomor PO:<br/>Apakah PO Valid & Masih Terbuka?"}
     
     MatchPO -->|PO Tidak Ditemukan / Sudah Ditutup| RejectTruck["Tolak Pembongkaran (Unauthorized Delivery)"]
-    MatchPO -->|PO Valid| Unload["3. Pembongkaran Fisik Barang<br/>(Pencatatan Received Quantity)"]
+    MatchPO -->|PO Valid| Unload["(3) Pembongkaran Fisik Barang<br/>(Pencatatan Received Quantity)"]
     
-    Unload --> Inspect{"4. Quality Inspection (Inspeksi Mutu)<br/>Uji Sampel / Pengecekan Fisik"}
+    Unload --> Inspect{"(4) Quality Inspection (Inspeksi Mutu)<br/>Uji Sampel / Pengecekan Fisik"}
     
     Inspect -->|Lolos Uji Mutu (100%)| Accept["5a. Accepted: Pindahkan ke Lokasi Rak (Putaway)<br/>Update Kartu Stok & Posting Jurnal Persediaan"]
     Inspect -->|Sebagian Rusak / Cacat| Split["5b. Parsial: Terima yang Bagus (Accepted)<br/>Karantina yang Rusak (Rejected Quantity)"]
     
-    Accept --> ThreeWay["6. Masuk ke Antrean Verifikasi 3-Way Match"]
+    Accept --> ThreeWay["(6) Masuk ke Antrean Verifikasi 3-Way Match"]
     Split --> ThreeWay
-    Split --> RetProc["7. Terbitkan Surat Pengembalian Barang (RTV / Return to Vendor)"]
+    Split --> RetProc["(7) Terbitkan Surat Pengembalian Barang (RTV / Return to Vendor)"]
 ```
 
 ---

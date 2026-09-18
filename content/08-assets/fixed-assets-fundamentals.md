@@ -8,12 +8,12 @@ Dalam arsitektur ERP, Fixed Assets Management mengelola **siklus hidup aset fisi
 
 ```mermaid
 flowchart LR
-    Plan["1. Planned / Budgeted<br/>(CAPEX Proposal)"] --> Acq["2. Acquired / In-Progress<br/>(P2P / Construction)"]
-    Acq --> Cap["3. Capitalized<br/>(Asset Register Entry)"]
-    Cap --> InServ["4. In Service & Depreciated<br/>(Operasional Harian)"]
-    InServ --> Trans["5. Maintained & Transferred<br/>(Mutasi Lokasi / Biaya)"]
-    InServ --> Eval["6. Revalued / Impaired<br/>(Penilaian Nilai Wajar)"]
-    Trans --> Disp["7. Disposed / Retired<br/>(Pelepasan / Derecognition)"]
+    Plan["(1) Planned / Budgeted<br/>(CAPEX Proposal)"] --> Acq["(2) Acquired / In-Progress<br/>(P2P / Construction)"]
+    Acq --> Cap["(3) Capitalized<br/>(Asset Register Entry)"]
+    Cap --> InServ["(4) In Service & Depreciated<br/>(Operasional Harian)"]
+    InServ --> Trans["(5) Maintained & Transferred<br/>(Mutasi Lokasi / Biaya)"]
+    InServ --> Eval["(6) Revalued / Impaired<br/>(Penilaian Nilai Wajar)"]
+    Trans --> Disp["(7) Disposed / Retired<br/>(Pelepasan / Derecognition)"]
     Eval --> Disp
 ```
 

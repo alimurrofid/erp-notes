@@ -19,9 +19,9 @@ Dalam arsitektur sistem enterprise, persediaan bukan sekadar kumpulan barang di 
 ```mermaid
 flowchart TD
     subgraph Dimensions["Tiga Dimensi Persediaan dalam ERP"]
-        Phys["1. Realitas Fisik (Physical Reality)<br/>Barang aktual di rak, palet, atau bin gudang.<br/>Dioperasikan oleh tim logistik (Forklift, Barcode Scanner)."]
-        Log["2. Saldo & Mutasi Sistemik (System State & Movement)<br/>Kuantitas on-hand, reserved, allocated di Stock Ledger.<br/>Dihasilkan dari transaksi logistik yang sah (GR, Issue, Transfer)."]
-        Val["3. Finansial & Valuasi (Financial Valuation)<br/>Nilai moneter persediaan di General Ledger (IAS 2).<br/>Dihitung via rumus biaya (FIFO, Moving Average, Standard Cost)."]
+        Phys["(1) Realitas Fisik (Physical Reality)<br/>Barang aktual di rak, palet, atau bin gudang.<br/>Dioperasikan oleh tim logistik (Forklift, Barcode Scanner)."]
+        Log["(2) Saldo & Mutasi Sistemik (System State & Movement)<br/>Kuantitas on-hand, reserved, allocated di Stock Ledger.<br/>Dihasilkan dari transaksi logistik yang sah (GR, Issue, Transfer)."]
+        Val["(3) Finansial & Valuasi (Financial Valuation)<br/>Nilai moneter persediaan di General Ledger (IAS 2).<br/>Dihitung via rumus biaya (FIFO, Moving Average, Standard Cost)."]
     end
     Phys <--> Log
     Log <--> Val
@@ -74,10 +74,10 @@ ERP modern membedakan antara **di mana barang berada secara fisik (*Physical Cus
 ```mermaid
 flowchart LR
     subgraph Types["Matriks Kepemilikan dan Lokasi Persediaan"]
-        Own1["1. Owned Stock, On-Premise<br/>(Persediaan Reguler Milik Sendiri di Gudang Sendiri)"]
-        Own2["2. Consignment In (Vendor-Owned)<br/>(Barang Milik Vendor Dititipkan di Gudang Kita)<br/>Tidak ada nilai aset di Neraca kita."]
-        Own3["3. Consignment Out (Customer-Held)<br/>(Barang Milik Kita Dititipkan di Toko Pelanggan)<br/>Tercatat sebagai Aset kita di lokasi eksternal."]
-        Own4["4. In-Transit Stock<br/>(Barang Dalam Perjalanan Antar-Gudang / Pembelian FOB)<br/>Secara fisik di jalan, legalitas diakui."]
+        Own1["(1) Owned Stock, On-Premise<br/>(Persediaan Reguler Milik Sendiri di Gudang Sendiri)"]
+        Own2["(2) Consignment In (Vendor-Owned)<br/>(Barang Milik Vendor Dititipkan di Gudang Kita)<br/>Tidak ada nilai aset di Neraca kita."]
+        Own3["(3) Consignment Out (Customer-Held)<br/>(Barang Milik Kita Dititipkan di Toko Pelanggan)<br/>Tercatat sebagai Aset kita di lokasi eksternal."]
+        Own4["(4) In-Transit Stock<br/>(Barang Dalam Perjalanan Antar-Gudang / Pembelian FOB)<br/>Secara fisik di jalan, legalitas diakui."]
     end
 ```
 

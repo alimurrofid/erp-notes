@@ -18,14 +18,14 @@ Proses operasional utang usaha terintegrasi erat dengan siklus [[01-business-pro
 
 ```mermaid
 flowchart TD
-    PO["1. Purchase Order<br/>(Komitmen Pengadaan)"]
-    --> GR["2. Penerimaan Barang (GR)<br/>(Pengakuan Akrual Persediaan / GR/IR)"]
-    --> Match{"3. 3-Way Matching<br/>(PO vs GR vs Vendor Bill)"}
-    Match -->|Valid| Inv["4. Pengakuan Utang Resmi (AP)<br/>(Tutup Akun Kliring GR/IR)"]
+    PO["(1) Purchase Order<br/>(Komitmen Pengadaan)"]
+    --> GR["(2) Penerimaan Barang (GR)<br/>(Pengakuan Akrual Persediaan / GR/IR)"]
+    --> Match{"(3) 3-Way Matching<br/>(PO vs GR vs Vendor Bill)"}
+    Match -->|Valid| Inv["(4) Pengakuan Utang Resmi (AP)<br/>(Tutup Akun Kliring GR/IR)"]
     Match -->|Discrepancy| Hold["Payment Blocked / Price Variance"]
     Hold -->|Resolved| Inv
-    Inv --> Pay["5. Pembayaran Kas-Bank<br/>(Dr. AP / Cr. Bank)"]
-    Inv --> Ret["6. Retur Pembelian<br/>(Dr. AP via Debit Note)"]
+    Inv --> Pay["(5) Pembayaran Kas-Bank<br/>(Dr. AP / Cr. Bank)"]
+    Inv --> Ret["(6) Retur Pembelian<br/>(Dr. AP via Debit Note)"]
 ```
 
 ---

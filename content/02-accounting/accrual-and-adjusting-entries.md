@@ -20,12 +20,12 @@ Seluruh jurnal penyesuaian dapat dikelompokkan ke dalam dua kelompok besar: **Ak
 flowchart TD
     Adj["Klasifikasi Jurnal Penyesuaian"]
     
-    subgraph Accruals["1. AKRUAL (Aktivitas Terjadi DULUAN, Kas/Invoice KEMUDIAN)"]
+    subgraph Accruals["(1) AKRUAL (Aktivitas Terjadi DULUAN, Kas/Invoice KEMUDIAN)"]
         AccExp["Accrued Expense (Beban Akrual)<br/>Manfaat telah dinikmati, tagihan belum diterima.<br/>=> Dr. Beban / Cr. Utang Akrual"]
         AccRev["Accrued Revenue (Pendapatan Akrual)<br/>Jasa telah selesai, faktur belum diterbitkan.<br/>=> Dr. Piutang Akrual / Cr. Pendapatan"]
     end
 
-    subgraph Deferrals["2. PENANGGUHAN (Kas Berpindah DULUAN, Aktivitas KEMUDIAN)"]
+    subgraph Deferrals["(2) PENANGGUHAN (Kas Berpindah DULUAN, Aktivitas KEMUDIAN)"]
         PrepExp["Prepaid Expense (Beban Dibayar di Muka)<br/>Uang keluar duluan untuk manfaat masa depan.<br/>=> Dr. Beban / Cr. Aset Dibayar di Muka"]
         DefRev["Deferred Revenue (Pendapatan Diterima di Muka)<br/>Uang diterima duluan sebelum barang/jasa diserahkan.<br/>=> Dr. Utang Pendapatan / Cr. Pendapatan"]
     end

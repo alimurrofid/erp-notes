@@ -30,12 +30,12 @@ Aliran data dari modul penjualan bermuara ke subledger piutang melalui alur beri
 
 ```mermaid
 flowchart LR
-    DO["1. Delivery Order (DO)<br/>(Surat Jalan Tervalidasi)"]
-    --> INV["2. Customer Invoice<br/>(Faktur Penjualan Komersial)"]
-    --> AR_Sub["3. AR Subledger Update<br/>(Kartu Piutang Pelanggan Bertambah)"]
-    --> GL["4. General Ledger Posting<br/>(Dr. 1120 - Piutang Usaha<br/>Cr. 4101 - Pendapatan<br/>Cr. 2120 - Utang PPN)"]
-    --> Pay["5. Customer Payment<br/>(Penerimaan Transfer Bank)"]
-    --> Clear["6. Open-Item Clearing<br/>(Faktur Ditandai Lunas)"]
+    DO["(1) Delivery Order (DO)<br/>(Surat Jalan Tervalidasi)"]
+    --> INV["(2) Customer Invoice<br/>(Faktur Penjualan Komersial)"]
+    --> AR_Sub["(3) AR Subledger Update<br/>(Kartu Piutang Pelanggan Bertambah)"]
+    --> GL["(4) General Ledger Posting<br/>(Dr. 1120 - Piutang Usaha<br/>Cr. 4101 - Pendapatan<br/>Cr. 2120 - Utang PPN)"]
+    --> Pay["(5) Customer Payment<br/>(Penerimaan Transfer Bank)"]
+    --> Clear["(6) Open-Item Clearing<br/>(Faktur Ditandai Lunas)"]
 ```
 
 ---

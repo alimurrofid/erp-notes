@@ -8,13 +8,13 @@ Sesuai standar akuntansi internasional **IAS 36 Impairment of Assets**, jika nil
 
 ```mermaid
 flowchart TD
-    Start["1. Identifikasi Indikator Penurunan Nilai<br/>(Internal & Eksternal - IAS 36.12)"] --> Test{"Apakah Ada Indikator?"}
+    Start["(1) Identifikasi Indikator Penurunan Nilai<br/>(Internal & Eksternal - IAS 36.12)"] --> Test{"Apakah Ada Indikator?"}
     Test -- Tidak --> Keep["Tidak Perlu Uji Penurunan Nilai Formal<br/>(Lanjutkan Depresiasi Normal)"]
-    Test -- Ya --> Calc["2. Hitung Jumlah Terpulihkan (Recoverable Amount)<br/>Max(Fair Value - Cost of Disposal, Value in Use)"]
+    Test -- Ya --> Calc["(2) Hitung Jumlah Terpulihkan (Recoverable Amount)<br/>Max(Fair Value - Cost of Disposal, Value in Use)"]
     Calc --> Comp{"Carrying Amount > Recoverable Amount?"}
     Comp -- Tidak --> NoLoss["Tidak Ada Penurunan Nilai<br/>(Nilai Buku Tetap)"]
-    Comp -- Ya --> Loss["3. Akui Rugi Penurunan Nilai (Impairment Loss)<br/>Debit: Laba Rugi, Kredit: Akumulasi Penurunan Nilai"]
-    Loss --> Resched["4. Susun Ulang Jadwal Depresiasi Masa Depan<br/>(Berdasarkan Nilai Terpulihkan Baru)"]
+    Comp -- Ya --> Loss["(3) Akui Rugi Penurunan Nilai (Impairment Loss)<br/>Debit: Laba Rugi, Kredit: Akumulasi Penurunan Nilai"]
+    Loss --> Resched["(4) Susun Ulang Jadwal Depresiasi Masa Depan<br/>(Berdasarkan Nilai Terpulihkan Baru)"]
 ```
 
 ---

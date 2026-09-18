@@ -26,8 +26,8 @@ Proses pengisian ulang persediaan bergerak dalam siklus dinamis:
 
 ```mermaid
 flowchart TD
-    Demand["1. Permintaan Konsumsi Terjadi<br/>(Penjualan, Pemakaian Pabrik, atau Pemindahan)"]
-    --> Proj["2. Proyeksi Kuantitas Bersih (Projected Net Stock)<br/>ERP menghitung: On-Hand + On-Order - Demand Terikat"]
+    Demand["(1) Permintaan Konsumsi Terjadi<br/>(Penjualan, Pemakaian Pabrik, atau Pemindahan)"]
+    --> Proj["(2) Proyeksi Kuantitas Bersih (Projected Net Stock)<br/>ERP menghitung: On-Hand + On-Order - Demand Terikat"]
     
     Proj --> CheckROP{Apakah Proyeksi Stok<br/>$\le$ Reorder Point (ROP)?}
     
@@ -41,11 +41,11 @@ flowchart TD
     TriggerType -- "Barang Pindah (Transfer)" --> TR["Bangkiskan Transfer Request (TR)<br/>dari Gudang Pusat Distribusi"]
     TriggerType -- "Barang Rakit (Make)" --> MO["Bangkiskan Manufacturing Order (MO)<br/>ke Lantai Produksi Pabrik"]
     
-    PR --> Inbound["4. Penerimaan Barang di Gudang (Goods Receipt)"]
+    PR --> Inbound["(4) Penerimaan Barang di Gudang (Goods Receipt)"]
     TR --> Inbound
     MO --> Inbound
     
-    Inbound --> Recover["5. Pemulihan Saldo Persediaan (Stock Recovery)<br/>Stok kembali di atas ambang batas aman"]
+    Inbound --> Recover["(5) Pemulihan Saldo Persediaan (Stock Recovery)<br/>Stok kembali di atas ambang batas aman"]
 ```
 
 ---

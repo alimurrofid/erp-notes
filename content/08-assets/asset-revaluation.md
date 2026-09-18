@@ -13,10 +13,10 @@ Di bawah standar akuntansi internasional **IAS 16 paragraf 31 s.d. 42**, entitas
 
 ```mermaid
 flowchart LR
-    FairVal["1. Penilaian Nilai Wajar<br/>(Laporan Penilai Independen)"] --> Comp["2. Bandingkan dengan Nilai Buku<br/>(Fair Value vs Carrying Amount)"]
+    FairVal["(1) Penilaian Nilai Wajar<br/>(Laporan Penilai Independen)"] --> Comp["(2) Bandingkan dengan Nilai Buku<br/>(Fair Value vs Carrying Amount)"]
     Comp -->|Fair Value > Nilai Buku| Surplus["3A. Revaluation Increase<br/>(Kredit ke Ekuitas / OCI: Revaluation Surplus)"]
     Comp -->|Fair Value < Nilai Buku| Deficit["3B. Revaluation Decrease<br/>(Debit ke Laba Rugi: Beban Revaluasi)"]
-    Surplus --> Sched["4. Jadwal Depresiasi Baru<br/>(Disusutkan Berdasarkan Nilai Wajar Baru)"]
+    Surplus --> Sched["(4) Jadwal Depresiasi Baru<br/>(Disusutkan Berdasarkan Nilai Wajar Baru)"]
     Deficit --> Sched
 ```
 
@@ -49,8 +49,8 @@ Standar **IAS 16 paragraf 35** menyediakan dua metode teknis perlakuan akumulasi
 ```mermaid
 graph TD
     RevMethods["Metode Perlakuan Akumulasi Depresiasi (IAS 16.35)"]
-    Net["1. Elimination Method (Metode Eliminasi / Bersih)<br/>Akumulasi Depresiasi Dihapus Lawan Nilai Perolehan.<br/>Nilai Buku Bersih Direvaluasi ke Nilai Wajar.<br/>(Umum untuk Properti Tanah & Bangunan)"]
-    Gross["2. Proportional Restatement (Metode Proporsional / Bruto)<br/>Harga Perolehan & Akumulasi Depresiasi Disesuaikan<br/>Secara Proporsional Membentuk Nilai Wajar.<br/>(Umum untuk Mesin & Peralatan Pabrik Kompleks)"]
+    Net["(1) Elimination Method (Metode Eliminasi / Bersih)<br/>Akumulasi Depresiasi Dihapus Lawan Nilai Perolehan.<br/>Nilai Buku Bersih Direvaluasi ke Nilai Wajar.<br/>(Umum untuk Properti Tanah & Bangunan)"]
+    Gross["(2) Proportional Restatement (Metode Proporsional / Bruto)<br/>Harga Perolehan & Akumulasi Depresiasi Disesuaikan<br/>Secara Proporsional Membentuk Nilai Wajar.<br/>(Umum untuk Mesin & Peralatan Pabrik Kompleks)"]
     RevMethods --> Net
     RevMethods --> Gross
 ```

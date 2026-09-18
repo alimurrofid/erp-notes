@@ -28,7 +28,7 @@ Salah satu sumber perdebatan paling sengit antara Direktur Penjualan (*VP Sales*
 
 ```mermaid
 flowchart TD
-    subgraph OperationalLayer["1. Operational Metrics (Sumber: Modul Sales & Warehouse)"]
+    subgraph OperationalLayer["(1) Operational Metrics (Sumber: Modul Sales & Warehouse)"]
         O1["Sales Bookings (Total Pesanan Masuk)"]
         O2["Order Volume & Average Order Value (AOV)"]
         O3["Fulfillment Rate & Backorder Aging"]
@@ -36,7 +36,7 @@ flowchart TD
         O5["Order Cancellation Rate"]
     end
 
-    subgraph FinancialLayer["2. Financial Metrics (Sumber: Modul General Ledger & AR)"]
+    subgraph FinancialLayer["(2) Financial Metrics (Sumber: Modul General Ledger & AR)"]
         F1["Gross Revenue & Net Invoiced Sales"]
         F2["Cost of Goods Sold (COGS) & Gross Margin %"]
         F3["Accounts Receivable Aging (Laporan Umur Piutang)"]

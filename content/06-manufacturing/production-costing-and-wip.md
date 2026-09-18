@@ -29,9 +29,9 @@ $$\mathbf{\text{Biaya Pokok Produksi} = \text{Bahan Baku Langsung} + \text{Tenag
 ```mermaid
 flowchart TD
     subgraph CostElements["Tiga Pilar Biaya Manufaktur (Product Cost Elements)"]
-        DM["1. Biaya Bahan Baku Langsung (Direct Materials)<br/>Nilai faktur dan landed cost komponen yang habis dipasang ke produk.<br/>(Contoh: Chipset, RAM, Layar Display, Casing)"]
-        DL["2. Biaya Tenaga Kerja Langsung (Direct Labor)<br/>Upah dan tunjangan operator lini perakitan yang bekerja langsung menyentuh produk.<br/>(Dihitung dari jam kerja aktual x tarif upah stasiun kerja)"]
-        MOH["3. Biaya Overhead Pabrik (Manufacturing Overhead / MOH)<br/>Biaya tidak langsung fasilitas pabrik yang diserap ke produk.<br/>(Contoh: Listrik mesin SMT, depresiasi mesin pabrik, gaji supervisor pabrik)"]
+        DM["(1) Biaya Bahan Baku Langsung (Direct Materials)<br/>Nilai faktur dan landed cost komponen yang habis dipasang ke produk.<br/>(Contoh: Chipset, RAM, Layar Display, Casing)"]
+        DL["(2) Biaya Tenaga Kerja Langsung (Direct Labor)<br/>Upah dan tunjangan operator lini perakitan yang bekerja langsung menyentuh produk.<br/>(Dihitung dari jam kerja aktual x tarif upah stasiun kerja)"]
+        MOH["(3) Biaya Overhead Pabrik (Manufacturing Overhead / MOH)<br/>Biaya tidak langsung fasilitas pabrik yang diserap ke produk.<br/>(Contoh: Listrik mesin SMT, depresiasi mesin pabrik, gaji supervisor pabrik)"]
     end
     
     DM --> WIP["Akun Penampung:<br/>Persediaan Barang Dalam Proses (WIP)"]
@@ -92,9 +92,9 @@ Di akhir bulan berjalan, saat laporan keuangan bulanan ditutup:
 flowchart TD
     WIP_Total["Total Biaya di Akun WIP: Rp7.900.000"]
     
-    WIP_Total --> FG_Part["1. Ditransfer ke Barang Jadi (Finished Goods)<br/>90 Unit Selesai Sempurna"]
-    WIP_Total --> End_WIP["2. Tertinggal di Neraca (Ending WIP Inventory)<br/>5 Unit Belum Selesai di Lantai Pabrik"]
-    WIP_Total --> Var_Close["3. Ditutup ke Laporan Laba Rugi (P&L Variances)<br/>Selisih Biaya Standar vs Aktual + Scrap"]
+    WIP_Total --> FG_Part["(1) Ditransfer ke Barang Jadi (Finished Goods)<br/>90 Unit Selesai Sempurna"]
+    WIP_Total --> End_WIP["(2) Tertinggal di Neraca (Ending WIP Inventory)<br/>5 Unit Belum Selesai di Lantai Pabrik"]
+    WIP_Total --> Var_Close["(3) Ditutup ke Laporan Laba Rugi (P&L Variances)<br/>Selisih Biaya Standar vs Aktual + Scrap"]
 ```
 
 ---
