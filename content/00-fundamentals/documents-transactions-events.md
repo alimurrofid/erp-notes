@@ -19,15 +19,15 @@ Dalam perancangan dan operasional ERP, sering terjadi kerancuan antara istilah *
 
 ```mermaid
 flowchart TD
-    BE["1. Business Event\n(Pelanggan memesan barang via telepon/email)"]
-    --> BD["2. Business Document\n(Staf membuat dokumen Sales Order #SO-001)"]
-    --> TR["3. System Transaction\n(User menekan tombol 'Confirm' -> Validasi Credit Limit & Stok)"]
-    --> BI["4. Business / Accounting Impact\n(Stok dialokasikan / reserved; belum ada jurnal keuangan)"]
+    BE["1. Business Event<br/>(Pelanggan memesan barang via telepon/email)"]
+    --> BD["2. Business Document<br/>(Staf membuat dokumen Sales Order #SO-001)"]
+    --> TR["3. System Transaction<br/>(User menekan tombol 'Confirm' -> Validasi Credit Limit & Stok)"]
+    --> BI["4. Business / Accounting Impact<br/>(Stok dialokasikan / reserved; belum ada jurnal keuangan)"]
 
-    BE2["1b. Business Event\n(Gudang menyerahkan barang ke kurir ekspedisi)"]
-    --> BD2["2b. Business Document\n(Penerbitan Surat Jalan / Delivery Note #DN-001)"]
-    --> TR2["3b. System Transaction\n(User menekan tombol 'Validate / Post')"]
-    --> BI2["4b. Business & Accounting Impact\n(Stok fisik berkurang; Jurnal: Debit HPP, Kredit Persediaan)"]
+    BE2["1b. Business Event<br/>(Gudang menyerahkan barang ke kurir ekspedisi)"]
+    --> BD2["2b. Business Document<br/>(Penerbitan Surat Jalan / Delivery Note #DN-001)"]
+    --> TR2["3b. System Transaction<br/>(User menekan tombol 'Validate / Post')"]
+    --> BI2["4b. Business & Accounting Impact<br/>(Stok fisik berkurang; Jurnal: Debit HPP, Kredit Persediaan)"]
 ```
 
 ---

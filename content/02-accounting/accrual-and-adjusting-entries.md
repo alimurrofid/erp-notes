@@ -21,13 +21,13 @@ flowchart TD
     Adj["Klasifikasi Jurnal Penyesuaian"]
     
     subgraph Accruals["1. AKRUAL (Aktivitas Terjadi DULUAN, Kas/Invoice KEMUDIAN)"]
-        AccExp["Accrued Expense (Beban Akrual)\nManfaat telah dinikmati, tagihan belum diterima.\n=> Dr. Beban / Cr. Utang Akrual"]
-        AccRev["Accrued Revenue (Pendapatan Akrual)\nJasa telah selesai, faktur belum diterbitkan.\n=> Dr. Piutang Akrual / Cr. Pendapatan"]
+        AccExp["Accrued Expense (Beban Akrual)<br/>Manfaat telah dinikmati, tagihan belum diterima.<br/>=> Dr. Beban / Cr. Utang Akrual"]
+        AccRev["Accrued Revenue (Pendapatan Akrual)<br/>Jasa telah selesai, faktur belum diterbitkan.<br/>=> Dr. Piutang Akrual / Cr. Pendapatan"]
     end
 
     subgraph Deferrals["2. PENANGGUHAN (Kas Berpindah DULUAN, Aktivitas KEMUDIAN)"]
-        PrepExp["Prepaid Expense (Beban Dibayar di Muka)\nUang keluar duluan untuk manfaat masa depan.\n=> Dr. Beban / Cr. Aset Dibayar di Muka"]
-        DefRev["Deferred Revenue (Pendapatan Diterima di Muka)\nUang diterima duluan sebelum barang/jasa diserahkan.\n=> Dr. Utang Pendapatan / Cr. Pendapatan"]
+        PrepExp["Prepaid Expense (Beban Dibayar di Muka)<br/>Uang keluar duluan untuk manfaat masa depan.<br/>=> Dr. Beban / Cr. Aset Dibayar di Muka"]
+        DefRev["Deferred Revenue (Pendapatan Diterima di Muka)<br/>Uang diterima duluan sebelum barang/jasa diserahkan.<br/>=> Dr. Utang Pendapatan / Cr. Pendapatan"]
     end
 
     Adj --> Accruals
@@ -102,9 +102,9 @@ Dalam sistem ERP, beberapa jenis jurnal akrual dilengkapi fitur **Auto-Reversal 
 
 ```mermaid
 flowchart LR
-    Sep30["30 September (Tutup Buku):\nDr. Beban Listrik Rp3.000.000\nCr. Utang Beban Akrual Rp3.000.000"]
-    --> Oct01["01 Oktober (Auto-Reversal):\nDr. Utang Beban Akrual Rp3.000.000\nCr. Beban Listrik Rp3.000.000 (Saldo Kredit)"]
-    --> Oct15["15 Oktober (Faktur Asli Tiba & Dibayar Rp3.100.000):\nDr. Beban Listrik Rp3.100.000\nCr. Bank Rp3.100.000"]
+    Sep30["30 September (Tutup Buku):<br/>Dr. Beban Listrik Rp3.000.000<br/>Cr. Utang Beban Akrual Rp3.000.000"]
+    --> Oct01["01 Oktober (Auto-Reversal):<br/>Dr. Utang Beban Akrual Rp3.000.000<br/>Cr. Beban Listrik Rp3.000.000 (Saldo Kredit)"]
+    --> Oct15["15 Oktober (Faktur Asli Tiba & Dibayar Rp3.100.000):<br/>Dr. Beban Listrik Rp3.100.000<br/>Cr. Bank Rp3.100.000"]
 ```
 
 ### Mengapa Reversing Entry Sangat Berguna?

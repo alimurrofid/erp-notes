@@ -30,12 +30,12 @@ Aliran data dari modul penjualan bermuara ke subledger piutang melalui alur beri
 
 ```mermaid
 flowchart LR
-    DO["1. Delivery Order (DO)\n(Surat Jalan Tervalidasi)"]
-    --> INV["2. Customer Invoice\n(Faktur Penjualan Komersial)"]
-    --> AR_Sub["3. AR Subledger Update\n(Kartu Piutang Pelanggan Bertambah)"]
-    --> GL["4. General Ledger Posting\n(Dr. 1120 - Piutang Usaha\nCr. 4101 - Pendapatan\nCr. 2120 - Utang PPN)"]
-    --> Pay["5. Customer Payment\n(Penerimaan Transfer Bank)"]
-    --> Clear["6. Open-Item Clearing\n(Faktur Ditandai Lunas)"]
+    DO["1. Delivery Order (DO)<br/>(Surat Jalan Tervalidasi)"]
+    --> INV["2. Customer Invoice<br/>(Faktur Penjualan Komersial)"]
+    --> AR_Sub["3. AR Subledger Update<br/>(Kartu Piutang Pelanggan Bertambah)"]
+    --> GL["4. General Ledger Posting<br/>(Dr. 1120 - Piutang Usaha<br/>Cr. 4101 - Pendapatan<br/>Cr. 2120 - Utang PPN)"]
+    --> Pay["5. Customer Payment<br/>(Penerimaan Transfer Bank)"]
+    --> Clear["6. Open-Item Clearing<br/>(Faktur Ditandai Lunas)"]
 ```
 
 ---
@@ -93,10 +93,10 @@ Saat pelanggan melunasi tagihan melalui transfer rekening bank perusahaan pada t
 ```mermaid
 flowchart TD
     subgraph AR_Subledger["AR Subledger PT Maju Bersama"]
-        Item1["Faktur INV-2026-09-0101:\nRp11.100.000 (Open)"]
-        PayEntry["Payment Entry PE-0982:\nRp11.100.000 (Incoming Cash)"]
+        Item1["Faktur INV-2026-09-0101:<br/>Rp11.100.000 (Open)"]
+        PayEntry["Payment Entry PE-0982:<br/>Rp11.100.000 (Incoming Cash)"]
         Item1 <== Matching & Allocation ==> PayEntry
-        Result["Status Faktur: CLOSED / CLEARED\nSisa Tagihan = Rp0\nPlafon Kredit Pelanggan Pulih"]
+        Result["Status Faktur: CLOSED / CLEARED<br/>Sisa Tagihan = Rp0<br/>Plafon Kredit Pelanggan Pulih"]
     end
 ```
 

@@ -32,17 +32,17 @@ Subledger menyediakan rincian operasional tanpa membebani Buku Besar Umum.
 ```mermaid
 flowchart TD
     subgraph SubledgerDetail["AR Subledger (Buku Pembantu Piutang)"]
-        CustA["Customer A:\nInv #001 (10 Jan): Rp3.000.000\nInv #005 (15 Jan): Rp2.000.000\nSaldo = Rp5.000.000"]
-        CustB["Customer B:\nInv #002 (12 Jan): Rp4.000.000\nSaldo = Rp4.000.000"]
-        CustC["Customer C:\nInv #003 (14 Jan): Rp1.000.000\nSaldo = Rp1.000.000"]
+        CustA["Customer A:<br/>Inv #001 (10 Jan): Rp3.000.000<br/>Inv #005 (15 Jan): Rp2.000.000<br/>Saldo = Rp5.000.000"]
+        CustB["Customer B:<br/>Inv #002 (12 Jan): Rp4.000.000<br/>Saldo = Rp4.000.000"]
+        CustC["Customer C:<br/>Inv #003 (14 Jan): Rp1.000.000<br/>Saldo = Rp1.000.000"]
     end
 
     subgraph ControlHub["Mekanisme Integrasi"]
-        SumNode["Total Saldo Subledger:\nRp5M + Rp4M + Rp1M = Rp10.000.000"]
+        SumNode["Total Saldo Subledger:<br/>Rp5M + Rp4M + Rp1M = Rp10.000.000"]
     end
 
     subgraph GL["General Ledger (Buku Besar)"]
-        GL_AR["Akun Kontrol: 1120 - Piutang Usaha\nSaldo Buku Besar = Rp10.000.000"]
+        GL_AR["Akun Kontrol: 1120 - Piutang Usaha<br/>Saldo Buku Besar = Rp10.000.000"]
     end
 
     CustA --> SumNode

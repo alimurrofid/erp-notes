@@ -27,13 +27,13 @@ Salah satu pembeda utama arsitektur ERP enterprise dibanding aplikasi pencatatan
 
 ```mermaid
 flowchart LR
-    O["1. Ordered Qty\n(Kuantitas Dipesan)"]
-    --> R["2. Reserved Qty\n(Kuantitas Dikomit)"]
-    --> P["3. Picked Qty\n(Kuantitas Diambil)"]
-    --> D["4. Delivered Qty\n(Kuantitas Dikirim)"]
-    --> I["5. Invoiced Qty\n(Kuantitas Ditagih)"]
+    O["1. Ordered Qty<br/>(Kuantitas Dipesan)"]
+    --> R["2. Reserved Qty<br/>(Kuantitas Dikomit)"]
+    --> P["3. Picked Qty<br/>(Kuantitas Diambil)"]
+    --> D["4. Delivered Qty<br/>(Kuantitas Dikirim)"]
+    --> I["5. Invoiced Qty<br/>(Kuantitas Ditagih)"]
     
-    D -.-> Ret["6. Returned Qty\n(Kuantitas Retur)"]
+    D -.-> Ret["6. Returned Qty<br/>(Kuantitas Retur)"]
 ```
 
 | Status Kuantitas | Definisi & Titik Pencatatan | Lokasi Fisik Barang | Status Dokumen Terkait |
@@ -68,11 +68,11 @@ $$\mathbf{ATP = (On\text{-}Hand + Scheduled\ Receipts) - (Committed\ Customer\ O
 ```mermaid
 flowchart TD
     SO["1. Confirmed Sales Order"]
-    --> Rel["2. Order Release & Allocation\n(Sistem memvalidasi ketersediaan stok fisik)"]
-    --> Pick["3. Pick List Generation\n(Instruksi pengambilan barang per nomor rak / Bin Location)"]
-    --> Pack["4. Packing & Staging\n(Pengepakan kardus, penimbangan, penempelan label barcode)"]
-    --> Stage["5. Ready to Ship (Staging Area)\n(Menunggu serah terima dengan armada ekspedisi)"]
-    --> DO["6. Delivery Order / Goods Issue\n(Barang keluar gudang - memicu jurnal persediaan)"]
+    --> Rel["2. Order Release & Allocation<br/>(Sistem memvalidasi ketersediaan stok fisik)"]
+    --> Pick["3. Pick List Generation<br/>(Instruksi pengambilan barang per nomor rak / Bin Location)"]
+    --> Pack["4. Packing & Staging<br/>(Pengepakan kardus, penimbangan, penempelan label barcode)"]
+    --> Stage["5. Ready to Ship (Staging Area)<br/>(Menunggu serah terima dengan armada ekspedisi)"]
+    --> DO["6. Delivery Order / Goods Issue<br/>(Barang keluar gudang - memicu jurnal persediaan)"]
 ```
 
 ### Metode Pengambilan Barang (*Picking Methods*):

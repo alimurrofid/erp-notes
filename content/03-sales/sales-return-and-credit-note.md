@@ -31,20 +31,20 @@ Implementasi alur retur penjualan dan nota kredit bertujuan untuk:
 
 ```mermaid
 flowchart TD
-    Req["1. Customer Return Request\n(Keluhan barang rusak / salah kirim)"]
-    --> RMA["2. RMA Approval\n(Penerbitan nomor otorisasi retur barang)"]
-    --> Rec["3. Warehouse Return Receipt\n(Barang fisik tiba di dermaga penerimaan)"]
-    --> Insp{"4. Quality Inspection\n(Kondisi Barang?)"}
+    Req["1. Customer Return Request<br/>(Keluhan barang rusak / salah kirim)"]
+    --> RMA["2. RMA Approval<br/>(Penerbitan nomor otorisasi retur barang)"]
+    --> Rec["3. Warehouse Return Receipt<br/>(Barang fisik tiba di dermaga penerimaan)"]
+    --> Insp{"4. Quality Inspection<br/>(Kondisi Barang?)"}
     
-    Insp -->|Kondisi Baik / Utuh| Restock["5a. Restock to Active Inventory\n(Masuk kembali ke stok jual gudang)"]
-    Insp -->|Rusak Parah / Cacat Pabrik| Scrap["5b. Scrap / Quarantine\n(Pemusnahan atau klaim ke vendor asal)"]
-    Insp -->|Ditolak (Bukan Kesalahan Penjual)| Reject["5c. Return Rejected\n(Barang dikirim balik ke pelanggan)"]
+    Insp -->|Kondisi Baik / Utuh| Restock["5a. Restock to Active Inventory<br/>(Masuk kembali ke stok jual gudang)"]
+    Insp -->|Rusak Parah / Cacat Pabrik| Scrap["5b. Scrap / Quarantine<br/>(Pemusnahan atau klaim ke vendor asal)"]
+    Insp -->|Ditolak (Bukan Kesalahan Penjual)| Reject["5c. Return Rejected<br/>(Barang dikirim balik ke pelanggan)"]
 
     Restock --> Settle{"6. Financial Settlement Decision"}
     Scrap --> Settle
 
-    Settle -->|Terbitkan Nota Kredit| CN["7a. Credit Note\n(Memotong saldo piutang pelanggan)"]
-    Settle -->|Kirim Barang Pengganti| Repl["7b. Replacement Delivery\n(Surat Jalan Pengganti tanpa biaya)"]
+    Settle -->|Terbitkan Nota Kredit| CN["7a. Credit Note<br/>(Memotong saldo piutang pelanggan)"]
+    Settle -->|Kirim Barang Pengganti| Repl["7b. Replacement Delivery<br/>(Surat Jalan Pengganti tanpa biaya)"]
 ```
 
 ---

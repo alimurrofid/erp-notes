@@ -92,11 +92,11 @@ $$\mathbf{Purchase\ Order \neq Goods\ Receipt \neq Vendor\ Bill \neq Accounts\ P
 
 ```mermaid
 flowchart TD
-    PO["1. Purchase Order (PO)\nKomitmen komersial hukum.\nTIDAK ADA pengakuan utang atau beban di buku besar.\nHanya mencatat komitmen anggaran."]
-    --> GR["2. Goods Receipt (GR)\nBarang fisik tiba di gudang.\nPersediaan bertambah di neraca.\nDiakui Utang Belum Difakturkan (GR/IR Interim Liability)."]
-    --> VB["3. Vendor Bill (Tagihan)\nFaktur resmi dan faktur pajak tiba dari pemasok.\nVerifikasi 3-Way Match (PO vs GR vs Bill).\nAkun GR/IR ditutup menjadi Utang Usaha (AP) resmi."]
-    --> AP["4. Accounts Payable Subledger\nPengakuan kewajiban legal terikat jatuh tempo (Net 30).\nPajak Masukan (PPN) diakui."]
-    --> PAY["5. Payment & Settlement\nKas keluar dari rekening bank perusahaan via transfer.\nUtang pemasok ditutup (cleared)."]
+    PO["1. Purchase Order (PO)<br/>Komitmen komersial hukum.<br/>TIDAK ADA pengakuan utang atau beban di buku besar.<br/>Hanya mencatat komitmen anggaran."]
+    --> GR["2. Goods Receipt (GR)<br/>Barang fisik tiba di gudang.<br/>Persediaan bertambah di neraca.<br/>Diakui Utang Belum Difakturkan (GR/IR Interim Liability)."]
+    --> VB["3. Vendor Bill (Tagihan)<br/>Faktur resmi dan faktur pajak tiba dari pemasok.<br/>Verifikasi 3-Way Match (PO vs GR vs Bill).<br/>Akun GR/IR ditutup menjadi Utang Usaha (AP) resmi."]
+    --> AP["4. Accounts Payable Subledger<br/>Pengakuan kewajiban legal terikat jatuh tempo (Net 30).<br/>Pajak Masukan (PPN) diakui."]
+    --> PAY["5. Payment & Settlement<br/>Kas keluar dari rekening bank perusahaan via transfer.<br/>Utang pemasok ditutup (cleared)."]
 ```
 
 1. **Purchase Order Disahkan**: Perusahaan memesan 10 unit bahan baku seharga Rp7.000.000. Dokumen ini adalah **komitmen komersial**, bukan transaksi akuntansi. Tidak ada debit atau kredit di buku besar.

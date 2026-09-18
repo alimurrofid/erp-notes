@@ -26,7 +26,7 @@ Dalam dunia usaha riil, waktu penagihan dan waktu pengakuan pendapatan sering ka
 flowchart TD
     subgraph Case1["Kasus 1: Invoiced BEFORE Delivery (Uang Muka / Langganan)"]
         Inv1["1. Cetak Faktur / Terima Kas Duluan"]
-        --> Liab1["=> LIABILITAS KONTRAK:\nPendapatan Diterima di Muka (Deferred Revenue)"]
+        --> Liab1["=> LIABILITAS KONTRAK:<br/>Pendapatan Diterima di Muka (Deferred Revenue)"]
         --> Del1["2. Barang Diserahkan / Layanan Berjalan"]
         --> Rev1["=> PENDAPATAN DIAKUI BERTAHAP (Earned)"]
     end
@@ -38,7 +38,7 @@ flowchart TD
 
     subgraph Case3["Kasus 3: Delivered BEFORE Invoiced (Proyek / Jasa Audit)"]
         Del3["1. Jasa Selesai / Kendali Berpindah Duluan"]
-        --> Asset3["=> ASET KONTRAK:\nPiutang Belum Difakturkan (Unbilled Receivables)"]
+        --> Asset3["=> ASET KONTRAK:<br/>Piutang Belum Difakturkan (Unbilled Receivables)"]
         --> Inv3["2. Faktur Resmi Diterbitkan Bulan Berikutnya"]
         --> AR3["=> REKLASIFIKASI KE PIUTANG USAHA (AR)"]
     end

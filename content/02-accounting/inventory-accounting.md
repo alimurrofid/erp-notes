@@ -12,9 +12,9 @@ Dalam arsitektur ERP, pengelolaan persediaan harus dibedakan secara tegas ke dal
 
 ```mermaid
 flowchart TD
-    Phys["1. Physical Inventory (Persediaan Fisik)\nKuantitas nyata di rak gudang (Unit, Pcs, Kg, Batch/Lot)\nDikelola oleh staf gudang & sistem WMS."]
-    --> Val["2. Inventory Valuation (Valuasi Persediaan)\nPenentuan nilai moneter per unit barang menggunakan rumus biaya\n(FIFO, Moving Average, Standard Cost) sesuai IAS 2."]
-    --> Acc["3. Inventory Accounting (Jurnal Finansial)\nPencatatan debit/kredit otomatis ke akun aset persediaan di neraca\ndan pembebanan ke COGS di buku besar umum (GL)."]
+    Phys["1. Physical Inventory (Persediaan Fisik)<br/>Kuantitas nyata di rak gudang (Unit, Pcs, Kg, Batch/Lot)<br/>Dikelola oleh staf gudang & sistem WMS."]
+    --> Val["2. Inventory Valuation (Valuasi Persediaan)<br/>Penentuan nilai moneter per unit barang menggunakan rumus biaya<br/>(FIFO, Moving Average, Standard Cost) sesuai IAS 2."]
+    --> Acc["3. Inventory Accounting (Jurnal Finansial)<br/>Pencatatan debit/kredit otomatis ke akun aset persediaan di neraca<br/>dan pembebanan ke COGS di buku besar umum (GL)."]
 ```
 
 Siklus fisik operasionalnya telah dibahas mendalam pada [[01-business-processes/inventory-process|Inventory Process]], [[01-business-processes/procure-to-pay|Procure to Pay]], dan [[01-business-processes/manufacturing-process|Manufacturing Process]].

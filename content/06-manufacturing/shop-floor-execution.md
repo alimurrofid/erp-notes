@@ -74,7 +74,7 @@ flowchart LR
     Action -- "Mesin Rusak / Bahan Habis" --> Down["Catat Downtime + Pilih Reason Code"]
     Action -- "Pekerjaan Selesai" --> Finish["3. Laporkan Hasil Produksi (Production Report)"]
     
-    Finish --> Inputs["Input Data Kuantitas:<br/>- Qty Good (Lolos)<br/>- Qty Rejected (Cacat)<br/>- Qty Rework (Perbaikan)"]
+    Finish --> Inputs["Input Data Kuantitas:<br/>Qty Good (Lolos)<br/>Qty Rejected (Cacat)<br/>Qty Rework (Perbaikan)"]
 ```
 
 ---

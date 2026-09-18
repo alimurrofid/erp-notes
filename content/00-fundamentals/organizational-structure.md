@@ -18,11 +18,11 @@ Struktur organisasi ERP secara umum terbagi ke dalam empat lapisan utama:
 
 ```mermaid
 flowchart TD
-    Enterprise["1. Enterprise / Holding / Group\n(Konsolidasi Global Lintas Entitas)"]
-    LegalEntity["2. Legal Entity / Company\n(Badan Hukum Mandiri, NPWP, COA, Mata Uang Pelaporan)"]
-    OperatingUnit["3. Operating Unit / Branch / Division\n(Cabang Operasional, Segment Usaha, Profit Center)"]
-    Facility["4. Physical Facility / Warehouse / Plant\n(Pabrik, Gudang Utama, Lokasi Distribusi Fisik)"]
-    Location["5. Storage Location / Bin\n(Rak, Lorong, Pallet di dalam Gudang)"]
+    Enterprise["1. Enterprise / Holding / Group<br/>(Konsolidasi Global Lintas Entitas)"]
+    LegalEntity["2. Legal Entity / Company<br/>(Badan Hukum Mandiri, NPWP, COA, Mata Uang Pelaporan)"]
+    OperatingUnit["3. Operating Unit / Branch / Division<br/>(Cabang Operasional, Segment Usaha, Profit Center)"]
+    Facility["4. Physical Facility / Warehouse / Plant<br/>(Pabrik, Gudang Utama, Lokasi Distribusi Fisik)"]
+    Location["5. Storage Location / Bin<br/>(Rak, Lorong, Pallet di dalam Gudang)"]
 
     Enterprise --> LegalEntity
     LegalEntity --> OperatingUnit
@@ -60,7 +60,7 @@ Selain struktur legal dan fisik, ERP menyediakan pemisahan struktural untuk akun
 
 ```mermaid
 flowchart LR
-    JE["Journal Entry Line\n(Beban Sewa Gedung: Rp10.000.000)"]
+    JE["Journal Entry Line<br/>(Beban Sewa Gedung: Rp10.000.000)"]
     
     JE --> DimBranch["Branch Dimension: Cabang Bandung"]
     JE --> DimDept["Department: Operasional"]

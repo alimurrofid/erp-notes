@@ -47,7 +47,7 @@ flowchart TD
     end
 
     subgraph Transaction["Transaction Data"]
-        SO["Sales Order #SO-2026-001\nDate: 2026-09-17\nQty: 1 Unit\nPrice: Rp10.000.000\nTax: Rp1.100.000"]
+        SO["Sales Order #SO-2026-001<br/>Date: 2026-09-17<br/>Qty: 1 Unit<br/>Price: Rp10.000.000<br/>Tax: Rp1.100.000"]
     end
 
     Config --> SO

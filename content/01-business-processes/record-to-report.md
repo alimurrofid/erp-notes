@@ -16,13 +16,13 @@ Jika O2C dan P2P berfokus pada aliran fisik dan logistik harian, maka R2R berfok
 
 ```mermaid
 flowchart TD
-    TX["1. Continuous Subledger Posting\n(AR, AP, Inventory, Assets, Payroll)"]
-    --> CUT["2. Period-End Cut-Off\n(Pembatasan Tanggal Transaksi)"]
-    --> ADJ["3. Adjusting Entries & Accruals\n(Akrual, Amortisasi, Depresiasi)"]
-    --> REC["4. Account & Bank Reconciliation\n(Pencocokan Rekening Koran & Subledger)"]
-    --> FX["5. Foreign Exchange Revaluation\n(Penyesuaian Kurs Valas - IAS 21)"]
-    --> CLS["6. Period Close & Ledger Locking\n(Penguncian Periode Buku)"]
-    --> REP["7. Financial Statement Generation\n(Neraca, Laba Rugi, Arus Kas)"]
+    TX["1. Continuous Subledger Posting<br/>(AR, AP, Inventory, Assets, Payroll)"]
+    --> CUT["2. Period-End Cut-Off<br/>(Pembatasan Tanggal Transaksi)"]
+    --> ADJ["3. Adjusting Entries & Accruals<br/>(Akrual, Amortisasi, Depresiasi)"]
+    --> REC["4. Account & Bank Reconciliation<br/>(Pencocokan Rekening Koran & Subledger)"]
+    --> FX["5. Foreign Exchange Revaluation<br/>(Penyesuaian Kurs Valas - IAS 21)"]
+    --> CLS["6. Period Close & Ledger Locking<br/>(Penguncian Periode Buku)"]
+    --> REP["7. Financial Statement Generation<br/>(Neraca, Laba Rugi, Arus Kas)"]
 ```
 
 ---

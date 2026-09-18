@@ -18,9 +18,9 @@ Untuk memahami akuntansi valas di ERP, pengguna harus membedakan tiga peran mata
 
 ```mermaid
 flowchart LR
-    TC["1. Transaction Currency\n(Mata Uang Transaksi)\nMata uang yang tertera pada faktur fisik\n(misal: USD, EUR, SGD)"]
-    -->|Spot Rate saat Transaksi| FC["2. Functional Currency\n(Mata Uang Fungsional)\nMata uang lingkungan ekonomi utama entitas\n(misal: IDR untuk PT di Indonesia)"]
-    -->|Translation Rate saat Konsolidasi| PC["3. Presentation Currency\n(Mata Uang Pelaporan)\nMata uang penyajian laporan keuangan grup\n(misal: USD untuk investor asing)"]
+    TC["1. Transaction Currency<br/>(Mata Uang Transaksi)<br/>Mata uang yang tertera pada faktur fisik<br/>(misal: USD, EUR, SGD)"]
+    -->|Spot Rate saat Transaksi| FC["2. Functional Currency<br/>(Mata Uang Fungsional)<br/>Mata uang lingkungan ekonomi utama entitas<br/>(misal: IDR untuk PT di Indonesia)"]
+    -->|Translation Rate saat Konsolidasi| PC["3. Presentation Currency<br/>(Mata Uang Pelaporan)<br/>Mata uang penyajian laporan keuangan grup<br/>(misal: USD untuk investor asing)"]
 ```
 
 1. **Transaction Currency (Mata Uang Transaksi)**: Mata uang yang disepakati dengan pihak ketiga dalam kontrak jual beli (misal: faktur penjualan diterbitkan sebesar USD 1,000).

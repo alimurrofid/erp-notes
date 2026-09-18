@@ -19,12 +19,12 @@ Alur penentuan harga akhir di dalam sistem ERP bergerak melalui tahapan beruruta
 ```mermaid
 flowchart TD
     BP["1. Base Price (Harga Standar Katalog)"]
-    --> PL["2. Price List / Contract Price\n(Daftar Harga Wilayah / Kontrak Khusus Pelanggan)"]
-    --> Tier["3. Volume / Tiered Pricing Rules\n(Harga Bertingkat berdasarkan Kuantitas Pesanan)"]
-    --> Disc["4. Line-Level Promotional & Customer Discount\n(Diskon Persentase atau Nominal per Baris Barang)"]
-    --> DocDisc["5. Document-Level Discount / Order Surcharge\n(Diskon Global Transaksi / Biaya Ongkir Tambahan)"]
+    --> PL["2. Price List / Contract Price<br/>(Daftar Harga Wilayah / Kontrak Khusus Pelanggan)"]
+    --> Tier["3. Volume / Tiered Pricing Rules<br/>(Harga Bertingkat berdasarkan Kuantitas Pesanan)"]
+    --> Disc["4. Line-Level Promotional & Customer Discount<br/>(Diskon Persentase atau Nominal per Baris Barang)"]
+    --> DocDisc["5. Document-Level Discount / Order Surcharge<br/>(Diskon Global Transaksi / Biaya Ongkir Tambahan)"]
     --> Taxable["6. Taxable Amount (Dasar Pengenaan Pajak / DPP)"]
-    --> Tax["7. Sales Tax Engine\n(Perhitungan PPN / Pajak Penjualan)"]
+    --> Tax["7. Sales Tax Engine<br/>(Perhitungan PPN / Pajak Penjualan)"]
     --> Total["8. Final Payable Amount (Total Tagihan Akhir)"]
 ```
 
@@ -76,10 +76,10 @@ Dalam desain ERP, logika penyelesaian konflik harga (*Conflict Resolution / Prec
 
 ```mermaid
 flowchart TD
-    Rule{"Deteksi Konflik Aturan Harga:\nKontrak Khusus vs Daftar Harga Grosir vs Promo"}
-    Rule -->|Policy A: Specificity Wins (Paling Umum)| P1["1. Prioritas Tertinggi:\nCustomer Contract > Customer Group > General Price List"]
-    Rule -->|Policy B: Best Deal Wins| P2["2. Harga Terendah Menang:\nSistem memilih harga paling murah untuk kepuasan pelanggan"]
-    Rule -->|Policy C: Cumulative Discount| P3["3. Diskon Bertingkat:\nDiskon Promo ditumpuk di atas Diskon Pelanggan\n(Contoh: 10% + 5% tambahan)"]
+    Rule{"Deteksi Konflik Aturan Harga:<br/>Kontrak Khusus vs Daftar Harga Grosir vs Promo"}
+    Rule -->|Policy A: Specificity Wins (Paling Umum)| P1["1. Prioritas Tertinggi:<br/>Customer Contract > Customer Group > General Price List"]
+    Rule -->|Policy B: Best Deal Wins| P2["2. Harga Terendah Menang:<br/>Sistem memilih harga paling murah untuk kepuasan pelanggan"]
+    Rule -->|Policy C: Cumulative Discount| P3["3. Diskon Bertingkat:<br/>Diskon Promo ditumpuk di atas Diskon Pelanggan<br/>(Contoh: 10% + 5% tambahan)"]
 ```
 
 > [!note] Variasi Vendor ERP

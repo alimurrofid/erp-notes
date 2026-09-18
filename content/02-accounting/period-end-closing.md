@@ -33,16 +33,16 @@ Proses penutupan buku di sistem ERP dijalankan melalui 10 tahapan berurutan (*se
 
 ```mermaid
 flowchart TD
-    Step1["1. Operational Cut-Off\n(Bekukan input transaksi logistik & operasional)"]
-    --> Step2["2. Subledger Clearing\n(Pastikan tidak ada dokumen Draft/Pending di AR, AP, Stock)"]
-    --> Step3["3. Inventory Count & Valuation\n(Rekonsiliasi kartu stok dengan akun 1130 di GL)"]
-    --> Step4["4. Depreciation & Amortization Run\n(Posting otomatis beban penyusutan aset tetap)"]
-    --> Step5["5. Accrual & Prepayments Allocation\n(Posting beban akrual utilitas, amortisasi sewa)"]
-    --> Step6["6. Bank Reconciliation\n(Pencocokan saldo buku kas dengan rekening koran bank)"]
-    --> Step7["7. Foreign Exchange Revaluation\n(Penyesuaian kurs penutupan atas piutang & utang valas)"]
-    --> Step8["8. Tax Settlement\n(Pengimbangan PPN Masukan vs PPN Keluaran & akrual PPh)"]
-    --> Step9["9. Trial Balance Verification\n(Verifikasi neraca lajur: Total Debit == Total Credit)"]
-    --> Step10["10. Period Lock\n(Penguncian periode buku mencegah posting tanggal lampau)"]
+    Step1["1. Operational Cut-Off<br/>(Bekukan input transaksi logistik & operasional)"]
+    --> Step2["2. Subledger Clearing<br/>(Pastikan tidak ada dokumen Draft/Pending di AR, AP, Stock)"]
+    --> Step3["3. Inventory Count & Valuation<br/>(Rekonsiliasi kartu stok dengan akun 1130 di GL)"]
+    --> Step4["4. Depreciation & Amortization Run<br/>(Posting otomatis beban penyusutan aset tetap)"]
+    --> Step5["5. Accrual & Prepayments Allocation<br/>(Posting beban akrual utilitas, amortisasi sewa)"]
+    --> Step6["6. Bank Reconciliation<br/>(Pencocokan saldo buku kas dengan rekening koran bank)"]
+    --> Step7["7. Foreign Exchange Revaluation<br/>(Penyesuaian kurs penutupan atas piutang & utang valas)"]
+    --> Step8["8. Tax Settlement<br/>(Pengimbangan PPN Masukan vs PPN Keluaran & akrual PPh)"]
+    --> Step9["9. Trial Balance Verification<br/>(Verifikasi neraca lajur: Total Debit == Total Credit)"]
+    --> Step10["10. Period Lock<br/>(Penguncian periode buku mencegah posting tanggal lampau)"]
 ```
 
 ---

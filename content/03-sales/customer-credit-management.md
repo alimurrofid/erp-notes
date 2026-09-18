@@ -47,9 +47,9 @@ $$\mathbf{Credit\ Exposure = Open\ AR + Unbilled\ Deliveries + Confirmed\ Sales\
 ```mermaid
 flowchart TD
     subgraph ExposureElements["Komponen Paparan Risiko Kredit"]
-        AR["1. Open Accounts Receivable\nFaktur yang telah terbit dan belum dibayar."]
-        UB["2. Unbilled Deliveries\nBarang sudah dikirim keluar gudang, faktur belum terbit."]
-        SO["3. Confirmed Sales Orders\nPesanan telah disetujui, barang masih disiapkan di gudang."]
+        AR["1. Open Accounts Receivable<br/>Faktur yang telah terbit dan belum dibayar."]
+        UB["2. Unbilled Deliveries<br/>Barang sudah dikirim keluar gudang, faktur belum terbit."]
+        SO["3. Confirmed Sales Orders<br/>Pesanan telah disetujui, barang masih disiapkan di gudang."]
     end
 
     AR --> Sum["Total Credit Exposure (Beban Risiko Aktif)"]

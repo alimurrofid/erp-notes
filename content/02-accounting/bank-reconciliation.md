@@ -23,15 +23,15 @@ flowchart TD
     Diff["Penyebab Selisih Rekonsiliasi Bank"]
     
     subgraph TimingDiff["1. Perbedaan Waktu (Timing Differences)"]
-        T1["Setoran dalam Perjalanan (Deposits in Transit)\nSudah dicatat perusahaan (+), belum masuk rekening bank."]
-        T2["Cek Beredar (Outstanding Checks)\nSudah dicatat perusahaan (-), belum dicairkan penerima di bank."]
+        T1["Setoran dalam Perjalanan (Deposits in Transit)<br/>Sudah dicatat perusahaan (+), belum masuk rekening bank."]
+        T2["Cek Beredar (Outstanding Checks)<br/>Sudah dicatat perusahaan (-), belum dicairkan penerima di bank."]
     end
 
     subgraph DirectBank["2. Transaksi Langsung Bank (Unrecorded in Books)"]
-        B1["Biaya Administrasi & Pajak Bunga Bank (-)\nSudah didebit bank, belum dicatat perusahaan."]
-        B2["Pendapatan Bunga / Jasa Giro (+)\nSudah dikredit bank, belum dicatat perusahaan."]
-        B3["Cek Kosong / Tolakan Kliring (NSF Checks) (-)\nPelanggan membayar dengan cek yang dananya tidak mencukupi."]
-        B4["Direct Transfer / Auto-Debit (+/-)\nPenerimaan atau pembayaran otomatis via virtual account."]
+        B1["Biaya Administrasi & Pajak Bunga Bank (-)<br/>Sudah didebit bank, belum dicatat perusahaan."]
+        B2["Pendapatan Bunga / Jasa Giro (+)<br/>Sudah dikredit bank, belum dicatat perusahaan."]
+        B3["Cek Kosong / Tolakan Kliring (NSF Checks) (-)<br/>Pelanggan membayar dengan cek yang dananya tidak mencukupi."]
+        B4["Direct Transfer / Auto-Debit (+/-)<br/>Penerimaan atau pembayaran otomatis via virtual account."]
     end
 
     subgraph Errors["3. Kesalahan Input (Errors)"]
@@ -103,11 +103,11 @@ Sistem ERP enterprise modern telah menggantikan pencocokan manual menggunakan le
 
 ```mermaid
 flowchart LR
-    BankStatement["E-Statement File / API\n(MT940 / CAMT.053 / OFX)"]
+    BankStatement["E-Statement File / API<br/>(MT940 / CAMT.053 / OFX)"]
     --> Engine["ERP Bank Reconciliation Engine"]
-    --> MatchRule{"Aturan Pencocokan Otomatis:\n* Nomor Referensi Faktur?\n* Nominal Persis?\n* Virtual Account ID?"}
+    --> MatchRule{"Aturan Pencocokan Otomatis:<br/>Nomor Referensi Faktur?<br/>Nominal Persis?<br/>Virtual Account ID?"}
     MatchRule -->|Cocok 100%| AutoClear["Otomatis Rekonsiliasi (Cleared)"]
-    MatchRule -->|Pola Dikenali| AutoJrn["Otomatis Buat Jurnal Penyesuaian\n(misal Biaya Admin)"]
+    MatchRule -->|Pola Dikenali| AutoJrn["Otomatis Buat Jurnal Penyesuaian<br/>(misal Biaya Admin)"]
     MatchRule -->|Tidak Dikenali| ManualRev["Antrean Verifikasi Manual User"]
 ```
 

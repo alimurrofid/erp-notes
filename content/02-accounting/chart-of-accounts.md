@@ -93,7 +93,7 @@ flowchart TD
     end
     
     subgraph GL["General Ledger (Buku Besar)"]
-        Ctrl["Akun Kontrol: 1120 - Piutang Usaha\nSaldo GL = Rp10.000.000"]
+        Ctrl["Akun Kontrol: 1120 - Piutang Usaha<br/>Saldo GL = Rp10.000.000"]
     end
     
     C1 --> Ctrl
@@ -129,10 +129,10 @@ ERP menggunakan aturan pemetaan akun (*Account Mapping / Determination Rules*) s
 
 ```mermaid
 flowchart LR
-    Item["Produk: Laptop Pro\nKategori: Elektronik"] 
-    --> Map["Aturan Kategori Barang:\n* Akun Persediaan = 1132\n* Akun HPP = 5101\n* Akun Pendapatan = 4101"]
+    Item["Produk: Laptop Pro<br/>Kategori: Elektronik"] 
+    --> Map["Aturan Kategori Barang:<br/>Akun Persediaan = 1132<br/>Akun HPP = 5101<br/>Akun Pendapatan = 4101"]
     --> Event["Event: Pengiriman Barang (DN)"]
-    --> JE["Auto Journal:\nDr. 5101 - HPP\nCr. 1132 - Persediaan Barang Jadi"]
+    --> JE["Auto Journal:<br/>Dr. 5101 - HPP<br/>Cr. 1132 - Persediaan Barang Jadi"]
 ```
 
 ---

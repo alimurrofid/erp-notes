@@ -18,12 +18,12 @@ Aliran pemrosesan dalam sistem ERP mengikuti hierarki berjenjang:
 
 ```mermaid
 flowchart TD
-    MD["1. Master Data\n(Customer, Product, Warehouse, COA)"]
-    BT["2. Business Transaction\n(Sales Order, Purchase Order)"]
-    BP["3. Business Process\n(Order-to-Cash, Procure-to-Pay)"]
-    OD["4. Operational Execution\n(Pick, Pack, Ship, Goods Receipt)"]
-    Imp["5. Operational & Financial Impact\n(Stock Ledger Entry, GL Journal Entry)"]
-    Rep["6. Reporting & Analytics\n(Balance Sheet, P&L, Inventory Valuation)"]
+    MD["1. Master Data<br/>(Customer, Product, Warehouse, COA)"]
+    BT["2. Business Transaction<br/>(Sales Order, Purchase Order)"]
+    BP["3. Business Process<br/>(Order-to-Cash, Procure-to-Pay)"]
+    OD["4. Operational Execution<br/>(Pick, Pack, Ship, Goods Receipt)"]
+    Imp["5. Operational & Financial Impact<br/>(Stock Ledger Entry, GL Journal Entry)"]
+    Rep["6. Reporting & Analytics<br/>(Balance Sheet, P&L, Inventory Valuation)"]
 
     MD --> BT
     BT --> BP
@@ -69,10 +69,10 @@ Ketika pengiriman barang (*Delivery / Goods Issue*) dan penagihan (*Customer Inv
 
 ```mermaid
 flowchart LR
-    Event["Business Event:\nDelivery & Invoicing"] --> ModSales["Sales Module:\nStatus SO 'Fulfilled'\nVolume penjualan tercatat"]
-    Event --> ModInv["Inventory Module:\nStok fisik berkurang 1 unit\nKartu stok ter-update"]
-    Event --> ModAR["Accounts Receivable:\nPiutang baru Rp11.100.000\nJadwal jatuh tempo dibuat"]
-    Event --> ModGL["General Ledger:\nJurnal HPP & Pendapatan\nJurnal Piutang & PPN Keluaran"]
+    Event["Business Event:<br/>Delivery & Invoicing"] --> ModSales["Sales Module:<br/>Status SO 'Fulfilled'<br/>Volume penjualan tercatat"]
+    Event --> ModInv["Inventory Module:<br/>Stok fisik berkurang 1 unit<br/>Kartu stok ter-update"]
+    Event --> ModAR["Accounts Receivable:<br/>Piutang baru Rp11.100.000<br/>Jadwal jatuh tempo dibuat"]
+    Event --> ModGL["General Ledger:<br/>Jurnal HPP & Pendapatan<br/>Jurnal Piutang & PPN Keluaran"]
 ```
 
 ### Jurnal Akuntansi yang Dihasilkan
@@ -105,14 +105,14 @@ Sistem ERP modern menggunakan pola arsitektur **Subledger** dan **General Ledger
 ```mermaid
 flowchart TD
     subgraph Subledgers["Buku Pembantu (Subledgers)"]
-        AR["AR Subledger\n(Rincian per Customer)"]
-        AP["AP Subledger\n(Rincian per Vendor)"]
-        INV["Stock Ledger\n(Rincian per Item & Gudang)"]
-        FA["Asset Subledger\n(Rincian per Aktiva Tetap)"]
+        AR["AR Subledger<br/>(Rincian per Customer)"]
+        AP["AP Subledger<br/>(Rincian per Vendor)"]
+        INV["Stock Ledger<br/>(Rincian per Item & Gudang)"]
+        FA["Asset Subledger<br/>(Rincian per Aktiva Tetap)"]
     end
 
     subgraph GL["Buku Besar Utama (General Ledger)"]
-        GL_Account["GL Accounts\n(Ringkasan Keuangan Neraca & Laba Rugi)"]
+        GL_Account["GL Accounts<br/>(Ringkasan Keuangan Neraca & Laba Rugi)"]
     end
 
     AR -->|Posting Control Account| GL_Account

@@ -30,14 +30,14 @@ Aliran data dari pengadaan barang bermuara ke buku pembantu utang melalui alur b
 
 ```mermaid
 flowchart LR
-    PO["1. Purchase Order (PO)\n(Kontrak Harga & Termin)"]
-    --> GR["2. Goods Receipt (GR)\n(Verifikasi Kuantitas Fisik)"]
-    --> VB["3. Vendor Bill Receipt\n(Faktur Fisik Tiba dari Pemasok)"]
-    --> Match{"4. 3-Way Match Validation\n(PO vs GR vs Bill)"}
+    PO["1. Purchase Order (PO)<br/>(Kontrak Harga & Termin)"]
+    --> GR["2. Goods Receipt (GR)<br/>(Verifikasi Kuantitas Fisik)"]
+    --> VB["3. Vendor Bill Receipt<br/>(Faktur Fisik Tiba dari Pemasok)"]
+    --> Match{"4. 3-Way Match Validation<br/>(PO vs GR vs Bill)"}
     
-    Match -->|Valid| AP_Sub["5. AP Subledger Update\n(Kartu Utang Vendor Bertambah)"]
-    AP_Sub --> GL["6. General Ledger Posting\n(Dr. GR/IR Clearing\nDr. PPN Masukan\nCr. 2110 - Utang Usaha)"]
-    GL --> Pay["7. Payment Disbursement\n(Transfer Kas-Bank & Settlement)"]
+    Match -->|Valid| AP_Sub["5. AP Subledger Update<br/>(Kartu Utang Vendor Bertambah)"]
+    AP_Sub --> GL["6. General Ledger Posting<br/>(Dr. GR/IR Clearing<br/>Dr. PPN Masukan<br/>Cr. 2110 - Utang Usaha)"]
+    GL --> Pay["7. Payment Disbursement<br/>(Transfer Kas-Bank & Settlement)"]
 ```
 
 ---
@@ -95,10 +95,10 @@ Pada tanggal 20 Oktober 2026, saat tagihan jatuh tempo dan dieksekusi transfer p
 ```mermaid
 flowchart TD
     subgraph AP_Subledger["AP Subledger PT Sumber Teknologi"]
-        Item1["Tagihan BILL-2026-09-0094:\nRp7.770.000 (Open Item)"]
-        PayEntry["Payment Entry #PAY-0412:\nRp7.770.000 (Bank Outflow)"]
+        Item1["Tagihan BILL-2026-09-0094:<br/>Rp7.770.000 (Open Item)"]
+        PayEntry["Payment Entry #PAY-0412:<br/>Rp7.770.000 (Bank Outflow)"]
         Item1 <== Matching & Clearing ==> PayEntry
-        Result["Status Tagihan: CLOSED / CLEARED\nSisa Utang Vendor = Rp0"]
+        Result["Status Tagihan: CLOSED / CLEARED<br/>Sisa Utang Vendor = Rp0"]
     end
 ```
 

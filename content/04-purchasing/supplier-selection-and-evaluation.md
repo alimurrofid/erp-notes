@@ -28,15 +28,15 @@ Penerapan seleksi dan evaluasi pemasok yang terstruktur bertujuan untuk:
 
 ```mermaid
 flowchart TD
-    Onboard["1. Vendor Onboarding & Due Diligence\n(Pemeriksaan legalitas, NPWP, rekening bank, sertifikasi)"]
-    --> Qual["2. Qualification & Audit\n(Pengujian sampel barang & audit kelayakan pabrik)"]
-    --> ASL["3. Approved Supplier List (ASL)\n(Vendor resmi yang berhak menerima Purchase Order)"]
-    --> Perf["4. Ongoing Performance Tracking\n(Sistem otomatis menghitung skor ketepatan kirim & mutu)"]
+    Onboard["1. Vendor Onboarding & Due Diligence<br/>(Pemeriksaan legalitas, NPWP, rekening bank, sertifikasi)"]
+    --> Qual["2. Qualification & Audit<br/>(Pengujian sampel barang & audit kelayakan pabrik)"]
+    --> ASL["3. Approved Supplier List (ASL)<br/>(Vendor resmi yang berhak menerima Purchase Order)"]
+    --> Perf["4. Ongoing Performance Tracking<br/>(Sistem otomatis menghitung skor ketepatan kirim & mutu)"]
     --> Review{"5. Periodic Review & Classification"}
     
-    Review -->|Skor Tinggi (Grade A)| Strat["Strategic / Preferred Partner\n(Prioritas tender & kontrak jangka panjang)"]
-    Review -->|Skor Rendah (Di Bawah Standar)| Hold["Vendor Warning / On-Hold\n(Koreksi kualitas atau audit ulang)"]
-    Review -->|Pelanggaran Fatal / Pailit| Blacklist["Blacklisted / Offboarded\n(Diblokir permanen dari sistem ERP)"]
+    Review -->|Skor Tinggi (Grade A)| Strat["Strategic / Preferred Partner<br/>(Prioritas tender & kontrak jangka panjang)"]
+    Review -->|Skor Rendah (Di Bawah Standar)| Hold["Vendor Warning / On-Hold<br/>(Koreksi kualitas atau audit ulang)"]
+    Review -->|Pelanggaran Fatal / Pailit| Blacklist["Blacklisted / Offboarded<br/>(Diblokir permanen dari sistem ERP)"]
 ```
 
 ---
@@ -65,13 +65,13 @@ Di mana $W_Q, W_D, W_P$ adalah bobot kepentingan perusahaan (misal: Kualitas 40%
 ```mermaid
 flowchart LR
     subgraph DataInputs["Input Transaksi Otomatis ERP"]
-        D1["Ketepatan Tanggal Kirim:\nPO Due Date vs Goods Receipt Date"]
-        D2["Tingkat Mutu Barang:\nKuantitas Diterima vs Kuantitas Ditolak (Scrap/RMA)"]
-        D3["Stabilitas Harga:\nHarga PO vs Harga Anggaran Standar (PPV)"]
+        D1["Ketepatan Tanggal Kirim:<br/>PO Due Date vs Goods Receipt Date"]
+        D2["Tingkat Mutu Barang:<br/>Kuantitas Diterima vs Kuantitas Ditolak (Scrap/RMA)"]
+        D3["Stabilitas Harga:<br/>Harga PO vs Harga Anggaran Standar (PPV)"]
     end
 
     subgraph ScorecardHub["Mesin Kalkulasi Skor Pemasok"]
-        Calc["Perhitungan Skor Tertimbang\n(Skala 0 - 100 Poin)"]
+        Calc["Perhitungan Skor Tertimbang<br/>(Skala 0 - 100 Poin)"]
     end
 
     subgraph StatusOutput["Klasifikasi Tingkat Kinerja (Rating)"]

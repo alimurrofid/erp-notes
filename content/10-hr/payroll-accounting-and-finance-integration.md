@@ -29,17 +29,17 @@ Integrasi penggajian dengan modul akuntansi dan keuangan mencakup empat siklus p
 ```mermaid
 flowchart TD
     A["Eksekusi & Persetujuan Penggajian (Payroll Run)"] --> B["1. Jurnal Akrual Penggajian (Payroll Accrual Entry - J1)"]
-    B --> C["Debit: Beban Gaji, Tunjangan & BPJS Perusahaan\nKredit: Hutang Gaji Bersih, Hutang Pajak, Hutang BPJS, Hutang Lainnya"]
+    B --> C["Debit: Beban Gaji, Tunjangan & BPJS Perusahaan<br/>Kredit: Hutang Gaji Bersih, Hutang Pajak, Hutang BPJS, Hutang Lainnya"]
     
     A --> D["2. Penjadwalan Kas Perbendaharaan (Treasury Cash Forecast)"]
     D --> E["3. Eksekusi Pembayaran Gaji (Payroll Bank Disbursement - J2)"]
-    E --> F["Debit: Hutang Gaji Bersih Karyawan\nKredit: Kas di Bank Operasional/Payroll"]
+    E --> F["Debit: Hutang Gaji Bersih Karyawan<br/>Kredit: Kas di Bank Operasional/Payroll"]
     
     A --> G["4. Penyetoran Pajak & BPJS ke Kas Negara (Tax Remittance - J3)"]
-    G --> H["Debit: Hutang Pajak & BPJS\nKredit: Kas di Bank Operasional"]
+    G --> H["Debit: Hutang Pajak & BPJS<br/>Kredit: Kas di Bank Operasional"]
     
     A --> I["5. Alokasi & Reklasifikasi Biaya Tenaga Kerja (Cost Allocation & Clearing - J4 & J5)"]
-    I --> J["Debit: Project WIP / Contract Cost & Overhead\nKredit & Debit: Akun Kliring Biaya Tenaga Kerja (Saldo Akhir Rp0)"]
+    I --> J["Debit: Project WIP / Contract Cost & Overhead<br/>Kredit & Debit: Akun Kliring Biaya Tenaga Kerja (Saldo Akhir Rp0)"]
 ```
 
 ---

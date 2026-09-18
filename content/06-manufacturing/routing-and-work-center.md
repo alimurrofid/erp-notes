@@ -30,7 +30,7 @@ flowchart TD
     Prod["Product Master: Laptop Pro"]
     
     subgraph Material["Struktur Material (Apa yang Dibutuhkan)"]
-        BOM["Bill of Materials (BOM)<br/>- Chipset Prosesor<br/>- Modul RAM<br/>- Casing Logam"]
+        BOM["Bill of Materials (BOM)<br/>Chipset Prosesor<br/>Modul RAM<br/>Casing Logam"]
     end
     
     subgraph Process["Struktur Proses / Aktivitas (Bagaimana Dikerjakan)"]

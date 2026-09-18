@@ -21,11 +21,11 @@ Standar akuntansi internasional **IFRS 15 (*Revenue from Contracts with Customer
 
 ```mermaid
 flowchart TD
-    S1["Langkah 1: Identifikasi Kontrak dengan Pelanggan\n(Kesepakatan mengikat dengan hak & syarat komersial)"]
-    --> S2["Langkah 2: Identifikasi Kewajiban Pelaksanaan (Performance Obligations)\n(Janji untuk menyerahkan barang atau jasa yang dapat dibedakan)"]
-    --> S3["Langkah 3: Tentukan Harga Transaksi (Transaction Price)\n(Jumlah imbalan yang diharapkan menjadi hak entitas)"]
-    --> S4["Langkah 4: Alokasikan Harga Transaksi ke Setiap Kewajiban\n(Berdasarkan harga jual berdiri sendiri / Standalone Selling Price)"]
-    --> S5["Langkah 5: Akui Pendapatan saat Kewajiban Dipenuhi\n(Saat kendali / control atas barang/jasa berpindah ke pelanggan)"]
+    S1["Langkah 1: Identifikasi Kontrak dengan Pelanggan<br/>(Kesepakatan mengikat dengan hak & syarat komersial)"]
+    --> S2["Langkah 2: Identifikasi Kewajiban Pelaksanaan (Performance Obligations)<br/>(Janji untuk menyerahkan barang atau jasa yang dapat dibedakan)"]
+    --> S3["Langkah 3: Tentukan Harga Transaksi (Transaction Price)<br/>(Jumlah imbalan yang diharapkan menjadi hak entitas)"]
+    --> S4["Langkah 4: Alokasikan Harga Transaksi ke Setiap Kewajiban<br/>(Berdasarkan harga jual berdiri sendiri / Standalone Selling Price)"]
+    --> S5["Langkah 5: Akui Pendapatan saat Kewajiban Dipenuhi<br/>(Saat kendali / control atas barang/jasa berpindah ke pelanggan)"]
 ```
 
 ### Metode Pengakuan: Point in Time vs Over Time
@@ -57,13 +57,13 @@ Tabel berikut menunjukkan perbedaan tajam antara pergerakan uang tunai fisik dan
 ```mermaid
 flowchart LR
     subgraph RevenueTiming["Waktu Pengakuan Pendapatan"]
-        R1["Uang Masuk DULUAN, Barang Belum Diserahkan\n=> LIABILITAS: Uang Muka / Pendapatan Diterima di Muka\n(Deferred Revenue)"]
-        R2["Barang Diserahkan DULUAN, Uang Belum Diterima\n=> ASET: Piutang Usaha / Pendapatan Akrual\n(Accrued Revenue)"]
+        R1["Uang Masuk DULUAN, Barang Belum Diserahkan<br/>=> LIABILITAS: Uang Muka / Pendapatan Diterima di Muka<br/>(Deferred Revenue)"]
+        R2["Barang Diserahkan DULUAN, Uang Belum Diterima<br/>=> ASET: Piutang Usaha / Pendapatan Akrual<br/>(Accrued Revenue)"]
     end
 
     subgraph ExpenseTiming["Waktu Pengakuan Beban"]
-        E1["Uang Keluar DULUAN, Manfaat Belum Dinikmati\n=> ASET: Beban Dibayar di Muka\n(Prepaid Expense)"]
-        E2["Manfaat Dinikmati DULUAN, Tagihan Belum Dibayar\n=> LIABILITAS: Beban Akrual / Utang Beban\n(Accrued Expense)"]
+        E1["Uang Keluar DULUAN, Manfaat Belum Dinikmati<br/>=> ASET: Beban Dibayar di Muka<br/>(Prepaid Expense)"]
+        E2["Manfaat Dinikmati DULUAN, Tagihan Belum Dibayar<br/>=> LIABILITAS: Beban Akrual / Utang Beban<br/>(Accrued Expense)"]
     end
 ```
 

@@ -115,12 +115,12 @@ Prinsip paling penting dalam integritas data penjualan ERP adalah **Prinsip Peng
 ```mermaid
 flowchart TD
     subgraph MasterData["Master Data Pelanggan"]
-        M1["Harga Katalog Produk A = Rp1.000.000\n(Diubah pada 15 September menjadi Rp1.200.000)"]
+        M1["Harga Katalog Produk A = Rp1.000.000<br/>(Diubah pada 15 September menjadi Rp1.200.000)"]
     end
 
     subgraph TransactionData["Dokumen Transaksi"]
-        T1["Sales Order #SO-001 (Disahkan 10 September):\nHarga Produk A = Rp1.000.000\n(TETAP Rp1.000.000 - Immutable)"]
-        T2["Sales Order #SO-002 (Dibuat 16 September):\nHarga Produk A = Rp1.200.000\n(Mengambil harga baru dari Master)"]
+        T1["Sales Order #SO-001 (Disahkan 10 September):<br/>Harga Produk A = Rp1.000.000<br/>(TETAP Rp1.000.000 - Immutable)"]
+        T2["Sales Order #SO-002 (Dibuat 16 September):<br/>Harga Produk A = Rp1.200.000<br/>(Mengambil harga baru dari Master)"]
     end
 
     M1 -.->|Snapshot pada 10 Sep| T1

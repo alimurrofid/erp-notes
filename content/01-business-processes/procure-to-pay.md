@@ -16,16 +16,16 @@ Siklus P2P mengintegrasikan departemen pengguna (*requester*), tim pengadaan (*p
 
 ```mermaid
 flowchart TD
-    PR["1. Purchase Requisition\n(Permintaan Pengadaan)"]
-    --> RFQ["2. RFQ & Sourcing\n(Penawaran Pemasok)"]
-    --> PO["3. Purchase Order\n(Pesanan Pembelian)"]
-    --> GR["4. Goods Receipt\n(Penerimaan Barang Fisik)"]
-    --> VM{"5. 3-Way Matching\n(PO vs GR vs Bill)"}
-    VM -->|Match Valid| VB["6. Vendor Bill\n(Tagihan Pemasok / AP)"]
+    PR["1. Purchase Requisition<br/>(Permintaan Pengadaan)"]
+    --> RFQ["2. RFQ & Sourcing<br/>(Penawaran Pemasok)"]
+    --> PO["3. Purchase Order<br/>(Pesanan Pembelian)"]
+    --> GR["4. Goods Receipt<br/>(Penerimaan Barang Fisik)"]
+    --> VM{"5. 3-Way Matching<br/>(PO vs GR vs Bill)"}
+    VM -->|Match Valid| VB["6. Vendor Bill<br/>(Tagihan Pemasok / AP)"]
     VM -->|Mismatch / Blocked| HLD["Dispute / Tolerance Hold"]
     HLD -->|Resolved| VB
-    VB --> PAY["7. Payment Disbursement\n(Pembayaran Bank)"]
-    PAY --> REC["8. Bank Reconciliation\n(Rekonsiliasi Bank)"]
+    VB --> PAY["7. Payment Disbursement<br/>(Pembayaran Bank)"]
+    PAY --> REC["8. Bank Reconciliation<br/>(Rekonsiliasi Bank)"]
 ```
 
 ---

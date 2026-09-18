@@ -30,18 +30,18 @@ Penerapan kontrol 3-Way Match dalam ERP bertujuan untuk:
 
 ```mermaid
 flowchart TD
-    PO["1. Purchase Order (PO)\n* Item: Laptop Pro\n* Ordered Qty: 10 Unit\n* Unit Price: Rp700.000\n* Payment Terms: Net 30"]
+    PO["1. Purchase Order (PO)<br/>Item: Laptop Pro<br/>Ordered Qty: 10 Unit<br/>Unit Price: Rp700.000<br/>Payment Terms: Net 30"]
     
-    GR["2. Goods Receipt (GR)\n* Item: Laptop Pro\n* Accepted Qty: 10 Unit\n* Rejected Qty: 0 Unit\n* Receiving Wh: WH-01"]
+    GR["2. Goods Receipt (GR)<br/>Item: Laptop Pro<br/>Accepted Qty: 10 Unit<br/>Rejected Qty: 0 Unit<br/>Receiving Wh: WH-01"]
     
-    VB["3. Vendor Bill (Tagihan)\n* Item: Laptop Pro\n* Invoiced Qty: 10 Unit\n* Invoiced Price: Rp700.000\n* Total Tax: Rp770.000 (11%)"]
+    VB["3. Vendor Bill (Tagihan)<br/>Item: Laptop Pro<br/>Invoiced Qty: 10 Unit<br/>Invoiced Price: Rp700.000<br/>Total Tax: Rp770.000 (11%)"]
     
-    PO -.-> Engine{"ERP 3-Way Matching Engine\n(Pencocokan Kuantitas & Harga)"}
+    PO -.-> Engine{"ERP 3-Way Matching Engine<br/>(Pencocokan Kuantitas & Harga)"}
     GR -.-> Engine
     VB -.-> Engine
 
-    Engine -->|Kuantitas & Harga Cocok 100%| Pass["MATCHED: Tagihan Disetujui\n(Status: Ready for Payment)"]
-    Engine -->|Ada Selisih di Luar Toleransi| Block["DISCREPANCY: Tagihan Ditahan\n(Status: Blocked for Payment)"]
+    Engine -->|Kuantitas & Harga Cocok 100%| Pass["MATCHED: Tagihan Disetujui<br/>(Status: Ready for Payment)"]
+    Engine -->|Ada Selisih di Luar Toleransi| Block["DISCREPANCY: Tagihan Ditahan<br/>(Status: Blocked for Payment)"]
 ```
 
 ---
@@ -77,9 +77,9 @@ Dalam transaksi riil, selisih kecil sering terjadi (misal perbedaan pembulatan d
 flowchart TD
     Disc{"Deteksi Selisih 3-Way Match"}
     
-    Disc -->|Kasus 1: Kuantitas Ditagihkan > Kuantitas Diterima| QtyErr["Quantity Discrepancy:\nTagihan 10 unit, Gudang baru terima 8 unit.\n=> TINDAKAN SISTEM: Faktur ditahan (Payment Block).\nSistem hanya menyetujui pembayaran atas 8 unit."]
+    Disc -->|Kasus 1: Kuantitas Ditagihkan > Kuantitas Diterima| QtyErr["Quantity Discrepancy:<br/>Tagihan 10 unit, Gudang baru terima 8 unit.<br/>=> TINDAKAN SISTEM: Faktur ditahan (Payment Block).<br/>Sistem hanya menyetujui pembayaran atas 8 unit."]
     
-    Disc -->|Kasus 2: Harga Faktur > Harga PO| PriceErr["Price Variance:\nHarga PO Rp700.000, Faktur menagih Rp720.000.\n=> TINDAKAN SISTEM: Tagihan ditahan.\nMewajibkan persetujuan Manajer Pengadaan atau\nmembebankan selisih ke akun Purchase Price Variance (PPV)."]
+    Disc -->|Kasus 2: Harga Faktur > Harga PO| PriceErr["Price Variance:<br/>Harga PO Rp700.000, Faktur menagih Rp720.000.<br/>=> TINDAKAN SISTEM: Tagihan ditahan.<br/>Mewajibkan persetujuan Manajer Pengadaan atau<br/>membebankan selisih ke akun Purchase Price Variance (PPV)."]
 ```
 
 ### Resolusi Sengketa Tagihan (*Exception Resolution*):

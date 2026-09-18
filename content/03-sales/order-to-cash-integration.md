@@ -20,19 +20,19 @@ Bagan berikut memetakan perjalanan data hulu-ke-hilir dalam sistem ERP:
 
 ```mermaid
 flowchart TD
-    CRM["1. CRM & Master Data\n(Customer Master, Price List, Tax Profile)"]
-    --> Quot["2. Sales Quotation\n(SQ: Proposal Komersial Berbatas Waktu)"]
-    --> SO["3. Sales Order\n(SO: Kontrak Mengikat & Reservasi Stok Gudang)"]
+    CRM["1. CRM & Master Data<br/>(Customer Master, Price List, Tax Profile)"]
+    --> Quot["2. Sales Quotation<br/>(SQ: Proposal Komersial Berbatas Waktu)"]
+    --> SO["3. Sales Order<br/>(SO: Kontrak Mengikat & Reservasi Stok Gudang)"]
     
-    SO --> WMS["4. Warehouse Fulfillment\n(Pick List & Packing Slip)"]
-    WMS --> DO["5. Delivery Order / Goods Issue\n(Pengurangan Stok Fisik & Jurnal COGS)"]
+    SO --> WMS["4. Warehouse Fulfillment<br/>(Pick List & Packing Slip)"]
+    WMS --> DO["5. Delivery Order / Goods Issue<br/>(Pengurangan Stok Fisik & Jurnal COGS)"]
     
-    DO --> INV["6. Customer Invoice\n(Faktur Penjualan: Penambahan Piutang & Pengakuan Pendapatan)"]
-    INV --> AR["7. Accounts Receivable Subledger\n(Manajemen Saldo Terbuka & Aging Tagihan)"]
+    DO --> INV["6. Customer Invoice<br/>(Faktur Penjualan: Penambahan Piutang & Pengakuan Pendapatan)"]
+    INV --> AR["7. Accounts Receivable Subledger<br/>(Manajemen Saldo Terbuka & Aging Tagihan)"]
     
-    AR --> PAY["8. Customer Payment\n(Penerimaan Kas / Bank & Alokasi Pelunasan)"]
-    PAY --> REC["9. Bank Reconciliation\n(Kliring Rekening Koran Elektronik)"]
-    REC --> FIN["10. Financial Statements\n(Laporan Posisi Keuangan & Laba Rugi)"]
+    AR --> PAY["8. Customer Payment<br/>(Penerimaan Kas / Bank & Alokasi Pelunasan)"]
+    PAY --> REC["9. Bank Reconciliation<br/>(Kliring Rekening Koran Elektronik)"]
+    REC --> FIN["10. Financial Statements<br/>(Laporan Posisi Keuangan & Laba Rugi)"]
 ```
 
 ---
@@ -79,7 +79,7 @@ flowchart TD
     end
 
     subgraph POS["5. Retail POS (Cash & Carry)"]
-        P1["Kasir Ritel:\nPesanan + Serah Barang + Faktur + Bayar Kas\n(Terjadi Simultan dalam 1 Detik)"]
+        P1["Kasir Ritel:<br/>Pesanan + Serah Barang + Faktur + Bayar Kas<br/>(Terjadi Simultan dalam 1 Detik)"]
     end
 ```
 

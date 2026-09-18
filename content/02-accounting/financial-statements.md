@@ -20,17 +20,17 @@ Aliran data dalam sistem ERP bergerak dari transaksi mikro menuju laporan keuang
 
 ```mermaid
 flowchart TD
-    TX["1. Transaksi Operasional Hulu\n(Faktur, Surat Jalan, Pembayaran Bank)"]
-    --> JE["2. Journal Entries\n(Posting ke General Ledger)"]
-    --> GL["3. General Ledger & Subledgers\n(Buku Besar Akun & Kartu Pembantu)"]
-    --> UTB["4. Unadjusted Trial Balance\n(Neraca Saldo Sebelum Penyesuaian)"]
-    --> ADJ["5. Period-End Adjusting Entries\n(Akrual, Amortisasi, Depresiasi, Revaluasi Valas)"]
-    --> ATB["6. Adjusted Trial Balance\n(Neraca Saldo Setelah Penyesuaian)"]
+    TX["1. Transaksi Operasional Hulu<br/>(Faktur, Surat Jalan, Pembayaran Bank)"]
+    --> JE["2. Journal Entries<br/>(Posting ke General Ledger)"]
+    --> GL["3. General Ledger & Subledgers<br/>(Buku Besar Akun & Kartu Pembantu)"]
+    --> UTB["4. Unadjusted Trial Balance<br/>(Neraca Saldo Sebelum Penyesuaian)"]
+    --> ADJ["5. Period-End Adjusting Entries<br/>(Akrual, Amortisasi, Depresiasi, Revaluasi Valas)"]
+    --> ATB["6. Adjusted Trial Balance<br/>(Neraca Saldo Setelah Penyesuaian)"]
     
-    ATB --> BS["Laporan Posisi Keuangan (Neraca)\nAssets = Liabilities + Equity"]
-    ATB --> PL["Laporan Laba Rugi (P&L)\nRevenue - Expenses = Net Profit"]
-    ATB --> CF["Laporan Arus Kas (Cash Flow)\nOperasi, Investasi, Pendanaan"]
-    ATB --> EQ["Laporan Perubahan Ekuitas\nModal Saham + Laba Ditahan"]
+    ATB --> BS["Laporan Posisi Keuangan (Neraca)<br/>Assets = Liabilities + Equity"]
+    ATB --> PL["Laporan Laba Rugi (P&L)<br/>Revenue - Expenses = Net Profit"]
+    ATB --> CF["Laporan Arus Kas (Cash Flow)<br/>Operasi, Investasi, Pendanaan"]
+    ATB --> EQ["Laporan Perubahan Ekuitas<br/>Modal Saham + Laba Ditahan"]
 ```
 
 ---

@@ -81,11 +81,11 @@ $$\mathbf{Sales\ Order \neq Customer\ Invoice \neq Revenue\ Recognition \neq Cas
 
 ```mermaid
 flowchart TD
-    SO["1. Sales Order (SO)\nKomitmen komersial hukum.\nTIDAK ADA pengakuan utang/piutang/pendapatan.\nHanya reservasi kuantitas stok."]
-    --> DO["2. Delivery Order (DO)\nPenyerahan fisik barang.\nPersediaan berkurang di gudang.\nPengakuan Beban Pokok Penjualan (COGS)."]
-    --> INV["3. Customer Invoice\nHak tagih legal diterbitkan.\nPiutang Usaha (AR) bertambah di subledger.\nUtang Pajak Keluaran (PPN) diakui."]
-    --> REV["4. Revenue Recognition\nPengakuan manfaat ekonomi (IFRS 15).\nBisa bersamaan dengan DO, bersamaan dengan Invoice,\natau bertahap sepanjang waktu (Over Time)."]
-    --> PAY["5. Payment & Settlement\nUang kas masuk ke rekening bank perusahaan.\nPiutang pelanggan ditutup (cleared)."]
+    SO["1. Sales Order (SO)<br/>Komitmen komersial hukum.<br/>TIDAK ADA pengakuan utang/piutang/pendapatan.<br/>Hanya reservasi kuantitas stok."]
+    --> DO["2. Delivery Order (DO)<br/>Penyerahan fisik barang.<br/>Persediaan berkurang di gudang.<br/>Pengakuan Beban Pokok Penjualan (COGS)."]
+    --> INV["3. Customer Invoice<br/>Hak tagih legal diterbitkan.<br/>Piutang Usaha (AR) bertambah di subledger.<br/>Utang Pajak Keluaran (PPN) diakui."]
+    --> REV["4. Revenue Recognition<br/>Pengakuan manfaat ekonomi (IFRS 15).<br/>Bisa bersamaan dengan DO, bersamaan dengan Invoice,<br/>atau bertahap sepanjang waktu (Over Time)."]
+    --> PAY["5. Payment & Settlement<br/>Uang kas masuk ke rekening bank perusahaan.<br/>Piutang pelanggan ditutup (cleared)."]
 ```
 
 1. **Sales Order Diterbitkan**: Pelanggan memesan 10 unit laptop seharga Rp10.000.000. Dokumen ini adalah **komitmen komersial**, bukan transaksi akuntansi. Tidak ada akun GL yang didebit atau dikredit.

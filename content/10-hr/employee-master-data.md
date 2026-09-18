@@ -27,11 +27,11 @@ ERP enterprise mengorganisasikan data induk pegawai ke dalam lima segmen logis:
 ```mermaid
 flowchart TD
     EMP["Master Data Pegawai (Employee ID)"]
-    EMP --> S1["1. Personal & Identity Data\n(Nama, NIK, Tgl Lahir, Status Kawin)"]
-    EMP --> S2["2. Organizational & Position Data\n(Company, Dept, Position, Grade, Atasan)"]
-    EMP --> S3["3. Employment & Contract Data\n(Status PKWT/PKWTT, Tgl Masuk, Masa Kerja)"]
-    EMP --> S4["4. Financial & Statutory Data\n(Rekening Bank, NPWP, BPJS, Skema Gaji)"]
-    EMP --> S5["5. System & Asset Governance\n(Tautan Akun User, Kustodian Aset, Hak Akses)"]
+    EMP --> S1["1. Personal & Identity Data<br/>(Nama, NIK, Tgl Lahir, Status Kawin)"]
+    EMP --> S2["2. Organizational & Position Data<br/>(Company, Dept, Position, Grade, Atasan)"]
+    EMP --> S3["3. Employment & Contract Data<br/>(Status PKWT/PKWTT, Tgl Masuk, Masa Kerja)"]
+    EMP --> S4["4. Financial & Statutory Data<br/>(Rekening Bank, NPWP, BPJS, Skema Gaji)"]
+    EMP --> S5["5. System & Asset Governance<br/>(Tautan Akun User, Kustodian Aset, Hak Akses)"]
 ```
 
 ### 1. Segmen Data Personal & Identitas (Personal & Identity)

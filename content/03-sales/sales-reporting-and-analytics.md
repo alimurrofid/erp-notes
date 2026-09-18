@@ -84,7 +84,7 @@ Sistem ERP enterprise menyediakan mesin pelaporan dinamis yang memungkinkan data
 
 ```mermaid
 flowchart LR
-    Fact["Tabel Fakta Penjualan\n(Sales Fact Table)"]
+    Fact["Tabel Fakta Penjualan<br/>(Sales Fact Table)"]
     --> D1["Dimensi Pelanggan (Customer / Segment)"]
     --> D2["Dimensi Produk (Item Group / Category)"]
     --> D3["Dimensi Organisasi (Branch / Territory / Sales Rep)"]

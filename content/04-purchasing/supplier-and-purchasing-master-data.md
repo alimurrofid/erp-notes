@@ -112,12 +112,12 @@ Sama halnya dengan prinsip pada modul Penjualan (lihat [[03-sales/customer-and-s
 ```mermaid
 flowchart TD
     subgraph MasterData["Master Data Pemasok"]
-        M1["Harga Acuan Produk B = Rp700.000\n(Diperbarui pada 1 Oktober menjadi Rp750.000)"]
+        M1["Harga Acuan Produk B = Rp700.000<br/>(Diperbarui pada 1 Oktober menjadi Rp750.000)"]
     end
 
     subgraph TransactionData["Dokumen Pembelian"]
-        T1["Purchase Order #PO-081 (Disahkan 15 September):\nHarga Produk B = Rp700.000\n(TETAP Rp700.000 - Terkunci & Sah)"]
-        T2["Purchase Order #PO-095 (Dibuat 5 Oktober):\nHarga Produk B = Rp750.000\n(Mengambil harga baru dari Master)"]
+        T1["Purchase Order #PO-081 (Disahkan 15 September):<br/>Harga Produk B = Rp700.000<br/>(TETAP Rp700.000 - Terkunci & Sah)"]
+        T2["Purchase Order #PO-095 (Dibuat 5 Oktober):<br/>Harga Produk B = Rp750.000<br/>(Mengambil harga baru dari Master)"]
     end
 
     M1 -.->|Snapshot pada 15 Sep| T1

@@ -31,15 +31,15 @@ Implementasi alur retur pembelian dan nota debet bertujuan untuk:
 
 ```mermaid
 flowchart TD
-    Defect["1. Deteksi Barang Cacat / Salah Kirim\n(Saat Inspeksi Penerimaan atau di Lini Perakitan Pabrik)"]
-    --> Auth["2. Return to Vendor Authorization\n(Persetujuan Pengembalian Barang oleh Pemasok)"]
-    --> Ship["3. RTV Goods Issue\n(Pengeluaran Fisik Barang dari Gudang via Surat Jalan Retur)"]
+    Defect["1. Deteksi Barang Cacat / Salah Kirim<br/>(Saat Inspeksi Penerimaan atau di Lini Perakitan Pabrik)"]
+    --> Auth["2. Return to Vendor Authorization<br/>(Persetujuan Pengembalian Barang oleh Pemasok)"]
+    --> Ship["3. RTV Goods Issue<br/>(Pengeluaran Fisik Barang dari Gudang via Surat Jalan Retur)"]
     
     Ship --> Decision{"4. Kesepakatan Komersial Penyelesaian"}
     
-    Decision -->|Opsi A: Potong Saldo Utang| DN["5a. Penerbitan Nota Debet (Debit Note)\n* Utang Usaha di AP berkurang\n* PPN Masukan dibatalkan\n* Persediaan berkurang di neraca"]
+    Decision -->|Opsi A: Potong Saldo Utang| DN["5a. Penerbitan Nota Debet (Debit Note)<br/>Utang Usaha di AP berkurang<br/>PPN Masukan dibatalkan<br/>Persediaan berkurang di neraca"]
     
-    Decision -->|Opsi B: Penggantian Barang Baru| Repl["5b. Pengiriman Barang Pengganti (Replacement)\n* Pemasok kirim barang baru tanpa biaya\n* Saldo utang di AP tetap utuh"]
+    Decision -->|Opsi B: Penggantian Barang Baru| Repl["5b. Pengiriman Barang Pengganti (Replacement)<br/>Pemasok kirim barang baru tanpa biaya<br/>Saldo utang di AP tetap utuh"]
 ```
 
 ---

@@ -29,12 +29,12 @@ Alur operasional RFQ menghubungkan permohonan internal dengan penawaran pasar ek
 ```mermaid
 flowchart TD
     PR["1. Approved Purchase Requisition"]
-    --> RFQ["2. RFQ Generation\n(Sistem membuat dokumen lelang pengadaan)"]
-    --> Inv["3. Supplier Invitation\n(Kirim RFQ ke Pemasok A, B, dan C)"]
-    --> Resp["4. Supplier Quotations Entry\n(Rekam penawaran harga, lead time, dan termin dari tiap vendor)"]
-    --> Comp["5. Bid Comparison & Evaluation\n(Matriks perbandingan harga & kepatuhan teknis)"]
-    --> Sel["6. Awarding / Supplier Selection\n(Pilih penawar terbaik; tolak penawar lainnya)"]
-    --> PO["7. Purchase Order Conversion\n(Otomatis konversi penawaran pemenang ke PO)"]
+    --> RFQ["2. RFQ Generation<br/>(Sistem membuat dokumen lelang pengadaan)"]
+    --> Inv["3. Supplier Invitation<br/>(Kirim RFQ ke Pemasok A, B, dan C)"]
+    --> Resp["4. Supplier Quotations Entry<br/>(Rekam penawaran harga, lead time, dan termin dari tiap vendor)"]
+    --> Comp["5. Bid Comparison & Evaluation<br/>(Matriks perbandingan harga & kepatuhan teknis)"]
+    --> Sel["6. Awarding / Supplier Selection<br/>(Pilih penawar terbaik; tolak penawar lainnya)"]
+    --> PO["7. Purchase Order Conversion<br/>(Otomatis konversi penawaran pemenang ke PO)"]
 ```
 
 ---

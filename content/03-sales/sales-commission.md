@@ -27,13 +27,13 @@ Sistem ERP mendukung beberapa formula dasar untuk menghitung nilai komisi:
 
 ```mermaid
 flowchart TD
-    Base{"Pilihan Dasar Kalkulasi Komisi\n(Commission Base Policy)"}
+    Base{"Pilihan Dasar Kalkulasi Komisi<br/>(Commission Base Policy)"}
     
-    Base -->|Model 1: Revenue-Based| M1["1. Berdasarkan Nilai Penjualan (Gross/Net Revenue)\nKomisi = % x Nilai Penjualan Bersih (DPP)\nMendorong volume penjualan setinggi mungkin."]
+    Base -->|Model 1: Revenue-Based| M1["1. Berdasarkan Nilai Penjualan (Gross/Net Revenue)<br/>Komisi = % x Nilai Penjualan Bersih (DPP)<br/>Mendorong volume penjualan setinggi mungkin."]
     
-    Base -->|Model 2: Margin-Based| M2["2. Berdasarkan Laba Kotor (Gross Profit / Margin)\nKomisi = % x (Harga Jual - COGS)\nMencegah diskon berlebihan; menjaga profitabilitas."]
+    Base -->|Model 2: Margin-Based| M2["2. Berdasarkan Laba Kotor (Gross Profit / Margin)<br/>Komisi = % x (Harga Jual - COGS)<br/>Mencegah diskon berlebihan; menjaga profitabilitas."]
     
-    Base -->|Model 3: Cash-Collected-Based| M3["3. Berdasarkan Kas Tertagih (Payment Collection)\nKomisi baru cair saat uang fisik masuk ke bank.\nMenjaga arus kas dan mencegah piutang macet."]
+    Base -->|Model 3: Cash-Collected-Based| M3["3. Berdasarkan Kas Tertagih (Payment Collection)<br/>Komisi baru cair saat uang fisik masuk ke bank.<br/>Menjaga arus kas dan mencegah piutang macet."]
 ```
 
 ### 1. Revenue-Based Commission (Berbasis Omzet Penjualan)
@@ -73,9 +73,9 @@ Apa yang terjadi jika komisi telah dibayarkan, namun 2 bulan kemudian pelanggan 
 
 ```mermaid
 flowchart LR
-    Inv["Penjualan Bulan Januari:\nKomisi Rp200.000 Dibayarkan"]
-    --> Ret["Maret: Pelanggan Retur 50% Barang\n(Terbit Credit Note)"]
-    --> Claw["April: Pemotongan Otomatis (Clawback)\nKomisi Baru Dipotong Rp100.000 di Payroll"]
+    Inv["Penjualan Bulan Januari:<br/>Komisi Rp200.000 Dibayarkan"]
+    --> Ret["Maret: Pelanggan Retur 50% Barang<br/>(Terbit Credit Note)"]
+    --> Claw["April: Pemotongan Otomatis (Clawback)<br/>Komisi Baru Dipotong Rp100.000 di Payroll"]
 ```
 
 ---

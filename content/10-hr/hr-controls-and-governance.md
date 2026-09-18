@@ -29,10 +29,10 @@ Pada organisasi dengan kebutuhan tata kelola (*governance*) yang lebih tinggi, a
 ```mermaid
 flowchart TD
     subgraph ROLES["Pola Pemisahan 4 Peran Penggajian (Illustrative 4-Way SoD Matrix)"]
-        R1["1. HR Master Data Specialist\n(Input Data Pegawai, Jabatan & Kontrak)"]
-        R2["2. Payroll Specialist (Maker)\n(Eksekusi Kalkulasi Gaji & Input Variabel)"]
-        R3["3. HR & Finance Approver (Checker)\n(Verifikasi & Pengesahan Slip Gaji)"]
-        R4["4. Treasury Disburser (Approver)\n(Eksekusi Transfer Bank ke Rekening Karyawan)"]
+        R1["1. HR Master Data Specialist<br/>(Input Data Pegawai, Jabatan & Kontrak)"]
+        R2["2. Payroll Specialist (Maker)<br/>(Eksekusi Kalkulasi Gaji & Input Variabel)"]
+        R3["3. HR & Finance Approver (Checker)<br/>(Verifikasi & Pengesahan Slip Gaji)"]
+        R4["4. Treasury Disburser (Approver)<br/>(Eksekusi Transfer Bank ke Rekening Karyawan)"]
     end
 
     R1 -. "Risiko Konflik" .-> R2

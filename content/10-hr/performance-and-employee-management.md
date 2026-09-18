@@ -28,9 +28,9 @@ ERP mengorganisasikan manajemen kinerja melalui lima komponen terpadu:
 
 ```mermaid
 flowchart TD
-    GOAL["1. Penetapan Sasaran Kerja (Goal & KPI Setting)\n(SMART Goals / OKRs di Awal Periode)"] --> MID["2. Peninjauan Tengah Periode (Mid-Year Check-In)\n(Umpan Balik Berkelanjutan & Penyesuaian)"]
-    MID --> EVAL["3. Evaluasi Akhir Periode (Appraisal Review)\n(Self-Assessment & Manager Evaluation)"]
-    EVAL --> CALIB["4. Kalibrasi Kinerja (Performance Calibration)\n(Normalisasi Distribusi Kurva Kinerja)"]
+    GOAL["1. Penetapan Sasaran Kerja (Goal & KPI Setting)<br/>(SMART Goals / OKRs di Awal Periode)"] --> MID["2. Peninjauan Tengah Periode (Mid-Year Check-In)<br/>(Umpan Balik Berkelanjutan & Penyesuaian)"]
+    MID --> EVAL["3. Evaluasi Akhir Periode (Appraisal Review)<br/>(Self-Assessment & Manager Evaluation)"]
+    EVAL --> CALIB["4. Kalibrasi Kinerja (Performance Calibration)<br/>(Normalisasi Distribusi Kurva Kinerja)"]
     CALIB --> OUTCOME["5. Tindak Lanjut Hasil Evaluasi (Performance Outcomes)"]
     
     OUTCOME --> O1["Penyesuaian Gaji & Bonus (Merit Increase & Bonus)"]
