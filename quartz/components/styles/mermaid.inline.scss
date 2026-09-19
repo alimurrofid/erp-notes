@@ -130,3 +130,49 @@ pre {
     }
   }
 }
+
+// =========================================================================
+// Mermaid Custom ClassDef Styling (Text Legibility)
+// =========================================================================
+
+// Classes with pastel/light backgrounds that require crisp dark text (#0f172a)
+// in both light and dark modes.
+$light-node-classes: (
+  // 00-fundamentals & shared
+  "operational", "fulfillment", "support", "coreFinance", "master", "trans",
+  // 02-accounting & 07-finance
+  "subledger", "gl", "control", "bs", "pl", "cf", "ops", "acc", "exec", "ctrl", "fin",
+  // 04-purchasing & 05-inventory
+  "internal", "external", "demand", "supply", "core", "physical", "loss",
+  // 06-manufacturing & 09-project
+  "planning", "prod", "fulfill", "level0", "level1", "level2", "task", "milestone", "finance",
+  // 08-assets & 11-tax
+  "upstream", "downstream", "expense", "prepay", "decision", "settlement", "monthly", "annual"
+);
+
+.mermaid svg .node {
+  .nodeLabel, text, span {
+    font-weight: 500;
+  }
+
+  // Apply high-contrast dark text to all light-background classDefs
+  @each $cls in $light-node-classes {
+    &.#{$cls} {
+      .nodeLabel, text, span, p, div, tspan {
+        color: #0f172a !important;
+        fill: #0f172a !important;
+      }
+    }
+  }
+
+  // Header badges with dark background (#2b2d42) must have white text
+  &.header {
+    .nodeLabel, text, span, p, div, tspan {
+      color: #ffffff !important;
+      fill: #ffffff !important;
+      font-weight: bold !important;
+    }
+  }
+}
+
+

@@ -18,9 +18,9 @@ flowchart LR
 
     T1 --> T2 --> M1 --> Inv
 
-    classDef task fill:#e3f2fd,stroke:#1976d2,stroke-width:1px;
-    classDef milestone fill:#fff8e1,stroke:#f57f17,stroke-width:2px;
-    classDef finance fill:#e8f5e9,stroke:#388e3c,stroke-width:1.5px;
+    classDef task fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0f172a;
+    classDef milestone fill:#fff8e1,stroke:#f57f17,stroke-width:2px,color:#0f172a;
+    classDef finance fill:#e8f5e9,stroke:#388e3c,stroke-width:1.5px,color:#0f172a;
 
     class T1,T2 task;
     class M1 milestone;

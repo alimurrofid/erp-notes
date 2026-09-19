@@ -46,9 +46,9 @@ flowchart TD
     SA1 --> PartY
     SA1 --> PartZ
 
-    classDef level0 fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px;
-    classDef level1 fill:#e3f2fd,stroke:#1e88e5,stroke-width:1.5px;
-    classDef level2 fill:#f1f8e9,stroke:#558b2f,stroke-width:1px;
+    classDef level0 fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px,color:#0f172a;
+    classDef level1 fill:#e3f2fd,stroke:#1e88e5,stroke-width:1.5px,color:#0f172a;
+    classDef level2 fill:#f1f8e9,stroke:#558b2f,stroke-width:1px,color:#0f172a;
 
     class FG level0;
     class SA1,SA2,PartC,PartD level1;

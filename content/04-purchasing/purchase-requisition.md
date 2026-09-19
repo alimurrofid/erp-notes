@@ -31,8 +31,8 @@ flowchart LR
     PR["Purchase Requisition (PR)<br/>Ranah Internal Perusahaan<br/>• Dokumen usulan internal<br/>• Tidak ada ikatan hukum eksternal<br/>• Belum menentukan harga final<br/>• Beban biaya = Rp0"]
     -->|Approval & Sourcing| PO["Purchase Order (PO)<br/>Ranah Eksternal Komersial<br/>• Kontrak komersial resmi<br/>• Mengikat secara hukum dengan vendor<br/>• Harga, termin & tanggal terkunci<br/>• Komitmen utang masa depan"]
 
-    classDef internal fill:#e3f2fd,stroke:#1976d2,stroke-width:1.5px;
-    classDef external fill:#fff3e0,stroke:#f57c00,stroke-width:1.5px;
+    classDef internal fill:#e3f2fd,stroke:#1976d2,stroke-width:1.5px,color:#0f172a;
+    classDef external fill:#fff3e0,stroke:#f57c00,stroke-width:1.5px,color:#0f172a;
     class PR internal;
     class PO external;
 ```

@@ -53,8 +53,8 @@ flowchart TD
     Rev -->|Revenue - Expenses| Eq
     Exp -->|Net Profit / Loss| Eq
 
-    classDef bs fill:#e8f4f8,stroke:#2b6cb0,stroke-width:1.5px;
-    classDef pl fill:#fef9e7,stroke:#b7950b,stroke-width:1.5px;
+    classDef bs fill:#e8f4f8,stroke:#2b6cb0,stroke-width:1.5px,color:#0f172a;
+    classDef pl fill:#fef9e7,stroke:#b7950b,stroke-width:1.5px,color:#0f172a;
 
     class Asset,Liab,Eq bs;
     class Rev,Exp pl;

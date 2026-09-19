@@ -48,10 +48,10 @@ flowchart TD
     Acc -->|Payable / Receivable Due| Fin
     Fin -->|Disbursement / Receipt| Acc
 
-    classDef operational fill:#e3f2fd,stroke:#1976d2,stroke-width:1px;
-    classDef fulfillment fill:#e8f5e9,stroke:#388e3c,stroke-width:1px;
-    classDef support fill:#fff3e0,stroke:#f57c00,stroke-width:1px;
-    classDef coreFinance fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px;
+    classDef operational fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0f172a;
+    classDef fulfillment fill:#e8f5e9,stroke:#388e3c,stroke-width:1px,color:#0f172a;
+    classDef support fill:#fff3e0,stroke:#f57c00,stroke-width:1px,color:#0f172a;
+    classDef coreFinance fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#0f172a;
 
     class CRM,Sales,Purch,Projects operational;
     class Inv,Mfg fulfillment;

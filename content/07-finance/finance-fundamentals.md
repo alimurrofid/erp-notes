@@ -75,11 +75,11 @@ flowchart TD
     Fin --> BudgetCtrl
     BudgetCtrl -.->|"Preventive Control: Blokir PO jika over-budget"| Ops
 
-    classDef ops fill:#e3f2fd,stroke:#1976d2,stroke-width:1px;
-    classDef acc fill:#e8f5e9,stroke:#388e3c,stroke-width:1px;
-    classDef fin fill:#fff3e0,stroke:#f57c00,stroke-width:1.5px;
-    classDef exec fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px;
-    classDef ctrl fill:#ffebee,stroke:#d32f2f,stroke-width:1px;
+    classDef ops fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0f172a;
+    classDef acc fill:#e8f5e9,stroke:#388e3c,stroke-width:1px,color:#0f172a;
+    classDef fin fill:#fff3e0,stroke:#f57c00,stroke-width:1.5px,color:#0f172a;
+    classDef exec fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#0f172a;
+    classDef ctrl fill:#ffebee,stroke:#d32f2f,stroke-width:1px,color:#0f172a;
 
     class Ops ops;
     class Acc acc;

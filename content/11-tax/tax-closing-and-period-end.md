@@ -50,8 +50,8 @@ flowchart TD
     M6 -->|"Diakumulasi Sepanjang Tahun"| A1
 
     classDef header fill:#2b2d42,stroke:#1a1a2e,color:#ffffff,font-weight:bold;
-    classDef monthly fill:#e3f2fd,stroke:#1976d2,stroke-width:1px;
-    classDef annual fill:#fef9e7,stroke:#b7950b,stroke-width:1px;
+    classDef monthly fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0f172a;
+    classDef annual fill:#fef9e7,stroke:#b7950b,stroke-width:1px,color:#0f172a;
 
     class H_Monthly,H_Annual header;
     class M1,M2,M3,M4,M5,M6 monthly;

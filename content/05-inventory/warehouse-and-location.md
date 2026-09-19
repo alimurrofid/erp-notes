@@ -76,9 +76,9 @@ flowchart LR
     ShipLoc -->|"Delivery Order"| CustLoc
     StockLoc -->|"Barang Rusak / Selisih"| ScrapLoc
 
-    classDef external fill:#e1f5fe,stroke:#0288d1,stroke-width:1.5px;
-    classDef physical fill:#e8f5e9,stroke:#388e3c,stroke-width:1.5px;
-    classDef loss fill:#ffebee,stroke:#d32f2f,stroke-width:1.5px;
+    classDef external fill:#e1f5fe,stroke:#0288d1,stroke-width:1.5px,color:#0f172a;
+    classDef physical fill:#e8f5e9,stroke:#388e3c,stroke-width:1.5px,color:#0f172a;
+    classDef loss fill:#ffebee,stroke:#d32f2f,stroke-width:1.5px,color:#0f172a;
 
     class VendLoc,CustLoc external;
     class RecLoc,StockLoc,ShipLoc physical;

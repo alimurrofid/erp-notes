@@ -44,10 +44,10 @@ flowchart TD
     Compare -- "Pajak Terutang > Kredit" --> PPh29
     Compare -- "Kredit > Pajak Terutang" --> PPh28A
 
-    classDef expense fill:#ffebee,stroke:#c62828,stroke-width:1.5px;
-    classDef prepay fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px;
-    classDef decision fill:#fff8e1,stroke:#f57f17,stroke-width:1.5px;
-    classDef settlement fill:#e1f5fe,stroke:#0277bd,stroke-width:1.5px;
+    classDef expense fill:#ffebee,stroke:#c62828,stroke-width:1.5px,color:#0f172a;
+    classDef prepay fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#0f172a;
+    classDef decision fill:#fff8e1,stroke:#f57f17,stroke-width:1.5px,color:#0f172a;
+    classDef settlement fill:#e1f5fe,stroke:#0277bd,stroke-width:1.5px,color:#0f172a;
 
     class TaxExpense expense;
     class PPh25,PPh22,PPh23,PPh24 prepay;

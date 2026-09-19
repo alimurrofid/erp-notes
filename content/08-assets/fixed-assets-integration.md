@@ -26,10 +26,10 @@ flowchart TD
     FA ==> GL
     FA ==> Sales
 
-    classDef upstream fill:#e3f2fd,stroke:#1976d2,stroke-width:1px;
-    classDef ops fill:#fff3e0,stroke:#f57c00,stroke-width:1px;
-    classDef core fill:#e8f5e9,stroke:#388e3c,stroke-width:2px;
-    classDef downstream fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px;
+    classDef upstream fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0f172a;
+    classDef ops fill:#fff3e0,stroke:#f57c00,stroke-width:1px,color:#0f172a;
+    classDef core fill:#e8f5e9,stroke:#388e3c,stroke-width:2px,color:#0f172a;
+    classDef downstream fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#0f172a;
 
     class Fin,Pur upstream;
     class Inv,Prod ops;

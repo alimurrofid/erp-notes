@@ -120,9 +120,9 @@ flowchart TD
     CFF --> EndCash
     EndCash -->|"Keseimbangan Matematis Neraca"| WC
 
-    classDef pl fill:#fef9e7,stroke:#b7950b,stroke-width:1px;
-    classDef bs fill:#e8f4f8,stroke:#2b6cb0,stroke-width:1px;
-    classDef cf fill:#e8f8f5,stroke:#117864,stroke-width:1.5px;
+    classDef pl fill:#fef9e7,stroke:#b7950b,stroke-width:1px,color:#0f172a;
+    classDef bs fill:#e8f4f8,stroke:#2b6cb0,stroke-width:1px,color:#0f172a;
+    classDef cf fill:#e8f8f5,stroke:#117864,stroke-width:1.5px,color:#0f172a;
 
     class Rev,EBITDA,NI pl;
     class WC,Fixed,Equity bs;

@@ -76,12 +76,12 @@ flowchart TD
     DO -->|"Pengakuan HPP Penjualan"| COGS_Acc
     DO --> Rev_Acc
 
-    classDef demand fill:#e3f2fd,stroke:#1976d2,stroke-width:1px;
-    classDef planning fill:#fff8e1,stroke:#fbc02d,stroke-width:1px;
-    classDef supply fill:#fff3e0,stroke:#f57c00,stroke-width:1px;
-    classDef prod fill:#e8f5e9,stroke:#388e3c,stroke-width:1.5px;
-    classDef fulfill fill:#e0f2f1,stroke:#00897b,stroke-width:1px;
-    classDef fin fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px;
+    classDef demand fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0f172a;
+    classDef planning fill:#fff8e1,stroke:#fbc02d,stroke-width:1px,color:#0f172a;
+    classDef supply fill:#fff3e0,stroke:#f57c00,stroke-width:1px,color:#0f172a;
+    classDef prod fill:#e8f5e9,stroke:#388e3c,stroke-width:1.5px,color:#0f172a;
+    classDef fulfill fill:#e0f2f1,stroke:#00897b,stroke-width:1px,color:#0f172a;
+    classDef fin fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#0f172a;
 
     class SO,FC demand;
     class MPS,MRP planning;

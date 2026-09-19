@@ -119,8 +119,8 @@ flowchart TD
     M1 -.->|Snapshot pada 15 Sep| T1
     M1 -.->|Snapshot pada 05 Okt| T2
 
-    classDef master fill:#e3f2fd,stroke:#1565c0,stroke-width:1.5px;
-    classDef trans fill:#f1f8e9,stroke:#558b2f,stroke-width:1.5px;
+    classDef master fill:#e3f2fd,stroke:#1565c0,stroke-width:1.5px,color:#0f172a;
+    classDef trans fill:#f1f8e9,stroke:#558b2f,stroke-width:1.5px,color:#0f172a;
     class M1 master;
     class T1,T2 trans;
 ```
