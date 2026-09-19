@@ -8,24 +8,16 @@ Aset tetap tidak beroperasi secara terisolasi. Pengadaannya berakar dari perenca
 
 ```mermaid
 flowchart TD
-    subgraph Upstream["Perencanaan & Pengadaan Modal"]
-        Fin["Modul Finance (Phase 8)<br/>Pagu Anggaran CAPEX & Peramalan Kas"]
-        Pur["Modul Purchasing (Phase 5)<br/>CAPEX PO & Three-Way Matching"]
-    end
+    Fin["Modul Finance (Phase 8)<br/>Pagu Anggaran CAPEX & Peramalan Kas"]
+    Pur["Modul Purchasing (Phase 5)<br/>CAPEX PO & Three-Way Matching"]
 
-    subgraph Operations["Operasional Pabrik & Pergudangan"]
-        Inv["Modul Inventory (Phase 6)<br/>Penerimaan Fisik, Tagging, & Spare Parts"]
-        Prod["Modul Manufacturing (Phase 7)<br/>Work Center, Kapasitas Mesin, & Biaya Overhead"]
-    end
+    Inv["Modul Inventory (Phase 6)<br/>Penerimaan Fisik, Tagging & Spare Parts"]
+    Prod["Modul Manufacturing (Phase 7)<br/>Work Center, Kapasitas Mesin & Overhead"]
 
-    subgraph Core["Pusat Tata Kelola Aset (Phase 9)"]
-        FA["Fixed Asset Subledger<br/>Master Data, Componentization, Schedules, & Verification"]
-    end
+    FA["Fixed Asset Subledger (Phase 9 Nexus)<br/>Master Data, Componentization, Schedules & Verification"]
 
-    subgraph Downstream["Pembukuan & Pelepasan Komersial"]
-        GL["Modul Accounting (Phase 3)<br/>General Ledger, Neraca, & CALK (IAS 16)"]
-        Sales["Modul Sales (Phase 4)<br/>Faktur Pelepasan Aset & PPN 16D"]
-    end
+    GL["Modul Accounting (Phase 3)<br/>General Ledger, Neraca & CALK (IAS 16)"]
+    Sales["Modul Sales (Phase 4)<br/>Faktur Pelepasan Aset & PPN 16D"]
 
     Fin --> Pur
     Pur --> Inv
@@ -33,6 +25,16 @@ flowchart TD
     FA <==> Prod
     FA ==> GL
     FA ==> Sales
+
+    classDef upstream fill:#e3f2fd,stroke:#1976d2,stroke-width:1px;
+    classDef ops fill:#fff3e0,stroke:#f57c00,stroke-width:1px;
+    classDef core fill:#e8f5e9,stroke:#388e3c,stroke-width:2px;
+    classDef downstream fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px;
+
+    class Fin,Pur upstream;
+    class Inv,Prod ops;
+    class FA core;
+    class GL,Sales downstream;
 ```
 
 ---

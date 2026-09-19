@@ -15,12 +15,10 @@ Dalam arsitektur Corporate Performance Management (CPM) modern yang terhubung ke
 
 ```mermaid
 graph TD
-    subgraph PlanningHierarchy["Hierarki Perencanaan Finansial ERP"]
         Strat["(1) Strategic Plan (Rencana Jangka Panjang 3-5 Tahun)"]
         Budget["(2) Annual Master Budget (Target Statis Tahunan)"]
         Roll["(3) Rolling Forecast (Prakiraan Dinamis 4-6 Kuartal)"]
         WhatIf["(4) Scenario Modeling (Base / Optimistic / Stress Case)"]
-    end
     Strat --> Budget
     Budget --> Roll
     Roll --> WhatIf
@@ -99,22 +97,19 @@ Hubungan antar-laporan keuangan hasil simulasi perencanaan:
 
 ```mermaid
 flowchart TD
-    subgraph PL["Pro Forma Laba Rugi"]
-        Rev["Pendapatan Usaha"]
-        EBITDA["EBITDA & Beban Bunga"]
-        NI["Laba Bersih (Net Income)"]
-    end
-    subgraph BS["Pro Forma Neraca"]
-        WC["Modal Kerja (AR, Inv, AP)"]
-        Fixed["Aset Tetap & Utang Bank"]
-        Equity["Ekuitas & Saldo Laba"]
-    end
-    subgraph CF["Pro Forma Arus Kas"]
-        CFO["Arus Kas Operasional"]
-        CFI["Arus Kas Investasi (CAPEX)"]
-        CFF["Arus Kas Pendanaan"]
-        EndCash["Kas Akhir Proyeksi"]
-    end
+    Rev["Pro Forma Laba Rugi:<br/>Pendapatan Usaha"]
+    EBITDA["EBITDA & Beban Bunga"]
+    NI["Laba Bersih (Net Income)"]
+
+    WC["Pro Forma Neraca:<br/>Modal Kerja (AR, Inv, AP)"]
+    Fixed["Aset Tetap & Utang Bank"]
+    Equity["Ekuitas & Saldo Laba"]
+
+    CFO["Pro Forma Arus Kas:<br/>Arus Kas Operasional (CFO)"]
+    CFI["Arus Kas Investasi CAPEX (CFI)"]
+    CFF["Arus Kas Pendanaan (CFF)"]
+    EndCash["Kas Akhir Proyeksi (Ending Cash)"]
+
     Rev --> EBITDA --> NI
     NI --> Equity
     WC --> CFO
@@ -123,7 +118,15 @@ flowchart TD
     CFO --> EndCash
     CFI --> EndCash
     CFF --> EndCash
-    EndCash --> BS
+    EndCash -->|"Keseimbangan Matematis Neraca"| WC
+
+    classDef pl fill:#fef9e7,stroke:#b7950b,stroke-width:1px;
+    classDef bs fill:#e8f4f8,stroke:#2b6cb0,stroke-width:1px;
+    classDef cf fill:#e8f8f5,stroke:#117864,stroke-width:1.5px;
+
+    class Rev,EBITDA,NI pl;
+    class WC,Fixed,Equity bs;
+    class CFO,CFI,CFF,EndCash cf;
 ```
 
 ---

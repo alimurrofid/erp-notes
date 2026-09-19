@@ -29,28 +29,20 @@ Diagram berikut merangkum posisi sentral persediaan dalam ekosistem ERP:
 
 ```mermaid
 flowchart TD
-    subgraph CommercialDemand["Domain Permintaan Komersial (Demand)"]
-        SO["Sales Order (O2C)<br/>Pesanan Pelanggan"]
-        WO["Work Order (Manufacturing)<br/>Konsumsi Bahan Baku"]
-    end
+    SO["Sales Order (O2C)<br/>Pesanan Pelanggan"]
+    WO["Work Order (Manufacturing)<br/>Konsumsi Bahan Baku"]
 
-    subgraph CommercialSupply["Domain Pasokan (Supply)"]
-        PO["Purchase Order (P2P)<br/>Pengadaan Pemasok"]
-        PROD["Production Order<br/>Penerimaan Barang Jadi"]
-    end
+    PO["Purchase Order (P2P)<br/>Pengadaan Pemasok"]
+    PROD["Production Order<br/>Penerimaan Barang Jadi"]
 
-    subgraph InventoryCore["Inti Persediaan & Pergudangan (Phase 6 Nexus)"]
-        ATP["(1) Ketersediaan & Reservasi (ATP Engine)"]
-        WM["(2) Operasi Pergudangan (Receiving, Putaway, Picking, Packing)"]
-        Ledger["(3) Buku Persediaan (Stock Ledger Perpetual)"]
-        Valuation["(4) Mesin Biaya Persediaan (Costing Engine: FIFO / Moving Avg)"]
-    end
+    ATP["(1) Ketersediaan & Reservasi (ATP Engine)"]
+    WM["(2) Operasi Pergudangan (Receiving, Putaway, Picking, Packing)"]
+    Ledger["(3) Buku Persediaan (Stock Ledger Perpetual)"]
+    Valuation["(4) Mesin Biaya Persediaan (Costing Engine: FIFO / Moving Avg)"]
 
-    subgraph FinancialImpact["Domain Finansial & Akuntansi (Phase 3)"]
-        GL["General Ledger (Neraca & Laba Rugi)"]
-        AP["Accounts Payable (Utang Usaha & GR/IR)"]
-        COGS["Cost of Goods Sold (Beban Pokok Penjualan)"]
-    end
+    GL["General Ledger (Neraca & Laba Rugi)"]
+    AP["Accounts Payable (Utang Usaha & GR/IR)"]
+    COGS["Cost of Goods Sold (Beban Pokok Penjualan)"]
 
     SO -->|"Memicu Reservasi"| ATP
     WO -->|"Memicu Reservasi Bahan"| ATP
@@ -65,6 +57,16 @@ flowchart TD
     Valuation -->|"Jurnal Aset Persediaan"| GL
     Valuation -->|"Jurnal Beban COGS"| COGS
     Valuation -->|"Kliring Akrual Pembelian"| AP
+
+    classDef demand fill:#e3f2fd,stroke:#1976d2,stroke-width:1px;
+    classDef supply fill:#fff3e0,stroke:#f57c00,stroke-width:1px;
+    classDef core fill:#e8f5e9,stroke:#388e3c,stroke-width:1.5px;
+    classDef fin fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px;
+
+    class SO,WO demand;
+    class PO,PROD supply;
+    class ATP,WM,Ledger,Valuation core;
+    class GL,AP,COGS fin;
 ```
 
 ---

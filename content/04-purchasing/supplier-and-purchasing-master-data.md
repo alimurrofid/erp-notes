@@ -111,17 +111,18 @@ Sama halnya dengan prinsip pada modul Penjualan (lihat [[03-sales/customer-and-s
 
 ```mermaid
 flowchart TD
-    subgraph MasterData["Master Data Pemasok"]
-        M1["Harga Acuan Produk B = Rp700.000<br/>(Diperbarui pada 1 Oktober menjadi Rp750.000)"]
-    end
+    M1["MASTER DATA PEMASOK<br/>Harga Acuan Produk B = Rp700.000<br/>(Diperbarui pada 1 Oktober menjadi Rp750.000)"]
 
-    subgraph TransactionData["Dokumen Pembelian"]
-        T1["Purchase Order #PO-081 (Disahkan 15 September):<br/>Harga Produk B = Rp700.000<br/>(TETAP Rp700.000 - Terkunci & Sah)"]
-        T2["Purchase Order #PO-095 (Dibuat 5 Oktober):<br/>Harga Produk B = Rp750.000<br/>(Mengambil harga baru dari Master)"]
-    end
+    T1["DOKUMEN TRANSAKSI: PO #PO-081 (Disahkan 15 Sep)<br/>Harga Produk B = Rp700.000<br/>(TETAP Rp700.000 - Terkunci & Sah)"]
+    T2["DOKUMEN TRANSAKSI: PO #PO-095 (Dibuat 5 Okt)<br/>Harga Produk B = Rp750.000<br/>(Mengambil harga baru dari Master)"]
 
     M1 -.->|Snapshot pada 15 Sep| T1
     M1 -.->|Snapshot pada 05 Okt| T2
+
+    classDef master fill:#e3f2fd,stroke:#1565c0,stroke-width:1.5px;
+    classDef trans fill:#f1f8e9,stroke:#558b2f,stroke-width:1.5px;
+    class M1 master;
+    class T1,T2 trans;
 ```
 
 Jika pemasok menaikkan harga katalognya bulan depan, seluruh dokumen *Purchase Order* masa lalu yang masih berjalan **tetap mempertahankan harga Rp700.000 yang telah disepakati sebelumnya**.

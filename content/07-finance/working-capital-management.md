@@ -15,11 +15,9 @@ $$\text{CCC} = \text{DIO} + \text{DSO} - \text{DPO}$$
 
 ```mermaid
 flowchart LR
-    subgraph WorkingCapitalComponents["Tiga Pilar Siklus Konversi Kas (CCC)"]
         DIO["Days Inventory Outstanding (DIO)<br/>Waktu Barang Mengendap di Gudang<br/>[Modul Inventory & Prod]"]
         DSO["Days Sales Outstanding (DSO)<br/>Waktu Penagihan Piutang Pelanggan<br/>[Modul Sales & AR]"]
         DPO["Days Payable Outstanding (DPO)<br/>Jangka Waktu Pembayaran Vendor<br/>[Modul Purchasing & AP]"]
-    end
     DIO -->|Ditambah| DSO
     DSO -->|Dikurangi| DPO
     DPO --> CCC["Cash Conversion Cycle (CCC)<br/>Jumlah Hari Kas Terikat dalam Operasional"]

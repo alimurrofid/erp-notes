@@ -8,11 +8,9 @@ Di bawah standar akuntansi **IAS 16 paragraf 73**, perusahaan diwajibkan menyaji
 
 ```mermaid
 flowchart TD
-    subgraph ReportingTiers["Tiga Lapisan Pelaporan Aset di ERP"]
         Ops["(1) Operational Reporting (Pabrik & Lapangan)<br/>Daftar Fisik, Lokasi, Custodian, Tagging, & Maintenance"]
         Acct["(2) Accounting Reporting (Audit & Kepatuhan)<br/>Asset History Sheet, Depr Ledger, Rekonsiliasi Subledger-GL"]
         Mgmt["(3) Management Analytics (Eksekutif & CFO)<br/>CAPEX vs Budget, Utilisasi Aset, TCO, & Analisis Usia Mesin"]
-    end
     Ops --> Acct --> Mgmt
 ```
 

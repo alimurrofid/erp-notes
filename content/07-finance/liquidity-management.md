@@ -8,12 +8,10 @@ Berbeda dengan [[07-finance/cash-management|Cash Management]] yang berfokus pada
 
 ```mermaid
 flowchart TD
-    subgraph LiquidityStack["Piramida Likuiditas Korporasi"]
         Tier1["Tier 1: Saldo Kas & Rekening Koran Operasional<br/>(Likuid Instan, Hari T+0)"]
         Tier2["Tier 2: Instrumen Pasar Uang & Deposito Jangka Pendek<br/>(Likuid Sangat Tinggi, Hari T+1 s.d. T+3)"]
         Tier3["Tier 3: Fasilitas Kredit Bank Siaga Belum Ditarik<br/>(Undrawn Committed Credit Lines)"]
         Tier4["Tier 4: Aset Lancar Lainnya & Piutang Siap Anjak<br/>(Invoice Factoring / Reverse Factoring)"]
-    end
     Tier1 --> Tier2 --> Tier3 --> Tier4
 ```
 

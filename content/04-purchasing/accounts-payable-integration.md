@@ -94,12 +94,10 @@ Pada tanggal 20 Oktober 2026, saat tagihan jatuh tempo dan dieksekusi transfer p
 
 ```mermaid
 flowchart TD
-    subgraph AP_Subledger["AP Subledger PT Sumber Teknologi"]
         Item1["Tagihan BILL-2026-09-0094:<br/>Rp7.770.000 (Open Item)"]
         PayEntry["Payment Entry #PAY-0412:<br/>Rp7.770.000 (Bank Outflow)"]
         Item1 <== Matching & Clearing ==> PayEntry
         Result["Status Tagihan: CLOSED / CLEARED<br/>Sisa Utang Vendor = Rp0"]
-    end
 ```
 
 * **Dampak Sistem**:

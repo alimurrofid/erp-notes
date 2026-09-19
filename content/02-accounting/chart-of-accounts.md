@@ -85,20 +85,22 @@ Salah satu kesalahan paling fatal dalam merancang COA di sistem komputer non-ERP
 Sistem ERP mengatasi hal ini dengan menggunakan **Control Account (Akun Kontrol)**:
 
 ```mermaid
-flowchart TD
-    subgraph Subledger["AR Subledger (Buku Pembantu Piutang)"]
-        C1["Customer PT ABC: Rp5.000.000"]
-        C2["Customer CV XYZ: Rp3.000.000"]
-        C3["Customer Toko Makmur: Rp2.000.000"]
-    end
-    
-    subgraph GL["General Ledger (Buku Besar)"]
-        Ctrl["Akun Kontrol: 1120 - Piutang Usaha<br/>Saldo GL = Rp10.000.000"]
-    end
-    
-    C1 --> Ctrl
-    C2 --> Ctrl
-    C3 --> Ctrl
+flowchart LR
+    C1["Customer PT ABC<br/>Rp5.000.000"]
+    C2["Customer CV XYZ<br/>Rp3.000.000"]
+    C3["Customer Toko Makmur<br/>Rp2.000.000"]
+
+    Ctrl["General Ledger (Buku Besar):<br/>Akun Kontrol 1120 - Piutang Usaha<br/>(Saldo GL = Rp10.000.000)"]
+
+    C1 -->|Posting Agregat| Ctrl
+    C2 -->|Posting Agregat| Ctrl
+    C3 -->|Posting Agregat| Ctrl
+
+    classDef subledger fill:#edf2f4,stroke:#8d99ae,color:#2b2d42;
+    classDef gl fill:#e8f4f8,stroke:#2b6cb0,color:#1a365d,font-weight:bold;
+
+    class C1,C2,C3 subledger;
+    class Ctrl gl;
 ```
 
 * Di dalam COA, perusahaan hanya memiliki **satu akun buku besar** bernama `1120 - Piutang Usaha`.

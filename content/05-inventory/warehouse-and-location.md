@@ -63,27 +63,26 @@ Beberapa arsitektur ERP enterprise (seperti Odoo dan SAP) memanfaatkan konsep **
 
 ```mermaid
 flowchart LR
-    subgraph ExternalVirtual["Lokasi Virtual Eksternal"]
-        VendLoc["Vendor Location<br/>(Sumber Pengadaan)"]
-        CustLoc["Customer Location<br/>(Tujuan Penjualan)"]
-    end
-
-    subgraph PhysicalWH["Gudang Fisik Internal"]
-        RecLoc["Receiving Bay"]
-        StockLoc["Rak Penyimpanan Internal"]
-        ShipLoc["Shipping Bay"]
-    end
-
-    subgraph LossVirtual["Lokasi Virtual Internal"]
-        ScrapLoc["Scrap / Loss Location"]
-        InvAdjLoc["Inventory Adjustment Account"]
-    end
+    VendLoc["Vendor Location<br/>(Sumber Pengadaan Eksternal)"]
+    RecLoc["Receiving Bay<br/>(Inbound Gudang Fisik)"]
+    StockLoc["Rak Penyimpanan Internal<br/>(Stok Gudang Fisik)"]
+    ShipLoc["Shipping Bay<br/>(Outbound Gudang Fisik)"]
+    CustLoc["Customer Location<br/>(Tujuan Penjualan Eksternal)"]
+    ScrapLoc["Scrap / Loss Location<br/>(Virtual Penampung Selisih/Rusak)"]
 
     VendLoc -->|"Goods Receipt"| RecLoc
     RecLoc -->|"Putaway"| StockLoc
     StockLoc -->|"Picking"| ShipLoc
     ShipLoc -->|"Delivery Order"| CustLoc
     StockLoc -->|"Barang Rusak / Selisih"| ScrapLoc
+
+    classDef external fill:#e1f5fe,stroke:#0288d1,stroke-width:1.5px;
+    classDef physical fill:#e8f5e9,stroke:#388e3c,stroke-width:1.5px;
+    classDef loss fill:#ffebee,stroke:#d32f2f,stroke-width:1.5px;
+
+    class VendLoc,CustLoc external;
+    class RecLoc,StockLoc,ShipLoc physical;
+    class ScrapLoc loss;
 ```
 
 * **Manfaat Lokasi Virtual**: Memastikan setiap pergerakan barang selalu memiliki pasangan *Source Location* dan *Destination Location*, mencegah hilangnya kuantitas secara gaib tanpa jejak mutasi.

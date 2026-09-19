@@ -34,12 +34,10 @@ Dalam organisasi skala menengah hingga enterprise, peran keuangan sering kali te
 
 ```mermaid
 flowchart TD
-    subgraph CoreTriad["Tritunggal Pengelolaan Keuangan Perusahaan"]
         direction TB
         ACC["(1) Accounting (Akuntansi Keuangan)<br/>Fokus: Historis, Akrual, Kepatuhan Regulasi & Pajak.<br/>Output: Neraca, Laba Rugi, Buku Besar, Audit Trail."]
         FIN["(2) Corporate Finance (Keuangan Perusahaan)<br/>Fokus: Masa Depan, Anggaran, Perencanaan Finansial & Profitabilitas.<br/>Output: Budget vs Actual, Financial Modeling, Capex Plan."]
         TRS["(3) Treasury Operations (Perbendaharaan & Kas)<br/>Fokus: Hari Ini & Jangka Pendek, Likuiditas Kas Riil & Perbankan.<br/>Output: Cash Position, Bank Reconciliation, Payment Run, FX."]
-    end
     ACC <--> FIN
     FIN <--> TRS
     TRS <--> ACC
@@ -63,36 +61,31 @@ Aliran data dalam sistem ERP bergerak dari transaksi operasional harian hingga m
 
 ```mermaid
 flowchart TD
-    subgraph Ops["(1) Transaksi Bisnis Operasional"]
-        SO["Sales Order (Phase 4)"]
-        PO["Purchase Order (Phase 5)"]
-        INV["Mutasi Gudang (Phase 6)"]
-        MO["Produksi Pabrik (Phase 7)"]
-    end
+    Ops["(1) Transaksi Operasional Enterprise<br/>• Sales Order (Phase 4)<br/>• Purchase Order (Phase 5)<br/>• Mutasi Gudang (Phase 6)<br/>• Produksi Pabrik (Phase 7)"]
+    Acc["(2) Lapisan Akuntansi & Pembukuan<br/>• AR Subledger & AP Subledger<br/>• General Ledger (Neraca & Laba Rugi)"]
+    Fin["(3) Lapisan Manajemen Keuangan<br/>• Cash & Bank Management (Rekonsiliasi)<br/>• Disbursement Engine (Eksekusi Bayar)<br/>• Cash Flow & Liquidity Forecast"]
+    Exec["(4) Keputusan Manajerial & Pengendalian<br/>• Executive Dashboard & Pelaporan Manajemen<br/>• Keputusan Investasi, Pendanaan & Dividen"]
 
-    subgraph Acc["(2) Lapisan Akuntansi & Pembukuan (Phase 3)"]
-        AR["Piutang Usaha (AR Subledger)"]
-        AP["Utang Usaha (AP Subledger)"]
-        GL["Buku Besar Umum (General Ledger)"]
-    end
-
-    subgraph Fin["(3) Lapisan Manajemen Keuangan (Phase 8)"]
-        CashMgr["Cash & Bank Management (Posisi Kas & Rekonsiliasi)"]
-        PayRun["Disbursement Engine (Otorisasi & Eksekusi Pembayaran)"]
-        Budget["Budget Control (Pengecekan Komitmen Anggaran)"]
-        Forecast["Cash Flow & Liquidity Forecast (Proyeksi Likuiditas)"]
-    end
-
-    subgraph Exec["(4) Keputusan Manajerial & Pengendalian"]
-        Dash["Financial Dashboards & Management Reporting"]
-        Decide["Keputusan Investasi, Pendanaan, & Pembagian Dividen"]
-    end
+    BudgetCtrl["Pengendalian Anggaran (Budget Control)"]
 
     Ops --> Acc
     Acc --> Fin
     Fin --> Exec
     
-    Budget -.->|"Preventive Control (Blokir PO jika over-budget)"| PO
+    Fin --> BudgetCtrl
+    BudgetCtrl -.->|"Preventive Control: Blokir PO jika over-budget"| Ops
+
+    classDef ops fill:#e3f2fd,stroke:#1976d2,stroke-width:1px;
+    classDef acc fill:#e8f5e9,stroke:#388e3c,stroke-width:1px;
+    classDef fin fill:#fff3e0,stroke:#f57c00,stroke-width:1.5px;
+    classDef exec fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px;
+    classDef ctrl fill:#ffebee,stroke:#d32f2f,stroke-width:1px;
+
+    class Ops ops;
+    class Acc acc;
+    class Fin fin;
+    class Exec exec;
+    class BudgetCtrl ctrl;
 ```
 
 ---

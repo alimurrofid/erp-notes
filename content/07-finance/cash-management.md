@@ -16,13 +16,11 @@ Dalam ERP modern, Cash Management membedakan lima lapisan saldo kas:
 
 ```mermaid
 flowchart TD
-    subgraph CashLayers["Lapisan Posisi Kas ERP"]
         GL["(1) General Ledger Balance<br/>(Saldo Buku Besar)"]
         Float["+/- Float & In-Transit<br/>(Cek Beredar & Setoran Kliring)"]
         Bank["(2) Bank Statement Balance<br/>(Saldo Rekening Koran)"]
         Avail["(3) Available Cash<br/>(Likuiditas Efektif Siap Pakai)"]
         Proj["(4) Projected Cash<br/>(Perkiraan Arus Kas Masuk & Keluar)"]
-    end
     GL --> Float --> Bank --> Avail --> Proj
 ```
 

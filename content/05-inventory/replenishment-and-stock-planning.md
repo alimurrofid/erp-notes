@@ -56,12 +56,10 @@ Sistem ERP menggunakan parameter konfigurasi baku untuk menghitung waktu dan kua
 
 ```mermaid
 flowchart LR
-    subgraph Levels["Tingkatan Ambang Batas Persediaan (Stock Levels)"]
         MaxS["Maximum Stock Level (Batas Kapasitas Maksimal Gudang)"]
         ROP["Reorder Point (ROP - Titik Pemesanan Kembali)"]
         SS["Safety Stock (Cadangan Darurat Penyangga)"]
         Zero["Out of Stock (Nol Fisik)"]
-    end
 ```
 
 ### 1. Safety Stock (Cadangan Pengaman)

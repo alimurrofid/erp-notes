@@ -45,11 +45,9 @@ Dalam ERP kelas atas (seperti SAP PS atau Dynamics Project Operations), setiap e
 
 ```mermaid
 graph LR
-    subgraph WBSAttributes["Indikator Fungsional Elemen WBS ERP"]
         Plan["(1) Planning Element<br/>Dapat Diberikan Alokasi Anggaran & Estimasi Biaya"]
         Cost["(2) Account Assignment / Cost Element<br/>Dapat Menerima Posting Jam Kerja, PO, & Material"]
         Bill["(3) Billing Element<br/>Dapat Menghubungkan Penagihan Faktur Penjualan"]
-    end
 ```
 
 - **Planning Element**: Simpul WBS tempat manajer merencanakan pagu anggaran dan biaya.

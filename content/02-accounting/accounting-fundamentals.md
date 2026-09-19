@@ -43,19 +43,21 @@ Berdasarkan *IASB Conceptual Framework for Financial Reporting*, terdapat lima e
 
 ```mermaid
 flowchart TD
-    subgraph BalanceSheetElements["Posisi Keuangan (Neraca / Balance Sheet)"]
-        Asset["(1) Aset (Assets)<br/>Sumber daya ekonomi yang dikendalikan entitas<br/>akibat peristiwa masa lalu yang memiliki potensi manfaat ekonomi."]
-        Liab["(2) Liabilitas (Liabilities)<br/>Kewajiban kini entitas untuk mengalihkan sumber daya ekonomi<br/>akibat peristiwa masa lalu."]
-        Eq["(3) Ekuitas (Equity)<br/>Hak residual atas aset entitas<br/>setelah dikurangi seluruh liabilitasnya."]
-    end
+    Asset["(1) Aset (Assets)<br/>Sumber daya ekonomi yang dikendalikan entitas<br/>akibat peristiwa masa lalu yang memiliki potensi manfaat ekonomi."]
+    Liab["(2) Liabilitas (Liabilities)<br/>Kewajiban kini entitas untuk mengalihkan sumber daya ekonomi<br/>akibat peristiwa masa lalu."]
+    Eq["(3) Ekuitas (Equity)<br/>Hak residual atas aset entitas<br/>setelah dikurangi seluruh liabilitasnya."]
 
-    subgraph PL_Elements["Kinerja Finansial (Laba Rugi / Income Statement)"]
-        Rev["(4) Pendapatan (Revenue / Income)<br/>Peningkatan aset atau penurunan liabilitas yang menghasilkan<br/>peningkatan ekuitas, selain dari kontribusi pemilik."]
-        Exp["(5) Beban (Expenses)<br/>Penurunan aset atau peningkatan liabilitas yang menghasilkan<br/>penurunan ekuitas, selain dari distribusi kepada pemilik."]
-    end
+    Rev["(4) Pendapatan (Revenue / Income)<br/>Peningkatan aset atau penurunan liabilitas yang menghasilkan<br/>peningkatan ekuitas, selain dari kontribusi pemilik."]
+    Exp["(5) Beban (Expenses)<br/>Penurunan aset atau peningkatan liabilitas yang menghasilkan<br/>penurunan ekuitas, selain dari distribusi kepada pemilik."]
 
     Rev -->|Revenue - Expenses| Eq
     Exp -->|Net Profit / Loss| Eq
+
+    classDef bs fill:#e8f4f8,stroke:#2b6cb0,stroke-width:1.5px;
+    classDef pl fill:#fef9e7,stroke:#b7950b,stroke-width:1.5px;
+
+    class Asset,Liab,Eq bs;
+    class Rev,Exp pl;
 ```
 
 ---

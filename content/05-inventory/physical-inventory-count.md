@@ -39,11 +39,9 @@ Dalam metode *Cycle Counting*, sistem ERP mengelompokkan barang berdasarkan kont
 
 ```mermaid
 flowchart TD
-    subgraph ABC["Klasifikasi Siklus Hitung Berbasis Nilai (ABC Analysis)"]
         ClassA["Kelas A (Item Bernilai Sangat Tinggi / 80% Nilai Belanja)<br/>Mencakup ~10-20% total SKU<br/>Frekuensi Hitung: 1 Kali Setiap Bulan (12x Setahun)"]
         ClassB["Kelas B (Item Bernilai Sedang / 15% Nilai Belanja)<br/>Mencakup ~30% total SKU<br/>Frekuensi Hitung: 1 Kali Setiap Kuartal (4x Setahun)"]
         ClassC["Kelas C (Item Bernilai Rendah / 5% Nilai Belanja)<br/>Mencakup ~50% total SKU<br/>Frekuensi Hitung: 1 atau 2 Kali Setahun"]
-    end
 ```
 
 ---

@@ -62,25 +62,28 @@ Arsitektur ERP harus cukup fleksibel untuk mengakomodasi model bisnis yang berbe
 
 ```mermaid
 flowchart TD
-    subgraph MTS["(1) Make-to-Stock (MTS)"]
-        M1["Sales Order"] --> M2["Pengiriman dari Stok Gudang Jadi"] --> M3["Faktur Penjualan"]
-    end
+    H1["(1) MAKE-TO-STOCK (MTS)"]
+    M1["Sales Order"] --> M2["Pengiriman dari Stok Gudang Jadi"] --> M3["Faktur Penjualan"]
+    H1 --> M1
 
-    subgraph MTO["(2) Make-to-Order (MTO)"]
-        T1["Sales Order"] --> T2["Penerbitan Work Order Manufaktur"] --> T3["Produksi Barang Jadi"] --> T4["Pengiriman & Faktur"]
-    end
+    H2["(2) MAKE-TO-ORDER (MTO)"]
+    T1["Sales Order"] --> T2["Penerbitan Work Order Manufaktur"] --> T3["Produksi Barang Jadi"] --> T4["Pengiriman & Faktur"]
+    H2 --> T1
 
-    subgraph DS["(3) Drop-Shipping"]
-        D1["Sales Order"] --> D2["Auto-PO ke Vendor Pihak Ketiga"] --> D3["Vendor Kirim Langsung ke Pelanggan"] --> D4["Faktur Penjualan"]
-    end
+    H3["(3) DROP-SHIPPING"]
+    D1["Sales Order"] --> D2["Auto-PO ke Vendor Pihak Ketiga"] --> D3["Vendor Kirim Langsung ke Pelanggan"] --> D4["Faktur Penjualan"]
+    H3 --> D1
 
-    subgraph SVC["(4) Service / Subscription"]
-        S1["Sales Order / Kontrak"] --> S2["Penyelesaian Milestone Jasa"] --> S3["Faktur Berkala (Over Time)"]
-    end
+    H4["(4) SERVICE / SUBSCRIPTION"]
+    S1["Sales Order / Kontrak"] --> S2["Penyelesaian Milestone Jasa"] --> S3["Faktur Berkala (Over Time)"]
+    H4 --> S1
 
-    subgraph POS["(5) Retail POS (Cash & Carry)"]
-        P1["Kasir Ritel:<br/>Pesanan + Serah Barang + Faktur + Bayar Kas<br/>(Terjadi Simultan dalam 1 Detik)"]
-    end
+    H5["(5) RETAIL POS (CASH & CARRY)"]
+    P1["Kasir Ritel:<br/>Pesanan + Serah Barang + Faktur + Bayar Kas<br/>(Terjadi Simultan dalam 1 Detik)"]
+    H5 --> P1
+
+    classDef header fill:#2b2d42,stroke:#1a1a2e,color:#ffffff,font-weight:bold;
+    class H1,H2,H3,H4,H5 header;
 ```
 
 1. **Make-to-Stock (MTS)**: Pola standar barang ritel dan distributor; pesanan dipenuhi langsung dari barang yang sudah ada di rak gudang.

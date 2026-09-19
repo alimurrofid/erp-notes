@@ -92,12 +92,10 @@ Saat pelanggan melunasi tagihan melalui transfer rekening bank perusahaan pada t
 
 ```mermaid
 flowchart TD
-    subgraph AR_Subledger["AR Subledger PT Maju Bersama"]
         Item1["Faktur INV-2026-09-0101:<br/>Rp11.100.000 (Open)"]
         PayEntry["Payment Entry PE-0982:<br/>Rp11.100.000 (Incoming Cash)"]
         Item1 <== Matching & Allocation ==> PayEntry
         Result["Status Faktur: CLOSED / CLEARED<br/>Sisa Tagihan = Rp0<br/>Plafon Kredit Pelanggan Pulih"]
-    end
 ```
 
 ### Metode Alokasi Pembayaran (*Payment Allocation Modes*):

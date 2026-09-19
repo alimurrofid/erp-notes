@@ -18,28 +18,20 @@ Hubungan antar-modul dalam ERP digerakkan oleh aliran rantai pasok (*Supply Chai
 
 ```mermaid
 flowchart TD
-    subgraph Operational["Operational Front-End"]
-        CRM["CRM & Lead"]
-        Sales["Sales (Penjualan)"]
-        Purch["Purchasing (Pengadaan)"]
-        Projects["Project Management"]
-    end
+    CRM["CRM & Lead"]
+    Sales["Sales (Penjualan)"]
+    Purch["Purchasing (Pengadaan)"]
+    Projects["Project Management"]
 
-    subgraph Fulfillment["Logistics & Fulfillment"]
-        Inv["Inventory (Persediaan)"]
-        Mfg["Manufacturing (Produksi)"]
-    end
+    Inv["Inventory (Persediaan)"]
+    Mfg["Manufacturing (Produksi)"]
 
-    subgraph Support["Enterprise Support"]
-        Assets["Fixed Assets"]
-        HR["Human Resources & Payroll"]
-    end
+    Assets["Fixed Assets"]
+    HR["Human Resources & Payroll"]
 
-    subgraph CoreFinance["Financial Core & Compliance"]
-        Tax["Tax Engine"]
-        Acc["General Ledger & Accounting"]
-        Fin["Finance & Cash Management"]
-    end
+    Tax["Tax Engine"]
+    Acc["General Ledger & Accounting"]
+    Fin["Finance & Cash Management"]
 
     CRM -->|Convert to Deal| Sales
     Sales -->|Demand / Reserve Stock| Inv
@@ -55,6 +47,16 @@ flowchart TD
     Acc -->|Taxable Base| Tax
     Acc -->|Payable / Receivable Due| Fin
     Fin -->|Disbursement / Receipt| Acc
+
+    classDef operational fill:#e3f2fd,stroke:#1976d2,stroke-width:1px;
+    classDef fulfillment fill:#e8f5e9,stroke:#388e3c,stroke-width:1px;
+    classDef support fill:#fff3e0,stroke:#f57c00,stroke-width:1px;
+    classDef coreFinance fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px;
+
+    class CRM,Sales,Purch,Projects operational;
+    class Inv,Mfg fulfillment;
+    class Assets,HR support;
+    class Tax,Acc,Fin coreFinance;
 ```
 
 ---

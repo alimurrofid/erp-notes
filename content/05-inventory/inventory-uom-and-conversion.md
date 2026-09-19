@@ -30,11 +30,9 @@ Untuk mencegah inkonsistensi data, ERP enterprise mengelompokkan satuan ukuran k
 flowchart TD
     Base["Base UOM / Stocking UOM<br/>(Satuan Terkecil Penyimpanan di Gudang: Unit / Pcs)<br/>Faktor Konversi = 1.0"]
     
-    subgraph Transactions["Satuan Transaksional Turunan"]
         PurUOM["Purchasing UOM<br/>(Contoh: Box @ 12 Units)<br/>Faktor = 12.0"]
         SalesUOM["Sales UOM<br/>(Contoh: Pack @ 6 Units)<br/>Faktor = 6.0"]
         LogUOM["Packaging / Pallet UOM<br/>(Contoh: Palet @ 100 Boxes = 1.200 Units)<br/>Faktor = 1200.0"]
-    end
     
     PurUOM -->|"Konversi Inbound: Box x 12"| Base
     SalesUOM -->|"Konversi Outbound: Pack x 6"| Base

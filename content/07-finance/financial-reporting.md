@@ -17,13 +17,11 @@ Berbeda dengan Pelaporan Finansial Statutori ([[02-accounting/financial-statemen
 
 ```mermaid
 flowchart TD
-    subgraph MultiDimensionalCube["Kubus Pelaporan Finansial Multidimensi ERP"]
         Dim1["Legal Entity (PT Maju Bersama)"]
         Dim2["Profit Center / Lini Produk (Laptop Pro)"]
         Dim3["Cost Center / Departemen (Assembly Line)"]
         Dim4["Akun Buku Besar (Beban Tenaga Kerja)"]
         Dim5["Waktu Fiskal (Maret 2026 - W3)"]
-    end
     MultiDimensionalCube --> Dashboard["Executive Financial Dashboard<br/>(Visual Heatmaps, KPIs, & Drill-Down)"]
 ```
 

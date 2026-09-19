@@ -26,11 +26,9 @@ Sistem perencanaan manufaktur yang tangguh menyeimbangkan tiga pilar pembatas ya
 
 ```mermaid
 flowchart TD
-    subgraph Constraints["Segitiga Kendala Manufaktur (Triple Constraints)"]
         MC["(1) Material Constraints (Kendala Bahan Baku)<br/>Apakah komponen sudah tiba di gudang?<br/>Dikelola oleh algoritma MRP."]
         CC["(2) Capacity Constraints (Kendala Kapasitas Mesin & Tenaga Kerja)<br/>Apakah stasiun kerja mengalami kelebihan beban (overloaded)?<br/>Dikelola oleh algoritma CRP / Finite Scheduling."]
         SC["(3) Scheduling Constraints (Kendala Urutan & Waktu Pengiriman)<br/>Kapan tanggal janji serah terima ke pelanggan (Due Date)?<br/>Apakah operasi 20 harus menunggu operasi 10 selesai?"]
-    end
     MC <--> CC
     CC <--> SC
     SC <--> MC

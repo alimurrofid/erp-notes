@@ -114,17 +114,18 @@ Prinsip paling penting dalam integritas data penjualan ERP adalah **Prinsip Peng
 
 ```mermaid
 flowchart TD
-    subgraph MasterData["Master Data Pelanggan"]
-        M1["Harga Katalog Produk A = Rp1.000.000<br/>(Diubah pada 15 September menjadi Rp1.200.000)"]
-    end
+    M1["MASTER DATA PELANGGAN<br/>Harga Katalog Produk A = Rp1.000.000<br/>(Diubah pada 15 September menjadi Rp1.200.000)"]
 
-    subgraph TransactionData["Dokumen Transaksi"]
-        T1["Sales Order #SO-001 (Disahkan 10 September):<br/>Harga Produk A = Rp1.000.000<br/>(TETAP Rp1.000.000 - Immutable)"]
-        T2["Sales Order #SO-002 (Dibuat 16 September):<br/>Harga Produk A = Rp1.200.000<br/>(Mengambil harga baru dari Master)"]
-    end
+    T1["DOKUMEN TRANSAKSI: Sales Order #SO-001 (Disahkan 10 Sep)<br/>Harga Produk A = Rp1.000.000<br/>(TETAP Rp1.000.000 - Immutable)"]
+    T2["DOKUMEN TRANSAKSI: Sales Order #SO-002 (Dibuat 16 Sep)<br/>Harga Produk A = Rp1.200.000<br/>(Mengambil harga baru dari Master)"]
 
     M1 -.->|Snapshot pada 10 Sep| T1
     M1 -.->|Snapshot pada 16 Sep| T2
+
+    classDef master fill:#e3f2fd,stroke:#1565c0,stroke-width:1.5px;
+    classDef trans fill:#f1f8e9,stroke:#558b2f,stroke-width:1.5px;
+    class M1 master;
+    class T1,T2 trans;
 ```
 
 Jika nama legal pelanggan, alamat kantor, atau harga produk pada master data diubah hari ini, seluruh dokumen *Sales Order* dan *Invoice* masa lalu **tetap mempertahankan nama, alamat, dan harga yang berlaku saat dokumen tersebut dibuat**. Hal ini esensial untuk menjaga keabsahan kontrak hukum dan keutuhan jejak audit (*audit trail*).

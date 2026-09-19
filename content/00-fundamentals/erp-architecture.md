@@ -103,22 +103,24 @@ Dalam sistem non-ERP, transaksi di atas memerlukan minimal 4 kali input terpisah
 Sistem ERP modern menggunakan pola arsitektur **Subledger** dan **General Ledger**:
 
 ```mermaid
-flowchart TD
-    subgraph Subledgers["Buku Pembantu (Subledgers)"]
-        AR["AR Subledger<br/>(Rincian per Customer)"]
-        AP["AP Subledger<br/>(Rincian per Vendor)"]
-        INV["Stock Ledger<br/>(Rincian per Item & Gudang)"]
-        FA["Asset Subledger<br/>(Rincian per Aktiva Tetap)"]
-    end
+flowchart LR
+    AR["AR Subledger<br/>(Rincian per Customer)"]
+    AP["AP Subledger<br/>(Rincian per Vendor)"]
+    INV["Stock Ledger<br/>(Rincian per Item & Gudang)"]
+    FA["Asset Subledger<br/>(Rincian per Aktiva Tetap)"]
 
-    subgraph GL["Buku Besar Utama (General Ledger)"]
-        GL_Account["GL Accounts<br/>(Ringkasan Keuangan Neraca & Laba Rugi)"]
-    end
+    GL_Account["General Ledger (Buku Besar Utama):<br/>GL Control Accounts<br/>(Ringkasan Neraca & Laba Rugi)"]
 
     AR -->|Posting Control Account| GL_Account
     AP -->|Posting Control Account| GL_Account
     INV -->|Posting Control Account| GL_Account
     FA -->|Posting Control Account| GL_Account
+
+    classDef subledger fill:#edf2f4,stroke:#8d99ae,color:#2b2d42;
+    classDef gl fill:#e8f4f8,stroke:#2b6cb0,color:#1a365d,font-weight:bold;
+
+    class AR,AP,INV,FA subledger;
+    class GL_Account gl;
 ```
 
 * **Subledger**: Menyimpan rincian operasional harian yang sangat detail (nomor lot barang, nama pelanggan per transaksi, tanggal jatuh tempo faktur tertentu).

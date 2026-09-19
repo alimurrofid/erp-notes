@@ -35,13 +35,11 @@ Pengelolaan manufaktur di dalam ERP kelas enterprise dibagi ke dalam empat lapis
 
 ```mermaid
 flowchart TD
-    subgraph Layers["Empat Lapisan Fungsional Manufaktur"]
         direction TB
         L1["(1) Production Planning (Perencanaan Strategis & Taktis)<br/>Apa yang harus dibuat, berapa banyak, dan kapan dibutuhkan?<br/>(Forecast, Sales Demand, MPS, MRP, Rough-Cut Capacity)"]
         L2["(2) Production Scheduling (Penjadwalan Operasional)<br/>Mesin mana yang mengeksekusi dan urutan operasi mana yang dijalankan?<br/>(Finite/Infinite Capacity Scheduling, Dispatching, Sequencing)"]
         L3["(3) Production Execution (Eksekusi & Transaksi Pabrik)<br/>Penerbitan dokumen kerja, pengeluaran bahan, dan konfirmasi output.<br/>(Manufacturing Order, Material Issue, Operation Confirmation)"]
         L4["(4) Shop Floor Control (Pengawasan Lapangan Real-Time)<br/>Pelacakan operator mesin, downtime, status mesin IoT, dan defect rate.<br/>(MES Integration, Andon, Operator Workstations)"]
-    end
     L1 --> L2
     L2 --> L3
     L3 --> L4
@@ -75,13 +73,11 @@ Strategi manufaktur menentukan pada titik mana pesanan pelanggan (*Sales Order*)
 
 ```mermaid
 flowchart LR
-    subgraph Strategies["Spektrum Titik Pisah Permintaan (Customer Order Decoupling Point)"]
         direction TB
         MTS["Make-to-Stock (MTS)<br/>Pabrik memproduksi berdasarkan forecast; barang jadi menunggu di gudang.<br/>Lead Time Pelanggan: Sangat Singkat (Pengiriman Langsung)."]
         ATO["Assemble-to-Order (ATO)<br/>Sub-perakitan dan komponen distok di awal; perakitan akhir menunggu SO.<br/>Lead Time Pelanggan: Singkat (Perakitan Cepat)."]
         MTO["Make-to-Order (MTO)<br/>Produksi baru dimulai saat Sales Order pelanggan resmi disetujui.<br/>Lead Time Pelanggan: Sedang (Waktu Manufaktur Penuh)."]
         ETO["Engineer-to-Order (ETO)<br/>Desain teknis R&D, pengadaan, dan perakitan khusus sesuai spesifikasi unik.<br/>Lead Time Pelanggan: Panjang (Desain Teknis + Manufaktur Khusus)."]
-    end
 ```
 
 ### Karakteristik Strategi dalam ERP:

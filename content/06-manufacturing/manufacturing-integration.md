@@ -26,41 +26,29 @@ Diagram berikut memetakan bagaimana data dan transaksi mengalir melintasi seluru
 
 ```mermaid
 flowchart TD
-    subgraph DemandSide["(1) Domain Permintaan Komersial (Phase 4: Sales / O2C)"]
-        SO["Sales Order (Pesanan Pelanggan)"]
-        FC["Prakiraan Pasar (Demand Forecast)"]
-    end
+    SO["Sales Order (Pesanan Pelanggan)"]
+    FC["Prakiraan Pasar (Demand Forecast)"]
 
-    subgraph PlanningEngine["(2) Domain Perencanaan Pabrik (Phase 7: Planning & MRP)"]
-        MPS["Master Production Schedule (MPS)"]
-        MRP["Material Requirements Planning (MRP Engine)"]
-    end
+    MPS["Master Production Schedule (MPS)"]
+    MRP["Material Requirements Planning (MRP Engine)"]
 
-    subgraph SupplyExecution["(3) Domain Pengadaan & Gudang (Phase 5: P2P & Phase 6: WMS)"]
-        PR["Purchase Requisition (PR)"]
-        PO["Purchase Order (PO Vendor)"]
-        GR["Goods Receipt (Gudang Bahan Baku)"]
-        StockVal["Valuasi Persediaan & Landed Cost"]
-    end
+    PR["Purchase Requisition (PR)"]
+    PO["Purchase Order (PO Vendor)"]
+    GR["Goods Receipt (Gudang Bahan Baku)"]
+    StockVal["Valuasi Persediaan & Landed Cost"]
 
-    subgraph ProductionCore["(4) Domain Inti Manufaktur (Phase 7: Production Execution)"]
-        MO["Manufacturing Order (MO Released)"]
-        Issue["Material Issue (Bahan Masuk WIP)"]
-        SFC["Shop Floor Operations (Work Center & Labor)"]
-        FG_Out["Finished Goods Output (Barang Jadi Selesai)"]
-    end
+    MO["Manufacturing Order (MO Released)"]
+    Issue["Material Issue (Bahan Masuk WIP)"]
+    SFC["Shop Floor Operations (Work Center & Labor)"]
+    FG_Out["Finished Goods Output (Barang Jadi Selesai)"]
 
-    subgraph FulfillmentSide["(5) Domain Pemenuhan Logistik (Phase 4 & 6: Outbound)"]
-        FG_Stock["Gudang Barang Jadi (Available ATP)"]
-        DO["Delivery Order (Pengiriman ke Pelanggan)"]
-    end
+    FG_Stock["Gudang Barang Jadi (Available ATP)"]
+    DO["Delivery Order (Pengiriman ke Pelanggan)"]
 
-    subgraph FinancialAccounting["(6) Domain Akuntansi Keuangan (Phase 3: Financials)"]
-        WIP_Acc["Akun Barang Dalam Proses (WIP)"]
-        Var_Acc["Akun Varians Produksi (MUV, LEV, PPV)"]
-        COGS_Acc["Beban Pokok Penjualan (COGS)"]
-        Rev_Acc["Pengakuan Pendapatan (IFRS 15)"]
-    end
+    WIP_Acc["Akun Barang Dalam Proses (WIP)"]
+    Var_Acc["Akun Varians Produksi (MUV, LEV, PPV)"]
+    COGS_Acc["Beban Pokok Penjualan (COGS)"]
+    Rev_Acc["Pengakuan Pendapatan (IFRS 15)"]
 
     SO --> MPS
     FC --> MPS
@@ -74,6 +62,7 @@ flowchart TD
     
     MRP -->|"Rekomendasi Buat (Make)"| MO
     MO --> Issue
+    MO --> SFC
     Issue --> SFC
     SFC --> FG_Out
     
@@ -81,11 +70,25 @@ flowchart TD
     FG_Stock --> DO
     
     Issue -->|"Debit WIP / Kredit Bahan"| WIP_Acc
-    SFC -->|"Penyerapan Tenaga Kerja & Overhead"| WIP_Acc
+    SFC -->|"Beban Tenaga Kerja & Overhead"| WIP_Acc
     FG_Out -->|"Debit Barang Jadi / Kredit WIP"| WIP_Acc
     MO -->|"Penutupan Selisih Biaya"| Var_Acc
     DO -->|"Pengakuan HPP Penjualan"| COGS_Acc
     DO --> Rev_Acc
+
+    classDef demand fill:#e3f2fd,stroke:#1976d2,stroke-width:1px;
+    classDef planning fill:#fff8e1,stroke:#fbc02d,stroke-width:1px;
+    classDef supply fill:#fff3e0,stroke:#f57c00,stroke-width:1px;
+    classDef prod fill:#e8f5e9,stroke:#388e3c,stroke-width:1.5px;
+    classDef fulfill fill:#e0f2f1,stroke:#00897b,stroke-width:1px;
+    classDef fin fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px;
+
+    class SO,FC demand;
+    class MPS,MRP planning;
+    class PR,PO,GR,StockVal supply;
+    class MO,Issue,SFC,FG_Out prod;
+    class FG_Stock,DO fulfill;
+    class WIP_Acc,Var_Acc,COGS_Acc,Rev_Acc fin;
 ```
 
 ---

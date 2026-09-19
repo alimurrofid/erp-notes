@@ -68,14 +68,12 @@ Salah satu fungsi terpenting dari Routing adalah menyediakan parameter waktu unt
 
 ```mermaid
 flowchart LR
-    subgraph TotalLeadTime["Total Waktu Operasi di Lantai Pabrik"]
         direction LR
         Queue["(1) Queue Time<br/>(Waktu Antre Sebelum Dikerjakan)"]
         --> Setup["(2) Setup Time<br/>(Waktu Penyetelan Mesin)"]
         --> Run["(3) Run Time<br/>(Waktu Proses Per Unit x Qty)"]
         --> Wait["(4) Wait Time<br/>(Waktu Pendinginan / Pengeringan)"]
         --> Move["(5) Move Time<br/>(Waktu Angkut ke Stasiun Kerja Berikutnya)"]
-    end
 ```
 
 ### Definisi Elemen Waktu:
@@ -115,7 +113,6 @@ Alur perutean dalam ERP tidak selalu berbentuk garis lurus linear (*serial*):
 
 ```mermaid
 flowchart TD
-    subgraph ParallelRouting["Operasi Paralel (Concurrent Operations)"]
         Op10["Operasi 10: Pemotongan Sasis Bawah (Mesin CNC-1)"]
         Op15["Operasi 15: Pemotongan Penutup Layar (Mesin CNC-2)"]
         Join["Titik Temu (Join Point)"]
@@ -124,7 +121,6 @@ flowchart TD
         Op10 --> Join
         Op15 --> Join
         Join --> Op20
-    end
 ```
 
 * **Operasi Paralel (*Parallel Operations*)**: Dua tahapan kerja dieksekusi secara bersamaan pada stasiun kerja yang berbeda untuk memperpendek total lead time produk.

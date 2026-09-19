@@ -28,31 +28,31 @@ Komponen kredit pengurang PPh Badan terdiri dari dua kategori utama:
 
 ```mermaid
 flowchart TD
-    subgraph AnnualLiability["Kewajiban Pajak Tahunan"]
-        TaxExpense["Beban PPh Badan Terutang (Tahun Berjalan)"]
-    end
+    TaxExpense["Kewajiban Pajak Tahunan:<br/>Beban PPh Badan Terutang (Tahun Berjalan)"]
 
-    subgraph TaxCredits["Kredit Pajak (Prepaid Taxes - Aset Lancar)"]
-        PPh25["(1) PPh Pasal 25: Angsuran Bulanan Setor Sendiri"]
-        PPh22["(2) PPh Pasal 22: Pungutan Pihak Ketiga (Impor/BUMN)"]
-        PPh23["(3) PPh Pasal 23: Pemotongan oleh Pelanggan atas Jasa"]
-        PPh24["(4) PPh Pasal 24: Pajak Dibayar di Luar Negeri"]
-    end
+    PPh25["(1) PPh Pasal 25: Angsuran Bulanan Setor Sendiri"]
+    PPh22["(2) PPh Pasal 22: Pungutan Pihak Ketiga (Impor/BUMN)"]
+    PPh23["(3) PPh Pasal 23: Pemotongan oleh Pelanggan atas Jasa"]
+    PPh24["(4) PPh Pasal 24: Pajak Dibayar di Luar Negeri"]
 
-    subgraph FinalPosition["Posisi Akhir Tahun (Settlement)"]
-        Compare{"Pajak Terutang vs Total Kredit Pajak"}
-        PPh29["Kurang Bayar (PPh Pasal 29): Wajib Disetor Kas"]
-        PPh28A["Lebih Bayar (PPh Pasal 28A): Restitusi / Kompensasi"]
-    end
+    Compare{"Pajak Terutang vs Total Kredit Pajak"}
+    PPh29["Kurang Bayar (PPh Pasal 29): Wajib Disetor Kas"]
+    PPh28A["Lebih Bayar (PPh Pasal 28A): Restitusi / Kompensasi"]
 
     TaxExpense --> Compare
-    PPh25 --> TaxCredits
-    PPh22 --> TaxCredits
-    PPh23 --> TaxCredits
-    PPh24 --> TaxCredits
-    TaxCredits --> Compare
+    PPh25 & PPh22 & PPh23 & PPh24 -->|"Total Kredit Pajak (Prepaid Taxes)"| Compare
     Compare -- "Pajak Terutang > Kredit" --> PPh29
     Compare -- "Kredit > Pajak Terutang" --> PPh28A
+
+    classDef expense fill:#ffebee,stroke:#c62828,stroke-width:1.5px;
+    classDef prepay fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px;
+    classDef decision fill:#fff8e1,stroke:#f57f17,stroke-width:1.5px;
+    classDef settlement fill:#e1f5fe,stroke:#0277bd,stroke-width:1.5px;
+
+    class TaxExpense expense;
+    class PPh25,PPh22,PPh23,PPh24 prepay;
+    class Compare decision;
+    class PPh29,PPh28A settlement;
 ```
 
 ---

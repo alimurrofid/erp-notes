@@ -8,12 +8,10 @@ Berbeda dengan mekanisme jurnal penyesuaian teknis yang telah dibahas pada [[02-
 
 ```mermaid
 flowchart LR
-    subgraph ClosingLayers["Empat Lapisan Penutupan Buku di ERP"]
         Ops["(1) Operational Close<br/>(Cut-off Gudang, Pengiriman, & PO)"]
         Sub["(2) Subledger Close<br/>(AR, AP, Asset, & Payroll Lock)"]
         GL["(3) Accounting / GL Close<br/>(Jurnal Akrual, Rekonsiliasi, & PPN)"]
         Mgmt["(4) Management Close<br/>(Laporan Varian, Konsolidasi, & Sign-off)"]
-    end
     Ops --> Sub --> GL --> Mgmt
 ```
 
@@ -100,12 +98,10 @@ Financial Closing memastikan bahwa seluruh saldo akun nominal (pendapatan dan be
 
 ```mermaid
 graph TD
-    subgraph ClosingAutomations["Otomatisasi Jurnal Akhir Periode di ERP"]
         FX["Revaluasi Valas Otomatis<br/>(Unrealized FX Gain/Loss)"]
         Depr["Depresiasi Aset Tetap Otomatis<br/>(Beban Depresiasi vs Akumulasi)"]
         Alloc["Distribusi Biaya Overhead Otomatis<br/>(Alokasi Cost Center Bersama)"]
         ClosingJRN["Jurnal Penutup Laba Rugi Akhir Tahun<br/>(Ikhtisar Laba Rugi -> Saldo Laba)"]
-    end
 ```
 
 Pemisahan tanggung jawab penutupan memastikan tidak terjadi pembukuan ganda atas beban akrual dan faktur riil yang masuk terlambat.

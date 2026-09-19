@@ -8,7 +8,6 @@ Dalam arsitektur modul aktiva tetap, **Asset Class (Kelas Aset)** bertindak seba
 
 ```mermaid
 graph TD
-    subgraph AssetClassificationHierarchy["Hierarki Klasifikasi Aset Tetap di ERP"]
         Top["Aset Tetap Perusahaan (PPE)"]
         NonDep["Aset Tidak Disusutkan"]
         Dep["Aset yang Disusutkan"]
@@ -19,7 +18,6 @@ graph TD
         Veh["(5) Kendaraan (Vehicles)"]
         IT["(6) Perangkat IT & Kantor"]
         Lease["(7) Leasehold Improvements"]
-    end
     Top --> NonDep
     Top --> Dep
     NonDep --> Land

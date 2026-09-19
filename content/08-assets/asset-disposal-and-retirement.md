@@ -35,13 +35,11 @@ ERP enterprise memfasilitasi berbagai skenario pelepasan aset tetap:
 
 ```mermaid
 graph TD
-    subgraph DisposalChannels["Bentuk Pelepasan Aset Tetap di ERP"]
         S1["(1) Penjualan ke Pihak Ketiga (Sale with Revenue / Invoice)"]
         S2["(2) Pemusnahan & Penjualan Besi Tua (Scrapping / Salvage Sale)"]
         S3["(3) Tukar Tambah Aset Baru (Trade-In / Exchange Transaction)"]
         S4["(4) Sumbangan / Donasi Sosial (Donation / Charitable Transfer)"]
         S5["(5) Kerusakan Total / Musibah / Hilang (Write-Off / Insurance Claim)"]
-    end
 ```
 
 1. **Penjualan Komersial (Sale to Customer/Third Party)**: Menjual aset yang masih berfungsi kepada pihak luar. Menghasilkan tagihan penjualan (*Customer Invoice*), penerimaan kas, dan pengakuan laba/rugi pelepasan.

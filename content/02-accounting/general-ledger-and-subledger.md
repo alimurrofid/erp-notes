@@ -30,25 +30,27 @@ Subledger menyediakan rincian operasional tanpa membebani Buku Besar Umum.
 ## Arsitektur Aliran Data: Subledger ke Control Account
 
 ```mermaid
-flowchart TD
-    subgraph SubledgerDetail["AR Subledger (Buku Pembantu Piutang)"]
-        CustA["Customer A:<br/>Inv #001 (10 Jan): Rp3.000.000<br/>Inv #005 (15 Jan): Rp2.000.000<br/>Saldo = Rp5.000.000"]
-        CustB["Customer B:<br/>Inv #002 (12 Jan): Rp4.000.000<br/>Saldo = Rp4.000.000"]
-        CustC["Customer C:<br/>Inv #003 (14 Jan): Rp1.000.000<br/>Saldo = Rp1.000.000"]
-    end
+flowchart LR
+    CustA["Customer A:<br/>Inv #001: Rp3.000.000<br/>Inv #005: Rp2.000.000<br/>(Saldo = Rp5.000.000)"]
+    CustB["Customer B:<br/>Inv #002: Rp4.000.000<br/>(Saldo = Rp4.000.000)"]
+    CustC["Customer C:<br/>Inv #003: Rp1.000.000<br/>(Saldo = Rp1.000.000)"]
 
-    subgraph ControlHub["Mekanisme Integrasi"]
-        SumNode["Total Saldo Subledger:<br/>Rp5M + Rp4M + Rp1M = Rp10.000.000"]
-    end
+    SumNode["Mekanisme Integrasi:<br/>Total Saldo Subledger<br/>Rp5M + Rp4M + Rp1M = Rp10.000.000"]
 
-    subgraph GL["General Ledger (Buku Besar)"]
-        GL_AR["Akun Kontrol: 1120 - Piutang Usaha<br/>Saldo Buku Besar = Rp10.000.000"]
-    end
+    GL_AR["General Ledger (Buku Besar):<br/>Akun Kontrol 1120 - Piutang Usaha<br/>(Saldo Buku Besar = Rp10.000.000)"]
 
     CustA --> SumNode
     CustB --> SumNode
     CustC --> SumNode
     SumNode <== Must Match 100% ==> GL_AR
+
+    classDef subledger fill:#edf2f4,stroke:#8d99ae,color:#2b2d42;
+    classDef control fill:#fff8e1,stroke:#ffa000,color:#5d4037;
+    classDef gl fill:#e8f4f8,stroke:#2b6cb0,color:#1a365d,font-weight:bold;
+
+    class CustA,CustB,CustC subledger;
+    class SumNode control;
+    class GL_AR gl;
 ```
 
 ---

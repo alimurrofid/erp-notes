@@ -14,11 +14,9 @@ ERP memisahkan secara tegas tiga dimensi pengalihan:
 
 ```mermaid
 graph TD
-    subgraph TransferDimensions["Tiga Dimensi Mutasi Aset di ERP"]
         Phys["(1) Mutasi Lokasi Fisik<br/>(Pindah Pabrik / Ruangan)<br/>Dampak: Pelacakan & Audit Fisik"]
         Org["(2) Mutasi Cost Center / Custodian<br/>(Pindah Departemen / Penanggung Jawab)<br/>Dampak: Alokasi Beban Penyusutan"]
         Legal["(3) Mutasi Entitas Legal (Intercompany)<br/>(Pindah Anak Perusahaan)<br/>Dampak: Pelepasan, Akuisisi Baru, & PPN"]
-    end
 ```
 
 ---

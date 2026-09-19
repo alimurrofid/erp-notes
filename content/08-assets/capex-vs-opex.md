@@ -33,12 +33,10 @@ Tidak ada satu angka nominal baku universal di dunia yang secara mutlak memisahk
 
 ```mermaid
 graph TD
-    subgraph DecisionCriteria["Empat Uji Substantif Keputusan Kapitalisasi"]
         U1["(1) Future Economic Benefits: Apakah menghasilkan kenaikan output fisik,<br/>peningkatan kualitas produk, atau penghematan biaya operasional signifikan?"]
         U2["(2) Useful Life Extension: Apakah memperpanjang masa pakai ekonomis<br/>melebihi estimasi awal masa manfaat aset?"]
         U3["(3) Materiality & Policy: Apakah nominal pengeluaran melampaui ambang batas<br/>kapitalisasi yang disahkan dalam kebijakan Dewan Direksi?"]
         U4["(4) Reliable Measurement: Apakah biaya perolehan dan komponen yang diganti<br/>dapat diukur nilainya secara andal dan obyektif?"]
-    end
 ```
 
 Jika seluruh uji di atas terpenuhi, pengeluaran **dapat dikapitalisasi sebagai CAPEX**. Jika salah satu kriteria gagal (misalnya sekadar mengembalikan mesin ke kondisi kerja normalnya), pengeluaran **wajib diakui sebagai beban pemeliharaan rutin (OPEX)**.

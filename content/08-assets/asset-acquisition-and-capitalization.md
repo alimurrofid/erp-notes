@@ -40,13 +40,11 @@ ERP enterprise memfasilitasi lima saluran perolehan aset tetap:
 
 ```mermaid
 graph TD
-    subgraph AcquisitionChannels["Saluran Perolehan Aset Tetap di ERP"]
         Ch1["(1) Pembelian Langsung Siap Pakai (Direct Purchase P2P)"]
         Ch2["(2) Bangun Sendiri / Konstruksi Bertahap (Self-Construction / CWIP)"]
         Ch3["(3) Reklasifikasi Internal (Inventory to Asset Conversion)"]
         Ch4["(4) Kombinasi Bisnis / Akuisisi Korporasi (M&A)"]
         Ch5["(5) Hibah / Donasi / Bantuan Pemerintah (Government Grants)"]
-    end
 ```
 
 1. **Pembelian Eksternal Langsung (Direct Commercial Purchase)**: Pengadaan aset jadi melalui alur standar PO $\rightarrow$ Penerimaan Barang $\rightarrow$ Tagihan Vendor $\rightarrow$ Kapitalisasi seketika.

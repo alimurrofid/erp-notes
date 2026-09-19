@@ -86,10 +86,8 @@ Metode FIFO mengonsumsi lapisan biaya (*cost layers*) tertua terlebih dahulu:
 flowchart TD
     Issue12["Penjualan: 12 Unit Laptop Pro"]
     
-    subgraph Layers["Cost Layers Tersedia (Total 20 Unit)"]
         L1["Layer 1 (Stok Awal): 10 Unit @ Rp700.000 = Rp7.000.000"]
         L2["Layer 2 (Pembelian): 10 Unit @ Rp750.000 = Rp7.500.000"]
-    end
     
     Issue12 -->|"Konsumsi Penuh Layer 1"| Cons1["10 Unit @ Rp700.000 = Rp7.000.000"]
     Issue12 -->|"Konsumsi Sisa 2 Unit dari Layer 2"| Cons2["2 Unit @ Rp750.000 = Rp1.500.000"]

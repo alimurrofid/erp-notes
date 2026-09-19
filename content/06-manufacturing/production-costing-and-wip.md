@@ -28,11 +28,9 @@ $$\mathbf{\text{Biaya Pokok Produksi} = \text{Bahan Baku Langsung} + \text{Tenag
 
 ```mermaid
 flowchart TD
-    subgraph CostElements["Tiga Pilar Biaya Manufaktur (Product Cost Elements)"]
         DM["(1) Biaya Bahan Baku Langsung (Direct Materials)<br/>Nilai faktur dan landed cost komponen yang habis dipasang ke produk.<br/>(Contoh: Chipset, RAM, Layar Display, Casing)"]
         DL["(2) Biaya Tenaga Kerja Langsung (Direct Labor)<br/>Upah dan tunjangan operator lini perakitan yang bekerja langsung menyentuh produk.<br/>(Dihitung dari jam kerja aktual x tarif upah stasiun kerja)"]
         MOH["(3) Biaya Overhead Pabrik (Manufacturing Overhead / MOH)<br/>Biaya tidak langsung fasilitas pabrik yang diserap ke produk.<br/>(Contoh: Listrik mesin SMT, depresiasi mesin pabrik, gaji supervisor pabrik)"]
-    end
     
     DM --> WIP["Akun Penampung:<br/>Persediaan Barang Dalam Proses (WIP)"]
     DL --> WIP

@@ -105,11 +105,9 @@ Sesuai klasifikasi standar **IAS 7**, perencanaan arus kas dikelompokkan ke dala
 
 ```mermaid
 graph TD
-    subgraph IAS7Categories["Klasifikasi Arus Kas Masa Depan (IAS 7)"]
         CFO["Operating Activities (Operasional)<br/>Penerimaan AR, Pembayaran Vendor, Payroll, Pajak"]
         CFI["Investing Activities (Investasi)<br/>Pembelian Mesin Pabrik, Perangkat IT, Pelepasan Aset"]
         CFF["Financing Activities (Pendanaan)<br/>Penarikan Kredit Bank, Pelunasan Utang Pokok, Dividen"]
-    end
 ```
 
 Penyusunan proyeksi tidak mendebit atau mengkredit buku besar secara langsung, namun menjadi dasar eksekusi instrumen pembiayaan yang akan memicu pencatatan akuntansi.

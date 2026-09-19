@@ -8,13 +8,11 @@ Dalam struktur ERP korporasi modern, satu entitas hukum (*legal entity*) dapat m
 
 ```mermaid
 graph TD
-    subgraph CompanyBankAccounts["Klasifikasi Rekening Bank Korporasi"]
         Coll["Collection / AR Account<br/>(Penerimaan Pelanggan)"]
         Disb["Disbursement / AP Account<br/>(Pembayaran Supplier)"]
         Pay["Payroll Account<br/>(Gaji Karyawan)"]
         Tax["Tax & Statutory Account<br/>(Setoran Pajak & BPJS)"]
         Restr["Restricted / Escrow Account<br/>(Jaminan L/C & Bank Garansi)"]
-    end
     Company["PT Maju Bersama (Legal Entity)"] --> Coll
     Company --> Disb
     Company --> Pay

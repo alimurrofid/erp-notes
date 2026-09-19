@@ -8,11 +8,9 @@ Pengendalian internal aktiva tetap berpedoman pada kerangka kerja **COSO Interna
 
 ```mermaid
 flowchart TD
-    subgraph COSOAssetControls["Tiga Lini Pengendalian Internal Aset Tetap"]
         Prev["(1) Preventive Controls (Pencegahan)<br/>Blokir Transaksi Liar Sebelum Terjadi<br/>Contoh: Matriks SoD, Pagu Anggaran CAPEX, Otorisasi DoA"]
         Det["(2) Detective Controls (Pendeteksian)<br/>Identifikasi Anomali & Selisih Fisik<br/>Contoh: Stock Opname Fisik, Rekonsiliasi Subledger, Audit Log"]
         Corr["(3) Corrective Controls (Koreksi)<br/>Pemulihan & Penyelarasan Buku<br/>Contoh: Berita Acara Hapus Buku, Uji Penurunan Nilai"]
-    end
     Prev --> Det --> Corr
 ```
 
@@ -48,12 +46,10 @@ Setiap tahapan kritis dalam siklus hidup aset dikendalikan oleh batas wewenang p
 
 ```mermaid
 graph LR
-    subgraph ApprovalTiers["Hierarki Otorisasi Siklus Hidup Aset"]
         T1["Penyetuju 1: Department Manager<br/>Otorisasi Pengajuan CAPEX & Mutasi Internal"]
         T2["Penyetuju 2: Plant Director / VP Operations<br/>Otorisasi Rekomendasi Scrapping & Overhaul"]
         T3["Penyetuju 3: Chief Financial Officer (CFO)<br/>Otorisasi Kapitalisasi Aset & Penjualan Aset"]
         T4["Penyetuju 4: Dewan Direksi & Komisaris<br/>Otorisasi Pelepasan Aset Bernilai Sangat Material"]
-    end
     T1 --> T2 --> T3 --> T4
 ```
 

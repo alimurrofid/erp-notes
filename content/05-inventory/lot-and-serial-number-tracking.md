@@ -73,11 +73,9 @@ Untuk barang yang menggunakan pelacakan batch dengan tanggal kedaluwarsa, ERP me
 
 ```mermaid
 flowchart LR
-    subgraph Batches["Tiga Batch Tersedia di Gudang"]
         B1["Batch A: Masuk 1 Jan | Expire: 30 Des 2026"]
         B2["Batch B: Masuk 15 Jan | Expire: 30 Sep 2026 (Terdekat)"]
         B3["Batch C: Masuk 1 Feb | Expire: 31 Jan 2027"]
-    end
     
     Order["Pesanan Pengiriman Outbound"]
     Order -->|"Algoritma FEFO Memilih Otomatis"| B2

@@ -28,15 +28,13 @@ Salah satu kekeliruan pemula dalam sistem ERP adalah menyamakan Purchase Requisi
 
 ```mermaid
 flowchart LR
-    subgraph InternalEntity["Ranah Internal Perusahaan"]
-        PR["Purchase Requisition (PR)<br/>Dokumen usulan internal<br/>Tidak ada ikatan hukum eksternal<br/>Belum menentukan harga final<br/>Beban biaya = Rp0"]
-    end
+    PR["Purchase Requisition (PR)<br/>Ranah Internal Perusahaan<br/>• Dokumen usulan internal<br/>• Tidak ada ikatan hukum eksternal<br/>• Belum menentukan harga final<br/>• Beban biaya = Rp0"]
+    -->|Approval & Sourcing| PO["Purchase Order (PO)<br/>Ranah Eksternal Komersial<br/>• Kontrak komersial resmi<br/>• Mengikat secara hukum dengan vendor<br/>• Harga, termin & tanggal terkunci<br/>• Komitmen utang masa depan"]
 
-    subgraph ExternalEntity["Ranah Eksternal Komersial"]
-        PO["Purchase Order (PO)<br/>Kontrak komersial resmi<br/>Mengikat secara hukum dengan vendor<br/>Harga, termin & tanggal terkunci<br/>Komitmen utang masa depan"]
-    end
-
-    PR -->|Approval & Sourcing| PO
+    classDef internal fill:#e3f2fd,stroke:#1976d2,stroke-width:1.5px;
+    classDef external fill:#fff3e0,stroke:#f57c00,stroke-width:1.5px;
+    class PR internal;
+    class PO external;
 ```
 
 | Parameter Perbandingan | Purchase Requisition (PR) | Purchase Order (PO) |

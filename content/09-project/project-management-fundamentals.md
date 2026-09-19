@@ -48,11 +48,9 @@ Dalam ERP, proyek diklasifikasikan ke dalam tiga peran ekonomi utama:
 
 ```mermaid
 graph TD
-    subgraph ProjectRoles["Peran Proyek dalam Arsitektur Finansial ERP"]
         Customer["(1) Proyek Pelanggan / Komersial (Customer Projects)<br/>Fokus: Penagihan Piutang, Pengakuan Pendapatan, & Laba Proyek<br/>Contoh: Jasa Konsultasi IT, Konstruksi Gedung, EPC"]
         Internal["(2) Proyek Internal / OPEX (Internal Projects)<br/>Fokus: Penampung Biaya Departemen & Pengendalian Anggaran<br/>Contoh: Riset & Pengembangan (R&D), Kampanye Pemasaran"]
         Capital["(3) Proyek Investasi / CAPEX (Capital Investment Projects)<br/>Fokus: Akumulasi Biaya Konstruksi (CWIP) Menjadi Aset Tetap<br/>Contoh: Pembangunan Pabrik Baru, Instalasi Lini Mesin"]
-    end
 ```
 
 1. **Customer / Commercial Projects (Proyek Eksternal)**: Dibuat berdasarkan pesanan atau kontrak penjualan (*Sales Order / Contract*). Proyek ini menghasilkan arus kas masuk (*cash inflows*), mencatat biaya langsung, menerbitkan faktur ke pelanggan, dan dievaluasi margin laba kotornya (*Gross Project Margin*).

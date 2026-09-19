@@ -10,13 +10,11 @@ Untuk meningkatkan efisiensi dan standardisasi pelaksanaan, ERP enterprise menye
 
 ```mermaid
 graph TD
-    subgraph MasterSegments["Segmen Master Data Proyek Terpadu"]
         ID["(1) Identifikasi & Tipe<br/>(Project ID, Nama, Tipe, Prioritas)"]
         Comm["(2) Komersial & Kontrak<br/>(Klien, Nilai Kontrak, Mata Uang, Billing Rule)"]
         Org["(3) Organisasi & Wewenang<br/>(Company, Project Manager, Cost/Profit Center)"]
         Time["(4) Penanggalan & Kalender<br/>(Start/End Dates, Working Day Calendar)"]
         Fin["(5) Aturan Finansial & GL<br/>(Budget Profile, Settlement Rule, Rev Rec Rule)"]
-    end
     Template["Project Template<br/>(Metodologi Standar Industri)"] -->|Instansiasi Proyek Baru| MasterSegments
 ```
 

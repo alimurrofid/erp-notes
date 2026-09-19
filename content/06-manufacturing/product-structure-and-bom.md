@@ -28,18 +28,14 @@ Produk manufaktur modern (seperti perangkat elektronik, mesin, atau kendaraan) h
 flowchart TD
     FG["Level 0: Laptop Pro (Finished Good)<br/>Unit: 1 Pcs"]
     
-    subgraph Level1["Level 1: Perakitan Utama & Aksesori"]
-        SA1["Subassembly A: Motherboard Assembly<br/>Qty: 1 Pcs (Buat Sendiri)"]
-        SA2["Subassembly B: Layar Display Assembly<br/>Qty: 1 Pcs (Buat Sendiri)"]
-        PartC["Component C: Casing Logam Atas/Bawah<br/>Qty: 1 Set (Beli Jadi)"]
-        PartD["Component D: Baterai Lithium 70Wh<br/>Qty: 1 Pcs (Beli Jadi)"]
-    end
+    SA1["Level 1: Subassembly A (Motherboard)<br/>Qty: 1 Pcs (Buat Sendiri)"]
+    SA2["Level 1: Subassembly B (Layar Display)<br/>Qty: 1 Pcs (Buat Sendiri)"]
+    PartC["Level 1: Component C (Casing Logam)<br/>Qty: 1 Set (Beli Jadi)"]
+    PartD["Level 1: Component D (Baterai Lithium 70Wh)<br/>Qty: 1 Pcs (Beli Jadi)"]
     
-    subgraph Level2["Level 2: Komponen Elektronik Halus"]
-        PartX["Component X: Chipset Prosesor (CPU/GPU)<br/>Qty: 1 Pcs (Beli Jadi)"]
-        PartY["Component Y: Modul Memori RAM 16GB<br/>Qty: 2 Pcs (Beli Jadi)"]
-        PartZ["Component Z: IC Power Management<br/>Qty: 4 Pcs (Beli Jadi)"]
-    end
+    PartX["Level 2: Component X (Chipset CPU/GPU)<br/>Qty: 1 Pcs (Beli Jadi)"]
+    PartY["Level 2: Component Y (Modul RAM 16GB)<br/>Qty: 2 Pcs (Beli Jadi)"]
+    PartZ["Level 2: Component Z (IC Power Mgmt)<br/>Qty: 4 Pcs (Beli Jadi)"]
     
     FG --> SA1
     FG --> SA2
@@ -49,6 +45,14 @@ flowchart TD
     SA1 --> PartX
     SA1 --> PartY
     SA1 --> PartZ
+
+    classDef level0 fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px;
+    classDef level1 fill:#e3f2fd,stroke:#1e88e5,stroke-width:1.5px;
+    classDef level2 fill:#f1f8e9,stroke:#558b2f,stroke-width:1px;
+
+    class FG level0;
+    class SA1,SA2,PartC,PartD level1;
+    class PartX,PartY,PartZ level2;
 ```
 
 ### Konvensi Penomoran Level (*Low-Level Coding*):

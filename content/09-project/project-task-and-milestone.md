@@ -9,22 +9,22 @@ Dalam sistem ERP, **Task (Tugas Operasional)** dan **Milestone (Tonggak Proyek)*
 
 ```mermaid
 flowchart LR
-    subgraph Tasks["Kumpulan Tugas Operasional (Durasi > 0)"]
-        T1["Tugas 1.1: Wawancara Bisnis (20 Hari)"]
-        T2["Tugas 1.2: Penyusunan Blueprint (11 Hari)"]
-        T1 --> T2
-    end
+    T1["Tugas 1.1: Wawancara Bisnis<br/>(Durasi: 20 Hari)"]
+    T2["Tugas 1.2: Penyusunan Blueprint<br/>(Durasi: 11 Hari)"]
+    
+    M1{"MILESTONE 1:<br/>Persetujuan Blueprint BAST<br/>(Durasi = 0 / Pemicu Termin 20%)"}
+    
+    Inv["Dampak Finansial ERP:<br/>Faktur Penjualan Terbit Otomatis<br/>(Customer Invoice Rp60 Juta)"]
 
-    subgraph Milestone["Tonggak Proyek (Durasi = 0)"]
-        M1{"MILESTONE 1:<br/>Persetujuan Blueprint BAST<br/>[Pemicu Tagihan Termin 20%]"}
-    end
+    T1 --> T2 --> M1 --> Inv
 
-    subgraph FinancialImpact["Dampak Finansial ERP"]
-        Inv["Faktur Penjualan Terbit Otomatis<br/>(Customer Invoice Rp60 Juta)"]
-    end
+    classDef task fill:#e3f2fd,stroke:#1976d2,stroke-width:1px;
+    classDef milestone fill:#fff8e1,stroke:#f57f17,stroke-width:2px;
+    classDef finance fill:#e8f5e9,stroke:#388e3c,stroke-width:1.5px;
 
-    T2 --> M1
-    M1 --> FinancialImpact
+    class T1,T2 task;
+    class M1 milestone;
+    class Inv finance;
 ```
 
 ---
@@ -57,11 +57,9 @@ Dalam implementasi ERP enterprise, milestone diklasifikasikan ke dalam tiga kate
 
 ```mermaid
 graph TD
-    subgraph MilestoneCategories["Klasifikasi Kategori Milestone ERP"]
         Tech["(1) Technical / Internal Milestone<br/>Kunci Pengendalian Teknis Internal<br/>Contoh: Architecture Design Freeze, Code Complete"]
         Gov["(2) Governance / Contractual Milestone<br/>Pengesahan Formal Stakeholder Klien<br/>Contoh: UAT Sign-Off BAST, Final Commissioning"]
         Comm["(3) Commercial / Billing Milestone<br/>Pemicu Pembentukan Faktur Piutang Penjualan<br/>Contoh: Termin 1 (20%), Termin 2 (30%), Termin 3 (30%)"]
-    end
 ```
 
 1. **Technical Milestone**: Pintu kendali mutu internal tim teknis. Penyelesaian tugas-tugas arsitektur mengunci desain agar tidak terjadi perubahan spesifikasi liar (*scope creep*).

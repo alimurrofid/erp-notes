@@ -61,10 +61,8 @@ Saat sistem membangkitkan instruksi pengambilan (*Pick Directive*), algoritma ER
 
 ```mermaid
 flowchart LR
-    subgraph PickingLogic["Algoritma Seleksi Bin/Lot Sistem"]
         FIFO["FIFO (First-In, First-Out)<br/>Ambil barang dari batch yang tiba paling awal di gudang.<br/>Cocok untuk barang industri umum dan elektronik."]
         FEFO["FEFO (First-Expired, First-Out)<br/>Ambil barang dari batch dengan tanggal kedaluwarsa terdekat,<br/>meskipun barang tersebut baru tiba belakangan.<br/>Wajib untuk farmasi, makanan, dan kimia."]
-    end
 ```
 
 > [!important]

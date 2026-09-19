@@ -94,10 +94,8 @@ Dalam sistem ERP, koreksi persediaan dilakukan melalui dua pendekatan arsitektur
 
 ```mermaid
 flowchart TD
-    subgraph CorrectionTypes["Dua Pendekatan Koreksi Persediaan"]
         Rev["(1) Transaction Reversal (Storno / Reversal Entry)<br/>Digunakan saat terjadi kesalahan input murni beberapa menit setelah posting.<br/>Sistem membuat mutasi cermin dengan tanda berlawanan (-N)<br/>menetralkan transaksi asal secara matematis."]
         Ret["(2) Business Return (RMA / RTV Transaction)<br/>Digunakan untuk peristiwa bisnis nyata di mana barang fisik benar-benar berpindah kembali.<br/>Menciptakan nomor dokumen legal baru lengkap dengan alasan retur dan audit trail."]
-    end
 ```
 
 > [!important]

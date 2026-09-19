@@ -24,11 +24,9 @@ Sistem ERP enterprise mengklasifikasikan perpindahan internal berdasarkan jarak 
 
 ```mermaid
 flowchart TD
-    subgraph Scopes["Tiga Tingkatan Ruang Lingkup Transfer Internal"]
         Bin2Bin["(1) Bin-to-Bin / Rak-ke-Rak<br/>(Dalam Satu Gedung Gudang yang Sama)<br/>Jarak: Meter | Durasi: Menit | Transit: Tidak Ada"]
         WH2WH["(2) Warehouse-to-Warehouse<br/>(Antar-Gudang Fisik Berbeda, Misal: Jakarta ke Surabaya)<br/>Jarak: Puluhan/Ratusan Km | Durasi: Hari | Transit: In-Transit Warehouse Wajib"]
         InterCo["(3) Inter-Company Transfer<br/>(Antar-Anak Perusahaan / Badan Hukum Berbeda)<br/>Melibatkan Jual-Beli Internal (Intercompany SO/PO & PPN)"]
-    end
 ```
 
 ### Karakteristik Masing-Masing Lingkup:

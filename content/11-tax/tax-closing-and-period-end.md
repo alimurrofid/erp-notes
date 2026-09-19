@@ -26,28 +26,36 @@ Pelaksanaan penutupan pajak akhir periode yang terstruktur bertujuan untuk:
 
 ```mermaid
 flowchart TD
-    subgraph Monthly["Siklus Penutupan Bulanan (Monthly Tax Close)"]
-        M1["(1) Cut-off Penjualan & Alokasi Faktur Pajak Keluaran"]
-        M2["(2) Cut-off Pembelian & Verifikasi Faktur Pajak Masukan"]
-        M3["(3) Rekonsiliasi Withholding Tax (PPh 21, 23, 26, 4(2))"]
-        M4["(4) Rekonsiliasi Tiga Arah PPN & Jurnal Settlement PPN"]
-        M5["(5) Pembayaran Billing Pajak Masa & Pelaporan SPT Masa"]
-        M6["(6) Penguncian Masa Pajak Bulanan (Monthly Tax Lock)"]
-        M1 --> M2 --> M3 --> M4 --> M5 --> M6
-    end
+    H_Monthly["SIKLUS PENUTUPAN BULANAN (MONTHLY TAX CLOSE)"]
+    M1["(1) Cut-off Penjualan & Alokasi Faktur Pajak Keluaran"]
+    M2["(2) Cut-off Pembelian & Verifikasi Faktur Pajak Masukan"]
+    M3["(3) Rekonsiliasi Withholding Tax (PPh 21, 23, 26, 4(2))"]
+    M4["(4) Rekonsiliasi Tiga Arah PPN & Jurnal Settlement PPN"]
+    M5["(5) Pembayaran Billing Pajak Masa & Pelaporan SPT Masa"]
+    M6["(6) Penguncian Masa Pajak Bulanan (Monthly Tax Lock)"]
+    
+    H_Monthly --> M1 --> M2 --> M3 --> M4 --> M5 --> M6
 
-    subgraph Annual["Siklus Penutupan Tahunan (Annual Tax Close)"]
-        A1["(1) Konsolidasi 12 Masa Pajak Bulanan"]
-        A2["(2) Rekonsiliasi Depresiasi Fiskal vs Komersial Aset Tetap"]
-        A3["(3) Kertas Kerja Rekonsiliasi Fiskal (Koreksi Positif/Negatif)"]
-        A4["(4) Perhitungan PPh Badan (Pasal 17 / 31E) & Pajak Tangguhan"]
-        A5["(5) Rekonsiliasi Kredit Pajak (PPh 22, 23, 25) & Settlement PPh 29"]
-        A6["(6) Pembayaran Billing PPh 29 & Pelaporan SPT Tahunan 1771"]
-        A7["(7) Penguncian Permanen Tahun Fiskal (Annual Tax Hard Lock)"]
-        A1 --> A2 --> A3 --> A4 --> A5 --> A6 --> A7
-    end
+    H_Annual["SIKLUS PENUTUPAN TAHUNAN (ANNUAL TAX CLOSE)"]
+    A1["(1) Konsolidasi 12 Masa Pajak Bulanan"]
+    A2["(2) Rekonsiliasi Depresiasi Fiskal vs Komersial Aset Tetap"]
+    A3["(3) Kertas Kerja Rekonsiliasi Fiskal (Koreksi Positif/Negatif)"]
+    A4["(4) Perhitungan PPh Badan (Pasal 17 / 31E) & Pajak Tangguhan"]
+    A5["(5) Rekonsiliasi Kredit Pajak (PPh 22, 23, 25) & Settlement PPh 29"]
+    A6["(6) Pembayaran Billing PPh 29 & Pelaporan SPT Tahunan 1771"]
+    A7["(7) Penguncian Permanen Tahun Fiskal (Annual Tax Hard Lock)"]
+    
+    H_Annual --> A1 --> A2 --> A3 --> A4 --> A5 --> A6 --> A7
 
     M6 -->|"Diakumulasi Sepanjang Tahun"| A1
+
+    classDef header fill:#2b2d42,stroke:#1a1a2e,color:#ffffff,font-weight:bold;
+    classDef monthly fill:#e3f2fd,stroke:#1976d2,stroke-width:1px;
+    classDef annual fill:#fef9e7,stroke:#b7950b,stroke-width:1px;
+
+    class H_Monthly,H_Annual header;
+    class M1,M2,M3,M4,M5,M6 monthly;
+    class A1,A2,A3,A4,A5,A6,A7 annual;
 ```
 
 ---
