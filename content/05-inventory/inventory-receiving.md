@@ -28,7 +28,7 @@ flowchart TD
     Truck["(1) Kedatangan Truk & Pembongkaran (Unloading)<br/>Truk vendor tiba di Receiving Dock"]
     --> Staging["(2) Receiving Staging & Dokumen Check<br/>Pencocokan Surat Jalan Vendor vs Open PO"]
     
-    Staging --> QCReq{Butuh Inspeksi<br/>Mutu (QC)?}
+    Staging --> QCReq{"Butuh Inspeksi<br/>Mutu (QC)?"}
     
     QCReq -- "Ya" --> Quarantine["(3) Pemindahan ke QC Hold / Karantina<br/>Status: Non-ATP (Stok Tidak Boleh Dijual)"]
     Quarantine --> QCInspect["(4) Pemeriksaan Kualitas & Pengujian Sampel"]

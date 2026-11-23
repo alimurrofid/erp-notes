@@ -61,7 +61,7 @@ flowchart TD
     
     Count --> Entry["(5) Pemasukan Data Hasil Hitung (Count Entry)<br/>ERP membandingkan Kuantitas Fisik vs Saldo Buku Sistem"]
     
-    Entry --> VarCheck{Apakah Ada<br/>Selisih (Variance)?}
+    Entry --> VarCheck{"Apakah Ada<br/>Selisih (Variance)?"}
     
     VarCheck -- "Ada Selisih (> Ambang Batas)" --> Recount["(6) Penghitungan Ulang Independen (Recount)<br/>Dilakukan oleh tim auditor / pengawas berbeda"]
     Recount --> Investigate["(7) Investigasi Akar Masalah<br/>(Cek dokumen gantung, salah rak, salah ketik)"]

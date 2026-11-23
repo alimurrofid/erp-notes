@@ -29,7 +29,7 @@ flowchart TD
     Demand["(1) Permintaan Konsumsi Terjadi<br/>(Penjualan, Pemakaian Pabrik, atau Pemindahan)"]
     --> Proj["(2) Proyeksi Kuantitas Bersih (Projected Net Stock)<br/>ERP menghitung: On-Hand + On-Order - Demand Terikat"]
     
-    Proj --> CheckROP{Apakah Proyeksi Stok<br/>$\le$ Reorder Point (ROP)?}
+    Proj --> CheckROP{"Apakah Proyeksi Stok<br/>≤ Reorder Point (ROP)?"}
     
     CheckROP -- "Tidak (Stok Aman)" --> Monitor["3a. Tetap Pantau Tingkat Stok Berkala"]
     

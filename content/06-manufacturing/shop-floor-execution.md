@@ -141,7 +141,7 @@ Akun kredit bertindak sebagai akun kontra beban (*contra-expense*) yang menetral
 | :--- | :--- | :--- | :--- |
 | **Antarmuka Lantai Pabrik** | Modul khusus **Shop Floor App**: Tampilan ramah tablet dengan instruksi kerja PDF, tombol timer *Start/Pause*, dan pelaporan scrap. | Dokumen **Job Card**: Mendukung tombol *Start/Stop Timer* per operator dan pencatatan kuantitas selesai. | Aplikasi mobile khusus **Production Floor Execution**: Sangat komprehensif, mendukung pemindaian barcode batch, pelaporan paralel, dan instruksi multimedia. |
 | **Pelacakan Downtime** | Fitur *Productivity Loss / OEE Reasons* pada tombol jeda Work Order. | Tidak memiliki tabel downtime formal bawaan default (dapat dicatat pada catatan log Job Card). | Fitur tingkat industri: **Machine Downtime Registration** dengan kode penyebab gangguan dan integrasi ke modul *Asset Management*. |
-| **Dukungan MES Eksternal** | Mendukung integrasi via REST API atau konektor IoT Box (menghubungkan timbangan dan PLC mesin). | Mendukung REST API untuk integrasi data log mesin industri (SCADA/IoT). | Mendukung integrasi native berstandar industri: **Manufacturing Execution System (MES) Integration API** berbasis pesan mikrofonik. |
+| **Dukungan MES Eksternal** | Mendukung integrasi via REST API atau konektor IoT Box (menghubungkan timbangan dan PLC mesin). | Mendukung REST API untuk integrasi data log mesin industri (SCADA/IoT). | Mendukung integrasi native berstandar industri: **Manufacturing Execution System (MES) Integration API** berbasis *microservice*. |
 
 ---
 

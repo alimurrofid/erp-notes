@@ -92,7 +92,7 @@ sequenceDiagram
 
     Note over Fin,Pur: Tahap 4: Pelunasan Vendor & Penangkapan Diskon
     Fin->>Fin: Eksekusi Batch Pembayaran ke PT Sumber Teknologi (Manfaatkan Diskon Tunai 2%)
-    Fin->>Pur: Bayar Rp87.024.000 Bersih via API Bank Mandiri (Hemat Diskon Rp1.776.000)
+    Fin->>Pur: Bayar Rp87.024.000 Bersih via API Bank Mandiri — hemat diskon Rp1.776.000
 
     Note over Fin,Sales: Tahap 5: Pelunasan Pelanggan & Rekonsiliasi Otomatis
     Sales->>Fin: PT Mitra Niaga Transfer Rp133.200.000 via Virtual Account BCA
@@ -106,7 +106,7 @@ sequenceDiagram
 ### Penelusuran Langkah Skenario Kanonikal:
 
 1. **Pengadaan Komponen & Kontrol Anggaran**:
-   - Purchasing menerbitkan PO pengadaan motherboard, prosesor, dan layar senilai Rp80.000.000 (sebelum PPN 11%) kepada **PT Sumber Teknologi**.
+   - Purchasing menerbitkan PO pengadaan motherboard, prosesor, dan layar senilai Rp80.000.000 (sebelum PPN efektif 11%) kepada **PT Sumber Teknologi**.
    - Mesin AVC mengunci Rp80.000.000 dari pagu belanja komponen pada *Cost Center Produksi* sebagai *Commitment*.
    - Saat komponen tiba di gudang, penerimaan barang (*GRN*) membukukan debit pada akun Persediaan Bahan Baku dan kredit pada *GR/IR Clearing Account*.
 
@@ -116,7 +116,7 @@ sequenceDiagram
    - Setelah pengetesan kualitas selesai, 100 unit Laptop Pro masuk ke gudang barang jadi dengan total nilai persediaan Rp95.000.000 (biaya standar unit Rp950.000).
 
 3. **Penjualan, Validasi Kredit, & Pembaruan Proyeksi Kas**:
-   - Pelanggan institusional **PT Mitra Niaga** memesan 100 unit Laptop Pro dengan harga jual Rp1.200.000 per unit (Total Rp120.000.000 + PPN 11% Rp13.200.000 = Rp133.200.000) dengan syarat pembayaran *Net 30*.
+   - Pelanggan institusional **PT Mitra Niaga** memesan 100 unit Laptop Pro dengan harga jual Rp1.200.000 per unit (Total Rp120.000.000 + PPN efektif 11% Rp13.200.000 = Rp133.200.000) dengan syarat pembayaran *Net 30*.
    - Mesin kontrol kredit memvalidasi saldo piutang PT Mitra Niaga (saldo saat ini Rp40.000.000 + pesanan baru Rp133.200.000 = Rp173.200.000, masih di bawah plafon limit kredit Rp200.000.000). Pesanan disetujui.
    - Mesin *Cash Flow Forecast* secara otomatis menjadwalkan arus kas masuk sebesar Rp133.200.000 pada tangga likuiditas (*Cash Ladder*) minggu ke-3.
 

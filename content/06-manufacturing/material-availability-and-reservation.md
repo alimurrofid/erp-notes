@@ -64,7 +64,7 @@ flowchart TD
     CheckReq["Pemicu: Verifikasi Ketersediaan Bahan untuk MO"]
     --> LoopLines["Evaluasi Seluruh Baris Komponen BOM"]
     
-    LoopLines --> EvalLine{Kuantitas Bebas (ATP)<br/>$\ge$ Kebutuhan Bahan?}
+    LoopLines --> EvalLine{"Kuantitas Bebas (ATP)<br/>≥ Kebutuhan Bahan?"}
     
     EvalLine -- "Lengkap (100% Tersedia)" --> CommitRes["Kunci Reservasi Komponen (Status: Available)<br/>MO Diizinkan Berstatus RELEASED"]
     
