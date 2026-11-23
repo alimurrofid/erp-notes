@@ -1,3 +1,7 @@
+---
+title: Asset Acquisition & Capitalization
+---
+
 # Asset Acquisition & Capitalization
 
 ## Definition

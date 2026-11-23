@@ -1,10 +1,14 @@
+---
+title: Financial & Management Closing
+---
+
 # Financial & Management Closing
 
 ## Definition
 
 **Financial & Management Closing** dalam konteks Finance dan Tata Kelola ERP adalah orkestrasi lintas-fungsi yang sistematis dan terstruktur untuk menyelesaikan, memverifikasi, mengonsolidasi, dan membukukan seluruh aktivitas transaksi bisnis pada suatu periode fiskal (bulanan, kuartalan, atau tahunan). Proses ini memastikan bahwa laporan keuangan yang diterbitkan akurat, lengkap, mematuhi prinsip akuntansi, dan siap disajikan kepada manajemen, auditor, maupun otoritas publik.
 
-Berbeda dengan mekanisme jurnal penyesuaian teknis yang telah dibahas pada [[02-accounting/period-closing|Period Closing di Phase 3]], **Financial Closing di Phase 8 berfokus pada tata kelola orkestrasi (*Closing Governance*), manajemen kalender penutupan (*Closing Calendar*), hierarki penguncian modul (*Progressive Period Locking*), dan inisiatif percepatan penutupan buku (*Fast Close*)**.
+Berbeda dengan mekanisme jurnal penyesuaian teknis yang telah dibahas pada [[02-accounting/period-end-closing|Period Closing di Phase 3]], **Financial Closing di Phase 8 berfokus pada tata kelola orkestrasi (*Closing Governance*), manajemen kalender penutupan (*Closing Calendar*), hierarki penguncian modul (*Progressive Period Locking*), dan inisiatif percepatan penutupan buku (*Fast Close*)**.
 
 ```mermaid
 flowchart LR

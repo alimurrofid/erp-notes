@@ -1,3 +1,7 @@
+---
+title: Workforce Planning and HR Analytics
+---
+
 # Workforce Planning and HR Analytics
 
 ## Definition

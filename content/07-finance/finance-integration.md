@@ -1,3 +1,7 @@
+---
+title: Cross-Module Finance Integration
+---
+
 # Cross-Module Finance Integration
 
 ## Definition

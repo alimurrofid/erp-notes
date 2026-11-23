@@ -1,3 +1,7 @@
+---
+title: Financial Planning & Forecasting
+---
+
 # Financial Planning & Forecasting
 
 ## Definition
@@ -63,7 +67,7 @@ Sistem secara otomatis menarik data realisasi akuntansi (*Actual General Ledger*
 ### 2. Pemodelan Berbasis Pemicu (Driver-Based Modeling)
 Perencanaan di dalam ERP modern tidak menginput angka nominal GL secara manual, melainkan menggunakan variabel operasional (*business drivers*):
 - **Revenue Drivers**: Jumlah unit pesanan (*Sales Volume*) $\times$ Harga jual rata-rata (*Average Selling Price*).
-- **Cost of Goods Sold Drivers**: Kebutuhan bahan baku per unit (berdasarkan BOM pada [[06-manufacturing/bill-of-materials|Manufacturing]]), biaya tenaga kerja langsung per jam, dan indeks harga energi.
+- **Cost of Goods Sold Drivers**: Kebutuhan bahan baku per unit (berdasarkan BOM pada [[06-manufacturing/product-structure-and-bom|Manufacturing]]), biaya tenaga kerja langsung per jam, dan indeks harga energi.
 - **Operating Expense (OPEX) Drivers**: Jumlah karyawan (*Headcount*) $\times$ Rata-rata standar gaji & tunjangan per grade, sewa ruangan kantor per $m^2$.
 - **Working Capital Drivers**: Asumsi perputaran piutang (*Days Sales Outstanding - DSO*), persediaan (*Days Inventory Outstanding - DIO*), dan utang dagang (*Days Payable Outstanding - DPO*).
 

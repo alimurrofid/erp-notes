@@ -1,3 +1,7 @@
+---
+title: Leave Management
+---
+
 # Leave Management
 
 ## Definition

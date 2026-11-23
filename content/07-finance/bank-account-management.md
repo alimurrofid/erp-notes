@@ -1,3 +1,7 @@
+---
+title: Bank Account Management
+---
+
 # Bank Account Management
 
 ## Definition

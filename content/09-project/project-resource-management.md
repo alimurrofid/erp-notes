@@ -1,3 +1,7 @@
+---
+title: Project Resource Management
+---
+
 # Project Resource Management
 
 ## Definition

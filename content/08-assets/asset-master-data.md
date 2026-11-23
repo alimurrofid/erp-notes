@@ -1,3 +1,7 @@
+---
+title: Asset Master Data
+---
+
 # Asset Master Data
 
 ## Definition

@@ -1,3 +1,7 @@
+---
+title: Asset Impairment Management
+---
+
 # Asset Impairment Management
 
 ## Definition

@@ -1,3 +1,7 @@
+---
+title: Fixed Assets Fundamentals
+---
+
 # Fixed Assets Fundamentals
 
 ## Definition

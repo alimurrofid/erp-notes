@@ -1,3 +1,7 @@
+---
+title: Organization and Position Structure
+---
+
 # Organization and Position Structure
 
 ## Definition

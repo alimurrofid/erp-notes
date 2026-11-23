@@ -1,3 +1,7 @@
+---
+title: Budget Management & Control
+---
+
 # Budget Management & Control
 
 ## Definition

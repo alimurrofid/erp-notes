@@ -1,3 +1,7 @@
+---
+title: HR Controls and Governance
+---
+
 # HR Controls and Governance
 
 ## Definition

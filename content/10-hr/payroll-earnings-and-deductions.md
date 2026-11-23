@@ -1,3 +1,7 @@
+---
+title: Payroll Earnings and Deductions
+---
+
 # Payroll Earnings and Deductions
 
 ## Definition

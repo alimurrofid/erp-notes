@@ -1,3 +1,7 @@
+---
+title: Project Profitability
+---
+
 # Project Profitability
 
 ## Definition

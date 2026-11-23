@@ -1,3 +1,7 @@
+---
+title: Asset Componentization
+---
+
 # Asset Componentization
 
 ## Definition

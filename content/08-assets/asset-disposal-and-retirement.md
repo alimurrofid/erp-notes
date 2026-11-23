@@ -1,3 +1,7 @@
+---
+title: Asset Disposal & Retirement
+---
+
 # Asset Disposal & Retirement
 
 ## Definition

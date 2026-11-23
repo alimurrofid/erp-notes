@@ -1,3 +1,7 @@
+---
+title: Cross-Module Fixed Assets Integration
+---
+
 # Cross-Module Fixed Assets Integration
 
 ## Definition

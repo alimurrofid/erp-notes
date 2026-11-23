@@ -1,3 +1,7 @@
+---
+title: Management Financial Reporting & Dashboards
+---
+
 # Management Financial Reporting & Dashboards
 
 ## Definition

@@ -1,3 +1,7 @@
+---
+title: Asset Revaluation
+---
+
 # Asset Revaluation
 
 ## Definition

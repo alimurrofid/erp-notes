@@ -1,3 +1,7 @@
+---
+title: HR Management Fundamentals
+---
+
 # HR Management Fundamentals
 
 ## Definition

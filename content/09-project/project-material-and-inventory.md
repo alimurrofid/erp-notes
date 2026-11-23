@@ -1,3 +1,7 @@
+---
+title: Project Material and Inventory
+---
+
 # Project Material and Inventory
 
 ## Definition

@@ -1,3 +1,7 @@
+---
+title: Asset Reporting & Analytics
+---
+
 # Asset Reporting & Analytics
 
 ## Definition

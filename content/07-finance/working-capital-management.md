@@ -1,3 +1,7 @@
+---
+title: Working Capital Management
+---
+
 # Working Capital Management
 
 ## Definition
@@ -52,7 +56,7 @@ Mengukur rata-rata jumlah hari persediaan mengendap di gudang sebelum berhasil d
 
 $$\text{DIO} = \frac{\text{Average Inventory}}{\text{Cost of Goods Sold (COGS)}} \times 365$$
 
-- **Integrasi ERP**: Menarik data dari modul [[05-inventory/warehouse-management|Inventory & Warehouse]] serta [[06-manufacturing/bill-of-materials|Manufacturing (BOM & Routing)]].
+- **Integrasi ERP**: Menarik data dari modul [[05-inventory/warehouse-and-location|Inventory & Warehouse]] serta [[06-manufacturing/product-structure-and-bom|Manufacturing (BOM & Routing)]].
 - **Inisiatif Perbaikan**: Penerapan pengadaan tepat waktu (*Just-In-Time*), rasionalisasi *Safety Stock*, dan pembersihan stok usang (*slow-moving / obsolete liquidation*).
 
 #### C. Days Payable Outstanding (DPO)
@@ -60,7 +64,7 @@ Mengukur rata-rata jumlah hari yang dibutuhkan perusahaan untuk melunasi tagihan
 
 $$\text{DPO} = \frac{\text{Average Accounts Payable}}{\text{Cost of Goods Sold (atau Total Pembelian)}} \times 365$$
 
-- **Integrasi ERP**: Menarik data dari modul [[04-purchasing/three-way-matching|Purchasing (P2P)]] dan [[02-accounting/accounts-payable|Accounts Payable]].
+- **Integrasi ERP**: Menarik data dari modul [[04-purchasing/three-way-match|Purchasing (P2P)]] dan [[02-accounting/accounts-payable|Accounts Payable]].
 - **Inisiatif Perbaikan**: Negosiasi perpanjangan syarat pembayaran (misal dari *Net 30* menjadi *Net 60*), penjadwalan pembayaran tepat pada batas jatuh tempo tanpa membayar terlalu dini secara sia-sia.
 
 ```mermaid

@@ -1,10 +1,14 @@
+---
+title: Cash Flow Planning & Forecasting
+---
+
 # Cash Flow Planning & Forecasting
 
 ## Definition
 
 **Cash Flow Planning & Forecasting** dalam ERP adalah proses proyeksi dan pemantauan sistematis atas estimasi penerimaan kas (*cash inflows*) dan pengeluaran kas (*cash outflows*) organisasi pada rentang horizon waktu tertentu. Tujuannya adalah memprediksi posisi likuiditas masa depan, mengantisipasi defisit dana (*cash deficit/gap*), serta merencanakan penempatan kelebihan kas (*cash surplus*) sebelum peristiwa tersebut terjadi.
 
-Berbeda dengan Laporan Arus Kas historis akuntansi yang disusun setelah periode berakhir ([[02-accounting/statement-of-cash-flows|Statement of Cash Flows di Phase 3]]), **Cash Flow Planning berorientasi ke masa depan (forward-looking)** dan mengintegrasikan data transaksi terbuka dari seluruh modul operasional ERP.
+Berbeda dengan Laporan Arus Kas historis akuntansi yang disusun setelah periode berakhir ([[02-accounting/financial-statements|Statement of Cash Flows di Phase 3]]), **Cash Flow Planning berorientasi ke masa depan (forward-looking)** dan mengintegrasikan data transaksi terbuka dari seluruh modul operasional ERP.
 
 ```mermaid
 flowchart TD

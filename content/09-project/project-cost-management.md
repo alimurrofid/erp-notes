@@ -1,3 +1,7 @@
+---
+title: Project Cost Management
+---
+
 # Project Cost Management
 
 ## Definition

@@ -1,3 +1,7 @@
+---
+title: Payroll Accounting and Finance Integration
+---
+
 # Payroll Accounting and Finance Integration
 
 ## Definition

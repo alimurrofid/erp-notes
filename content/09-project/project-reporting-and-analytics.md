@@ -1,3 +1,7 @@
+---
+title: Project Reporting and Analytics
+---
+
 # Project Reporting and Analytics
 
 ## Definition

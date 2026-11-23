@@ -1,10 +1,14 @@
+---
+title: Payment & Cash Disbursement
+---
+
 # Payment & Cash Disbursement
 
 ## Definition
 
 **Payment & Cash Disbursement** dalam ERP adalah subsistem terintegrasi dalam domain Finance dan Treasury yang mengelola seluruh siklus pengeluaran kas perusahaan secara sistematis, terotorisasi, dan aman. Proses ini mencakup identifikasi kewajiban yang jatuh tempo (*open vendor bills*), pembentukan proposal pembayaran (*payment proposal*), pengelompokan batch pembayaran (*payment run*), persetujuan berjenjang (*dual control approval*), transmisi berkas ke perbankan (*payment file generation / API*), hingga konfirmasi kliring dan penanganan pembayaran gagal (*rejection handling*).
 
-Disbursement menghubungkan modul [[04-purchasing/three-way-matching|Purchasing (P2P)]], [[02-accounting/accounts-payable|Accounts Payable]], Manajemen Kas, dan perbankan eksternal dalam satu rantai kendali yang ketat.
+Disbursement menghubungkan modul [[04-purchasing/three-way-match|Purchasing (P2P)]], [[02-accounting/accounts-payable|Accounts Payable]], Manajemen Kas, dan perbankan eksternal dalam satu rantai kendali yang ketat.
 
 ```mermaid
 flowchart LR

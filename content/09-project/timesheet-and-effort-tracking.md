@@ -1,3 +1,7 @@
+---
+title: Timesheet & Effort Tracking
+---
+
 # Timesheet & Effort Tracking
 
 ## Definition

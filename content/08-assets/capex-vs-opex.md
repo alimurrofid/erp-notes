@@ -1,3 +1,7 @@
+---
+title: CAPEX vs OPEX in Asset Lifecycle
+---
+
 # CAPEX vs OPEX in Asset Lifecycle
 
 ## Definition

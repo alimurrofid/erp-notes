@@ -1,3 +1,7 @@
+---
+title: Employee Timesheet and Labor Cost
+---
+
 # Employee Timesheet and Labor Cost
 
 ## Definition

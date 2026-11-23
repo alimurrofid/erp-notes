@@ -1,3 +1,7 @@
+---
+title: Physical Asset Verification & Tagging
+---
+
 # Physical Asset Verification & Tagging
 
 ## Definition

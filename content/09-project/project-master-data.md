@@ -1,3 +1,7 @@
+---
+title: Project Master Data & Templates
+---
+
 # Project Master Data & Templates
 
 ## Definition

@@ -1,3 +1,7 @@
+---
+title: Project Planning & Scheduling
+---
+
 # Project Planning & Scheduling
 
 ## Definition

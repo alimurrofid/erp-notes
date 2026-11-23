@@ -1,3 +1,7 @@
+---
+title: Payroll Fundamentals
+---
+
 # Payroll Fundamentals
 
 ## Definition

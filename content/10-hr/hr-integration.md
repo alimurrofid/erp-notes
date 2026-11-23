@@ -1,3 +1,7 @@
+---
+title: HR Integration
+---
+
 # HR Integration
 
 ## Definition

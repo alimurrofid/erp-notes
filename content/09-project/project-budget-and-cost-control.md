@@ -1,3 +1,7 @@
+---
+title: Project Budget and Cost Control
+---
+
 # Project Budget and Cost Control
 
 ## Definition

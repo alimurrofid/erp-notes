@@ -1,3 +1,7 @@
+---
+title: Project Completion and Closing
+---
+
 # Project Completion and Closing
 
 ## Definition

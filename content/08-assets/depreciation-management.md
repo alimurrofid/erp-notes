@@ -1,3 +1,7 @@
+---
+title: Depreciation Schedule & Management
+---
+
 # Depreciation Schedule & Management
 
 ## Definition

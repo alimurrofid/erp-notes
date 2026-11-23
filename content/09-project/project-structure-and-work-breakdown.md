@@ -1,3 +1,7 @@
+---
+title: Project Structure & Work Breakdown Structure (WBS)
+---
+
 # Project Structure & Work Breakdown Structure (WBS)
 
 ## Definition
