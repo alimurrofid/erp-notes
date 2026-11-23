@@ -55,8 +55,8 @@ flowchart TD
     SO --> Sum
 
     Sum --> Check{"Apakah Total Exposure > Credit Limit?"}
-    Check -->|Tidak (Aman)| Pass["Pesanan Lolos (Approved)"]
-    Check -->|Ya (Melanggar)| Block["Pesanan Tertahan (Credit Hold)"]
+    Check -->|"Tidak (Aman)"| Pass["Pesanan Lolos (Approved)"]
+    Check -->|"Ya (Melanggar)"| Block["Pesanan Tertahan (Credit Hold)"]
 ```
 
 * Jika batas kredit pelanggan adalah Rp20.000.000, maka gabungan dari faktur yang belum lunas, barang yang sedang di jalan, dan pesanan yang baru disetujui **tidak boleh melampaui Rp20.000.000**.

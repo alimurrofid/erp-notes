@@ -88,7 +88,7 @@ Perubahan pada PO dikategorikan berdasarkan dampaknya terhadap kontrol bisnis:
   * Penambahan item barang baru.
   * Perubahan mata uang.
   
-  Perubahan material secara otomatis **membatalkan persetujuan sebelumnya (*revokes approval*)** dan memicu kembali alur kerja persetujuan (*re-triggers approval workflow*) sesuai batas kewenangan ([[04-purchasing/purchasing-fundamentals#delegation-of-authority-doa-dan-approval-limits|Delegation of Authority]]).
+  Perubahan material secara otomatis **membatalkan persetujuan sebelumnya (*revokes approval*)** dan memicu kembali alur kerja persetujuan (*re-triggers approval workflow*) sesuai batas kewenangan ([[04-purchasing/purchasing-fundamentals|Delegation of Authority]]).
 
 ### 3. Sinkronisasi dengan Open Receipts
 Jika revisi disetujui:

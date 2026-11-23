@@ -141,7 +141,7 @@ flowchart TD
     Req["Posting Request<br/>(Transaksi Operasional / Jurnal Manual)"]
     --> Sum{"Hitung Total:<br/>Σ Debit == Σ Credit ?"}
     Sum -->|Ya| Post["Commit Transaction to Database<br/>Update GL Accounts atomically"]
-    Sum -->|Tidak (Selisih ≠ 0)| Rej["Error: Unbalanced Journal Entry!<br/>Database Rollback - Posting Ditolak"]
+    Sum -->|"Tidak (Selisih ≠ 0)"| Rej["Error: Unbalanced Journal Entry!<br/>Database Rollback - Posting Ditolak"]
 ```
 
 Jika sistem mendeteksi selisih sebesar Rp1 sekalipun ($\sum \text{Dr} \neq \sum \text{Cr}$), transaksi **wajib di-*rollback*** secara atomik untuk mencegah terjadinya kerusakan integritas neraca (*unbalanced trial balance*).

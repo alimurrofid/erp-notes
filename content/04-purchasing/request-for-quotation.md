@@ -82,7 +82,7 @@ Dari matriks di atas, meskipun *PT Indo Prima* menawarkan harga termurah (Rp690.
 
 ---
 
-## Dampak Akuntansi dan Persediaan (Accounting & Inventory Impact)
+## Accounting Impact
 
 > [!important] Dokumen Pra-Kontraktual Murni
 > **Request for Quotation dan Supplier Quotation TIDAK MEMILIKI dampak akuntansi dan TIDAK MEMILIKI dampak mutasi persediaan fisik.**

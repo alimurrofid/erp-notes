@@ -4,7 +4,7 @@ title: Tax Reporting and Tax Analytics
 
 # Tax Reporting and Tax Analytics
 
-## Definisi
+## Definition
 
 **Tax Reporting and Tax Analytics (Pelaporan Pajak dan Analitika Perpajakan)** adalah kapabilitas di dalam sistem ERP untuk mengekstraksi, mentranslasikan, dan menganalisis data transaksi perpajakan menjadi laporan kepatuhan statuter resmi (*Statutory Compliance Reports*), buku pembantu operasional (*Operational Tax Registers*), pengujian ekualisasi fiskal (*Tax Equalization Tests*), serta indikator kinerja utama perpajakan (*Tax KPIs and Risk Analytics*).
 
@@ -12,7 +12,7 @@ Dalam era administrasi perpajakan berbasis data (seperti modernisasi sistem Core
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Penerapan pelaporan dan analitika perpajakan di dalam ERP bertujuan untuk:
 1. **Otomatisasi Kepatuhan Statuter (Statutory Automation):** Menghasilkan berkas formulir pajak resmi (SPT Masa PPN 1111, SPT Unifikasi, dan SPT Tahunan 1771) secara otomatis sesuai skema data otoritas pajak.
@@ -117,7 +117,7 @@ Penerapan pengujian ekualisasi dan analitika pada `PT Maju Bersama`:
 
 ---
 
-## Implementasi ERP Universal
+## ERP Implementation
 
 Dalam arsitektur ERP modern, analitika perpajakan didukung oleh:
 1. **Automated Equalization Engine:** Mesin audit internal yang secara otomatis menjalankan rekonsiliasi antara modul GL, AR, AP, dan Tax Subledger setiap akhir pekan dan menyajikan dasbor variansi (*variance alerts*).
@@ -126,7 +126,7 @@ Dalam arsitektur ERP modern, analitika perpajakan didukung oleh:
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Dimensi Fitur | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -136,7 +136,7 @@ Dalam arsitektur ERP modern, analitika perpajakan didukung oleh:
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada arsitektur ERP Naventra, fitur pelaporan dan analitika perpajakan dirancang dengan pendekatan desain teknis berikut:
 
@@ -149,7 +149,7 @@ Pada arsitektur ERP Naventra, fitur pelaporan dan analitika perpajakan dirancang
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 28 Tahun 2007 tentang Ketentuan Umum dan Tata Cara Perpajakan (UU KUP) beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
 * Surat Edaran Direktur Jenderal Pajak No. SE-05/PJ/2022 tentang Pengawasan Kepatuhan Wajib Pajak Melalui Analisis Data dan Ekualisasi.

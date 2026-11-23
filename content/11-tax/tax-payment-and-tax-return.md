@@ -4,7 +4,7 @@ title: Tax Payment and Tax Return
 
 # Tax Payment and Tax Return
 
-## Definisi
+## Definition
 
 **Tax Payment and Tax Return (Pembayaran Pajak dan Penyampaian Surat Pemberitahuan / SPT)** adalah tahap eksekusi akhir dalam siklus manajemen perpajakan di dalam ERP di mana liabilitas pajak yang telah dihitung dan direkonsiliasi disetorkan secara moneter ke kas negara melalui kanal perbankan/persepsi resmi, dan dokumen deklarasi kepatuhan fiskal formal (Surat Pemberitahuan / SPT Masa maupun Tahunan) dilaporkan kepada otoritas perpajakan.
 
@@ -16,7 +16,7 @@ Dalam ekosistem perpajakan Indonesia, proses ini berputar di sekitar integrasi a
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Pengelolaan alur pembayaran dan pelaporan pajak yang terintegrasi di dalam ERP bertujuan untuk:
 1. **Menghindari Sanksi Keterlambatan Setor dan Lapor:** Mendukung ketepatan waktu eksekusi pembayaran kas dan penyampaian SPT sebelum batas waktu hukum (*statutory deadline*) berakhir.
@@ -80,7 +80,7 @@ Sistem ERP memetakan transaksi penutupan pajak ke dalam tabel referensi KAP/KJS 
 
 ---
 
-## Dampak Akuntansi (Accounting Impact)
+## Accounting Impact
 
 Eksekusi pembayaran pajak membalik liabilitas pajak yang telah terbentuk saat rekonsiliasi penutupan masa:
 
@@ -128,7 +128,7 @@ Melanjutkan data transaksi terpadu `PT Maju Bersama`:
 
 ---
 
-## Implementasi ERP Universal
+## ERP Implementation
 
 Dalam arsitektur ERP terpadu, modul pembayaran dan pelaporan perpajakan mencakup:
 1. **Tax Authority Gateway Integration:** Protokol penghubung langsung (*API Connector*) ke sistem otoritas pajak untuk permintaan kode billing instan dan penarikan status penerimaan SPT secara otomatis.
@@ -137,7 +137,7 @@ Dalam arsitektur ERP terpadu, modul pembayaran dan pelaporan perpajakan mencakup
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Dimensi Fitur | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -147,7 +147,7 @@ Dalam arsitektur ERP terpadu, modul pembayaran dan pelaporan perpajakan mencakup
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada rancangan sistem ERP Naventra, modul pembayaran dan pelaporan perpajakan dikembangkan dengan standar otomasi tinggi:
 
@@ -160,7 +160,7 @@ Pada rancangan sistem ERP Naventra, modul pembayaran dan pelaporan perpajakan di
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 28 Tahun 2007 tentang Ketentuan Umum dan Tata Cara Perpajakan (UU KUP) beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
 * Peraturan Direktur Jenderal Pajak No. PER-05/PJ/2017 tentang Pembayaran Pajak Secara Elektronik.

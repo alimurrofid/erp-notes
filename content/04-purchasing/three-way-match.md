@@ -77,9 +77,9 @@ Dalam transaksi riil, selisih kecil sering terjadi (misal perbedaan pembulatan d
 flowchart TD
     Disc{"Deteksi Selisih 3-Way Match"}
     
-    Disc -->|Kasus 1: Kuantitas Ditagihkan > Kuantitas Diterima| QtyErr["Quantity Discrepancy:<br/>Tagihan 10 unit, Gudang baru terima 8 unit.<br/>=> TINDAKAN SISTEM: Faktur ditahan (Payment Block).<br/>Sistem hanya menyetujui pembayaran atas 8 unit."]
+    Disc -->|"Kasus 1: Kuantitas Ditagihkan > Kuantitas Diterima"| QtyErr["Quantity Discrepancy:<br/>Tagihan 10 unit, Gudang baru terima 8 unit.<br/>=> TINDAKAN SISTEM: Faktur ditahan (Payment Block).<br/>Sistem hanya menyetujui pembayaran atas 8 unit."]
     
-    Disc -->|Kasus 2: Harga Faktur > Harga PO| PriceErr["Price Variance:<br/>Harga PO Rp700.000, Faktur menagih Rp720.000.<br/>=> TINDAKAN SISTEM: Tagihan ditahan.<br/>Mewajibkan persetujuan Manajer Pengadaan atau<br/>membebankan selisih ke akun Purchase Price Variance (PPV)."]
+    Disc -->|"Kasus 2: Harga Faktur > Harga PO"| PriceErr["Price Variance:<br/>Harga PO Rp700.000, Faktur menagih Rp720.000.<br/>=> TINDAKAN SISTEM: Tagihan ditahan.<br/>Mewajibkan persetujuan Manajer Pengadaan atau<br/>membebankan selisih ke akun Purchase Price Variance (PPV)."]
 ```
 
 ### Resolusi Sengketa Tagihan (*Exception Resolution*):

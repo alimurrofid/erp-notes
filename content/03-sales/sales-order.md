@@ -113,7 +113,7 @@ stateDiagram-v2
 
 ---
 
-## Dampak Akuntansi & Persediaan (Accounting & Inventory Impact)
+## Accounting Impact
 
 ### 1. Dampak Persediaan (Inventory Impact): Reservasi vs Mutasi Fisik
 Saat status SO berubah menjadi `Confirmed`:

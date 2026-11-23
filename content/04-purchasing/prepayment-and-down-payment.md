@@ -44,7 +44,7 @@ flowchart TD
 
 ---
 
-## Dampak Akuntansi & Jurnal (Accounting Impact)
+## Accounting Impact
 
 Melanjutkan skenario acuan pembelian 10 unit komponen *Laptop Pro* dari PT Sumber Teknologi:
 * **Total Komitmen PO**: 10 unit @ Rp700.000 = Rp7.000.000 (+ PPN 11% Rp770.000 = **Rp7.770.000**).

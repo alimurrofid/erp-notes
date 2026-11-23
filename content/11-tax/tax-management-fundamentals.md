@@ -4,7 +4,7 @@ title: Tax Management Fundamentals
 
 # Tax Management Fundamentals
 
-## Definisi
+## Definition
 
 **Tax Management Fundamentals (Fondasi Manajemen Perpajakan dalam ERP)** adalah arsitektur konseptual dan operasional di dalam Enterprise Resource Planning yang mengatur bagaimana kewajiban perpajakan diidentifikasi, dihitung, dicatat, direkonsiliasi, dilaporkan, dan disetorkan kepada otoritas perpajakan sesuai yurisdiksi hukum yang berlaku.
 
@@ -16,7 +16,7 @@ Dalam ekosistem ERP, modul perpajakan (*Tax Engine / Tax Management*) bukanlah a
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Penerapan Tax Management di dalam ERP bertujuan untuk:
 1. **Mendukung Kepatuhan Regulasi (Regulatory Compliance Support):** Membantu memastikan transaksi entitas diproses selaras dengan peraturan perundang-undangan perpajakan yang berlaku (misalnya di Indonesia: UU KUP, UU PPh, UU PPN, UU HPP No. 7 Tahun 2021, serta regulasi turunan Kementerian Keuangan dan Direktorat Jenderal Pajak). ERP bertindak sebagai sistem pendukung kepatuhan, bukan penjamin mutlak kepatuhan hukum.
@@ -126,7 +126,7 @@ erDiagram
 
 ---
 
-## Dampak Akuntansi (Accounting Impact)
+## Accounting Impact
 
 Transaksi perpajakan menghasilkan dua kelompok besar posisi neraca:
 
@@ -193,7 +193,7 @@ Jurnal Settlement / Penutupan Pajak Masa:
 
 ---
 
-## Implementasi ERP Universal
+## ERP Implementation
 
 Secara arsitektural, modul perpajakan ERP modern menerapkan tiga pilar arsitektur utama:
 
@@ -206,7 +206,7 @@ Secara arsitektural, modul perpajakan ERP modern menerapkan tiga pilar arsitektu
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Dimensi Arsitektur | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -217,7 +217,7 @@ Secara arsitektural, modul perpajakan ERP modern menerapkan tiga pilar arsitektu
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Dalam pengembangan ERP Naventra, modul perpajakan dirancang dengan prinsip-prinsip arsitektur berikut:
 
@@ -232,7 +232,7 @@ Dalam pengembangan ERP Naventra, modul perpajakan dirancang dengan prinsip-prins
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP).
 * Undang-Undang Republik Indonesia No. 42 Tahun 2009 tentang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah (UU PPN).

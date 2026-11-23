@@ -4,7 +4,7 @@ title: Taxable Base and Tax Calculation
 
 # Taxable Base and Tax Calculation
 
-## Definisi
+## Definition
 
 **Taxable Base and Tax Calculation (Dasar Pengenaan Pajak dan Kalkulasi Pajak)** adalah mekanisme komputasi di dalam sistem ERP yang menghitung nilai moneter dasar yang dikenakan pajak (*Taxable Base* / Dasar Pengenaan Pajak atau DPP) dan menerapkan tarif pajak yang berlaku untuk menghasilkan jumlah liabilitas atau piutang pajak yang sah secara hukum dan akuntansi.
 
@@ -18,7 +18,7 @@ Dalam konteks perpajakan Indonesia, Dasar Pengenaan Pajak (DPP) dapat berbentuk:
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Proses kalkulasi dasar pengenaan pajak yang akurat di dalam ERP bertujuan untuk:
 1. **Integritas Penagihan dan Pembayaran:** Memastikan jumlah pajak yang ditagihkan kepada pelanggan atau dibayarkan kepada pemasok sesuai dengan regulasi perpajakan yang berlaku tanpa adanya selisih pembulatan material.
@@ -143,7 +143,7 @@ Jurnal Akuntansi Otomatis di ERP:
 
 ---
 
-## Implementasi ERP Universal
+## ERP Implementation
 
 Arsitektur mesin kalkulasi perpajakan di dalam ERP dirancang dengan modul *Tax Calculation Engine* yang modular:
 1. **Precision Decimal Management:** Mendukung kalkulasi internal hingga 4 sampai 6 angka desimal untuk unit price dan persentase diskon sebelum melakukan pembulatan akhir ke 2 digit (sen) atau 0 digit (Rupiah).
@@ -152,7 +152,7 @@ Arsitektur mesin kalkulasi perpajakan di dalam ERP dirancang dengan modul *Tax C
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Dimensi Kalkulasi | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -163,7 +163,7 @@ Arsitektur mesin kalkulasi perpajakan di dalam ERP dirancang dengan modul *Tax C
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada pengembangan ERP Naventra, modul kalkulasi pajak dibangun dengan spesifikasi teknis berikut:
 
@@ -188,7 +188,7 @@ Pada pengembangan ERP Naventra, modul kalkulasi pajak dibangun dengan spesifikas
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 42 Tahun 2009 tentang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah beserta perubahannya pada UU No. 7 Tahun 2021 (UU HPP).
 * Peraturan Menteri Keuangan No. 131/PMK.03/2024 tentang Perlakuan PPN Sehubungan dengan Berlakunya Tarif PPN 12%.

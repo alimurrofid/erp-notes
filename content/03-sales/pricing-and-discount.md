@@ -77,9 +77,9 @@ Dalam desain ERP, logika penyelesaian konflik harga (*Conflict Resolution / Prec
 ```mermaid
 flowchart TD
     Rule{"Deteksi Konflik Aturan Harga:<br/>Kontrak Khusus vs Daftar Harga Grosir vs Promo"}
-    Rule -->|Policy A: Specificity Wins (Paling Umum)| P1["(1) Prioritas Tertinggi:<br/>Customer Contract > Customer Group > General Price List"]
-    Rule -->|Policy B: Best Deal Wins| P2["(2) Harga Terendah Menang:<br/>Sistem memilih harga paling murah untuk kepuasan pelanggan"]
-    Rule -->|Policy C: Cumulative Discount| P3["(3) Diskon Bertingkat:<br/>Diskon Promo ditumpuk di atas Diskon Pelanggan<br/>(Contoh: 10% + 5% tambahan)"]
+    Rule -->|"Policy A: Specificity Wins (Paling Umum)"| P1["(1) Prioritas Tertinggi:<br/>Customer Contract > Customer Group > General Price List"]
+    Rule -->|"Policy B: Best Deal Wins"| P2["(2) Harga Terendah Menang:<br/>Sistem memilih harga paling murah untuk kepuasan pelanggan"]
+    Rule -->|"Policy C: Cumulative Discount"| P3["(3) Diskon Bertingkat:<br/>Diskon Promo ditumpuk di atas Diskon Pelanggan<br/>(Contoh: 10% + 5% tambahan)"]
 ```
 
 > [!note] Variasi Vendor ERP

@@ -4,7 +4,7 @@ title: Tax Closing and Period-End
 
 # Tax Closing and Period-End
 
-## Definisi
+## Definition
 
 **Tax Closing and Period-End (Penutupan Pajak dan Akhir Periode)** adalah rangkaian prosedur tata kelola, rekonsiliasi, dan penguncian sistematis di dalam ERP yang dijalankan pada setiap akhir bulan kalender (*Monthly Tax Close*) dan akhir tahun buku (*Annual Tax Close*) untuk memastikan seluruh peristiwa perpajakan telah dicatat secara lengkap, divalidasi keabsahannya, diselesaikan kewajiban pembayarannya, dan dibekukan dari modifikasi data masa lampau.
 
@@ -12,7 +12,7 @@ Penutupan perpajakan beroperasi secara berdampingan dengan Penutupan Periode Aku
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Pelaksanaan penutupan pajak akhir periode yang terstruktur bertujuan untuk:
 1. **Penegakan Integritas Pisah Batas (Cut-Off Enforcement):** Memastikan seluruh penyerahan barang/jasa dan penerimaan tagihan diakui pada masa pajak yang tepat sesuai aturan tanggal terutang (*tax point*).
@@ -94,7 +94,7 @@ Sebelum penguncian masa pajak diaktifkan di ERP, tim kepatuhan perpajakan wajib 
 
 ---
 
-## Dampak Akuntansi (Accounting Impact)
+## Accounting Impact
 
 Proses penutupan akhir periode memastikan pemindahan saldo temporer ke saldo permanen:
 
@@ -135,7 +135,7 @@ Penerapan jadwal penutupan akhir periode pada `PT Maju Bersama`:
 
 ---
 
-## Implementasi ERP Universal
+## ERP Implementation
 
 Dalam arsitektur ERP enterprise, modul penutupan perpajakan mengoperasikan fitur:
 1. **Period Close Cockpit:** Dasbor pemantau status penutupan yang menyajikan daftar periksa (*checklist*) seluruh modul anak (AR, AP, Inventory, Payroll) beserta indikator kelengkapan dokumen pajak.
@@ -144,7 +144,7 @@ Dalam arsitektur ERP enterprise, modul penutupan perpajakan mengoperasikan fitur
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Dimensi Penutupan Pajak | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -154,7 +154,7 @@ Dalam arsitektur ERP enterprise, modul penutupan perpajakan mengoperasikan fitur
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada pengembangan ERP Naventra, fitur penutupan pajak akhir periode dirancang dengan arsitektur ketat:
 
@@ -167,7 +167,7 @@ Pada pengembangan ERP Naventra, fitur penutupan pajak akhir periode dirancang de
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 28 Tahun 2007 tentang Ketentuan Umum dan Tata Cara Perpajakan (UU KUP) beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
 * Peraturan Menteri Keuangan No. 243/PMK.03/2014 tentang Surat Pemberitahuan (SPT) sebagaimana telah diubah dengan PMK No. 9/PMK.03/2018.

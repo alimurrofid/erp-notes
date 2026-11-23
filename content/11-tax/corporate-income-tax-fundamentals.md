@@ -4,7 +4,7 @@ title: Corporate Income Tax Fundamentals
 
 # Corporate Income Tax Fundamentals
 
-## Definisi
+## Definition
 
 **Corporate Income Tax Fundamentals (Fondasi Pajak Penghasilan Badan / PPh Badan)** adalah domain tata kelola di dalam ERP yang mengatur bagaimana laba komersial entitas diselaraskan dengan peraturan perpajakan yang berlaku untuk menghitung laba kena pajak (*Taxable Profit / Penghasilan Kena Pajak*), menentukan beban pajak kini (*Current Tax Expense*), menghitung pajak tangguhan (*Deferred Tax*), serta memenuhi kewajiban pelaporan Surat Pemberitahuan (SPT) Tahunan PPh Badan (Formulir 1771 di Indonesia).
 
@@ -12,7 +12,7 @@ Berbeda dari PPN yang merupakan pajak tidak langsung atas transaksi penyerahan b
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Pengelolaan modul PPh Badan di dalam sistem ERP bertujuan untuk:
 1. **Menjembatani Laba Komersial dan Fiskal (Book-Tax Alignment):** Menghubungkan pembukuan akuntansi standar (IFRS / SAK) dengan ketentuan perundang-undangan perpajakan tanpa merusak kemurnian laporan keuangan komersial.
@@ -98,7 +98,7 @@ Perbedaan yang terjadi akibat perbedaan saat pengakuan (*timing*) antara akuntan
 
 ---
 
-## Dampak Akuntansi (Accounting Impact)
+## Accounting Impact
 
 Penetapan taksiran PPh Badan di akhir tahun fiskal dicatat melalui Jurnal Penyisihan Pajak Penghasilan (*Tax Provision Journal*):
 
@@ -137,7 +137,7 @@ Data keuangan tahunan `PT Maju Bersama`:
 
 ---
 
-## Implementasi ERP Universal
+## ERP Implementation
 
 Dalam ERP modern, modul Corporate Income Tax beroperasi dengan fungsionalitas:
 1. **Fiscal Ledger / Parallel Valuation Engine:** Kemampuan membukukan transaksi ke buku besar fiskal paralel atau menggunakan atribut *Tax Deductibility Tag* pada setiap baris jurnal untuk merekam perlakuan pajak secara *real-time*.
@@ -146,7 +146,7 @@ Dalam ERP modern, modul Corporate Income Tax beroperasi dengan fungsionalitas:
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Dimensi PPh Badan | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -157,7 +157,7 @@ Dalam ERP modern, modul Corporate Income Tax beroperasi dengan fungsionalitas:
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada rancangan sistem ERP Naventra, pengelolaan PPh Badan diimplementasikan melalui pendekatan modern:
 
@@ -170,7 +170,7 @@ Pada rancangan sistem ERP Naventra, pengelolaan PPh Badan diimplementasikan mela
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 36 Tahun 2008 tentang Pajak Penghasilan beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
 * International Accounting Standard (IAS) 12: *Income Taxes*.

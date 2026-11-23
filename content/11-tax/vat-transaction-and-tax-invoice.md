@@ -4,7 +4,7 @@ title: VAT Transaction and Tax Invoice
 
 # VAT Transaction and Tax Invoice
 
-## Definisi
+## Definition
 
 **VAT Transaction and Tax Invoice (Transaksi PPN dan Faktur Pajak)** adalah proses bisnis dan arsitektur data di dalam ERP yang mengelola penyiapan data, validasi, pelaporan, dan pengarsipan bukti pungutan pajak resmi yang menjadi bukti sah bahwa Pengusaha Kena Pajak (PKP) telah memungut PPN atas penyerahan Barang Kena Pajak (BKP) atau Jasa Kena Pajak (JKP).
 
@@ -14,7 +14,7 @@ Dalam lanskap administrasi perpajakan Indonesia:
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Pengelolaan transaksi Faktur Pajak di dalam ERP bertujuan untuk:
 1. **Mendukung Validitas Data Faktur (Data Validation & Pre-Flight Check):** Memvalidasi kelengkapan data mitra (NPWP 16 digit / NIK / NITKU, alamat legal), Dasar Pengenaan Pajak (DPP), dan tarif sebelum data dikirimkan ke gateway administrasi perpajakan resmi.
@@ -86,7 +86,7 @@ flowchart TD
 
 ---
 
-## Dampak Akuntansi (Accounting Impact)
+## Accounting Impact
 
 Penanganan akuntansi atas Faktur Pajak Keluaran normal, pengganti, dan pembatalan:
 
@@ -147,7 +147,7 @@ Pelanggan meminta koreksi karena terdapat penyesuaian spesifikasi perangkat yang
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Aspek Faktur Pajak | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -157,7 +157,7 @@ Pelanggan meminta koreksi karena terdapat penyesuaian spesifikasi perangkat yang
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada pengembangan modul Faktur Pajak di ERP Naventra, arsitektur dirancang dengan fokus pada kepatuhan modern:
 
@@ -173,7 +173,7 @@ Pada pengembangan modul Faktur Pajak di ERP Naventra, arsitektur dirancang denga
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 42 Tahun 2009 tentang Pajak Pertambahan Nilai beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
 * Peraturan Menteri Keuangan No. 131/PMK.03/2024 tentang Perlakuan PPN Sehubungan dengan Berlakunya Tarif PPN 12%.

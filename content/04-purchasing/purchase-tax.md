@@ -82,7 +82,7 @@ $$\mathbf{Kas\ yang\ Ditransfer\ ke\ Vendor = Total\ Tagihan\ (DPP + PPN) - Nila
 
 ---
 
-## Dampak Akuntansi & Jurnal (Accounting Impact)
+## Accounting Impact
 
 ### Skenario 1: Pembelian Persediaan Standar (Baseline Acuan)
 Membeli 10 unit komponen *Laptop Pro* dari PT Sumber Teknologi seharga Rp7.000.000 (PPN Masukan 11% = Rp770.000, dapat dikreditkan):

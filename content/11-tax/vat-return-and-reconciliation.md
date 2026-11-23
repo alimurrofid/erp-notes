@@ -4,7 +4,7 @@ title: VAT Return and Reconciliation
 
 # VAT Return and Reconciliation
 
-## Definisi
+## Definition
 
 **VAT Return and Reconciliation (Surat Pemberitahuan Masa PPN dan Rekonsiliasi Pajak)** adalah prosedur penutupan berkala dan validasi silang di dalam sistem ERP yang memastikan keselarasan penuh antara transaksi operasional, saldo buku besar akuntansi (*General Ledger*), dan laporan pajak resmi (SPT Masa PPN 1111 / formulir Coretax) sebelum pelaporan dan penyetoran pajak ke kas negara dilakukan.
 
@@ -15,7 +15,7 @@ Dalam tata kelola keuangan modern, proses ini berpusat pada **Rekonsiliasi Tiga 
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Pelaksanaan rekonsiliasi dan penutupan masa PPN di dalam ERP bertujuan untuk:
 1. **Mitigasi Selisih Data Fiskal vs Komersial:** Membantu mendeteksi dan mengeliminasi perbedaan angka antara peredaran usaha komersial dan Dasar Pengenaan Pajak (DPP) pada SPT Masa yang berpotensi memicu timbulnya Surat Permintaan Penjelasan atas Data dan/atau Keterangan (SP2DK) dari otoritas pajak.
@@ -94,7 +94,7 @@ Sistem ERP membandingkan tiga sumber kebenaran data untuk masa pajak yang bersan
 
 ---
 
-## Dampak Akuntansi (Accounting Impact)
+## Accounting Impact
 
 Proses rekonsiliasi diakhiri dengan eksekusi Jurnal Kliring PPN (*VAT Settlement Journal*) yang mengeliminasi akun temporer PPN:
 
@@ -146,7 +146,7 @@ Melanjutkan skenario kanonikal bulanan `PT Maju Bersama`:
 
 ---
 
-## Implementasi ERP Universal
+## ERP Implementation
 
 Sistem ERP modern menyediakan modul otomatisasi rekonsiliasi:
 1. **Automated Tax Reconciliation Engine:** Algoritma yang secara otomatis mencocokkan nomor faktur komersial dengan nomor faktur pajak (termasuk nomor faktur sistem Coretax maupun data historis) dan nomor transaksi bank menggunakan teknik pencocokan berbasis aturan (*rule-based matching*).
@@ -155,7 +155,7 @@ Sistem ERP modern menyediakan modul otomatisasi rekonsiliasi:
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Aspek Rekonsiliasi & Pelaporan | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -166,7 +166,7 @@ Sistem ERP modern menyediakan modul otomatisasi rekonsiliasi:
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada pengembangan ERP Naventra, fitur rekonsiliasi dan pelaporan SPT Masa dirancang dengan kendali otomatisasi tinggi:
 
@@ -181,7 +181,7 @@ Pada pengembangan ERP Naventra, fitur rekonsiliasi dan pelaporan SPT Masa diranc
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 28 Tahun 2007 tentang Ketentuan Umum dan Tata Cara Perpajakan (UU KUP) beserta perubahannya pada UU No. 7 Tahun 2021 (UU HPP).
 * Peraturan Menteri Keuangan No. 243/PMK.03/2014 tentang Surat Pemberitahuan (SPT) sebagaimana telah diubah dengan PMK No. 9/PMK.03/2018.

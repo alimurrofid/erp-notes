@@ -4,7 +4,7 @@ title: Tax Determination and Tax Rules
 
 # Tax Determination and Tax Rules
 
-## Definisi
+## Definition
 
 **Tax Determination and Tax Rules (Penentuan Pajak dan Aturan Perpajakan)** adalah logika komputasi dan mesin aturan (*rule engine*) di dalam sistem ERP yang secara dinamis dan otomatis mengevaluasi atribut-atribut transaksi untuk menentukan kode pajak (*Tax Code*), perlakuan perpajakan, tarif yang berlaku, serta perlakuan akuntansi yang tepat bagi setiap baris item transaksi bisnis.
 
@@ -12,7 +12,7 @@ Proses penentuan pajak membebaskan pengguna operasional (seperti staf *sales ord
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Penerapan mesin penentu pajak (*tax determination engine*) bertujuan untuk:
 1. **Otomatisasi Aturan dan Mitigasi Human Error:** Mengurangi kesalahan penentuan kode pajak oleh staf operasional yang dapat berakibat pada ketidaksesuaian dokumen pajak atau sanksi kepatuhan.
@@ -114,7 +114,7 @@ flowchart TD
 
 ---
 
-## Dampak Akuntansi (Accounting Impact)
+## Accounting Impact
 
 Penentuan kode pajak yang akurat menentukan konfigurasi jurnal akuntansi secara mendasar:
 
@@ -167,7 +167,7 @@ Melanjutkan skenario `PT Maju Bersama`:
 
 ---
 
-## Implementasi ERP Universal
+## ERP Implementation
 
 Pada rancangan sistem ERP skala besar, logika penentuan pajak dioperasikan sebagai layanan mikro terisolasi (*Tax Determination Microservice*):
 1. **Payload Request:** Modul pemanggil mengirimkan dokumen transaksi dalam format JSON/XML yang berisi identitas para pihak, daftar barang, alamat asal/tujuan, tanggal terutang, dan termin pembayaran.
@@ -176,7 +176,7 @@ Pada rancangan sistem ERP skala besar, logika penentuan pajak dioperasikan sebag
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Aspek Penentuan Pajak | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -187,7 +187,7 @@ Pada rancangan sistem ERP skala besar, logika penentuan pajak dioperasikan sebag
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada arsitektur ERP Naventra, modul penentuan pajak dirancang dengan spesifikasi teknis berikut:
 
@@ -204,7 +204,7 @@ Pada arsitektur ERP Naventra, modul penentuan pajak dirancang dengan spesifikasi
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP).
 * Peraturan Menteri Keuangan No. 131/PMK.03/2024 tentang Perlakuan PPN Sehubungan dengan Berlakunya Tarif PPN 12%.

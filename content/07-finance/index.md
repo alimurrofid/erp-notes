@@ -17,34 +17,34 @@ Kurikulum Finance disusun dalam 5 pilar berurutan yang mencakup 16 topik kanonik
 ```mermaid
 flowchart TD
     subgraph P1["Pilar 1: Fondasi & Master Data"]
-        N1["[[07-finance/finance-fundamentals|Finance Fundamentals]]"]
-        N2["[[07-finance/finance-master-data|Finance Master Data]]"]
+        N1["Finance Fundamentals"]
+        N2["Finance Master Data"]
     end
 
     subgraph P2["Pilar 2: Treasury & Cash Operations"]
-        N3["[[07-finance/cash-management|Cash Management]]"]
-        N4["[[07-finance/bank-account-management|Bank Account Management]]"]
-        N5["[[07-finance/bank-reconciliation|Operational Bank Reconciliation]]"]
-        N6["[[07-finance/payment-and-cash-disbursement|Payment & Cash Disbursement]]"]
+        N3["Cash Management"]
+        N4["Bank Account Management"]
+        N5["Operational Bank Reconciliation"]
+        N6["Payment & Cash Disbursement"]
     end
 
     subgraph P3["Pilar 3: Planning, Budgeting & Liquidity"]
-        N7["[[07-finance/budget-management|Budget Management & Control]]"]
-        N8["[[07-finance/financial-planning|Financial Planning & Forecasting]]"]
-        N9["[[07-finance/cash-flow-planning|Cash Flow Planning & Forecasting]]"]
-        N10["[[07-finance/liquidity-management|Liquidity Management]]"]
-        N11["[[07-finance/working-capital-management|Working Capital Management]]"]
+        N7["Budget Management & Control"]
+        N8["Financial Planning & Forecasting"]
+        N9["Cash Flow Planning & Forecasting"]
+        N10["Liquidity Management"]
+        N11["Working Capital Management"]
     end
 
     subgraph P4["Pilar 4: Closing, Reporting & Analytics"]
-        N12["[[07-finance/financial-closing|Financial & Management Closing]]"]
-        N13["[[07-finance/financial-reporting|Management Financial Reporting & Dashboards]]"]
-        N14["[[07-finance/financial-analysis|Financial Analysis & Performance Evaluation]]"]
+        N12["Financial & Management Closing"]
+        N13["Management Financial Reporting & Dashboards"]
+        N14["Financial Analysis & Performance Evaluation"]
     end
 
     subgraph P5["Pilar 5: Controls & Master Integration"]
-        N15["[[07-finance/financial-controls|Financial Controls & Governance]]"]
-        N16["[[07-finance/finance-integration|Cross-Module Finance Integration]]"]
+        N15["Financial Controls & Governance"]
+        N16["Cross-Module Finance Integration"]
     end
 
     P1 --> P2 --> P3 --> P4 --> P5

@@ -4,7 +4,7 @@ title: Tax Controls, Audit, and Compliance
 
 # Tax Controls, Audit, and Compliance
 
-## Definisi
+## Definition
 
 **Tax Controls, Audit, and Compliance (Pengendalian Perpajakan, Kesiapan Audit, dan Kepatuhan)** adalah kerangka tata kelola, aturan validasi sistematis, dan jejak audit di dalam ERP yang memastikan bahwa seluruh transaksi perpajakan dilaksanakan secara patuh hukum, terlindungi dari kecurangan (*fraud*) maupun kelalaian, serta siap menghadapi pemeriksaan oleh auditor internal maupun otoritas perpajakan (seperti Direktorat Jenderal Pajak).
 
@@ -12,7 +12,7 @@ Dalam lanskap kepatuhan modern, sistem ERP bertindak sebagai benteng pertahanan 
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Penerapan pengendalian dan kepatuhan perpajakan di dalam ERP bertujuan untuk:
 1. **Mencegah Kerugian Finansial Akibat Denda (Penalty Prevention):** Mengeliminasi kesalahan penagihan, keterlambatan penerbitan faktur, atau keterlambatan penyetoran kas yang memicu Surat Tagihan Pajak (STP).
@@ -110,7 +110,7 @@ Penerapan prosedur pengendalian dan audit pada `PT Maju Bersama`:
 
 ---
 
-## Implementasi ERP Universal
+## ERP Implementation
 
 Dalam arsitektur sistem ERP modern, pengendalian dan audit perpajakan dijalankan oleh:
 1. **Tax Rule Change Tracker:** Modul pelacak konfigurasi yang mencatat siapa, kapan, dan alasan apa yang mendasari perubahan pada tabel *Tax Code* atau *Rate Schedule*.
@@ -119,7 +119,7 @@ Dalam arsitektur sistem ERP modern, pengendalian dan audit perpajakan dijalankan
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Dimensi Pengendalian & Audit | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -129,7 +129,7 @@ Dalam arsitektur sistem ERP modern, pengendalian dan audit perpajakan dijalankan
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada pengembangan ERP Naventra, kerangka kepatuhan dan audit perpajakan dibangun dengan fondasi ketat:
 
@@ -142,7 +142,7 @@ Pada pengembangan ERP Naventra, kerangka kepatuhan dan audit perpajakan dibangun
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 28 Tahun 2007 tentang Ketentuan Umum dan Tata Cara Perpajakan (UU KUP) beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
 * Peraturan Menteri Keuangan No. 17/PMK.03/2013 tentang Tata Cara Pemeriksaan Pajak sebagaimana telah diubah dengan PMK No. 18/PMK.03/2021.

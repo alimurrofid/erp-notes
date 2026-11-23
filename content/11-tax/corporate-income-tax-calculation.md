@@ -4,7 +4,7 @@ title: Corporate Income Tax Calculation
 
 # Corporate Income Tax Calculation
 
-## Definisi
+## Definition
 
 **Corporate Income Tax Calculation (Perhitungan Pajak Penghasilan Badan)** adalah proses komputasi di dalam sistem ERP yang menerapkan skema tarif pajak penghasilan yang sah terhadap Penghasilan Kena Pajak (PKP) hasil rekonsiliasi fiskal guna menentukan jumlah Pajak Penghasilan Terutang (*Tax Liability*) dan Beban Pajak Kini (*Current Tax Expense*) korporasi dalam satu tahun pajak.
 
@@ -12,7 +12,7 @@ Perhitungan PPh Badan diatur oleh kerangka hukum perpajakan yang kaku, di mana p
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Pengoperasian mesin perhitungan PPh Badan di dalam ERP bertujuan untuk:
 1. **Penetapan Beban Pajak yang Presisi:** Menghitung liabilitas pajak penghasilan terutang secara akurat untuk menghindari koreksi dan penetapan kurang bayar oleh otoritas pajak.
@@ -74,7 +74,7 @@ Formulasi Perhitungan Pasal 31E:
 
 ---
 
-## Dampak Akuntansi (Accounting Impact)
+## Accounting Impact
 
 Penetapan perhitungan pajak badan menghasilkan pencatatan jurnal akuntansi akhir tahun:
 
@@ -118,7 +118,7 @@ Apabila entitas memenuhi kriteria peredaran bruto tertentu (omzet tahunan sampai
 
 ---
 
-## Implementasi ERP Universal
+## ERP Implementation
 
 Arsitektur mesin perhitungan PPh Badan dalam ERP terintegrasi mencakup:
 1. **Gross Turnover Aggregator:** Layanan yang secara otomatis menjumlahkan peredaran bruto dari subledger penjualan dan akun pendapatan lain-lain untuk menentukan ambang batas fasilitas fiskal.
@@ -127,7 +127,7 @@ Arsitektur mesin perhitungan PPh Badan dalam ERP terintegrasi mencakup:
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Dimensi Perhitungan PPh Badan | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -137,7 +137,7 @@ Arsitektur mesin perhitungan PPh Badan dalam ERP terintegrasi mencakup:
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada pengembangan ERP Naventra, modul perhitungan PPh Badan dirancang dengan fitur otomatisasi terdepan:
 
@@ -153,7 +153,7 @@ Pada pengembangan ERP Naventra, modul perhitungan PPh Badan dirancang dengan fit
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 36 Tahun 2008 tentang Pajak Penghasilan sebagaimana telah diubah terakhir dengan UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
 * Peraturan Pemerintah Republik Indonesia No. 55 Tahun 2022 tentang Penyesuaian Pengaturan di Bidang Pajak Penghasilan.

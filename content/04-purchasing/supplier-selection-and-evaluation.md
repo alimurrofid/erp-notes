@@ -34,8 +34,8 @@ flowchart TD
     --> Perf["(4) Ongoing Performance Tracking<br/>(Sistem otomatis menghitung skor ketepatan kirim & mutu)"]
     --> Review{"(5) Periodic Review & Classification"}
     
-    Review -->|Skor Tinggi (Grade A)| Strat["Strategic / Preferred Partner<br/>(Prioritas tender & kontrak jangka panjang)"]
-    Review -->|Skor Rendah (Di Bawah Standar)| Hold["Vendor Warning / On-Hold<br/>(Koreksi kualitas atau audit ulang)"]
+    Review -->|"Skor Tinggi (Grade A)"| Strat["Strategic / Preferred Partner<br/>(Prioritas tender & kontrak jangka panjang)"]
+    Review -->|"Skor Rendah (Di Bawah Standar)"| Hold["Vendor Warning / On-Hold<br/>(Koreksi kualitas atau audit ulang)"]
     Review -->|Pelanggaran Fatal / Pailit| Blacklist["Blacklisted / Offboarded<br/>(Diblokir permanen dari sistem ERP)"]
 ```
 

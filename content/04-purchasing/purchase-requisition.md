@@ -114,7 +114,7 @@ Sistem ERP menerapkan dua lapis pengamanan otomatis saat dokumen diajukan:
 
 ---
 
-## Dampak Akuntansi dan Persediaan (Accounting & Inventory Impact)
+## Accounting Impact
 
 > [!important] Nol Dampak Finansial & Gudang
 > **Purchase Requisition TIDAK MEMILIKI dampak akuntansi dan TIDAK MEMILIKI dampak mutasi persediaan fisik.**

@@ -4,7 +4,7 @@ title: Corporate Tax Installment and Prepayment
 
 # Corporate Tax Installment and Prepayment
 
-## Definisi
+## Definition
 
 **Corporate Tax Installment and Prepayment (Angsuran dan Pembayaran Dimuka Pajak Badan)** adalah tata kelola di dalam ERP yang mengelola pelunasan kewajiban Pajak Penghasilan Badan dalam tahun berjalan melalui mekanisme angsuran berkala dan pemotongan oleh pihak ketiga (*Tax Credits / Prepaid Taxes*), serta penyelesaian posisi kurang bayar (*PPh Pasal 29*) atau lebih bayar (*PPh Pasal 28A*) pada akhir tahun pajak.
 
@@ -12,7 +12,7 @@ Mekanisme ini dirancang oleh otoritas perpajakan dengan prinsip **Pay As You Ear
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Pengelolaan angsuran dan kredit pajak di dalam ERP bertujuan untuk:
 1. **Perencanaan Arus Kas Fiskal (Tax Liquidity Planning):** Mengatur jadwal pengeluaran kas rutin untuk pembayaran angsuran bulanan PPh Pasal 25 agar tidak mengganggu likuiditas operasional perusahaan.
@@ -85,7 +85,7 @@ Karena SPT Tahunan Badan baru disampaikan paling lambat tanggal 30 April tahun b
 
 ---
 
-## Dampak Akuntansi (Accounting Impact)
+## Accounting Impact
 
 Akuntansi ERP mengelola arus pencatatan kredit pajak dan penyelesaian akhir tahun:
 
@@ -139,7 +139,7 @@ Berdasarkan data SPT Tahunan yang diselesaikan:
 
 ---
 
-## Implementasi ERP Universal
+## ERP Implementation
 
 Dalam modul Tax Management ERP modern, tata kelola angsuran mencakup:
 1. **Recurring Tax Schedule Engine:** Jadwal pembayaran berulang otomatis pada modul Treasury/Finance yang membuat voucher pembayaran angsuran PPh 25 setiap tanggal 10 tiap bulan lengkap dengan referensi Kode Billing DJP.
@@ -148,7 +148,7 @@ Dalam modul Tax Management ERP modern, tata kelola angsuran mencakup:
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Dimensi Fitur | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -158,7 +158,7 @@ Dalam modul Tax Management ERP modern, tata kelola angsuran mencakup:
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada rancangan sistem ERP Naventra, pengelolaan angsuran dan kredit pajak badan dikembangkan dengan mekanisme berikut:
 
@@ -171,7 +171,7 @@ Pada rancangan sistem ERP Naventra, pengelolaan angsuran dan kredit pajak badan 
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 36 Tahun 2008 tentang Pajak Penghasilan beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
 * Peraturan Direktur Jenderal Pajak No. PER-19/PJ/2014 tentang Tata Cara Pembayaran dan Penyetoran Pajak.

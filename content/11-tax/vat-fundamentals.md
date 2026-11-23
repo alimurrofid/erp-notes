@@ -4,7 +4,7 @@ title: VAT Fundamentals
 
 # VAT Fundamentals
 
-## Definisi
+## Definition
 
 **VAT Fundamentals (Fondasi Pajak Pertambahan Nilai / PPN)** adalah prinsip dasar dan mekanisme operasional di dalam ERP yang mengatur bagaimana Pajak Pertambahan Nilai (Value Added Tax / PPN) dipungut, dikreditkan, dan diselesaikan pada setiap mata rantai produksi serta distribusi barang atau jasa.
 
@@ -15,7 +15,7 @@ PPN merupakan **pajak tidak langsung atas konsumsi domestik** (*indirect consump
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Pengelolaan modul PPN di dalam sistem ERP bertujuan untuk:
 1. **Mendukung Akurasi Pengkreditan Pajak (Tax Credit Optimization):** Membantu memastikan seluruh PPN Masukan yang sah secara hukum dapat diidentifikasi dan dikreditkan tepat waktu untuk mengurangi kewajiban setor PPN Keluaran.
@@ -77,7 +77,7 @@ Dalam sistem ERP, empat pilar konsep PPN diatur secara ketat:
 
 ---
 
-## Dampak Akuntansi (Accounting Impact)
+## Accounting Impact
 
 Dalam akuntansi ERP, PPN dikelola melalui akun-akun neraca (*Balance Sheet accounts*):
 
@@ -163,7 +163,7 @@ Pencatatan Jurnal Setor Kas ke Kas Negara (via Kode Billing DJP):
 
 ---
 
-## Implementasi ERP Universal
+## ERP Implementation
 
 Dalam arsitektur modular ERP, komponen fundamental PPN mencakup:
 1. **Tax Point Evaluator Service:** Layanan yang memonitor *Delivery Orders*, *Work Confirmation*, *Advance Invoices*, dan *Customer Payments* guna menentukan pemicu tanggal terutang pajak secara otomatis.
@@ -172,7 +172,7 @@ Dalam arsitektur modular ERP, komponen fundamental PPN mencakup:
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Aspek Fundamental PPN | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -183,7 +183,7 @@ Dalam arsitektur modular ERP, komponen fundamental PPN mencakup:
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada pengembangan ERP Naventra, modul PPN fundamental dirancang dengan prinsip keandalan berikut:
 
@@ -196,7 +196,7 @@ Pada pengembangan ERP Naventra, modul PPN fundamental dirancang dengan prinsip k
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 42 Tahun 2009 tentang Pajak Pertambahan Nilai dan Pajak Penjualan atas Barang Mewah beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
 * Peraturan Pemerintah Republik Indonesia No. 44 Tahun 2022 tentang Penerapan terhadap Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah.

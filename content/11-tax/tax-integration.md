@@ -4,7 +4,7 @@ title: Tax Integration
 
 # Tax Integration
 
-## Definisi
+## Definition
 
 **Tax Integration (Integrasi Lintas Modul Perpajakan)** adalah arsitektur penghubung dan orkestrasi data di dalam ERP yang menautkan mesin perpajakan (*Tax Engine*) dengan seluruh modul operasional, logistik, manufaktur, ketenagakerjaan, aset, dan keuangan perusahaan.
 
@@ -12,7 +12,7 @@ Dalam sistem Enterprise Resource Planning yang matang, perpajakan bukanlah pulau
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Integrasi perpajakan menyeluruh di dalam ERP bertujuan untuk:
 1. **Mencapai Kepatuhan Tanpa Gesekan (Frictionless Compliance):** Menghilangkan entri data ulang (*duplicate entry*) antara modul operasional dengan aplikasi pelaporan pajak pemerintah.
@@ -168,7 +168,7 @@ Rangkuman seluruh entri jurnal akuntansi pada skenario kanonikal `PT Maju Bersam
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Dimensi Integrasi | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -179,7 +179,7 @@ Rangkuman seluruh entri jurnal akuntansi pada skenario kanonikal `PT Maju Bersam
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada perancangan arsitektur terintegrasi ERP Naventra, modul perpajakan dirancang dengan pertimbangan arsitektur berikut:
 
@@ -192,7 +192,7 @@ Pada perancangan arsitektur terintegrasi ERP Naventra, modul perpajakan dirancan
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP).
 * Undang-Undang Republik Indonesia No. 42 Tahun 2009 tentang Pajak Pertambahan Nilai dan Perubahannya.

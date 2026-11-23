@@ -4,7 +4,7 @@ title: Taxable Income and Fiscal Reconciliation
 
 # Taxable Income and Fiscal Reconciliation
 
-## Definisi
+## Definition
 
 **Taxable Income and Fiscal Reconciliation (Penghasilan Kena Pajak dan Rekonsiliasi Fiskal)** adalah proses analisis, klasifikasi, dan penyesuaian sistematis di dalam ERP yang mengubah Laba Bersih Komersial Sebelum Pajak (*Commercial Profit Before Tax / Earnings Before Tax*) menjadi Penghasilan Kena Pajak (*Taxable Income* / PKP Fiskal) sesuai ketentuan peraturan perundang-undangan perpajakan yang berlaku.
 
@@ -14,7 +14,7 @@ Perbedaan standar antara Standar Akuntansi Keuangan (SAK/IFRS) dengan hukum perp
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Penerapan mesin rekonsiliasi fiskal di dalam ERP bertujuan untuk:
 1. **Otomatisasi Kertas Kerja Rekonsiliasi Fiskal:** Menyusun formulir rekonsiliasi fiskal tahunan (seperti Lampiran I SPT Tahunan PPh Badan Formulir 1771-I maupun skema pelaporan SPT Tahunan Badan pada Coretax) secara otomatis dari pemetaan akun buku besar.
@@ -134,7 +134,7 @@ $$\text{Penghasilan Kena Pajak (PKP)} = \text{Rp100.000.000} + \text{Rp10.000.00
 
 ---
 
-## Implementasi ERP Universal
+## ERP Implementation
 
 Pada rancangan sistem ERP kelas atas, rekonsiliasi fiskal dijalankan melalui komponen perangkat lunak berikut:
 1. **Tax Tagging & Classification Subledger:** Memungkinkan pemberian label kepatuhan fiskal pada akun buku besar komersial tanpa mengubah struktur Chart of Accounts.
@@ -143,7 +143,7 @@ Pada rancangan sistem ERP kelas atas, rekonsiliasi fiskal dijalankan melalui kom
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Dimensi Rekonsiliasi Fiskal | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -153,7 +153,7 @@ Pada rancangan sistem ERP kelas atas, rekonsiliasi fiskal dijalankan melalui kom
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada arsitektur ERP Naventra, modul rekonsiliasi fiskal dirancang dengan pendekatan tata kelola data berikut:
 
@@ -169,7 +169,7 @@ Pada arsitektur ERP Naventra, modul rekonsiliasi fiskal dirancang dengan pendeka
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 36 Tahun 2008 tentang Pajak Penghasilan beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
 * Peraturan Menteri Keuangan No. 66 Tahun 2023 tentang Perlakuan Pajak Penghasilan atas Penggantian atau Imbalan Sehubungan dengan Pekerjaan atau Jasa yang Diterima atau Diperoleh dalam Bentuk Natura dan/atau Kenikmatan.

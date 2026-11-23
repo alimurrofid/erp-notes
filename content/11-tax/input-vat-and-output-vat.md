@@ -4,7 +4,7 @@ title: Input VAT and Output VAT
 
 # Input VAT and Output VAT
 
-## Definisi
+## Definition
 
 **Input VAT and Output VAT (PPN Masukan dan PPN Keluaran)** adalah dua klasifikasi operasional utama dalam mekanisme Pajak Pertambahan Nilai di dalam sistem ERP yang memisahkan pajak yang dibayar atas perolehan barang/jasa dari pajak yang dipungut atas penyerahan barang/jasa:
 
@@ -13,7 +13,7 @@ title: Input VAT and Output VAT
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Pengelolaan terpisah antara PPN Masukan dan PPN Keluaran bertujuan untuk:
 1. **Mendukung Pengkreditan Pajak yang Sah (Tax Credit Optimization):** Membantu memastikan seluruh PPN Masukan yang memenuhi kriteria substantif dan formal dapat diidentifikasi dan dikreditkan untuk mengurangi arus kas keluar saat penyetoran pajak bulanan.
@@ -76,7 +76,7 @@ Faktur Pajak Masukan tertanggal 15 Januari:
 
 ---
 
-## Dampak Akuntansi (Accounting Impact)
+## Accounting Impact
 
 Perbedaan status keterkreditan PPN Masukan menghasilkan pola pencatatan jurnal yang berbeda di modul General Ledger:
 
@@ -148,7 +148,7 @@ Misalkan tagihan dari `PT Sumber Teknologi` tertanggal 28 Januari baru diterima 
 
 ---
 
-## Implementasi ERP Universal
+## ERP Implementation
 
 Dalam modul Tax Management ERP modern, sistem menyediakan antarmuka khusus pengelolaan faktur:
 1. **Tax Invoice Verification Workbench:** Layanan verifikasi yang memvalidasi berkas faktur masukan rekanan menggunakan sinkronisasi data prapopulasi portal/API Coretax DJP atau pemindaian QR code guna memastikan faktur masukan valid dan belum pernah diunggah sebelumnya (*anti-duplicate check*).
@@ -157,7 +157,7 @@ Dalam modul Tax Management ERP modern, sistem menyediakan antarmuka khusus penge
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Dimensi Fitur | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -168,7 +168,7 @@ Dalam modul Tax Management ERP modern, sistem menyediakan antarmuka khusus penge
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada pengembangan sistem ERP Naventra, pengelolaan PPN Masukan dan Keluaran dirancang dengan mekanisme kendali berikut:
 
@@ -183,7 +183,7 @@ Pada pengembangan sistem ERP Naventra, pengelolaan PPN Masukan dan Keluaran dira
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 42 Tahun 2009 tentang Pajak Pertambahan Nilai dan perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
 * Peraturan Menteri Keuangan No. 131/PMK.03/2024 tentang Perlakuan PPN Sehubungan dengan Berlakunya Tarif PPN 12%.

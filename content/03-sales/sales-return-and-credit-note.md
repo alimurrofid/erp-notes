@@ -38,7 +38,7 @@ flowchart TD
     
     Insp -->|Kondisi Baik / Utuh| Restock["5a. Restock to Active Inventory<br/>(Masuk kembali ke stok jual gudang)"]
     Insp -->|Rusak Parah / Cacat Pabrik| Scrap["5b. Scrap / Quarantine<br/>(Pemusnahan atau klaim ke vendor asal)"]
-    Insp -->|Ditolak (Bukan Kesalahan Penjual)| Reject["5c. Return Rejected<br/>(Barang dikirim balik ke pelanggan)"]
+    Insp -->|"Ditolak (Bukan Kesalahan Penjual)"| Reject["5c. Return Rejected<br/>(Barang dikirim balik ke pelanggan)"]
 
     Restock --> Settle{"(6) Financial Settlement Decision"}
     Scrap --> Settle
@@ -60,7 +60,7 @@ flowchart TD
 
 ---
 
-## Dampak Akuntansi & Jurnal (Accounting Impact)
+## Accounting Impact
 
 Melanjutkan skenario transaksi acuan (penjualan 10 unit *Laptop Pro* @ Rp1.000.000, PPN 11%, COGS Rp700.000/unit):
 * **Kasus**: Pelanggan mengembalikan **1 unit laptop** karena cacat layar, dan disetujui untuk diterbitkan Nota Kredit pemotong piutang.

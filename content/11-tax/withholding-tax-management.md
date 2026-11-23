@@ -4,7 +4,7 @@ title: Withholding Tax Management
 
 # Withholding Tax Management
 
-## Definisi
+## Definition
 
 **Withholding Tax Management (Manajemen Pajak Pemotongan dan Pemungutan / PPh Potput)** adalah tata kelola dan konfigurasi di dalam sistem ERP yang mengatur mekanisme pemotongan atau pemungutan pajak penghasilan di mana satu pihak (biasanya pembeli jasa atau pemberi kerja) memotong sejumlah persentase tertentu dari nilai transaksi pembayaran, membukukan kewajiban utang pajak ke kas negara, serta menerbitkan dokumen bukti pemotongan resmi kepada pihak yang dipotong.
 
@@ -17,7 +17,7 @@ Dalam skema perpajakan Indonesia, mekanisme potong-pungut (*Withholding Tax Sche
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Pengelolaan Withholding Tax di dalam ERP bertujuan untuk:
 1. **Memastikan Pemenuhan Kewajiban Agen Pemungut (Withholding Agent Compliance):** Mencegah risiko denda dan tanggung jawab renteng atas kelalaian pemotongan pajak yang menjadi kewajiban hukum perusahaan.
@@ -84,7 +84,7 @@ $$\text{Kas Dibayar ke Vendor} = \text{DPP Gross-Up} - \text{Nilai PPh} = \text{
 
 ---
 
-## Dampak Akuntansi (Accounting Impact)
+## Accounting Impact
 
 Pencatatan akuntansi pemotongan pajak pada buku besar:
 
@@ -165,7 +165,7 @@ Pencatatan di ERP:
 
 ---
 
-## Implementasi ERP Universal
+## ERP Implementation
 
 Arsitektur modul Withholding Tax dalam ERP modern mencakup:
 1. **Withholding Tax Processing Engine:** Menghitung potongan pajak secara terpisah dari PPN pada saat pencatatan tagihan (*posting invoice*) atau pada saat pembayaran kas (*payment execution*), sesuai kebijakan yurisdiksi.
@@ -174,7 +174,7 @@ Arsitektur modul Withholding Tax dalam ERP modern mencakup:
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Dimensi Withholding Tax | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -185,7 +185,7 @@ Arsitektur modul Withholding Tax dalam ERP modern mencakup:
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada perancangan modul Withholding Tax di ERP Naventra, fitur-fitur berikut diimplementasikan:
 
@@ -200,7 +200,7 @@ Pada perancangan modul Withholding Tax di ERP Naventra, fitur-fitur berikut diim
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 36 Tahun 2008 tentang Pajak Penghasilan beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
 * Peraturan Direktur Jenderal Pajak No. PER-24/PJ/2021 tentang Bentuk dan Tata Cara Pembuatan Bukti Pemotongan/Pemungutan Unifikasi serta SPT Masa PPh Unifikasi.

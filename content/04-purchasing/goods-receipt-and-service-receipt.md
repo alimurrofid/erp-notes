@@ -61,7 +61,7 @@ flowchart TD
     
     Unload --> Inspect{"(4) Quality Inspection (Inspeksi Mutu)<br/>Uji Sampel / Pengecekan Fisik"}
     
-    Inspect -->|Lolos Uji Mutu (100%)| Accept["5a. Accepted: Pindahkan ke Lokasi Rak (Putaway)<br/>Update Kartu Stok & Posting Jurnal Persediaan"]
+    Inspect -->|"Lolos Uji Mutu (100%)"| Accept["5a. Accepted: Pindahkan ke Lokasi Rak (Putaway)<br/>Update Kartu Stok & Posting Jurnal Persediaan"]
     Inspect -->|Sebagian Rusak / Cacat| Split["5b. Parsial: Terima yang Bagus (Accepted)<br/>Karantina yang Rusak (Rejected Quantity)"]
     
     Accept --> ThreeWay["(6) Masuk ke Antrean Verifikasi 3-Way Match"]

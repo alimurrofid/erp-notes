@@ -4,7 +4,7 @@ title: Tax Master Data and Tax Code
 
 # Tax Master Data and Tax Code
 
-## Definisi
+## Definition
 
 **Tax Master Data and Tax Code (Data Master Pajak dan Kode Pajak)** adalah struktur data statis dan konfigurasi inti di dalam ERP yang mendefinisikan seluruh parameter, entitas hukum, tarif, aturan pemotongan/pemungutan, dan pemetaan akun buku besar yang digunakan untuk menjalankan kalkulasi serta kepatuhan perpajakan secara konsisten di seluruh modul transaksi.
 
@@ -12,7 +12,7 @@ Di pusat struktur ini berada **Tax Code (Kode Pajak)**: sebuah pengidentifikasi 
 
 ---
 
-## Tujuan Bisnis (Purpose)
+## Purpose
 
 Pengelolaan Tax Master Data dan Tax Code yang terstruktur bertujuan untuk:
 1. **Standarisasi Kebijakan Fiskal (Tax Policy Standardization):** Memastikan seluruh unit bisnis dan cabang menerapkan perlakuan pajak yang seragam tanpa adanya diskresi manual dari staf entri data.
@@ -139,7 +139,7 @@ flowchart TD
 
 ---
 
-## Dampak Akuntansi (Accounting Impact)
+## Accounting Impact
 
 Data master pajak mengendalikan secara langsung posting jurnal di modul Accounting (Phase 3). 
 
@@ -202,7 +202,7 @@ Jurnal Otomatis yang Dihasilkan Sistem:
 
 ---
 
-## Implementasi ERP Universal
+## ERP Implementation
 
 Arsitektur data master perpajakan modern dibangun dengan prinsip *loosely-coupled master data*:
 1. **Tax Matrix Determination:** Sistem tidak mengharuskan pengguna memilih Tax Code secara manual pada setiap baris transaksi. Sebaliknya, ERP menggunakan matriks penentu (*Determination Matrix*) yang menggabungkan:
@@ -214,7 +214,7 @@ Arsitektur data master perpajakan modern dibangun dengan prinsip *loosely-couple
 
 ---
 
-## Perbandingan Software ERP
+## ERP Implementation Comparison
 
 | Aspek Master Data | Odoo (v16 - v18) | ERPNext (v14 - v15) | Microsoft Dynamics 365 F&O |
 |---|---|---|---|
@@ -225,7 +225,7 @@ Arsitektur data master perpajakan modern dibangun dengan prinsip *loosely-couple
 
 ---
 
-## Pertimbangan Desain Naventra (Naventra Consideration)
+## Naventra Consideration
 
 Pada implementasi ERP Naventra, arsitektur master data perpajakan dibangun dengan fondasi relasional yang kokoh:
 
@@ -248,7 +248,7 @@ Pada implementasi ERP Naventra, arsitektur master data perpajakan dibangun denga
 
 ---
 
-## Referensi
+## References
 
 * Undang-Undang Republik Indonesia No. 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP).
 * Peraturan Pemerintah Republik Indonesia No. 44 Tahun 2022 tentang Penerapan terhadap Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah.

@@ -37,9 +37,9 @@ flowchart TD
     
     Ship --> Decision{"(4) Kesepakatan Komersial Penyelesaian"}
     
-    Decision -->|Opsi A: Potong Saldo Utang| DN["5a. Penerbitan Nota Debet (Debit Note)<br/>Utang Usaha di AP berkurang<br/>PPN Masukan dibatalkan<br/>Persediaan berkurang di neraca"]
+    Decision -->|"Opsi A: Potong Saldo Utang"| DN["5a. Penerbitan Nota Debet (Debit Note)<br/>Utang Usaha di AP berkurang<br/>PPN Masukan dibatalkan<br/>Persediaan berkurang di neraca"]
     
-    Decision -->|Opsi B: Penggantian Barang Baru| Repl["5b. Pengiriman Barang Pengganti (Replacement)<br/>Pemasok kirim barang baru tanpa biaya<br/>Saldo utang di AP tetap utuh"]
+    Decision -->|"Opsi B: Penggantian Barang Baru"| Repl["5b. Pengiriman Barang Pengganti (Replacement)<br/>Pemasok kirim barang baru tanpa biaya<br/>Saldo utang di AP tetap utuh"]
 ```
 
 ---
@@ -58,7 +58,7 @@ Konsep penyesuaian purnajual pada modul Purchasing merupakan sisi cermin (*mirro
 
 ---
 
-## Dampak Akuntansi & Jurnal (Accounting Impact)
+## Accounting Impact
 
 Perlakuan akuntansi atas retur pembelian bergantung pada **kapan retur terjadi**:
 
