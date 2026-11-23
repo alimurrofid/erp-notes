@@ -126,7 +126,9 @@ Hasil fisik menunjukkan 12 unit, sedangkan sistem mencatat 10 unit (kelebihan 2 
 | Akun | Kategori Akun | Debit (Rp) | Kredit (Rp) |
 |---|---|---:|---:|
 | Persediaan Barang Dagang | Asset | 1.400.000 | - |
-| Pendapatan Selisih Lebih Persediaan (*Inventory Gain*) | Revenue / Other Income | - | 1.400.000 |
+| Koreksi Selisih Persediaan (*Inventory Adjustment* — contra expense) | Contra Expense | - | 1.400.000 |
+
+Selisih lebih tidak diakui sebagai pendapatan; IFRS 15 tidak berlaku untuk perbedaan hasil hitung fisik. Jika selisih lebih membalik *write-down* sebelumnya, kreditkan beban *write-down* (IAS 2.33).
 
 ---
 

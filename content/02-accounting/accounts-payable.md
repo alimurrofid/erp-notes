@@ -33,7 +33,7 @@ flowchart TD
 ## Accounting Process & Journal Entries
 
 ### 1. Receiving Accrual: Penerimaan Barang Sebelum Faktur Tiba
-Dalam sistem persediaan perpetual (*perpetual inventory*), ketika barang fisik tiba di gudang sebelum tagihan pemasok diterima, entitas wajib mencatat penambahan aset persediaan diimbangi dengan kewajiban akrual penerimaan barang (*Unbilled Receipt Liability* / IAS 37).
+Dalam sistem persediaan perpetual (*perpetual inventory*), ketika barang fisik tiba di gudang sebelum tagihan pemasok diterima, entitas wajib mencatat penambahan aset persediaan diimbangi dengan kewajiban akrual penerimaan barang (*Unbilled Receipt Liability* / GR-IR accrual). Akrual ini adalah utang usaha, bukan provisi IAS 37: IAS 37.2 mengecualikan item yang diatur standar lain, dan jumlahnya dapat diukur dari dokumen penerimaan.
 
 * **Jurnal (Contoh: Penerimaan 10 unit barang @ Rp700.000)**:
 
@@ -50,7 +50,7 @@ Dalam sistem persediaan perpetual (*perpetual inventory*), ketika barang fisik t
 ### 2. Vendor Bill Verification & AP Recognition (Pengakuan Utang Usaha)
 Ketika tagihan resmi (*invoice*) dan faktur pajak masukan dari pemasok tiba, departemen akuntansi memvalidasi kecocokan 3-arah (*3-way matching*) antara PO, Goods Receipt, dan Vendor Bill.
 
-* **Jurnal (Pengakuan Utang Resmi + PPN Masukan 11% = Rp770.000)**:
+* **Jurnal (Pengakuan Utang Resmi + PPN Masukan efektif 11% = Rp770.000)**:
 
 | Akun | Kategori | Debit (Rp) | Kredit (Rp) |
 |---|---|---:|---:|

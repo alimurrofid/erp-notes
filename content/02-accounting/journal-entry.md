@@ -52,8 +52,8 @@ classDiagram
 * **Voucher / Document Number**: Nomor identifikasi unik dengan format seri berurutan (misal: `JV-2026-09-0012`).
 * **Posting Date vs Document Date**:
   * **Document Date**: Tanggal fisik saat dokumen diterbitkan (misal: tanggal yang tertera pada faktur fisik pemasok, 28 Agustus).
-  * **Posting Date**: Tanggal efektif transaksi memengaruhi buku besar dan laporan keuangan (misal: faktur baru diterima tanggal 5 September, maka posting date dicatat 5 September agar masuk ke periode pembukuan September).
-* **Source Document Reference**: Referensi balik ke dokumen hulu operasional (misal: *Sales Invoice #INV-2026-0042*), menjaga keutuhan jejak audit (lihat [[00-fundamentals/documents-transactions-events|Documents, Transactions, and Business Events]]).
+  * **Posting Date**: Tanggal transaksi memengaruhi buku besar. Periode posting mengikuti periode terjadinya transaksi, bukan tanggal dokumen diterima. Contoh: barang diterima Agustus tetapi faktur baru diterima 5 September → beban diakui Agustus melalui accrual/GR-IR, lalu clearing pada September. Jangan memindahkan beban Agustus ke September hanya karena faktur datang terlambat.
+* **Source Document Reference**: Referensi balik ke dokumen hulu operasional (misal: *Sales Invoice* No. INV-2026-0042), menjaga keutuhan jejak audit (lihat [[00-fundamentals/documents-transactions-events|Documents, Transactions, and Business Events]]).
 * **Narration / Description**: Penjelasan deskriptif mengenai latar belakang transaksi bisnis.
 
 ### Elemen Kunci Lines (Detail Baris)

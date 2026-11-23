@@ -70,7 +70,7 @@ flowchart TD
    * *Cash Flow Forecasting*: Tanggal jatuh tempo PO dan Vendor Bill menjadi dasar bagi manajer keuangan untuk memproyeksikan kebutuhan likuiditas mingguan/bulanan.
    * *Payment Batching*: Pelunasan tagihan diproses secara kolektif (*payment run*) menghasilkan file instruksi transfer bank (*bank disbursement file*).
 4. **Purchasing $\longleftrightarrow$ Tax Engine**:
-   * *PPN Masukan*: Pencatatan Pajak Masukan (PPN 11%) yang dapat dikreditkan berdasarkan Faktur Pajak resmi dari vendor ([[04-purchasing/purchase-tax|Purchase Tax]]).
+   * *PPN Masukan*: Pencatatan Pajak Masukan (PPN efektif 11%) yang dapat dikreditkan berdasarkan Faktur Pajak resmi dari vendor ([[04-purchasing/purchase-tax|Purchase Tax]]).
    * *Withholding Tax (PPh)*: Pemotongan PPh Pasal 23 atas jasa sewa/teknik atau PPh Pasal 22 atas impor barang, menghasilkan Bukti Pemotongan Pajak.
 5. **Purchasing $\longleftrightarrow$ Quality Management (QM)**:
    * Penerimaan barang dialokasikan ke status *Quality Hold / Inspection*. Persediaan baru dapat digunakan setelah lolos uji laboratorium/QC. Jika cacat, memicu proses [[04-purchasing/purchase-return-and-debit-note|Return to Vendor (RTV)]].
@@ -109,7 +109,7 @@ Untuk memastikan kontinuitas pemahaman yang utuh di seluruh modul *erp-notes*, b
 * **Entitas**: PT Maju Bersama (Pembeli) dan PT Sumber Teknologi (Pemasok Terdaftar, PKP).
 * **Komoditas**: 10 unit Komponen Utama Laptop Pro @ Rp700.000.
 * **Dasar Pengenaan Pajak (DPP)**: $10 \times \text{Rp}700.000 = \text{Rp}7.000.000$.
-* **Pajak Pertambahan Nilai (PPN 11%)**: $\text{Rp}770.000$. Total komitmen PO: $\text{Rp}7.770.000$.
+* **Pajak Pertambahan Nilai (PPN efektif 11%)**: $\text{Rp}770.000$. Total komitmen PO: $\text{Rp}7.770.000$.
 * **Term Pembayaran**: Net 30 hari. Valuasi persediaan: *Perpetual Moving Average*.
 
 ---
@@ -118,7 +118,7 @@ Untuk memastikan kontinuitas pemahaman yang utuh di seluruh modul *erp-notes*, b
 
 #### 1. Permintaan dan Pesanan Pembelian (PR & PO)
 * Tim Gudang/Produksi menerbitkan Purchase Requisition `PR-2026-00042` untuk 10 unit Laptop Pro.
-* Setelah disetujui, Procurement menerbitkan Purchase Order `PO-2026-00042` kepada PT Sumber Teknologi senilai total Rp7.770.000 (inklusif PPN 11%).
+* Setelah disetujui, Procurement menerbitkan Purchase Order `PO-2026-00042` kepada PT Sumber Teknologi senilai total Rp7.770.000 (inklusif PPN efektif 11%).
 * **Dampak Akuntansi**: **Tidak ada jurnal akuntansi keuangan**. ERP mencatat komitmen operasional (*open purchase commitment / encumbrance*).
 
 #### 2. Penerimaan Fisik Tahap I — Parsial 6 Unit
@@ -151,7 +151,7 @@ Untuk memastikan kontinuitas pemahaman yang utuh di seluruh modul *erp-notes*, b
 * Bagian AP memposting Vendor Bill.
 * **Jurnal Akuntansi (Vendor Bill)**:
   * *(Dr)* Utang Barang Belum Ditagih (GR/IR Accrual): Rp7.000.000
-  * *(Dr)* Pajak Masukan (PPN Masukan 11%): Rp770.000
+  * *(Dr)* Pajak Masukan (PPN Masukan efektif 11%): Rp770.000
   * *(Cr)* Utang Usaha (Accounts Payable — PT Sumber Teknologi): Rp7.770.000
 * *Hasil*: Akun GR/IR kembali bersaldo nol (nihil). Terbentuk kewajiban utang usaha resmi di subledger PT Sumber Teknologi sebesar Rp7.770.000.
 
@@ -159,9 +159,11 @@ Untuk memastikan kontinuitas pemahaman yang utuh di seluruh modul *erp-notes*, b
 * Pada saat perakitan di lantai pabrik, terdeteksi 1 unit komponen mengalami cacat pabrikasi tersembunyi (*latent defect*).
 * Diterbitkan Return to Vendor `RTV-2026-0003` dan dikirim kembali ke vendor.
 * Bagian AP menerbitkan Debit Note `DN-2026-0001` (lihat [[04-purchasing/purchase-return-and-debit-note|Purchase Return and Debit Note]]) dengan nilai DPP Rp700.000 + PPN Rp77.000 = Rp777.000.
+* Persediaan harus dikeluarkan sebesar nilai perolehannya, yaitu Rp750.000/unit (termasuk landed cost). Selisih Rp50.000 adalah freight yang tidak dapat dipulihkan dari vendor dan dibebankan sebagai kerugian.
 * **Jurnal Akuntansi (Debit Note)**:
   * *(Dr)* Utang Usaha (Accounts Payable — PT Sumber Teknologi): Rp777.000
-  * *(Cr)* Persediaan Barang Dagang: Rp700.000
+  * *(Dr)* Beban Freight Tidak Terpulihkan (Landed-Cost Loss): Rp50.000
+  * *(Cr)* Persediaan Barang Dagang: Rp750.000
   * *(Cr)* Pajak Masukan (Koreksi PPN Masukan): Rp77.000
 * *Hasil*: Saldo utang usaha bersih ke PT Sumber Teknologi berkurang menjadi $\text{Rp}7.770.000 - \text{Rp}777.000 = \text{Rp}6.993.000$.
 

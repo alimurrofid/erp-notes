@@ -115,7 +115,7 @@ $$\text{Transfer ke Finished Goods} = 90 \text{ unit} \times \text{Rp}75.000 = \
 * Dikurangi Saldo Akhir WIP di Neraca = (Rp312.500).
 * **Sisa Saldo Varians yang Ditutup ke P&L**:
   $$\text{Total Unfavorable Variance} = \text{Rp}7.900.000 - \text{Rp}6.750.000 - \text{Rp}312.500 = \mathbf{\text{Rp}837.500}$$
-  *(Rincian varians: Pemborosan Bahan Rp200.000 + Kelebihan Jam Kerja Rp150.000 + Selisih Overhead Rp50.000 + Biaya 5 Unit Scrap Rp437.500 = Rp837.500)*.
+  *(Rincian varians: Pemborosan Bahan Rp200.000 + Varians Tenaga Kerja Rp187.500 + Varians Overhead Rp75.000 + Scrap 5 Unit pada Biaya Standar Rp375.000 = Rp837.500)*.
 
 ---
 

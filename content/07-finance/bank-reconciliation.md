@@ -132,7 +132,7 @@ Pada tanggal 19 Maret 2026, sistem ERP PT Maju Bersama mengimpor berkas CAMT.053
    - Saldo Awal: Rp45.000.000.
    - Mutasi Masuk: Baris 1 (Rp25.000.000, Ref VA: `8830912201-INV-2026-0042`), Baris 2 (Rp15.000.000, Ref: "Setoran Tunai Cabang"), Baris 3 (Rp500.000, Bunga Tabungan).
    - Mutasi Keluar: Baris 4 (Rp25.000, Pajak Bunga).
-   - Saldo Akhir: Rp65.475.000.
+   - Saldo Akhir: Rp85.475.000.
 
 2. **Eksekusi Mesin Pencocokan Otomatis**:
    - **Baris 1 (Rp25.000.000)**: Mencocokkan faktur penjualan PT Mitra Niaga (`INV-2026-0042`) dengan presisi 100% via Virtual Account. Status: **Auto-Reconciled**. Faktur penjualan di-clear, status pembayaran menjadi *Paid*, limit kredit pelanggan kembali pulih.
@@ -140,7 +140,7 @@ Pada tanggal 19 Maret 2026, sistem ERP PT Maju Bersama mengimpor berkas CAMT.053
    - **Baris 3 & 4 (Bunga Rp500.000 & Pajak Rp25.000)**: Terdeteksi kode transaksi bank *Interest* & *Withholding Tax*. Sistem otomatis mengeksekusi aturan *Bank Rule Template* untuk memposting pendapatan bunga dan beban pajak bunga.
 
 3. **Hasil Akhir Rekonsiliasi Harian**:
-   - 3 dari 4 baris transaksi (75% volume, 50% nominal) selesai terekonsiliasi otomatis tanpa intervensi manual (STP).
+   - 3 dari 4 baris transaksi (75% volume, 63% nominal) selesai terekonsiliasi otomatis tanpa intervensi manual (STP).
    - 1 item eksepsi masuk antrean investigasi dengan batas waktu penyelesaian maksimal $1 \times 24$ jam.
 
 ---
