@@ -8,7 +8,14 @@
     "quartz": "./quartz/bootstrap-cli.mjs",
     "build": "npx quartz build",
     "serve": "npx quartz build --serve",
-    "check": "tsc --noEmit"
+    "check": "tsc --noEmit",
+    "check:links": "node .agents/scripts/check-links.mjs",
+    "check:frontmatter": "node .agents/scripts/check-frontmatter.mjs",
+    "check:mermaid": "node .agents/scripts/check-mermaid.mjs",
+    "check:refs": "node .agents/scripts/check-references.mjs",
+    "check:refs:strict": "node .agents/scripts/check-references.mjs --strict",
+    "check:structure": "node .agents/scripts/check-structure.mjs",
+    "check:content": "npm run check:links && npm run check:frontmatter && npm run check:mermaid && npm run check:structure && npm run check:refs"
   },
   "engines": {
     "npm": ">=10.9.2",

@@ -1,0 +1,42 @@
+name: Validate content
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check internal links
+        run: node .agents/scripts/check-links.mjs
+
+      - name: Check frontmatter
+        run: node .agents/scripts/check-frontmatter.mjs
+
+      - name: Check Mermaid syntax
+        run: node .agents/scripts/check-mermaid.mjs
+
+      - name: Check article structure
+        run: node .agents/scripts/check-structure.mjs
+
+      - name: Report reference traceability
+        run: node .agents/scripts/check-references.mjs
+
+      - name: Build Quartz
+        run: npx quartz build
