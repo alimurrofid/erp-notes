@@ -154,7 +154,7 @@ Menghadapi fluktuasi harga semikonduktor global pada Kuartal II 2026, FP&A Contr
 | Komponen Laba Rugi | Baseline Case (IDR) | Downside Case (IDR) | Dampak Varian (IDR) |
 | :--- | :--- | :--- | :--- |
 | **Pendapatan Penjualan** | 1.200.000.000 | 1.080.000.000 | -120.000.000 (-10%) |
-| **Harga Pokok Penjualan (COGS)** | 950.000.000 | 927.000.000 | +23.000.000 (Efisiensi unit turun) |
+| **Harga Pokok Penjualan (COGS)** | 950.000.000 | 927.000.000 | −23.000.000 (COGS turun karena volume lebih rendah, bukan efisiensi) |
 | **Laba Kotor (Gross Profit)** | 250.000.000 | 153.000.000 | -97.000.000 (-38,8%) |
 | *Gross Profit Margin* | *20,83%* | *14,17%* | *-6,66% margin contraction* |
 | **Beban Operasional Tetap** | 100.000.000 | 100.000.000 | 0 |

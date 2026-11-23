@@ -8,7 +8,7 @@ title: Financial Controls & Governance
 
 **Financial Controls & Governance** dalam arsitektur ERP adalah kerangka kerja sistemik terintegrasi yang terdiri dari kebijakan, aturan bisnis otomatis (*automated validation checks*), matriks pemisahan fungsi (*Segregation of Duties - SoD*), alur persetujuan bertingkat (*Delegation of Authority*), dan jejak audit digital (*immutable audit trails*). Tujuannya adalah mengamankan aset perusahaan, mencegah kecurangan (*fraud*), memastikan integritas laporan keuangan, dan mematuhi regulasi perundang-undangan.
 
-Sistem pengendalian internal dalam ERP modern merujuk pada standar **COSO Internal Control — Integrated Framework**, yang mengkategorikan kontrol ke dalam tiga lini pertahanan operasional:
+Sistem pengendalian internal dalam ERP modern merujuk pada **COSO Internal Control — Integrated Framework** untuk desain kontrol, dan **Three Lines Model (IIA)** untuk pembagian peran pertahanan operasional:
 
 ```mermaid
 flowchart TD

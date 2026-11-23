@@ -86,7 +86,7 @@ Nilai Lama     : Rp 8.500.000 (Delapan Juta Lima Ratus Ribu Rupiah)
 Nilai Baru     : Rp 10.000.000 (Sepuluh Juta Rupiah)
 Dokumen Acuan  : Surat Keputusan Promosi Direksi No. PROM-2026-0012
 Penyetuju Sah  : EMP-2020-0001 (Chief Human Resources Officer)
-Status Log     : COMMITTED & LOCKED (Hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4)
+Status Log     : COMMITTED & LOCKED (Hash: 7c9e2a1b — ilustrasi, bukan hash produksi)
 ================================================================================
 ```
 
