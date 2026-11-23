@@ -35,10 +35,10 @@ flowchart TD
     E["Subkontraktor & Cloud (Procurement Cost)"] --> D
     F["Hardware & Material (Material Cost)"] --> D
     G["Transportasi & Akomodasi (Travel Expenses)"] --> D
-    D --> H["Total Biaya Langsung Proyek (Actual Cost: Rp181.000.000)"]
-    B & H --> I["Kalkulasi Gross Project Margin (Rp119.000.000 / 39,67%)"]
+    D --> H["Total Biaya Langsung Proyek (Actual Cost: Rp182.600.000)"]
+    B & H --> I["Kalkulasi Gross Project Margin (Rp117.400.000 / 39,13%)"]
     J["Beban Overhead Korporasi / Fasilitas"] --> K["Alokasi Overhead ke Proyek (Cost Allocation: Rp30.000.000)"]
-    I & K --> L["Kalkulasi Net Project Profit (Rp89.000.000 / 29,67%)"]
+    I & K --> L["Kalkulasi Net Project Profit (Rp87.400.000 / 29,13%)"]
     L --> M["Project Profitability Dashboard & Executive Reporting"]
 ```
 
@@ -103,19 +103,19 @@ Meneruskan skenario kanonik proyek `PRJ-ERP-2026-001` untuk pelanggan `PT Maju B
 | Elemen Finansial | Anggaran Rencana (Planned) | Realisasi Aktual (Actual) | Varians Nominal | Status Varians |
 | :--- | :--- | :--- | :--- | :--- |
 | **Pendapatan Proyek (Revenue)** | Rp300.000.000 | Rp300.000.000 | Rp0 | Sesuai Kontrak |
-| **Biaya Tenaga Kerja (Labor)** | (Rp100.000.000) | (Rp90.000.000) | +Rp10.000.000 | Favorable (Hemat 80 Jam) |
+| **Biaya Tenaga Kerja (Labor)** | (Rp100.000.000) | (Rp91.600.000) | +Rp8.400.000 | Favorable (Hemat 80 Jam) |
 | **Biaya Pengadaan (Procurement)** | (Rp60.000.000) | (Rp55.000.000) | +Rp5.000.000 | Favorable (Efisiensi Vendor) |
 | **Biaya Material Jaringan (Material)** | (Rp30.000.000) | (Rp28.000.000) | +Rp2.000.000 | Favorable (Retur Sisa Kabel) |
 | **Biaya Perjalanan & Lainnya (Expenses)** | (Rp10.000.000) | (Rp8.000.000) | +Rp2.000.000 | Favorable (Efisiensi Akomodasi) |
-| **Total Biaya Langsung (Direct Cost)** | **(Rp200.000.000)** | **(Rp181.000.000)** | **+Rp19.000.000** | **Favorable / Under Budget** |
-| **Gross Project Margin (Rp)** | **Rp100.000.000** | **Rp119.000.000** | **+Rp19.000.000** | **Ekspansi Margin** |
-| **Gross Project Margin (%)** | **33,33%** | **39,67%** | **+6,34%** | **Kinerja Sangat Baik** |
+| **Total Biaya Langsung (Direct Cost)** | **(Rp200.000.000)** | **(Rp182.600.000)** | **+Rp17.400.000** | **Favorable / Under Budget** |
+| **Gross Project Margin (Rp)** | **Rp100.000.000** | **Rp117.400.000** | **+Rp17.400.000** | **Ekspansi Margin** |
+| **Gross Project Margin (%)** | **33,33%** | **39,13%** | **+5,80%** | **Kinerja Sangat Baik** |
 | **Alokasi Overhead Korporat (10%)** | (Rp30.000.000) | (Rp30.000.000) | Rp0 | Sesuai Kebijakan |
 | **Net Project Profit (Rp)** | **Rp70.000.000** | **Rp89.000.000** | **+Rp19.000.000** | **Laba Bersih Meningkat** |
-| **Net Project Margin (%)** | **23,33%** | **29,67%** | **+6,34%** | **Laba Bersih 29,67%** |
+| **Net Project Margin (%)** | **23,33%** | **29,13%** | **+5,80%** | **Laba Bersih 29,13%** |
 
 ### 2. Analisis Kinerja Margin
-- Proyek berhasil meningkatkan *Gross Margin* dari target awal **33,33%** menjadi **39,67%** (kenaikan bersih sebesar **6,34 poin persentase**).
+- Proyek berhasil meningkatkan *Gross Margin* dari target awal **33,33%** menjadi **39,13%** (kenaikan bersih sebesar **5,80 poin persentase**).
 - Penghematan total biaya langsung sebesar **Rp19.000.000** secara utuh mengalir menjadi penambahan laba bersih proyek, menghasilkan *Net Project Profit* sebesar **Rp89.000.000**.
 
 ---

@@ -68,7 +68,7 @@ ERP mengelola status lembar kerja melalui tahapan alur kerja berikut:
 stateDiagram-v2
     [*] --> Draft: Staf Input Jam Kerja Harian
     Draft --> Submitted: Submit Lembar Kerja Mingguan
-    Submitted --> Rejected: PM Menolak (Alasan: Tidak Sesuai Spek)
+    Submitted --> Rejected: PM Menolak — alasan tidak sesuai spesifikasi
     Rejected --> Draft: Staf Memperbaiki Data
     Submitted --> Approved: PM Menyetujui Jam Kerja
     Approved --> Posted: Posting Jurnal Biaya ke GL
@@ -155,13 +155,13 @@ Pada proyek **Implementasi ERP Naventra** (`PRJ-ERP-2026-001`), target rencana a
 | **Senior Solution Architect** | Budi Santoso | 300 Jam | 280 Jam | -20 Jam | Rp120.000 / jam | 33.600.000 |
 | **Technical Consultant / Dev** | Rizky Pratama | 400 Jam | 360 Jam | -40 Jam | Rp75.000 / jam | 27.000.000 |
 | **QA Lead** | Siti Rahma | 100 Jam | 100 Jam | 0 Jam | Rp40.000 / jam | 4.000.000 |
-| **TOTAL** | **4 Personel** | **1.000 Jam** | **920 Jam** | **-80 Jam** | — | **Rp90.000.000** |
+| **TOTAL** | **4 Personel** | **1.000 Jam** | **920 Jam** | **-80 Jam** | — | **Rp91.600.000** |
 
 ### 2. Analisis Efisiensi Biaya Tenaga Kerja (Labor Cost Variance)
 - **Planned Labor Cost**: **Rp100.000.000** (1.000 jam).
-- **Actual Labor Cost**: **Rp90.000.000** (920 jam).
+- **Actual Labor Cost**: **Rp91.600.000** (920 jam).
 - **Varian Tenaga Kerja (*Favorable Variance*)**:
-  $$\text{Labor Variance} = \text{Rp100.000.000} - \text{Rp90.000.000} = \mathbf{+Rp10.000.000 \text{ (Hemat 10\%)}}$$
+  $$\text{Labor Variance} = \text{Rp100.000.000} - \text{Rp91.600.000} = \mathbf{+Rp8.400.000 \text{ (Hemat 8,4\%)}}$$
 - Penyebab: Tingkat keahlian konsultan senior yang tinggi memungkinkan fase konfigurasi inti dan migrasi data diselesaikan 80 jam lebih cepat dari estimasi konservatif awal tanpa mengurangi mutu deliverable.
 
 ---

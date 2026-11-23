@@ -51,7 +51,7 @@ ERP membagi seluruh pengeluaran proyek ke dalam lima kategori komponen biaya sta
 
 | Kategori Biaya (CBS) | Karakteristik Operasional | Dokumen Sumber Transaksi | Contoh Kasus (Proyek ERP Naventra) |
 | :--- | :--- | :--- | :--- |
-| **1. Direct Labor Cost (Tenaga Kerja Langsung)** | Biaya waktu kerja staf internal yang dicurahkan langsung untuk mengerjakan deliverable proyek. | Lembar kerja mingguan (*Approved Timesheet*). | 920 jam kerja tim konsultan & arsitek solusi = **Rp90.000.000**. |
+| **1. Direct Labor Cost (Tenaga Kerja Langsung)** | Biaya waktu kerja staf internal yang dicurahkan langsung untuk mengerjakan deliverable proyek. | Lembar kerja mingguan (*Approved Timesheet*). | 920 jam kerja tim konsultan & arsitek solusi = **Rp91.600.000**. |
 | **2. Procurement & Subcontracting (Subkontrak)** | Pengadaan jasa tenaga ahli spesialis eksternal, lisensi proprietary, atau pihak ketiga. | Pesanan Pembelian Jasa (*Service PO*) & Faktur Vendor. | Jasa instalasi infrastruktur cloud & lisensi database = **Rp55.000.000**. |
 | **3. Material & Equipment (Bahan & Perangkat)** | Barang berwujud fisik yang dibeli atau ditarik dari gudang persediaan untuk dipasang di lokasi proyek. | Surat Bukti Pengeluaran Barang (*Goods Issue*) & PO Material. | Pengadaan server mikro cadangan & kabel jaringan = **Rp28.000.000**. |
 | **4. Direct Expenses / T&E (Perjalanan & Lapangan)** | Pengeluaran incidental staf untuk transportasi, hotel, perizinan lokasi, dan konsumsi rapat klien. | Formulir Klaim Beban (*Expense Claim Report*) & Bukti Kuitansi. | Biaya tiket pesawat dan hotel tim teknis ke pabrik klien = **Rp8.000.000**. |
@@ -123,13 +123,13 @@ Pada penutupan proyek **Implementasi ERP Naventra** (`PRJ-ERP-2026-001`), rekons
 
 | Kategori Biaya Proyek (CBS) | Estimasi Rencana (Planned) | Realisasi Aktual (Actual) | Varian Biaya (IDR) | Status Varian |
 | :--- | :--- | :--- | :--- | :--- |
-| **1. Direct Labor (920 jam kerja tim)** | Rp100.000.000 | Rp90.000.000 | +Rp10.000.000 | Favorable (Hemat 10%) |
+| **1. Direct Labor (920 jam kerja tim)** | Rp100.000.000 | Rp91.600.000 | +Rp8.400.000 | Favorable (Hemat 8,4%) |
 | **2. Procurement (Vendor Subkontrak)** | Rp60.000.000 | Rp55.000.000 | +Rp5.000.000 | Favorable (Hemat 8,3%) |
 | **3. Material (Server & Hardware)** | Rp30.000.000 | Rp28.000.000 | +Rp2.000.000 | Favorable (Hemat 6,7%) |
 | **4. Direct Other / Travel Expenses** | Rp10.000.000 | Rp8.000.000 | +Rp2.000.000 | Favorable (Hemat 20%) |
-| **TOTAL BIAYA PROYEK** | **Rp200.000.000** | **Rp181.000.000** | **+Rp19.000.000** | **Favorable (Hemat 9,5%)** |
+| **TOTAL BIAYA PROYEK** | **Rp200.000.000** | **Rp182.600.000** | **+Rp17.400.000** | **Favorable (Hemat 8,7%)** |
 
-*Verifikasi Nilai: Total Biaya Rencana ($\mathbf{Rp200.000.000}$) dan Total Biaya Aktual ($\mathbf{Rp181.000.000}$) konsisten secara mutlak dengan baseline skenario kanonikal repositori.*
+*Verifikasi Nilai: Total Biaya Rencana ($\mathbf{Rp200.000.000}$) dan Total Biaya Aktual ($\mathbf{Rp182.600.000}$) konsisten dengan baseline skenario kanonikal repositori.*
 
 ---
 

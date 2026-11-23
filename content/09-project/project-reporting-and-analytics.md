@@ -80,9 +80,9 @@ Meneruskan skenario kanonik proyek `PRJ-ERP-2026-001` untuk pelanggan `PT Maju B
 | **Durasi Proyek** | 184 Hari Kalender | 184 Hari Kalender | 0 Hari | Tepat Waktu (On-Time) |
 | **Jam Kerja Konsultan** | 1.000 Jam | 920 Jam | +80 Jam Hemat | 92% Efisiensi Waktu |
 | **Nilai Pendapatan** | Rp300.000.000 | Rp300.000.000 | Rp0 | 100% Ditagihkan & Lunas |
-| **Pagu Anggaran Disetujui** | Rp250.000.000 | Rp181.000.000 Konsumsi | Rp69.000.000 Sisa | 72,4% Penyerapan Anggaran |
-| **Total Biaya Langsung** | Rp200.000.000 | Rp181.000.000 | +Rp19.000.000 | Favorable (Hemat Biaya) |
-| **Gross Margin Proyek** | Rp100.000.000 (33,33%) | Rp119.000.000 (39,67%) | +Rp19.000.000 (+6,34%) | Ekspansi Margin Laba |
+| **Pagu Anggaran Disetujui** | Rp250.000.000 | Rp182.600.000 Konsumsi | Rp67.400.000 Sisa | 73,0% Penyerapan Anggaran |
+| **Total Biaya Langsung** | Rp200.000.000 | Rp182.600.000 | +Rp17.400.000 | Favorable (Hemat Biaya) |
+| **Gross Margin Proyek** | Rp100.000.000 (33,33%) | Rp117.400.000 (39,13%) | +Rp17.400.000 (+5,80%) | Ekspansi Margin Laba |
 | **Cost Performance Index (CPI)** | 1,00 | 1,105 | +0,105 | Sangat Efisien (Green) |
 | **Schedule Performance Index (SPI)** | 1,00 | 1,00 | 0,00 | Tepat Jadwal (Green) |
 | **Status Kesehatan Proyek** | Normal | **GREEN** | Optimal | Sukses Penuh |
@@ -110,7 +110,7 @@ Nilai Finansial
 
 *Interpretasi Kurva-S*:
 - Garis **PV** (*Planned Value*) dan **EV** (*Earned Value*) bertemu pada angka Rp200.000.000 saat proyek mencapai penyelesaian 100% tepat pada bulan ke-6.
-- Garis **AC** (*Actual Cost*) berada konsisten di bawah garis EV, berakhir di nominal **Rp181.000.000**, mencerminkan efisiensi biaya nyata sebesar Rp19.000.000 (*favorable cost variance*).
+- Garis **AC** (*Actual Cost*) berada konsisten di bawah garis EV, berakhir di nominal **Rp182.600.000**, mencerminkan efisiensi biaya nyata sebesar Rp17.400.000 (*favorable cost variance*).
 
 > [!NOTE]
 > **Verifikasi Kinerja Jadwal (SPI vs Kalender Riil)**:

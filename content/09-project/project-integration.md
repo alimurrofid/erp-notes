@@ -60,8 +60,8 @@ sequenceDiagram
     PM->>Fin: Pembekuan Baseline Biaya Rencana (Rp200.000.000)
 
     rect rgb(240, 248, 255)
-        note over PM,Acct: Eksekusi Operasional & Akumulasi Biaya Aktual (Rp181.000.000)
-        PM->>Acct: 920 Jam Kerja Konsultan via Timesheet (Debit WIP: Rp90.000.000)
+        note over PM,Acct: Eksekusi Operasional & Akumulasi Biaya Aktual (Rp182.600.000)
+        PM->>Acct: 920 Jam Kerja Konsultan via Timesheet (Debit WIP: Rp91.600.000)
         PM->>Proc: PR/PO Subkon & Cloud (Account Assignment WBS PRJ-03)
         Proc->>Acct: SES & Vendor Bill Terverifikasi (Debit WIP: Rp55.000.000)
         PM->>Inv: Reservasi & Pengeluaran Hardware Jaringan (Debit WIP: Rp30.000.000)
@@ -73,7 +73,7 @@ sequenceDiagram
         note over Client,Acct: Penagihan Milestone & Pengakuan Pendapatan (Rp300.000.000)
         PM->>Client: Penyelesaian Milestone 1 - 4 & Penandatanganan BAST 1 - 4
         PM->>Sales: Pemicu Penagihan Berbasis Milestone Sign-Off
-        Sales->>Client: Penerbitan Faktur Termin (100% = Rp300.000.000 + PPN 11%)
+        Sales->>Client: Penerbitan Faktur Termin (100% = Rp300.000.000 + PPN efektif 11%)
         Client->>Fin: Pelunasan Pembayaran Bank (Rp333.000.000 Lunas)
         Sales->>Acct: Pengakuan Pendapatan Sesuai IFRS 15 (Kredit Revenue: Rp300.000.000)
     end
@@ -91,25 +91,25 @@ sequenceDiagram
 1. **Dimensi Komersial (Pendapatan & Kas Masuk)**:
    - Nilai Kontrak Komersial: **Rp300.000.000**
    - Total Difakturkan: **Rp300.000.000** ($100\%$)
-   - Pajak Pertambahan Nilai (PPN 11%): **Rp33.000.000**
+   - Pajak Pertambahan Nilai (PPN efektif 11%): **Rp33.000.000**
    - Total Piutang Tertagih & Kas Masuk: **Rp333.000.000**
 2. **Dimensi Tata Kelola Anggaran (Finance)**:
    - Pagu Anggaran Disetujui (*Approved Budget*): **Rp250.000.000**
-   - Batas Ketersediaan Anggaran Terpakai: **Rp181.000.000** ($72,4\%$)
-   - Sisa Anggaran Tidak Terpakai (*Unused Budget Reserve*): **Rp69.000.000**
+   - Batas Ketersediaan Anggaran Terpakai: **Rp182.600.000** ($73,0\%$)
+   - Sisa Anggaran Tidak Terpakai (*Unused Budget Reserve*): **Rp67.400.000**
 3. **Dimensi Pengendalian Biaya Operasional (Cost Management)**:
    - Estimasi Rencana Biaya (*Baseline Planned Cost*): **Rp200.000.000**
-   - Biaya Aktual Terealisasi (*Actual Cost Incurred*): **Rp181.000.000**
-     - Biaya Tenaga Kerja (*Labor Cost* - 920 jam): Rp90.000.000
+   - Biaya Aktual Terealisasi (*Actual Cost Incurred*): **Rp182.600.000**
+     - Biaya Tenaga Kerja (*Labor Cost* - 920 jam): Rp91.600.000
      - Biaya Pengadaan (*Procurement Cost* - Subkon & Cloud): Rp55.000.000
      - Biaya Material (*Material Cost* - Hardware & Kabel): Rp28.000.000
      - Biaya Perjalanan & Operasional (*Expenses*): Rp8.000.000
-   - Varians Biaya Bersih (*Net Cost Variance*): **+Rp19.000.000** (*Favorable / Under Budget*)
+   - Varians Biaya Bersih (*Net Cost Variance*): **+Rp17.400.000** (*Favorable / Under Budget*)
 4. **Dimensi Profitabilitas (P&L)**:
    - Pendapatan Diakui: **Rp300.000.000**
-   - Beban Pokok Pendapatan (COGS setelah settlement WIP): **(Rp181.000.000)**
-   - **Gross Project Margin Realisasi**: **Rp119.000.000** (**39,67%**)
-   - Ekspansi Margin vs Target Awal: **+6,34 poin persentase** (dari target awal 33,33%)
+   - Beban Pokok Pendapatan (COGS setelah settlement WIP): **(Rp182.600.000)**
+   - **Gross Project Margin Realisasi**: **Rp117.400.000** (**39,13%**)
+   - Ekspansi Margin vs Target Awal: **+5,80 poin persentase** (dari target awal 33,33%)
 
 > [!NOTE]
 > **Catatan Asumsi & Kebijakan Akuntansi Skenario**:

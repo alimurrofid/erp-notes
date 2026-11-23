@@ -123,7 +123,7 @@ Meneruskan skenario kanonik proyek `PRJ-ERP-2026-001` untuk pelanggan `PT Maju B
 
 - **Kasus**: Klien sempat mengajukan usulan penambahan modul kustomisasi pelaporan pajak khusus di luar ruang lingkup blueprint awal.
 - **Hasil Evaluasi CCB**: Usulan perubahan dinilai akan memundurkan jadwal *Go-Live* sebesar 2 minggu dan menambah biaya tenaga kerja Rp15.000.000.
-- **Keputusan**: Klien dan pelaksana sepakat menunda perubahan tersebut ke Fase 2 pasca *Go-Live*, sehingga ruang lingkup awal proyek `PRJ-ERP-2026-001` tetap terkendali pada pagu anggaran awal (Rp250.000.000) dan berhasil diselesaikan dengan biaya aktual Rp181.000.000.
+- **Keputusan**: Klien dan pelaksana sepakat menunda perubahan tersebut ke Fase 2 pasca *Go-Live*, sehingga ruang lingkup awal proyek `PRJ-ERP-2026-001` tetap terkendali pada pagu anggaran awal (Rp250.000.000) dan berhasil diselesaikan dengan biaya aktual Rp182.600.000.
 
 ---
 

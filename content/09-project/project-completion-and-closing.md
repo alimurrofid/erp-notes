@@ -38,7 +38,7 @@ flowchart TD
     C --> E["Verifikasi Pengadaan (Open PO = 0 & 3-Way Match)"]
     C --> F["Verifikasi Persediaan (Sisa Material Dikembalikan)"]
     C --> G["Penerbitan Faktur Terakhir (Invoiced = 100%)"]
-    D & E & F & G --> H["Rekonsiliasi Biaya Aktual (Actual Cost: Rp181.000.000)"]
+    D & E & F & G --> H["Rekonsiliasi Biaya Aktual (Actual Cost: Rp182.600.000)"]
     H --> I["Jurnal Penyelesaian Finansial (Final WIP Settlement)"]
     I --> J["Kredit Saldo WIP & Debit COGS / Asset"]
     J --> K["Saldo Akun Perantara Proyek = Rp0"]
@@ -87,23 +87,23 @@ Biaya perbaikan atau pendampingan yang timbul selama masa garansi (*hypercare pe
 Pencatatan akuntansi penutupan proyek berfokus pada penyelesaian akhir saldo akumulasi biaya (*Work-in-Progress Settlement*):
 
 ### 1. Sebelum Penutupan (Kondisi Akun Proyek Berjalan)
-Selama proyek dieksekusi, seluruh biaya operasional (tenaga kerja Rp90M, pengadaan Rp55M, material Rp28M, biaya lain Rp8M) terakumulasi di akun neraca:
-- **Saldo Debit Akun Work-in-Progress (WIP) Proyek**: Rp181.000.000
+Selama proyek dieksekusi, seluruh biaya operasional (tenaga kerja Rp91,6M, pengadaan Rp55M, material Rp28M, biaya lain Rp8M) terakumulasi di akun neraca:
+- **Saldo Debit Akun Work-in-Progress (WIP) Proyek**: Rp182.600.000
 
 ### 2. Jurnal Penyelesaian Finansial Akhir (Contoh Skenario: Final WIP Settlement to COGS)
 
 Pada skenario pembelajaran proyek pelanggan ini, saldo akun perantara WIP dikreditkan menjadi Rp0 pada saat penutupan dan direklasifikasi secara definitif sebagai Harga Pokok Penjualan (COGS) pada Laporan Laba Rugi:
 
 $$\begin{array}{llrr}
-\text{Debit:} & \text{Cost of Goods Sold (HPP Proyek Pelanggan)} & \text{Rp181.000.000} & \\
-\text{Kredit:} & \text{Work-in-Progress (WIP) Proyek} & & \text{Rp181.000.000}
+\text{Debit:} & \text{Cost of Goods Sold (HPP Proyek Pelanggan)} & \text{Rp182.600.000} & \\
+\text{Kredit:} & \text{Work-in-Progress (WIP) Proyek} & & \text{Rp182.600.000}
 \end{array}$$
 
 *Kondisi Pasca Jurnal*:
 - Saldo Akun WIP Proyek: **Rp0** (Bersih / *Zero Balance*).
-- Saldo Beban HPP Proyek di Laba Rugi: **Rp181.000.000**.
+- Saldo Beban HPP Proyek di Laba Rugi: **Rp182.600.000**.
 - Pendapatan Proyek yang Diakui di Laba Rugi: **Rp300.000.000**.
-- Laba Kotor Terealisasi: $\text{Rp300.000.000} - \text{Rp181.000.000} = \mathbf{Rp119.000.000}$.
+- Laba Kotor Terealisasi: $\text{Rp300.000.000} - \text{Rp182.600.000} = \mathbf{Rp117.400.000}$.
 
 > [!NOTE]
 > **Caveat Kebijakan Akuntansi & IFRS 15 / PSAK 72**:
@@ -118,8 +118,8 @@ $$\begin{array}{llrr}
 
 Meneruskan skenario kanonik proyek `PRJ-ERP-2026-001` untuk pelanggan `PT Maju Bersama`:
 
-- **Nilai Kontrak Proyek**: Rp300.000.000 (asumsi PPN 11% untuk permodelan pembelajaran)
-- **Total Biaya Aktual**: Rp181.000.000
+- **Nilai Kontrak Proyek**: Rp300.000.000 (asumsi PPN efektif 11% untuk permodelan pembelajaran)
+- **Total Biaya Aktual**: Rp182.600.000
 - **Tanggal Go-Live Sukses**: 31 Oktober 2026 (Sesuai target rencana *Baseline Schedule* 184 hari kalender; administrasi penutupan & serah terima formal diselesaikan awal November 2026)
 
 ### Checklist Penutupan Proyek pada ERP Naventra
@@ -135,7 +135,7 @@ Meneruskan skenario kanonik proyek `PRJ-ERP-2026-001` untuk pelanggan `PT Maju B
 | **Akuntansi Finansial** | Final WIP Settlement to COGS | **Lolos (Passed)** | Jurnal penyelesaian Rp181M diposting, saldo WIP = Rp0 |
 | **Status Sistem** | Pembaruan Status Proyek Akhir | **Selesai (Closed)** | Status sistem diubah ke `Closed` (CLSD) |
 
-Dengan selesainya checklist ini, proyek `PRJ-ERP-2026-001` secara resmi ditutup dengan margin laba kotor sebesar **Rp119.000.000 (39,67%)**. Layanan pendampingan selanjutnya dipindahkan ke tiket kontrak SLA (*Service Level Agreement*).
+Dengan selesainya checklist ini, proyek `PRJ-ERP-2026-001` secara resmi ditutup dengan margin laba kotor sebesar **Rp117.400.000 (39,13%)**. Layanan pendampingan selanjutnya dipindahkan ke tiket kontrak SLA (*Service Level Agreement*).
 
 ---
 

@@ -77,7 +77,7 @@ flowchart TD
 7. **[[09-project/timesheet-and-effort-tracking|Timesheet and Effort Tracking]]**  
    Perekaman jam kerja riil konsultan; perbedaan fundamental *Timesheet* proyek dengan absensi penggajian umum (*Payroll Attendance*); mekanisme *dual-posting* (akrual biaya tenaga kerja langsung ke WBS dan pemenuhan kuantitas tagihan pelanggan); siklus hidup approval timesheet; serta realisasi 920 jam kerja kanonik.
 8. **[[09-project/project-cost-management|Project Cost Management]]**  
-   Struktur rincian biaya (*Cost Breakdown Structure* - CBS); kategorisasi biaya langsung (Tenaga Kerja, Pengadaan, Material, Biaya Perjalanan & *Expenses*); pengumpulan biaya riil ke WBS; perbandingan estimasi rencana (Rp200.000.000) vs realisasi riil (Rp181.000.000); serta analisis varians hemat (+Rp19.000.000).
+   Struktur rincian biaya (*Cost Breakdown Structure* - CBS); kategorisasi biaya langsung (Tenaga Kerja, Pengadaan, Material, Biaya Perjalanan & *Expenses*); pengumpulan biaya riil ke WBS; perbandingan estimasi rencana (Rp200.000.000) vs realisasi riil (Rp182.600.000); serta analisis varians hemat (+Rp17.400.000).
 9. **[[09-project/project-budget-and-cost-control|Project Budget and Cost Control]]**  
    Pembedaan pagu anggaran (*Approved Budget*) dengan estimasi biaya teknis (*Cost Plan*); mekanisme kontrol ketersediaan dana aktif (*Availability Control* - AVC); pemantauan komitmen pengadaan terbuka (*Commitment Tracking*); toleransi *soft warning* vs *hard stop*; serta analisis Earned Value Management (*PV, EV, AC, CV, SV, CPI, SPI*).
 10. **[[09-project/project-procurement|Project Procurement]]**  
@@ -89,7 +89,7 @@ flowchart TD
 12. **[[09-project/project-billing-and-revenue|Project Billing and Revenue]]**  
     Metode penagihan komersial (Fixed Price/Milestone, T&M, Cost Plus, Progress PoC); pembedaan tegas antara Penagihan Faktur (*Billing / Cash Schedule*) dengan Pengakuan Pendapatan Statutori (*IFRS 15 / PSAK 72 Revenue Recognition*); pengelolaan saldo *Contract Asset* (Unbilled Revenue) dan *Contract Liability* (Deferred Revenue); serta jadwal 4 termin kanonik senilai Rp300.000.000.
 13. **[[09-project/project-profitability|Project Profitability]]**  
-    Analisis laba rugi mini proyek (*Project Mini-P&L*); perbandingan margin rencana vs margin aktual; kalkulasi *Gross Project Margin* (Rp119.000.000 / 39,67%); analisis ekspansi margin (+6,34%); pembebanan alokasi *indirect overhead* korporat; dan evaluasi tingkat realisasi penagihan (*Billing Realization Rate*).
+    Analisis laba rugi mini proyek (*Project Mini-P&L*); perbandingan margin rencana vs margin aktual; kalkulasi *Gross Project Margin* (Rp117.400.000 / 39,13%); analisis ekspansi margin (+5,80%); pembebanan alokasi *indirect overhead* korporat; dan evaluasi tingkat realisasi penagihan (*Billing Realization Rate*).
 14. **[[09-project/project-change-risk-and-issue-management|Change, Risk, and Issue Management]]**  
     Pembedaan konseptual antara Risiko (*Risk* - masa depan/potensi), Kendala (*Issue* - masa kini/terjadi), dan Perubahan (*Change* - usulan revisi); alur persetujuan *Change Request* (CR) dan dewan pengendali perubahan (*Change Control Board* - CCB); evaluasi batasan segitiga (*Triple Constraint*); matriks penilaian risiko; serta pencegahan pembengkakan ruang lingkup (*Scope Creep*).
 
@@ -113,9 +113,9 @@ Seluruh 17 dokumen pembelajaran dalam modul ini mengacu pada satu skenario bisni
 - **Nilai Kontrak Komersial (Revenue)**: **Rp300.000.000**
 - **Pagu Anggaran Disetujui (Approved Budget)**: **Rp250.000.000**
 - **Estimasi Biaya Rencana (Planned Cost)**: **Rp200.000.000** (Labor Rp100M, Subkon Rp60M, Material Rp30M, Expenses Rp10M)
-- **Realisasi Biaya Aktual (Actual Cost)**: **Rp181.000.000** (Labor Rp90M [920 jam], Subkon Rp55M, Material Rp28M, Expenses Rp8M)
-- **Gross Project Margin Realisasi**: $\text{Rp300.000.000} - \text{Rp181.000.000} = \mathbf{Rp119.000.000}$ ($\mathbf{39,67\%}$)
-- **Kinerja Biaya (Cost Variance)**: **+Rp19.000.000** (*Favorable / Under Budget*, ekspansi margin +6,34%)
+- **Realisasi Biaya Aktual (Actual Cost)**: **Rp182.600.000** (Labor Rp91,6M [920 jam], Subkon Rp55M, Material Rp28M, Expenses Rp8M)
+- **Gross Project Margin Realisasi**: $\text{Rp300.000.000} - \text{Rp182.600.000} = \mathbf{Rp117.400.000}$ ($\mathbf{39,13\%}$)
+- **Kinerja Biaya (Cost Variance)**: **+Rp17.400.000** (*Favorable / Under Budget*, ekspansi margin +5,80%)
 - **Jadwal Penagihan Milestone**:
   - M1: Blueprint & Architecture Sign-Off (20% = Rp60.000.000)
   - M2: Core Configuration & CRP Sign-Off (30% = Rp90.000.000)

@@ -144,23 +144,23 @@ Meneruskan skenario kanonik proyek `PRJ-ERP-2026-001` untuk pelanggan `PT Maju B
 | WBS Code | Deskripsi Elemen | Baseline Cost Plan | Approved Budget | Realisasi Biaya (AC) | Komitmen Terbuka | Sisa Anggaran Tersedia |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **PRJ-01** | Blueprint & Arsitektur | Rp30.000.000 | Rp35.000.000 | Rp27.000.000 | Rp0 | Rp8.000.000 |
-| **PRJ-02** | Konfigurasi & Kustomisasi | Rp70.000.000 | Rp85.000.000 | Rp65.000.000 | Rp0 | Rp20.000.000 |
+| **PRJ-02** | Konfigurasi & Kustomisasi | Rp70.000.000 | Rp85.000.000 | Rp66.600.000 | Rp0 | Rp18.400.000 |
 | **PRJ-03** | Infrastruktur & Integrasi | Rp60.000.000 | Rp75.000.000 | Rp55.000.000 | Rp0 | Rp20.000.000 |
 | **PRJ-04** | Deployment & Go-Live | Rp40.000.000 | Rp55.000.000 | Rp34.000.000 | Rp0 | Rp21.000.000 |
-| **Total** | | **Rp200.000.000** | **Rp250.000.000** | **Rp181.000.000** | **Rp0** | **Rp69.000.000** |
+| **Total** | | **Rp200.000.000** | **Rp250.000.000** | **Rp182.600.000** | **Rp0** | **Rp67.400.000** |
 
-*Catatan*: Dari plafon anggaran Rp250.000.000, realisasi biaya aktual adalah Rp181.000.000, menghasilkan sisa ketersediaan anggaran sebesar Rp69.000.000.
+*Catatan*: Dari plafon anggaran Rp250.000.000, realisasi biaya aktual adalah Rp182.600.000, menghasilkan sisa ketersediaan anggaran sebesar Rp67.400.000.
 
 ### 2. Analisis EVM pada Titik Selesai Proyek (100% Completion)
 
 - **Planned Value (PV)**: Rp200.000.000 (Target rencana pengeluaran untuk 100% progres)
 - **Earned Value (EV)**: Rp200.000.000 (Pekerjaan selesai 100% dengan bobot anggaran rencana)
-- **Actual Cost (AC)**: Rp181.000.000 (Biaya aktual yang dibukukan)
+- **Actual Cost (AC)**: Rp182.600.000 (Biaya aktual yang dibukukan)
 
 **Perhitungan Varians**:
-- $\text{Cost Variance (CV)} = \text{EV} - \text{AC} = \text{Rp200.000.000} - \text{Rp181.000.000} = +\mathbf{Rp19.000.000}$ (*Favorable / Under Budget*).
+- $\text{Cost Variance (CV)} = \text{EV} - \text{AC} = \text{Rp200.000.000} - \text{Rp182.600.000} = +\mathbf{Rp17.400.000}$ (*Favorable / Under Budget*).
 - $\text{Schedule Variance (SV)} = \text{EV} - \text{PV} = \text{Rp200.000.000} - \text{Rp200.000.000} = \mathbf{Rp0}$ (*On Schedule*).
-- $\text{Cost Performance Index (CPI)} = \frac{\text{Rp200.000.000}}{\text{Rp181.000.000}} = \mathbf{1,105}$ (Proyek berkinerja efisien, menghasilkan *value* Rp1,105 untuk setiap Rp1 biaya riil yang dikeluarkan).
+- $\text{Cost Performance Index (CPI)} = \frac{\text{Rp200.000.000}}{\text{Rp182.600.000}} = \mathbf{1,095}$ (Proyek berkinerja efisien, menghasilkan *value* Rp1,095 untuk setiap Rp1 biaya riil yang dikeluarkan).
 - $\text{Schedule Performance Index (SPI)} = \frac{\text{Rp200.000.000}}{\text{Rp200.000.000}} = \mathbf{1,00}$ (Tepat waktu).
 
 > [!NOTE]
