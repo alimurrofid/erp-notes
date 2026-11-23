@@ -202,7 +202,7 @@ Dalam seluruh Phase 10 ini, skenario kanonikal pembelajaran yang digunakan adala
 - **Project ID**: `PRJ-ERP-2026-001`
 - **Nama Proyek**: Implementasi ERP Naventra
 - **Pelanggan / Klien**: `PT Maju Bersama`
-- **Nilai Kontrak (Contract Value / Revenue)**: **Rp300.000.000** (Belum termasuk PPN; skenario mengasumsikan tarif PPN 11% untuk permodelan pembelajaran, dengan ketentuan pajak aktual mengikuti regulasi Indonesia yang berlaku pada periode transaksi)
+- **Nilai Kontrak (Contract Value / Revenue)**: **Rp300.000.000** (Belum termasuk PPN; skenario mengasumsikan tarif PPN efektif 11% untuk permodelan pembelajaran, dengan ketentuan pajak aktual mengikuti regulasi Indonesia yang berlaku pada periode transaksi)
 - **Pagu Anggaran Disetujui (*Project Budget*)**: **Rp250.000.000**
 - **Estimasi Biaya Rencana (*Total Planned Cost*)**: **Rp200.000.000**
 - **Target Margin Kotor Rencana**: Rp300.000.000 - Rp200.000.000 = **Rp100.000.000 (33,33%)**

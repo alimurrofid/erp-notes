@@ -84,7 +84,7 @@ Pengembalian barang ke vendor terjadi ketika barang yang dibeli mengalami cacat 
 * **Dampak Finansial**:
   * Mengurangi saldo kuantitas persediaan di gudang sebesar 1 unit.
   * Mengurangi saldo nilai persediaan sebesar Rp700.000 (harga pokok perolehan DPP).
-  * Bagian utang usaha menerbitkan [[04-purchasing/purchase-return-and-debit-note|Debit Note]] untuk memotong kewajiban utang ke PT Sumber Teknologi sebesar Rp777.000 (DPP + PPN 11%).
+  * Bagian utang usaha menerbitkan [[04-purchasing/purchase-return-and-debit-note|Debit Note]] untuk memotong kewajiban utang ke PT Sumber Teknologi sebesar Rp777.000 (DPP + PPN efektif 11%).
 
 ---
 

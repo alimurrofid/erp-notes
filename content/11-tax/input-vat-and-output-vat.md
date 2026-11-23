@@ -81,7 +81,7 @@ Faktur Pajak Masukan tertanggal 15 Januari:
 Perbedaan status keterkreditan PPN Masukan menghasilkan pola pencatatan jurnal yang berbeda di modul General Ledger:
 
 ### Kasus 1: PPN Masukan Dapat Dikreditkan (Creditable)
-Membeli perlengkapan pabrik Rp10.000.000 + PPN 11% (asumsi pembelajaran ilustratif):
+Membeli perlengkapan pabrik Rp10.000.000 + PPN efektif 11% (asumsi pembelajaran ilustratif):
 ```text
 (Db) Persediaan Perlengkapan Pabrik               Rp10.000.000
 (Db) PPN Masukan (Prepaid Tax - Aset Lancar)      Rp 1.100.000
@@ -89,7 +89,7 @@ Membeli perlengkapan pabrik Rp10.000.000 + PPN 11% (asumsi pembelajaran ilustrat
 ```
 
 ### Kasus 2: PPN Masukan Tidak Dapat Dikreditkan (Dikapitalisasi ke Aset)
-Membeli kendaraan sedan operasional direksi Rp300.000.000 + PPN 11% (asumsi pembelajaran ilustratif):
+Membeli kendaraan sedan operasional direksi Rp300.000.000 + PPN efektif 11% (asumsi pembelajaran ilustratif):
 ```text
 (Db) Aset Tetap - Kendaraan Sedan                 Rp333.000.000
     (Cr) Utang Usaha / Kas Bank                                  Rp333.000.000
@@ -97,7 +97,7 @@ Membeli kendaraan sedan operasional direksi Rp300.000.000 + PPN 11% (asumsi pemb
 *(Nilai PPN Rp33.000.000 dikapitalisasi ke harga perolehan aset tetap dan disusutkan selama masa manfaat fiskal aset)*.
 
 ### Kasus 3: PPN Masukan Tidak Dapat Dikreditkan (Dibebankan ke Biaya)
-Biaya jamuan makan tamu tanpa daftar nominatif Rp2.000.000 + PPN 11%:
+Biaya jamuan makan tamu tanpa daftar nominatif Rp2.000.000 + PPN efektif 11%:
 ```text
 (Db) Beban Jamuan Makan (Operasional)             Rp 2.000.000
 (Db) Beban Pajak Non-Kreditabel (Laba Rugi)       Rp   220.000

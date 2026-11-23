@@ -47,7 +47,7 @@ flowchart TD
 ## Accounting Impact
 
 Melanjutkan skenario acuan pembelian 10 unit komponen *Laptop Pro* dari PT Sumber Teknologi:
-* **Total Komitmen PO**: 10 unit @ Rp700.000 = Rp7.000.000 (+ PPN 11% Rp770.000 = **Rp7.770.000**).
+* **Total Komitmen PO**: 10 unit @ Rp700.000 = Rp7.000.000 (+ PPN efektif 11% Rp770.000 = **Rp7.770.000**).
 * **Kebijakan Pembayaran**: Pemasok mewajibkan **Uang Muka 20%** sebelum pesanan mulai diproses.
 * Nilai Uang Muka (20%): $20\% \times \text{Rp7.770.000} = \mathbf{Rp1.554.000}$.
 
@@ -109,7 +109,7 @@ Pada saat jatuh tempo 30 hari, perusahaan cukup mentransfer sisa dana sebesar Rp
 
 Di banyak yurisdiksi perpajakan (termasuk regulasi PPN di Indonesia di bawah UU PPN):
 * Jika uang muka diterima/dibayarkan **sebelum penyerahan barang**, saat terutangnya PPN adalah pada **tanggal pembayaran uang muka**.
-* Pemasok wajib menerbitkan Faktur Pajak atas porsi uang muka tersebut (misal: PPN 11% dari DPP uang muka Rp1.400.000 = Rp154.000).
+* Pemasok wajib menerbitkan Faktur Pajak atas porsi uang muka tersebut (misal: PPN efektif 11% dari DPP uang muka Rp1.400.000 = Rp154.000).
 * ERP enterprise mengelola *Tax on Advance* ini melalui akun perantara pajak uang muka untuk mencegah terjadinya selisih pelaporan SPT Masa.
 
 ---

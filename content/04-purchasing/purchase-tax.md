@@ -22,7 +22,7 @@ Integrasi mesin pajak dalam modul Purchasing bertujuan untuk:
 1. **Pencegahan Kehilangan Hak Kredit Pajak (*Tax Asset Recovery*)**: Memastikan seluruh PPN Masukan yang sah tervalidasi dan diklaim dalam Surat Pemberitahuan (SPT) Masa untuk mengurangi kewajiban setor PPN ke negara.
 2. **Kepatuhan Pemotongan PPh Pihak Ketiga (*Withholding Tax Compliance*)**: Menghitung dan memotong pajak penghasilan jasa secara otomatis saat tagihan diproses guna mencegah sanksi kelalaian pemotongan pajak dari fiskus.
 3. **Pemisahan Pajak yang Dapat Dikreditkan vs Dibiayakan**: Mengidentifikasi faktur pajak cacat atau pengeluaran yang tidak berhubungan langsung dengan kegiatan usaha untuk dikapitalisasi ke nilai persediaan atau dibiayakan langsung ke laba rugi.
-4. **Validasi Faktur Pajak Elektronik (*e-Faktur Integration*)**: Memverifikasi nomor seri dan kode QR faktur pajak masukan pemasok terhadap basis data resmi otoritas perpajakan.
+4. **Validasi Faktur Pajak Elektronik (Coretax)**: Mencocokkan data faktur pajak masukan pemasok dengan data yang tersedia di Coretax; e-Faktur dan nomor seri manual diperlakukan sebagai proses historis.
 
 ---
 
@@ -76,8 +76,8 @@ $$\mathbf{Kas\ yang\ Ditransfer\ ke\ Vendor = Total\ Tagihan\ (DPP + PPN) - Nila
 
 > [!important] Catatan Regulasi Lokal Indonesia
 > Penjelasan berikut merupakan contoh ilustratif perlakuan perpajakan pengadaan di **Republik Indonesia**:
-> 1. **PPN Masukan Standar**: Dikenakan sebesar **11%** atas Barang Kena Pajak (BKP) dan Jasa Kena Pajak (JKP).
-> 2. **Validasi e-Faktur Masukan**: ERP enterprise menyediakan pemindai kode QR (*QR Code Scanner*) yang otomatis mencocokkan data faktur pajak elektronik pemasok ke server Direktorat Jenderal Pajak (DJP) sebelum tagihan disetujui.
+> 1. **PPN Masukan Standar**: Tarif statutori **12%** dengan DPP Nilai Lain **11/12** (beban efektif **11%**) untuk BKP/JKP non-mewah. Rincian dan tanggal berlaku di [[11-tax/vat-fundamentals|VAT Fundamentals]].
+> 2. **Validasi Pajak Masukan**: ERP enterprise mencocokkan data faktur pajak masukan pemasok dengan data Coretax sebelum tagihan disetujui, dan menandai faktur yang tidak ditemukan.
 > 3. **PPh Pasal 23 (Tarif 2%)**: Dipotong atas pembayaran jasa teknik, jasa manajemen, jasa konsultan, atau sewa harta selain tanah/bangunan kepada wajib pajak badan dalam negeri yang memiliki NPWP (tarif 4% jika tidak ber-NPWP).
 
 ---
@@ -85,7 +85,7 @@ $$\mathbf{Kas\ yang\ Ditransfer\ ke\ Vendor = Total\ Tagihan\ (DPP + PPN) - Nila
 ## Accounting Impact
 
 ### Skenario 1: Pembelian Persediaan Standar (Baseline Acuan)
-Membeli 10 unit komponen *Laptop Pro* dari PT Sumber Teknologi seharga Rp7.000.000 (PPN Masukan 11% = Rp770.000, dapat dikreditkan):
+Membeli 10 unit komponen *Laptop Pro* dari PT Sumber Teknologi seharga Rp7.000.000 (PPN Masukan efektif 11% = Rp770.000, dapat dikreditkan):
 
 | Akun | Kategori | Debit (Rp) | Kredit (Rp) |
 |---|---|---:|---:|
@@ -98,7 +98,7 @@ Membeli 10 unit komponen *Laptop Pro* dari PT Sumber Teknologi seharga Rp7.000.0
 ---
 
 ### Skenario 2: Pembelian Jasa Konsultan IT dengan Pemotongan PPh 23
-Perusahaan menyewa jasa konsultan sistem senilai Rp10.000.000 (PPN 11% = Rp1.100.000, pemotongan PPh Pasal 23 tarif 2% = Rp200.000):
+Perusahaan menyewa jasa konsultan sistem senilai Rp10.000.000 (PPN efektif 11% = Rp1.100.000, pemotongan PPh Pasal 23 tarif 2% = Rp200.000):
 
 | Akun | Kategori | Debit (Rp) | Kredit (Rp) |
 |---|---|---:|---:|

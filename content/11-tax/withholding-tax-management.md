@@ -64,7 +64,10 @@ $$\text{Nilai PPh} = \text{DPP} \times \text{Tarif}$$
 $$\text{Kas Dibayar ke Vendor} = \text{DPP} - \text{Nilai PPh}$$
 
 ### 2. Perhitungan Gross-Up (Pajak Ditanggung Perusahaan Pembeli)
-Perusahaan menaikkan nilai tagihan komersial agar setelah dipotong pajak, vendor tetap menerima nilai bersih yang disepakati. Nilai tambahan gross-up dapat diakui sebagai biaya fiskal yang dapat dikurangkan (*deductible expense*).
+Perusahaan menaikkan nilai tagihan komersial agar setelah dipotong pajak, vendor tetap menerima nilai bersih yang disepakati.
+
+> [!warning]
+> Perlakuan pajak atas gross-up bergantung pada jenis pajak, pihak yang menanggung, dan yurisdiksi. Jangan menganggapnya otomatis dapat dikurangkan (*deductible*). Verifikasi dengan konsultan pajak sebelum dipakai.
 $$\text{DPP Gross-Up} = \frac{\text{Nilai Bersih Disepakati}}{1 - \text{Tarif}}$$
 $$\text{Nilai PPh} = \text{DPP Gross-Up} \times \text{Tarif}$$
 $$\text{Kas Dibayar ke Vendor} = \text{DPP Gross-Up} - \text{Nilai PPh} = \text{Nilai Bersih Disepakati}$$
@@ -100,7 +103,7 @@ Nilai tagihan komersial bersih yang dibayarkan ke vendor adalah nilai jasa dikur
     (Cr) Utang PPh Pasal 23 (Current Liabilities)                Rp   200.000
 ```
 
-**Kasus B: Tagihan Jasa dari Pengusaha Kena Pajak / PKP (Dengan PPN 11%)**
+**Kasus B: Tagihan Jasa dari Pengusaha Kena Pajak / PKP (Dengan PPN efektif 11%)**
 Faktur tagihan mencantumkan jasa Rp10.000.000 dan PPN Masukan Rp1.100.000 (total tagihan bruto Rp11.100.000). Kas bersih yang dibayarkan ke vendor adalah Rp11.100.000 - Rp200.000 = Rp10.900.000:
 ```text
 (Db) Beban Pemeliharaan & Perbaikan               Rp10.000.000

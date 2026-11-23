@@ -131,9 +131,12 @@ Hal ini mencegah terjadinya *overselling* (menjual barang yang sama ke dua pembe
 #### Pengecualian: Penjualan dengan Uang Muka (*Customer Advance / Down Payment*)
 Jika pesanan mewajibkan uang muka sebelum barang disiapkan:
 1. Sistem menerbitkan *Down Payment Request / Advance Invoice*.
-2. Saat uang diterima di bank, diposting jurnal liabilitas:
-   * **Debit**: Kas / Bank Operasional
-   * **Kredit**: Uang Muka Penjualan (*Customer Advance / Deferred Revenue* - Liabilitas Neraca)
+2. Saat uang diterima di bank, pisahkan DPP dan PPN:
+   * **Debit**: Kas / Bank Operasional (DPP + PPN)
+   * **Kredit**: Uang Muka Penjualan (*Customer Advance* — liabilitas) sebesar DPP
+   * **Kredit**: Utang PPN Keluaran sebesar PPN
+
+   Faktur pajak atas uang muka diterbitkan pada saat pembayaran. Tarif mengikuti [[11-tax/vat-fundamentals|VAT Fundamentals]] (beban efektif 11%).
 
 ---
 
@@ -145,7 +148,7 @@ Untuk menjaga kesinambungan angka di seluruh repository:
 * **Komoditas**: 10 Unit *Laptop Pro*
 * **Harga Satuan**: Rp1.000.000 / unit
 * **Nilai Penjualan Kotor**: Rp10.000.000
-* **PPN (11%)**: Rp1.100.000
+* **PPN (efektif 11%)**: Rp1.100.000
 * **Total Nilai Pesanan**: **Rp11.100.000**
 * **Estimasi Beban Pokok Penjualan (COGS)**: Rp7.000.000 (@ Rp700.000/unit)
 * **Tanggal Permintaan Kirim**: 20 September 2026

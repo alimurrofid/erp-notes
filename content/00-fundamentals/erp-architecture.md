@@ -62,7 +62,7 @@ Kekuatan utama ERP terletak pada **efek riak lintas modul (*cross-module ripple 
 
 ### Skenario Transaksi
 Perusahaan menjual 1 unit Laptop kepada pelanggan "PT Maju Bersama":
-* Harga Jual: **Rp10.000.000** (belum termasuk PPN 11% = Rp1.100.000; Total Tagihan = Rp11.100.000)
+* Harga Jual: **Rp10.000.000** (belum termasuk PPN efektif 11% = Rp1.100.000; Total Tagihan = Rp11.100.000)
 * Nilai Buku / HPP Persediaan (*Cost of Goods Sold*): **Rp7.000.000**
 
 Ketika pengiriman barang (*Delivery / Goods Issue*) dan penagihan (*Customer Invoice*) divalidasi, berikut adalah modul-modul yang terpengaruh secara simultan:

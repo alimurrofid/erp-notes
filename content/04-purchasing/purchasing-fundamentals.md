@@ -101,7 +101,7 @@ flowchart TD
 
 1. **Purchase Order Disahkan**: Perusahaan memesan 10 unit bahan baku seharga Rp7.000.000. Dokumen ini adalah **komitmen komersial**, bukan transaksi akuntansi. Tidak ada debit atau kredit di buku besar.
 2. **Barang Tiba di Gudang (Goods Receipt)**: Barang fisik masuk ke rak penyimpanan. Dalam sistem perpetual, aset persediaan bertambah Rp7.000.000 di neraca, diimbangi dengan akun kewajiban akrual penerimaan (*GR/IR Clearing*). Pemasok belum berhak menagih sebelum mengirimkan faktur resmi.
-3. **Faktur Tiba & Diverifikasi (Vendor Bill & 3-Way Match)**: Tagihan resmi pemasok tiba senilai Rp7.770.000 (termasuk PPN 11%). Sistem memvalidasi kesesuaian harga dan kuantitas antara PO, GR, dan Bill.
+3. **Faktur Tiba & Diverifikasi (Vendor Bill & 3-Way Match)**: Tagihan resmi pemasok tiba senilai Rp7.770.000 (termasuk PPN efektif 11%). Sistem memvalidasi kesesuaian harga dan kuantitas antara PO, GR, dan Bill.
 4. **Utang Usaha Diakui (AP Recognition)**: Akun kliring *GR/IR* ditutup, PPN Masukan diakui sebesar Rp770.000, dan Utang Usaha resmi tercatat di subledger pemasok sebesar Rp7.770.000.
 5. **Pembayaran Kas (Payment Disbursement)**: Kas keluar dari bank saat jatuh tempo; utang usaha terhapus dari daftar kewajiban terbuka (*open item*).
 

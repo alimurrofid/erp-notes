@@ -42,7 +42,7 @@ flowchart TD
 
 ### 1. Acquisition & Capitalization (Perolehan Aset)
 * **Kasus A: Pembelian Langsung Siap Pakai**:
-  Membeli mesin produksi seharga Rp100.000.000 (belum termasuk PPN 11% = Rp11.000.000) dan membayar ongkos instalasi mesin sebesar Rp5.000.000.
+  Membeli mesin produksi seharga Rp100.000.000 (belum termasuk PPN efektif 11% = Rp11.000.000) dan membayar ongkos instalasi mesin sebesar Rp5.000.000.
   * *Sesuai IAS 16, seluruh biaya persiapan hingga aset siap digunakan wajib dikapitalisasi ke nilai perolehan.*
   * Total Biaya Kapitalisasi: Rp100.000.000 + Rp5.000.000 = **Rp105.000.000**.
 

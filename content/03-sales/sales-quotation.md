@@ -70,7 +70,7 @@ Dokumen penawaran harga dibangun dengan struktur dua tingkat:
 * **Item Code & Description**: Barang atau jasa yang ditawarkan.
 * **Quantity & Sales UOM**: Jumlah unit yang ditawarkan.
 * **Base Price & Discount**: Harga satuan katalog dan potongan harga yang diberikan.
-* **Tax Code**: Kategori tarif pajak (misal: PPN 11%).
+* **Tax Code**: Kategori tarif pajak (misal: PPN efektif 11%).
 * **Expected Delivery Lead Time**: Estimasi waktu tunggu kesiapan barang.
 
 ---
@@ -105,7 +105,7 @@ Perusahaan komersial menerbitkan penawaran harga kepada calon pelanggan:
 * **Tanggal Terbit**: 10 September 2026
 * **Masa Berlaku**: 14 Hari (Kedaluwarsa: 24 September 2026)
 * **Rincian Komoditas**: 10 Unit *Laptop Pro* @ Rp1.000.000 = Rp10.000.000
-* **PPN (11%)**: Rp1.100.000
+* **PPN (efektif 11%)**: Rp1.100.000
 * **Total Penawaran**: **Rp11.100.000**
 * **Syarat Pembayaran**: Net 30 hari kalender sejak faktur diterbitkan.
 

@@ -98,7 +98,7 @@ Mari kita uji skenario nyata yang sering dihadapi sistem ERP:
 * **Alokasi Cloud (Over Time 12 Bulan)**: $\frac{2}{12} \times \text{Rp11.000.000} = \mathbf{Rp1.833.333}$ (atau Rp152.778 per bulan).
 
 ### 3. Jurnal Saat Pengiriman Laptop & Penerbitan Faktur (Bulan ke-1):
-Pelanggan menerima 10 unit laptop dan menerima faktur total Rp11.000.000 + PPN 11% (Rp1.210.000) = **Rp12.210.000**:
+Pelanggan menerima 10 unit laptop dan menerima faktur total Rp11.000.000 + PPN efektif 11% (Rp1.210.000) = **Rp12.210.000**:
 
 | Akun | Kategori | Debit (Rp) | Kredit (Rp) |
 |---|---|---:|---:|

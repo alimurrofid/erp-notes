@@ -65,7 +65,7 @@ Kriteria Evaluasi         PT Sumber Teknologi       CV Mandiri Komponen     PT I
 -----------------------------------------------------------------------------------------
 Harga Satuan (IDR)        Rp 700.000                Rp 720.000              Rp 690.000
 Total Nilai (DPP)         Rp 7.000.000              Rp 7.200.000            Rp 6.900.000
-PPN (11%)                 Rp   770.000              Rp   792.000            Rp   759.000
+PPN (efektif 11%)                 Rp   770.000              Rp   792.000            Rp   759.000
 Total Penawaran           Rp 7.770.000              Rp 7.992.000            Rp 7.659.000
 Waktu Tunggu (Lead Time)  5 Hari                    3 Hari                  14 Hari (Terlambat)
 Termin Pembayaran         Net 30 Hari               Net 14 Hari             Cash in Advance

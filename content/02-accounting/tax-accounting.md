@@ -39,7 +39,7 @@ flowchart TD
 Pajak Pertambahan Nilai (PPN) atau *Goods and Services Tax (GST)* menggunakan mekanisme pengkreditan (*credit invoice method*):
 
 ### 1. Saat Penjualan: Pencatatan Pajak Keluaran (*Output Tax*)
-Perusahaan memungut pajak dari pembeli atas penjualan barang Rp10.000.000 (PPN 11% = Rp1.100.000). Perusahaan tidak berhak atas uang Rp1.100.000 tersebut, melainkan hanya bertindak sebagai pemungut titipan pemerintah:
+Perusahaan memungut pajak dari pembeli atas penjualan barang Rp10.000.000 (PPN efektif 11% = Rp1.100.000). Perusahaan tidak berhak atas uang Rp1.100.000 tersebut, melainkan hanya bertindak sebagai pemungut titipan pemerintah:
 
 | Akun | Kategori | Debit (Rp) | Kredit (Rp) |
 |---|---|---:|---:|
@@ -50,7 +50,7 @@ Perusahaan memungut pajak dari pembeli atas penjualan barang Rp10.000.000 (PPN 1
 ---
 
 ### 2. Saat Pembelian: Pencatatan Pajak Masukan (*Input Tax*)
-Perusahaan membayar pajak kepada pemasok atas pembelian bahan baku Rp7.000.000 (PPN 11% = Rp770.000). Nilai ini diakui sebagai hak tagih/aset pajak:
+Perusahaan membayar pajak kepada pemasok atas pembelian bahan baku Rp7.000.000 (PPN efektif 11% = Rp770.000). Nilai ini diakui sebagai hak tagih/aset pajak:
 
 | Akun | Kategori | Debit (Rp) | Kredit (Rp) |
 |---|---|---:|---:|

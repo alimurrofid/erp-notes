@@ -121,7 +121,7 @@ flowchart TD
 ```text
 1. Purchase Order  : Harga satuan disepakati = Rp700.000 / unit
 2. Goods Receipt   : Kuantitas fisik diterima = 10 unit
-3. Vendor Bill     : Tagihan diajukan = 10 unit @ Rp700.000 = Rp7.000.000 + PPN 11%
+3. Vendor Bill     : Tagihan diajukan = 10 unit @ Rp700.000 = Rp7.000.000 + PPN efektif 11%
 ```
 
 Jika terdapat selisih (*variance*) di luar toleransi (misal: harga di faktur Rp750.000/unit), sistem memasang status *Invoice Blocked for Payment* hingga ada persetujuan manajerial atau revisi dari pemasok.
@@ -180,7 +180,7 @@ Jika terdapat selisih (*variance*) di luar toleransi (misal: harga di faktur Rp7
 
 ## Ringkasan Transaksi Finansial P2P
 
-Skenario standar pengadaan 10 unit barang dagang @ Rp700.000 (PPN Masukan 11%):
+Skenario standar pengadaan 10 unit barang dagang @ Rp700.000 (PPN Masukan efektif 11%):
 
 | Tahapan P2P | Dokumen | Kuantitas Fisik | Nilai Transaksi | Jurnal Debit | Jurnal Kredit |
 |---|---|:---:|:---:|---|---|

@@ -75,7 +75,7 @@ Nilai perolehan persediaan barang yang diterima dari vendor maklon merupakan kom
 * **Komponen yang Dikirim ke Vendor**:
   * 100 unit sasis aluminium mentah dengan biaya perolehan @ Rp400.000 = **Rp40.000.000**.
 * **Biaya Jasa Maklon (*Subcontracting Service Fee*)**:
-  * Vendor menagihkan jasa pengecatan dan pelapisan *powder coating* sebesar Rp100.000 per unit (Total = **Rp10.000.000** + PPN 11% Rp1.100.000).
+  * Vendor menagihkan jasa pengecatan dan pelapisan *powder coating* sebesar Rp100.000 per unit (Total = **Rp10.000.000** + PPN efektif 11% Rp1.100.000).
 
 ---
 
@@ -99,7 +99,7 @@ ERP menerima 100 unit sasis jadi dan mengeksekusi konsumsi bahan baku di lokasi 
 #### 3. Saat Penerimaan Faktur Tagihan Vendor Maklon (Vendor Bill):
 Bagian Accounts Payable memverifikasi tagihan jasa maklon:
 * *(Dr)* Utang Jasa Belum Ditagih (*Subcontracting GR/IR Accrual*): **Rp10.000.000**
-* *(Dr)* Pajak Masukan (PPN Masukan 11%): **Rp1.100.000**
+* *(Dr)* Pajak Masukan (PPN Masukan efektif 11%): **Rp1.100.000**
 * *(Cr)* Utang Usaha (Vendor Maklon): **Rp11.100.000**
 * *(Cr/Dr)* Pemotongan PPh Pasal 23 Jasa Maklon (sesuai regulasi pajak jika berlaku): *(Dr Utang Usaha, Cr Utang PPh 23)*.
 

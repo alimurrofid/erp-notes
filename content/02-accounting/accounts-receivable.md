@@ -34,7 +34,7 @@ flowchart TD
 
 ### 1. Invoicing & Recognition (Pengakuan Piutang Usaha)
 * **Aturan Pengakuan**: Piutang diakui ketika entitas telah memenuhi kewajiban pelaksanaan (*performance obligation*) sesuai **IFRS 15** dan memiliki hak tanpa syarat atas imbalan dari pelanggan.
-* **Jurnal (Contoh: Penjualan 10 unit barang @ Rp1.000.000, PPN 11% = Rp1.100.000)**:
+* **Jurnal (Contoh: Penjualan 10 unit barang @ Rp1.000.000, PPN efektif 11% = Rp1.100.000)**:
 
 | Akun | Kategori | Debit (Rp) | Kredit (Rp) |
 |---|---|---:|---:|

@@ -65,13 +65,13 @@ Tidak semua pelanggan bersedia menerima pengiriman secara parsial. Pada master d
 ## Skenario Numerik: Variasi Pengiriman Parsial dari Baseline Acuan
 
 Mari kita simulasikan pesanan acuan **10 unit Laptop Pro** dari PT Maju Bersama ketika terjadi kendala persediaan gudang:
-* **Nilai Kontrak Total**: 10 unit @ Rp1.000.000 = Rp10.000.000 (+ PPN 11% Rp1.100.000 = **Rp11.100.000**).
+* **Nilai Kontrak Total**: 10 unit @ Rp1.000.000 = Rp10.000.000 (+ PPN efektif 11% Rp1.100.000 = **Rp11.100.000**).
 * **Estimasi COGS Total**: 10 unit @ Rp700.000 = **Rp7.000.000**.
 * **Kondisi Stok Gudang**: Hanya tersedia **6 unit** di gudang. Defisit **4 unit** dijadikan *backorder*.
 
 ### Tahap 1: Pengiriman & Penagihan Batch Pertama (6 Unit - 20 September)
 Gudang mengirimkan 6 unit barang yang tersedia:
-* Nilai Pengiriman: 6 unit @ Rp1.000.000 = Rp6.000.000 (PPN 11% = Rp660.000). Total Tagihan = **Rp6.660.000**.
+* Nilai Pengiriman: 6 unit @ Rp1.000.000 = Rp6.000.000 (PPN efektif 11% = Rp660.000). Total Tagihan = **Rp6.660.000**.
 * Nilai COGS Pengiriman: 6 unit @ Rp700.000 = **Rp4.200.000**.
 
 #### Jurnal Pengiriman Fisik Batch 1 (Surat Jalan `DO-001`):
@@ -89,7 +89,7 @@ Gudang mengirimkan 6 unit barang yang tersedia:
 
 ### Tahap 2: Pengiriman & Penagihan Batch Kedua / Backorder (4 Unit - 28 September)
 Pabrik menyelesaikan perakitan 4 unit laptop tambahan dan menyerahkannya ke gudang. Sistem otomatis mendeteksi komitmen *backorder* dan menerbitkan surat jalan kedua:
-* Nilai Pengiriman: 4 unit @ Rp1.000.000 = Rp4.000.000 (PPN 11% = Rp440.000). Total Tagihan = **Rp4.440.000**.
+* Nilai Pengiriman: 4 unit @ Rp1.000.000 = Rp4.000.000 (PPN efektif 11% = Rp440.000). Total Tagihan = **Rp4.440.000**.
 * Nilai COGS Pengiriman: 4 unit @ Rp700.000 = **Rp2.800.000**.
 
 #### Jurnal Pengiriman Fisik Batch 2 (Surat Jalan `DO-002`):

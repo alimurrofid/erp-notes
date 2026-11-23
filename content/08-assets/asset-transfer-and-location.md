@@ -104,7 +104,7 @@ Tidak ada perubahan pada nilai aset di neraca. Pada jadwal penyusutan berikutnya
 | **Bulan Baru** | `610420 - Beban Depr. Mesin` | `CC-PROD-02 (Karawang)` | `153090 - Akum. Depr. Mesin` | 1.666.667 |
 
 ### 2. Mutasi Antar-Entitas Hukum (Intercompany Asset Transfer at NBV)
-PT Maju Bersama mengalihkan mesin ke anak perusahaannya (PT Maju Distribusi) pada Nilai Buku Bersih (NBV) Rp80.000.000 (Harga Perolehan Rp120.000.000, Akumulasi Penyusutan Rp40.000.000) ditambah PPN 11%:
+PT Maju Bersama mengalihkan mesin ke anak perusahaannya (PT Maju Distribusi) pada Nilai Buku Bersih (NBV) Rp80.000.000 (Harga Perolehan Rp120.000.000, Akumulasi Penyusutan Rp40.000.000) ditambah PPN efektif 11%:
 
 **Buku PT Maju Bersama (Pengirim - Derecognition):**
 | Akun | Debit (IDR) | Kredit (IDR) | Keterangan |

@@ -52,7 +52,7 @@ Dokumen Faktur Penjualan memadukan data komersial dari *Sales Order* dan data fi
   Dihitung otomatis dari tanggal faktur ditambah termin pembayaran (*Payment Terms*):
   $$\mathbf{Due\ Date = Invoice\ Posting\ Date + Payment\ Term\ Days}$$
   *Contoh*: Faktur diposting 20 September 2026 dengan termin *Net 30* $\implies$ Jatuh tempo: **20 Oktober 2026**.
-* **Identitas Pajak Resmi**: Nomor Seri Faktur Pajak (NSFP) untuk validasi SPT Masa PPN (lihat [[03-sales/sales-tax|Sales Tax]]).
+* **Identitas Pajak Resmi**: Nomor faktur pajak elektronik (Coretax) untuk validasi SPT Masa PPN (lihat [[03-sales/sales-tax|Sales Tax]]).
 * **Detail Baris Tagihan**: Kuantitas yang dikirim, harga satuan terkunci, diskon yang disepakati, dan tarif PPN per item.
 
 ---
@@ -61,7 +61,7 @@ Dokumen Faktur Penjualan memadukan data komersial dari *Sales Order* dan data fi
 
 Melanjutkan skenario acuan pesanan 10 unit *Laptop Pro* dari PT Maju Bersama:
 * Nilai Penjualan Bersih: Rp10.000.000
-* PPN Keluaran 11%: Rp1.100.000
+* PPN Keluaran efektif 11%: Rp1.100.000
 * Total Tagihan Piutang: **Rp11.100.000**
 
 ### 1. Jurnal Saat Penerbitan Faktur Penjualan (Billing Event):

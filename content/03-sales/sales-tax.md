@@ -36,11 +36,11 @@ flowchart TD
     Loc["(3) Place of Supply / Destination<br/>(Wilayah Yuridiksi Pengiriman Barang)"] 
     --> Engine
 
-    Engine --> Result["Hasil Penentuan:<br/>Kode Pajak: PPN 11%<br/>Sifat: Terutang / Dipungut Sendiri<br/>Akun GL: 2120 - Utang PPN Keluaran"]
+    Engine --> Result["Hasil Penentuan:<br/>Kode Pajak: PPN 12% (DPP 11/12)<br/>Sifat: Terutang / Dipungut Sendiri<br/>Akun GL: 2120 - Utang PPN Keluaran"]
 ```
 
 ### Kategori Tarif Pajak Standar:
-1. **Standard Rate (Tarif Standar)**: Berlaku umum untuk sebagian besar barang dan jasa komersial (misal: 11% di Indonesia).
+1. **Standard Rate (Tarif Standar)**: Berlaku umum untuk sebagian besar barang dan jasa komersial (misal: Indonesia menerapkan tarif 12% dengan DPP Nilai Lain 11/12, sehingga beban efektif 11%).
 2. **Zero-Rated (Tarif 0%)**: Diberlakukan untuk transaksi ekspor barang ke luar negeri guna mendorong daya saing produk nasional. Penjual tidak memungut pajak keluaran, namun tetap berhak mengkreditkan pajak masukan produksinya.
 3. **Exempt / Non-Taxable (Bebas / Bukan Objek Pajak)**: Komoditas kebutuhan pokok tertentu (misal: beras, daging mentah, jasa medis dasar) yang dibebaskan dari pungutan pajak.
 
@@ -56,14 +56,14 @@ Biasa digunakan dalam perdagangan antar-bisnis (**B2B**). Harga penawaran katalo
   $$\text{Dasar Pengenaan Pajak (DPP)} = \text{Harga Barang}$$
   $$\text{Nilai Pajak (PPN)} = \text{DPP} \times \text{Tarif Pajak}$$
   $$\text{Total Tagihan} = \text{DPP} + \text{Nilai Pajak}$$
-* *Contoh*: Harga Rp1.000.000, PPN 11% = Rp110.000 $\implies$ Total = **Rp1.110.000**.
+* *Contoh*: Harga Rp1.000.000, PPN efektif 11% = Rp110.000 (12% × DPP 11/12) $\implies$ Total = **Rp1.110.000**.
 
 ### 2. Tax-Inclusive (Harga Sudah Termasuk Pajak)
 Biasa digunakan dalam perdagangan ritel konsumen (**B2C**). Harga yang tertera pada label rak toko adalah harga final yang dibayar pembeli.
 * *Rumus Pemisahan (Ekstraksi DPP)*:
   $$\mathbf{DPP = \frac{\text{Total Harga Label}}{1 + \text{Tarif Pajak}}}$$
   $$\mathbf{Nilai\ Pajak = \text{Total Harga Label} - DPP}$$
-* *Contoh*: Harga label rak Rp1.000.000 (termasuk PPN 11%):
+* *Contoh*: Harga label rak Rp1.000.000 (termasuk PPN efektif 11%):
   $$\text{DPP} = \frac{\text{Rp1.000.000}}{1 + 0.11} = \mathbf{Rp900.901}$$
   $$\text{PPN} = \text{Rp1.000.000} - \text{Rp900.901} = \mathbf{Rp99.099}$$
 
@@ -83,8 +83,8 @@ Regulasi otoritas perpajakan masing-masing negara umumnya mewajibkan penggunaan 
 
 > [!important] Catatan Regulasi Lokal
 > Penjelasan berikut merupakan contoh implementasi perpajakan yang berlaku di **Republik Indonesia** berdasarkan **UU Harmonisasi Peraturan Perpajakan (UU HPP No. 7 Tahun 2021)**:
-> 1. **Tarif PPN Standar**: Ditetapkan sebesar **11%** (efektif sejak 1 April 2022).
-> 2. **Faktur Pajak Elektronik (*e-Faktur*)**: Setiap faktur komersial kepada Pengusaha Kena Pajak (PKP) wajib menyertakan **Nomor Seri Faktur Pajak (NSFP)** resmi yang dialokasikan oleh Direktorat Jenderal Pajak (DJP) dan diunggah melalui API perpajakan.
+> 1. **Tarif PPN Standar**: Tarif statutori **12%** dengan DPP Nilai Lain **11/12** untuk BKP/JKP non-mewah, sehingga beban efektif **11%**. Berlaku sejak 1 Januari 2025 (UU HPP jo PMK 131/PMK.03/2024 dan PMK 11/2025; rincian di [[11-tax/vat-fundamentals|VAT Fundamentals]]).
+> 2. **Faktur Pajak Elektronik (Coretax)**: Faktur pajak diterbitkan melalui Coretax dan nomor faktur dihasilkan oleh sistem. Alokasi NSFP manual dan unggahan e-Faktur diperlakukan sebagai proses historis.
 > 3. **Mekanisme Wajib Pungut (WAPU)**:
 >    * Jika bertransaksi dengan instansi pemerintah, BUMN, atau kontraktor migas tertentu (*Badan Pemungut WAPU*), pembeli **tidak membayar PPN ke penjual**, melainkan memotong PPN tersebut dan menyetorkannya langsung ke kas negara atas nama penjual.
 
@@ -95,7 +95,7 @@ Regulasi otoritas perpajakan masing-masing negara umumnya mewajibkan penggunaan 
 ### Skenario Transaksi Baseline:
 Penjualan 10 unit *Laptop Pro* @ Rp1.000.000 kepada pelanggan swasta (PT Maju Bersama):
 * Dasar Pengenaan Pajak (DPP): Rp10.000.000
-* PPN Keluaran (11%): Rp1.100.000
+* PPN Keluaran (efektif 11%): Rp1.100.000
 * Total Piutang: Rp11.100.000
 
 #### 1. Jurnal Penjualan Standar (Dipungut Sendiri):

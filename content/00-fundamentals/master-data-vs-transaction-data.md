@@ -34,7 +34,7 @@ Setiap transaksi dalam ERP tidak pernah berdiri sendiri. Transaksi adalah **pert
 ```mermaid
 flowchart TD
     subgraph Config["Configuration & Reference"]
-        TaxRule["Tax: PPN 11%"]
+        TaxRule["Tax: PPN efektif 11%"]
         Curr["Currency: IDR"]
         PayTerm["Payment Term: Net 30"]
     end

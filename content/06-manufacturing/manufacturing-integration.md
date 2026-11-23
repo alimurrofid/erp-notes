@@ -161,7 +161,7 @@ Untuk membuktikan keutuhan integrasi dari awal hingga akhir, berikut adalah pene
 * **Jurnal Faktur Penjualan (Invoice @ Rp1.200.000/unit)**:
   * *(Dr)* Piutang Usaha (*Accounts Receivable*): **Rp133.200.000** (DPP Rp120.000.000 + PPN Rp13.200.000)
   * *(Cr)* Pendapatan Penjualan: **Rp120.000.000**
-  * *(Cr)* Utang Pajak Keluaran (PPN Keluaran 11%): **Rp13.200.000**
+  * *(Cr)* Utang Pajak Keluaran (PPN Keluaran efektif 11%): **Rp13.200.000**
 * **Laba Kotor yang Terealisasi**:
   $$\text{Laba Kotor Operasional} = \text{Rp}120.000.000 - \text{Rp}79.000.000 = \mathbf{\text{Rp}41.000.000 \text{ (Gross Margin = 34,17\%)}}$$
 

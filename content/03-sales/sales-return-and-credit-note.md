@@ -62,7 +62,7 @@ flowchart TD
 
 ## Accounting Impact
 
-Melanjutkan skenario transaksi acuan (penjualan 10 unit *Laptop Pro* @ Rp1.000.000, PPN 11%, COGS Rp700.000/unit):
+Melanjutkan skenario transaksi acuan (penjualan 10 unit *Laptop Pro* @ Rp1.000.000, PPN efektif 11%, COGS Rp700.000/unit):
 * **Kasus**: Pelanggan mengembalikan **1 unit laptop** karena cacat layar, dan disetujui untuk diterbitkan Nota Kredit pemotong piutang.
 
 ### 1. Jurnal Finansial: Penerbitan Nota Kredit (*Credit Note Posting*)

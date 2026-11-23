@@ -73,7 +73,7 @@ Jika barang ditolak langsung saat pembongkaran di gudang atau sebelum tagihan di
 ---
 
 ### Kasus 2: Retur Dilakukan SETELAH Faktur Tagihan Diposting ke AP (Post-Invoicing Return)
-Melanjutkan skenario acuan pembelian 10 unit *Laptop Pro* dari PT Sumber Teknologi (HPP Rp700.000/unit, PPN Masukan 11%):
+Melanjutkan skenario acuan pembelian 10 unit *Laptop Pro* dari PT Sumber Teknologi (HPP Rp700.000/unit, PPN Masukan efektif 11%):
 * **Kasus**: Setelah faktur utang sebesar Rp7.770.000 disahkan di sistem, tim teknisi menemukan **1 unit laptop** mengalami kerusakan komponen internal yang tidak dapat diperbaiki. Pemasok menyetujui pengembalian 1 unit dan menyetujui penerbitan Nota Debet pemotong tagihan.
 
 #### Jurnal Penerbitan Nota Debet (Debit Note Posting):

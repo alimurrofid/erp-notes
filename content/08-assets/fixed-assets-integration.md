@@ -107,7 +107,7 @@ sequenceDiagram
 
     Note over FA,Sales: Tahap 5: Pelepasan Aset & Derecognition (Maret 2031)
     FA->>GL: Akhir Tahun ke-5: Nilai Buku Bersih Mencapai Residu Rp20 Juta (Disusutkan Penuh Rp100 Juta)
-    Sales->>Sales: Jual Mesin Bekas ke Rekanan Seharga Rp25 Juta + PPN 11% (Faktur Pajak 16D)
+    Sales->>Sales: Jual Mesin Bekas ke Rekanan Seharga Rp25 Juta + PPN efektif 11% (Faktur Pajak 16D)
     FA->>GL: Derecognition: Hapus Harga Perolehan Rp120M & Akumulasi Rp100M, Catat Laba Penjualan Rp5 Juta
     FA->>FA: Kunci Permanen Master Aset Menjadi Status "DISPOSED"
 ```
@@ -136,7 +136,7 @@ sequenceDiagram
 
 5. **Pelepasan Aset Komersial & Penghentian Pengakuan (Maret 2031 / Akhir Tahun ke-5)**:
    - Setelah 5 tahun beroperasi penuh (60 bulan), akumulasi penyusutan mencapai Rp100.000.000, menyisakan nilai buku bersih tepat sebesar estimasi nilai residu awal: **Rp20.000.000**.
-   - Manajemen menjual mesin tersebut kepada pihak ketiga seharga **Rp25.000.000** (ditambah PPN 11% Rp2.750.000).
+   - Manajemen menjual mesin tersebut kepada pihak ketiga seharga **Rp25.000.000** (ditambah PPN efektif 11% Rp2.750.000).
    - Modul Sales menerbitkan faktur komersial dan Faktur Pajak Keluaran PPN Pasal 16D.
    - Modul Fixed Assets mengeksekusi penghentian pengakuan (*Derecognition*): menghapus harga perolehan Rp120.000.000, menghapus akumulasi penyusutan Rp100.000.000, mengakui kas/piutang Rp27.750.000, dan membukukan **Keuntungan Pelepasan Aset Tetap sebesar Rp5.000.000** di Laporan Laba Rugi.
    - Nomor master aset `AST-MAC-2026-0001` dikunci secara permanen pada status `DISPOSED`.

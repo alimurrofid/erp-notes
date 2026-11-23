@@ -54,7 +54,7 @@ Dokumen Faktur Tagihan Pemasok di dalam ERP menyimpan atribut:
 * **Kalkulasi Tanggal Jatuh Tempo (*Due Date Calculation*)**:
   $$\mathbf{Due\ Date = Bill\ Document\ Date + Payment\ Term\ Days}$$
   *Contoh*: Faktur tanggal 20 September dengan termin *Net 30* $\implies$ Jatuh tempo: **20 Oktober 2026**.
-* **Identitas Faktur Pajak Elektronik**: Nomor Seri Faktur Pajak (NSFP) masukan dari pihak pemasok untuk keperluan rekonsiliasi SPT Masa PPN.
+* **Identitas Faktur Pajak Elektronik**: Nomor faktur pajak masukan (Coretax) dari pemasok untuk keperluan rekonsiliasi SPT Masa PPN.
 
 ---
 

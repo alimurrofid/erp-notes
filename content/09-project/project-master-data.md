@@ -176,7 +176,7 @@ Berikut adalah rincian data master resmi untuk proyek kanonikal implementasi sis
 | **Tipe Proyek** | `CUSTOMER_COMMERCIAL` | Proyek eksternal menghasilkan pendapatan dari klien |
 | **Klien / Pelanggan** | `PT Maju Bersama` | Akun pelanggan utama (Terdaftar di modul CRM/Sales) |
 | **Nomor Kontrak Acuan** | `CNT-2026-MB-001` | Dokumen kontrak perjanjian kerja bernotaris |
-| **Nilai Kontrak (*Revenue*)** | **Rp300.000.000** | Nilai kontrak jasa & lisensi bersih (sebelum PPN; skenario mengasumsikan tarif PPN 11% untuk permodelan pembelajaran) |
+| **Nilai Kontrak (*Revenue*)** | **Rp300.000.000** | Nilai kontrak jasa & lisensi bersih (sebelum PPN; skenario mengasumsikan tarif PPN efektif 11% untuk permodelan pembelajaran) |
 | **Pagu Anggaran (*Budget*)** | **Rp250.000.000** | Batas maksimum biaya belanja proyek yang disahkan |
 | **Estimasi Biaya (*Planned*)** | **Rp200.000.000** | Rencana biaya internal (Target laba kotor: Rp100 Juta) |
 | **Mata Uang Proyek** | `IDR` (Rupiah) | Mata uang tunggal pencatatan biaya dan tagihan |

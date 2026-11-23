@@ -101,7 +101,7 @@ Melanjutkan proses pengadaan komponen laptop PT Sumber Teknologi:
 3. **Data Vendor Bill (`BILL-2026-09-0094`)**:
    * Kuantitas Ditagihkan: **10 Unit**.
    * Harga Satuan Ditagihkan: **Rp700.000**.
-   * DPP: Rp7.000.000 (+ PPN 11% Rp770.000 = **Rp7.770.000**).
+   * DPP: Rp7.000.000 (+ PPN efektif 11% Rp770.000 = **Rp7.770.000**).
 
 ### Hasil Evaluasi Mesin 3-Way Match ERP:
 * *Validasi Kuantitas*: $\text{Invoiced (10)} \equiv \text{Received (10)} \implies \mathbf{MATCHED}$.

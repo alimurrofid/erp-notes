@@ -99,7 +99,7 @@ sequenceDiagram
 1. **Mandatory Depreciation Catch-Up Rule**: Sebelum jurnal penghentian pengakuan (*derecognition entry*) diposting, sistem ERP wajib secara otomatis menghitung dan memposting beban penyusutan berjalan dari awal bulan fiskal hingga tanggal efektif pelepasan (*effective disposal date*), agar nilai buku aset yang dihapusbukukan akurat.
 2. **Prohibition of Negative Book Value**: Suatu aset dilarang dihapusbukukan dengan meninggalkan saldo nilai buku negatif di neraca. Seluruh harga perolehan historis dan akumulasi penyusutan wajib dihabiskan (*cleared to zero*).
 3. **Dual Authorization for Scrapping and Sales**: Setiap transaksi pelepasan aset wajib disetujui bersama oleh kepala departemen pengguna dan Financial Controller/CFO guna mencegah penjualan aset perusahaan di bawah tangan.
-4. **Mandatory Tax Invoice Issuance (PPN Pasal 16D)**: Di Indonesia, penjualan aset tetap berwujud (selain sedan dan station wagon yang tidak digunakan langsung untuk kegiatan operasional tertentu) terutang PPN 11%. Sistem wajib memicu pembuatan Faktur Pajak Keluaran secara otomatis saat transaksi penjualan aset tetap diproses.
+4. **Mandatory Tax Invoice Issuance (PPN Pasal 16D)**: Di Indonesia, penjualan aset tetap berwujud (selain sedan dan station wagon yang tidak digunakan langsung untuk kegiatan operasional tertentu) terutang PPN efektif 11%. Sistem wajib memicu pembuatan Faktur Pajak Keluaran secara otomatis saat transaksi penjualan aset tetap diproses.
 5. **Permanent Asset Status Lockout**: Setelah transaksi pelepasan disahkan, nomor master aset tersebut dikunci secara permanen pada status `DISPOSED` atau `RETIRED`. Sistem dilarang mengizinkan mutasi lokasi, penambahan biaya susulan, atau perhitungan penyusutan baru pada nomor aset yang telah dilepas.
 
 ---
@@ -109,7 +109,7 @@ sequenceDiagram
 Mekanisme akuntansi pelepasan aset menghapus akun aktiva dan akumulasi depresiasinya dari neraca:
 
 ### 1. Pelepasan Melalui Penjualan Untung (Gain on Sale)
-PT Maju Bersama menjual mesin yang memiliki Harga Perolehan Rp120.000.000 dan Akumulasi Penyusutan Rp100.000.000 (Nilai Buku Bersih Rp20.000.000) dengan harga jual Rp25.000.000 (belum termasuk PPN 11% = Rp2.750.000):
+PT Maju Bersama menjual mesin yang memiliki Harga Perolehan Rp120.000.000 dan Akumulasi Penyusutan Rp100.000.000 (Nilai Buku Bersih Rp20.000.000) dengan harga jual Rp25.000.000 (belum termasuk PPN efektif 11% = Rp2.750.000):
 
 | Akun | Debit (IDR) | Kredit (IDR) | Keterangan |
 | :--- | :--- | :--- | :--- |
@@ -141,7 +141,7 @@ Pada tanggal 31 Maret 2031 (Tepat pada akhir Tahun ke-5 operasional), PT Maju Be
    - Sisa Nilai Buku Bersih (*Carrying Amount*): **Rp20.000.000** (Persis sama dengan estimasi nilai residu awal).
 
 2. **Eksekusi Penjualan ke Perusahaan Rekondisi**:
-   - Manajemen menjual mesin tersebut kepada PT Rekondisi Presisi seharga **Rp25.000.000** tunai (ditambah PPN 11% Rp2.750.000).
+   - Manajemen menjual mesin tersebut kepada PT Rekondisi Presisi seharga **Rp25.000.000** tunai (ditambah PPN efektif 11% Rp2.750.000).
    - **Kalkulasi Laba Pelepasan**:
      $$\text{Keuntungan Pelepasan} = \text{Rp25.000.000 (Harga Jual)} - \text{Rp20.000.000 (Nilai Buku)} = \mathbf{Rp5.000.000}$$
    - Sistem menerbitkan Faktur Pajak Standar PPN Pasal 16D, memposting jurnal laba penjualan aset Rp5.000.000, dan mencabut nomor seri mesin dari daftar fasilitas pabrik aktif.
