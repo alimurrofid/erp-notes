@@ -105,7 +105,7 @@ flowchart TD
   * Perhitungan pajak pertambahan nilai (PPN) dan penentuan syarat pembayaran (*payment terms*, misal: Net 30 hari).
 * **Transaction (System)**: Status Faktur Penjualan berubah menjadi `Posted / Open`.
 * **Operational Impact**: Jadwal jatuh tempo piutang (*due date*) terbentuk pada buku pembantu piutang (*AR Subledger*). Laporan umur piutang (*Aging AR*) ter-update.
-* **Accounting Impact**: **Ya**. Pengakuan pendapatan (*Revenue*) sesuai standar IFRS 15 (*Revenue from Contracts with Customers*) dan kewajiban pajak keluaran.
+* **Accounting Impact**: **Ya**. Faktur mencatat piutang dan PPN keluaran. Pendapatan diakui saat kontrol barang berpindah (IFRS 15); pada contoh ini pengiriman dan faktur terjadi pada periode yang sama. Jika berbeda periode, akui pendapatan saat pengiriman dengan *contract asset*, lalu pindahkan ke piutang saat faktur terbit.
 
 | Akun | Kategori Akun | Debit (Rp) | Kredit (Rp) |
 |---|---|---:|---:|
@@ -157,7 +157,7 @@ flowchart TD
 
 ## Ringkasan Transaksi Finansial O2C
 
-Menggunakan skenario standar penjualan 10 unit barang dagang @ Rp1.000.000 (HPP @ Rp700.000/unit, PPN 11%):
+Menggunakan skenario standar penjualan 10 unit barang dagang @ Rp1.000.000 (HPP @ Rp700.000/unit, PPN efektif 11%):
 
 | Tahapan O2C | Dokumen | Kuantitas Fisik | Nilai Transaksi | Jurnal Debit | Jurnal Kredit |
 |---|---|:---:|:---:|---|---|

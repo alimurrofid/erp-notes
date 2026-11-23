@@ -68,7 +68,7 @@ Modul Sales tidak dapat berdiri sendiri. Di dalam sistem ERP, modul ini memiliki
 | **Logistics & Shipping** | Keluar $\to$ | Penerbitan Surat Jalan (*Delivery Note*), penentuan rute ekspedisi, pelacakan nomor resi, dan ongkos kirim. | [[03-sales/delivery-and-shipping|Delivery and Shipping]] |
 | **Tax Engine** | Masuk $\to$ | Penentuan kode pajak, pembebanan PPN Masukan/Keluaran, dan penomoran faktur pajak elektronik resmi. | [[02-accounting/tax-accounting|Tax Accounting]] |
 | **Accounts Receivable (AR)** | Keluar $\to$ | Penerbitan Faktur Penjualan (*Customer Invoice*) mencatat penambahan saldo piutang di buku pembantu pelanggan. | [[02-accounting/accounts-receivable|Accounts Receivable]] |
-| **General Ledger (Accounting)** | Keluar $\to$ | Pengakuan Beban Pokok Penjualan (COGS) saat penyerahan barang dan pengakuan Pendapatan (*Revenue*) saat penagihan. | [[02-accounting/journal-entry|Journal Entry]] |
+| **General Ledger (Accounting)** | Keluar $\to$ | Pengakuan Beban Pokok Penjualan (COGS) saat penyerahan barang dan pengakuan Pendapatan (*Revenue*) saat kontrol barang berpindah — bukan saat penagihan. | [[02-accounting/journal-entry|Journal Entry]] |
 | **Treasury & Banking** | Masuk $\to$ | Penerimaan transfer kas/bank dari pelanggan mengalokasikan pelunasan faktur (*open-item clearing*). | [[02-accounting/bank-reconciliation|Bank Reconciliation]] |
 
 ---
@@ -90,7 +90,7 @@ flowchart TD
 
 1. **Sales Order Diterbitkan**: Pelanggan memesan 10 unit laptop seharga Rp10.000.000. Dokumen ini adalah **komitmen komersial**, bukan transaksi akuntansi. Tidak ada akun GL yang didebit atau dikredit.
 2. **Barang Dikirim (Delivery)**: 10 unit laptop keluar dari gudang. Terjadi mutasi persediaan fisik. Dalam sistem persediaan perpetual, nilai aset persediaan berkurang Rp7.000.000 dan diakui sebagai COGS.
-3. **Faktur Diterbitkan (Invoice)**: Perusahaan menerbitkan hak tagih legal kepada pelanggan sebesar Rp11.100.000 (termasuk PPN 11%). Piutang Usaha (*Accounts Receivable*) bertambah di subledger.
+3. **Faktur Diterbitkan (Invoice)**: Perusahaan menerbitkan hak tagih legal kepada pelanggan sebesar Rp11.100.000 (termasuk PPN efektif 11%). Piutang Usaha (*Accounts Receivable*) bertambah di subledger.
 4. **Pendapatan Diakui (Revenue)**: Terjadi saat kendali (*control*) atas barang telah berpindah ke pelanggan sesuai kriteria **IFRS 15** (lihat [[03-sales/revenue-recognition|Revenue Recognition]]).
 5. **Pembayaran Diterima (Cash)**: Pelanggan mentransfer uang melalui bank. Kas bertambah, piutang dihapus dari daftar tagihan terbuka (*open item*).
 

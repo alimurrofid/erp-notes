@@ -49,7 +49,7 @@ flowchart TD
 
 ### Mengapa Angka "Sales Booking" Berbeda dari "Recognized Revenue"?
 * **Sales Bookings (Pemesanan Masuk)**: Mencatat total komitmen nilai *Sales Order* yang disetujui bulan ini (misal: Rp150.000.000). Angka ini menunjukkan **efektivitas tim komersial** dalam mendapatkan kontrak.
-* **Recognized Revenue (Pendapatan Buku Besar)**: Hanya mencatat nilai barang yang **telah benar-benar diserahkan dan difakturkan** sesuai standar IFRS 15 (misal: Rp100.000.000). Sisanya (Rp50.000.000) masih berada dalam antrean gudang atau berstatus *backorder*.
+* **Recognized Revenue (Pendapatan Buku Besar)**: Mencatat nilai barang yang **telah diserahkan sehingga kontrol berpindah** sesuai IFRS 15 (misal: Rp100.000.000). Faktur tidak menentukan pengakuan; barang yang masih di gudang atau berstatus *backorder* (Rp50.000.000) belum diakui.
 
 ---
 

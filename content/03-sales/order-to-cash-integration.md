@@ -25,9 +25,9 @@ flowchart TD
     --> SO["(3) Sales Order<br/>(SO: Kontrak Mengikat & Reservasi Stok Gudang)"]
     
     SO --> WMS["(4) Warehouse Fulfillment<br/>(Pick List & Packing Slip)"]
-    WMS --> DO["(5) Delivery Order / Goods Issue<br/>(Pengurangan Stok Fisik & Jurnal COGS)"]
+    WMS --> DO["(5) Delivery Order / Goods Issue<br/>(Pengurangan Stok Fisik, Jurnal COGS & Pengakuan Pendapatan)"]
     
-    DO --> INV["(6) Customer Invoice<br/>(Faktur Penjualan: Penambahan Piutang & Pengakuan Pendapatan)"]
+    DO --> INV["(6) Customer Invoice<br/>(Faktur Penjualan: Penambahan Piutang & PPN Keluaran)"]
     INV --> AR["(7) Accounts Receivable Subledger<br/>(Manajemen Saldo Terbuka & Aging Tagihan)"]
     
     AR --> PAY["(8) Customer Payment<br/>(Penerimaan Kas / Bank & Alokasi Pelunasan)"]
@@ -99,7 +99,7 @@ flowchart TD
 Berikut adalah rekam jejak terpadu transaksi acuan PT Maju Bersama melintasi seluruh modul:
 
 ```text
-1. Quotation: SQ-2026-09-0042 (10 Unit Laptop Pro @ Rp1.000.000 + PPN 11%)
+1. Quotation: SQ-2026-09-0042 (10 Unit Laptop Pro @ Rp1.000.000 + PPN efektif 11%)
    => Status: Won. Jurnal Akuntansi = Rp0. Mutasi Stok = 0.
    
 2. Sales Order: SO-2026-09-0101 (Disahkan 15 September)

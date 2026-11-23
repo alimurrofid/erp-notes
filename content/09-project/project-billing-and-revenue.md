@@ -77,27 +77,27 @@ Faktur pelanggan untuk proyek bernilai tetap (*Fixed Price*) tidak dapat diposti
 
 Pencatatan akuntansi penagihan proyek melibatkan Piutang Usaha, Liabilitas Kontrak, Pajak Keluaran (PPN), dan Pendapatan Usaha.
 
-### 1. Saat Penerbitan Faktur Milestone (Billing Event)
+### 1. Saat Penerbitan Faktur Milestone (Billing Event — BAST Disetujui)
 
-Ketika Milestone 1 disetujui dan faktur senilai 20% diterbitkan:
+Ketika Milestone 1 disetujui (BAST ditandatangani) dan faktur diterbitkan, kewajiban pelaksanaan telah terpenuhi. Pendapatan diakui pada saat itu:
 - Nilai Tagihan: Rp60.000.000
-- PPN Keluaran 11%: Rp6.600.000
+- PPN Keluaran efektif 11%: Rp6.600.000
 - Total Piutang: Rp66.600.000
 
 $$\begin{array}{llrr}
 \text{Debit:} & \text{Accounts Receivable (Piutang Usaha)} & \text{Rp66.600.000} & \\
-\text{Kredit:} & \text{VAT Out (PPN Keluaran - 11\%)} & & \text{Rp6.600.000} \\
-\text{Kredit:} & \text{Contract Liability / Deferred Revenue} & & \text{Rp60.000.000}
-\end{array}$$
-
-### 2. Saat Pengakuan Pendapatan Berkala (Revenue Recognition Entry)
-
-Ketika pendapatan diakui berdasarkan pemenuhan kewajiban pelaksanaan (mengalihkan saldo dari *Contract Liability* ke *Project Revenue*):
-
-$$\begin{array}{llrr}
-\text{Debit:} & \text{Contract Liability / Deferred Revenue} & \text{Rp60.000.000} & \\
+\text{Kredit:} & \text{VAT Out (PPN Keluaran — efektif 11\%)} & & \text{Rp6.600.000} \\
 \text{Kredit:} & \text{Project Service Revenue (Pendapatan Jasa Proyek)} & & \text{Rp60.000.000}
 \end{array}$$
+
+### 2. Jika Penagihan Mendahului Pemenuhan (Contract Liability)
+
+*Contract liability* hanya timbul jika entitas menagih sebelum kewajiban pelaksanaan terpenuhi, misalnya uang muka atau tagihan di muka.
+
+- Saat tagihan di muka: Dr Accounts Receivable / Cr Contract Liability / Cr PPN Keluaran.
+- Saat BAST: Dr Contract Liability / Cr Project Service Revenue.
+
+Jangan memakai *contract liability* untuk milestone yang BAST-nya sudah ditandatangani; itu menunda pendapatan yang seharusnya sudah diakui.
 
 ### 3. Saat Penerimaan Kas dari Pelanggan
 
@@ -119,7 +119,7 @@ Meneruskan skenario kanonik proyek `PRJ-ERP-2026-001` untuk pelanggan `PT Maju B
 
 ### Jadwal Penagihan Milestone dan Status Eksekusi
 
-| Milestone Code | Deskripsi Pencapaian | Bobot (%) | Nilai Tagihan Netto | PPN (11%) | Total Tagihan Piutang | Status BAST & Faktur |
+| Milestone Code | Deskripsi Pencapaian | Bobot (%) | Nilai Tagihan Netto | PPN (efektif 11%) | Total Tagihan Piutang | Status BAST & Faktur |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **M1** | Blueprint & Arsitektur Sign-Off | 20% | Rp60.000.000 | Rp6.600.000 | Rp66.600.000 | BAST Disetujui / Lunas |
 | **M2** | Core Configuration & CRP Sign-Off | 30% | Rp90.000.000 | Rp9.900.000 | Rp99.900.000 | BAST Disetujui / Lunas |
