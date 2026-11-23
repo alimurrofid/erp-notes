@@ -312,15 +312,23 @@ Jangan memulai pembelajaran dari menu software. Pahami proses bisnis dan dampakn
 
 ## AI Agent
 
-Repository ini menggunakan `AGENTS.md` sebagai aturan utama untuk AI agent.
+`AGENTS.md` adalah entry point untuk AI agent: non-negotiables, routing per tugas, dan definition of done.
 
-Panduan tambahan berada di:
+Detail berada di:
 
-- `.agents/sources.md`
-- `.agents/terminology.md`
-- `.agents/document-template.md`
+- `.agents/rules/` — aturan per domain (domain, accounting, tax-id, content-format, writing-style)
+- `.agents/skills/` — prosedur (erp-article, erp-review, accounting-validation, research-citation, erp-integration-analysis)
+- `.agents/workflows/` — alur kerja (create, revise, verify, maintain)
+- `.agents/references/scenario-register.md` — angka dan nomor dokumen kanonik
+- `.agents/sources.md`, `.agents/terminology.md`, `.agents/document-template.md` — referensi
+- `.agents/scripts/` — pemeriksaan deterministik
 
-AI agent harus memeriksa dokumen yang sudah ada sebelum membuat dokumen baru untuk menghindari duplikasi.
+Verifikasi sebelum menyatakan selesai:
+
+```bash
+npm run check:content
+npx quartz build
+```
 
 ## Development & Deployment (Quartz v4)
 
