@@ -14,11 +14,11 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: null,
-    locale: "en-US",
+    locale: "id-ID",
     // Base URL for canonical links, sitemaps, and RSS feeds.
     // Ganti dengan domain custom jika menggunakan domain sendiri (misal: erpnotes.example.com)
     // atau <username>.github.io/<repo> untuk GitHub Pages default.
-    baseUrl: "erpnotes.rofid.me",
+    baseUrl: "erpnotes.rofid.my.id",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
