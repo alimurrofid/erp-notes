@@ -20,7 +20,7 @@ Pengelolaan harga dan ketentuan komersial yang terstruktur bertujuan untuk:
 1. **Akurasi Perhitungan Laba dan HPP (*True Cost of Goods Sold*)**: Memastikan seluruh ongkos angkut dan bea impor diatribusikan secara adil ke dalam harga pokok per unit barang, sehingga laba kotor tidak terdistorsi.
 2. **Penegakan Kesepakatan Kontrak Harga**: Mengunci harga beli agar faktur tagihan pemasok yang melebihi kesepakatan PO dapat ditahan otomatis oleh mesin pencocokan (*Price Variance Hold*).
 3. **Pemanfaatan Potongan Pembayaran Dini (*Early Payment Discounts*)**: Mengoptimalkan arus kas melalui pemanfaatan diskon pelunasan lebih awal (*Cash Discounts*) dari pemasok.
-4. **Kepastian Tanggung Jawab Hukum Logistik (*Incoterms Compliance*)**: Menentukan titik fisik perpindahan risiko kepemilikan dan pihak yang wajib membayar biaya asuransi pengiriman.
+4. **Kepastian Tanggung Jawab Hukum Logistik (*Incoterms Compliance*)**: Menentukan titik perpindahan risiko dan pihak yang wajib membayar biaya asuransi pengiriman. Incoterms tidak mengatur perpindahan kepemilikan (*title*); kepemilikan diatur oleh kontrak dan hukum yang berlaku.
 
 ---
 
@@ -83,7 +83,7 @@ ERP mendukung konfigurasi termin pembayaran yang memengaruhi jadwal pengeluaran 
 ## Skenario Acuan Transaksi: Penerapan Landed Cost
 
 Melanjutkan pesanan acuan pembelian 10 unit komponen *Laptop Pro* dari PT Sumber Teknologi:
-* **Harga Beli Faktur Pemasok**: 10 unit @ Rp700.000 = **Rp7.000.000** (+ PPN 11% Rp770.000 = Rp7.770.000).
+* **Harga Beli Faktur Pemasok**: 10 unit @ Rp700.000 = **Rp7.000.000** (+ PPN efektif 11% Rp770.000 = Rp7.770.000).
 * **Ongkos Angkut Ekspedisi (*Freight-In*)**: Perusahaan menggunakan jasa kurir pihak ketiga (*CV Logistik Cepat*) untuk mengangkut barang dari pelabuhan ke gudang dengan biaya sebesar **Rp500.000** (non-PPN).
 
 ### 1. Perhitungan Landed Cost Persediaan:

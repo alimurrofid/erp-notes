@@ -67,7 +67,7 @@ Untuk memahami bagaimana reservasi dan alokasi memengaruhi ketersediaan persedia
 
 #### Langkah 3: Gelombang Pengambilan Dimulai untuk Order A (Alokasi 40 Unit)
 * Manajer gudang merilis gelombang pengiriman (*Delivery Wave*) untuk Order A.
-* ERP mengeksekusi **Alokasi (Hard Lock)**: Sistem menentukan bahwa 40 unit harus diambil dari Lorong 1, Rak A-02, Lot #LPT-001.
+* ERP mengeksekusi **Alokasi (Hard Lock)**: Sistem menentukan bahwa 40 unit harus diambil dari Lorong 1, Rak A-02, Lot LPT-001.
   $$\text{On-Hand} = 100 \text{ unit}$$
   $$\text{Reserved (Non-Allocated)} = 50 \text{ unit (milik Order B)}$$
   $$\text{Allocated (Siap Pick)} = 40 \text{ unit (milik Order A)}$$
