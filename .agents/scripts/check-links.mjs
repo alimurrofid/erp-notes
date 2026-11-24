@@ -110,7 +110,11 @@ for (const file of files) {
     let m;
     while ((m = WIKI.exec(line))) {
       wikiCount += 1;
-      const target = m[1].trim();
+      // "[[path\|alias]]" (escaped pipe inside tables) leaves a trailing
+      // backslash in the capture. Strip it so resolution is identical on
+      // Windows (where "\" doubles as a path separator and masked the bug)
+      // and Linux (where it poisoned the basename and failed CI).
+      const target = m[1].trim().replace(/\\+$/, "");
       const anchor = m[2] ? m[2].slice(1) : null;
       const res = resolve(target);
       if (!res.ok) {
