@@ -204,4 +204,4 @@ Dalam perancangan modul komponen gaji Naventra ERP:
 - SAP Help Portal. *Wage Types and Payroll Calculations in SAP S/4HANA*.
 - Microsoft Learn. *Earning codes and deduction setups in Dynamics 365 Human Resources*.
 - ERPNext Documentation. *Salary Components and Salary Structures*.
-- Odoo 17.0 Documentation. *Salary Rules and Structure Configuration*.
+- Odoo 20.0 Documentation. *Salary Rules and Structure Configuration*.

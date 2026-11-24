@@ -184,4 +184,4 @@ Dalam perancangan modul manajemen lembur Naventra ERP:
 - SAP Help Portal. *Overtime Processing in Time Management (PT) in SAP ERP HCM*.
 - Microsoft Learn. *Calculate overtime and pay types in Dynamics 365 Supply Chain & HR*.
 - ERPNext Documentation. *Overtime Processing and Additional Salary*.
-- Odoo 17.0 Documentation. *Attendance Overtime Management*.
+- Odoo 20.0 Documentation. *Attendance Overtime Management*.

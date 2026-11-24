@@ -162,4 +162,4 @@ Dalam perancangan modul struktur organisasi Naventra ERP:
 - SAP Help Portal. *Organizational Management (OM) in SAP S/4HANA*.
 - Microsoft Learn. *Manage Organization and Position Hierarchies in Dynamics 365 Human Resources*.
 - ERPNext Documentation. *Department and Designation Setup*.
-- Odoo 17.0 Documentation. *Departments and Job Positions Management*.
+- Odoo 20.0 Documentation. *Departments and Job Positions Management*.

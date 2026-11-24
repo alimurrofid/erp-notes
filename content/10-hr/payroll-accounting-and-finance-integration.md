@@ -205,4 +205,4 @@ Dalam perancangan modul integrasi akuntansi penggajian Naventra ERP:
 - SAP Help Portal. *Payroll Posting to Accounting (FI/CO) in SAP ERP HCM*.
 - Microsoft Learn. *Post payroll to general ledger in Dynamics 365 Finance*.
 - ERPNext Documentation. *Payroll Accounting and Journal Entries*.
-- Odoo 17.0 Documentation. *Payroll Accounting Integration*.
+- Odoo 20.0 Documentation. *Payroll Accounting Integration*.

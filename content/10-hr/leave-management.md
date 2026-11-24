@@ -192,4 +192,4 @@ Dalam perancangan modul manajemen cuti Naventra ERP:
 - SAP Help Portal. *Time Management and Leave Accruals in SAP ERP HCM*.
 - Microsoft Learn. *Manage Leave and Absence Plans in Dynamics 365 Human Resources*.
 - ERPNext Documentation. *Leave Management Overview*.
-- Odoo 17.0 Documentation. *Time Off Management and Approvals*.
+- Odoo 20.0 Documentation. *Time Off Management and Approvals*.

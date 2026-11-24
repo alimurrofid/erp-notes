@@ -179,4 +179,4 @@ Dalam perancangan modul kepatuhan pajak penggajian Naventra ERP:
 - SAP Help Portal. *Payroll Tax Processing and Statutory Reporting in SAP ERP HCM*.
 - Microsoft Learn. *Manage Payroll Taxes and Withholding in Dynamics 365 Human Resources*.
 - ERPNext Documentation. *Income Tax and Statutory Deductions*.
-- Odoo 17.0 Documentation. *Payroll Localizations and Statutory Rules*.
+- Odoo 20.0 Documentation. *Payroll Localizations and Statutory Rules*.

@@ -189,4 +189,4 @@ Dalam perancangan modul tunjangan dan klaim biaya Naventra ERP:
 - SAP Help Portal. *Travel and Expense Management in SAP Concur & S/4HANA*.
 - Microsoft Learn. *Expense Management Overview and Policies in Dynamics 365 Finance*.
 - ERPNext Documentation. *Expense Claim Management*.
-- Odoo 17.0 Documentation. *Expenses Management and Invoicing*.
+- Odoo 20.0 Documentation. *Expenses Management and Invoicing*.

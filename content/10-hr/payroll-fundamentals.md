@@ -231,4 +231,4 @@ Dalam perancangan modul penggajian Naventra ERP:
 - SAP Help Portal. *Payroll Management (PY) Architecture in SAP S/4HANA*.
 - Microsoft Learn. *Payroll Processing and Salary Administration in Dynamics 365*.
 - ERPNext Documentation. *Payroll and Salary Structure Management*.
-- Odoo 17.0 Documentation. *Payroll Engine and Salary Rules Configuration*.
+- Odoo 20.0 Documentation. *Payroll Engine and Salary Rules Configuration*.
