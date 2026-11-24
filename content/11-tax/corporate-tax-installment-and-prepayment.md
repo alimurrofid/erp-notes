@@ -173,9 +173,10 @@ Pada rancangan sistem ERP Naventra, pengelolaan angsuran dan kredit pajak badan 
 
 ## References
 
-* Undang-Undang Republik Indonesia No. 36 Tahun 2008 tentang Pajak Penghasilan beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
-* Peraturan Direktur Jenderal Pajak No. PER-19/PJ/2014 tentang Tata Cara Pembayaran dan Penyetoran Pajak.
-* Surat Edaran Direktur Jenderal Pajak No. SE-05/PJ/2019 tentang Tata Cara Penanganan Wajib Pajak Lebih Bayar.
-* Microsoft Learn: *Sales and Income Tax Prepayments and Withholdings in Dynamics 365 Finance*.
-* Frappe / ERPNext Documentation: *Advance Tax Payments and Tax Asset Management*.
-* Odoo Accounting User Guide: *Managing Advance Payments and Periodic Tax Obligations*.
+1. **UU No. 36 Tahun 2008** — Perubahan Keempat atas UU No. 7 Tahun 1983 tentang Pajak Penghasilan (Pasal 25: angsuran PPh). https://peraturan.go.id/id/uu-no-36-tahun-2008 — diakses 24 November 2026.
+2. **UU No. 28 Tahun 2007** — Ketentuan Umum dan Tata Cara Perpajakan (Pasal 9: batas pembayaran/penyetoran). https://peraturan.go.id/id/uu-no-28-tahun-2007 — diakses 24 November 2026.
+3. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+4. **PMK No. 81 Tahun 2024** — Ketentuan Perpajakan dalam rangka Pelaksanaan Coretax (pembayaran dan pelaporan elektronik). https://jdih.kemenkeu.go.id/dok/pmk-81-tahun-2024 — diakses 24 November 2026.
+5. **PER-19/PJ/2014** — Tata Cara Pembayaran dan Penyetoran Pajak (cetak; konteks sebelum Coretax).
+6. **SE-05/PJ/2019** — Tata Cara Penanganan Wajib Pajak Lebih Bayar (cetak; tautan resmi belum terverifikasi).
+7. **Odoo 20.0 Documentation** — *Accounting and Invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.

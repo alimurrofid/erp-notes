@@ -205,9 +205,11 @@ Pada perancangan modul Withholding Tax di ERP Naventra, fitur-fitur berikut diim
 
 ## References
 
-* Undang-Undang Republik Indonesia No. 36 Tahun 2008 tentang Pajak Penghasilan beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
-* Peraturan Direktur Jenderal Pajak No. PER-24/PJ/2021 tentang Bentuk dan Tata Cara Pembuatan Bukti Pemotongan/Pemungutan Unifikasi serta SPT Masa PPh Unifikasi.
-* Peraturan Menteri Keuangan No. 141/PMK.03/2015 tentang Jenis Jasa Lain Sebagaimana Dimaksud dalam Pasal 23 ayat (1) huruf c angka 2 UU PPh.
-* Microsoft Learn: *Withholding Tax Setup and Calculations in Dynamics 365 Finance*.
-* Frappe / ERPNext Documentation: *Applying Withholding Tax to Supplier Invoices*.
-* Odoo Accounting User Guide: *Retention Taxes and Withholding Workflows*.
+1. **UU No. 36 Tahun 2008** — Perubahan Keempat atas UU No. 7 Tahun 1983 tentang Pajak Penghasilan (Pasal 21, 23, dan 26). https://peraturan.go.id/id/uu-no-36-tahun-2008 — diakses 24 November 2026.
+2. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+3. **PP No. 34 Tahun 2017** — Pajak Penghasilan atas Penghasilan dari Persewaan Tanah dan/atau Bangunan (PPh final 10%). https://peraturan.go.id/id/pp-no-34-tahun-2017 — diakses 24 November 2026.
+4. **PMK No. 168 Tahun 2023** — Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Pribadi (PPh 21). https://jdih.kemenkeu.go.id/dok/pmk-168-tahun-2023 — diakses 24 November 2026.
+5. **PMK No. 141/PMK.03/2015** — Jenis Jasa Lain sebagaimana dimaksud dalam Pasal 23 ayat (1) huruf c angka 2 UU PPh (cetak; tautan JDIH belum terverifikasi).
+6. **PER-24/PJ/2021** — Bukti Pemotongan/Pemungutan Unifikasi dan SPT Masa PPh Unifikasi (cetak; konteks e-Bupot).
+7. **Odoo 20.0 Documentation** — *Withholding taxes*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/taxes/retention.html — diakses 24 November 2026.
+8. **ERPNext Documentation** — *Tax Withholding Category*. https://docs.frappe.io/erpnext/tax-withholding-category — diakses 24 November 2026.

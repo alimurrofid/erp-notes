@@ -171,9 +171,11 @@ Pada arsitektur ERP Naventra, modul rekonsiliasi fiskal dirancang dengan pendeka
 
 ## References
 
-* Undang-Undang Republik Indonesia No. 36 Tahun 2008 tentang Pajak Penghasilan beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
-* Peraturan Menteri Keuangan No. 66 Tahun 2023 tentang Perlakuan Pajak Penghasilan atas Penggantian atau Imbalan Sehubungan dengan Pekerjaan atau Jasa yang Diterima atau Diperoleh dalam Bentuk Natura dan/atau Kenikmatan.
-* Peraturan Menteri Keuangan No. 02/PMK.03/2010 tentang Biaya Promosi yang Dapat Dikurangkan dari Penghasilan Bruto.
-* Microsoft Learn: *Tax Reconciliation and Book-to-Tax Reporting in Dynamics 365*.
-* Frappe / ERPNext Documentation: *Finance Books and Multi-Book Asset Depreciation*.
-* Odoo Accounting Documentation: *Managing Year-End Adjustments and Fiscal Positions*.
+1. **UU No. 36 Tahun 2008** — Perubahan Keempat atas UU No. 7 Tahun 1983 tentang Pajak Penghasilan (Pasal 6 dan Pasal 9: biaya yang dapat/tidak dapat dikurangkan). https://peraturan.go.id/id/uu-no-36-tahun-2008 — diakses 24 November 2026.
+2. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+3. **PP No. 55 Tahun 2022** — Penyesuaian Pengaturan di Bidang Pajak Penghasilan (antara lain natura dan kenikmatan). https://peraturan.go.id/id/pp-no-55-tahun-2022 — diakses 24 November 2026.
+4. **PMK No. 66 Tahun 2023** — Perlakuan PPh atas Penggantian atau Imbalan dalam Bentuk Natura dan/atau Kenikmatan. https://jdih.kemenkeu.go.id/dok/pmk-66-tahun-2023 — diakses 24 November 2026.
+5. **PMK No. 02/PMK.03/2010** — Biaya Promosi yang Dapat Dikurangkan dari Penghasilan Bruto (cetak; tautan JDIH belum terverifikasi).
+6. **PSAK 46** — *Akuntansi Pajak Penghasilan* (cetak).
+7. **ERPNext Documentation** — *Period Closing Voucher*. https://docs.frappe.io/erpnext/period-closing-voucher — diakses 24 November 2026.
+8. **Microsoft Learn** — *Close the general ledger at period end* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/close-general-ledger-at-period-end — diakses 24 November 2026.

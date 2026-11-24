@@ -155,9 +155,10 @@ Pada pengembangan ERP Naventra, modul perhitungan PPh Badan dirancang dengan fit
 
 ## References
 
-* Undang-Undang Republik Indonesia No. 36 Tahun 2008 tentang Pajak Penghasilan sebagaimana telah diubah terakhir dengan UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
-* Peraturan Pemerintah Republik Indonesia No. 55 Tahun 2022 tentang Penyesuaian Pengaturan di Bidang Pajak Penghasilan.
-* Surat Edaran Direktur Jenderal Pajak No. SE-02/PJ/2015 tentang Penegasan atas Pelaksanaan Pasal 31E ayat (1) UU No. 36 Tahun 2008.
-* International Accounting Standard (IAS) 12: *Income Taxes*.
-* Microsoft Learn: *Corporate Tax Calculation and Rate Tier Setup in Dynamics 365 Finance*.
-* Frappe / ERPNext Documentation: *Managing Year-End Tax Liabilities and Journal Postings*.
+1. **UU No. 36 Tahun 2008** — Perubahan Keempat atas UU No. 7 Tahun 1983 tentang Pajak Penghasilan (Pasal 17 dan Pasal 31E). https://peraturan.go.id/id/uu-no-36-tahun-2008 — diakses 24 November 2026.
+2. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP), termasuk tarif PPh badan 22% sejak Tahun Pajak 2022. https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+3. **PP No. 55 Tahun 2022** — Penyesuaian Pengaturan di Bidang Pajak Penghasilan. https://peraturan.go.id/id/pp-no-55-tahun-2022 — diakses 24 November 2026.
+4. **SE-02/PJ/2015** — Penegasan atas Pelaksanaan Pasal 31E ayat (1) UU No. 36 Tahun 2008 (cetak; tautan resmi belum terverifikasi).
+5. **IAS 12** — *Income Taxes* (cetak).
+6. **Odoo 20.0 Documentation** — *Accounting and Invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.
+7. **Microsoft Learn** — *Close the fiscal year* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/close-fiscal-year — diakses 24 November 2026.

@@ -162,9 +162,10 @@ Pada rancangan sistem ERP Naventra, modul pembayaran dan pelaporan perpajakan di
 
 ## References
 
-* Undang-Undang Republik Indonesia No. 28 Tahun 2007 tentang Ketentuan Umum dan Tata Cara Perpajakan (UU KUP) beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
-* Peraturan Direktur Jenderal Pajak No. PER-05/PJ/2017 tentang Pembayaran Pajak Secara Elektronik.
-* Peraturan Direktur Jenderal Pajak No. PER-02/PJ/2019 tentang Tata Cara Penyampaian, Penerimaan, dan Pengolahan Surat Pemberitahuan.
-* Microsoft Learn: *Vendor and Tax Authority Payments in Dynamics 365 Finance*.
-* Frappe / ERPNext Documentation: *Payment Entries and Tax Remittance Workflows*.
-* Odoo Accounting Documentation: *Payments, Bank Synchronization, and Compliance Declarations*.
+1. **UU No. 28 Tahun 2007** — Ketentuan Umum dan Tata Cara Perpajakan (pembayaran, SPT, dan bukti penerimaan). https://peraturan.go.id/id/uu-no-28-tahun-2007 — diakses 24 November 2026.
+2. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+3. **PMK No. 81 Tahun 2024** — Ketentuan Perpajakan dalam rangka Pelaksanaan Coretax (billing, pembayaran, dan pelaporan). https://jdih.kemenkeu.go.id/dok/pmk-81-tahun-2024 — diakses 24 November 2026.
+4. **PER-05/PJ/2017** — Pembayaran Pajak Secara Elektronik (cetak; konteks historis e-Billing).
+5. **PER-02/PJ/2019** — Tata Cara Penyampaian, Penerimaan, dan Pengolahan SPT (cetak; tautan resmi belum terverifikasi).
+6. **Odoo 20.0 Documentation** — *Accounting and Invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.
+7. **Microsoft Learn** — *Create a sales tax payment* (Dynamics 365 Finance; contoh alur pembayaran otoritas pajak). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/create-sales-tax-payment — diakses 24 November 2026.

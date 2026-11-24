@@ -172,9 +172,11 @@ Pada rancangan sistem ERP Naventra, pengelolaan PPh Badan diimplementasikan mela
 
 ## References
 
-* Undang-Undang Republik Indonesia No. 36 Tahun 2008 tentang Pajak Penghasilan beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
-* International Accounting Standard (IAS) 12: *Income Taxes*.
-* Pernyataan Standar Akuntansi Keuangan (PSAK) No. 46: *Akuntansi Pajak Penghasilan*.
-* Microsoft Learn: *Posting Layers, Tax Books, and Book-to-Tax Reconciliation in Dynamics 365*.
-* Frappe / ERPNext Documentation: *Fiscal Year Closing and Managing Tax Adjustments*.
-* Odoo Accounting User Guide: *Year-End Financial Closing and Tax Declarations*.
+1. **UU No. 36 Tahun 2008** — Perubahan Keempat atas UU No. 7 Tahun 1983 tentang Pajak Penghasilan. https://peraturan.go.id/id/uu-no-36-tahun-2008 — diakses 24 November 2026.
+2. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+3. **PP No. 55 Tahun 2022** — Penyesuaian Pengaturan di Bidang Pajak Penghasilan. https://peraturan.go.id/id/pp-no-55-tahun-2022 — diakses 24 November 2026.
+4. **IAS 12** — *Income Taxes* (cetak).
+5. **PSAK 46** — *Akuntansi Pajak Penghasilan* (cetak).
+6. **Odoo 20.0 Documentation** — *Accounting and Invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.
+7. **ERPNext Documentation** — *Period Closing Voucher*. https://docs.frappe.io/erpnext/period-closing-voucher — diakses 24 November 2026.
+8. **Microsoft Learn** — *Close the fiscal year* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/close-fiscal-year — diakses 24 November 2026.

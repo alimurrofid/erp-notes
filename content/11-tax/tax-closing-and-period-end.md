@@ -169,8 +169,10 @@ Pada pengembangan ERP Naventra, fitur penutupan pajak akhir periode dirancang de
 
 ## References
 
-* Undang-Undang Republik Indonesia No. 28 Tahun 2007 tentang Ketentuan Umum dan Tata Cara Perpajakan (UU KUP) beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
-* Peraturan Menteri Keuangan No. 243/PMK.03/2014 tentang Surat Pemberitahuan (SPT) sebagaimana telah diubah dengan PMK No. 9/PMK.03/2018.
-* Microsoft Learn: *Financial Period Close Workspace and Tax Period Management in Dynamics 365 Finance*.
-* Odoo Accounting User Guide: *Locking Accounting and Tax Periods*.
-* Frappe / ERPNext Documentation: *Period Closing Voucher and Year-End Accounting Workflows*.
+1. **UU No. 28 Tahun 2007** — Ketentuan Umum dan Tata Cara Perpajakan (SPT, pembetulan, dan sanksi). https://peraturan.go.id/id/uu-no-28-tahun-2007 — diakses 24 November 2026.
+2. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+3. **PMK No. 243/PMK.03/2014** — Surat Pemberitahuan (SPT) (cetak; tautan JDIH belum terverifikasi).
+4. **PMK No. 81 Tahun 2024** — Ketentuan Perpajakan dalam rangka Pelaksanaan Coretax (pelaporan masa dan tahunan). https://jdih.kemenkeu.go.id/dok/pmk-81-tahun-2024 — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Accounting and Invoicing* (penutupan periode dan pelaporan). https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.
+6. **ERPNext Documentation** — *Period Closing Voucher*. https://docs.frappe.io/erpnext/period-closing-voucher — diakses 24 November 2026.
+7. **Microsoft Learn** — *Close the general ledger at period end* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/close-general-ledger-at-period-end — diakses 24 November 2026.
