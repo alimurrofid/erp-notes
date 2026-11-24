@@ -174,4 +174,4 @@ Untuk perancangan modul Perencanaan Kapasitas pada sistem ERP enterprise seperti
 - Vollmann, T. E., et al. *Manufacturing Planning and Control for Supply Chain Management: Capacity Management and Shop Scheduling*.
 - Microsoft Learn. *Scheduling and Capacity Allocation Architecture in Dynamics 365 Supply Chain Management*.
 - Frappe ERPNext Documentation. *Workstation Capacity and Work Order Scheduling*.
-- Odoo 17 Documentation. *Work Center Capacity and Planning Operations with Gantt Views*.
+- Odoo 20.0 Documentation. *Work Center Capacity and Planning Operations with Gantt Views*.

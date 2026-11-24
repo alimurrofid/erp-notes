@@ -140,4 +140,4 @@ Untuk perancangan modul Manufaktur pada sistem ERP enterprise seperti **Naventra
 - Groover, M. P. *Automation, Production Systems, and Computer-Integrated Manufacturing*. Pearson.
 - Microsoft Learn. *Production Control and Manufacturing Methodologies in Dynamics 365 Supply Chain Management*.
 - Frappe ERPNext Documentation. *Manufacturing Module and Production Concepts*.
-- Odoo 17 Documentation. *Manufacturing (MRP) Concepts and Work Center Operations*.
+- Odoo 20.0 Documentation. *Manufacturing (MRP) Concepts and Work Center Operations*.

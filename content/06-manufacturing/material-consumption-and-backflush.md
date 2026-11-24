@@ -165,4 +165,4 @@ Untuk perancangan modul Konsumsi Material pada sistem ERP enterprise seperti **N
 - Vollmann, T. E., et al. *Manufacturing Planning and Control for Supply Chain Management: Material Control and Floor Stock Practices*.
 - Microsoft Learn. *Flushing Principles and Material Consumption in Dynamics 365 Supply Chain Management*.
 - Frappe ERPNext Documentation. *Stock Entry for Manufacture and Raw Material Consumption*.
-- Odoo 17 Documentation. *Component Consumption and Flexible Consumption Policies in Manufacturing*.
+- Odoo 20.0 Documentation. *Component Consumption and Flexible Consumption Policies in Manufacturing*.

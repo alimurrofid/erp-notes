@@ -181,4 +181,4 @@ Untuk perancangan modul MRP pada sistem ERP enterprise seperti **Naventra**:
 - Vollmann, T. E., et al. *Manufacturing Planning and Control for Supply Chain Management: MRP Calculations*.
 - Microsoft Learn. *Master Planning and MRP Engine Architecture in Dynamics 365 Supply Chain Management*.
 - Frappe ERPNext Documentation. *Material Requirements Planning through Production Plan*.
-- Odoo 17 Documentation. *Run the MRP Scheduler and Procurement Automations*.
+- Odoo 20.0 Documentation. *Run the MRP Scheduler and Procurement Automations*.

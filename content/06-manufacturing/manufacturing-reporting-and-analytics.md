@@ -156,4 +156,4 @@ Untuk perancangan modul Pelaporan Manufaktur pada sistem ERP enterprise seperti 
 - Nakajima, S. *Introduction to TPM: Total Productive Maintenance*. Productivity Press.
 - Microsoft Learn. *Production Performance and Cost Analysis Power BI Content in Dynamics 365*.
 - Frappe ERPNext Documentation. *Manufacturing Reports and Analytics*.
-- Odoo 17 Documentation. *Production Analysis and OEE Dashboards in Manufacturing*.
+- Odoo 20.0 Documentation. *Production Analysis and OEE Dashboards in Manufacturing*.

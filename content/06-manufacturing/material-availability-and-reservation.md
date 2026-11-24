@@ -147,4 +147,4 @@ Untuk perancangan modul Reservasi Material Manufaktur pada sistem ERP enterprise
 - Vollmann, T. E., et al. *Manufacturing Planning and Control for Supply Chain Management: Material Staging and Floor Stock Control*.
 - Microsoft Learn. *Release Production Orders and Warehouse Material Staging in Dynamics 365 Supply Chain Management*.
 - Frappe ERPNext Documentation. *Material Transfer for Manufacturing and Shortage Tracking*.
-- Odoo 17 Documentation. *Reserve Materials and Manage Component Availability in Manufacturing*.
+- Odoo 20.0 Documentation. *Reserve Materials and Manage Component Availability in Manufacturing*.

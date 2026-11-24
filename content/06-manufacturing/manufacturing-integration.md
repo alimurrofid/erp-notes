@@ -202,4 +202,4 @@ Untuk perancangan modul Integrasi Manufaktur pada sistem ERP enterprise seperti 
 - IFRS Foundation. *IAS 2: Inventories (Measurement, Conversion Costs, and Cost of Goods Sold Recognition)*.
 - Microsoft Learn. *Production Control Integration with Inventory, Procurement, and General Ledger in Dynamics 365*.
 - Frappe ERPNext Documentation. *Manufacturing Workflow and Cross-Module Integration*.
-- Odoo 17 Documentation. *Manufacturing (MRP) Integration with Sales, Purchase, Inventory, and Accounting*.
+- Odoo 20.0 Documentation. *Manufacturing (MRP) Integration with Sales, Purchase, Inventory, and Accounting*.

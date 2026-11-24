@@ -189,4 +189,4 @@ Untuk perancangan modul Manufacturing Order pada sistem ERP enterprise seperti *
 - Vollmann, T. E., et al. *Manufacturing Planning and Control for Supply Chain Management: Order Release and Shop Floor Control*.
 - Microsoft Learn. *Production Order Lifecycle and Statuses in Dynamics 365 Supply Chain Management*.
 - Frappe ERPNext Documentation. *Work Order Lifecycle and Management*.
-- Odoo 17 Documentation. *Manufacturing Orders: From Planning to Production Closing*.
+- Odoo 20.0 Documentation. *Manufacturing Orders: From Planning to Production Closing*.
