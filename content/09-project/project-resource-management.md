@@ -166,8 +166,8 @@ Rancangan arsitektur modul Resource Management pada Naventra ERP:
 
 ## References
 
-- Project Management Institute (PMI). *A Guide to the Project Management Body of Knowledge (PMBOK Guide: Resource Management)*.
-- SAP SE. *Resource Planning and Activity Allocation in SAP Project System and Controlling*. SAP Help Portal.
-- Microsoft Corporation. *Resource management overview and scheduling in Dynamics 365 Project Operations*. Microsoft Learn.
-- Frappe Technologies. *Activity Cost and Resource Allocation in ERPNext*. ERPNext Documentation.
-- Odoo S.A. *Planning Shifts, Roles, and Resource Management*. Odoo Documentation.
+1. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (resource management) (cetak).
+2. **SAP SE** — *Resource Planning and Activity Allocation*: halaman Help spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Timesheet*. https://docs.frappe.io/erpnext/timesheet — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Project*. https://www.odoo.com/documentation/20.0/applications/services/project.html — diakses 24 November 2026.

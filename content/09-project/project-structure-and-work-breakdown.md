@@ -175,8 +175,8 @@ Rancangan arsitektur struktur WBS pada Naventra ERP:
 
 ## References
 
-- Project Management Institute (PMI). *Practice Standard for Work Breakdown Structures*, 3rd Edition.
-- International Organization for Standardization. *ISO 21511: Work breakdown structures for project and programme management*.
-- SAP SE. *Work Breakdown Structure (WBS) in SAP Project System (PS)*. SAP Help Portal.
-- Microsoft Corporation. *Work breakdown structures in Dynamics 365 Project Operations*. Microsoft Learn.
-- Kerzner, Harold. *Project Management: A Systems Approach to Planning, Scheduling, and Controlling*, 13th Edition. John Wiley & Sons.
+1. **PMI** — *Practice Standard for Work Breakdown Structures*, edisi ke-3 (cetak).
+2. **ISO 21511** — *Work breakdown structures for project and programme management* (cetak).
+3. **SAP SE** — *Work Breakdown Structure (WBS)*: halaman Help spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Project Operations* (Dynamics 365; WBS). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+5. **Kerzner, H.** — *Project Management: A Systems Approach*, edisi ke-13 (cetak).

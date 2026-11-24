@@ -160,9 +160,9 @@ Dalam perancangan modul tata kelola proyek Naventra ERP:
 
 ## References
 
-- Project Management Institute (PMI). (2021). *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (7th ed.). Project Management Institute.
-- International Organization for Standardization. (2020). *ISO 21502: Project, programme and portfolio management — Guidance on project management*. ISO.
-- SAP Help Portal. *Claim and Change Management in Project System (PS)*.
-- Microsoft Learn. *Manage Project Risks and Issues in Dynamics 365*.
-- ERPNext Documentation. *Issue Management in Projects*.
-- Odoo 20.0 Documentation. *Project Collaboration and Issue Tracking*.
+1. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, edisi ke-7 (cetak).
+2. **ISO 21502** — *Project, programme and portfolio management — Guidance on project management* (cetak).
+3. **SAP Help Portal** — *Claim and Change Management in Project System*: halaman spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+5. **ERPNext Documentation** — *Issue*. https://docs.frappe.io/erpnext/issue — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Project*. https://www.odoo.com/documentation/20.0/applications/services/project.html — diakses 24 November 2026.

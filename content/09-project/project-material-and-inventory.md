@@ -161,8 +161,8 @@ Dalam arsitektur modul logistik proyek Naventra ERP:
 
 ## References
 
-- Project Management Institute (PMI). (2021). *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (7th ed.). Project Management Institute.
-- SAP Help Portal. *Material Management in Project System (PS)*.
-- Microsoft Learn. *Manage Item Requirements and Project Inventory in Dynamics 365*.
-- ERPNext Documentation. *Stock Management for Projects*.
-- Odoo 20.0 Documentation. *Inventory Valuation and Analytic Accounts*.
+1. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, edisi ke-7 (cetak).
+2. **SAP Help Portal** — *Material Management in Project System*: halaman spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Stock Entry*. https://docs.frappe.io/erpnext/stock-entry — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Inventory valuation*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/product_management/inventory_valuation/using_inventory_valuation.html — diakses 24 November 2026.

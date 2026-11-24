@@ -158,8 +158,8 @@ Rancangan arsitektur modul Project Cost Management pada Naventra ERP:
 
 ## References
 
-- Project Management Institute (PMI). *Practice Standard for Project Estimating*, 2nd Edition.
-- SAP SE. *Cost and Revenue Planning in SAP S/4HANA Project System*. SAP Help Portal.
-- Microsoft Corporation. *Project cost tracking and categories in Dynamics 365 Project Operations*. Microsoft Learn.
-- Chartered Institute of Management Accountants (CIMA). *Cost Accounting and Project Cost Management Guidelines*.
-- Frappe Technologies. *Project Costing and Tracking in ERPNext*. ERPNext Documentation.
+1. **PMI** — *Practice Standard for Project Estimating*, edisi ke-2 (cetak).
+2. **SAP SE** — *Cost and Revenue Planning*: halaman Help spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+4. **CIMA** — *Cost Accounting and Project Cost Management Guidelines* (cetak).
+5. **ERPNext Documentation** — *Project*. https://docs.frappe.io/erpnext/project — diakses 24 November 2026.

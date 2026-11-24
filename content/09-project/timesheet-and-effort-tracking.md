@@ -191,8 +191,8 @@ Rancangan arsitektur modul Timesheet & Effort Tracking pada Naventra ERP:
 
 ## References
 
-- Project Management Institute (PMI). *A Guide to the Project Management Body of Knowledge (PMBOK Guide: Project Resource & Time Management)*.
-- SAP SE. *Cross-Application Time Sheet (CATS) Integration with Project System and Controlling in S/4HANA*. SAP Help Portal.
-- Microsoft Corporation. *Time entry and approval in Dynamics 365 Project Operations*. Microsoft Learn.
-- Frappe Technologies. *Timesheet Management and Activity Costing in ERPNext*. ERPNext Documentation.
-- Odoo S.A. *Track Project Time and Timesheet Validation*. Odoo Documentation.
+1. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (resource dan time management) (cetak).
+2. **SAP SE** — *CATS Integration with Project System*: halaman Help spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Project Operations* (Dynamics 365; time entry). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Timesheet*. https://docs.frappe.io/erpnext/timesheet — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Project*. https://www.odoo.com/documentation/20.0/applications/services/project.html — diakses 24 November 2026.

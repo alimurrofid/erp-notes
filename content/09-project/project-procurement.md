@@ -166,8 +166,8 @@ Dalam perancangan fungsionalitas Project Procurement pada Naventra ERP:
 
 ## References
 
-- Project Management Institute (PMI). (2021). *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (7th ed.). Project Management Institute.
-- SAP Help Portal. *Procurement in Project System (PS)*.
-- Microsoft Learn. *Project Procurement and Subcontracting in Dynamics 365 Project Operations*.
-- ERPNext Documentation. *Procurement Cycle Linked to Projects*.
-- Odoo 20.0 Documentation. *Purchase and Project Integration*.
+1. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, edisi ke-7 (cetak).
+2. **SAP Help Portal** — *Procurement in Project System*: halaman spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Purchase Order*. https://docs.frappe.io/erpnext/purchase-order — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Purchase*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/purchase.html — diakses 24 November 2026.

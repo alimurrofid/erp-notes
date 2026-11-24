@@ -187,8 +187,8 @@ Rancangan arsitektur modul Planning & Scheduling pada Naventra ERP:
 
 ## References
 
-- Project Management Institute (PMI). *Practice Standard for Scheduling*, 3rd Edition.
-- Kerzner, Harold. *Project Management: A Systems Approach to Planning, Scheduling, and Controlling (Chapter 11: Network Scheduling Techniques)*.
-- SAP SE. *Scheduling of Networks and WBS Elements in SAP S/4HANA Project System*. SAP Help Portal.
-- Microsoft Corporation. *Manage project schedules and dependencies in Dynamics 365 Project Operations*. Microsoft Learn.
-- Antill, James M., & Woodhead, Ronald W. *Critical Path Methods in Construction Practice*. John Wiley & Sons.
+1. **PMI** — *Practice Standard for Scheduling*, edisi ke-3 (cetak).
+2. **Kerzner, H.** — *Project Management: A Systems Approach* (bab network scheduling) (cetak).
+3. **SAP SE** — *Scheduling of Networks and WBS Elements*: halaman Help spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+5. **Antill, J. M., & Woodhead, R. W.** — *Critical Path Methods in Construction Practice* (cetak).

@@ -236,8 +236,8 @@ Rancangan arsitektur modul Project Management pada Naventra ERP:
 
 ## References
 
-- Project Management Institute (PMI). *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, 7th Edition.
-- International Organization for Standardization. *ISO 21500: Project, Programme and Portfolio Management — Context and Concepts*.
-- SAP SE. *Structures and Financial Integration in SAP Project System (SAP PS)*. SAP Help Portal.
-- Microsoft Corporation. *Project Operations architecture and core entities overview*. Microsoft Learn.
-- International Accounting Standards Board (IASB). *IFRS 15: Revenue from Contracts with Customers*. IFRS Foundation.
+1. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, edisi ke-7 (cetak).
+2. **ISO 21500** — *Project, Programme and Portfolio Management — Context and Concepts* (cetak).
+3. **SAP SE** — *SAP Project System*: halaman Help spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+5. **IFRS Foundation** — *IFRS 15 Revenue from Contracts with Customers*. https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/ — diakses 24 November 2026.

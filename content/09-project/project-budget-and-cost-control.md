@@ -205,8 +205,8 @@ Dalam perancangan modul proyek Naventra ERP:
 
 ## References
 
-- Project Management Institute (PMI). (2019). *Practice Standard for Earned Value Management*. PMI.
-- SAP Help Portal. *Availability Control in Project System (PS)*.
-- Microsoft Learn. *Project Budget Management in Dynamics 365 Project Operations*.
-- ERPNext Documentation. *Budgeting in ERPNext*.
-- Odoo 20.0 Documentation. *Analytic Accounting and Budgeting*.
+1. **PMI** — *Practice Standard for Earned Value Management* (cetak).
+2. **SAP Help Portal** — *Availability Control in Project System*: halaman spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Budget*. https://docs.frappe.io/erpnext/budget — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Accounting and invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.

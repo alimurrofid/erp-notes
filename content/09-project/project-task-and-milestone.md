@@ -192,8 +192,8 @@ Rancangan arsitektur Task & Milestone pada Naventra ERP:
 
 ## References
 
-- Project Management Institute (PMI). *A Guide to the Project Management Body of Knowledge (PMBOK Guide: Deliverables & Milestones)*.
-- SAP SE. *Milestones in Project System and Billing Plans Integration with Sales & Distribution (SD)*. SAP Help Portal.
-- Microsoft Corporation. *Define milestone billing rules for project contracts in Dynamics 365*. Microsoft Learn.
-- Frappe Technologies. *Managing Tasks and Milestones in ERPNext*. ERPNext Documentation.
-- International Accounting Standards Board (IASB). *IFRS 15: Performance Obligations Satisfied at a Point in Time*.
+1. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (deliverables dan milestones) (cetak).
+2. **SAP SE** — *Milestones and Billing Plans*: halaman Help spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Task*. https://docs.frappe.io/erpnext/task — diakses 24 November 2026.
+5. **IFRS Foundation** — *IFRS 15 Revenue from Contracts with Customers* (performance obligation terpenuhi pada titik waktu). https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/ — diakses 24 November 2026.
