@@ -173,4 +173,4 @@ Dalam perancangan modul manajemen kinerja Naventra ERP:
 - SAP Help Portal. *Performance and Goals Management in SAP SuccessFactors*.
 - Microsoft Learn. *Manage Employee Performance and Goals in Dynamics 365 Human Resources*.
 - ERPNext Documentation. *Appraisal and Performance Management*.
-- Odoo 17.0 Documentation. *Appraisals and Employee Feedback*.
+- Odoo 20.0 Documentation. *Appraisals and Employee Feedback*.

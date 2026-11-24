@@ -148,4 +148,4 @@ Dalam perancangan modul rekrutmen dan orientasi Naventra ERP:
 - SAP Help Portal. *Recruiting and Onboarding Architecture in SAP SuccessFactors*.
 - Microsoft Learn. *Set up recruitment and hire workers in Dynamics 365 Human Resources*.
 - ERPNext Documentation. *Recruitment and Onboarding Process*.
-- Odoo 17.0 Documentation. *Recruitment Process and Employee Creation*.
+- Odoo 20.0 Documentation. *Recruitment Process and Employee Creation*.

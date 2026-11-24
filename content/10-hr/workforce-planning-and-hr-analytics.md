@@ -176,4 +176,4 @@ Dalam perancangan modul perencanaan tenaga kerja dan analitik Naventra ERP:
 - SAP Help Portal. *Workforce Planning and Analytics in SAP SuccessFactors*.
 - Microsoft Learn. *Workforce Management and Power BI Analytics in Dynamics 365 Human Resources*.
 - ERPNext Documentation. *Staffing Plan and HR Dashboards*.
-- Odoo 17.0 Documentation. *Human Resources Reporting and Dashboards*.
+- Odoo 20.0 Documentation. *Human Resources Reporting and Dashboards*.
