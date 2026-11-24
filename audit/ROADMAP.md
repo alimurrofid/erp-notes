@@ -59,33 +59,33 @@ Semua validasi hijau (`check:content` 0 error; `check:urls` exit 0; `npx quartz 
 
 Debris `scratch/` (62 file hasil scraping) dihapus permanen sebelum Fase 0.
 
-## 5. Fase 1 — Keputusan Kebijakan ⏳ MENUNGGU PENGGUNA
+## 5. Fase 1 — Keputusan Kebijakan ✅ SELESAI (24 November 2026)
 
-Setiap item berikut butuh persetujuan pemilik sebelum Fase 2/3 berjalan penuh. Sesi AI menyajikan tabel ini, pengguna cukup setuju atau bertanya. Setelah disetujui, hasilnya ditulis ke `scenario-register.md` dan baris dipindahkan ke register Fixed.
+Disetujui pemilik proyek 24 November 2026. Nilai kanonik ditulis ke `.agents/references/scenario-register.md` (D-1…D-8); status per item ada di `REMEDIATION.md` bagian **Decided**. Item **belum** berstatus Fixed karena artikelnya baru diubah di Fase 2.
 
-| ID | Keputusan | Rekomendasi agent |
+| ID | Keputusan | Rekomendasi yang disetujui |
 |---|---|---|
-| ACC-06/FIN-10 | Basis jadwal aset AST-MAC-2026-0001 di 2028 | Jadikan cost model + skedul 33 bulan (audit E.10: akum. 55 jt, nilai buku 65 jt, residu 10 jt) sebagai kanonik; artikel revaluasi memakai **aset berbeda** (AST-MAC-2026-0002, revaluation model) agar dua model tidak bertabrakan pada satu aset |
-| ACC-11/FIN-09 | Material proyek: beban vs WIP | WIP→COGS diakru per progress untuk proyek fixed-price PT Maju Bersama; langsung ke beban hanya untuk time-material/cost-reimbursable |
-| ACC-26 | Dua skenario tahunan (EBT 15,35 jt vs 100 jt) | Samakan ke satu tahun fiskal (skenario pajak EBT 100 jt menjadi kanonik; laporan keuangan 02-accounting diberi label tahun pembanding). Alternatif bila biaya edit besar: label eksplisit Scenario A/B |
-| FIN-11 | Dua COA untuk mesin yang sama | COA pada `02-accounting/chart-of-accounts.md` menjadi kanonik; 08-assets menyesuaikan |
-| BIZ-06/07 | Baseline stok & nomor dokumen P2P | Adopsi pola ID penjualan yang sudah konsisten (SQ-2026-09-0042 → SO → DO → INV) untuk P2P; satu tabel dokumen kanonik di scenario-register |
-| INV-05 | Faktor konversi UOM | Katalog UOM tunggal: 1 Pack = 6 Unit; artikel pemakai "4" dikoreksi |
-| INV-08 | Cost sheet MO-2026-0042 | `production-costing-and-wip.md` menjadi pemilik tunggal cost sheet; artikel lain merujuk |
-| TAX-04/05 | Index menjanjikan cakupan PPh yang tidak ada | Perbaiki index sekarang (hapus janji berlebih); perluasan materi PPh 21/22 masuk Fase 5 bila diinginkan |
-| URUTAN | Urutan batch kampanye referensi | **`11-tax` didahulukan** (folder kanonik pajak = P0), lalu 00→05, lalu 06+. Ini membalik urutan `LINK-BACKLOG.md` batch 8 → update register saat eksekusi |
+| ACC-06/FIN-10 | Basis jadwal aset AST-MAC-2026-0001 di 2028 | Cost model + skedul 33 bulan (akum. 55 jt, nilai buku 65 jt, residu 10 jt) kanonik; artikel revaluasi memakai `AST-MAC-2026-0002` |
+| ACC-11/FIN-09 | Material proyek: beban vs WIP | WIP→COGS per progres untuk fixed-price; langsung beban untuk time-material/cost-reimbursable |
+| ACC-26 | Dua skenario tahunan (EBT 15,35 jt vs 100 jt) | EBT 100 jt kanonik; 15,35 jt menjadi tahun pembanding |
+| FIN-11 | Dua COA untuk mesin yang sama | COA `02-accounting/chart-of-accounts.md` kanonik; `08-assets` menyesuaikan |
+| BIZ-06/07 | Baseline stok & nomor dokumen P2P | Pola 4 segmen; `PR-2026-09-0041` dan `PO-2026-09-0081` kanonik |
+| INV-05 | Faktor konversi UOM | 1 Pack = 6 Unit; artikel pemakai "4" dikoreksi |
+| INV-08 | Cost sheet MO-2026-0042 | `production-costing-and-wip.md` pemilik tunggal |
+| TAX-04/05 | Index menjanjikan cakupan PPh yang tidak ada | Janji dihapus dari index; perluasan masuk Fase 5 |
+| URUTAN | Urutan batch kampanye referensi | `11-tax` didahulukan, lalu 00→05, lalu 06+ |
 
 ## 6. Fase 2 — Satu Kebenaran Akuntansi (AI otonom)
 
-Prasyarat: Fase 1 disetujui. Langkah:
+Prasyarat: Fase 1 ✅ disetujui 24 November 2026. Langkah:
 
 1. Tulis `canonical-dataset.md` (entity, COA, harga satuan, stok awal, tabel nomor dokumen, EBT/PKP) — semua angka turunannya dipindahkan dari scenario-register.
 2. Turunkan angka ke file-file: item ACC-16…25, INV-01…04/06/07/09…13/15, FIN-03/04/13/14, BIZ-01…05/08…11/14…17 (lihat `REMEDIATION.md` untuk lokasi).
 3. Batch per folder, maks 8 file konten per sesi.
 
-## 7. Fase 3 — Referensi & Versi (AI otonom)
+## 7. Fase 3 — Referensi & Versi (AI otonom) 🚧 BERJALAN
 
-Urutan: `11-tax` → `00`–`05` → `06`–`30`. Per batch:
+Urutan (dikunci Fase 1): `11-tax` → `00`–`05` → `06`–`30`. Batch 1 (`11-tax`, 8 file) dieksekusi 24 November 2026. Per batch:
 
 - Ganti seluruh referensi Odoo 17 → 20.0 (baca halaman tujuan; klaim yang tidak lagi didukung halaman baru = temuan, ditandai, bukan diam-diam direvisi).
 - Ganti 44 URL mati dengan padanan resmi (Microsoft Learn & Frappe merestrukturisasi URL — cari lokasi baru; jangan menebak).

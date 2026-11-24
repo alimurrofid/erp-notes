@@ -2,7 +2,7 @@
 
 Register fakta skenario contoh yang **sudah diverifikasi** di repository, beserta konflik yang belum diselesaikan.
 
-Status: **parsial** (2026-11-23). Ini register kerja untuk agent, bukan artikel publik dan bukan otoritas tunggal. Selama konflik di bawah belum diselesaikan, jangan menambah versi ketiga.
+Status: **parsial** (2026-11-24). Keputusan Fase 1 sudah dikunci; konflik nomor dokumen diselesaikan lewat D-5. Ini register kerja untuk agent, bukan artikel publik dan bukan otoritas tunggal. Selama konflik di bawah belum diselesaikan, jangan menambah versi ketiga.
 
 ## Fakta Terverifikasi
 
@@ -13,14 +13,27 @@ Status: **parsial** (2026-11-23). Ini register kerja untuk agent, bukan artikel 
 | Mata uang default | IDR | seluruh contoh |
 | Harga PO contoh | Rp700.000/unit | `content/04-purchasing/goods-receipt-and-service-receipt.md:93` |
 | Landed cost contoh | Rp750.000/unit setelah freight Rp500.000 untuk 10 unit | `content/04-purchasing/procure-to-pay-integration.md:146` |
-| Format nomor dokumen | `<JENIS>-<TAHUN>-<URUT>` mis. `PO-2026-00042` | `content/04-purchasing/procure-to-pay-integration.md:121` |
+| Format nomor dokumen | `<JENIS>-<TAHUN>-<BULAN>-<URUT>` mis. `SQ-2026-09-0042` | Keputusan Fase 1 (2026-11-24); pola penjualan di `content/03-sales/sales-order.md` |
+
+## Keputusan Kanonik Fase 1 (2026-11-24)
+
+Keputusan berikut disetujui pemilik proyek dan menjadi basis Fase 2. Angka yang belum ada di sini tidak boleh dikarang; diturunkan saat batch Fase 2 berjalan.
+
+| # | Objek | Keputusan kanonik |
+|---|---|---|
+| D-1 | Aset `AST-MAC-2026-0001` | Cost model + skedul 33 bulan (akumulasi 55 jt, nilai buku 65 jt, residu 10 jt). Artikel revaluasi memakai aset berbeda `AST-MAC-2026-0002` (revaluation model). |
+| D-2 | Material proyek | Proyek fixed-price: WIP→COGS diakru per progres. Time-material/cost-reimbursable: langsung ke beban. |
+| D-3 | Skenario tahunan | EBT 100 jt menjadi kanonik. Skenario EBT 15,35 jt diberi label tahun pembanding, bukan skenario kedua. |
+| D-4 | Chart of accounts | `content/02-accounting/chart-of-accounts.md` kanonik; `08-assets` menyesuaikan. |
+| D-5 | Nomor dokumen P2P | Pola 4 segmen. Nilai terverifikasi: `PR-2026-09-0041`, `PO-2026-09-0081`. Nomor lain diturunkan dari pola ini di Fase 2. |
+| D-6 | Konversi UOM | 1 Pack = 6 Unit. Artikel yang memakai faktor "4" dikoreksi. |
+| D-7 | Cost sheet produksi | `content/06-manufacturing/production-costing-and-wip.md` pemilik tunggal; artikel lain merujuk. |
+| D-8 | Index `11-tax` | Janji cakupan PPh yang belum ada dihapus dari index. Perluasan materi PPh 21/22 masuk Fase 5. |
 
 ## Konflik Belum Selesai
 
 | # | Objek | Nilai A | Nilai B | Dampak |
 |---|---|---|---|---|
-| 1 | Nomor PO | `PO-2026-00042` (`procure-to-pay-integration.md:121`) | `PO-2026-09-0081` (`goods-receipt-and-service-receipt.md:116`), `PO-2026-0042` | Rantai dokumen tidak dapat ditelusuri |
-| 2 | Nomor PR | `PR-2026-00042` | `PR-2026-09-0041` | Awal P2P berbeda antar artikel |
 | 3 | Nilai retur | Rp700.000 | Rp750.000 (nilai perolehan termasuk landed cost) | Persediaan overstated Rp50.000 |
 | 4 | PPN | 12% statutory dengan DPP 11/12 (`11-tax/vat-fundamentals.md:116`) | 11% "efektif sejak 1 April 2022" (`03-sales/sales-tax.md:86`) | Regulasi yang diajarkan sudah usang |
 

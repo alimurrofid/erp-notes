@@ -34,16 +34,18 @@ Entri **tidak** selesai jika hanya berisi penerbit + judul.
 
 ## Urutan Batch
 
+Diubah 24 November 2026 sesuai keputusan Fase 1 (URUTAN): `11-tax` didahulukan karena folder itu sumber kanonik tarif.
+
 | Batch | Isi | Jumlah | Alasan |
 |---|---|---:|---|
-| 1 | URL mati di `04-purchasing` | 8 | Section yang sedang dikerjakan; memperbaiki klaim link yang sudah ada |
-| 2 | URL mati di `02-accounting`, `03-sales`, `00`, `01` | 36 | Menghapus link yang gagal sebelum menambah yang baru |
-| 3 | Tanpa URL di `04-purchasing` | 28 | Melengkapi satu section sampai 100% |
-| 4 | Tanpa URL di `00`–`03` | 35 | Section yang sudah punya sebagian URL |
-| 5 | `05-inventory`, `06-manufacturing` | 176 | Vendor docs + APICS/ASCM |
-| 6 | `07-finance`, `08-assets` | 161 | Standar + buku |
-| 7 | `09-project`, `10-hr` | 203 | PMI, HR books, regulasi |
-| 8 | `11-tax` | 127 | DJP/PMK/UU + OECD |
+| 1 | `11-tax` — referensi tanpa URL, mulai 8 file inti PPN | 127 | Folder kanonik pajak; salah tarif menular ke semua modul |
+| 2 | URL mati di `04-purchasing` | 8 | Section yang sedang dikerjakan; memperbaiki klaim link yang sudah ada |
+| 3 | URL mati di `02-accounting`, `03-sales`, `00`, `01` | 36 | Menghapus link yang gagal sebelum menambah yang baru |
+| 4 | Tanpa URL sisa `11-tax` + `00`–`03` | sisa | Melengkapi section yang sudah punya sebagian URL |
+| 5 | Tanpa URL `04-purchasing` | 28 | Melengkapi satu section sampai 100% |
+| 6 | `05-inventory`, `06-manufacturing` | 176 | Vendor docs + APICS/ASCM |
+| 7 | `07-finance`, `08-assets` | 161 | Standar + buku |
+| 8 | `09-project`, `10-hr` | 203 | PMI, HR books, regulasi |
 
 ## Metode
 
