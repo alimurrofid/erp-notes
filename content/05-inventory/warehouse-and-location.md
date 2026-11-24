@@ -150,8 +150,6 @@ Untuk perancangan topologi gudang pada sistem ERP enterprise seperti **Naventra*
 
 ## References
 
-- ASCM / APICS. *Warehouse Management Best Practices: Facility Layout, Storage Topology, and Slotting Optimization*.
-- Microsoft Learn. *Warehouse Layout and Location Directives in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Warehouse Tree and Location Structure*.
-- Odoo 17 Documentation. *Warehouse Configurations: Locations, Multi-step Routes, and Putaway Rules*.
-- Tompkins, J. A., et al. *Facilities Planning: Warehouse Design, Material Flow, and Storage Systems*.
+- IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
+- Microsoft Learn. *Inventory locations*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-locations. Diakses 24 November 2026.
+- Odoo 17 Documentation. *Warehouses*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management/warehouses.html. Diakses 24 November 2026.

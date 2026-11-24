@@ -131,8 +131,6 @@ Untuk perancangan modul Picking dan Outbound Logistics pada sistem ERP enterpris
 
 ## References
 
-- ASCM / APICS. *Warehouse Management: Order Fulfillment, Picking Methodologies, and Packing Systems*.
-- De Koster, R., et al. *Design and Control of Warehouse Order Picking: A State of the Art Review*. European Journal of Operational Research.
-- Microsoft Learn. *Outbound Logistics and Wave Processing Architecture in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Pick List and Delivery Note Outbound Fulfillment*.
-- Odoo 17 Documentation. *Outbound Shipments: Multi-step Routes and Batch/Wave Picking*.
+- IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
+- Microsoft Learn. *Outbound process overview*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/outbound-process. Diakses 24 November 2026.
+- Odoo 17 Documentation. *Batch picking*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/shipping_receiving/picking_methods/batch.html. Diakses 24 November 2026.

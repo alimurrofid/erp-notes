@@ -135,8 +135,6 @@ Untuk perancangan modul Persediaan pada sistem ERP enterprise seperti **Naventra
 
 ## References
 
-- APICS / ASCM (Association for Supply Chain Management). *Supply Chain Operations Reference (SCOR) Model: Plan, Source, Make, Deliver, Return*.
-- IFRS Foundation. *IAS 2: Inventories (Scope and Measurement)*.
-- Microsoft Learn. *Inventory Management Architecture and Principles in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Stock Fundamentals and Stock Ledger Architecture*.
-- Odoo 17 Documentation. *Inventory Management: Double-entry Inventory Concepts and Structure*.
+- IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
+- Microsoft Learn. *Inventory management overview*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-home-page. Diakses 24 November 2026.
+- Odoo 17 Documentation. *Inventory*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory.html. Diakses 24 November 2026.

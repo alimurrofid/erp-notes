@@ -154,8 +154,6 @@ Untuk perancangan modul Retur Persediaan pada sistem ERP enterprise seperti **Na
 
 ## References
 
-- ASCM / APICS. *Reverse Logistics Management: Customer Returns, Quarantine, and Disposition Strategies*.
-- Rogers, D. S., & Tibben-Lembke, R. S. *Going Backwards: Reverse Logistics Trends and Practices*. Reverse Logistics Executive Council.
-- Microsoft Learn. *Manage Return Orders (RMA) and Disposition Codes in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Sales and Purchase Returns Workflow*.
-- Odoo 17 Documentation. *Reverse Transfers: Handling Returns from Customers and to Vendors*.
+- IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
+- Microsoft Learn. *Work with quarantine orders*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quarantine-orders. Diakses 24 November 2026.
+- Odoo 17 Documentation. *Returns and refunds*. https://www.odoo.com/documentation/17.0/applications/sales/sales/products_prices/returns.html. Diakses 24 November 2026.

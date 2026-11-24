@@ -152,8 +152,6 @@ Untuk perancangan modul Penerimaan Inbound pada sistem ERP enterprise seperti **
 
 ## References
 
-- ASCM / APICS. *Warehouse Management: Receiving Operations, Inbound Quality Inspection, and Cross-Docking*.
-- Tompkins, J. A., et al. *Facilities Planning: Receiving and Putaway Systems*.
-- Microsoft Learn. *Inbound Logistics and Putaway Processing in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Purchase Receipt and Material Inspection Workflow*.
-- Odoo 17 Documentation. *Receipts and Multi-step Inbound Routing Configurations*.
+- IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
+- Microsoft Learn. *Arrival overview*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/arrival-overview. Diakses 24 November 2026.
+- Odoo 17 Documentation. *One-step receipt and delivery*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_one_step.html. Diakses 24 November 2026.

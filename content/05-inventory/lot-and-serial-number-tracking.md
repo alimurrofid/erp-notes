@@ -137,8 +137,6 @@ Untuk perancangan modul Lot dan Serial Number pada sistem ERP enterprise seperti
 
 ## References
 
-- GS1 Standards. *Traceability Standard: Business Process and System Architecture for Global Supply Chain Traceability*.
-- ISO 9001:2015. *Clause 8.5.2: Identification and Traceability in Quality Management Systems*.
-- Microsoft Learn. *Tracking Dimensions and Traceability in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Serial Numbers and Batches Management*.
-- Odoo 17 Documentation. *Traceability: Managing Lots and Serial Numbers in Inventory*.
+- IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
+- Microsoft Learn. *Item and raw material tracing in inventory, production, and sales*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/trace-items-raw-materials-inventory-production-sales. Diakses 24 November 2026.
+- Odoo 17 Documentation. *Lot numbers*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/product_management/product_tracking/lots.html. Diakses 24 November 2026.

@@ -155,8 +155,6 @@ Untuk perancangan modul Replenishment pada sistem ERP enterprise seperti **Naven
 
 ## References
 
-- APICS / ASCM. *Master Planning of Resources and Detailed Scheduling: Safety Stock, Reorder Point, and Min-Max Mechanics*.
-- Silver, E. A., Pyke, D. F., & Peterson, R. *Inventory Management and Production Planning and Scheduling*. John Wiley & Sons.
-- Microsoft Learn. *Master Planning and Item Coverage Architecture in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Auto Reorder and Material Request Planning*.
-- Odoo 17 Documentation. *Reordering Rules: Automated Replenishment and Stock Min/Max Triggers*.
+- IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
+- Microsoft Learn. *Coverage settings*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/coverage-settings. Diakses 24 November 2026.
+- Odoo 17 Documentation. *Reordering rules*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/warehouses_storage/replenishment/reordering_rules.html. Diakses 24 November 2026.

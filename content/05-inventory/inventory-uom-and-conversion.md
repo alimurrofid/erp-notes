@@ -160,8 +160,6 @@ Untuk perancangan modul UOM pada sistem ERP enterprise seperti **Naventra**:
 
 ## References
 
-- UNECE (United Nations Economic Commission for Europe). *Recommendation No. 20: Codes for Units of Measure Used in International Trade*.
-- APICS / ASCM. *APICS Dictionary: Unit of Measure Conversion and Packaging Hierarchies*.
-- Microsoft Learn. *Units of Measure and Conversions Architecture in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *UOM Management and Conversion Factor Rules*.
-- Odoo 17 Documentation. *Units of Measure (UoM) Setup and Category Conversions*.
+- IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
+- Microsoft Learn. *Manage units of measure*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/pim/tasks/manage-unit-measure. Diakses 24 November 2026.
+- Odoo 17 Documentation. *Units of measure*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/product_management/configure/uom.html. Diakses 24 November 2026.

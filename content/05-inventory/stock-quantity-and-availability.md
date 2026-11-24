@@ -173,8 +173,6 @@ Untuk perancangan modul Ketersediaan Stok pada sistem ERP enterprise seperti **N
 
 ## References
 
-- APICS / ASCM. *APICS Dictionary: Available-to-Promise (ATP), Capable-to-Promise (CTP), and Inventory Allocation*.
-- Vollmann, T. E., et al. *Manufacturing Planning and Control for Supply Chain Management: Master Production Scheduling and Order Promising*.
-- Microsoft Learn. *Inventory On-Hand and Availability Calculation in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Item Quantity Metrics: Actual, Reserved, and Projected Quantity*.
-- Odoo 17 Documentation. *Stock Forecasts and Inventory Reservations*.
+- IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
+- Microsoft Learn. *Check the availability of stock*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/tasks/check-availability-stock. Diakses 24 November 2026.
+- Odoo 17 Documentation. *Stock report*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/warehouses_storage/reporting/stock.html. Diakses 24 November 2026.

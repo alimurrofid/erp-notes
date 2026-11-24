@@ -168,8 +168,6 @@ Untuk perancangan modul Master Data Produk pada sistem ERP enterprise seperti **
 
 ## References
 
-- GS1 General Specifications. *Standard International Barcode, GTIN (Global Trade Item Number), and Product Master Attributes*.
-- APICS / ASCM. *APICS Dictionary: Item Master, Stock Keeping Unit (SKU), and Material Management Standards*.
-- Microsoft Learn. *Product Information Management and Released Products Architecture in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Item Master and Item Groups Configuration*.
-- Odoo 17 Documentation. *Product Master: Product Templates vs Variants, Categories, and Logistics Policies*.
+- IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
+- Microsoft Learn. *Product information overview*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/pim/product-information. Diakses 24 November 2026.
+- Odoo 17 Documentation. *Product type*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/product_management/configure/type.html. Diakses 24 November 2026.

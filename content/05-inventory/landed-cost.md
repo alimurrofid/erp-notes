@@ -168,8 +168,6 @@ Untuk perancangan modul Landed Cost pada sistem ERP enterprise seperti **Naventr
 
 ## References
 
-- IFRS Foundation. *IAS 2: Inventories (Paragraphs 10-18: Costs of Purchase and Other Costs)*.
-- APICS / ASCM. *APICS Dictionary: Landed Cost Modeling, Freight Allocation, and Total Cost of Ownership*.
-- Microsoft Learn. *Landed Cost Module and Costing Directives in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Landed Cost Voucher Implementation and Cost Allocation*.
-- Odoo 17 Documentation. *Landed Costs: Integrating Transportation and Duties into Stock Value*.
+- IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
+- Microsoft Learn. *Landed cost module overview*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/landed-cost-overview. Diakses 24 November 2026.
+- Odoo 17 Documentation. *Landed costs*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/product_management/inventory_valuation/landed_costs.html. Diakses 24 November 2026.

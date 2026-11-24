@@ -170,8 +170,6 @@ Untuk perancangan modul Reservasi dan Alokasi pada sistem ERP enterprise seperti
 
 ## References
 
-- APICS / ASCM. *APICS Dictionary: Soft Allocation, Hard Allocation, and Reservation Hierarchy Rules*.
-- Vollmann, T. E., et al. *Manufacturing Planning and Control for Supply Chain Management: Master Scheduling and Order Allocation*.
-- Microsoft Learn. *Inventory Allocation and Reservation Architecture in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Sales Order Reserved Quantity and Stock Allocation*.
-- Odoo 17 Documentation. *Stock Reservations and Removal Strategies in Inventory*.
+- IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
+- Microsoft Learn. *Reserve inventory quantities*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/reserve-inventory-quantities. Diakses 24 November 2026.
+- Odoo 17 Documentation. *Reservation methods*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/shipping_receiving/reservation_methods.html. Diakses 24 November 2026.

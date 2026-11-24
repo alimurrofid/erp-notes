@@ -180,8 +180,6 @@ Untuk perancangan arsitektur integrasi Persediaan pada sistem ERP enterprise sep
 
 ## References
 
-- ASCM / APICS. *Supply Chain Operations Reference (SCOR) Model: Cross-Functional Logistics and Inventory Integration*.
-- IFRS Foundation. *IAS 2: Inventories (Measurement, Cost Formulas, and Recognition as an Expense)*.
-- Microsoft Learn. *End-to-End Inventory and Cost Management Integration in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Perpetual Inventory System and Cross-Module Integration*.
-- Odoo 17 Documentation. *Automated Inventory Valuation and Integration with Sales, Purchase, and Accounting*.
+- IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
+- Microsoft Learn. *Inventory management overview*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-home-page. Diakses 24 November 2026.
+- Odoo 17 Documentation. *Using inventory valuation*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/product_management/inventory_valuation/using_inventory_valuation.html. Diakses 24 November 2026.

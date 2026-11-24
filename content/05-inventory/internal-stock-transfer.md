@@ -129,8 +129,6 @@ Untuk perancangan modul Transfer Internal pada sistem ERP enterprise seperti **N
 
 ## References
 
-- ASCM / APICS. *Distribution and Logistics Management: Inter-Facility Material Transfers and Transit Inventory Control*.
-- Microsoft Learn. *Transfer Orders and Transit Warehouses in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Material Transfer and In-Transit Stock Management*.
-- Odoo 17 Documentation. *Internal Transfers: Moving Stock Between Locations and Warehouses*.
-- Bowersox, D. J., et al. *Supply Chain Logistics Management: Network Facilities and Transfer Operations*.
+- IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
+- Microsoft Learn. *Set up warehouse for transfer orders*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/transfer-orders-warehouse. Diakses 24 November 2026.
+- Odoo 17 Documentation. *Locations*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management/use_locations.html. Diakses 24 November 2026.

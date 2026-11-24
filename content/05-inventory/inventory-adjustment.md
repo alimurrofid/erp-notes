@@ -162,8 +162,6 @@ Untuk perancangan modul Penyesuaian Persediaan pada sistem ERP enterprise sepert
 
 ## References
 
-- IFRS Foundation. *IAS 2: Inventories (Write-downs to Net Realizable Value and Losses of Inventories)*.
-- APICS / ASCM. *Inventory Control and Auditing: Inventory Adjustments, Discrepancies, and Reason Codes*.
-- Microsoft Learn. *Inventory Adjustment Journals and Reason Codes in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Stock Reconciliation and Material Issue/Receipt for Adjustments*.
-- Odoo 17 Documentation. *Inventory Adjustments and Scrap Locations Management*.
+- IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
+- Microsoft Learn. *Inventory journals*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-journals. Diakses 24 November 2026.
+- Odoo 17 Documentation. *Scrap inventory*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management/scrap_inventory.html. Diakses 24 November 2026.
