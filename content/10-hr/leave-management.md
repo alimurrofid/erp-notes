@@ -186,10 +186,10 @@ Dalam perancangan modul manajemen cuti Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 19: Employee Benefits (Short-term compensated absences)*. IFRS Foundation.
-- Ikatan Akuntan Indonesia (IAI). *PSAK 24: Imbalan Kerja*.
-- Society for Human Resource Management (SHRM). *Managing Paid Time Off and Leave Programs*.
-- SAP Help Portal. *Time Management and Leave Accruals in SAP ERP HCM*.
-- Microsoft Learn. *Manage Leave and Absence Plans in Dynamics 365 Human Resources*.
-- ERPNext Documentation. *Leave Management Overview*.
-- Odoo 20.0 Documentation. *Time Off Management and Approvals*.
+1. **IFRS Foundation** — *IAS 19 Employee Benefits* (short-term compensated absences). https://www.ifrs.org/issued-standards/list-of-standards/ias-19-employee-benefits/ — diakses 24 November 2026.
+2. **PSAK 24** — *Imbalan Kerja* (cetak).
+3. **SHRM** — *Managing Paid Time Off and Leave Programs* (cetak).
+4. **SAP Help Portal** — *Time Management and Leave Accruals*: halaman spesifik belum terverifikasi [belum terverifikasi].
+5. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+6. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+7. **Odoo 20.0 Documentation** — *Time off*. https://www.odoo.com/documentation/20.0/applications/hr/time_off.html — diakses 24 November 2026.

@@ -156,9 +156,9 @@ Dalam perancangan modul siklus hidup pegawai Naventra ERP:
 
 ## References
 
-- Society for Human Resource Management (SHRM). (2020). *Managing the Employee Lifecycle: Onboarding to Separation*. SHRM.
-- Armstrong, M., & Taylor, S. (2020). *Armstrong's Handbook of Human Resource Management Practice* (15th ed.). Kogan Page.
-- SAP Help Portal. *Personnel Administration and Employee Life Events in SAP S/4HANA*.
-- Microsoft Learn. *Manage Employee Lifecycle and Worker Actions in Dynamics 365 Human Resources*.
-- ERPNext Documentation. *Employee Lifecycle Management*.
-- Odoo 20.0 Documentation. *Recruitment and Employee Offboarding*.
+1. **SHRM** — *Managing the Employee Lifecycle: Onboarding to Separation* (cetak).
+2. **Armstrong, M., & Taylor, S.** — *Armstrong's Handbook of Human Resource Management Practice*, edisi ke-15 (cetak).
+3. **SAP Help Portal** — *Personnel Administration and Employee Life Events*: halaman spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+5. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Employees*. https://www.odoo.com/documentation/20.0/applications/hr/employees.html — diakses 24 November 2026.

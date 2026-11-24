@@ -185,8 +185,8 @@ Dalam perancangan modul master data pegawai Naventra ERP:
 
 ## References
 
-- Society for Human Resource Management (SHRM). (2021). *Managing Employee Master Data and Privacy*. SHRM Foundation.
-- SAP Help Portal. *Managing Employee Master Data in SAP S/4HANA Human Resources*.
-- Microsoft Learn. *Maintain Worker and Employment Information in Dynamics 365 Human Resources*.
-- ERPNext Documentation. *Employee Master Data*.
-- Odoo 20.0 Documentation. *Employees Management and Contract Tracking*.
+1. **SHRM** — *Managing Employee Master Data and Privacy* (cetak).
+2. **SAP Help Portal** — *Employee Master Data*: halaman spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+4. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Employees*. https://www.odoo.com/documentation/20.0/applications/hr/employees.html — diakses 24 November 2026.

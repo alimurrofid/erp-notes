@@ -148,9 +148,9 @@ Dalam perancangan modul kehadiran dan jadwal kerja Naventra ERP:
 
 ## References
 
-- Society for Human Resource Management (SHRM). *Managing Employee Attendance and Work Schedules*. SHRM.
-- International Labour Organization (ILO). *Working Time Conventions and Recommendations*.
-- SAP Help Portal. *Time and Attendance Management in SAP ERP HCM*.
-- Microsoft Learn. *Time and Attendance Overview in Dynamics 365 Supply Chain & HR*.
-- ERPNext Documentation. *Shift and Attendance Management*.
-- Odoo 20.0 Documentation. *Attendances Management*.
+1. **SHRM** — *Managing Employee Attendance and Work Schedules* (cetak).
+2. **ILO** — *Working Time Conventions and Recommendations* (cetak).
+3. **SAP Help Portal** — *Time and Attendance Management*: halaman spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+5. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.

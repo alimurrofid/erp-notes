@@ -192,9 +192,9 @@ Dalam perancangan modul lembar waktu dan biaya tenaga kerja Naventra ERP:
 
 ## References
 
-- Kaplan, R. S., & Atkinson, A. A. (2015). *Advanced Management Accounting* (3rd ed.). Pearson.
-- Project Management Institute (PMI). (2021). *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (7th ed.). Project Management Institute.
-- SAP Help Portal. *Cross-Application Time Sheet (CATS) in SAP S/4HANA*.
-- Microsoft Learn. *Time Entry and Labor Costing in Dynamics 365 Project Operations*.
-- ERPNext Documentation. *Timesheet and Labor Costing*.
-- Odoo 20.0 Documentation. *Timesheets and Analytic Accounting Integration*.
+1. **Kaplan, R. S., & Atkinson, A. A.** — *Advanced Management Accounting*, edisi ke-3 (cetak).
+2. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, edisi ke-7 (cetak).
+3. **SAP Help Portal** — *Cross-Application Time Sheet (CATS)*: halaman spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Project Operations* (Dynamics 365; time entry dan labor costing). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+5. **ERPNext Documentation** — *Timesheet*. https://docs.frappe.io/erpnext/timesheet — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.

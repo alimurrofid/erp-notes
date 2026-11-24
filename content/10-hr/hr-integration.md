@@ -165,10 +165,10 @@ Dalam perancangan arsitektur inti modul Human Resources Naventra ERP:
 
 ## References
 
-- Armstrong, M., & Taylor, S. (2020). *Armstrong's Handbook of Human Resource Management Practice* (15th ed.). Kogan Page.
-- Committee of Sponsoring Organizations of the Treadway Commission (COSO). (2013). *Internal Control — Integrated Framework*.
-- International Accounting Standards Board (IASB). *IAS 19: Employee Benefits*. IFRS Foundation.
-- SAP Help Portal. *Cross-Application Architecture in SAP S/4HANA Human Capital Management*.
-- Microsoft Learn. *Dynamics 365 Human Resources Architecture and Integration with Finance*.
-- ERPNext Documentation. *Human Resources and Payroll Integration*.
-- Odoo 20.0 Documentation. *HR, Timesheets, and Accounting Integration*.
+1. **Armstrong, M., & Taylor, S.** — *Armstrong's Handbook of Human Resource Management Practice*, edisi ke-15 (cetak).
+2. **COSO** — *Internal Control — Integrated Framework* (2013) (cetak).
+3. **IFRS Foundation** — *IAS 19 Employee Benefits*. https://www.ifrs.org/issued-standards/list-of-standards/ias-19-employee-benefits/ — diakses 24 November 2026.
+4. **SAP Help Portal** — *Cross-Application Architecture in SAP HCM*: halaman spesifik belum terverifikasi [belum terverifikasi].
+5. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+6. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+7. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.
