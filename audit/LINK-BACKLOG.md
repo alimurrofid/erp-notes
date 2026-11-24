@@ -35,6 +35,9 @@ Sumber unik diperkirakan 841; banyak judul berulang dengan format berbeda.
 | 7 — `03-sales` (8 file) | 2026-11-24 | 10 URL diganti; URL mati 22 → 10 |
 | 8 — `04-purchasing` (8 file) | 2026-11-24 | 9 URL diganti; CIPS homepage dihapus; URL mati 10 → 2 |
 | 9–10 — penutup (3 file) | 2026-11-24 | **URL mati = 0**; 2 blocked (OECD, halaman publikasi spesifik); `check:urls:strict` lolos |
+| 11–19 — Odoo 17 → 20.0 (64 file disentuh) | 2026-11-24 | **0 file menyebut Odoo 17/`documentation/17.0`**; seluruh URL Odoo 20.0 diuji 200 |
+
+Catatan sweep Odoo: penggantian versi bersifat mekanis dan URL diverifikasi merespons 200. **Verifikasi isi** — apakah klaim perilaku di artikel masih didukung halaman 20.0 — belum dilakukan dan tetap menjadi item SW-02/SW-03 serta Fase 4.
 
 Catatan Batch 1:
 

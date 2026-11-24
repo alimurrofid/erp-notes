@@ -87,7 +87,7 @@ Prasyarat: Fase 1 ✅ disetujui 24 November 2026. Langkah:
 
 Urutan (dikunci Fase 1): `11-tax` → `00`–`05` → `06`–`30`. Batch 1 (`11-tax`, 8 file) dieksekusi 24 November 2026. Per batch:
 
-- Ganti seluruh referensi Odoo 17 → 20.0 (baca halaman tujuan; klaim yang tidak lagi didukung halaman baru = temuan, ditandai, bukan diam-diam direvisi).
+- Ganti seluruh referensi Odoo 17 → 20.0 (baca halaman tujuan; klaim yang tidak lagi didukung halaman baru = temuan, ditandai, bukan diam-diam direvisi). **Versi: selesai 24 November 2026 (0 sisa). Verifikasi klaim perilaku terhadap halaman 20.0: belum.**
 - Ganti 44 URL mati dengan padanan resmi (Microsoft Learn & Frappe merestrukturisasi URL — cari lokasi baru; jangan menebak).
 - Ganti homepage-only: DJP → naskah peraturan (JDIH/peraturan.go.id + nomor + tanggal); SAP → halaman Help spesifik; CIPS → sumber terverifikasi.
 - Lengkapi referensi tanpa URL (folder 06+ dan 11-tax).
