@@ -165,4 +165,4 @@ Dalam struktur korporasi dengan banyak anak perusahaan (lihat [[00-fundamentals/
 2. **IFRS Foundation**: *IAS 21 The Effects of Changes in Foreign Exchange Rates*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-21-the-effects-of-changes-in-foreign-exchange-rates/
 3. **Microsoft Learn**: *Financial close process in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-period-close-workspace
 4. **Frappe / ERPNext Documentation**: *Accounts Closing, Period Closing Voucher, and Financial Reports*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts
-5. **Odoo Documentation**: *Fiscal Year and Accounting Closing Guidelines*. URL: https://www.odoo.com/documentation/17.0/applications/finance/accounting/reporting/year_end.html
+5. **Odoo Documentation**: *Fiscal Year and Accounting Closing Guidelines*. URL: https://www.odoo.com/documentation/20.0/applications/finance/accounting/reporting/year_end.html

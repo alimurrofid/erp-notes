@@ -209,4 +209,4 @@ Skenario standar pengadaan 10 unit barang dagang @ Rp700.000 (PPN Masukan efekti
 1. **IFRS Foundation**: *IAS 2 Inventories - Acquisition Costs and Capitalization*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/
 2. **Microsoft Learn**: *Procure-to-pay business process in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/procure-to-pay-overview
 3. **Frappe / ERPNext Documentation**: *Procurement and Buying Workflows*. URL: https://docs.frappe.io/erpnext/user/manual/en/buying
-4. **Odoo Documentation**: *Purchase to Vendor Bill and 3-Way Matching*. URL: https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/purchase.html
+4. **Odoo Documentation**: *Purchase to Vendor Bill and 3-Way Matching*. URL: https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/purchase.html

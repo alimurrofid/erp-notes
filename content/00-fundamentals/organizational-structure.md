@@ -115,4 +115,4 @@ Dalam merancang struktur organisasi pada Naventra:
 2. **SAP Help Portal**: *Organizational Structures in Financial Accounting and Logistics*. URL: https://help.sap.com/
 3. **Microsoft Learn**: *Organizations and organizational hierarchies in Dynamics 365*. URL: https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies
 4. **Frappe Documentation**: *Company and Cost Center Tree Structure*. URL: https://docs.frappe.io/erpnext/user/manual/en/setting-up/company-setup
-5. **Odoo Documentation**: *Multi-company Guidelines*. URL: https://www.odoo.com/documentation/17.0/applications/general/companies.html
+5. **Odoo Documentation**: *Multi-company Guidelines*. URL: https://www.odoo.com/documentation/20.0/applications/general/companies.html

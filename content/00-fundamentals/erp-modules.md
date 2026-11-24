@@ -156,4 +156,4 @@ Dalam perancangan Naventra:
 1. **APICS / ASCM**: *APICS Dictionary - The Standard for Supply Chain and Operations Management Terminology*.
 2. **Microsoft Learn**: *Dynamics 365 Business Applications architecture overview*. URL: https://learn.microsoft.com/en-us/dynamics365/
 3. **Frappe Documentation**: *ERPNext Module Directory and Workflows*. URL: https://docs.frappe.io/erpnext
-4. **Odoo Documentation**: *Odoo Apps and Integration Ecosystem*. URL: https://www.odoo.com/documentation/17.0/applications.html
+4. **Odoo Documentation**: *Odoo Apps and Integration Ecosystem*. URL: https://www.odoo.com/documentation/20.0/applications.html

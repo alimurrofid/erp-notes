@@ -127,4 +127,4 @@ Dalam merancang custom ERP seperti Naventra:
 2. **Wallace, T. F., & Kremzar, M. H.** (2001). *ERP: Making It Happen - The Implementers' Guide to Success with Enterprise Resource Planning*. John Wiley & Sons.
 3. **Microsoft Learn**: *Dynamics 365 Supply Chain Management & Finance Documentation*. URL: https://learn.microsoft.com/en-us/dynamics365/
 4. **Frappe / ERPNext Documentation**: *Introduction to ERPNext & Architecture*. URL: https://docs.frappe.io/erpnext/
-5. **Odoo Documentation**: *Accounting and Invoicing Principles*. URL: https://www.odoo.com/documentation/17.0/applications/finance/accounting.html
+5. **Odoo Documentation**: *Accounting and Invoicing Principles*. URL: https://www.odoo.com/documentation/20.0/applications/finance/accounting.html

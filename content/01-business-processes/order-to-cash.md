@@ -192,4 +192,4 @@ Menggunakan skenario standar penjualan 10 unit barang dagang @ Rp1.000.000 (HPP 
 2. **IFRS Foundation**: *IAS 2 Inventories*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/
 3. **Microsoft Learn**: *Order-to-cash end-to-end business process in Dynamics 365*. URL: https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/order-to-cash-overview
 4. **Frappe / ERPNext Documentation**: *Sales Workflow and Selling Module*. URL: https://docs.frappe.io/erpnext/user/manual/en/selling
-5. **Odoo Documentation**: *Sales Flow: Quotation to Invoicing*. URL: https://www.odoo.com/documentation/17.0/applications/sales/sales.html
+5. **Odoo Documentation**: *Sales Flow: Quotation to Invoicing*. URL: https://www.odoo.com/documentation/20.0/applications/sales/sales.html

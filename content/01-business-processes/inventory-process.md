@@ -177,4 +177,4 @@ Selisih lebih tidak diakui sebagai pendapatan; IFRS 15 tidak berlaku untuk perbe
 1. **IFRS Foundation**: *IAS 2 Inventories - Measurement, Net Realizable Value, and Cost Formulas*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/
 2. **Microsoft Learn**: *Inventory management overview in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-home-page
 3. **Frappe / ERPNext Documentation**: *Stock Module: Stock Entry, Stock Reconciliation, and Valuation*. URL: https://docs.frappe.io/erpnext/user/manual/en/stock
-4. **Odoo Documentation**: *Inventory Adjustments, Scrap, and Transfers*. URL: https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory.html
+4. **Odoo Documentation**: *Inventory Adjustments, Scrap, and Transfers*. URL: https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory.html
