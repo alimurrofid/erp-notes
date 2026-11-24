@@ -116,6 +116,7 @@ Staf penjualan "Budi" berhasil menjual 10 unit *Laptop Pro* seharga Rp10.000.000
 ## References
 
 1. **Association for Supply Chain Management (ASCM)**: *APICS Operations Management - Incentive and Commission Plan Design*.
-2. **Microsoft Learn**: *Sales commission calculation, groups, and posting in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/commissions
-3. **Frappe / ERPNext Documentation**: *Sales Partners and Sales Persons Commission Management*. URL: https://docs.frappe.io/erpnext/user/manual/en/selling/sales-person
-4. **Odoo Documentation**: *Managing Sales Teams, Targets, and Commission Integration*. URL: https://www.odoo.com/documentation/17.0/applications/sales/sales.html
+2. **Microsoft Learn** — dokumentasi komisi penjualan D365 untuk topik ini tidak lagi tersedia di URL lama; perlu sumber pengganti [belum terverifikasi].
+3. **ERPNext Documentation** — *Sales Person*. https://docs.frappe.io/erpnext/sales-person — diakses 24 November 2026.
+4. **ERPNext Documentation** — *How to Give Commission to Sales Partner*. https://docs.frappe.io/erpnext/how-to-give-commission-to-sales-partner — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Sales*. https://www.odoo.com/documentation/20.0/applications/sales/sales.html — diakses 24 November 2026.

@@ -122,6 +122,6 @@ Saat faktur diterbitkan (lihat [[02-accounting/revenue-and-expense|Revenue and E
 ## References
 
 1. **Association for Supply Chain Management (ASCM)**: *APICS Dictionary - Dynamic Pricing and Trade Promotion Management*.
-2. **Microsoft Learn**: *Price and discount management architecture in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/pricing-engine
-3. **Frappe / ERPNext Documentation**: *Pricing Rule, Item Price, and Margin Management*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/pricing-rule
-4. **Odoo Documentation**: *Pricelists, Discounts, and Special Formulas*. URL: https://www.odoo.com/documentation/17.0/applications/sales/sales/products_prices/prices/pricing.html
+2. **Microsoft Learn** — *Sales and marketing overview* (Dynamics 365 Supply Chain Management; harga khusus dan diskon perjanjian penjualan). https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/overview-sales-marketing — diakses 24 November 2026.
+3. **ERPNext Documentation** — *Pricing Rule*. https://docs.frappe.io/erpnext/pricing-rule — diakses 24 November 2026.
+4. **Odoo 20.0 Documentation** — *Pricelists*. https://www.odoo.com/documentation/20.0/applications/sales/sales/products_prices/prices/pricing.html — diakses 24 November 2026.

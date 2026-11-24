@@ -113,5 +113,5 @@ flowchart LR
 
 1. **Supply Chain Council (APICS/ASCM)**: *SCOR Model (Supply Chain Operations Reference) - Delivery Performance and OTIF Metrics*.
 2. **Association for Financial Professionals (AFP)**: *Financial Planning and Analysis (FP&A) - Revenue Metrics and DSO Benchmarks*.
-3. **Microsoft Learn**: *Sales analytics and Power BI reporting integration in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/sales-power-bi
-4. **Frappe / ERPNext Documentation**: *Sales Analytics, Sales Funnel, and Item-Wise Sales Register*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/sales-analytics
+3. **Microsoft Learn** — dokumentasi analitika penjualan D365 untuk topik ini tidak lagi tersedia di URL lama; perlu sumber pengganti [belum terverifikasi].
+4. **ERPNext Documentation** — *Sales Analytics*. https://docs.frappe.io/erpnext/sales-analytics — diakses 24 November 2026.

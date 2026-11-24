@@ -184,6 +184,6 @@ Sistem ERP enterprise mendukung beberapa variasi pemrosesan *Sales Order*:
 ## References
 
 1. **Association for Supply Chain Management (ASCM)**: *APICS Dictionary - Sales Order Processing and Allocation Rules*.
-2. **Microsoft Learn**: *Sales order processing and delivery schedules in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/sales-orders
-3. **Frappe / ERPNext Documentation**: *Sales Order Lifecycle, Auto-Indenting, and Drop Shipping*. URL: https://docs.frappe.io/erpnext/user/manual/en/selling/sales-order
-4. **Odoo Documentation**: *Sales Orders, Quotation Templates, and Delivery Orders Integration*. URL: https://www.odoo.com/documentation/17.0/applications/sales/sales.html
+2. **Microsoft Learn** — *Create sales orders* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/tasks/create-sales-orders — diakses 24 November 2026.
+3. **ERPNext Documentation** — *Sales Order*. https://docs.frappe.io/erpnext/sales-order — diakses 24 November 2026.
+4. **Odoo 20.0 Documentation** — *Sales*. https://www.odoo.com/documentation/20.0/applications/sales/sales.html — diakses 24 November 2026.

@@ -118,5 +118,5 @@ Secara arsitektur perangkat lunak, modul Sales biasanya dibangun di atas model d
 
 1. **IFRS Foundation**: *IFRS 15 Revenue from Contracts with Customers - Transfer of Control and Performance Obligations*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/
 2. **Association for Supply Chain Management (ASCM)**: *APICS Dictionary - Order-to-Cash and Available-to-Promise*.
-3. **Microsoft Learn**: *Sales and marketing overview and order processing architecture in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/
-4. **Frappe / ERPNext Documentation**: *Selling Module and Order-to-Cash Workflow Overview*. URL: https://docs.frappe.io/erpnext/user/manual/en/selling
+3. **Microsoft Learn** — *Sales and marketing overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/overview-sales-marketing — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Selling*. https://docs.frappe.io/erpnext/selling — diakses 24 November 2026.

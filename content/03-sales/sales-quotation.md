@@ -134,6 +134,6 @@ Saat PT Maju Bersama menyetujui penawaran ini pada tanggal 15 September 2026, st
 ## References
 
 1. **Association for Supply Chain Management (ASCM)**: *APICS Dictionary - Quotation Management and Available-to-Promise*.
-2. **Microsoft Learn**: *Create and manage sales quotations in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/tasks/create-sales-quotation
-3. **Frappe / ERPNext Documentation**: *Quotation Management, Revision Workflow, and Opportunity Conversion*. URL: https://docs.frappe.io/erpnext/user/manual/en/selling/quotation
-4. **Odoo Documentation**: *Send Quotations and Online Signature Approvals*. URL: https://www.odoo.com/documentation/17.0/applications/sales/sales/send_quotations.html
+2. **Microsoft Learn** — *Sales and marketing overview* (Dynamics 365 Supply Chain Management; bagian sales quotations). https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/overview-sales-marketing — diakses 24 November 2026.
+3. **ERPNext Documentation** — *Quotation*. https://docs.frappe.io/erpnext/quotation — diakses 24 November 2026.
+4. **Odoo 20.0 Documentation** — *Send quotations*. https://www.odoo.com/documentation/20.0/applications/sales/sales/send_quotations.html — diakses 24 November 2026.

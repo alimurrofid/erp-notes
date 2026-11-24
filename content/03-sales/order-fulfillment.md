@@ -131,6 +131,6 @@ Melanjutkan skenario acuan pesanan 10 unit *Laptop Pro* dari PT Maju Bersama:
 ## References
 
 1. **Association for Supply Chain Management (ASCM)**: *APICS Dictionary - Order Fulfillment, Wave Picking, and Available-to-Promise*.
-2. **Microsoft Learn**: *Warehouse management overview, outbound processing, and picking work in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/outbound-process-overview
-3. **Frappe / ERPNext Documentation**: *Pick List and Delivery Note Generation*. URL: https://docs.frappe.io/erpnext/user/manual/en/stock/pick-list
-4. **Odoo Documentation**: *Two-Step and Three-Step Delivery Orders (Pick, Pack, Ship)*. URL: https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/shipping/setup/delivery_two_steps.html
+2. **Microsoft Learn** — *Warehouse management overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview — diakses 24 November 2026.
+3. **ERPNext Documentation** — *Pick List*. https://docs.frappe.io/erpnext/pick-list — diakses 24 November 2026.
+4. **Odoo 20.0 Documentation** — *Two-step delivery*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_two_steps.html — diakses 24 November 2026.
