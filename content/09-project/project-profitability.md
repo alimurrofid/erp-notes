@@ -153,9 +153,9 @@ Dalam perancangan modul analisis profitabilitas Naventra ERP:
 
 ## References
 
-- Kaplan, R. S., & Atkinson, A. A. (2015). *Advanced Management Accounting* (3rd ed.). Pearson.
-- Project Management Institute (PMI). (2021). *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (7th ed.). Project Management Institute.
-- SAP Help Portal. *Project Profitability Analysis in Controlling (CO-PA)*.
-- Microsoft Learn. *Project Statements and Profitability Analysis in Dynamics 365*.
-- ERPNext Documentation. *Project Profitability Analysis*.
-- Odoo 20.0 Documentation. *Track Project Profitability*.
+1. **Kaplan, R. S., & Atkinson, A. A.** — *Advanced Management Accounting*, edisi ke-3 (cetak).
+2. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, edisi ke-7 (cetak).
+3. **SAP Help Portal** — *Project Profitability Analysis (CO-PA)*: halaman spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+5. **ERPNext Documentation** — *Project*. https://docs.frappe.io/erpnext/project — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Project*. https://www.odoo.com/documentation/20.0/applications/services/project.html — diakses 24 November 2026.

@@ -172,8 +172,8 @@ Dalam perancangan modul penutupan proyek Naventra ERP:
 
 ## References
 
-- Project Management Institute (PMI). (2021). *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (7th ed.). Project Management Institute.
-- SAP Help Portal. *Completion and Technical Closing in Project System (PS)*.
-- Microsoft Learn. *Project Stages and Project Closure in Dynamics 365*.
-- ERPNext Documentation. *Closing a Project in ERPNext*.
-- Odoo 20.0 Documentation. *Project Completion and Archiving*.
+1. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, edisi ke-7 (cetak).
+2. **SAP Help Portal** — *Completion and Technical Closing in Project System*: halaman spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Project*. https://docs.frappe.io/erpnext/project — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Project*. https://www.odoo.com/documentation/20.0/applications/services/project.html — diakses 24 November 2026.

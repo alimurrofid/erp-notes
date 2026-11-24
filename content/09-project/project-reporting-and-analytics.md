@@ -151,9 +151,9 @@ Dalam perancangan modul pelaporan dan analitik proyek Naventra ERP:
 
 ## References
 
-- Project Management Institute (PMI). (2019). *Practice Standard for Earned Value Management*. PMI.
-- Few, S. (2013). *Information Dashboard Design: Displaying Data for At-a-Glance Monitoring* (2nd ed.). Analytics Press.
-- SAP Help Portal. *Project Reporting and Information System in Project System (PS)*.
-- Microsoft Learn. *Project Analytics and Reporting in Dynamics 365 Project Operations*.
-- ERPNext Documentation. *Project Reports and Analytics*.
-- Odoo 20.0 Documentation. *Reporting and Project Dashboards*.
+1. **PMI** — *Practice Standard for Earned Value Management* (cetak).
+2. **Few, S.** — *Information Dashboard Design*, edisi ke-2 (cetak).
+3. **SAP Help Portal** — *Project Reporting and Information System*: halaman spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+5. **ERPNext Documentation** — *Project*. https://docs.frappe.io/erpnext/project — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Project*. https://www.odoo.com/documentation/20.0/applications/services/project.html — diakses 24 November 2026.

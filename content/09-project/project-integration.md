@@ -145,9 +145,9 @@ Dalam perancangan arsitektur inti modul manajemen proyek Naventra ERP:
 
 ## References
 
-- Project Management Institute (PMI). (2021). *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (7th ed.). Project Management Institute.
-- International Accounting Standards Board (IASB). (2014). *IFRS 15: Revenue from Contracts with Customers*. IFRS Foundation.
-- SAP Help Portal. *Cross-Application Project System (PS) Architecture*.
-- Microsoft Learn. *Dynamics 365 Project Operations Architecture and Integration*.
-- ERPNext Documentation. *Projects Module Integration*.
-- Odoo 20.0 Documentation. *Project and Cross-App Integrations*.
+1. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, edisi ke-7 (cetak).
+2. **IFRS Foundation** — *IFRS 15 Revenue from Contracts with Customers*. https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/ — diakses 24 November 2026.
+3. **SAP Help Portal** — *Cross-Application Project System Architecture*: halaman spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+5. **ERPNext Documentation** — *Project*. https://docs.frappe.io/erpnext/project — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Project*. https://www.odoo.com/documentation/20.0/applications/services/project.html — diakses 24 November 2026.

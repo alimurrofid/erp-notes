@@ -217,8 +217,8 @@ Rancangan arsitektur Project Master Data pada Naventra ERP:
 
 ## References
 
-- Project Management Institute (PMI). *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, 7th Edition.
-- SAP SE. *Project Definition and Work Breakdown Structures in SAP S/4HANA PS*. SAP Help Portal.
-- Microsoft Corporation. *Create and manage project templates in Dynamics 365 Project Operations*. Microsoft Learn.
-- Frappe Technologies. *Managing Project Master Data and Templates in ERPNext*. ERPNext Documentation.
-- Odoo S.A. *Project Management and Task Organization*. Odoo Documentation.
+1. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, edisi ke-7 (cetak).
+2. **SAP SE** — *Project Definition and WBS*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Project*. https://docs.frappe.io/erpnext/project — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Project*. https://www.odoo.com/documentation/20.0/applications/services/project.html — diakses 24 November 2026.
