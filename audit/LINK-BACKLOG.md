@@ -30,6 +30,11 @@ Sumber unik diperkirakan 841; banyak judul berulang dengan format berbeda.
 | 2 — `11-tax` PPh (7 file) | 2026-11-24 | 39 entri ber-URL ditambahkan; total entri ber-URL 358 (39%); URL mati tetap 44 |
 | 3 — `11-tax` penutup + index (5 file) | 2026-11-24 | `11-tax` tuntas: 17 entri ber-URL; TAX-04/05 ditutup; total entri ber-URL 375 (41%) |
 | 4 — URL mati `00`–`01` (3 file) | 2026-11-24 | 3 URL mati diganti halaman resmi yang terverifikasi; Gartner (403) diganti DOI; URL mati 44 → 41 |
+| 5 — URL mati `02-accounting` (8 file) | 2026-11-24 | 9 URL diganti; URL mati 41 → 32 |
+| 6 — sisa `02` + `03` (8 file) | 2026-11-24 | 10 URL diganti; `pajak.go.id` homepage diganti UU HPP + PMK 131; URL mati 32 → 22 |
+| 7 — `03-sales` (8 file) | 2026-11-24 | 10 URL diganti; URL mati 22 → 10 |
+| 8 — `04-purchasing` (8 file) | 2026-11-24 | 9 URL diganti; CIPS homepage dihapus; URL mati 10 → 2 |
+| 9–10 — penutup (3 file) | 2026-11-24 | **URL mati = 0**; 2 blocked (OECD, halaman publikasi spesifik); `check:urls:strict` lolos |
 
 Catatan Batch 1:
 
@@ -37,6 +42,8 @@ Catatan Batch 1:
 - **Temuan regulasi:** PMK 11/2025 telah diubah oleh **PMK 53/2025** (diundangkan 28 Juli 2025). Referensi PMK 53/2025 sudah ditambahkan ke 8 artikel, tetapi narasi tarif di badan artikel belum diubah — **menunggu review manusia**.
 - `PER-03/PJ/2022`, `PER-29/PJ/2015`, `SE-10/PJ/2020`, PMK 243/2014, PMK 173/2021, PMK 59/2022, dan KMK kurs ditandai `cetak`/belum terverifikasi karena tautan resminya tidak dapat dipastikan otomatis (situs DJP menolak akses otomatis).
 - **Temuan lokasi:** TAX-04/05 tidak berada di `11-tax/index.md`, melainkan di `02-accounting/index.md:53` dan `04-purchasing/index.md:50` (sesuai `ERP_NOTES_AUDIT.md`). Perbaikan index dipindahkan ke batch berikutnya; D-8 di `scenario-register.md` dikoreksi 24 November 2026.
+- **CIPS tidak dapat dipakai:** seluruh tautan `cips.org` mengembalikan 403 untuk akses otomatis dan tidak ada dokumen spesifik. Empat entri CIPS diganti penanda gap `[belum terverifikasi]` + sumber alternatif (ASCM, MS Learn, ISO 9001).
+- **Sisa pekerjaan kampanye:** 464 entri belum terlacak (tanpa URL/ID/marker) di `05`–`10`, dan 89 file masih menyebut Odoo 17.
 - Sisa `11-tax` yang belum disentuh: **0 artikel**. Folder `11-tax` selesai untuk kampanye referensi pada 24 November 2026; 3 artikel terakhir ditutup di batch 3.
 - Berikutnya: batch 4 dimulai dari URL mati `00`–`01`, lalu `02`–`05`.
 

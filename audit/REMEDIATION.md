@@ -30,6 +30,7 @@ Legenda: **Fixed** = materi sudah diperbaiki. **Open** = belum. **Invalid** = te
 | UX-05 / TECH-01 | `locale: id-ID`, `baseUrl` domain benar | `quartz.config.ts` |
 | UX-07 | `#INV-…` dan `#LPT-…` dihapus dari prosa | `journal-entry`, `inventory-reservation` |
 | TAX-04 / TAX-05 | Janji cakupan PPh 21/22/4(2) dihapus dari index; artikel hanya menjanjikan PPh 23 dan PPh badan | `02-accounting/index.md`, `04-purchasing/index.md` |
+| TECH-04 | URL mati = 0 (`check:urls` 192 ok, 2 blocked OECD); link mati diganti halaman resmi terverifikasi atau ditandai gap | 12 file `00`–`04` |
 | UX-02 | Label Mermaid di kutip / tanda baca dihapus | 10 file diagram |
 
 ### Fixed pada fase sebelumnya
@@ -67,7 +68,6 @@ Kedelapan item di bawah **sudah diputuskan** pemilik proyek; nilai kanoniknya ad
 | TAX-07 | Perlakuan pajak reimbursement |
 | TAX-09 | Tenggat unggah e-Faktur: legal vs operasional |
 | SW-02 / SW-03 | Klaim produk (D365 revenue recognition, Odoo finite capacity/EUP, D365 Scrap Journal) |
-| TECH-04 | URL referensi mati: 41 tersisa (turun dari 44 pada 24 November 2026) |
 
 ## Open — konten belum ada
 
