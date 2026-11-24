@@ -250,11 +250,11 @@ Pada implementasi ERP Naventra, arsitektur master data perpajakan dibangun denga
 
 ## References
 
-* Undang-Undang Republik Indonesia No. 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP).
-* Peraturan Pemerintah Republik Indonesia No. 44 Tahun 2022 tentang Penerapan terhadap Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah.
-* Peraturan Menteri Keuangan No. 131/PMK.03/2024 tentang Perlakuan PPN Sehubungan dengan Berlakunya Tarif PPN 12%.
-* Peraturan Menteri Keuangan No. 11 Tahun 2025 tentang Perhitungan PPN dengan DPP Nilai Lain dan Besaran Tertentu.
-* Direktorat Jenderal Pajak: *Panduan Sistem Inti Administrasi Perpajakan (Coretax DJP)*.
-* ERPNext Documentation: *Tax Rule, Sales Taxes and Charges Template, Item Tax Template* (Frappe).
-* Odoo Accounting User Guide: *Managing Taxes and Fiscal Positions* (Odoo S.A.).
-* Microsoft Dynamics 365 Finance Guide: *Sales Tax Codes, Tax Groups, and Ledger Posting Groups* (Microsoft Learn).
+1. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+2. **PP No. 44 Tahun 2022** — Penerapan terhadap Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah. https://peraturan.go.id/id/pp-no-44-tahun-2022 — diakses 24 November 2026.
+3. **PMK No. 131 Tahun 2024** — Perlakuan PPN atas Impor dan Penyerahan BKP/JKP sehubungan dengan berlakunya tarif PPN 12%. https://jdih.kemenkeu.go.id/dok/pmk-131-tahun-2024 — diakses 24 November 2026.
+4. **PMK No. 11 Tahun 2025** — Ketentuan Nilai Lain sebagai Dasar Pengenaan Pajak dan Besaran Tertentu PPN. https://jdih.kemenkeu.go.id/dok/pmk-11-tahun-2025 — diakses 24 November 2026.
+5. **PMK No. 53 Tahun 2025** — Perubahan atas PMK No. 11 Tahun 2025 (nilai lain dan besaran tertentu PPN). https://jdih.kemenkeu.go.id/dok/pmk-53-tahun-2025 — diakses 24 November 2026.
+6. **ERPNext Documentation** — *Setting Up Taxes* (akun pajak, tax category, template). https://docs.frappe.io/erpnext/setting-up-taxes — diakses 24 November 2026.
+7. **Odoo 20.0 Documentation** — *Taxes* (konfigurasi kode pajak dan pemetaan akun). https://www.odoo.com/documentation/20.0/applications/finance/accounting/taxes.html — diakses 24 November 2026.
+8. **Microsoft Learn** — *Indirect taxes overview* (sales tax code, tax group, posting group di Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview — diakses 24 November 2026.

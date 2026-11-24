@@ -190,11 +190,13 @@ Pada pengembangan ERP Naventra, modul kalkulasi pajak dibangun dengan spesifikas
 
 ## References
 
-* Undang-Undang Republik Indonesia No. 42 Tahun 2009 tentang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah beserta perubahannya pada UU No. 7 Tahun 2021 (UU HPP).
-* Peraturan Menteri Keuangan No. 131/PMK.03/2024 tentang Perlakuan PPN Sehubungan dengan Berlakunya Tarif PPN 12%.
-* Peraturan Menteri Keuangan No. 11 Tahun 2025 tentang Perhitungan PPN dengan DPP Nilai Lain dan Besaran Tertentu.
-* Keputusan Menteri Keuangan Republik Indonesia tentang Nilai Kurs sebagai Dasar Pelunasan Bea Masuk, Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah (Keputusan Mingguan KMK).
-* Peraturan Direktur Jenderal Pajak No. PER-03/PJ/2022 tentang Faktur Pajak.
-* ERPNext Documentation: *Item Price, Taxes and Charges Calculation, and Currency Exchange*.
-* Microsoft Learn: *Sales Tax Calculation Methods, Marginal Base, and Exchange Rates in Dynamics 365 Finance*.
-* Odoo Documentation: *Taxes Computation: Included in Price, Tax Grids, and Rounding Modes*.
+1. **UU No. 42 Tahun 2009** — Perubahan Ketiga atas UU No. 8 Tahun 1983 tentang PPN dan PPnBM (dasar pengenaan pajak). https://peraturan.go.id/id/uu-no-42-tahun-2009 — diakses 24 November 2026.
+2. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+3. **PMK No. 131 Tahun 2024** — Perlakuan PPN atas Impor dan Penyerahan BKP/JKP sehubungan dengan berlakunya tarif PPN 12%. https://jdih.kemenkeu.go.id/dok/pmk-131-tahun-2024 — diakses 24 November 2026.
+4. **PMK No. 11 Tahun 2025** — Ketentuan Nilai Lain sebagai Dasar Pengenaan Pajak dan Besaran Tertentu PPN. https://jdih.kemenkeu.go.id/dok/pmk-11-tahun-2025 — diakses 24 November 2026.
+5. **PMK No. 53 Tahun 2025** — Perubahan atas PMK No. 11 Tahun 2025 (nilai lain dan besaran tertentu PPN). https://jdih.kemenkeu.go.id/dok/pmk-53-tahun-2025 — diakses 24 November 2026.
+6. **Keputusan Menteri Keuangan tentang Nilai Kurs** — KMK mingguan sebagai dasar pelunasan bea masuk dan PPN (cetak; nomor berubah tiap minggu sehingga tautan tunggal belum terverifikasi).
+7. **PER-03/PJ/2022** — Faktur Pajak (cetak; konteks transisi e-Faktur).
+8. **Odoo 20.0 Documentation** — *Taxes* (perhitungan pajak, pajak termasuk dalam harga, pembulatan). https://www.odoo.com/documentation/20.0/applications/finance/accounting/taxes.html — diakses 24 November 2026.
+9. **ERPNext Documentation** — *Types in Tax Template* (dasar perhitungan baris pajak). https://docs.frappe.io/erpnext/types-in-tax-template — diakses 24 November 2026.
+10. **Microsoft Learn** — *Indirect taxes overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview — diakses 24 November 2026.

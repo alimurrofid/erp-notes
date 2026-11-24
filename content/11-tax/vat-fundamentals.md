@@ -198,12 +198,14 @@ Pada pengembangan ERP Naventra, modul PPN fundamental dirancang dengan prinsip k
 
 ## References
 
-* Undang-Undang Republik Indonesia No. 42 Tahun 2009 tentang Pajak Pertambahan Nilai dan Pajak Penjualan atas Barang Mewah beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
-* Peraturan Pemerintah Republik Indonesia No. 44 Tahun 2022 tentang Penerapan terhadap Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah.
-* Peraturan Menteri Keuangan No. 131/PMK.03/2024 tentang Perlakuan PPN Sehubungan dengan Berlakunya Tarif PPN 12%.
-* Peraturan Menteri Keuangan No. 11 Tahun 2025 tentang Perhitungan PPN dengan DPP Nilai Lain dan Besaran Tertentu.
-* Direktorat Jenderal Pajak: *Panduan Sistem Inti Administrasi Perpajakan (Coretax DJP)*.
-* International VAT/GST Guidelines (OECD, 2017).
-* Microsoft Learn: *Sales Tax Settlement Process and Tax Authorities Configuration in Dynamics 365*.
-* Frappe / ERPNext Documentation: *Managing Value Added Tax and Periodic Tax Closing*.
-* Odoo Accounting User Guide: *Value Added Tax: Reporting, Closing and Payment*.
+1. **UU No. 42 Tahun 2009** — Perubahan Ketiga atas UU No. 8 Tahun 1983 tentang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah. https://peraturan.go.id/id/uu-no-42-tahun-2009 — diakses 24 November 2026.
+2. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+3. **PP No. 44 Tahun 2022** — Penerapan terhadap Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah. https://peraturan.go.id/id/pp-no-44-tahun-2022 — diakses 24 November 2026.
+4. **PMK No. 131 Tahun 2024** — Perlakuan PPN atas Impor dan Penyerahan BKP/JKP sehubungan dengan berlakunya tarif PPN 12%. https://jdih.kemenkeu.go.id/dok/pmk-131-tahun-2024 — diakses 24 November 2026.
+5. **PMK No. 11 Tahun 2025** — Ketentuan Nilai Lain sebagai Dasar Pengenaan Pajak dan Besaran Tertentu PPN. https://jdih.kemenkeu.go.id/dok/pmk-11-tahun-2025 — diakses 24 November 2026.
+6. **PMK No. 53 Tahun 2025** — Perubahan atas PMK No. 11 Tahun 2025 (nilai lain dan besaran tertentu PPN). https://jdih.kemenkeu.go.id/dok/pmk-53-tahun-2025 — diakses 24 November 2026.
+7. **PMK No. 81 Tahun 2024** — Ketentuan Perpajakan dalam rangka Pelaksanaan Sistem Inti Administrasi Perpajakan (Coretax). https://jdih.kemenkeu.go.id/dok/pmk-81-tahun-2024 — diakses 24 November 2026.
+8. **OECD** — *International VAT/GST Guidelines* (2017). https://www.oecd.org/en/publications/international-vat-gst-guidelines_9789264271401-en.html — diakses 24 November 2026.
+9. **Odoo 20.0 Documentation** — *Taxes*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/taxes.html — diakses 24 November 2026.
+10. **ERPNext Documentation** — *Taxes*. https://docs.frappe.io/erpnext/taxes — diakses 24 November 2026.
+11. **Microsoft Learn** — *Indirect taxes overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview — diakses 24 November 2026.

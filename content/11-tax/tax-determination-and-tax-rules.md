@@ -206,12 +206,12 @@ Pada arsitektur ERP Naventra, modul penentuan pajak dirancang dengan spesifikasi
 
 ## References
 
-* Undang-Undang Republik Indonesia No. 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP).
-* Peraturan Menteri Keuangan No. 131/PMK.03/2024 tentang Perlakuan PPN Sehubungan dengan Berlakunya Tarif PPN 12%.
-* Peraturan Menteri Keuangan No. 11 Tahun 2025 tentang Perhitungan PPN dengan DPP Nilai Lain dan Besaran Tertentu.
-* Direktorat Jenderal Pajak: *Panduan Sistem Inti Administrasi Perpajakan (Coretax DJP)*.
-* Peraturan Menteri Keuangan No. 173/PMK.03/2021 tentang Tata Cara Penyerahan BKP dan/atau JKP ke dan/atau dari Kawasan Bebas.
-* Peraturan Menteri Keuangan No. 59/PMK.03/2022 tentang Perubahan atas PMK No. 231/PMK.03/2019 mengenai Tata Cara Pendaftaran dan Pemungutan Pajak oleh Instansi Pemerintah.
-* Frappe / ERPNext Documentation: *Tax Rules Architecture and Priority Logic*.
-* Microsoft Learn: *Tax Determination Rules and Tax Calculation Engine in Dynamics 365 Finance*.
-* Odoo S.A.: *Fiscal Positions Documentation and Advanced Tax Mapping*.
+1. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+2. **PMK No. 131 Tahun 2024** — Perlakuan PPN atas Impor dan Penyerahan BKP/JKP sehubungan dengan berlakunya tarif PPN 12%. https://jdih.kemenkeu.go.id/dok/pmk-131-tahun-2024 — diakses 24 November 2026.
+3. **PMK No. 11 Tahun 2025** — Ketentuan Nilai Lain sebagai Dasar Pengenaan Pajak dan Besaran Tertentu PPN. https://jdih.kemenkeu.go.id/dok/pmk-11-tahun-2025 — diakses 24 November 2026.
+4. **PMK No. 53 Tahun 2025** — Perubahan atas PMK No. 11 Tahun 2025 (nilai lain dan besaran tertentu PPN). https://jdih.kemenkeu.go.id/dok/pmk-53-tahun-2025 — diakses 24 November 2026.
+5. **PMK No. 173/PMK.03/2021** — Tata Cara Penyerahan BKP dan/atau JKP ke dan/atau dari Kawasan Bebas (cetak; tautan JDIH belum terverifikasi).
+6. **PMK No. 59/PMK.03/2022** — Perubahan atas PMK No. 231/PMK.03/2019 tentang Tata Cara Pendaftaran dan Pemungutan Pajak oleh Instansi Pemerintah (cetak; tautan JDIH belum terverifikasi).
+7. **ERPNext Documentation** — *Tax Rule* (logika penentuan aturan pajak). https://docs.frappe.io/erpnext/tax-rule — diakses 24 November 2026.
+8. **Odoo 20.0 Documentation** — *Fiscal positions*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/taxes/fiscal_positions.html — diakses 24 November 2026.
+9. **Microsoft Learn** — *Indirect taxes overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview — diakses 24 November 2026.

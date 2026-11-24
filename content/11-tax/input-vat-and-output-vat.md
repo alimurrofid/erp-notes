@@ -185,12 +185,14 @@ Pada pengembangan sistem ERP Naventra, pengelolaan PPN Masukan dan Keluaran dira
 
 ## References
 
-* Undang-Undang Republik Indonesia No. 42 Tahun 2009 tentang Pajak Pertambahan Nilai dan perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
-* Peraturan Menteri Keuangan No. 131/PMK.03/2024 tentang Perlakuan PPN Sehubungan dengan Berlakunya Tarif PPN 12%.
-* Peraturan Menteri Keuangan No. 11 Tahun 2025 tentang Perhitungan PPN dengan DPP Nilai Lain dan Besaran Tertentu.
-* Direktorat Jenderal Pajak: *Panduan Sistem Inti Administrasi Perpajakan (Coretax DJP)*.
-* Peraturan Direktur Jenderal Pajak No. PER-03/PJ/2022 tentang Faktur Pajak sebagaimana telah diubah dengan PER-11/PJ/2022 (Konteks Transisi e-Faktur).
-* Surat Edaran Direktur Jenderal Pajak No. SE-10/PJ/2020 tentang Petunjuk Pelaksanaan Pengkreditan Pajak Masukan.
-* Microsoft Learn: *Non-deductible Sales Tax and Tax Allocation in Dynamics 365 Supply Chain Management*.
-* Odoo Accounting Guide: *Managing Input and Output Taxes and VAT Crediting*.
-* ERPNext Documentation: *Purchase Taxes and Charges Template Configuration*.
+1. **UU No. 42 Tahun 2009** — Perubahan Ketiga atas UU No. 8 Tahun 1983 tentang PPN dan PPnBM. https://peraturan.go.id/id/uu-no-42-tahun-2009 — diakses 24 November 2026.
+2. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+3. **PMK No. 131 Tahun 2024** — Perlakuan PPN atas Impor dan Penyerahan BKP/JKP sehubungan dengan berlakunya tarif PPN 12%. https://jdih.kemenkeu.go.id/dok/pmk-131-tahun-2024 — diakses 24 November 2026.
+4. **PMK No. 11 Tahun 2025** — Ketentuan Nilai Lain sebagai Dasar Pengenaan Pajak dan Besaran Tertentu PPN. https://jdih.kemenkeu.go.id/dok/pmk-11-tahun-2025 — diakses 24 November 2026.
+5. **PMK No. 53 Tahun 2025** — Perubahan atas PMK No. 11 Tahun 2025 (nilai lain dan besaran tertentu PPN). https://jdih.kemenkeu.go.id/dok/pmk-53-tahun-2025 — diakses 24 November 2026.
+6. **PER-03/PJ/2022** — Faktur Pajak (cetak; konteks transisi e-Faktur sebelum Coretax).
+7. **SE-10/PJ/2020** — Petunjuk Pelaksanaan Pengkreditan Pajak Masukan (cetak; teks resmi belum terverifikasi tautannya).
+8. **PMK No. 81 Tahun 2024** — Ketentuan Perpajakan dalam rangka Pelaksanaan Coretax. https://jdih.kemenkeu.go.id/dok/pmk-81-tahun-2024 — diakses 24 November 2026.
+9. **Odoo 20.0 Documentation** — *Taxes* (pajak masukan/keluaran dan jurnal pajak). https://www.odoo.com/documentation/20.0/applications/finance/accounting/taxes.html — diakses 24 November 2026.
+10. **ERPNext Documentation** — *Purchase Taxes and Charges Template*. https://docs.frappe.io/erpnext/purchase-taxes-and-charges-template — diakses 24 November 2026.
+11. **Microsoft Learn** — *Indirect taxes overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview — diakses 24 November 2026.

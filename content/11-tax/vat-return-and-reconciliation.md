@@ -183,9 +183,11 @@ Pada pengembangan ERP Naventra, fitur rekonsiliasi dan pelaporan SPT Masa diranc
 
 ## References
 
-* Undang-Undang Republik Indonesia No. 28 Tahun 2007 tentang Ketentuan Umum dan Tata Cara Perpajakan (UU KUP) beserta perubahannya pada UU No. 7 Tahun 2021 (UU HPP).
-* Peraturan Menteri Keuangan No. 243/PMK.03/2014 tentang Surat Pemberitahuan (SPT) sebagaimana telah diubah dengan PMK No. 9/PMK.03/2018.
-* Peraturan Direktur Jenderal Pajak No. PER-29/PJ/2015 tentang Bentuk, Isi, dan Tata Cara Pengisian serta Penyampaian SPT Masa PPN.
-* Microsoft Learn: *Settle and Post Sales Tax in Dynamics 365 Finance*.
-* Odoo Documentation: *Tax Return Closing and Accounting Settlement Entries*.
-* Frappe / ERPNext Documentation: *Periodic Tax Reconciliation and Ledger Auditing*.
+1. **UU No. 28 Tahun 2007** — Perubahan Ketiga atas UU No. 6 Tahun 1983 tentang Ketentuan Umum dan Tata Cara Perpajakan (SPT dan pelaporan). https://peraturan.go.id/id/uu-no-28-tahun-2007 — diakses 24 November 2026.
+2. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+3. **PMK No. 243/PMK.03/2014** — Surat Pemberitahuan (SPT) (cetak; tautan JDIH belum terverifikasi).
+4. **PER-29/PJ/2015** — Bentuk, Isi, dan Tata Cara Pengisian serta Penyampaian SPT Masa PPN (cetak; konteks sebelum Coretax).
+5. **PMK No. 81 Tahun 2024** — Ketentuan Perpajakan dalam rangka Pelaksanaan Coretax. https://jdih.kemenkeu.go.id/dok/pmk-81-tahun-2024 — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Taxes*, bagian *Filing tax returns*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/taxes.html#filing-tax-returns — diakses 24 November 2026.
+7. **Microsoft Learn** — *Create a sales tax payment* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/create-sales-tax-payment — diakses 24 November 2026.
+8. **ERPNext Documentation** — *Taxes* (akun pajak dan rekonsiliasi). https://docs.frappe.io/erpnext/taxes — diakses 24 November 2026.
