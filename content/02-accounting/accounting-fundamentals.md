@@ -131,4 +131,4 @@ flowchart LR
 1. **IFRS Foundation**: *Conceptual Framework for Financial Reporting* (2018). URL: https://www.ifrs.org/issued-standards/list-of-standards/conceptual-framework/
 2. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements* (Accrual basis and financial elements). URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/
 3. **Weygandt, J. J., Kimmel, P. D., & Kieso, D. E.** (2019). *Financial Accounting* (IFRS edition). John Wiley & Sons.
-4. **Microsoft Learn**: *Core accounting concepts and ledger setup in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/
+4. **Microsoft Learn** — *Ledger, subledger, and subledger journal accounting entries overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-subledger — diakses 24 November 2026.

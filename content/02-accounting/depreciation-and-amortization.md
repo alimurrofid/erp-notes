@@ -134,4 +134,4 @@ Dalam sistem ERP:
 1. **IFRS Foundation**: *IAS 16 Property, Plant and Equipment - Depreciation methods and useful lives*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/
 2. **IFRS Foundation**: *IAS 38 Intangible Assets - Amortization of intangible assets with finite useful lives*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-38-intangible-assets/
 3. **Microsoft Learn**: *Fixed asset depreciation methods and conventions in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/depreciation-methods-conventions
-4. **Frappe / ERPNext Documentation**: *Asset Depreciation Schedules and Auto-posting*. URL: https://docs.frappe.io/erpnext/user/manual/en/assets/depreciation
+4. **ERPNext Documentation** — *Asset Depreciation*. https://docs.frappe.io/erpnext/asset-depreciation — diakses 24 November 2026.

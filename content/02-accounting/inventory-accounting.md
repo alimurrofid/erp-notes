@@ -132,4 +132,4 @@ Jika pada akhir tahun harga pasar produk tersebut anjlok dan estimasi nilai real
 1. **IFRS Foundation**: *IAS 2 Inventories - Measurement, Cost Formulas, and Disclosures*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/
 2. **Kieso, D. E., Weygandt, J. J., & Warfield, T. D.** (2020). *Intermediate Accounting* (IFRS Edition, Chapter: Inventories: Additional Valuation Issues). Wiley.
 3. **Microsoft Learn**: *Cost management and inventory costing in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/costing-sheets
-4. **Frappe / ERPNext Documentation**: *Item Valuation Methods (FIFO vs Moving Average)*. URL: https://docs.frappe.io/erpnext/user/manual/en/stock/item-valuation
+4. **ERPNext Documentation** — *Item Valuation Setup and Transactions*. https://docs.frappe.io/erpnext/item-valuation-transactions — diakses 24 November 2026.

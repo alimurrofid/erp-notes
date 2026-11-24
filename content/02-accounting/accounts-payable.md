@@ -143,5 +143,5 @@ Data ini menjadi input langsung modul Treasury untuk membuat proposal pembayaran
 
 1. **IFRS Foundation**: *IFRS 9 Financial Instruments - Financial Liabilities at Amortised Cost*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-9-financial-instruments/
 2. **IFRS Foundation**: *IAS 37 Provisions, Contingent Liabilities and Contingent Assets*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-37-provisions-contingent-liabilities-and-contingent-assets/
-3. **Microsoft Learn**: *Accounts payable overview and invoice matching in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/
-4. **Frappe / ERPNext Documentation**: *Accounts Payable, Purchase Invoice, and Payment Entry*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/accounts-payable
+3. **Microsoft Learn** — *Configure Accounts payable overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/accounts-payable-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Accounts Receivable and Payable*. https://docs.frappe.io/erpnext/accounts-receivable-and-payable — diakses 24 November 2026.

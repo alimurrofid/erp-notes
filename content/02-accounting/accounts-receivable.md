@@ -134,5 +134,5 @@ Timing timbulnya piutang di ERP sangat bergantung pada kebijakan bisnis (*Policy
 
 1. **IFRS Foundation**: *IFRS 9 Financial Instruments - Classification and Measurement of Financial Assets, Impairment (ECL)*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-9-financial-instruments/
 2. **IFRS Foundation**: *IFRS 15 Revenue from Contracts with Customers*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/
-3. **Microsoft Learn**: *Credit and collections overview in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/
-4. **Frappe / ERPNext Documentation**: *Accounts Receivable and Payment Reconciliation*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/accounts-receivable
+3. **Microsoft Learn** — *Accounts receivable home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/accounts-receivable — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Accounts Receivable and Payable*. https://docs.frappe.io/erpnext/accounts-receivable-and-payable — diakses 24 November 2026.
