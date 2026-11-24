@@ -162,4 +162,4 @@ flowchart LR
 - **Enterprise Software Documentation**:
   - Microsoft Dynamics 365 Supply Chain Management (Production Control & Master Planning).
   - Frappe ERPNext (Manufacturing, Work Order & BOM Architecture).
-  - Odoo 17 Enterprise (Manufacturing MRP, Work Centers, and Shop Floor Execution).
+  - Odoo 20.0 Enterprise (Manufacturing MRP, Work Centers, and Shop Floor Execution).

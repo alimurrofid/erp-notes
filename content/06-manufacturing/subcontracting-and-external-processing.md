@@ -158,4 +158,4 @@ Untuk perancangan modul Subcontracting pada sistem ERP enterprise seperti **Nave
 - IFRS Foundation. *IAS 2: Inventories (Cost of Conversion and Outside Processing Costs)*.
 - Microsoft Learn. *Subcontracting Work and Outside Operations in Dynamics 365 Supply Chain Management*.
 - Frappe ERPNext Documentation. *Subcontracting Workflow and Supplied Items Management*.
-- Odoo 17 Documentation. *Subcontracting: Managing Outsourced Manufacturing in MRP*.
+- Odoo 20.0 Documentation. *Subcontracting: Managing Outsourced Manufacturing in MRP*.

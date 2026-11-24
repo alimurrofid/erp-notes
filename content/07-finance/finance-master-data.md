@@ -202,4 +202,4 @@ Untuk perancangan modul Master Data Keuangan pada sistem ERP enterprise seperti 
 - ISO 20022. *Universal Financial Industry Message Scheme: Cash Management and Bank Account Identification*.
 - Microsoft Learn. *Financial Dimensions and Account Structures in Dynamics 365 Finance*.
 - Frappe ERPNext Documentation. *Bank Account Master and Accounting Dimensions*.
-- Odoo 17 Documentation. *Bank and Cash Accounts Setup and Analytic Accounting Plans*.
+- Odoo 20.0 Documentation. *Bank and Cash Accounts Setup and Analytic Accounting Plans*.

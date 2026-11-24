@@ -144,4 +144,4 @@ Untuk perancangan modul Finance pada sistem ERP enterprise seperti **Naventra**:
 - Association for Financial Professionals (AFP). *Treasury Management Body of Knowledge (TMBoK): Cash Management and Corporate Liquidity Standards*.
 - Microsoft Learn. *Cash and Bank Management Architecture in Dynamics 365 Finance*.
 - Frappe ERPNext Documentation. *Accounts and Financial Management Concepts*.
-- Odoo 17 Documentation. *Bank, Cash, and Budgetary Management Architecture*.
+- Odoo 20.0 Documentation. *Bank, Cash, and Budgetary Management Architecture*.
