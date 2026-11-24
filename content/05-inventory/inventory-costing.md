@@ -194,4 +194,4 @@ Untuk perancangan modul Costing Engine pada sistem ERP enterprise seperti **Nave
 
 - IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
 - Microsoft Learn. *Inventory costing frequently asked questions*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/inventory-costing-faq. Diakses 24 November 2026.
-- Odoo 17 Documentation. *Automatic inventory valuation*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/product_management/inventory_valuation/inventory_valuation_config.html. Diakses 24 November 2026.
+- Odoo 20.0 Documentation. *Automatic inventory valuation*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/product_management/inventory_valuation/inventory_valuation_config.html. Diakses 24 November 2026.

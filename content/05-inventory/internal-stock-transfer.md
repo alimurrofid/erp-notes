@@ -131,4 +131,4 @@ Untuk perancangan modul Transfer Internal pada sistem ERP enterprise seperti **N
 
 - IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
 - Microsoft Learn. *Set up warehouse for transfer orders*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/transfer-orders-warehouse. Diakses 24 November 2026.
-- Odoo 17 Documentation. *Locations*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management/use_locations.html. Diakses 24 November 2026.
+- Odoo 20.0 Documentation. *Locations*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management/use_locations.html. Diakses 24 November 2026.

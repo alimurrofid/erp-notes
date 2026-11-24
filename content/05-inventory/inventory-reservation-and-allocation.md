@@ -172,4 +172,4 @@ Untuk perancangan modul Reservasi dan Alokasi pada sistem ERP enterprise seperti
 
 - IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
 - Microsoft Learn. *Reserve inventory quantities*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/reserve-inventory-quantities. Diakses 24 November 2026.
-- Odoo 17 Documentation. *Reservation methods*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/shipping_receiving/reservation_methods.html. Diakses 24 November 2026.
+- Odoo 20.0 Documentation. *Reservation methods*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/shipping_receiving/reservation_methods.html. Diakses 24 November 2026.

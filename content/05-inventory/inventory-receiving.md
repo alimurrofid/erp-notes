@@ -154,4 +154,4 @@ Untuk perancangan modul Penerimaan Inbound pada sistem ERP enterprise seperti **
 
 - IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
 - Microsoft Learn. *Arrival overview*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/arrival-overview. Diakses 24 November 2026.
-- Odoo 17 Documentation. *One-step receipt and delivery*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_one_step.html. Diakses 24 November 2026.
+- Odoo 20.0 Documentation. *One-step receipt and delivery*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_one_step.html. Diakses 24 November 2026.
