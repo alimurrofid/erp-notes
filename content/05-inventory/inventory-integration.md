@@ -129,14 +129,14 @@ Untuk mendemonstrasikan integrasi penuh dari awal hingga akhir, berikut adalah p
 
 ### 2. Pembelian Baru + Kapitalisasi Landed Cost (Inbound Logistics)
 * Dibeli tambahan **10 unit** dari PT Sumber Teknologi @ Rp700.000 = Rp7.000.000 (DPP).
-* Saat barang tiba, diposting Goods Receipt `GR-2026-0010`. Saldo kuantitas fisik gudang menjadi **20 unit**.
+* Saat barang tiba, diposting Goods Receipt `GR-2026-09-0010`. Saldo kuantitas fisik gudang menjadi **20 unit**.
 * Jasa ekspedisi inbound menagihkan ongkos angkut freight sebesar **Rp500.000**.
 * Diposting Landed Cost Voucher: Biaya freight dikapitalisasi ke nilai perolehan 10 unit pembelian baru:
   $$\text{Total Biaya Masuk Baru} = \text{Rp}7.000.000 + \text{Rp}500.000 = \mathbf{\text{Rp}7.500.000 \text{ (atau Rp750.000/unit)}}$$
 * Total nilai persediaan kumulatif di neraca: $\text{Rp}7.000.000 + \text{Rp}7.500.000 = \mathbf{\text{Rp}14.500.000}$ (untuk 20 unit fisik).
 
 ### 3. Penjualan dan Pemenuhan Pesanan (Outbound Logistics)
-* Pelanggan memesan **10 unit Laptop Pro**. Pesanan disetujui, stok direservasi, diambil (*picked*), dikemas, dan dikirimkan via Delivery Order `DO-2026-0088`.
+* Pelanggan memesan **10 unit Laptop Pro**. Pesanan disetujui, stok direservasi, diambil (*picked*), dikemas, dan dikirimkan via Delivery Order `DO-2026-09-0088`.
 * Terjadi mutasi persediaan keluar sebesar **10 unit**.
 
 #### Perhitungan Nilai COGS dan Persediaan Akhir:

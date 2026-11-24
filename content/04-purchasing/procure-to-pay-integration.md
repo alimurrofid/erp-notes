@@ -117,13 +117,13 @@ Untuk memastikan kontinuitas pemahaman yang utuh di seluruh modul *erp-notes*, b
 ### Kronologi Transaksi dan Jurnal Akuntansi
 
 #### 1. Permintaan dan Pesanan Pembelian (PR & PO)
-* Tim Gudang/Produksi menerbitkan Purchase Requisition `PR-2026-00042` untuk 10 unit Laptop Pro.
-* Setelah disetujui, Procurement menerbitkan Purchase Order `PO-2026-00042` kepada PT Sumber Teknologi senilai total Rp7.770.000 (inklusif PPN efektif 11%).
+* Tim Gudang/Produksi menerbitkan Purchase Requisition `PR-2026-09-0041` untuk 10 unit Laptop Pro.
+* Setelah disetujui, Procurement menerbitkan Purchase Order `PO-2026-09-0081` kepada PT Sumber Teknologi senilai total Rp7.770.000 (inklusif PPN efektif 11%).
 * **Dampak Akuntansi**: **Tidak ada jurnal akuntansi keuangan**. ERP mencatat komitmen operasional (*open purchase commitment / encumbrance*).
 
 #### 2. Penerimaan Fisik Tahap I — Parsial 6 Unit
 * Vendor mengirimkan tahap pertama sebanyak 6 unit (nomor surat jalan vendor `SJ-ST-8810`).
-* Gudang memverifikasi barang dan memposting Goods Receipt `GR-2026-0010` untuk 6 unit.
+* Gudang memverifikasi barang dan memposting Goods Receipt `GR-2026-09-0010` untuk 6 unit.
 * Nilai persediaan: $6 \times \text{Rp}700.000 = \text{Rp}4.200.000$.
 * **Jurnal Akuntansi (GR-1)**:
   * *(Dr)* Persediaan Barang Dagang: Rp4.200.000
@@ -131,7 +131,7 @@ Untuk memastikan kontinuitas pemahaman yang utuh di seluruh modul *erp-notes*, b
 
 #### 3. Penerimaan Fisik Tahap II — Sisa 4 Unit
 * Dua hari kemudian, vendor mengirimkan sisa 4 unit (surat jalan `SJ-ST-8815`).
-* Gudang memverifikasi dan memposting Goods Receipt `GR-2026-0014` untuk 4 unit.
+* Gudang memverifikasi dan memposting Goods Receipt `GR-2026-09-0014` untuk 4 unit.
 * Nilai persediaan: $4 \times \text{Rp}700.000 = \text{Rp}2.800.000$.
 * **Jurnal Akuntansi (GR-2)**:
   * *(Dr)* Persediaan Barang Dagang: Rp2.800.000
@@ -147,7 +147,7 @@ Untuk memastikan kontinuitas pemahaman yang utuh di seluruh modul *erp-notes*, b
 
 #### 5. Penagihan Vendor & 3-Way Matching (Vendor Bill)
 * PT Sumber Teknologi mengirimkan faktur gabungan `INV-ST-9942` senilai Rp7.770.000 (DPP Rp7.000.000 + PPN Rp770.000) beserta Faktur Pajak Masukan elektronik.
-* Sistem ERP menjalankan [[04-purchasing/three-way-match|3-Way Matching]] antara `PO-2026-00042` (10 unit @ Rp700.000), `GR-2026-0010` (6 unit), `GR-2026-0014` (4 unit), dan `INV-ST-9942`. Hasil: **Match Passed (Toleransi 0%)**.
+* Sistem ERP menjalankan [[04-purchasing/three-way-match|3-Way Matching]] antara `PO-2026-09-0081` (10 unit @ Rp700.000), `GR-2026-09-0010` (6 unit), `GR-2026-09-0014` (4 unit), dan `INV-ST-9942`. Hasil: **Match Passed (Toleransi 0%)**.
 * Bagian AP memposting Vendor Bill.
 * **Jurnal Akuntansi (Vendor Bill)**:
   * *(Dr)* Utang Barang Belum Ditagih (GR/IR Accrual): Rp7.000.000

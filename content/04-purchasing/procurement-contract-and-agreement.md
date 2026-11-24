@@ -50,8 +50,8 @@ flowchart TD
     Contract["Master Procurement Agreement<br/>(Contoh: Kontrak 120 Unit Laptop Pro @ Rp700.000 / Tahun)"]
     
     subgraph Execution["Call-off / Release Orders"]
-        PO1["Release Order #1 (Bulan Jan)<br/>PO-2026-0010: 10 unit"]
-        PO2["Release Order #2 (Bulan Feb)<br/>PO-2026-0042: 10 unit"]
+        PO1["Release Order #1 (Bulan Jan)<br/>PO-2026-01-0010: 10 unit"]
+        PO2["Release Order #2 (Bulan Feb)<br/>PO-2026-02-0042: 10 unit"]
         PO3["Release Order #n ...<br/>PO-2026-xxxx: n unit"]
     end
     

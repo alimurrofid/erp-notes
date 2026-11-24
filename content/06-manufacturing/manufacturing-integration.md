@@ -114,7 +114,7 @@ Untuk membuktikan keutuhan integrasi dari awal hingga akhir, berikut adalah pene
 
 ### 1. Permintaan Masuk (Sales / O2C)
 * Pelanggan PT Mitra Niaga memesan **100 unit Laptop Pro**.
-* Diterbitkan Sales Order `SO-2026-0088`. Saldo stok bebas di gudang barang jadi saat ini = 0 unit (*MTO Environment*).
+* Diterbitkan Sales Order `SO-2026-09-0088`. Saldo stok bebas di gudang barang jadi saat ini = 0 unit (*MTO Environment*).
 
 ### 2. Perencanaan dan Kebutuhan Material (Planning & MRP)
 * Modul MPS menjadwalkan perakitan 100 unit Laptop Pro untuk selesai pada **Minggu ke-4**.
@@ -123,8 +123,8 @@ Untuk membuktikan keutuhan integrasi dari awal hingga akhir, berikut adalah pene
 * MRP secara otomatis menerbitkan usulan pengadaan (*Planned Purchase Order*) kepada pemasok **PT Sumber Teknologi** (lihat konsistensi dengan Phase 5).
 
 ### 3. Pengadaan dan Penerimaan Bahan Baku (Purchasing & Inbound WMS)
-* Bagian Purchasing menerbitkan `PO-2026-00042` untuk 100 unit Komponen Motherboard @ Rp700.000 = **Rp70.000.000 (DPP)**.
-* Barang tiba di dermaga dan diposting Goods Receipt `GR-2026-0010`.
+* Bagian Purchasing menerbitkan `PO-2026-09-0081` untuk 100 unit Komponen Motherboard @ Rp700.000 = **Rp70.000.000 (DPP)**.
+* Barang tiba di dermaga dan diposting Goods Receipt `GR-2026-09-0010`.
 * Ekspedisi menagihkan ongkos angkut freight sebesar Rp5.000.000 yang dikapitalisasi melalui Landed Cost Voucher:
   $$\text{Nilai Perolehan Bersih Bahan Baku} = \text{Rp}70.000.000 + \text{Rp}5.000.000 = \mathbf{\text{Rp}75.000.000 \text{ (atau Rp750.000/unit)}}$$
 
@@ -154,7 +154,7 @@ Untuk membuktikan keutuhan integrasi dari awal hingga akhir, berikut adalah pene
 * *Hasil*: Saldo akun WIP kembali bersaldo nol (nihil). Gudang barang jadi mencatat tambahan 100 unit Laptop Pro siap kirim dengan nilai perolehan sah Rp790.000/unit.
 
 ### 6. Pengiriman ke Pelanggan dan Pengakuan Laba (O2C & Finance)
-* Dokumen Delivery Order `DO-2026-0088` divalidasi: 100 unit Laptop Pro dikirim ke PT Mitra Niaga.
+* Dokumen Delivery Order `DO-2026-09-0088` divalidasi: 100 unit Laptop Pro dikirim ke PT Mitra Niaga.
 * **Jurnal Beban Pokok Penjualan (COGS)**:
   * *(Dr)* Beban Pokok Penjualan (*COGS*): **Rp79.000.000**
   * *(Cr)* Persediaan Barang Jadi: **Rp79.000.000**

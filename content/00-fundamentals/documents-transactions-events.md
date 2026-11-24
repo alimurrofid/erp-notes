@@ -106,9 +106,9 @@ Salah satu fungsi audit terpenting dalam ERP adalah **Document Flow** (Jejak Dok
 
 ```text
 Quotation #QT-2026-0042
-   └── Sales Order #SO-2026-0089
+   └── Sales Order #SO-2026-09-0089
           ├── Delivery Note #DN-2026-0112 (Goods Issue)
-          └── Sales Invoice #INV-2026-0095
+          └── Sales Invoice #INV-2026-09-0095
                  └── Payment Receipt #PAY-2026-0078
 ```
 

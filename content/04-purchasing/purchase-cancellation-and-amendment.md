@@ -75,8 +75,8 @@ Alasan teknis dan audit:
 Ketika Purchase Order yang telah berstatus *Approved* memerlukan perubahan (misalnya perubahan kuantitas, tanggal pengiriman, harga satuan, atau spesifikasi barang), sistem ERP menerapkan mekanisme **PO Amendment**:
 
 ### 1. Revision Numbering / Versioning
-* Dokumen asli: `PO-2026-00042` (Version 1).
-* Saat dibuka untuk revisi: Sistem mengunci versi 1 dan menciptakan draft versi kerja `PO-2026-00042-Rev1` (atau Version 2).
+* Dokumen asli: `PO-2026-09-0081` (Version 1).
+* Saat dibuka untuk revisi: Sistem mengunci versi 1 dan menciptakan draft versi kerja `PO-2026-09-0081-Rev1` (atau Version 2).
 * Versi sebelumnya diarsipkan secara historis sehingga pengguna dapat melihat perbandingan (*diff view*) antara Versi 1 dan Versi 2.
 
 ### 2. Change Impact & Toleransi Perubahan
