@@ -53,7 +53,7 @@ Kedelapan item di bawah **sudah diputuskan** pemilik proyek; nilai kanoniknya ad
 | FIN-11 | Satu COA di `02-accounting/chart-of-accounts.md` | `02-accounting`, `08-assets` |
 | BIZ-06 / BIZ-07 | Pola nomor 4 segmen; `PR-2026-09-0041`, `PO-2026-09-0081` | `04-purchasing`, `00-fundamentals` |
 | INV-05 / INV-08 | 1 Pack = 6 Unit; cost sheet tunggal di `production-costing-and-wip.md` | `05-inventory`, `06-manufacturing` |
-| TAX-04 / TAX-05 | Hapus janji cakupan PPh dari index `11-tax` | `11-tax/index.md` |
+| TAX-04 / TAX-05 | Hapus janji cakupan PPh 21/22/4(2) dari index `02-accounting` dan `04-purchasing` | `02-accounting/index.md`, `04-purchasing/index.md` |
 | URUTAN | Kampanye referensi dimulai dari `11-tax` | `audit/LINK-BACKLOG.md` |
 
 ## Open — butuh verifikasi eksternal

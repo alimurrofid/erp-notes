@@ -27,13 +27,15 @@ Sumber unik diperkirakan 841; banyak judul berulang dengan format berbeda.
 | Batch | Tanggal | Hasil |
 |---|---|---|
 | 1 — `11-tax` inti PPN (8 file) | 2026-11-24 | 67 entri ber-URL ditambahkan; 44 URL mati tidak berubah (tidak ada URL mati baru); 3 blocked (2 warisan + 1 OECD) |
+| 2 — `11-tax` PPh (7 file) | 2026-11-24 | 39 entri ber-URL ditambahkan; total entri ber-URL 358 (39%); URL mati tetap 44 |
 
 Catatan Batch 1:
 
 - Sumber primer diverifikasi dengan membuka halaman dan mencocokkan judul: `peraturan.go.id` (UU/PP) dan `jdih.kemenkeu.go.id` (PMK). Tanggal akses 24 November 2026.
 - **Temuan regulasi:** PMK 11/2025 telah diubah oleh **PMK 53/2025** (diundangkan 28 Juli 2025). Referensi PMK 53/2025 sudah ditambahkan ke 8 artikel, tetapi narasi tarif di badan artikel belum diubah — **menunggu review manusia**.
 - `PER-03/PJ/2022`, `PER-29/PJ/2015`, `SE-10/PJ/2020`, PMK 243/2014, PMK 173/2021, PMK 59/2022, dan KMK kurs ditandai `cetak`/belum terverifikasi karena tautan resminya tidak dapat dipastikan otomatis (situs DJP menolak akses otomatis).
-- Sisa `11-tax` yang belum disentuh: 11 file (PPh, PPN lanjutan, index).
+- **Temuan lokasi:** TAX-04/05 tidak berada di `11-tax/index.md`, melainkan di `02-accounting/index.md:53` dan `04-purchasing/index.md:50` (sesuai `ERP_NOTES_AUDIT.md`). Perbaikan index dipindahkan ke batch berikutnya; D-8 di `scenario-register.md` dikoreksi 24 November 2026.
+- Sisa `11-tax` yang belum disentuh: 3 artikel (`tax-integration`, `tax-controls-audit-and-compliance`, `tax-reporting-and-tax-analytics`).
 
 ## Aturan per Entri
 

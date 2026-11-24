@@ -28,7 +28,7 @@ Keputusan berikut disetujui pemilik proyek dan menjadi basis Fase 2. Angka yang 
 | D-5 | Nomor dokumen P2P | Pola 4 segmen. Nilai terverifikasi: `PR-2026-09-0041`, `PO-2026-09-0081`. Nomor lain diturunkan dari pola ini di Fase 2. |
 | D-6 | Konversi UOM | 1 Pack = 6 Unit. Artikel yang memakai faktor "4" dikoreksi. |
 | D-7 | Cost sheet produksi | `content/06-manufacturing/production-costing-and-wip.md` pemilik tunggal; artikel lain merujuk. |
-| D-8 | Index `11-tax` | Janji cakupan PPh yang belum ada dihapus dari index. Perluasan materi PPh 21/22 masuk Fase 5. |
+| D-8 | Index `02-accounting` dan `04-purchasing` | Hapus janji cakupan PPh 21/22/4(2) yang tidak ada di artikel tujuan (temuan TAX-04/05). Perluasan materi PPh 21/22 masuk Fase 5. |
 
 ## Konflik Belum Selesai
 

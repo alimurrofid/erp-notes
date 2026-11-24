@@ -72,7 +72,7 @@ Disetujui pemilik proyek 24 November 2026. Nilai kanonik ditulis ke `.agents/ref
 | BIZ-06/07 | Baseline stok & nomor dokumen P2P | Pola 4 segmen; `PR-2026-09-0041` dan `PO-2026-09-0081` kanonik |
 | INV-05 | Faktor konversi UOM | 1 Pack = 6 Unit; artikel pemakai "4" dikoreksi |
 | INV-08 | Cost sheet MO-2026-0042 | `production-costing-and-wip.md` pemilik tunggal |
-| TAX-04/05 | Index menjanjikan cakupan PPh yang tidak ada | Janji dihapus dari index; perluasan masuk Fase 5 |
+| TAX-04/05 | Index menjanjikan cakupan PPh yang tidak ada | Janji dihapus dari `02-accounting` dan `04-purchasing`; perluasan materi masuk Fase 5 |
 | URUTAN | Urutan batch kampanye referensi | `11-tax` didahulukan, lalu 00→05, lalu 06+ |
 
 ## 6. Fase 2 — Satu Kebenaran Akuntansi (AI otonom)
