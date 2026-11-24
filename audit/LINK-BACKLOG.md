@@ -1,6 +1,6 @@
 # Link Backlog
 
-Status sitasi per 23 November 2026. Tujuan: setiap entri referensi punya identitas yang dapat diverifikasi (URL, DOI, ISBN, atau nomor standar/regulasi) dan URL-nya pernah dicek.
+Status sitasi per 24 November 2026. Tujuan: setiap entri referensi punya identitas yang dapat diverifikasi (URL, DOI, ISBN, atau nomor standar/regulasi) dan URL-nya pernah dicek.
 
 ## Baseline
 
@@ -21,6 +21,19 @@ Status sitasi per 23 November 2026. Tujuan: setiap entri referensi punya identit
 | **Total** | **931** | **201** | **44** | **730** |
 
 Sumber unik diperkirakan 841; banyak judul berulang dengan format berbeda.
+
+## Status Batch
+
+| Batch | Tanggal | Hasil |
+|---|---|---|
+| 1 — `11-tax` inti PPN (8 file) | 2026-11-24 | 67 entri ber-URL ditambahkan; 44 URL mati tidak berubah (tidak ada URL mati baru); 3 blocked (2 warisan + 1 OECD) |
+
+Catatan Batch 1:
+
+- Sumber primer diverifikasi dengan membuka halaman dan mencocokkan judul: `peraturan.go.id` (UU/PP) dan `jdih.kemenkeu.go.id` (PMK). Tanggal akses 24 November 2026.
+- **Temuan regulasi:** PMK 11/2025 telah diubah oleh **PMK 53/2025** (diundangkan 28 Juli 2025). Referensi PMK 53/2025 sudah ditambahkan ke 8 artikel, tetapi narasi tarif di badan artikel belum diubah — **menunggu review manusia**.
+- `PER-03/PJ/2022`, `PER-29/PJ/2015`, `SE-10/PJ/2020`, PMK 243/2014, PMK 173/2021, PMK 59/2022, dan KMK kurs ditandai `cetak`/belum terverifikasi karena tautan resminya tidak dapat dipastikan otomatis (situs DJP menolak akses otomatis).
+- Sisa `11-tax` yang belum disentuh: 11 file (PPh, PPN lanjutan, index).
 
 ## Aturan per Entri
 
