@@ -60,7 +60,7 @@ $$\text{Kuantitas Base UOM} = \text{Kuantitas Transaksi} \times \text{Conversion
 * **Item**: Komponen Kabel Penghubung Laptop Pro.
 * **Base UOM**: `Pcs` (Pieces).
 * **Purchasing UOM**: `Box` (1 Box = 12 Pcs; *Conversion Factor* = 12).
-* **Sales UOM**: `Pack` (1 Pack = 4 Pcs; *Conversion Factor* = 4).
+* **Sales UOM**: `Pack` (1 Pack = 6 Pcs; *Conversion Factor* = 6).
 
 #### 1. Transaksi Pembelian Inbound:
 * Departemen Pengadaan menerbitkan PO untuk **5 Box**.
