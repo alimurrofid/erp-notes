@@ -170,9 +170,9 @@ Untuk perancangan modul Analisis Varians Manufaktur pada sistem ERP enterprise s
 
 ## References
 
-- Horngren, C. T., Datar, S. M., & Rajan, M. V. *Cost Accounting: A Managerial Emphasis (Variance Analysis and Standard Costing)*. Pearson.
-- ASCM / APICS. *APICS Dictionary: Variance Analysis, Material Usage Variance, Labor Efficiency, and Overall Equipment Effectiveness (OEE)*.
-- Nakajima, S. *Introduction to TPM: Total Productive Maintenance (The OEE Methodology)*. Productivity Press.
-- Microsoft Learn. *Production Variances Analysis and Cost Breakdown in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Work Order Performance and Scrap Analysis*.
-- Odoo 20.0 Documentation. *Overall Equipment Effectiveness (OEE) and Work Center Productivity Tracking*.
+1. **Horngren, C. T., Datar, S. M., & Rajan, M. V.** — *Cost Accounting: A Managerial Emphasis* (variance analysis dan standard costing) (cetak).
+2. **ASCM / APICS** — *APICS Dictionary* (variance analysis, material usage variance, labour efficiency, OEE) (cetak).
+3. **Nakajima, S.** — *Introduction to TPM* (metodologi OEE) (cetak).
+4. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+5. **ERPNext Documentation** — *Work Order*. https://docs.frappe.io/erpnext/work-order — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

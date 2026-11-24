@@ -179,9 +179,9 @@ Untuk perancangan modul Akuntansi Biaya Manufaktur pada sistem ERP enterprise se
 
 ## References
 
-- IFRS Foundation. *IAS 2: Inventories (Paragraphs 12-14: Costs of Conversion and Allocation of Overhead)*.
-- Horngren, C. T., Datar, S. M., & Rajan, M. V. *Cost Accounting: A Managerial Emphasis*. Pearson.
-- ASCM / APICS. *APICS Dictionary: Work in Process (WIP), Equivalent Units of Production, and Cost Absorption*.
-- Microsoft Learn. *Production Order Costing and Inventory Close in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Work-in-Progress Valuation and Production Costing*.
-- Odoo 20.0 Documentation. *Manufacturing Cost Valuation and Work Center Hourly Rates*.
+1. **IFRS Foundation** — *IAS 2 Inventories* (paragraf 12–14: biaya konversi dan alokasi overhead). https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ — diakses 24 November 2026.
+2. **Horngren, C. T., Datar, S. M., & Rajan, M. V.** — *Cost Accounting: A Managerial Emphasis* (cetak).
+3. **ASCM / APICS** — *APICS Dictionary* (WIP, equivalent units, cost absorption) (cetak).
+4. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management; penilaian dan costing produksi). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+5. **ERPNext Documentation** — *Stock Entry* (konsumsi material dan produksi). https://docs.frappe.io/erpnext/stock-entry — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

@@ -160,9 +160,9 @@ Untuk perancangan modul Manajemen Mutu Manufaktur pada sistem ERP enterprise sep
 
 ## References
 
-- ISO 9001:2015. *Clause 8.6: Release of Products and Services, and Clause 8.7: Control of Nonconforming Outputs*.
-- ASCM / APICS. *APICS Dictionary: Quality Control, Inspection Points, Non-Conformance, Rework Orders, and Cost of Quality (CoQ)*.
-- Juran, J. M., & Godfrey, A. B. *Juran's Quality Handbook: The Complete Guide to Performance Excellence*. McGraw-Hill.
-- Microsoft Learn. *Quality Management and Non-Conformance Architecture in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Quality Inspection and Quality Criteria Configurations*.
-- Odoo 20.0 Documentation. *Quality Control Points and Quality Alerts in Manufacturing*.
+1. **ISO 9001:2015** — Klausul 8.6 dan 8.7 (release of products, control of nonconforming outputs) (cetak).
+2. **ASCM / APICS** — *APICS Dictionary* (quality control, inspection, non-conformance, rework, cost of quality) (cetak).
+3. **Juran, J. M., & Godfrey, A. B.** — *Juran's Quality Handbook* (cetak).
+4. **Microsoft Learn** — dokumentasi quality management D365 untuk topik ini [belum terverifikasi].
+5. **ERPNext Documentation** — *Quality Inspection*. https://docs.frappe.io/erpnext/quality-inspection — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Quality*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/quality.html — diakses 24 November 2026.

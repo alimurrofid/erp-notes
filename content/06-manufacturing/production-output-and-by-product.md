@@ -147,8 +147,8 @@ Untuk perancangan modul Hasil Produksi dan By-Products pada sistem ERP enterpris
 
 ## References
 
-- IFRS Foundation. *IAS 2: Inventories (Paragraph 14: Joint Products, Co-Products, and By-Products Cost Allocation)*.
-- ASCM / APICS. *APICS Dictionary: Co-Products, By-Products, Scrap Factor, and Production Yield Metrics*.
-- Microsoft Learn. *Co-products and By-products Architecture in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Managing Scrap and By-products in Manufacturing*.
-- Odoo 20.0 Documentation. *By-products Management and Finished Goods Registration*.
+1. **IFRS Foundation** — *IAS 2 Inventories* (paragraf 14: alokasi biaya produk bersama dan sampingan). https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ — diakses 24 November 2026.
+2. **ASCM / APICS** — *APICS Dictionary* (co-product, by-product, scrap factor, yield) (cetak).
+3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Manufacturing*. https://docs.frappe.io/erpnext/manufacturing — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

@@ -182,8 +182,8 @@ Untuk perancangan modul Shop Floor Execution pada sistem ERP enterprise seperti 
 
 ## References
 
-- ASCM / APICS. *Shop Floor Control and Production Activity Control (PAC) Best Practices*.
-- MESA International (Manufacturing Enterprise Solutions Association). *MES Functionality Models and Shop Floor Execution Standards*.
-- Microsoft Learn. *Production Floor Execution Interface in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Job Card Execution and Operation Tracking*.
-- Odoo 20.0 Documentation. *Shop Floor App: Managing Work Orders and Operator Activities*.
+1. **ASCM / APICS** — *Shop Floor Control and Production Activity Control* (cetak).
+2. **MESA International** — *MES Functionality Models* (cetak).
+3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Job Card*. https://docs.frappe.io/erpnext/job-card — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

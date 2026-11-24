@@ -190,8 +190,8 @@ Untuk perancangan modul Routing dan Work Center pada sistem ERP enterprise seper
 
 ## References
 
-- ASCM / APICS. *APICS Dictionary: Routing, Work Center Capacity, Setup Time, Run Time, and Lead Time Elements*.
-- Groover, M. P. *Fundamentals of Modern Manufacturing: Materials, Processes, and Systems*. Wiley.
-- Microsoft Learn. *Routes and Operations Architecture in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Workstations and Routing Operations Setup*.
-- Odoo 20.0 Documentation. *Work Centers and Routing Operations Configurations*.
+1. **ASCM / APICS** — *APICS Dictionary* (routing, work center capacity, setup time, run time, lead time) (cetak).
+2. **Groover, M. P.** — *Fundamentals of Modern Manufacturing* (cetak).
+3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management; route dan operation). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Workstation*. https://docs.frappe.io/erpnext/workstation — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

@@ -172,8 +172,8 @@ Untuk perancangan modul BOM pada sistem ERP enterprise seperti **Naventra**:
 
 ## References
 
-- ASCM / APICS. *APICS Dictionary: Bill of Materials, Low-Level Coding, Multi-Level Structures, and Phantom Assemblies*.
-- Vollmann, T. E., et al. *Manufacturing Planning and Control for Supply Chain Management: Structuring the Bill of Materials*.
-- Microsoft Learn. *Bills of Materials and Formulas Architecture in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Managing Multi-level Bill of Materials (BOM)*.
-- Odoo 20.0 Documentation. *Bills of Materials (BOM): Standard, Kit, and Subcontracting Configurations*.
+1. **ASCM / APICS** — *APICS Dictionary* (BOM, low-level coding, multi-level structure, phantom assembly) (cetak).
+2. **Vollmann, T. E., et al.** — *Manufacturing Planning and Control for Supply Chain Management* (cetak).
+3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management; BOM dan formula). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Bill of Materials*. https://docs.frappe.io/erpnext/bill-of-materials — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Manufacturing* (BOM). https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.
