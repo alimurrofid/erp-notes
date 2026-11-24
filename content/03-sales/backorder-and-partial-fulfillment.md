@@ -139,5 +139,5 @@ Jika pelanggan tidak bersedia menunggu pasokan batch kedua dan memutuskan untuk 
 
 1. **Association for Supply Chain Management (ASCM)**: *APICS Dictionary - Backorder Processing, Order Splitting, and Fill Rate*.
 2. **Microsoft Learn**: *Partial shipments, backorders, and delivery schedules in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/delivery-schedules
-3. **Frappe / ERPNext Documentation**: *Partial Invoicing and Partial Delivery from Sales Order*. URL: https://docs.frappe.io/erpnext/user/manual/en/selling/sales-order#partial-delivery
-4. **Odoo Documentation**: *Managing Backorders and Multi-Step Deliveries*. URL: https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/shipping/setup/delivery_two_steps.html
+3. **ERPNext Documentation** — *Partial Fulfilment of Sales Order*. https://docs.frappe.io/erpnext/partial-fulfilment-of-sales-order — diakses 24 November 2026.
+4. **Odoo 20.0 Documentation** — *Two-step delivery*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_two_steps.html — diakses 24 November 2026.

@@ -129,6 +129,6 @@ flowchart TD
 ## References
 
 1. **IFRS Foundation**: *IFRS 9 Financial Instruments - Financial Assets at Amortised Cost (Trade Receivables)*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-9-financial-instruments/
-2. **Microsoft Learn**: *Customer invoicing, payment journals, and settlement in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/customer-invoices-overview
-3. **Frappe / ERPNext Documentation**: *Sales Invoice, Payment Reconciliation Tool, and Match Entries*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/sales-invoice
-4. **Odoo Documentation**: *Customer Invoices, Payment Matching, and Aged Receivables*. URL: https://www.odoo.com/documentation/17.0/applications/finance/accounting/customer_invoices.html
+2. **Microsoft Learn** — *Accounts receivable home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/accounts-receivable — diakses 24 November 2026.
+3. **ERPNext Documentation** — *Sales Invoice*. https://docs.frappe.io/erpnext/sales-invoice — diakses 24 November 2026.
+4. **Odoo 20.0 Documentation** — *Customer invoices*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/customer_invoices.html — diakses 24 November 2026.

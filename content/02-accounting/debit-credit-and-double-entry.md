@@ -161,5 +161,5 @@ Jika sistem mendeteksi selisih sebesar Rp1 sekalipun ($\sum \text{Dr} \neq \sum 
 
 1. **Sangster, A.** (2018). *Pacioli's Prophetic Accounting*. Journal of Accounting, Auditing & Accountability.
 2. **Weygandt, J. J., Kimmel, P. D., & Kieso, D. E.** (2019). *Financial Accounting: Tools for Business Decision Making* (Chapter: The Accounting Information System). John Wiley & Sons.
-3. **Microsoft Learn**: *General ledger posting and validation rules in Dynamics 365*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/
-4. **Frappe / ERPNext Documentation**: *Double Entry Accounting Principles in ERPNext*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts
+3. **Microsoft Learn** — *Ledger, subledger, and subledger journal accounting entries overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-subledger — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Accounts*. https://docs.frappe.io/erpnext/accounts — diakses 24 November 2026.

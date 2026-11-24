@@ -119,6 +119,6 @@ Jika ketiga perbandingan di atas cocok 100%, periode pembukuan dapat dikunci (*l
 ## References
 
 1. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements - Aggregation and Materiality*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/
-2. **Microsoft Learn**: *Subledgers, posting profiles, and General Ledger integration in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/subledger-journal
-3. **Frappe / ERPNext Documentation**: *General Ledger, Accounts Receivable, and Stock Ledger Reports*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/general-ledger
-4. **Odoo Documentation**: *Partner Balances, General Ledger, and Aged Partner Balances*. URL: https://www.odoo.com/documentation/17.0/applications/finance/accounting/reporting/declarations/aged_partner_balances.html
+2. **Microsoft Learn** — *Ledger, subledger, and subledger journal accounting entries overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-subledger — diakses 24 November 2026.
+3. **ERPNext Documentation** — *General Ledger*. https://docs.frappe.io/erpnext/general-ledger — diakses 24 November 2026.
+4. **Odoo 20.0 Documentation** — *Accounting reporting* (aged receivable dan aged payable). https://www.odoo.com/documentation/20.0/applications/finance/accounting/reporting.html#aged-receivable — diakses 24 November 2026.
