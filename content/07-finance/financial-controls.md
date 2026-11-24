@@ -142,8 +142,8 @@ Rancangan arsitektur modul Financial Controls & Governance pada Naventra ERP:
 
 ## References
 
-- Committee of Sponsoring Organizations of the Treadway Commission (COSO). *Internal Control — Integrated Framework (2013)*.
-- Information Systems Audit and Control Association (ISACA). *IT Control Objectives for Sarbanes-Oxley*, 4th Edition.
-- SAP SE. *Governance, Risk, and Compliance (SAP GRC) in SAP S/4HANA*. SAP Help Portal.
-- Microsoft Corporation. *Segregation of duties overview in Dynamics 365 Finance*. Microsoft Learn.
-- The Institute of Internal Auditors (IIA). *International Standards for the Professional Practice of Internal Auditing*.
+1. **COSO** — *Internal Control — Integrated Framework* (2013) (cetak).
+2. **ISACA** — *IT Control Objectives for Sarbanes-Oxley*, edisi ke-4 (cetak).
+3. **SAP SE** — *Governance, Risk, and Compliance*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — dokumentasi segregation of duties D365 untuk topik ini belum terverifikasi [belum terverifikasi].
+5. **IIA** — *International Standards for the Professional Practice of Internal Auditing* (cetak).

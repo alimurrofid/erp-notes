@@ -170,8 +170,8 @@ Rancangan arsitektur mesin rekonsiliasi bank pada Naventra ERP:
 
 ## References
 
-- International Organization for Standardization. *ISO 20022 Financial Services — Cash Management Messages (CAMT.052, CAMT.053, CAMT.054)*.
-- SWIFT Standards. *SWIFT MT940 Customer Statement Message Format Guidelines*.
-- SAP SE. *Electronic Bank Statement (FI-BL-PT-BS) in SAP S/4HANA*. SAP Help Portal.
-- Microsoft Corporation. *Set up advanced bank reconciliation in Dynamics 365 Finance*. Microsoft Learn.
-- Odoo S.A. *Bank Reconciliation and Reconciliation Models*. Odoo Documentation.
+1. **ISO 20022** — *Cash Management Messages (CAMT.052, CAMT.053, CAMT.054)* (cetak; spesifikasi berbayar).
+2. **SWIFT** — *MT940 Customer Statement Message* (cetak; standar berbayar).
+3. **SAP SE** — *Electronic Bank Statement*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Reconcile bank statements by using advanced bank reconciliation* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Bank reconciliation*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/bank/reconciliation.html — diakses 24 November 2026.

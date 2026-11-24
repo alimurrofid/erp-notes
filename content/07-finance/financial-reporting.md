@@ -166,8 +166,8 @@ Rancangan arsitektur modul Financial Reporting & Dashboards pada Naventra ERP:
 
 ## References
 
-- Chartered Institute of Management Accountants (CIMA). *Management Accounting Guidelines: Performance Management & Reporting*.
-- Institute of Management Accountants (IMA). *Management Accounting Quarterly: Best Practices in Executive Dashboards*.
-- SAP SE. *Embedded Analytics in SAP S/4HANA Finance*. SAP Help Portal.
-- Microsoft Corporation. *Financial reporting overview and Power BI integration in Dynamics 365*. Microsoft Learn.
-- Eckerson, Wayne W. *Performance Dashboards: Measuring, Monitoring, and Managing Your Business*. John Wiley & Sons.
+1. **CIMA** — *Management Accounting Guidelines: Performance Management & Reporting* (cetak).
+2. **IMA** — *Management Accounting Quarterly* (cetak).
+3. **SAP SE** — *Embedded Analytics*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Financial reporting getting started* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-reporting-getting-started — diakses 24 November 2026.
+5. **Eckerson, W. W.** — *Performance Dashboards* (cetak).

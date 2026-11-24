@@ -151,8 +151,9 @@ Rancangan modul Bank Account Management pada Naventra ERP menetapkan:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 1: Presentation of Financial Statements* & *IAS 7: Statement of Cash Flows*. IFRS Foundation.
-- International Organization for Standardization. *ISO 20022 Financial Services — Bank Account Management (BAM) Schema*.
-- Association for Financial Professionals (AFP). *Essentials of Treasury Management*, 6th Edition.
-- SAP SE. *Bank Account Management (BAM) in SAP S/4HANA Finance*. SAP Help Portal.
-- Microsoft Corporation. *Set up bank accounts and bank groups in Dynamics 365 Finance*. Microsoft Learn.
+1. **IFRS Foundation** — *IAS 1 Presentation of Financial Statements*. https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/ — diakses 24 November 2026.
+2. **IFRS Foundation** — *IAS 7 Statement of Cash Flows*. https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/ — diakses 24 November 2026.
+3. **ISO 20022** — *Bank Account Management (BAM) Schema* (cetak; spesifikasi berbayar).
+4. **AFP** — *Essentials of Treasury Management*, edisi ke-6 (cetak).
+5. **SAP SE** — *Bank Account Management*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+6. **Microsoft Learn** — *Cash and bank management* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-bank-management — diakses 24 November 2026.

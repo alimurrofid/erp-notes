@@ -169,8 +169,8 @@ Rancangan arsitektur pembayaran dan pengeluaran kas pada Naventra ERP:
 
 ## References
 
-- International Organization for Standardization. *ISO 20022 Financial Services — Payment Initiation (PAIN.001) and Payment Status Report (PAIN.002)*.
-- SAP SE. *Automatic Payment Program (FI-AP-AP-PT) in SAP S/4HANA Finance*. SAP Help Portal.
-- Microsoft Corporation. *Create and validate vendor payment proposals in Dynamics 365 Finance*. Microsoft Learn.
-- Association for Financial Professionals (AFP). *Payments and Cash Settlement Systems Body of Knowledge*.
-- Bank Indonesia. *Peraturan Bank Indonesia mengenai Penyelenggaraan Sistem Pembayaran BI-FAST dan SKNBI*.
+1. **ISO 20022** — *Payment Initiation (PAIN.001) and Payment Status Report (PAIN.002)* (cetak; spesifikasi berbayar).
+2. **SAP SE** — *Automatic Payment Program*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Cash and bank management* (Dynamics 365 Finance; disbursement dan rekonsiliasi bank). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-bank-management — diakses 24 November 2026.
+4. **AFP** — *Payments and Cash Settlement Systems Body of Knowledge* (cetak).
+5. **Bank Indonesia** — ketentuan BI-FAST/SKNBI: nomor peraturan belum terverifikasi [belum terverifikasi].

@@ -179,8 +179,8 @@ Rancangan arsitektur Working Capital Management pada Naventra ERP:
 
 ## References
 
-- PricewaterhouseCoopers (PwC). *Annual Working Capital Study: Navigating Uncertainty through Liquidity Optimization*.
-- Chartered Institute of Management Accountants (CIMA). *Working Capital Management: Theory and Practice*.
-- SAP SE. *Working Capital Analytics in SAP S/4HANA Finance*. SAP Help Portal.
-- Microsoft Corporation. *Credit and collections overview in Dynamics 365 Finance*. Microsoft Learn.
-- Brealey, R. A., Myers, S. C., & Allen, F. *Principles of Corporate Finance: Short-Term Financial Management*.
+1. **PwC** — *Annual Working Capital Study* (cetak).
+2. **CIMA** — *Working Capital Management: Theory and Practice* (cetak).
+3. **SAP SE** — *Working Capital Analytics*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Collections and credit in Accounts receivable* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/collections-credit-accounts-receivable — diakses 24 November 2026.
+5. **Brealey, R. A., Myers, S. C., & Allen, F.** — *Principles of Corporate Finance* (cetak).

@@ -192,7 +192,7 @@ Rancangan arsitektur modul Financial Planning & Forecasting pada Naventra ERP:
 
 ## References
 
-- Chartered Institute of Management Accountants (CIMA). *Planning, Budgeting, and Forecasting in the Digital Age*.
-- SAP SE. *Integrated Financial Planning for SAP S/4HANA with SAP Analytics Cloud*. SAP Best Practices.
-- Microsoft Corporation. *Financial planning and analysis in Dynamics 365 Finance*. Microsoft Learn.
-- Association for Financial Professionals (AFP). *FP&A Body of Knowledge and Best Practices*.
+1. **CIMA** — *Planning, Budgeting, and Forecasting in the Digital Age* (cetak).
+2. **SAP SE** — *Integrated Financial Planning*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Budgeting overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budgeting-overview — diakses 24 November 2026.
+4. **AFP** — *FP&A Body of Knowledge* (cetak).
