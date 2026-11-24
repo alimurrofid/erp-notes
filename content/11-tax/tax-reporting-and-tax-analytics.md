@@ -151,8 +151,10 @@ Pada arsitektur ERP Naventra, fitur pelaporan dan analitika perpajakan dirancang
 
 ## References
 
-* Undang-Undang Republik Indonesia No. 28 Tahun 2007 tentang Ketentuan Umum dan Tata Cara Perpajakan (UU KUP) beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
-* Surat Edaran Direktur Jenderal Pajak No. SE-05/PJ/2022 tentang Pengawasan Kepatuhan Wajib Pajak Melalui Analisis Data dan Ekualisasi.
-* Microsoft Learn: *Tax Reporting, Financial Analytics, and Power BI Integration in Dynamics 365*.
-* Frappe / ERPNext Documentation: *Creating Custom Script Reports for Tax Reconciliation*.
-* Odoo Accounting Documentation: *Tax Reports, Audit Trail, and Financial Dashboards*.
+1. **UU No. 28 Tahun 2007** — Ketentuan Umum dan Tata Cara Perpajakan (pelaporan dan ekualisasi). https://peraturan.go.id/id/uu-no-28-tahun-2007 — diakses 24 November 2026.
+2. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+3. **SE-05/PJ/2022** — Pengawasan Kepatuhan Wajib Pajak melalui Analisis Data dan Ekualisasi (cetak; tautan resmi belum terverifikasi).
+4. **PMK No. 81 Tahun 2024** — Ketentuan Perpajakan dalam rangka Pelaksanaan Coretax (data pelaporan). https://jdih.kemenkeu.go.id/dok/pmk-81-tahun-2024 — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Reporting*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/reporting.html — diakses 24 November 2026.
+6. **Microsoft Learn** — *Financial reporting getting started* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-reporting-getting-started — diakses 24 November 2026.
+7. **ERPNext Documentation** — *Taxes* (laporan dan rekonsiliasi akun pajak). https://docs.frappe.io/erpnext/taxes — diakses 24 November 2026.

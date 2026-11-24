@@ -50,7 +50,7 @@ $$\text{Accounting Concept} \to \text{Accounting Rules} \to \text{Journal Entry}
     Siklus aset tetap berwujud (IAS 16), kapitalisasi biaya perolehan (*capitalization threshold*), sinkronisasi buku pembantu aset tetap, pelepasan aset (*disposal*), laba/rugi penghentian aset, dan inventarisasi fisik.
 
 11. [[02-accounting/tax-accounting|Tax Accounting]]  
-    Akuntansi perpajakan korporasi (studi kasus Indonesia: UU HPP), mekanisme PPN Masukan dan PPN Keluaran, pembuatan faktur pajak elektronik, pemotongan PPh pasal 21, 23, dan 4 ayat (2), serta penutupan saldo pajak terutang.
+    Akuntansi perpajakan korporasi (studi kasus Indonesia: UU HPP), mekanisme PPN Masukan dan PPN Keluaran, pembuatan faktur pajak elektronik, pemotongan PPh Pasal 23 dan PPh badan, serta penutupan saldo pajak terutang.
 
 12. [[02-accounting/bank-reconciliation|Bank Reconciliation]]  
     Pencocokan mutasi kas elektronik (*electronic bank statement* - CAMT.053 / MT940), akun kliring perantara (*cash in transit* / *undeposited funds*), identifikasi perbedaan waktu (*timing differences*), dan jurnal penyesuaian biaya/bunga bank.

@@ -144,9 +144,9 @@ Pada pengembangan ERP Naventra, kerangka kepatuhan dan audit perpajakan dibangun
 
 ## References
 
-* Undang-Undang Republik Indonesia No. 28 Tahun 2007 tentang Ketentuan Umum dan Tata Cara Perpajakan (UU KUP) beserta perubahannya pada UU No. 7 Tahun 2021 (UU Harmonisasi Peraturan Perpajakan).
-* Peraturan Menteri Keuangan No. 17/PMK.03/2013 tentang Tata Cara Pemeriksaan Pajak sebagaimana telah diubah dengan PMK No. 18/PMK.03/2021.
-* Surat Edaran Direktur Jenderal Pajak No. SE-05/PJ/2022 tentang Pengawasan Kepatuhan Wajib Pajak.
-* Committee of Sponsoring Organizations of the Treadway Commission (COSO): *Internal Control - Integrated Framework*.
-* Microsoft Learn: *Security Architecture and Segregation of Duties in Dynamics 365 Finance*.
-* Frappe / ERPNext Documentation: *Role Permissions and Document Versioning for Audit Compliance*.
+1. **UU No. 28 Tahun 2007** — Ketentuan Umum dan Tata Cara Perpajakan (pemeriksaan dan sanksi). https://peraturan.go.id/id/uu-no-28-tahun-2007 — diakses 24 November 2026.
+2. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+3. **PMK No. 17/PMK.03/2013** — Tata Cara Pemeriksaan Pajak, sebagaimana diubah dengan PMK No. 18/PMK.03/2021 (cetak; tautan JDIH belum terverifikasi).
+4. **SE-05/PJ/2022** — Pengawasan Kepatuhan Wajib Pajak (cetak; tautan resmi belum terverifikasi).
+5. **COSO** — *Internal Control — Integrated Framework* (2013) (cetak).
+6. **PMK No. 81 Tahun 2024** — Ketentuan Perpajakan dalam rangka Pelaksanaan Coretax. https://jdih.kemenkeu.go.id/dok/pmk-81-tahun-2024 — diakses 24 November 2026.

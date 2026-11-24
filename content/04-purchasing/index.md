@@ -47,7 +47,7 @@ $$\text{Requisition} \to \text{Sourcing \& RFQ} \to \text{Supplier Evaluation} \
    Mekanisme penentuan harga beli (*price lists, quantity breaks, contract pricing*), Incoterms 2020 (FOB, CIF, DDP), penanganan *Landed Cost* (ongkos angkut freight, bea masuk, asuransi) yang dikapitalisasi ke nilai persediaan (IAS 2), serta syarat pembayaran (*Net Terms* vs *Early Payment Discounts*).
 
 8. [[04-purchasing/purchase-tax|Purchase Tax in ERP]]  
-   Mesin kalkulasi pajak pengadaan otomatis, pajak masukan yang dapat dikreditkan vs tidak dapat dikreditkan (*recoverable vs non-recoverable VAT*), pemotongan pajak penghasilan (*Withholding Tax / PPh 23, PPh 22, PPh 4 ayat 2*), Faktur Pajak Masukan (e-Faktur), dan penjurnalan akuntansi perpajakan di Indonesia.
+   Mesin kalkulasi pajak pengadaan otomatis, pajak masukan yang dapat dikreditkan vs tidak dapat dikreditkan (*recoverable vs non-recoverable VAT*), pemotongan pajak penghasilan (*Withholding Tax / PPh 23*), Faktur Pajak Masukan (e-Faktur), dan penjurnalan akuntansi perpajakan di Indonesia.
 
 ---
 

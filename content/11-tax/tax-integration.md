@@ -194,11 +194,13 @@ Pada perancangan arsitektur terintegrasi ERP Naventra, modul perpajakan dirancan
 
 ## References
 
-* Undang-Undang Republik Indonesia No. 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP).
-* Undang-Undang Republik Indonesia No. 42 Tahun 2009 tentang Pajak Pertambahan Nilai dan Perubahannya.
-* Undang-Undang Republik Indonesia No. 36 Tahun 2008 tentang Pajak Penghasilan dan Perubahannya.
-* Peraturan Direktur Jenderal Pajak No. PER-03/PJ/2022 jo PER-11/PJ/2022 tentang Faktur Pajak.
-* Peraturan Direktur Jenderal Pajak No. PER-24/PJ/2021 tentang Bukti Pemotongan/Pemungutan Unifikasi.
-* Microsoft Learn: *End-to-End Tax Lifecycle and Cross-Module Integration Architecture in Dynamics 365 Finance*.
-* Frappe / ERPNext Documentation: *Integrated Accounting, Tax Engines, and Subledger Architecture*.
-* Odoo Accounting User Guide: *Cross-App Invoicing, Tax Calculations, and Financial Workflows*.
+1. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+2. **UU No. 42 Tahun 2009** — Perubahan Ketiga atas UU No. 8 Tahun 1983 tentang PPN dan PPnBM. https://peraturan.go.id/id/uu-no-42-tahun-2009 — diakses 24 November 2026.
+3. **UU No. 36 Tahun 2008** — Perubahan Keempat atas UU No. 7 Tahun 1983 tentang Pajak Penghasilan. https://peraturan.go.id/id/uu-no-36-tahun-2008 — diakses 24 November 2026.
+4. **PMK No. 131 Tahun 2024** — Perlakuan PPN atas Impor dan Penyerahan BKP/JKP sehubungan dengan berlakunya tarif PPN 12%. https://jdih.kemenkeu.go.id/dok/pmk-131-tahun-2024 — diakses 24 November 2026.
+5. **PMK No. 81 Tahun 2024** — Ketentuan Perpajakan dalam rangka Pelaksanaan Coretax. https://jdih.kemenkeu.go.id/dok/pmk-81-tahun-2024 — diakses 24 November 2026.
+6. **PER-03/PJ/2022** — Faktur Pajak (cetak; konteks historis e-Faktur).
+7. **PER-24/PJ/2021** — Bukti Pemotongan/Pemungutan Unifikasi (cetak; konteks e-Bupot).
+8. **Odoo 20.0 Documentation** — *Accounting and Invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.
+9. **ERPNext Documentation** — *Taxes*. https://docs.frappe.io/erpnext/taxes — diakses 24 November 2026.
+10. **Microsoft Learn** — *Indirect taxes overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview — diakses 24 November 2026.
