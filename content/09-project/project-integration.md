@@ -120,9 +120,9 @@ sequenceDiagram
 
 ## ERP Software Comparison Summary
 
-Tabel berikut menyajikan ringkasan deskriptif pola implementasi pada software ERP enterprise berdasarkan dokumentasi resmi versi yang dirujuk (Odoo 17.0, ERPNext v14/v15, dan Microsoft Dynamics 365 Project Operations). Perbandingan ini bersifat ilustratif deskriptif dan bukan merupakan pemeringkatan keunggulan produk:
+Tabel berikut menyajikan ringkasan deskriptif pola implementasi pada software ERP enterprise berdasarkan dokumentasi resmi versi yang dirujuk (Odoo 20.0, ERPNext v14/v15, dan Microsoft Dynamics 365 Project Operations). Perbandingan ini bersifat ilustratif deskriptif dan bukan merupakan pemeringkatan keunggulan produk:
 
-| Kriteria / Fitur | Odoo 17.0 | ERPNext (v14/v15) | Microsoft Dynamics 365 (Project Operations) |
+| Kriteria / Fitur | Odoo 20.0 | ERPNext (v14/v15) | Microsoft Dynamics 365 (Project Operations) |
 | :--- | :--- | :--- | :--- |
 | **Arsitektur Integrasi** | Didorong oleh *Analytic Distribution* pada baris transaksi. | Didorong oleh field referensi *Project* dan *Cost Center* terpusat. | Didorong oleh struktur multi-tier WBS dan *Project Financial Dimensions*. |
 | **WBS Hierarchy** | Sederhana (Proyek $\rightarrow$ Tahapan $\rightarrow$ Tugas $\rightarrow$ Sub-tugas). | Hierarki standar (Project $\rightarrow$ Task tree). | Hierarki mendalam (*Enterprise WBS* dengan dependensi multi-level). |
@@ -150,4 +150,4 @@ Dalam perancangan arsitektur inti modul manajemen proyek Naventra ERP:
 - SAP Help Portal. *Cross-Application Project System (PS) Architecture*.
 - Microsoft Learn. *Dynamics 365 Project Operations Architecture and Integration*.
 - ERPNext Documentation. *Projects Module Integration*.
-- Odoo 17.0 Documentation. *Project and Cross-App Integrations*.
+- Odoo 20.0 Documentation. *Project and Cross-App Integrations*.

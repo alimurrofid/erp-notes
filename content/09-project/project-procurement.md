@@ -170,4 +170,4 @@ Dalam perancangan fungsionalitas Project Procurement pada Naventra ERP:
 - SAP Help Portal. *Procurement in Project System (PS)*.
 - Microsoft Learn. *Project Procurement and Subcontracting in Dynamics 365 Project Operations*.
 - ERPNext Documentation. *Procurement Cycle Linked to Projects*.
-- Odoo 17.0 Documentation. *Purchase and Project Integration*.
+- Odoo 20.0 Documentation. *Purchase and Project Integration*.

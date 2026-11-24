@@ -180,4 +180,4 @@ Dalam perancangan modul penagihan proyek Naventra ERP:
 - SAP Help Portal. *Billing and Revenue Recognition in Project System (PS)*.
 - Microsoft Learn. *Project Invoicing and Revenue Recognition in Dynamics 365 Project Operations*.
 - ERPNext Documentation. *Project Invoicing*.
-- Odoo 17.0 Documentation. *Invoicing based on Milestones and Timesheets*.
+- Odoo 20.0 Documentation. *Invoicing based on Milestones and Timesheets*.

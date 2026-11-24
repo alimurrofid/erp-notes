@@ -209,4 +209,4 @@ Dalam perancangan modul proyek Naventra ERP:
 - SAP Help Portal. *Availability Control in Project System (PS)*.
 - Microsoft Learn. *Project Budget Management in Dynamics 365 Project Operations*.
 - ERPNext Documentation. *Budgeting in ERPNext*.
-- Odoo 17.0 Documentation. *Analytic Accounting and Budgeting*.
+- Odoo 20.0 Documentation. *Analytic Accounting and Budgeting*.

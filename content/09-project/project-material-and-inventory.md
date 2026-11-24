@@ -165,4 +165,4 @@ Dalam arsitektur modul logistik proyek Naventra ERP:
 - SAP Help Portal. *Material Management in Project System (PS)*.
 - Microsoft Learn. *Manage Item Requirements and Project Inventory in Dynamics 365*.
 - ERPNext Documentation. *Stock Management for Projects*.
-- Odoo 17.0 Documentation. *Inventory Valuation and Analytic Accounts*.
+- Odoo 20.0 Documentation. *Inventory Valuation and Analytic Accounts*.

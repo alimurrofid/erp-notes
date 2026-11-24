@@ -165,4 +165,4 @@ Dalam perancangan modul tata kelola proyek Naventra ERP:
 - SAP Help Portal. *Claim and Change Management in Project System (PS)*.
 - Microsoft Learn. *Manage Project Risks and Issues in Dynamics 365*.
 - ERPNext Documentation. *Issue Management in Projects*.
-- Odoo 17.0 Documentation. *Project Collaboration and Issue Tracking*.
+- Odoo 20.0 Documentation. *Project Collaboration and Issue Tracking*.

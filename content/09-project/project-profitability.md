@@ -158,4 +158,4 @@ Dalam perancangan modul analisis profitabilitas Naventra ERP:
 - SAP Help Portal. *Project Profitability Analysis in Controlling (CO-PA)*.
 - Microsoft Learn. *Project Statements and Profitability Analysis in Dynamics 365*.
 - ERPNext Documentation. *Project Profitability Analysis*.
-- Odoo 17.0 Documentation. *Track Project Profitability*.
+- Odoo 20.0 Documentation. *Track Project Profitability*.

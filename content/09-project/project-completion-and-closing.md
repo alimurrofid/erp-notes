@@ -176,4 +176,4 @@ Dalam perancangan modul penutupan proyek Naventra ERP:
 - SAP Help Portal. *Completion and Technical Closing in Project System (PS)*.
 - Microsoft Learn. *Project Stages and Project Closure in Dynamics 365*.
 - ERPNext Documentation. *Closing a Project in ERPNext*.
-- Odoo 17.0 Documentation. *Project Completion and Archiving*.
+- Odoo 20.0 Documentation. *Project Completion and Archiving*.
