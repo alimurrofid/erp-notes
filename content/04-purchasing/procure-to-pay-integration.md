@@ -212,4 +212,6 @@ Untuk perancangan modul P2P pada sistem ERP enterprise seperti **Naventra**:
 - IFRS Foundation. *IAS 2: Inventories (Measurement and Cost of Purchase)*.
 - Microsoft Learn. *Procure-to-Pay End-to-End Business Process in Dynamics 365*.
 - Frappe ERPNext Documentation. *Procure to Pay (P2P) Complete Workflow*.
-- Odoo 17 Documentation. *Purchasing, Inventory Valuation, and Vendor Bills Integration*.
+- Odoo 20 Documentation. *Purchase*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/purchase.html. Diakses 23 November 2026.
+- Odoo 20 Documentation. *Inventory valuation*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/get_started/inventory_valuation.html. Diakses 23 November 2026.
+- Odoo 20 Documentation. *Vendor bills*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/vendor_bills.html. Diakses 23 November 2026.

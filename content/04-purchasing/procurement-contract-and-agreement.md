@@ -129,5 +129,5 @@ Untuk perancangan modul Purchasing Agreement pada sistem ERP seperti **Naventra*
 - APQC (American Productivity & Quality Center). *Procure-to-Pay Process Classification Framework: Manage Long-Term Supplier Contracts*.
 - Microsoft Learn. *Purchase Agreements in Dynamics 365 Supply Chain Management*.
 - Frappe ERPNext Documentation. *Blanket Order in Procurement*.
-- Odoo 17 Documentation. *Purchase Agreements and Blanket Orders*.
+- Odoo 20 Documentation. *Blanket orders*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/purchase/manage_deals/blanket_orders.html. Diakses 23 November 2026.
 - CIPS (Chartered Institute of Procurement & Supply). *Contract Management and Procurement Agreements Guide*.

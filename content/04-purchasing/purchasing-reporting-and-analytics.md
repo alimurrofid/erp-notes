@@ -163,5 +163,6 @@ Untuk perancangan modul Purchasing Reporting pada sistem ERP seperti **Naventra*
 - APQC (American Productivity & Quality Center). *Procurement Performance Metrics and Benchmarks*.
 - Microsoft Learn. *Procurement and Sourcing Power BI Content in Dynamics 365*.
 - Frappe ERPNext Documentation. *Purchasing Reports and Analytics*.
-- Odoo 17 Documentation. *Purchase Analysis and Reporting Dashboards*.
+- Odoo 20 Documentation. *Purchase Analysis report*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/purchase/advanced/analyze.html. Diakses 23 November 2026.
+- Odoo 20 Documentation. *Purchase & Vendor analysis dashboard*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/purchase/advanced/purchase_dashboard.html. Diakses 23 November 2026.
 - CIPS (Chartered Institute of Procurement & Supply). *Measuring Procurement Performance and KPIs*.
