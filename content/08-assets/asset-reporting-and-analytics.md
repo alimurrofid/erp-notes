@@ -152,8 +152,8 @@ Rancangan arsitektur modul Asset Reporting & Analytics pada Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 16: Property, Plant and Equipment (Paragraph 73: Disclosures)*. IFRS Foundation.
-- SAP SE. *Asset History Sheet and Asset Reporting in SAP S/4HANA Finance*. SAP Help Portal.
-- Microsoft Corporation. *Fixed asset inquiry and reporting options in Dynamics 365 Finance*. Microsoft Learn.
-- Frappe Technologies. *Asset Reports in ERPNext*. ERPNext Documentation.
-- Ikatan Akuntan Indonesia (IAI). *PSAK 16: Pengungkapan Aset Tetap dalam Catatan Atas Laporan Keuangan*.
+1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment* (paragraf 73: pengungkapan). https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
+2. **SAP SE** — *Asset History Sheet*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Asset Reports*. https://docs.frappe.io/erpnext/asset-reports — diakses 24 November 2026.
+5. **PSAK 16** — *Aset Tetap* (pengungkapan) (cetak).

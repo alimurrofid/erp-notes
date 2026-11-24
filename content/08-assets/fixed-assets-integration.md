@@ -167,8 +167,8 @@ Rancangan arsitektur integrasi lintas modul pada Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 16: Property, Plant and Equipment*. IFRS Foundation.
-- International Accounting Standards Board (IASB). *IAS 23: Borrowing Costs*. IFRS Foundation.
-- SAP SE. *Asset Accounting (FI-AA) Integration with Purchasing, Plant Maintenance, and General Ledger in SAP S/4HANA*. SAP Help Portal.
-- Microsoft Corporation. *Integrate fixed assets with accounts payable, general ledger, and production in Dynamics 365*. Microsoft Learn.
-- Fowler, Martin. *Patterns of Enterprise Application Architecture: Event-Driven Enterprise Systems*. Addison-Wesley.
+1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment*. https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
+2. **IFRS Foundation** — *IAS 23 Borrowing Costs*. https://www.ifrs.org/issued-standards/list-of-standards/ias-23-borrowing-costs/ — diakses 24 November 2026.
+3. **SAP SE** — *FI-AA Integration*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+5. **Fowler, M.** — *Patterns of Enterprise Application Architecture* (cetak).

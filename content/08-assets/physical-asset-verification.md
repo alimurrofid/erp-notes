@@ -177,8 +177,8 @@ Rancangan arsitektur modul Physical Asset Verification pada Naventra ERP:
 
 ## References
 
-- Committee of Sponsoring Organizations of the Treadway Commission (COSO). *Internal Control — Integrated Framework: Control Activities and Physical Verification*.
-- International Organization for Standardization. *ISO 55001: Asset Management — Management Systems — Requirements*.
-- SAP SE. *Physical Inventory of Fixed Assets in SAP S/4HANA*. SAP Help Portal.
-- Microsoft Corporation. *Perform physical inventory counts for fixed assets in Dynamics 365 Finance*. Microsoft Learn.
-- The Institute of Internal Auditors (IIA). *Auditing Fixed Assets and Physical Inventory Controls*.
+1. **COSO** — *Internal Control — Integrated Framework* (control activities dan verifikasi fisik) (cetak).
+2. **ISO 55001** — *Asset Management — Management Systems — Requirements* (cetak; standar berbayar).
+3. **SAP SE** — *Physical Inventory of Fixed Assets*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+5. **IIA** — *Auditing Fixed Assets and Physical Inventory Controls* (cetak).

@@ -170,8 +170,8 @@ Rancangan arsitektur Asset Transfer pada Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 16: Property, Plant and Equipment*. IFRS Foundation.
-- International Accounting Standards Board (IASB). *IFRS 10: Consolidated Financial Statements*. IFRS Foundation.
-- SAP SE. *Asset Transfers (Intercompany and Intracompany) in SAP S/4HANA*. SAP Help Portal.
-- Microsoft Corporation. *Transfer fixed assets in Dynamics 365 Finance*. Microsoft Learn.
-- Frappe Technologies. *Asset Movement in ERPNext*. ERPNext Documentation.
+1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment*. https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
+2. **IFRS Foundation** — *IFRS 10 Consolidated Financial Statements*. https://www.ifrs.org/issued-standards/list-of-standards/ifrs-10-consolidated-financial-statements/ — diakses 24 November 2026.
+3. **SAP SE** — *Asset Transfers*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance; transfer aset). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+5. **ERPNext Documentation** — *Asset*. https://docs.frappe.io/erpnext/asset — diakses 24 November 2026.

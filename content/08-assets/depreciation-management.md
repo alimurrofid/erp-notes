@@ -184,8 +184,8 @@ Rancangan arsitektur mesin Depreciation Management pada Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 16: Property, Plant and Equipment (Depreciation)*. IFRS Foundation.
-- International Accounting Standards Board (IASB). *IAS 8: Accounting Policies, Changes in Accounting Estimates and Errors*. IFRS Foundation.
-- SAP SE. *Depreciation Execution and Period Control in SAP S/4HANA Asset Accounting*. SAP Help Portal.
-- Microsoft Corporation. *Fixed asset depreciation methods and conventions in Dynamics 365 Finance*. Microsoft Learn.
-- Frappe Technologies. *Managing Asset Depreciation in ERPNext*. ERPNext Documentation.
+1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment* (depreciation). https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
+2. **IFRS Foundation** — *IAS 8 Accounting Policies, Changes in Accounting Estimates and Errors*. https://www.ifrs.org/issued-standards/list-of-standards/ias-8-accounting-policies-changes-in-accounting-estimates-and-errors/ — diakses 24 November 2026.
+3. **SAP SE** — *Depreciation Execution and Period Control*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+5. **ERPNext Documentation** — *Asset Depreciation*. https://docs.frappe.io/erpnext/asset-depreciation — diakses 24 November 2026.

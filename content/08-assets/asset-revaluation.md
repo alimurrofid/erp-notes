@@ -159,8 +159,8 @@ Rancangan arsitektur modul Asset Revaluation pada Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 16: Property, Plant and Equipment (Paragraphs 31–42: Revaluation Model)*. IFRS Foundation.
-- International Accounting Standards Board (IASB). *IFRS 13: Fair Value Measurement*. IFRS Foundation.
-- SAP SE. *Revaluation and New Valuation of Fixed Assets in SAP S/4HANA*. SAP Help Portal.
-- Microsoft Corporation. *Revalue fixed assets in Dynamics 365 Finance*. Microsoft Learn.
-- Peraturan Menteri Keuangan (PMK) Republik Indonesia mengenai Penilaian Kembali Aktiva Tetap Perusahaan untuk Tujuan Perpajakan.
+1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment* (paragraf 31–42: revaluation model). https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
+2. **IFRS Foundation** — *IFRS 13 Fair Value Measurement*. https://www.ifrs.org/issued-standards/list-of-standards/ifrs-13-fair-value-measurement/ — diakses 24 November 2026.
+3. **SAP SE** — *Revaluation of Fixed Assets*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+5. **PMK No. 79/PMK.010/2008** — Penilaian Kembali Aktiva Tetap Perusahaan untuk Tujuan Perpajakan. https://jdih.kemenkeu.go.id/dok/pmk-79-tahun-2008 — diakses 24 November 2026.

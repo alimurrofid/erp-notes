@@ -153,8 +153,8 @@ Rancangan arsitektur pemisahan CAPEX dan OPEX pada Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 16: Property, Plant and Equipment (Paragraphs 12–14: Subsequent Costs)*. IFRS Foundation.
-- International Accounting Standards Board (IASB). *IAS 7: Statement of Cash Flows*. IFRS Foundation.
-- SAP SE. *Subsequent Costs and Maintenance in SAP S/4HANA Asset Accounting*. SAP Help Portal.
-- Microsoft Corporation. *Capitalize fixed asset acquisitions and subsequent costs in Dynamics 365*. Microsoft Learn.
-- Chartered Institute of Management Accountants (CIMA). *CAPEX vs OPEX Management and Governance*.
+1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment* (paragraf 12–14: subsequent costs). https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
+2. **IFRS Foundation** — *IAS 7 Statement of Cash Flows*. https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/ — diakses 24 November 2026.
+3. **SAP SE** — *Subsequent Costs and Maintenance*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+5. **CIMA** — *CAPEX vs OPEX Management and Governance* (cetak).
