@@ -152,4 +152,4 @@ Untuk perancangan topologi gudang pada sistem ERP enterprise seperti **Naventra*
 
 - IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
 - Microsoft Learn. *Inventory locations*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-locations. Diakses 24 November 2026.
-- Odoo 17 Documentation. *Warehouses*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management/warehouses.html. Diakses 24 November 2026.
+- Odoo 20.0 Documentation. *Warehouses*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management/warehouses.html. Diakses 24 November 2026.
