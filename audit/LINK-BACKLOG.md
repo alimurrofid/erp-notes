@@ -38,6 +38,7 @@ Sumber unik diperkirakan 841; banyak judul berulang dengan format berbeda.
 | 11–19 — Odoo 17 → 20.0 (64 file disentuh) | 2026-11-24 | **0 file menyebut Odoo 17/`documentation/17.0`**; seluruh URL Odoo 20.0 diuji 200 |
 | 20 — backfill `06-manufacturing` (17 artikel) | 2026-11-24 | 54 URL ditambahkan; entri ber-URL 373 → 427 (46%); tak terlacak 464 → 413 |
 | 21 — backfill `07-finance`, `08-assets`, `09-project` (45 artikel) | 2026-11-24 | Entri ber-URL 427 → 554 (60%); tak terlacak 413 → 268; 20 file masih tanpa URL |
+| 22 — backfill `10-hr` (19 artikel) | 2026-11-24 | Entri ber-URL 554 → 618 (66%); tak terlacak 268 → 191; file tanpa URL 20 → 2 |
 
 Catatan sweep Odoo: penggantian versi bersifat mekanis dan URL diverifikasi merespons 200. **Verifikasi isi** — apakah klaim perilaku di artikel masih didukung halaman 20.0 — belum dilakukan dan tetap menjadi item SW-02/SW-03 serta Fase 4.
 
