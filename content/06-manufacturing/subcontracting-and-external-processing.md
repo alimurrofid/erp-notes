@@ -154,8 +154,8 @@ Untuk perancangan modul Subcontracting pada sistem ERP enterprise seperti **Nave
 
 ## References
 
-- ASCM / APICS. *APICS Dictionary: Subcontracting, Toll Manufacturing, Outside Processing, and Consignment Stock*.
-- IFRS Foundation. *IAS 2: Inventories (Cost of Conversion and Outside Processing Costs)*.
-- Microsoft Learn. *Subcontracting Work and Outside Operations in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Subcontracting Workflow and Supplied Items Management*.
-- Odoo 20.0 Documentation. *Subcontracting: Managing Outsourced Manufacturing in MRP*.
+1. **ASCM / APICS** — *APICS Dictionary* (subcontracting, toll manufacturing, outside processing, consignment) (cetak).
+2. **IFRS Foundation** — *IAS 2 Inventories* (biaya konversi dan biaya outside processing). https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ — diakses 24 November 2026.
+3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Subcontracting*. https://docs.frappe.io/erpnext/subcontracting — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Manufacturing* (subcontracting). https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.
