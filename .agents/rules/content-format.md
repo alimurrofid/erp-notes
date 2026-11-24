@@ -84,10 +84,22 @@ Hapus section yang tidak relevan daripada mengisinya dengan konten generik.
 
 ## Referensi
 
-Setiap entri referensi minimal memuat:
+Setiap entri referensi wajib memuat salah satu identitas yang dapat diverifikasi:
+
+1. **URL** ke dokumen resmi, disertai tanggal akses.
+2. **DOI** atau **ISBN** untuk buku/publikasi cetak.
+3. **Nomor standar/regulasi** (mis. `IAS 2`, `PSAK 72`, `PMK 131/PMK.03/2024`, `UU 28/2007`) bila dokumen hanya tersedia cetak.
+
+Format minimum:
 
 ```text
 Penerbit. Judul. Nomor/paragraf. URL. Diakses <tanggal>.
 ```
 
-Referensi tanpa URL hanya boleh untuk standar cetak atau buku, dan harus menyebut nomor standar/edisi.
+Aturan:
+
+- Judul saja tanpa URL/DOI/ISBN/nomor standar **tidak cukup**.
+- URL harus pernah dibuka dan statusnya 2xx; jangan menulis URL yang belum dicek.
+- Jika dokumen hanya tersedia cetak, tulis nomor standar/ISBN dan label `cetak`.
+- Jika tidak ada sumber yang dapat diverifikasi, tandai `[belum terverifikasi]`; jangan mengarang URL.
+- Validasi dengan `npm run check:refs` dan `npm run check:urls`.
