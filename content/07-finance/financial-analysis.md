@@ -174,8 +174,8 @@ Rancangan arsitektur modul Financial Analysis & Performance Evaluation pada Nave
 
 ## References
 
-- CFA Institute. *Financial Reporting and Analysis: Learning Ecosystem*.
-- Brigham, Eugene F., & Ehrhardt, Michael C. *Financial Management: Theory & Practice*, 16th Edition. Cengage Learning.
-- SAP SE. *Profitability and Performance Management in SAP S/4HANA*. SAP Help Portal.
-- Microsoft Corporation. *Financial Insights capabilities and ratio analysis in Dynamics 365 Finance*. Microsoft Learn.
-- Robinson, Thomas R., et al. *International Financial Statement Analysis*. CFA Institute Investment Series.
+1. **CFA Institute** — *Financial Reporting and Analysis* (cetak).
+2. **Brigham, E. F., & Ehrhardt, M. C.** — *Financial Management: Theory & Practice*, edisi ke-16 (cetak).
+3. **SAP SE** — *Profitability and Performance Management*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Financial reporting getting started* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-reporting-getting-started — diakses 24 November 2026.
+5. **Robinson, T. R., et al.** — *International Financial Statement Analysis* (cetak).

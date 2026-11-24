@@ -155,8 +155,8 @@ Rancangan arsitektur modul Closing Governance pada Naventra ERP:
 
 ## References
 
-- Bragg, Steven M. *Fast Close: A Guide to Closing the Books Quickly*. John Wiley & Sons.
-- Institute of Management Accountants (IMA). *Transforming the Financial Close Process*.
-- SAP SE. *SAP Advanced Financial Closing in SAP S/4HANA Finance*. SAP Help Portal.
-- Microsoft Corporation. *Financial period close workspace in Dynamics 365 Finance*. Microsoft Learn.
-- International Accounting Standards Board (IASB). *IAS 10: Events After the Reporting Period*. IFRS Foundation.
+1. **Bragg, S. M.** — *Fast Close: A Guide to Closing the Books Quickly* (cetak).
+2. **IMA** — *Transforming the Financial Close Process* (cetak).
+3. **SAP SE** — *Advanced Financial Closing*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Close the general ledger at period end* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/close-general-ledger-at-period-end — diakses 24 November 2026.
+5. **IFRS Foundation** — *IAS 10 Events after the Reporting Period*. https://www.ifrs.org/issued-standards/list-of-standards/ias-10-events-after-the-reporting-period/ — diakses 24 November 2026.

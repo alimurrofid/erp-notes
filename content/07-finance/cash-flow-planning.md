@@ -177,8 +177,8 @@ Rancangan arsitektur mesin Cash Flow Planning pada Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 7: Statement of Cash Flows*. IFRS Foundation.
-- Association for Financial Professionals (AFP). *Treasury Management Body of Knowledge: Short-Term Cash Flow Forecasting*.
-- SAP SE. *Cash Flow Analyzer in SAP S/4HANA Finance*. SAP Help Portal.
-- Microsoft Corporation. *Cash flow forecasting overview in Dynamics 365 Finance*. Microsoft Learn.
-- European Treasury Center. *Best Practices for 13-Week Cash Flow Forecasting*.
+1. **IFRS Foundation** — *IAS 7 Statement of Cash Flows*. https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/ — diakses 24 November 2026.
+2. **AFP** — *Treasury Management Body of Knowledge* (peramalan arus kas jangka pendek) (cetak).
+3. **SAP SE** — *Cash Flow Analyzer*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Cash and bank management* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-bank-management — diakses 24 November 2026.
+5. **European Treasury Center** — praktik 13-week cash flow forecasting (cetak; terbitan daring belum terverifikasi).

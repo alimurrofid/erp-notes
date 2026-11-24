@@ -198,8 +198,9 @@ Untuk perancangan modul Master Data Keuangan pada sistem ERP enterprise seperti 
 
 ## References
 
-- ISO 4217. *Codes for the Representation of Currencies and Funds*.
-- ISO 20022. *Universal Financial Industry Message Scheme: Cash Management and Bank Account Identification*.
-- Microsoft Learn. *Financial Dimensions and Account Structures in Dynamics 365 Finance*.
-- Frappe ERPNext Documentation. *Bank Account Master and Accounting Dimensions*.
-- Odoo 20.0 Documentation. *Bank and Cash Accounts Setup and Analytic Accounting Plans*.
+1. **ISO 4217** — *Codes for the Representation of Currencies and Funds* (cetak; halaman resmi berbayar).
+2. **ISO 20022** — *Universal Financial Industry Message Scheme* (cetak; spesifikasi berbayar).
+3. **Microsoft Learn** — *Ledger, subledger, and subledger journal accounting entries overview* (Dynamics 365 Finance; struktur akun dan dimensi). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-subledger — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Bank Account*. https://docs.frappe.io/erpnext/bank-account — diakses 24 November 2026.
+5. **ERPNext Documentation** — *Cost Center*. https://docs.frappe.io/erpnext/cost-center — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Accounting and invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.

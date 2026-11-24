@@ -139,9 +139,9 @@ Untuk perancangan modul Finance pada sistem ERP enterprise seperti **Naventra**:
 
 ## References
 
-- IFRS Foundation. *IAS 7: Statement of Cash Flows (Cash and Cash Equivalents Definitions)*.
-- Committee of Sponsoring Organizations of the Treadway Commission (COSO). *Internal Control — Integrated Framework: Control Environment and Information & Communication*.
-- Association for Financial Professionals (AFP). *Treasury Management Body of Knowledge (TMBoK): Cash Management and Corporate Liquidity Standards*.
-- Microsoft Learn. *Cash and Bank Management Architecture in Dynamics 365 Finance*.
-- Frappe ERPNext Documentation. *Accounts and Financial Management Concepts*.
-- Odoo 20.0 Documentation. *Bank, Cash, and Budgetary Management Architecture*.
+1. **IFRS Foundation** — *IAS 7 Statement of Cash Flows* (definisi kas dan setara kas). https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/ — diakses 24 November 2026.
+2. **COSO** — *Internal Control — Integrated Framework* (2013) (cetak).
+3. **AFP** — *Treasury Management Body of Knowledge* (cetak).
+4. **Microsoft Learn** — *Cash and bank management* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-bank-management — diakses 24 November 2026.
+5. **ERPNext Documentation** — *Accounts*. https://docs.frappe.io/erpnext/accounts — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Accounting and invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.

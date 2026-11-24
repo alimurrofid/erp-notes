@@ -162,8 +162,8 @@ Rancangan arsitektur integrasi lintas modul pada Naventra ERP:
 
 ## References
 
-- SAP SE. *The Universal Journal (ACDOCA): Architecture and Data Model in SAP S/4HANA*. SAP Technical Whitepaper.
-- Microsoft Corporation. *Financial Management Architecture in Dynamics 365*. Microsoft Learn.
-- Association for Financial Professionals (AFP). *Integrated Treasury and ERP Architecture*.
-- Chartered Institute of Management Accountants (CIMA). *Enterprise Governance and Inter-Departmental Control Systems*.
-- Fowler, Martin. *Patterns of Enterprise Application Architecture*. Addison-Wesley.
+1. **SAP SE** — *Universal Journal (ACDOCA)*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+2. **Microsoft Learn** — *Ledger, subledger, and subledger journal accounting entries overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-subledger — diakses 24 November 2026.
+3. **AFP** — *Integrated Treasury and ERP Architecture* (cetak; terbitan daring belum terverifikasi).
+4. **CIMA** — *Enterprise Governance and Inter-Departmental Control Systems* (cetak).
+5. **Fowler, M.** — *Patterns of Enterprise Application Architecture* (cetak).

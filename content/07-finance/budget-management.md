@@ -176,8 +176,8 @@ Rancangan arsitektur modul Budget Management pada Naventra ERP:
 
 ## References
 
-- Chartered Institute of Management Accountants (CIMA). *Official Terminology of Management Accounting*. CIMA Publishing.
-- SAP SE. *Budget Management and Availability Control in SAP S/4HANA*. SAP Help Portal.
-- Microsoft Corporation. *Budget control overview in Dynamics 365 Finance*. Microsoft Learn.
-- Frappe Technologies. *Budgeting in ERPNext*. ERPNext Documentation.
-- Odoo S.A. *Financial Budgets and Analytic Accounting*. Odoo Documentation.
+1. **CIMA** — *Official Terminology of Management Accounting* (cetak).
+2. **SAP SE** — *Budget Management and Availability Control*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Budgeting overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budgeting-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Budget*. https://docs.frappe.io/erpnext/budget — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Accounting and invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.

@@ -186,9 +186,9 @@ Dalam perancangan arsitektur Cash Management pada Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 7: Statement of Cash Flows*. IFRS Foundation.
-- Association for Financial Professionals (AFP). *Treasury Management Body of Knowledge (TMBoK)*, 5th Edition.
-- SAP SE. *Cash Operations in SAP S/4HANA Finance*. SAP Help Portal.
-- Microsoft Corporation. *Cash and Bank Management Overview*. Microsoft Learn.
-- Odoo S.A. *Manage Bank Accounts and Transfers*. Odoo Documentation.
-- Frappe Technologies. *Managing Bank Accounts & Petty Cash*. ERPNext Documentation.
+1. **IFRS Foundation** — *IAS 7 Statement of Cash Flows*. https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/ — diakses 24 November 2026.
+2. **AFP** — *Treasury Management Body of Knowledge (TMBoK)*, edisi ke-5 (cetak).
+3. **SAP SE** — *Cash Operations*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Cash and bank management* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-bank-management — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Bank reconciliation*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/bank/reconciliation.html — diakses 24 November 2026.
+6. **ERPNext Documentation** — *Bank Account*. https://docs.frappe.io/erpnext/bank-account — diakses 24 November 2026.
