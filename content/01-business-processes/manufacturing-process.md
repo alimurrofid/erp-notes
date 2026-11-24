@@ -183,8 +183,8 @@ Sistem ERP mendukung beberapa model manufaktur sesuai karakteristik industri:
 
 ## References
 
-1. **IFRS Foundation**: *IAS 2 Inventories - Costs of Conversion and Allocation of Overheads*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/
-2. **APICS / ASCM**: *Production and Inventory Management Principles*.
-3. **Microsoft Learn**: *Discrete manufacturing overview in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/discrete-manufacturing-overview
-4. **Frappe / ERPNext Documentation**: *Manufacturing Module: Work Order, BOM, and Job Card*. URL: https://docs.frappe.io/erpnext/user/manual/en/manufacturing
-5. **Odoo Documentation**: *Manufacturing Orders and Work Centers*. URL: https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/manufacturing.html
+1. **IFRS Foundation** — *IAS 2 Inventories* (biaya konversi dan alokasi overhead). https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ — diakses 24 November 2026.
+2. **ASCM / APICS** — *APICS Dictionary* (cetak; edisi daring belum terverifikasi tautannya).
+3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Manufacturing*. https://docs.frappe.io/erpnext/manufacturing — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

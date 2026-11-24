@@ -146,7 +146,8 @@ Dalam perancangan Naventra:
 
 ## References
 
-1. **Romney, M. B., & Steinbart, P. J.** (2018). *Accounting Information Systems* (14th ed.). Pearson (Chapter: The Sales and Cash Collections Cycle).
-2. **Microsoft Learn**: *Sales order processing and document status in Dynamics 365*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/sales-orders-overview
-3. **Frappe Documentation**: *Document Connections and Linking Architecture*. URL: https://frappeframework.com/docs/user/en/basics/doctypes/document-flow
-4. **Odoo Documentation**: *Invoicing Policy: On Ordered vs Delivered Quantities*. URL: https://www.odoo.com/documentation/17.0/applications/sales/sales/invoicing/invoicing_policy.html
+1. **Romney, M. B., & Steinbart, P. J.** (2018). *Accounting Information Systems* (14th ed.). Pearson (cetak; ISBN belum terverifikasi).
+2. **Microsoft Learn** — *Sales and marketing overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/overview-sales-marketing — diakses 24 November 2026.
+3. **Microsoft Learn** — *Create sales orders* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/tasks/create-sales-orders — diakses 24 November 2026.
+4. **Frappe Documentation** — *Understanding DocTypes*. https://docs.frappe.io/framework/user/en/basics/doctypes — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Invoicing policy: ordered vs delivered quantities*. https://www.odoo.com/documentation/20.0/applications/sales/sales/invoicing/invoicing_policy.html — diakses 24 November 2026.

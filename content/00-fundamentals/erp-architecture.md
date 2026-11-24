@@ -155,7 +155,7 @@ Dalam merancang arsitektur Naventra:
 
 ## References
 
-1. **Gartner Glossary**: *Enterprise Resource Planning (ERP)*. URL: https://www.gartner.com/en/information-technology/glossary/enterprise-resource-planning-erp
-2. **Microsoft Learn**: *Subledger journal entries in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/subledger-journal
-3. **Frappe Framework Documentation**: *Document Lifecycle, Controllers, and Transactions*. URL: https://frappeframework.com/docs/user/en/basics/doctypes/controllers
-4. **Odoo Technical Documentation**: *Accounting Architecture and Data Model*. URL: https://www.odoo.com/documentation/17.0/applications/finance/accounting/get_started.html
+1. **Klaus, H., Rosemann, M., & Gable, G. G.** (2000). *What is ERP?* Information Systems Frontiers, 2(2), 141–162. https://doi.org/10.1023/A:1026543906354 — diakses 24 November 2026.
+2. **Microsoft Learn** — *Ledger, subledger, and subledger journal accounting entries overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-subledger — diakses 24 November 2026.
+3. **Frappe Framework Documentation** — *Controllers*. https://docs.frappe.io/framework/user/en/basics/doctypes/controllers — diakses 24 November 2026.
+4. **Odoo 20.0 Documentation** — *Accounting and invoicing: getting started*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/get_started.html — diakses 24 November 2026.
