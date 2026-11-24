@@ -173,10 +173,11 @@ Dalam perancangan modul kepatuhan pajak penggajian Naventra ERP:
 
 ## References
 
-- Direktorat Jenderal Pajak (DJP) Kementerian Keuangan Republik Indonesia. *Peraturan Menteri Keuangan (PMK) No. 168 Tahun 2023 tentang Petunjuk Teknis Pemotongan Pajak atas Penghasilan Sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Pribadi (PPh Pasal 21)*.
-- Republik Indonesia. *Peraturan Pemerintah (PP) No. 58 Tahun 2023 tentang Tarif Pemotongan Pajak Penghasilan Pasal 21*.
-- BPJS Ketenagakerjaan & BPJS Kesehatan. *Regulasi dan Pedoman Perhitungan Iuran Kepesertaan*.
-- SAP Help Portal. *Payroll Tax Processing and Statutory Reporting in SAP ERP HCM*.
-- Microsoft Learn. *Manage Payroll Taxes and Withholding in Dynamics 365 Human Resources*.
-- ERPNext Documentation. *Income Tax and Statutory Deductions*.
-- Odoo 20.0 Documentation. *Payroll Localizations and Statutory Rules*.
+1. **PMK No. 168 Tahun 2023** — Petunjuk Pelaksanaan Pemotongan Pajak atas Penghasilan sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Pribadi (PPh Pasal 21). https://jdih.kemenkeu.go.id/dok/pmk-168-tahun-2023 — diakses 24 November 2026.
+2. **PP No. 58 Tahun 2023** — Tarif Pemotongan PPh Pasal 21 atas Penghasilan sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Wajib Pajak Orang Pribadi. https://peraturan.go.id/id/pp-no-58-tahun-2023 — diakses 24 November 2026.
+3. **Perpres No. 82 Tahun 2018** — Jaminan Kesehatan (BPJS Kesehatan). https://peraturan.go.id/id/perpres-no-82-tahun-2018 — diakses 24 November 2026.
+4. **PP No. 45 Tahun 2015** — Penyelenggaraan Program Jaminan Pensiun (BPJS Ketenagakerjaan). https://peraturan.go.id/id/pp-no-45-tahun-2015 — diakses 24 November 2026.
+5. **SAP Help Portal** — *Payroll Tax Processing and Statutory Reporting*: halaman spesifik belum terverifikasi [belum terverifikasi].
+6. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+7. **Frappe HR Documentation** — *Payroll*. https://docs.frappe.io/hr/payroll — diakses 24 November 2026.
+8. **Odoo 20.0 Documentation** — *Payroll*. https://www.odoo.com/documentation/20.0/applications/hr/payroll.html — diakses 24 November 2026.

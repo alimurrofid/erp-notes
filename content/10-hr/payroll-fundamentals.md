@@ -226,9 +226,9 @@ Dalam perancangan modul penggajian Naventra ERP:
 
 ## References
 
-- Armstrong, M., & Taylor, S. (2020). *Armstrong's Handbook of Reward Management Practice* (6th ed.). Kogan Page.
-- Society for Human Resource Management (SHRM). *Designing and Managing Compensation and Payroll Systems*.
-- SAP Help Portal. *Payroll Management (PY) Architecture in SAP S/4HANA*.
-- Microsoft Learn. *Payroll Processing and Salary Administration in Dynamics 365*.
-- ERPNext Documentation. *Payroll and Salary Structure Management*.
-- Odoo 20.0 Documentation. *Payroll Engine and Salary Rules Configuration*.
+1. **Armstrong, M., & Taylor, S.** — *Armstrong's Handbook of Reward Management Practice*, edisi ke-6 (cetak).
+2. **SHRM** — *Designing and Managing Compensation and Payroll Systems* (cetak).
+3. **SAP Help Portal** — *Payroll Management Architecture*: halaman spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+5. **Frappe HR Documentation** — *Payroll*. https://docs.frappe.io/hr/payroll — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Payroll*. https://www.odoo.com/documentation/20.0/applications/hr/payroll.html — diakses 24 November 2026.

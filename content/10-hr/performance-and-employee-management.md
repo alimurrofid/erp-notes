@@ -168,9 +168,9 @@ Dalam perancangan modul manajemen kinerja Naventra ERP:
 
 ## References
 
-- Armstrong, M., & Taylor, S. (2020). *Armstrong's Handbook of Performance Management* (6th ed.). Kogan Page.
-- Society for Human Resource Management (SHRM). *Designing and Implementing Performance Appraisal Systems*.
-- SAP Help Portal. *Performance and Goals Management in SAP SuccessFactors*.
-- Microsoft Learn. *Manage Employee Performance and Goals in Dynamics 365 Human Resources*.
-- ERPNext Documentation. *Appraisal and Performance Management*.
-- Odoo 20.0 Documentation. *Appraisals and Employee Feedback*.
+1. **Armstrong, M., & Taylor, S.** — *Armstrong's Handbook of Performance Management*, edisi ke-6 (cetak).
+2. **SHRM** — *Designing and Implementing Performance Appraisal Systems* (cetak).
+3. **SAP Help Portal** — *Performance and Goals Management*: halaman spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+5. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.

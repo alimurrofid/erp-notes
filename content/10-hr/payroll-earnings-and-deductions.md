@@ -199,9 +199,9 @@ Dalam perancangan modul komponen gaji Naventra ERP:
 
 ## References
 
-- Armstrong, M., & Taylor, S. (2020). *Armstrong's Handbook of Reward Management Practice* (6th ed.). Kogan Page.
-- Society for Human Resource Management (SHRM). *Designing and Administering Compensation Systems*.
-- SAP Help Portal. *Wage Types and Payroll Calculations in SAP S/4HANA*.
-- Microsoft Learn. *Earning codes and deduction setups in Dynamics 365 Human Resources*.
-- ERPNext Documentation. *Salary Components and Salary Structures*.
-- Odoo 20.0 Documentation. *Salary Rules and Structure Configuration*.
+1. **Armstrong, M., & Taylor, S.** — *Armstrong's Handbook of Reward Management Practice*, edisi ke-6 (cetak).
+2. **SHRM** — *Designing and Administering Compensation Systems* (cetak).
+3. **SAP Help Portal** — *Wage Types and Payroll Calculations*: halaman spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+5. **Frappe HR Documentation** — *Payroll*. https://docs.frappe.io/hr/payroll — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Payroll*. https://www.odoo.com/documentation/20.0/applications/hr/payroll.html — diakses 24 November 2026.

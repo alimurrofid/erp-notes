@@ -199,10 +199,10 @@ Dalam perancangan modul integrasi akuntansi penggajian Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 19: Employee Benefits*. IFRS Foundation.
-- Ikatan Akuntan Indonesia (IAI). *PSAK 24: Imbalan Kerja*.
-- Kaplan, R. S., & Atkinson, A. A. (2015). *Advanced Management Accounting* (3rd ed.). Pearson.
-- SAP Help Portal. *Payroll Posting to Accounting (FI/CO) in SAP ERP HCM*.
-- Microsoft Learn. *Post payroll to general ledger in Dynamics 365 Finance*.
-- ERPNext Documentation. *Payroll Accounting and Journal Entries*.
-- Odoo 20.0 Documentation. *Payroll Accounting Integration*.
+1. **IFRS Foundation** — *IAS 19 Employee Benefits*. https://www.ifrs.org/issued-standards/list-of-standards/ias-19-employee-benefits/ — diakses 24 November 2026.
+2. **PSAK 24** — *Imbalan Kerja* (cetak).
+3. **Kaplan, R. S., & Atkinson, A. A.** — *Advanced Management Accounting*, edisi ke-3 (cetak).
+4. **SAP Help Portal** — *Payroll Posting to Accounting*: halaman spesifik belum terverifikasi [belum terverifikasi].
+5. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+6. **Frappe HR Documentation** — *Payroll*. https://docs.frappe.io/hr/payroll — diakses 24 November 2026.
+7. **Odoo 20.0 Documentation** — *Payroll*. https://www.odoo.com/documentation/20.0/applications/hr/payroll.html — diakses 24 November 2026.

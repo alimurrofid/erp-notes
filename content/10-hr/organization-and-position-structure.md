@@ -157,9 +157,9 @@ Dalam perancangan modul struktur organisasi Naventra ERP:
 
 ## References
 
-- Armstrong, M., & Taylor, S. (2020). *Armstrong's Handbook of Human Resource Management Practice* (15th ed.). Kogan Page.
-- Society for Human Resource Management (SHRM). *Organizational Structures and Position Management in Modern Enterprise*.
-- SAP Help Portal. *Organizational Management (OM) in SAP S/4HANA*.
-- Microsoft Learn. *Manage Organization and Position Hierarchies in Dynamics 365 Human Resources*.
-- ERPNext Documentation. *Department and Designation Setup*.
-- Odoo 20.0 Documentation. *Departments and Job Positions Management*.
+1. **Armstrong, M., & Taylor, S.** — *Armstrong's Handbook of Human Resource Management Practice*, edisi ke-15 (cetak).
+2. **SHRM** — *Organizational Structures and Position Management* (cetak).
+3. **SAP Help Portal** — *Organizational Management*: halaman spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+5. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Employees*. https://www.odoo.com/documentation/20.0/applications/hr/employees.html — diakses 24 November 2026.

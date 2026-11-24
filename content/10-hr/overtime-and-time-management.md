@@ -177,11 +177,11 @@ Dalam perancangan modul manajemen lembur Naventra ERP:
 
 ## References
 
-- Republik Indonesia. *Peraturan Pemerintah (PP) No. 35 Tahun 2021 tentang Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja*.
-- Republik Indonesia. *Peraturan Pemerintah (PP) No. 49 Tahun 2025 tentang Perubahan atas Peraturan Pemerintah No. 36 Tahun 2021 tentang Pengupahan*.
-- International Labour Organization (ILO). *Hours of Work (Industry) Convention (No. 1)*. ILO.
-- Armstrong, M., & Taylor, S. (2020). *Armstrong's Handbook of Human Resource Management Practice* (15th ed.). Kogan Page.
-- SAP Help Portal. *Overtime Processing in Time Management (PT) in SAP ERP HCM*.
-- Microsoft Learn. *Calculate overtime and pay types in Dynamics 365 Supply Chain & HR*.
-- ERPNext Documentation. *Overtime Processing and Additional Salary*.
-- Odoo 20.0 Documentation. *Attendance Overtime Management*.
+1. **PP No. 35 Tahun 2021** — Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja. https://peraturan.go.id/id/pp-no-35-tahun-2021 — diakses 24 November 2026.
+2. **PP No. 49 Tahun 2025** — Perubahan Kedua atas PP No. 36 Tahun 2021 tentang Pengupahan. https://peraturan.go.id/id/pp-no-49-tahun-2025 — diakses 24 November 2026.
+3. **ILO** — *Hours of Work (Industry) Convention (No. 1)* (cetak).
+4. **Armstrong, M., & Taylor, S.** — *Armstrong's Handbook of Human Resource Management Practice*, edisi ke-15 (cetak).
+5. **SAP Help Portal** — *Overtime Processing*: halaman spesifik belum terverifikasi [belum terverifikasi].
+6. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+7. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+8. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.

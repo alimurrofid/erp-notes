@@ -184,9 +184,9 @@ Dalam perancangan modul tunjangan dan klaim biaya Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 19: Employee Benefits*. IFRS Foundation.
-- Society for Human Resource Management (SHRM). *Designing Competitive Employee Benefits and Travel Policies*.
-- SAP Help Portal. *Travel and Expense Management in SAP Concur & S/4HANA*.
-- Microsoft Learn. *Expense Management Overview and Policies in Dynamics 365 Finance*.
-- ERPNext Documentation. *Expense Claim Management*.
-- Odoo 20.0 Documentation. *Expenses Management and Invoicing*.
+1. **IFRS Foundation** — *IAS 19 Employee Benefits*. https://www.ifrs.org/issued-standards/list-of-standards/ias-19-employee-benefits/ — diakses 24 November 2026.
+2. **SHRM** — *Designing Competitive Employee Benefits and Travel Policies* (cetak).
+3. **SAP Help Portal** — *Travel and Expense Management*: halaman spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+5. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.
