@@ -171,9 +171,9 @@ Dalam perancangan modul perencanaan tenaga kerja dan analitik Naventra ERP:
 
 ## References
 
-- Fitz-enz, J., & Mattox, J. R. (2014). *Predictive Analytics for Human Resources*. Wiley.
-- Society for Human Resource Management (SHRM). *Workforce Planning and Analytics Standards*.
-- SAP Help Portal. *Workforce Planning and Analytics in SAP SuccessFactors*.
-- Microsoft Learn. *Workforce Management and Power BI Analytics in Dynamics 365 Human Resources*.
-- ERPNext Documentation. *Staffing Plan and HR Dashboards*.
-- Odoo 20.0 Documentation. *Human Resources Reporting and Dashboards*.
+1. **Fitz-enz, J., & Mattox, J. R.** — *Predictive Analytics for Human Resources* (cetak).
+2. **SHRM** — *Workforce Planning and Analytics Standards* (cetak).
+3. **SAP Help Portal** — *Workforce Planning and Analytics*: halaman spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+5. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.
