@@ -149,7 +149,7 @@ Setelah PR ini disetujui oleh Manajer Produksi, dokumen diteruskan ke meja staf 
 
 ## References
 
-1. **Chartered Institute of Procurement & Supply (CIPS)**: *Developing Purchase Requisitions and Specifications*. URL: https://www.cips.org/
+1. **CIPS** — situs memblokir akses otomatis dan tidak menyediakan dokumen spesifik; spesifikasi pengadaan perlu sumber pengganti [belum terverifikasi].
 2. **Microsoft Learn**: *Purchase requisitions overview and workflow in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/purchase-requisitions-overview
 3. **Frappe / ERPNext Documentation**: *Material Request (Purchase Requisition) and Auto-Creation via Reorder Levels*. URL: https://docs.frappe.io/erpnext/user/manual/en/stock/material-request
 4. **SAP Help Portal**: *Purchase Requisition Processing and Budget Availability Control*.
