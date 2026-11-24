@@ -173,8 +173,8 @@ Rancangan arsitektur modul Asset Disposal & Retirement pada Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 16: Property, Plant and Equipment (Paragraphs 67–72: Derecognition)*. IFRS Foundation.
-- Republik Indonesia. *Undang-Undang Nomor 8 Tahun 1983 tentang Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah sebagaimana telah beberapa kali diubah terakhir dengan UU Harmonisasi Peraturan Perpajakan (UU HPP)*, Pasal 16D.
-- SAP SE. *Asset Retirement in SAP S/4HANA Asset Accounting*. SAP Help Portal.
-- Microsoft Corporation. *Dispose of fixed assets in Dynamics 365 Finance*. Microsoft Learn.
-- Frappe Technologies. *Asset Disposal and Scrapping in ERPNext*. ERPNext Documentation.
+1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment* (paragraf 67–72: derecognition). https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
+2. **UU No. 42 Tahun 2009** — Perubahan Ketiga atas UU No. 8 Tahun 1983 tentang PPN dan PPnBM (Pasal 16D). https://peraturan.go.id/id/uu-no-42-tahun-2009 — diakses 24 November 2026.
+3. **SAP SE** — *Asset Retirement*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance; disposal). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+5. **ERPNext Documentation** — *Asset*. https://docs.frappe.io/erpnext/asset — diakses 24 November 2026.

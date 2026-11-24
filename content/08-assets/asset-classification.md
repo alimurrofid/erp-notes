@@ -167,8 +167,8 @@ Rancangan arsitektur modul Asset Classification pada Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 16: Property, Plant and Equipment*. IFRS Foundation.
-- Republik Indonesia. *Undang-Undang Nomor 7 Tahun 1983 tentang Pajak Penghasilan sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (UU HPP)*, Pasal 11.
-- SAP SE. *Asset Classes in Asset Accounting (FI-AA)*. SAP Help Portal.
-- Microsoft Corporation. *Set up fixed asset groups in Dynamics 365 Finance*. Microsoft Learn.
-- Frappe Technologies. *Asset Category Management in ERPNext*. ERPNext Documentation.
+1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment*. https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
+2. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP), termasuk perubahan ketentuan PPh Pasal 11. https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+3. **SAP SE** — *Asset Classes*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+5. **ERPNext Documentation** — *Asset Category*. https://docs.frappe.io/erpnext/asset-category — diakses 24 November 2026.

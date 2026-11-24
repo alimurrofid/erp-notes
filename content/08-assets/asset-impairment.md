@@ -174,8 +174,8 @@ Rancangan arsitektur modul Asset Impairment pada Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 36: Impairment of Assets*. IFRS Foundation.
-- SAP SE. *Unplanned Depreciation and Impairment in SAP S/4HANA Asset Accounting*. SAP Help Portal.
-- Microsoft Corporation. *Propose and post write-down adjustments in Dynamics 365 Finance*. Microsoft Learn.
-- KPMG International. *Insights into IFRS: Impairment of Non-Financial Assets (IAS 36)*.
-- Ikatan Akuntan Indonesia (IAI). *PSAK 48: Penurunan Nilai Aset*.
+1. **IFRS Foundation** — *IAS 36 Impairment of Assets*. https://www.ifrs.org/issued-standards/list-of-standards/ias-36-impairment-of-assets/ — diakses 24 November 2026.
+2. **SAP SE** — *Unplanned Depreciation and Impairment*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+4. **KPMG** — *Insights into IFRS: Impairment of Non-Financial Assets* (cetak).
+5. **PSAK 48** — *Penurunan Nilai Aset* (cetak).

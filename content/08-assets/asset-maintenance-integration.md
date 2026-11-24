@@ -158,8 +158,8 @@ Rancangan arsitektur integrasi pemeliharaan dan aset tetap pada Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 16: Property, Plant and Equipment (Paragraphs 12–14: Day-to-Day Servicing vs Major Inspections)*. IFRS Foundation.
-- International Organization for Standardization. *ISO 55000: Asset Management — Overview, Principles and Terminology*.
-- SAP SE. *Integration between Plant Maintenance (PM) and Asset Accounting (FI-AA)*. SAP Help Portal.
-- Microsoft Corporation. *Asset management and fixed assets integration in Dynamics 365 Supply Chain Management & Finance*. Microsoft Learn.
-- Wireman, Terry. *Developing Performance Indicators for Managing Maintenance*, 2nd Edition. Industrial Press.
+1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment* (paragraf 12–14: servicing harian vs inspeksi besar). https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
+2. **ISO 55000** — *Asset Management — Overview, Principles and Terminology* (cetak; standar berbayar).
+3. **SAP SE** — *PM–FI-AA Integration*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+5. **Wireman, T.** — *Developing Performance Indicators for Managing Maintenance*, edisi ke-2 (cetak).

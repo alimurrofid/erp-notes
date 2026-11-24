@@ -140,8 +140,8 @@ Rancangan arsitektur modul Asset Controls & Governance pada Naventra ERP:
 
 ## References
 
-- Committee of Sponsoring Organizations of the Treadway Commission (COSO). *Internal Control — Integrated Framework (2013)*.
-- Information Systems Audit and Control Association (ISACA). *IT Control Objectives for Sarbanes-Oxley: Fixed Asset Governance*.
-- SAP SE. *Governance, Risk, and Compliance (GRC) and Audit Logging in SAP S/4HANA Asset Accounting*. SAP Help Portal.
-- Microsoft Corporation. *Security and segregation of duties in Dynamics 365 Finance*. Microsoft Learn.
-- The Institute of Internal Auditors (IIA). *Internal Auditing Practices for Property, Plant, and Equipment*.
+1. **COSO** — *Internal Control — Integrated Framework* (2013) (cetak).
+2. **ISACA** — *IT Control Objectives for Sarbanes-Oxley* (cetak).
+3. **SAP SE** — *GRC and Audit Logging*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+4. **Microsoft Learn** — dokumentasi segregation of duties D365 untuk topik ini belum terverifikasi [belum terverifikasi].
+5. **IIA** — *Internal Auditing Practices for Property, Plant, and Equipment* (cetak).

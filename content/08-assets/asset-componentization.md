@@ -159,8 +159,7 @@ Rancangan arsitektur Asset Componentization pada Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 16: Property, Plant and Equipment (Paragraphs 43–47: Component Depreciation)*. IFRS Foundation.
-- International Accounting Standards Board (IASB). *IAS 16: Paragraphs 13–14 (Major Overhauls & Inspections)*.
-- SAP SE. *Asset Sub-Numbers and Component Maintenance in SAP S/4HANA*. SAP Help Portal.
-- Microsoft Corporation. *Parent and child fixed assets in Dynamics 365 Finance*. Microsoft Learn.
-- Ernst & Young (EY). *Applying IFRS: A Closer Look at Component Depreciation under IAS 16*.
+1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment* (paragraf 43–47 komponen penyusutan; paragraf 13–14 overhaul dan inspeksi). https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
+2. **SAP SE** — *Asset Sub-Numbers*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+4. **EY** — *Applying IFRS: Component Depreciation under IAS 16* (cetak).

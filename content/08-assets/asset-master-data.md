@@ -188,8 +188,8 @@ Rancangan arsitektur data master aset tetap pada Naventra ERP:
 
 ## References
 
-- International Accounting Standards Board (IASB). *IAS 16: Property, Plant and Equipment*. IFRS Foundation.
-- SAP SE. *Master Data in Asset Accounting (FI-AA)*. SAP Help Portal.
-- Microsoft Corporation. *Set up fixed asset master data in Dynamics 365 Finance*. Microsoft Learn.
-- Frappe Technologies. *Managing Asset Master Data in ERPNext*. ERPNext Documentation.
-- Odoo S.A. *Asset Models and Master Records*. Odoo Documentation.
+1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment*. https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
+2. **SAP SE** — *Master Data in Asset Accounting*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+3. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Asset*. https://docs.frappe.io/erpnext/asset — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Accounting and invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.
