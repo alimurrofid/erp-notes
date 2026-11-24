@@ -170,4 +170,4 @@ Untuk perancangan modul Master Data Produk pada sistem ERP enterprise seperti **
 
 - IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
 - Microsoft Learn. *Product information overview*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/pim/product-information. Diakses 24 November 2026.
-- Odoo 17 Documentation. *Product type*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/product_management/configure/type.html. Diakses 24 November 2026.
+- Odoo 20.0 Documentation. *Product type*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/product_management/configure/type.html. Diakses 24 November 2026.

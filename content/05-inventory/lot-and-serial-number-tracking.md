@@ -139,4 +139,4 @@ Untuk perancangan modul Lot dan Serial Number pada sistem ERP enterprise seperti
 
 - IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
 - Microsoft Learn. *Item and raw material tracing in inventory, production, and sales*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/trace-items-raw-materials-inventory-production-sales. Diakses 24 November 2026.
-- Odoo 17 Documentation. *Lot numbers*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/product_management/product_tracking/lots.html. Diakses 24 November 2026.
+- Odoo 20.0 Documentation. *Lot numbers*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/product_management/product_tracking/lots.html. Diakses 24 November 2026.

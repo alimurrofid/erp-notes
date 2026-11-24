@@ -162,4 +162,4 @@ Untuk perancangan modul UOM pada sistem ERP enterprise seperti **Naventra**:
 
 - IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
 - Microsoft Learn. *Manage units of measure*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/pim/tasks/manage-unit-measure. Diakses 24 November 2026.
-- Odoo 17 Documentation. *Units of measure*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/product_management/configure/uom.html. Diakses 24 November 2026.
+- Odoo 20.0 Documentation. *Units of measure*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/product_management/configure/uom.html. Diakses 24 November 2026.

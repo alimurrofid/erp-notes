@@ -170,4 +170,4 @@ Untuk perancangan modul Landed Cost pada sistem ERP enterprise seperti **Naventr
 
 - IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
 - Microsoft Learn. *Landed cost module overview*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/landed-cost-overview. Diakses 24 November 2026.
-- Odoo 17 Documentation. *Landed costs*. https://www.odoo.com/documentation/17.0/applications/inventory_and_mrp/inventory/product_management/inventory_valuation/landed_costs.html. Diakses 24 November 2026.
+- Odoo 20.0 Documentation. *Landed costs*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/product_management/inventory_valuation/landed_costs.html. Diakses 24 November 2026.

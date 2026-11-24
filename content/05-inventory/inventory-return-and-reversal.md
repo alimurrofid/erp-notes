@@ -156,4 +156,4 @@ Untuk perancangan modul Retur Persediaan pada sistem ERP enterprise seperti **Na
 
 - IFRS Foundation. *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/. Diakses 24 November 2026.
 - Microsoft Learn. *Work with quarantine orders*. https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quarantine-orders. Diakses 24 November 2026.
-- Odoo 17 Documentation. *Returns and refunds*. https://www.odoo.com/documentation/17.0/applications/sales/sales/products_prices/returns.html. Diakses 24 November 2026.
+- Odoo 20.0 Documentation. *Returns and refunds*. https://www.odoo.com/documentation/20.0/applications/sales/sales/products_prices/returns.html. Diakses 24 November 2026.
