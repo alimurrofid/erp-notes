@@ -143,7 +143,7 @@ $$\begin{array}{lrr}
 
 Ringkasan deskriptif pola implementasi arsitektur HR pada software ERP enterprise berdasarkan dokumentasi resmi produk yang dirujuk (disajikan murni secara deskriptif tanpa pemeringkatan produk):
 
-| Kriteria / Modul | Odoo 17.0 | ERPNext (v14/v15) | Microsoft Dynamics 365 (Human Resources & Finance) |
+| Kriteria / Modul | Odoo 20.0 | ERPNext (v14/v15) | Microsoft Dynamics 365 (Human Resources & Finance) |
 | :--- | :--- | :--- | :--- |
 | **Pemisahan Pegawai & Pengguna** | Model `hr.employee` terpisah dari `res.users` melalui relasi kunci asing `user_id`. | `Employee` DocType terpisah dari `User` DocType dengan pemetaan alamat email. | Pemisahan entitas multi-tier: *Person / Global Party*, *Worker*, *Employment*, dan *System User*. |
 | **Hierarki Organisasi** | Struktur pohon departemen visual sederhana dengan penunjukan manajer langsung. | Struktur departemen bersarang (*Nested Set Model*) dan pohon posisi jabatan (*Designation*). | Hierarki posisi perusahaan murni (*Position-to-Position Hierarchy*) independen dari pegawai aktif. |
@@ -171,4 +171,4 @@ Dalam perancangan arsitektur inti modul Human Resources Naventra ERP:
 - SAP Help Portal. *Cross-Application Architecture in SAP S/4HANA Human Capital Management*.
 - Microsoft Learn. *Dynamics 365 Human Resources Architecture and Integration with Finance*.
 - ERPNext Documentation. *Human Resources and Payroll Integration*.
-- Odoo 17.0 Documentation. *HR, Timesheets, and Accounting Integration*.
+- Odoo 20.0 Documentation. *HR, Timesheets, and Accounting Integration*.

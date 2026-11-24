@@ -156,4 +156,4 @@ Dalam perancangan modul pelaporan dan analitik proyek Naventra ERP:
 - SAP Help Portal. *Project Reporting and Information System in Project System (PS)*.
 - Microsoft Learn. *Project Analytics and Reporting in Dynamics 365 Project Operations*.
 - ERPNext Documentation. *Project Reports and Analytics*.
-- Odoo 17.0 Documentation. *Reporting and Project Dashboards*.
+- Odoo 20.0 Documentation. *Reporting and Project Dashboards*.

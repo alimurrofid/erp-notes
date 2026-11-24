@@ -161,4 +161,4 @@ Dalam perancangan modul siklus hidup pegawai Naventra ERP:
 - SAP Help Portal. *Personnel Administration and Employee Life Events in SAP S/4HANA*.
 - Microsoft Learn. *Manage Employee Lifecycle and Worker Actions in Dynamics 365 Human Resources*.
 - ERPNext Documentation. *Employee Lifecycle Management*.
-- Odoo 17.0 Documentation. *Recruitment and Employee Offboarding*.
+- Odoo 20.0 Documentation. *Recruitment and Employee Offboarding*.

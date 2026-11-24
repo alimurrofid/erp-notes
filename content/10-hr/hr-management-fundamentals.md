@@ -170,4 +170,4 @@ Dalam perancangan modul Human Resources pada Naventra ERP:
 - SAP Help Portal. *SAP SuccessFactors & ERP Human Capital Management Architecture*.
 - Microsoft Learn. *Core HR concepts and Position Management in Dynamics 365 Human Resources*.
 - ERPNext Documentation. *Human Resources Module Overview*.
-- Odoo 17.0 Documentation. *Employees and Organizational Hierarchy*.
+- Odoo 20.0 Documentation. *Employees and Organizational Hierarchy*.

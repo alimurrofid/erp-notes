@@ -189,4 +189,4 @@ Dalam perancangan modul master data pegawai Naventra ERP:
 - SAP Help Portal. *Managing Employee Master Data in SAP S/4HANA Human Resources*.
 - Microsoft Learn. *Maintain Worker and Employment Information in Dynamics 365 Human Resources*.
 - ERPNext Documentation. *Employee Master Data*.
-- Odoo 17.0 Documentation. *Employees Management and Contract Tracking*.
+- Odoo 20.0 Documentation. *Employees Management and Contract Tracking*.

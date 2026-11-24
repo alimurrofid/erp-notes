@@ -153,4 +153,4 @@ Dalam perancangan modul kehadiran dan jadwal kerja Naventra ERP:
 - SAP Help Portal. *Time and Attendance Management in SAP ERP HCM*.
 - Microsoft Learn. *Time and Attendance Overview in Dynamics 365 Supply Chain & HR*.
 - ERPNext Documentation. *Shift and Attendance Management*.
-- Odoo 17.0 Documentation. *Attendances Management*.
+- Odoo 20.0 Documentation. *Attendances Management*.

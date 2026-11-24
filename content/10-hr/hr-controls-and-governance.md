@@ -158,4 +158,4 @@ Dalam perancangan modul kontrol dan tata kelola HR Naventra ERP:
 - SAP Help Portal. *Security and Data Privacy in SAP SuccessFactors & ERP HCM*.
 - Microsoft Learn. *Security and Data Protection in Dynamics 365 Human Resources*.
 - ERPNext Documentation. *Role-Based Permissions and Audit Trails*.
-- Odoo 17.0 Documentation. *Access Rights and Record Rules in HR*.
+- Odoo 20.0 Documentation. *Access Rights and Record Rules in HR*.

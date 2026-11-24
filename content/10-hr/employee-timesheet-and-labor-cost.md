@@ -197,4 +197,4 @@ Dalam perancangan modul lembar waktu dan biaya tenaga kerja Naventra ERP:
 - SAP Help Portal. *Cross-Application Time Sheet (CATS) in SAP S/4HANA*.
 - Microsoft Learn. *Time Entry and Labor Costing in Dynamics 365 Project Operations*.
 - ERPNext Documentation. *Timesheet and Labor Costing*.
-- Odoo 17.0 Documentation. *Timesheets and Analytic Accounting Integration*.
+- Odoo 20.0 Documentation. *Timesheets and Analytic Accounting Integration*.
