@@ -29,6 +29,7 @@ Legenda: **Fixed** = materi sudah diperbaiki. **Open** = belum. **Invalid** = te
 | TAX-10 | 51 label "PPN 11%" menjadi "PPN efektif 11%" | 35 file |
 | UX-05 / TECH-01 | `locale: id-ID`, `baseUrl` domain benar | `quartz.config.ts` |
 | UX-07 | `#INV-…` dan `#LPT-…` dihapus dari prosa | `journal-entry`, `inventory-reservation` |
+| TAX-04 / TAX-05 | Janji cakupan PPh 21/22/4(2) dihapus dari index; artikel hanya menjanjikan PPh 23 dan PPh badan | `02-accounting/index.md`, `04-purchasing/index.md` |
 | UX-02 | Label Mermaid di kutip / tanda baca dihapus | 10 file diagram |
 
 ### Fixed pada fase sebelumnya
@@ -53,7 +54,6 @@ Kedelapan item di bawah **sudah diputuskan** pemilik proyek; nilai kanoniknya ad
 | FIN-11 | Satu COA di `02-accounting/chart-of-accounts.md` | `02-accounting`, `08-assets` |
 | BIZ-06 / BIZ-07 | Pola nomor 4 segmen; `PR-2026-09-0041`, `PO-2026-09-0081` | `04-purchasing`, `00-fundamentals` |
 | INV-05 / INV-08 | 1 Pack = 6 Unit; cost sheet tunggal di `production-costing-and-wip.md` | `05-inventory`, `06-manufacturing` |
-| TAX-04 / TAX-05 | Hapus janji cakupan PPh 21/22/4(2) dari index `02-accounting` dan `04-purchasing` | `02-accounting/index.md`, `04-purchasing/index.md` |
 | URUTAN | Kampanye referensi dimulai dari `11-tax` | `audit/LINK-BACKLOG.md` |
 
 ## Open — butuh verifikasi eksternal
@@ -67,7 +67,7 @@ Kedelapan item di bawah **sudah diputuskan** pemilik proyek; nilai kanoniknya ad
 | TAX-07 | Perlakuan pajak reimbursement |
 | TAX-09 | Tenggat unggah e-Faktur: legal vs operasional |
 | SW-02 / SW-03 | Klaim produk (D365 revenue recognition, Odoo finite capacity/EUP, D365 Scrap Journal) |
-| TECH-04 | 44 URL referensi mati |
+| TECH-04 | URL referensi mati: 41 tersisa (turun dari 44 pada 24 November 2026) |
 
 ## Open — konten belum ada
 
