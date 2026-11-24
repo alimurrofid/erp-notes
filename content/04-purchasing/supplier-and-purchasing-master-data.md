@@ -156,6 +156,6 @@ Jika pemasok menaikkan harga katalognya bulan depan, seluruh dokumen *Purchase O
 ## References
 
 1. **Chartered Institute of Procurement & Supply (CIPS)**: *Supplier Master Data Management and Onboarding Governance*.
-2. **Microsoft Learn**: *Vendor master data overview and posting profiles in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/vendors-overview
-3. **Frappe / ERPNext Documentation**: *Supplier Master and Item Default Settings*. URL: https://docs.frappe.io/erpnext/user/manual/en/buying/supplier
+2. **Microsoft Learn** — *Supplier engagement overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/supplier-engagement/supplier-engagement-overview — diakses 24 November 2026.
+3. **ERPNext Documentation** — *Supplier*. https://docs.frappe.io/erpnext/supplier — diakses 24 November 2026.
 4. **SAP Help Portal**: *Business Partner (Supplier) Data Model and Purchasing View*.

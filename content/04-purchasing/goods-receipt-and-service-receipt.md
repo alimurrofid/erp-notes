@@ -139,5 +139,5 @@ Penerimaan 10 unit komponen *Laptop Pro* dari PT Sumber Teknologi (harga peroleh
 
 1. **Association for Supply Chain Management (ASCM)**: *APICS Dictionary - Receiving Operations, Quality Inspection, and Dock-to-Stock Time*.
 2. **IFRS Foundation**: *IAS 2 Inventories - Recognition of Inventories and Control of Assets*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/
-3. **Microsoft Learn**: *Product receipts and receiving processing overview in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/product-receipts
-4. **Frappe / ERPNext Documentation**: *Purchase Receipt, Quality Inspection, and Stock Ledger Update*. URL: https://docs.frappe.io/erpnext/user/manual/en/stock/purchase-receipt
+3. **Microsoft Learn** — *Procurement and sourcing overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/procurement-sourcing-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Purchase Receipt*. https://docs.frappe.io/erpnext/purchase-receipt — diakses 24 November 2026.

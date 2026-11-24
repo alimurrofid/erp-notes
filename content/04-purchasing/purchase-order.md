@@ -169,7 +169,7 @@ Saat Purchase Order ini berstatus *Approved & Issued*:
 
 ## References
 
-1. **Chartered Institute of Procurement & Supply (CIPS)**: *Contract Formation and Purchase Order Terms and Conditions*. URL: https://www.cips.org/
-2. **Association for Supply Chain Management (ASCM)**: *APICS Dictionary - Purchase Order Management and Delivery Scheduling*.
-3. **Microsoft Learn**: *Purchase order overview and line processing in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/purchase-order-overview
-4. **Frappe / ERPNext Documentation**: *Purchase Order Workflow, Item Tolerances, and Drop Shipments*. URL: https://docs.frappe.io/erpnext/user/manual/en/buying/purchase-order
+1. **CIPS** — situs memblokir akses otomatis dan tidak menyediakan dokumen spesifik; klaim pembentukan kontrak perlu sumber pengganti [belum terverifikasi].
+2. **Association for Supply Chain Management (ASCM)**: *APICS Dictionary - Purchase Order Management and Delivery Scheduling* (cetak).
+3. **Microsoft Learn** — *Purchase order overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/purchase-order-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Purchase Order*. https://docs.frappe.io/erpnext/purchase-order — diakses 24 November 2026.

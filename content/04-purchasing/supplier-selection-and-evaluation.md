@@ -117,7 +117,7 @@ Daftar Pemasok Resmi (*Approved Supplier List / ASL*) berfungsi sebagai pagar pe
 
 ## References
 
-1. **Chartered Institute of Procurement & Supply (CIPS)**: *Supplier Appraisal, Performance Evaluation, and Scorecards*. URL: https://www.cips.org/
-2. **International Organization for Standardization (ISO)**: *ISO 9001:2015 Clause 8.4 - Control of Externally Provided Processes, Products and Services*.
-3. **Microsoft Learn**: *Vendor evaluation criteria, scorecards, and approved vendor lists in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/approved-vendors-overview
-4. **Frappe / ERPNext Documentation**: *Supplier Scorecard and Performance Evaluation Setup*. URL: https://docs.frappe.io/erpnext/user/manual/en/buying/supplier-scorecard
+1. **CIPS** — situs memblokir akses otomatis dan tidak menyediakan dokumen spesifik; klaim penilaian pemasok perlu sumber pengganti [belum terverifikasi].
+2. **International Organization for Standardization (ISO)**: *ISO 9001:2015 Clause 8.4 - Control of Externally Provided Processes, Products and Services* (cetak).
+3. **Microsoft Learn** — *Supplier engagement overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/supplier-engagement/supplier-engagement-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Supplier Scorecard*. https://docs.frappe.io/erpnext/supplier-scorecard — diakses 24 November 2026.

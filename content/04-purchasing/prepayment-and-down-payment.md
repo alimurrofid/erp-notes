@@ -126,6 +126,6 @@ Di banyak yurisdiksi perpajakan (termasuk regulasi PPN di Indonesia di bawah UU 
 ## References
 
 1. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements - Classification of Current Assets (Prepayments)*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/
-2. **Microsoft Learn**: *Prepayments and prepayment invoices in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/prepayments-overview
-3. **Frappe / ERPNext Documentation**: *Advance Payment Entry and Allocation to Purchase Invoice*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/advance-payment-entry
+2. **Microsoft Learn** — *Configure Accounts payable overview* (Dynamics 365 Finance; termasuk prepayment invoice). https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/accounts-payable-overview — diakses 24 November 2026.
+3. **ERPNext Documentation** — *Advance Payment Entry*. https://docs.frappe.io/erpnext/advance-payment-entry — diakses 24 November 2026.
 4. **Odoo Documentation**: *Vendor Down Payments and Bill Matching*. URL: https://www.odoo.com/documentation/17.0/applications/finance/accounting/vendor_bills.html

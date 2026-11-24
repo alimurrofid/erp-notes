@@ -124,7 +124,8 @@ Perusahaan menyewa jasa konsultan sistem senilai Rp10.000.000 (PPN efektif 11% =
 
 ## References
 
-1. **Direktorat Jenderal Pajak (DJP) RI**: *Undang-Undang Harmonisasi Peraturan Perpajakan (UU HPP No. 7 Tahun 2021) dan Peraturan Dirjen Pajak terkait Faktur Pajak Elektronik*. URL: https://pajak.go.id/
-2. **IFRS Foundation**: *IAS 12 Income Taxes - Withholding Taxes and Deductibility*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-12-income-taxes/
-3. **OECD**: *International VAT/GST Guidelines - The Input Tax Credit Mechanism*.
-4. **Microsoft Learn**: *Withholding tax and sales tax integration in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/withholding-tax
+1. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
+2. **PMK No. 131 Tahun 2024** — Perlakuan PPN atas Impor dan Penyerahan BKP/JKP sehubungan dengan berlakunya tarif PPN 12%. https://jdih.kemenkeu.go.id/dok/pmk-131-tahun-2024 — diakses 24 November 2026.
+3. **IFRS Foundation**: *IAS 12 Income Taxes* (cetak).
+4. **OECD**: *International VAT/GST Guidelines* (mekanisme kredit pajak masukan). https://www.oecd.org/en/publications/international-vat-gst-guidelines_9789264271401-en.html — diakses 24 November 2026.
+5. **Microsoft Learn** — *Withholding tax in purchase transactions* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/withholding-tax-in-purchase-transactions — diakses 24 November 2026.

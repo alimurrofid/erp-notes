@@ -112,7 +112,7 @@ Saat jadwal pembayaran tiba di modul Treasury:
 
 ## References
 
-1. **Chartered Institute of Procurement & Supply (CIPS)**: *Managing Defective Goods and Supplier Rejections*. URL: https://www.cips.org/
-2. **Direktorat Jenderal Pajak (DJP) RI**: *Ketentuan dan Tata Cara Pembuatan Nota Retur Pajak Masukan*.
-3. **Microsoft Learn**: *Process purchase returns and credit adjustments in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/purchase-returns
-4. **Frappe / ERPNext Documentation**: *Purchase Return and Debit Note Entry*. URL: https://docs.frappe.io/erpnext/user/manual/en/stock/purchase-return
+1. **CIPS** — situs memblokir akses otomatis dan tidak menyediakan dokumen spesifik; klaim penanganan barang cacat perlu sumber pengganti [belum terverifikasi].
+2. **Direktorat Jenderal Pajak (DJP) RI**: *Ketentuan dan Tata Cara Pembuatan Nota Retur Pajak Masukan* (cetak; tautan resmi belum terverifikasi).
+3. **Microsoft Learn** — *Procurement and sourcing overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/procurement-sourcing-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Purchase Return*. https://docs.frappe.io/erpnext/purchase-return — diakses 24 November 2026.
