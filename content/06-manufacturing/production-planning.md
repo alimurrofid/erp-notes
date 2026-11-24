@@ -162,4 +162,4 @@ Untuk perancangan modul Production Planning pada sistem ERP enterprise seperti *
 - Vollmann, T. E., et al. *Manufacturing Planning and Control for Supply Chain Management: Master Production Scheduling Techniques*.
 - Microsoft Learn. *Master Planning Optimization Architecture in Dynamics 365 Supply Chain Management*.
 - Frappe ERPNext Documentation. *Production Plan and Demand Aggregation*.
-- Odoo 17 Documentation. *Master Production Schedule (MPS) and Lead Times Configurations*.
+- Odoo 20.0 Documentation. *Master Production Schedule (MPS) and Lead Times Configurations*.

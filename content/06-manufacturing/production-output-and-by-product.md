@@ -151,4 +151,4 @@ Untuk perancangan modul Hasil Produksi dan By-Products pada sistem ERP enterpris
 - ASCM / APICS. *APICS Dictionary: Co-Products, By-Products, Scrap Factor, and Production Yield Metrics*.
 - Microsoft Learn. *Co-products and By-products Architecture in Dynamics 365 Supply Chain Management*.
 - Frappe ERPNext Documentation. *Managing Scrap and By-products in Manufacturing*.
-- Odoo 17 Documentation. *By-products Management and Finished Goods Registration*.
+- Odoo 20.0 Documentation. *By-products Management and Finished Goods Registration*.

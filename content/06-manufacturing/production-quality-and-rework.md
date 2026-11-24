@@ -165,4 +165,4 @@ Untuk perancangan modul Manajemen Mutu Manufaktur pada sistem ERP enterprise sep
 - Juran, J. M., & Godfrey, A. B. *Juran's Quality Handbook: The Complete Guide to Performance Excellence*. McGraw-Hill.
 - Microsoft Learn. *Quality Management and Non-Conformance Architecture in Dynamics 365 Supply Chain Management*.
 - Frappe ERPNext Documentation. *Quality Inspection and Quality Criteria Configurations*.
-- Odoo 17 Documentation. *Quality Control Points and Quality Alerts in Manufacturing*.
+- Odoo 20.0 Documentation. *Quality Control Points and Quality Alerts in Manufacturing*.

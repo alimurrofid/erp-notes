@@ -176,4 +176,4 @@ Untuk perancangan modul BOM pada sistem ERP enterprise seperti **Naventra**:
 - Vollmann, T. E., et al. *Manufacturing Planning and Control for Supply Chain Management: Structuring the Bill of Materials*.
 - Microsoft Learn. *Bills of Materials and Formulas Architecture in Dynamics 365 Supply Chain Management*.
 - Frappe ERPNext Documentation. *Managing Multi-level Bill of Materials (BOM)*.
-- Odoo 17 Documentation. *Bills of Materials (BOM): Standard, Kit, and Subcontracting Configurations*.
+- Odoo 20.0 Documentation. *Bills of Materials (BOM): Standard, Kit, and Subcontracting Configurations*.

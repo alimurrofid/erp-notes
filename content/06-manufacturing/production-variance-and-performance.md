@@ -175,4 +175,4 @@ Untuk perancangan modul Analisis Varians Manufaktur pada sistem ERP enterprise s
 - Nakajima, S. *Introduction to TPM: Total Productive Maintenance (The OEE Methodology)*. Productivity Press.
 - Microsoft Learn. *Production Variances Analysis and Cost Breakdown in Dynamics 365 Supply Chain Management*.
 - Frappe ERPNext Documentation. *Work Order Performance and Scrap Analysis*.
-- Odoo 17 Documentation. *Overall Equipment Effectiveness (OEE) and Work Center Productivity Tracking*.
+- Odoo 20.0 Documentation. *Overall Equipment Effectiveness (OEE) and Work Center Productivity Tracking*.

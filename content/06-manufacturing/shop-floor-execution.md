@@ -186,4 +186,4 @@ Untuk perancangan modul Shop Floor Execution pada sistem ERP enterprise seperti 
 - MESA International (Manufacturing Enterprise Solutions Association). *MES Functionality Models and Shop Floor Execution Standards*.
 - Microsoft Learn. *Production Floor Execution Interface in Dynamics 365 Supply Chain Management*.
 - Frappe ERPNext Documentation. *Job Card Execution and Operation Tracking*.
-- Odoo 17 Documentation. *Shop Floor App: Managing Work Orders and Operator Activities*.
+- Odoo 20.0 Documentation. *Shop Floor App: Managing Work Orders and Operator Activities*.

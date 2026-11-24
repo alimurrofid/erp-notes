@@ -184,4 +184,4 @@ Untuk perancangan modul Akuntansi Biaya Manufaktur pada sistem ERP enterprise se
 - ASCM / APICS. *APICS Dictionary: Work in Process (WIP), Equivalent Units of Production, and Cost Absorption*.
 - Microsoft Learn. *Production Order Costing and Inventory Close in Dynamics 365 Supply Chain Management*.
 - Frappe ERPNext Documentation. *Work-in-Progress Valuation and Production Costing*.
-- Odoo 17 Documentation. *Manufacturing Cost Valuation and Work Center Hourly Rates*.
+- Odoo 20.0 Documentation. *Manufacturing Cost Valuation and Work Center Hourly Rates*.

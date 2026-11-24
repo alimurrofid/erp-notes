@@ -194,4 +194,4 @@ Untuk perancangan modul Routing dan Work Center pada sistem ERP enterprise seper
 - Groover, M. P. *Fundamentals of Modern Manufacturing: Materials, Processes, and Systems*. Wiley.
 - Microsoft Learn. *Routes and Operations Architecture in Dynamics 365 Supply Chain Management*.
 - Frappe ERPNext Documentation. *Workstations and Routing Operations Setup*.
-- Odoo 17 Documentation. *Work Centers and Routing Operations Configurations*.
+- Odoo 20.0 Documentation. *Work Centers and Routing Operations Configurations*.
