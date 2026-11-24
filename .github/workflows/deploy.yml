@@ -49,6 +49,9 @@ jobs:
       - name: Report reference traceability
         run: node .agents/scripts/check-references.mjs
 
+      - name: Validate reference URLs
+        run: node .agents/scripts/check-urls.mjs
+
   build:
     needs: validate
     runs-on: ubuntu-latest

@@ -7,6 +7,9 @@ public/
 tsconfig.tsbuildinfo
 prof/
 
+# AI tooling cache
+.agents/.cache/
+
 # Obsidian / Editor
 .obsidian/
 .trash/

@@ -14,6 +14,8 @@
     "check:mermaid": "node .agents/scripts/check-mermaid.mjs",
     "check:refs": "node .agents/scripts/check-references.mjs",
     "check:refs:strict": "node .agents/scripts/check-references.mjs --strict",
+    "check:urls": "node .agents/scripts/check-urls.mjs",
+    "check:urls:strict": "node .agents/scripts/check-urls.mjs --strict",
     "check:structure": "node .agents/scripts/check-structure.mjs",
     "check:content": "npm run check:links && npm run check:frontmatter && npm run check:mermaid && npm run check:structure && npm run check:refs"
   },
