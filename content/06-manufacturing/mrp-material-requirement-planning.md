@@ -176,9 +176,9 @@ Untuk perancangan modul MRP pada sistem ERP enterprise seperti **Naventra**:
 
 ## References
 
-- ASCM / APICS. *Detailed Scheduling and Planning: Material Requirements Planning (MRP) Mechanics and Logic*.
-- Orlicky, J. *Material Requirements Planning: The New Way of Life in Production and Inventory Management*. McGraw-Hill.
-- Vollmann, T. E., et al. *Manufacturing Planning and Control for Supply Chain Management: MRP Calculations*.
-- Microsoft Learn. *Master Planning and MRP Engine Architecture in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Material Requirements Planning through Production Plan*.
-- Odoo 20.0 Documentation. *Run the MRP Scheduler and Procurement Automations*.
+1. **ASCM / APICS** — *Detailed Scheduling and Planning* (mekanika dan logika MRP) (cetak).
+2. **Orlicky, J.** — *Material Requirements Planning* (cetak).
+3. **Vollmann, T. E., et al.** — *Manufacturing Planning and Control for Supply Chain Management* (cetak).
+4. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+5. **ERPNext Documentation** — *Production Plan*. https://docs.frappe.io/erpnext/production-plan — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

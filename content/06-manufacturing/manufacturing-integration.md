@@ -198,8 +198,8 @@ Untuk perancangan modul Integrasi Manufaktur pada sistem ERP enterprise seperti 
 
 ## References
 
-- ASCM / APICS. *Supply Chain Operations Reference (SCOR) Model: Make Process and Enterprise Cross-Functional Integration*.
-- IFRS Foundation. *IAS 2: Inventories (Measurement, Conversion Costs, and Cost of Goods Sold Recognition)*.
-- Microsoft Learn. *Production Control Integration with Inventory, Procurement, and General Ledger in Dynamics 365*.
-- Frappe ERPNext Documentation. *Manufacturing Workflow and Cross-Module Integration*.
-- Odoo 20.0 Documentation. *Manufacturing (MRP) Integration with Sales, Purchase, Inventory, and Accounting*.
+1. **ASCM / APICS** — *SCOR Model* (Make process dan integrasi lintas fungsi) (cetak).
+2. **IFRS Foundation** — *IAS 2 Inventories* (biaya konversi dan pengakuan COGS). https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ — diakses 24 November 2026.
+3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management; termasuk keterkaitan dengan General ledger). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Manufacturing*. https://docs.frappe.io/erpnext/manufacturing — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

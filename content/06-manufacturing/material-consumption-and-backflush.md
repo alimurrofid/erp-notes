@@ -161,8 +161,8 @@ Untuk perancangan modul Konsumsi Material pada sistem ERP enterprise seperti **N
 
 ## References
 
-- ASCM / APICS. *APICS Dictionary: Backflushing, Point-of-Use Inventory, Material Issue, and Usage Variance*.
-- Vollmann, T. E., et al. *Manufacturing Planning and Control for Supply Chain Management: Material Control and Floor Stock Practices*.
-- Microsoft Learn. *Flushing Principles and Material Consumption in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Stock Entry for Manufacture and Raw Material Consumption*.
-- Odoo 20.0 Documentation. *Component Consumption and Flexible Consumption Policies in Manufacturing*.
+1. **ASCM / APICS** — *APICS Dictionary* (backflushing, point-of-use inventory, material issue, usage variance) (cetak).
+2. **Vollmann, T. E., et al.** — *Manufacturing Planning and Control for Supply Chain Management* (cetak).
+3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management; flushing principle). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Stock Entry*. https://docs.frappe.io/erpnext/stock-entry — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

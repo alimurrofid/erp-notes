@@ -185,8 +185,8 @@ Untuk perancangan modul Manufacturing Order pada sistem ERP enterprise seperti *
 
 ## References
 
-- ASCM / APICS. *APICS Dictionary: Manufacturing Orders, Work Order Lifecycle, Shop Floor Dispatching, and Order Statuses*.
-- Vollmann, T. E., et al. *Manufacturing Planning and Control for Supply Chain Management: Order Release and Shop Floor Control*.
-- Microsoft Learn. *Production Order Lifecycle and Statuses in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Work Order Lifecycle and Management*.
-- Odoo 20.0 Documentation. *Manufacturing Orders: From Planning to Production Closing*.
+1. **ASCM / APICS** — *APICS Dictionary* (manufacturing order, work order lifecycle, dispatching, status) (cetak).
+2. **Vollmann, T. E., et al.** — *Manufacturing Planning and Control for Supply Chain Management* (cetak).
+3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management; siklus status production order). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Work Order*. https://docs.frappe.io/erpnext/work-order — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

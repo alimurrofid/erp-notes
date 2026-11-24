@@ -169,9 +169,9 @@ Untuk perancangan modul Perencanaan Kapasitas pada sistem ERP enterprise seperti
 
 ## References
 
-- ASCM / APICS. *Detailed Scheduling and Planning: Capacity Requirements Planning (CRP), Finite vs Infinite Loading, and Theory of Constraints*.
-- Goldratt, E. M., & Cox, J. *The Goal: A Process of Ongoing Improvement (Theory of Constraints and Drum-Buffer-Rope)*. North River Press.
-- Vollmann, T. E., et al. *Manufacturing Planning and Control for Supply Chain Management: Capacity Management and Shop Scheduling*.
-- Microsoft Learn. *Scheduling and Capacity Allocation Architecture in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Workstation Capacity and Work Order Scheduling*.
-- Odoo 20.0 Documentation. *Work Center Capacity and Planning Operations with Gantt Views*.
+1. **ASCM / APICS** — *Detailed Scheduling and Planning* (CRP, finite vs infinite loading, theory of constraints) (cetak).
+2. **Goldratt, E. M., & Cox, J.** — *The Goal* (cetak).
+3. **Vollmann, T. E., et al.** — *Manufacturing Planning and Control for Supply Chain Management* (cetak).
+4. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+5. **ERPNext Documentation** — *Workstation*. https://docs.frappe.io/erpnext/workstation — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

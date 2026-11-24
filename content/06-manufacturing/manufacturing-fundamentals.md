@@ -135,9 +135,9 @@ Untuk perancangan modul Manufaktur pada sistem ERP enterprise seperti **Naventra
 
 ## References
 
-- ASCM / APICS. *APICS Dictionary: Manufacturing Management, Discrete vs Process, and Decoupling Points*.
-- Vollmann, T. E., et al. *Manufacturing Planning and Control for Supply Chain Management*. McGraw-Hill.
-- Groover, M. P. *Automation, Production Systems, and Computer-Integrated Manufacturing*. Pearson.
-- Microsoft Learn. *Production Control and Manufacturing Methodologies in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Manufacturing Module and Production Concepts*.
-- Odoo 20.0 Documentation. *Manufacturing (MRP) Concepts and Work Center Operations*.
+1. **ASCM / APICS** — *APICS Dictionary* (manufacturing management, discrete vs process, decoupling points) (cetak).
+2. **Vollmann, T. E., et al.** — *Manufacturing Planning and Control for Supply Chain Management* (cetak).
+3. **Groover, M. P.** — *Automation, Production Systems, and Computer-Integrated Manufacturing* (cetak).
+4. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+5. **ERPNext Documentation** — *Manufacturing*. https://docs.frappe.io/erpnext/manufacturing — diakses 24 November 2026.
+6. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

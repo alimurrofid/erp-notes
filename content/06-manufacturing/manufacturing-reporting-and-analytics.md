@@ -152,8 +152,8 @@ Untuk perancangan modul Pelaporan Manufaktur pada sistem ERP enterprise seperti 
 
 ## References
 
-- ASCM / APICS. *APICS Dictionary: Manufacturing Key Performance Indicators, OEE, Scrap Rate, and First Pass Yield*.
-- Nakajima, S. *Introduction to TPM: Total Productive Maintenance*. Productivity Press.
-- Microsoft Learn. *Production Performance and Cost Analysis Power BI Content in Dynamics 365*.
-- Frappe ERPNext Documentation. *Manufacturing Reports and Analytics*.
-- Odoo 20.0 Documentation. *Production Analysis and OEE Dashboards in Manufacturing*.
+1. **ASCM / APICS** — *APICS Dictionary* (KPI manufaktur, OEE, scrap rate, first pass yield) (cetak).
+2. **Nakajima, S.** — *Introduction to TPM* (cetak).
+3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Manufacturing*. https://docs.frappe.io/erpnext/manufacturing — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

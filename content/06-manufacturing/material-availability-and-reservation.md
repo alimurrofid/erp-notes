@@ -143,8 +143,8 @@ Untuk perancangan modul Reservasi Material Manufaktur pada sistem ERP enterprise
 
 ## References
 
-- ASCM / APICS. *Detailed Scheduling and Planning: Material Availability, Kitting Systems, and Production Allocation Rules*.
-- Vollmann, T. E., et al. *Manufacturing Planning and Control for Supply Chain Management: Material Staging and Floor Stock Control*.
-- Microsoft Learn. *Release Production Orders and Warehouse Material Staging in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Material Transfer for Manufacturing and Shortage Tracking*.
-- Odoo 20.0 Documentation. *Reserve Materials and Manage Component Availability in Manufacturing*.
+1. **ASCM / APICS** — *Detailed Scheduling and Planning* (material availability, kitting, allocation) (cetak).
+2. **Vollmann, T. E., et al.** — *Manufacturing Planning and Control for Supply Chain Management* (cetak).
+3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management; reservasi dan pengeluaran material). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Work Order*. https://docs.frappe.io/erpnext/work-order — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.
