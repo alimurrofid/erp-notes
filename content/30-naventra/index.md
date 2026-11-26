@@ -3,3 +3,8 @@ title: Naventra
 ---
 
 Keputusan desain (design decisions), requirement mapping, dan implementasi custom ERP Naventra berdasarkan konsep ERP umum.
+
+## Artikel
+
+- [[30-naventra/requirements|Requirements]] — daftar kebutuhan NAV-R dan traceability ke konsep.
+- [[30-naventra/functional-design|Functional Design]] — modul, objek, state machine, aturan posting.
