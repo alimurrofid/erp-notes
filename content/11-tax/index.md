@@ -61,7 +61,7 @@ flowchart TD
 
 ## Direktori Dokumen Pembelajaran (Canonical Notes)
 
-Berikut adalah daftar 18 dokumen kanonikal yang menyusun kurikulum menyeluruh modul Tax Management:
+Berikut adalah daftar 19 dokumen kanonikal yang menyusun kurikulum menyeluruh modul Tax Management:
 
 ### Tahap 1: Fondasi & Mesin Kalkulasi Pajak
 1. **[[11-tax/tax-management-fundamentals|Tax Management Fundamentals]]**: Konsep dasar perpajakan dalam ERP, siklus hidup pajak, perbedaan domain Tax vs Accounting vs Finance vs HR, struktur entitas inti, dan perkenalan skenario kanonikal `PT Maju Bersama`.
@@ -77,19 +77,20 @@ Berikut adalah daftar 18 dokumen kanonikal yang menyusun kurikulum menyeluruh mo
 
 ### Tahap 3: Pemotongan Pajak & PPh Badan
 9. **[[11-tax/withholding-tax-management|Withholding Tax Management]]**: Mekanisme pemotongan PPh Pasal 23, PPh 26 (Tax Treaty/Form DGT), PPh Final 4 ayat (2), PPh 22, formula gross-up, dan penerbitan bukti pemotongan elektronik unifikasi (e-Bupot).
-10. **[[11-tax/corporate-income-tax-fundamentals|Corporate Income Tax Fundamentals]]**: Fondasi Pajak Penghasilan Badan, dualisme akuntansi komersial vs akuntansi pajak (*book-tax differences*), perbedaan tetap (*permanent*) vs perbedaan waktu (*temporary*), serta konsep pajak kini dan tangguhan (IAS 12 / PSAK 46).
-11. **[[11-tax/taxable-income-and-fiscal-reconciliation|Taxable Income and Fiscal Reconciliation]]**: Metodologi koreksi fiskal positif (biaya non-3M, natura non-deductible PMK 66/2023, sanksi denda, jamuan tanpa daftar nominatif) dan koreksi negatif (penghasilan final/non-objek) untuk menetapkan Penghasilan Kena Pajak (PKP) pada Formulir 1771-I.
-12. **[[11-tax/corporate-income-tax-calculation|Corporate Income Tax Calculation]]**: Penerapan tarif PPh Badan standar 22% (Pasal 17 UU HPP) dan skema fasilitas pengurangan tarif 50% bagi wajib pajak dengan peredaran bruto tertentu (Pasal 31E UU PPh), serta aturan pembulatan ribuan penuh.
+10. **[[11-tax/pph-21-and-22|PPh 21 and PPh 22]]**: Jembatan Payroll–Procurement: mekanisme pemotongan PPh 21, pemungutan PPh 22, kredit pajak, jatuh tempo setor/lapor, dan titik integrasi ERP tanpa menduplikasi tarif.
+11. **[[11-tax/corporate-income-tax-fundamentals|Corporate Income Tax Fundamentals]]**: Fondasi Pajak Penghasilan Badan, dualisme akuntansi komersial vs akuntansi pajak (*book-tax differences*), perbedaan tetap (*permanent*) vs perbedaan waktu (*temporary*), serta konsep pajak kini dan tangguhan (IAS 12 / PSAK 46).
+12. **[[11-tax/taxable-income-and-fiscal-reconciliation|Taxable Income and Fiscal Reconciliation]]**: Metodologi koreksi fiskal positif (biaya non-3M, natura non-deductible PMK 66/2023, sanksi denda, jamuan tanpa daftar nominatif) dan koreksi negatif (penghasilan final/non-objek) untuk menetapkan Penghasilan Kena Pajak (PKP) pada Formulir 1771-I.
+13. **[[11-tax/corporate-income-tax-calculation|Corporate Income Tax Calculation]]**: Penerapan tarif PPh Badan standar 22% (Pasal 17 UU HPP) dan skema fasilitas pengurangan tarif 50% bagi wajib pajak dengan peredaran bruto tertentu (Pasal 31E UU PPh), serta aturan pembulatan ribuan penuh.
 
 ### Tahap 4: Angsuran, Pembayaran & Penutupan
-13. **[[11-tax/corporate-tax-installment-and-prepayment|Corporate Tax Installment and Prepayment]]**: Pengelolaan angsuran bulanan PPh Pasal 25, pengkreditan pemotongan pihak ketiga (PPh 22 & PPh 23), penyelesaian posisi kurang bayar akhir tahun (PPh Pasal 29) atau lebih bayar (PPh Pasal 28A), dan perhitungan angsuran tahun berikutnya.
-14. **[[11-tax/tax-payment-and-tax-return|Tax Payment and Tax Return]]**: Alur pembayaran pajak melalui Kode Akun Pajak (KAP), Kode Jenis Setoran (KJS), pembuatan Kode Billing e-Billing DJP, validasi Nomor Transaksi Penerimaan Negara (NTPN), serta penarikan Bukti Penerimaan Elektronik (BPE).
-15. **[[11-tax/tax-closing-and-period-end|Tax Closing and Period-End]]**: Daftar periksa penutupan bulanan dan tahunan (*Monthly & Annual Close Checklist*), penegakan pisah batas (*cut-off*), penguncian periode pajak (*Tax Period Lock*), dan protokol penanganan SPT Pembetulan.
+14. **[[11-tax/corporate-tax-installment-and-prepayment|Corporate Tax Installment and Prepayment]]**: Pengelolaan angsuran bulanan PPh Pasal 25, pengkreditan pemotongan pihak ketiga (PPh 22 & PPh 23), penyelesaian posisi kurang bayar akhir tahun (PPh Pasal 29) atau lebih bayar (PPh Pasal 28A), dan perhitungan angsuran tahun berikutnya.
+15. **[[11-tax/tax-payment-and-tax-return|Tax Payment and Tax Return]]**: Alur pembayaran pajak melalui Kode Akun Pajak (KAP), Kode Jenis Setoran (KJS), pembuatan Kode Billing e-Billing DJP, validasi Nomor Transaksi Penerimaan Negara (NTPN), serta penarikan Bukti Penerimaan Elektronik (BPE).
+16. **[[11-tax/tax-closing-and-period-end|Tax Closing and Period-End]]**: Daftar periksa penutupan bulanan dan tahunan (*Monthly & Annual Close Checklist*), penegakan pisah batas (*cut-off*), penguncian periode pajak (*Tax Period Lock*), dan protokol penanganan SPT Pembetulan.
 
 ### Tahap 5: Pengendalian, Analitika & Integrasi
-16. **[[11-tax/tax-reporting-and-tax-analytics|Tax Reporting and Tax Analytics]]**: Hierarki laporan statuter dan operasional, pengujian ekualisasi mandiri (Peredaran Usaha vs PPN Keluaran, Beban Jasa vs PPh 23), analitika Tarif Pajak Efektif (ETR), dan pemantauan umur kredit pajak.
-17. **[[11-tax/tax-controls-audit-and-compliance|Tax Controls, Audit, and Compliance]]**: Kerangka pengendalian internal tiga lapis (pencegahan, pendeteksian, pemulihan), matriks pemisahan tugas (SoD), kesiapan menghadapi SP2DK dan pemeriksaan pajak, serta keamanan sertifikat elektronik.
-18. **[[11-tax/tax-integration|Tax Integration]]**: Sintesis arsitektur integrasi lintas modul ERP (Sales, Purchasing, Inventory, Manufacturing, Finance, Assets, Project, HR), matriks titik sentuh data, dan diagram alur terpadu.
+17. **[[11-tax/tax-reporting-and-tax-analytics|Tax Reporting and Tax Analytics]]**: Hierarki laporan statuter dan operasional, pengujian ekualisasi mandiri (Peredaran Usaha vs PPN Keluaran, Beban Jasa vs PPh 23), analitika Tarif Pajak Efektif (ETR), dan pemantauan umur kredit pajak.
+18. **[[11-tax/tax-controls-audit-and-compliance|Tax Controls, Audit, and Compliance]]**: Kerangka pengendalian internal tiga lapis (pencegahan, pendeteksian, pemulihan), matriks pemisahan tugas (SoD), kesiapan menghadapi SP2DK dan pemeriksaan pajak, serta keamanan sertifikat elektronik.
+19. **[[11-tax/tax-integration|Tax Integration]]**: Sintesis arsitektur integrasi lintas modul ERP (Sales, Purchasing, Inventory, Manufacturing, Finance, Assets, Project, HR), matriks titik sentuh data, dan diagram alur terpadu.
 
 ---
 
@@ -98,16 +99,16 @@ Berikut adalah daftar 18 dokumen kanonikal yang menyusun kurikulum menyeluruh mo
 Seluruh contoh numerik di dalam modul ini dirancang secara terpadu dan saling terhubung menggunakan skenario kanonikal `PT Maju Bersama`:
 
 * **Profil Entitas:** Pengusaha Kena Pajak (PKP) terdaftar di Indonesia, mata uang pembukuan IDR.
-* **Catatan Tarif PPN:** Tarif 11% yang dicantumkan pada transaksi berikut merupakan **asumsi pembelajaran ilustratif** (merujuk pada periode implementasi UU HPP No. 7 Tahun 2021). Mesin pajak ERP modern mengelola perubahan tarif statuter (seperti penyesuaian ke 12%) secara dinamis berbasis tanggal terutang (*effective dating*).
+* **Catatan Tarif PPN:** Tarif PPN statutori yang berlaku sejak 1 Januari 2025 adalah **12%** dengan DPP Nilai Lain 11/12, sehingga beban efektif 11%. Angka PPN pada skenario di bawah karena itu ditulis sebagai 11% efektif, bukan tarif statutori. Mesin pajak ERP mengelola tarif berbasis tanggal terutang (*effective dating*); lihat [[11-tax/vat-fundamentals|VAT Fundamentals]].
 * **Transaksi Pengadaan (Purchasing / P2P):**
   - Pemasok: `PT Sumber Teknologi` (PKP).
   - Pembelian: Laptop Pro 10 unit @ Rp700.000 = DPP Rp7.000.000.
-  - PPN Masukan (11% ilustratif): Rp770.000 (Dapat dikreditkan).
+  - PPN Masukan (efektif 11%): Rp770.000 (Dapat dikreditkan).
   - Total Tagihan AP: Rp7.770.000.
 * **Transaksi Penjualan (Sales / O2C):**
   - Pelanggan: Klien Korporasi (PKP).
   - Penjualan: Laptop Pro 10 unit @ Rp1.000.000 = DPP Rp10.000.000.
-  - PPN Keluaran (11% ilustratif): Rp1.100.000 (Faktur Pajak Normal No: `DUMMY-FP-001` -- identifikasi fiktif untuk ilustrasi pembelajaran).
+  - PPN Keluaran (efektif 11%): Rp1.100.000 (Faktur Pajak Normal No: `DUMMY-FP-001` -- identifikasi fiktif untuk ilustrasi pembelajaran).
   - Total Tagihan AR: Rp11.100.000.
 * **Transaksi Jasa Vendor (Withholding Tax):**
   - Rekanan: `PT Solusi Servis` (NPWP valid).
