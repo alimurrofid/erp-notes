@@ -143,13 +143,7 @@ Odoo menyatukan seluruh transaksi finansial ke dalam model `account.move` dan ba
 
 ## Naventra Consideration
 
-Dalam merancang arsitektur Naventra:
-1. **Pemisahan State Dokumen**: Bedakan secara tegas antara status dokumen:
-   * `Draft`: Masih dapat diedit, tidak memengaruhi stok maupun akuntansi.
-   * `Confirmed / Approved`: Komitmen operasional terbentuk (alokasi stok / *stock reserved*), belum ada jurnal finansial.
-   * `Posted / Completed`: Tidak dapat diubah (*immutable*), mutasi stok ledger dan GL ledger terbentuk.
-   * `Cancelled / Reversed`: Pembatalan harus dilakukan melalui dokumen pembalik (*reversal transaction*), bukan dengan menghapus baris database (*hard delete*), demi menjaga *audit trail*.
-2. **Posting Engine Abstraction**: Pisahkan logika bisnis dokumen dari aturan jurnal akuntansi menggunakan *Posting Engine* yang dapat dikonfigurasi melalui aturan pemetaan akun (*Account Determination*).
+Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-002) — pemisahan state dokumen dan posting engine abstraction.
 
 ---
 

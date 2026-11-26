@@ -114,10 +114,7 @@ Perilaku arsitektur dasar ini diterapkan secara konsisten pada berbagai ERP terk
 
 ## Naventra Consideration
 
-Dalam merancang custom ERP seperti Naventra:
-* Jangan membangun modul sebagai aplikasi yang terisolasi dengan sinkronisasi periodik (batch).
-* Terapkan arsitektur *event-driven* atau *service-driven* di mana transaksi operasional (seperti *Goods Receipt* atau *Stock Issue*) memicu pembuatan entitas jurnal (*Journal Entry*) melalui *Posting Engine* terpusat.
-* Pertahankan integritas referensial antara dokumen transaksi operasional dan dokumen keuangan.
+Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-001) — posting engine terpusat dan event-driven.
 
 ---
 

@@ -132,10 +132,7 @@ stateDiagram-v2
 
 ## Naventra Consideration
 
-Dalam implementasi Naventra:
-* Pastikan struktur tabel transaksi selalu memisahkan **Header** (nomor dokumen, tanggal, pihak terkait) dan **Lines / Detail Items** (produk, kuantitas, harga satuan, diskon, akun beban).
-* Jangan pernah mengizinkan pengubahan baris transaksi yang telah berstatus `Posted`.
-* Wajibkan mekanisme *snapshot* pada saat transaksi dibuat agar perubahan harga atau alamat master data tidak merusak data historis faktur yang sudah dicetak atau dilaporkan ke pajak.
+Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-004) — header/lines dan snapshot nilai master.
 
 ---
 

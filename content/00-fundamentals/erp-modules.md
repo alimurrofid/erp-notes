@@ -144,10 +144,7 @@ Struktur modularitas diatur secara berbeda di berbagai platform ERP:
 
 ## Naventra Consideration
 
-Dalam perancangan Naventra:
-* Jangan membangun modul sebagai aplikasi database terpisah (*microservices with database-per-service*), karena akan menyulitkan transaksi atomik ACID dan integritas laporan keuangan.
-* Terapkan arsitektur **Modular Monolith**: kode diisolasi berdasarkan domain/modul, namun berbagi skema database terpadu untuk memastikan kecepatan agregasi data dan pelaporan.
-* Sediakan mekanisme *Hook / Event Subscriber* terpusat (contoh: `on_delivery_confirmed`, `on_invoice_posted`) agar modul lain dapat merespons perubahan tanpa membuat kode yang saling mengunci secara erat (*loose coupling*).
+Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-003) — modular monolith dan hook terpusat.
 
 ---
 
