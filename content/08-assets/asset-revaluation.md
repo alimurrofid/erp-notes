@@ -93,19 +93,23 @@ $$\text{Transfer Bulanan} = \text{Beban Depresiasi Nilai Revaluasi} - \text{Beba
 ## Accounting & Financial Impact
 
 ### 1. Kenaikan Revaluasi dengan Metode Eliminasi (Net Method)
-Aset Mesin Pabrik memiliki Harga Perolehan Rp120.000.000 dan Akumulasi Penyusutan Rp40.000.000 (Nilai Buku Rp80.000.000). Nilai wajar hasil penilaian independen adalah Rp105.000.000 (Terjadi kenaikan surplus Rp25.000.000):
+
+> [!note] Ilustrasi metode — 31 Desember 2027
+> Angka di bawah menunjukkan mekanisme jurnal pada **31 Desember 2027** (21 bulan penyusutan). Ini bukan posisi kanonik 31 Desember 2028; posisi kanonik ada pada contoh di bagian berikutnya.
+
+Aset Mesin Pabrik memiliki Harga Perolehan Rp120.000.000 dan Akumulasi Penyusutan Rp38.500.000 (Nilai Buku Rp81.500.000). Nilai wajar hasil penilaian independen adalah Rp105.000.000 (Terjadi kenaikan surplus Rp23.500.000):
 
 **Langkah A — Mengeliminasi Akumulasi Penyusutan:**
 | Akun | Debit (IDR) | Kredit (IDR) | Keterangan |
 | :--- | :--- | :--- | :--- |
-| `153090 - Akumulasi Penyusutan Mesin` | 40.000.000 | - | Menghapus saldo akumulasi penyusutan |
-| `153000 - Mesin & Peralatan Pabrik` | - | 40.000.000 | Menyesuaikan harga perolehan ke nilai buku |
+| `153090 - Akumulasi Penyusutan Mesin` | 38.500.000 | - | Menghapus saldo akumulasi penyusutan |
+| `153000 - Mesin & Peralatan Pabrik` | - | 38.500.000 | Menyesuaikan harga perolehan ke nilai buku |
 
 **Langkah B — Menyesuaikan Nilai Buku ke Nilai Wajar:**
 | Akun | Debit (IDR) | Kredit (IDR) | Keterangan |
 | :--- | :--- | :--- | :--- |
-| `153000 - Mesin & Peralatan Pabrik` | 25.000.000 | - | Menambah nilai mesin menjadi Rp105.000.000 |
-| `310400 - Ekuitas: Surplus Revaluasi Aset` | - | 25.000.000 | Diakui di OCI / Ekuitas |
+| `153000 - Mesin & Peralatan Pabrik` | 23.500.000 | - | Menambah nilai mesin menjadi Rp105.000.000 |
+| `310400 - Ekuitas: Surplus Revaluasi Aset` | - | 23.500.000 | Diakui di OCI / Ekuitas |
 
 *(Untuk rincian akuntansi perpajakan revaluasi dan penyesuaian pajak tangguhan IAS 12, rujuk ke [[02-accounting/fixed-asset-accounting|Fixed Asset Accounting di Phase 3]]).*
 
