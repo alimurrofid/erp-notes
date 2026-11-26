@@ -11,8 +11,8 @@ Legenda: **Fixed** = materi sudah diperbaiki dan diverifikasi. **Partial** = seb
 | `check:content` | 0 error | 0 error, 0 warning |
 | URL mati | 0 | **0** (12 blocked: ISO/OECD/ILO/APQC) |
 | `check:refs:strict` | gagal (193 tanpa identitas, 85 gap bertanda) | **lolos** (0 tanpa identitas, 0 marker) |
-| Entri referensi | 1001 | 900 (128 entri tak terverifikasi dihapus/diganti) |
-| Artikel | 203 | 209 |
+| Entri referensi | 1001 | 927 (128 entri tak terverifikasi dihapus/diganti) |
+| Artikel | 203 | 217 |
 | `npx quartz build` | sukses | sukses |
 
 ## Fixed — Akuntansi dan Proses (ACC, INV, FIN, BIZ)
@@ -107,6 +107,7 @@ Legenda: **Fixed** = materi sudah diperbaiki dan diverifikasi. **Partial** = seb
 | MNT-04 | Semua entri ber-URL punya tanggal akses; check melaporkan dan menggagalkan strict jika tidak |
 | MNT-05 | **Partial**: tanggal "modified" per halaman diambil dari commit git (Quartz `CreatedModifiedDate` priority `git`); commit atomik per artikel dipertahankan. Belum ada UI riwayat commit per file. |
 | NAV-03 | Penomoran section unik (`00-orientation` + `01-fundamentals` … `12-tax`); tombol Sebelumnya/Berikutnya di setiap halaman mengikuti urutan index section; `check:lesson-order` mencegah urutan usang | `quartz/components/LessonNav.tsx`, `quartz/generated/lessonOrder.ts`, `.agents/scripts/generate-lesson-order.mjs` |
+| NAV-04 | Kelengkapan desain Naventra: 171 keputusan (tambah Sales 17, Accounting 17, Processes 7), requirement R-13…18, security/API/NFR/test/decision register; status tetap baseline desain | `30-naventra/` |
 
 ## Invalid
 
@@ -121,7 +122,7 @@ Legenda: **Fixed** = materi sudah diperbaiki dan diverifikasi. **Partial** = seb
 | K-8 | Review pakar eksternal (konsultan pajak/akuntan) belum dijadwalkan; tidak dapat dilakukan agent. |
 | Sign-off | Pemilik proyek harus menandatangani hasil re-audit sebelum materi dipakai untuk keputusan profesional. |
 | Odoo 20 claim review | Versi/URL sudah 20.0, tetapi klaim perilaku per halaman 20.0 belum ditinjau ulang satu per satu. |
-| Naventra | Baseline desain (130 keputusan) belum diimplementasikan/diuji; status tetap desain. |
+| Naventra | Baseline desain (171 keputusan) belum diimplementasikan/diuji; status tetap desain. |
 | SAP comparison claims | Kolom SAP di tabel perbandingan bersifat deskriptif; halaman Help spesifik tidak dapat diverifikasi untuk setiap topik, sehingga klaim tidak dinaikkan menjadi "terverifikasi". |
 
 ## Cara Menutup Register
