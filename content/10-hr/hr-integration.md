@@ -155,11 +155,7 @@ Ringkasan deskriptif pola implementasi arsitektur HR pada software ERP enterpris
 
 ## Naventra Consideration
 
-Dalam perancangan arsitektur inti modul Human Resources Naventra ERP:
-
-1. **Unified Workforce Anchor**: Setiap transaksi operasional (dokumen PO, mutasi inventaris gudang, lembar waktu proyek, tiket produksi) memiliki atribut `employee_id` yang terikat pada data master pegawai aktif, menjamin akuntabilitas jejak audit di seluruh modul sistem.
-2. **Automated Cross-Module Labor Settlement**: Modul penggajian Naventra sebaiknya menggunakan payroll batch sebagai boundary posting ke GL dan memfasilitasi rekonsiliasi akun kliring penyerapan tenaga kerja (*Labor Absorption Clearing*), memastikan biaya tenaga kerja teralokasi secara tertib tanpa saldo tak terjelaskan.
-3. **Integrated Offboarding Lockdown Wizard**: Transisi status pegawai menjadi *Terminated* dapat mengotomatisasi penonaktifan kredensial login, pembatasan akses fisik, dan penyusunan draf penyelesaian hak akhir (*Final Settlement Proposal*) yang terhubung dengan modul perbendaharaan (*Treasury*).
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-100).
 
 ---
 

@@ -148,11 +148,7 @@ Perbandingan kapabilitas integrasi modul pemeliharaan dan aset tetap lintas plat
 
 ## Naventra Consideration
 
-Rancangan arsitektur integrasi pemeliharaan dan aset tetap pada Naventra ERP:
-
-1. **Bi-Directional Maintenance Ledger**: Setiap nomor aset pada Naventra memiliki tab riwayat pemeliharaan terpadu yang merangkum seluruh tiket perintah kerja (*Work Orders*), daftar suku cadang yang pernah diganti, teknisi penanggung jawab, dan total akumulasi biaya perawatan (*lifetime maintenance cost*).
-2. **Automated Replacement Sweet-Spot Detector**: Naventra menyertakan algoritma analitik yang membandingkan kurva depresiasi aset dengan kurva eskalasi biaya pemeliharaan. Jika laju kenaikan biaya perawatan melampaui ambang toleransi, sistem memicu notifikasi rekomendasi penggantian aset kepada Head of Operations.
-3. **Production Schedule Synchronization**: Penjadwalan perawatan pada modul pemeliharaan secara otomatis mengirimkan sinyal pemblokiran kapasitas ke modul *Shop Floor Scheduling* untuk mencegah penugasan *Manufacturing Order* pada mesin yang sedang dalam masa servis.
+Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-068).
 
 ---
 

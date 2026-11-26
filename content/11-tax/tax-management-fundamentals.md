@@ -219,16 +219,7 @@ Secara arsitektural, modul perpajakan ERP modern menerapkan tiga pilar arsitektu
 
 ## Naventra Consideration
 
-Dalam pengembangan ERP Naventra, modul perpajakan dirancang dengan prinsip-prinsip arsitektur berikut:
-
-1. **Tax Engine Standalone Service:**
-   Hindari menempelkan (*hardcode*) rumus perhitungan pajak di dalam kode modul Sales Order atau Purchase Order. Bangun layanan `TaxCalculationEngine` yang independen yang menerima model transaksi dan menghasilkan respons pajak terstruktur.
-2. **Mandatory Effective Dating & Flexible DPP Formula:**
-   Setiap `tax_code` di Naventra wajib memiliki tabel relasional `tax_rates` dengan kolom `valid_from`, `valid_to`, dan `dpp_factor` (misal 11/12 untuk penyerahan non-mewah sesuai PMK 131/2024 jo PMK 11/2025). Hal ini membantu memastikan transaksi tanggal lampau yang di-repost tidak akan mengalami distorsi tarif saat terjadi perubahan regulasi.
-3. **Pemisahan Akun Komersial vs Fiskal:**
-   Naventra secara ketat memisahkan kode akun penampung pajak dari pendapatan/beban murni, sehingga mempermudah penyusunan laporan keuangan komersial dan rekonsiliasi fiskal tahunan tanpa perlu penyesuaian manual di luar sistem.
-4. **Audit Immutability:**
-   Setiap transaksi pajak yang telah disetujui di portal otoritas perpajakan dikunci (*immutable*). Pembatalan atau revisi transaksi hanya dapat dilakukan melalui mekanisme pembuatan dokumen penyesuaian/pembatalan resmi dan jurnal pembalik.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-121).
 
 ---
 

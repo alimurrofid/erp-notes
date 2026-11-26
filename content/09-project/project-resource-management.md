@@ -156,11 +156,7 @@ Perbandingan kapabilitas alokasi sumber daya proyek lintas software ERP enterpri
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Resource Management pada Naventra ERP:
-
-1. **Dual-Rate Matrix Engine**: Naventra mengelola tarif sumber daya melalui tabel multidimensi `resource_rate_matrices` (`role_id`, `resource_id`, `project_type_id`, `cost_rate`, `billing_rate`, `valid_from`, `valid_to`). Saat jam kerja di-posting, sistem menentukan tarif yang berlaku secara deterministik berdasarkan tanggal pelaksanaan kerja.
-2. **Interactive Resource Heatmap**: Dasbor Naventra menyajikan *Resource Utilization Heatmap* visual: sel berwarna hijau untuk staf dengan utilisasi optimal (75–85%), kuning untuk utilisasi rendah (< 50%), dan merah untuk staf yang mengalami *over-allocation* (> 100%), memudahkan manajer proyek melakukan penyeimbangan beban kerja (*resource re-balancing*).
-3. **Automated HR Leave Synchronization**: Modul alokasi Naventra terhubung secara reaktif dengan modul HR. Setiap kali pengajuan cuti karyawan disetujui, sistem secara otomatis mengevaluasi alokasi kerja yang terdampak dan memberi peringatan kepada Manajer Proyek terkait.
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-091).
 
 ---
 

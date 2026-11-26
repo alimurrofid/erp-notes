@@ -151,35 +151,7 @@ Untuk keperluan evaluasi kinerja dan akuntansi biaya, ERP selalu memisahkan metr
 
 ## Naventra Consideration
 
-Untuk perancangan modul Manufacturing Order pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Header dan Baris Transaksi MO**:
-   ```sql
-   CREATE TABLE manufacturing_orders (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       order_number VARCHAR(50) NOT NULL UNIQUE,
-       product_id UUID NOT NULL REFERENCES items(id),
-       bom_id UUID NOT NULL REFERENCES bill_of_materials(id),
-       routing_id UUID NOT NULL REFERENCES routings(id),
-       warehouse_id UUID NOT NULL REFERENCES warehouses(id),
-       
-       planned_quantity NUMERIC(15, 4) NOT NULL,
-       produced_quantity NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       scrapped_quantity NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       
-       planned_start_date TIMESTAMP WITH TIME ZONE NOT NULL,
-       planned_end_date TIMESTAMP WITH TIME ZONE NOT NULL,
-       actual_start_date TIMESTAMP WITH TIME ZONE,
-       actual_end_date TIMESTAMP WITH TIME ZONE,
-       
-       status VARCHAR(30) NOT NULL DEFAULT 'DRAFT', -- 'DRAFT', 'PLANNED', 'SCHEDULED', 'RELEASED', 'IN_PROGRESS', 'COMPLETED', 'CLOSED', 'CANCELLED'
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-   ```
-2. **Kepatuhan Guard Condition FSM**:
-   Backend wajib memblokir transisi status yang melompati tahapan logis. Sebagai contoh, status `DRAFT` dilarang langsung beralih ke `IN_PROGRESS` tanpa melalui gerbang `RELEASED` guna memastikan alokasi bahan baku di gudang telah tereksekusi dengan benar.
-3. **Pemberlakuan Kunci Concurrency pada Pengeluaran dan Penerimaan**:
-   Gunakan transaksi database berpasangan saat memproses *Material Issue* dan *Output Confirmation* untuk mencegah *race condition* pada pemotongan saldo persediaan di gudang penyimpanan.
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-032).
 
 ---
 

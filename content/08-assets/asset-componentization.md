@@ -149,11 +149,7 @@ Perbandingan dukungan arsitektur komponen aset tetap lintas platform ERP:
 
 ## Naventra Consideration
 
-Rancangan arsitektur Asset Componentization pada Naventra ERP:
-
-1. **Asset Tree-Node Data Model**: Naventra menyusun aset dalam struktur pohon berindeks (`parent_asset_id`, `node_level`, `is_composite`). Pengguna dapat melihat total nilai buku bersih aset induk yang dihitung secara dinamis (*aggregated rollup*) dari penjumlahan seluruh node sub-komponen di bawahnya.
-2. **Automated Component Replacement Wizard**: Naventra menyediakan antarmuka khusus *Replace Component*. Operator cukup memilih sub-aset yang diganti, menginput dokumen pembelian suku cadang pengganti, dan sistem secara atomik mengeksekusi penghapusan buku komponen lama serta pendaftaran komponen baru dalam satu kesatuan transaksi data.
-3. **Synchronized Inspection Overhaul Allocation**: Untuk pemeliharaan berkala besar (*Major Overhauls*), Naventra mengizinkan pembentukan sub-aset bertipe `INSPECTION_COMPONENT` yang secara otomatis disusutkan hingga tanggal target inspeksi besar berikutnya tiba.
+Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-064).
 
 ---
 

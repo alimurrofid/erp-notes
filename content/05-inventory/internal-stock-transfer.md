@@ -114,16 +114,7 @@ Sering kali kuantitas yang tiba di gudang tujuan berbeda dengan kuantitas yang d
 
 ## Naventra Consideration
 
-Untuk perancangan modul Transfer Internal pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Struktur Data Transfer Order Berpasangan**:
-   * Tabel header: `internal_transfer_orders` (`transfer_number`, `source_warehouse_id`, `destination_warehouse_id`, `transit_warehouse_id`, `status: DRAFT, SHIPPED, PARTIALLY_RECEIVED, COMPLETED, CANCELLED`).
-   * Tabel baris: `internal_transfer_order_lines` (`item_id`, `requested_qty`, `shipped_qty`, `received_qty`, `lost_qty`).
-2. **Otomasi Mutasi Dua Langkah pada Database Engine**:
-   * Saat aksi *Shipment* dieksekusi: Sistem memotong kuantitas dari `source_warehouse_id` dan mendebit `transit_warehouse_id`.
-   * Saat aksi *Receipt* dieksekusi: Sistem memotong kuantitas dari `transit_warehouse_id` dan mendebit `destination_warehouse_id`.
-3. **Pemberlakuan Validasi Status In-Transit**:
-   Kuantitas pada gudang bertipe `is_in_transit = TRUE` wajib diblokir secara mutlak dari pemilihan pada form pesanan penjualan (*Sales Order selection*) atau proses produksi (*Work Order consumption*), sehingga barang yang masih di atas truk tidak dapat dijanjikan secara keliru.
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-012).
 
 ---
 

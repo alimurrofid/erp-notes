@@ -132,21 +132,7 @@ Penting untuk memisahkan antara realitas logistik pergudangan dengan pencatatan 
 
 ## Naventra Consideration
 
-Untuk perancangan modul Penerimaan Inbound pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Pemisahan Header dan Baris Detail Penempatan (Receipt vs Putaway)**:
-   * Tabel `goods_receipts` mencatat dokumen penyerahan legal dari vendor (nomor surat jalan, tanggal tiba, vendor ID, nomor PO).
-   * Tabel `goods_receipt_lines` mencatat kuantitas kotor diterima (`received_qty`), kuantitas lolos (`accepted_qty`), dan kuantitas ditolak (`rejected_qty`).
-   * Tabel `putaway_tasks` mencatat instruksi pemindahan fisik dari area staging ke koordinat bin definitif (`from_location_id`, `to_location_id`, `task_status`).
-2. **Validasi Toleransi Penerimaan Berbasis Persentase**:
-   ```sql
-   -- Validasi sebelum menyimpan baris Goods Receipt
-   IF (new_received_qty + line.accumulated_received_qty) > (line.ordered_qty * (1 + line.over_receipt_tolerance_pct / 100.0)) THEN
-       RAISE EXCEPTION 'Kuantitas penerimaan (%) melampaui batas toleransi over-receipt yang diizinkan (%)', 
-           new_received_qty, line.ordered_qty * (1 + line.over_receipt_tolerance_pct / 100.0);
-   END IF;
-   ```
-3. **Mobile Barcode Scanning Workflow**: Rancang antarmuka penerimaan agar ramah perangkat genggam (*handheld barcode terminal*): operator memindai nomor PO $\to$ memindai barcode produk $\to$ memindai barcode bin rak penyimpanan. Hal ini meminimalkan kesalahan input data (*human error*) di lantai gudang yang bising.
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-018).
 
 ---
 

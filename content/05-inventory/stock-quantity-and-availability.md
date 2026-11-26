@@ -127,47 +127,7 @@ flowchart LR
 
 ## Naventra Consideration
 
-Untuk perancangan modul Ketersediaan Stok pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Struktur Tabel Kuantitas Multi-Dimensi (Bin / Balance Cache)**:
-   ```sql
-   CREATE TABLE inventory_balances (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       item_id UUID NOT NULL REFERENCES items(id),
-       warehouse_id UUID NOT NULL REFERENCES warehouses(id),
-       storage_location_id UUID REFERENCES storage_locations(id),
-       batch_number VARCHAR(100),
-       serial_number VARCHAR(100),
-       
-       -- Kuantitas Fisik dan Komitmen
-       on_hand_qty NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       reserved_qty NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       allocated_qty NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       quarantine_qty NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       blocked_qty NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       
-       updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-       UNIQUE (item_id, warehouse_id, storage_location_id, batch_number, serial_number)
-   );
-   ```
-2. **Generated Column / Virtual View untuk Available Stock**:
-   ```sql
-   -- Menggunakan computed column atau database view untuk menjamin konsistensi formula
-   CREATE OR REPLACE VIEW view_item_availability AS
-   SELECT 
-       item_id,
-       warehouse_id,
-       SUM(on_hand_qty) AS total_on_hand,
-       SUM(reserved_qty) AS total_reserved,
-       SUM(allocated_qty) AS total_allocated,
-       SUM(quarantine_qty + blocked_qty) AS total_restricted,
-       -- Formula Konservatif
-       SUM(on_hand_qty - reserved_qty - allocated_qty - quarantine_qty - blocked_qty) AS available_qty
-   FROM inventory_balances
-   GROUP BY item_id, warehouse_id;
-   ```
-3. **Pemberlakuan Locking Concurrency saat Check-and-Reserve**:
-   Saat pesanan penjualan melakukan reservasi stok, gunakan mekanisme *Pessimistic Locking* (`SELECT ... FOR UPDATE`) atau transaksi berbasis isolasi tinggi untuk mencegah *race condition* di mana dua pesanan berbeda secara bersamaan mengambil sisa stok yang sama (*double allocation*).
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-027).
 
 ---
 

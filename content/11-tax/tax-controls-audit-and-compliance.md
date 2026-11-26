@@ -131,14 +131,7 @@ Dalam arsitektur sistem ERP modern, pengendalian dan audit perpajakan dijalankan
 
 ## Naventra Consideration
 
-Pada pengembangan ERP Naventra, kerangka kepatuhan dan audit perpajakan dibangun dengan fondasi ketat:
-
-1. **Mandatory Ledger Lock on Tax Accounts:**
-   Seluruh akun GL yang memiliki tipe `TAX_CLEARING`, `TAX_PAYABLE`, atau `PREPAID_TAX` secara baku dikunci dari formulir *Manual Journal Entry*. Mutasi akun hanya dapat terjadi melalui mesin posting otomatis dari modul dokumen transaksi.
-2. **Built-in SP2DK Assistant:**
-   Naventra menyertakan fitur *SP2DK Reconciliation Assistant*: pengguna cukup menginput nomor SP2DK dan memilih masa pajak yang dipersoalkan, lalu sistem secara otomatis menghasilkan berkas PDF tanggapan resmi yang memuat lembar ekualisasi, daftar faktur, dan bukti bayar bank.
-3. **Cryptographic Log Immutability:**
-   Setiap transaksi pengunggahan, pembatalan, dan penggantian faktur pajak dicatat dengan tanda tangan kriptografi (hash SHA-256) pada tabel `tax_compliance_audit_ledger` guna memproteksi integritas data riwayat audit dari manipulasi tidak terotorisasi.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-118).
 
 ---
 

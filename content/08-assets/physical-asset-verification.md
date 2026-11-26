@@ -167,11 +167,7 @@ Perbandingan kapabilitas modul verifikasi fisik aset tetap lintas platform ERP:
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Physical Asset Verification pada Naventra ERP:
-
-1. **Native Mobile Asset Scanner**: Naventra menyediakan Progressive Web App (PWA) yang memungkinkan tim audit memindai barcode/QR tag aset secara luring (*offline-first*) di lorong pabrik tanpa sinyal Wi-Fi. Data hasil pemindaian disimpan di basis data lokal perangkat dan disinkronisasikan ke server saat kembali online.
-2. **Interactive Discrepancy Resolution Workbench**: Hasil verifikasi fisik disajikan dalam dasbor interaktif yang membagi temuan ke dalam tab: *Matched*, *Mislocated*, *Damaged*, *Missing*, dan *Unrecorded*. Setiap tab memiliki tombol aksi satu-klik (*One-Click Action*) untuk memproses mutasi lokasi, pendaftaran aset baru, atau penerbitan memo penghapusan buku.
-3. **Mandatory Photo & Geolocation Evidence**: Aplikasi mobile Naventra mewajibkan petugas lapangan mengambil foto fisik aset dan merekam koordinat GPS saat memindai aset-aset bernilai di atas ambang batas tertentu, memberikan integritas bukti fisik yang tak terbantahkan bagi auditor eksternal.
+Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-077).
 
 ---
 

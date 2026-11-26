@@ -141,11 +141,7 @@ Perbandingan kapabilitas Bank Account Management lintas platform:
 
 ## Naventra Consideration
 
-Rancangan modul Bank Account Management pada Naventra ERP menetapkan:
-
-1. **Strict House Bank Entity Isolation**: Setiap rekening bank perusahaan terikat erat pada *Legal Entity / Company ID*. Rekening tidak boleh dibagikan (*shared*) antar-anak perusahaan secara langsung untuk mencegah kerancuan tanggung jawab hukum dan pelaporan pajak perbankan.
-2. **Automated Dormancy Lockout**: Naventra menjalankan *background cron scheduler* mingguan. Rekening yang tidak mengalami aktivitas mutasi debit/kredit selama lebih dari 180 hari otomatis dialihkan ke status `DORMANT_LOCKED`, yang memblokir transaksi baru hingga dibuka kembali melalui proses re-aktivasi berjenjang.
-3. **Audit Trail Mandat Penandatangan**: Setiap penambahan atau perubahan data pejabat penandatangan (*signatory master*) mencatat *snapshot* lengkap identitas pejabat, KTP/NPWP, nomor SK Direksi, tanggal mulai berlaku, dan tanggal berakhirnya wewenang ke dalam log audit yang tidak dapat dihapus (*immutable log*).
+Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-046).
 
 ---
 

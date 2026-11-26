@@ -189,18 +189,7 @@ Pada rancangan sistem ERP skala besar, logika penentuan pajak dioperasikan sebag
 
 ## Naventra Consideration
 
-Pada arsitektur ERP Naventra, modul penentuan pajak dirancang dengan spesifikasi teknis berikut:
-
-1. **Deterministic Rule Engine (Pipeline Pattern):**
-   Naventra mengimplementasikan *tax determination pipeline* berurutan:
-   - *Phase 1:* Verifikasi Alamat Pengiriman (*Jurisdiction / FTZ check*).
-   - *Phase 2:* Verifikasi Kategori Subjek Pajak (*WAPU / Tax-Exempt Entity check*).
-   - *Phase 3:* Verifikasi Kategori Objek Pajak (*Non-BKP / Special Scheme check*).
-   - *Phase 4:* Penentuan Jadwal Tarif Aktif & Faktor DPP (*Effective Date & DPP factor lookup*).
-2. **Immutable Trace Logging:**
-   Setiap hasil penentuan kode pajak pada dokumen final disimpan beserta `rule_id` yang terpicu ke dalam tabel `tax_determination_audit_log`, memudahkan audit perpajakan internal dalam meneliti dasar hukum penetapan pajak transaksi masa lampau.
-3. **Strict Validation Engine:**
-   Sistem menolak posting transaksi jika terdeteksi inkonsistensi data, misalnya transaksi penjualan ke entitas WAPU yang secara manual diisi kode pajak reguler non-WAPU.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-119).
 
 ---
 

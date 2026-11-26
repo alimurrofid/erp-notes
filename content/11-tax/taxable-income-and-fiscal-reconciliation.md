@@ -155,17 +155,7 @@ Pada rancangan sistem ERP kelas atas, rekonsiliasi fiskal dijalankan melalui kom
 
 ## Naventra Consideration
 
-Pada arsitektur ERP Naventra, modul rekonsiliasi fiskal dirancang dengan pendekatan tata kelola data berikut:
-
-1. **COA-Level Fiscal Classification:**
-   Setiap akun dalam Chart of Accounts Naventra memiliki atribut wajib:
-   - `is_tax_deductible` (Boolean).
-   - `fiscal_correction_type` (`NONE`, `POSITIVE_PERMANENT`, `POSITIVE_TEMPORARY`, `NEGATIVE_FINAL`, `NEGATIVE_TEMPORARY`).
-   - `spt_1771_line_mapping` (Nomor baris Formulir 1771-I).
-2. **Nominative Document Management Portal:**
-   Naventra menyediakan antarmuka khusus di mana departemen pemasaran wajib melampirkan daftar tamu/penerima promosi pada saat mengajukan klaim penggantian biaya (*expense claim*). Jika tidak dilampirkan, sistem otomatis mengalokasikan beban ke sub-akun *Non-Deductible*.
-3. **Zero-Impact Financial Statements:**
-   Seluruh kalkulasi rekonsiliasi fiskal dijalankan di memori komputasi analitis (*analytical layer*), sehingga Laporan Laba Rugi Komersial yang disajikan kepada pemegang saham tidak terdistorsi oleh aturan teknis perpajakan.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-126).
 
 ---
 

@@ -147,11 +147,7 @@ Penerapan struktur organisasi dan posisi pada software ERP enterprise:
 
 ## Naventra Consideration
 
-Dalam perancangan modul struktur organisasi Naventra ERP:
-
-1. **Penerapan Penuh Model Position-to-Position**: Naventra mewajibkan seluruh alur persetujuan dokumen bisnis merujuk pada kode `position_id` daripada `employee_id`, memastikan alur bisnis tidak pernah terhenti saat terjadi kekosongan jabatan atau pergantian pejabat sementara.
-2. **Headcount Quota Engine**: Setiap pembukaan lowongan kerja baru pada modul rekrutmen wajib memverifikasi ketersediaan kuota formasi posisi kosong (*Vacant Position Slot*) yang telah disetujui dalam anggaran tahunan perusahaan.
-3. **Visual Interactive Organization Chart**: Antarmuka pengguna menyajikan bagan organisasi interaktif yang dapat di-*drill-down*, menampilkan indikator warna untuk posisi yang terisi (*Filled*), lowong (*Vacant*), atau sedang dalam proses rekrutmen aktif.
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-103).
 
 ---
 

@@ -182,11 +182,7 @@ Penerapan integrasi timesheet dan biaya tenaga kerja pada platform ERP terkemuka
 
 ## Naventra Consideration
 
-Dalam perancangan modul lembar waktu dan biaya tenaga kerja Naventra ERP:
-
-1. **Rekonsiliasi Otomatis Jam Presensi vs Jam Proyek**: Antarmuka lembar waktu Naventra menampilkan bilah indikator kehadiran fisik secara berdampingan. Sistem memperingatkan pengguna jika lembar kerja yang diinput melebihi jam presensi kantor pada hari bersangkutan.
-2. **Dynamic Blended Rate Engine**: Naventra menyediakan mesin kalkulasi tarif per jam yang secara dinamis memperhitungkan komponen gaji pokok dan tunjangan aktual bulan berjalan, memastikan nilai penyerapan biaya tenaga kerja mencerminkan biaya finansial riil.
-3. **One-Click Approval by WBS Manager**: Manajer proyek dapat menyetujui seluruh lembar kerja tim dalam satu tampilan matriks terpadu dengan validasi sisa anggaran jam kerja (*Effort Baseline*) secara *real-time*.
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-097).
 
 ---
 

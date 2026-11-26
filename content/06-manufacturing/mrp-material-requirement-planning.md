@@ -141,36 +141,7 @@ Ketika realitas lapangan menyimpang dari rencana awal (misal: pesanan penjualan 
 
 ## Naventra Consideration
 
-Untuk perancangan modul MRP pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Hasil Komputasi MRP**:
-   ```sql
-   CREATE TABLE mrp_runs (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       run_code VARCHAR(50) NOT NULL UNIQUE,
-       run_timestamp TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-       status VARCHAR(30) NOT NULL DEFAULT 'COMPLETED', -- 'RUNNING', 'COMPLETED', 'FAILED'
-       parameters_json JSONB
-   );
-
-   CREATE TABLE mrp_planned_orders (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       mrp_run_id UUID NOT NULL REFERENCES mrp_runs(id) ON DELETE CASCADE,
-       item_id UUID NOT NULL REFERENCES items(id),
-       warehouse_id UUID NOT NULL REFERENCES warehouses(id),
-       order_type VARCHAR(20) NOT NULL, -- 'MANUFACTURE', 'PURCHASE', 'TRANSFER'
-       suggested_quantity NUMERIC(15, 4) NOT NULL,
-       demand_date DATE NOT NULL, -- Tanggal material dibutuhkan
-       release_date DATE NOT NULL, -- Tanggal pesanan harus diterbitkan (offset lead time)
-       pegged_demand_doc_type VARCHAR(50),
-       pegged_demand_doc_id UUID,
-       status VARCHAR(30) NOT NULL DEFAULT 'SUGGESTED' -- 'SUGGESTED', 'CONVERTED', 'IGNORED'
-   );
-   ```
-2. **Kalkulasi Rekursif Berbasis Low-Level Code (LLC)**:
-   Algoritma MRP pada backend wajib mengurutkan komputasi berdasarkan `items.low_level_code ASC` (mulai dari level 0, lalu level 1, hingga level terbawah). Hal ini menjamin bahwa seluruh kebutuhan kotor turunan (*dependent gross requirements*) telah terakumulasi secara lengkap sebelum perhitungan kebutuhan bersih komponen anak dieksekusi.
-3. **Mekanisme Bulk Conversion ke Dokumen Transaksional**:
-   Sediakan API *bulk conversion* (`POST /api/v1/mrp/convert-planned-orders`) yang secara atomik mengubah baris-baris `mrp_planned_orders` berjenis `PURCHASE` menjadi dokumen draf `purchase_requisitions` dan berjenis `MANUFACTURE` menjadi dokumen draf `manufacturing_orders`.
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-036).
 
 ---
 

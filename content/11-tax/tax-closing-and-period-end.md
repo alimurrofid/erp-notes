@@ -156,14 +156,7 @@ Dalam arsitektur ERP enterprise, modul penutupan perpajakan mengoperasikan fitur
 
 ## Naventra Consideration
 
-Pada pengembangan ERP Naventra, fitur penutupan pajak akhir periode dirancang dengan arsitektur ketat:
-
-1. **Automated Period Gatekeeper:**
-   Naventra menerapkan validasi otomatis pada tingkat API/basis data: transaksi apa pun dengan `tax_point_date` di dalam rentang periode `status = 'LOCKED'` akan secara otomatis ditolak (*HTTP 403 Forbidden: Tax Period Locked*).
-2. **Interactive Tax Close Checklist:**
-   Manajer Pajak disediakan dasbor interaktif 9 langkah penutupan bulanan. Tombol `Lock Period` tidak dapat ditekan sebelum seluruh indikator rekonsiliasi dan verifikasi dokumen menunjukkan tanda centang hijau.
-3. **Integrated Amendment Versioning:**
-   Jika pembukaan kunci darurat disetujui, Naventra menandai seluruh entri penyesuaian dengan label `amendment_version_id`, mengisolasi transaksi koreksi tersebut sehingga langsung terpetakan ke SPT Pembetulan tanpa merusak integritas arsip SPT Normal awal.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-117).
 
 ---
 

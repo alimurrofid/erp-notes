@@ -148,11 +148,7 @@ Perbandingan kapabilitas manajemen biaya proyek lintas sistem ERP enterprise:
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Project Cost Management pada Naventra ERP:
-
-1. **Multi-Source Cost Ingestion Pipeline**: Naventra memproses pengumpulan biaya proyek melalui *Event Ingestion Worker*. Setiap kali modul eksternal menerbitkan transaksi terikat proyek (misal `TimesheetApproved`, `InvoicePosted`, `MaterialIssued`), worker secara asinkron memperbarui saldo pada tabel `project_cost_ledger` tanpa membebani transaksi utama.
-2. **Deterministic CBS Tagging Engine**: Sistem mewajibkan setiap item biaya dipetakan ke kode kategori biaya baku (`LABOR`, `SUBCONTRACT`, `MATERIAL`, `TRAVEL`, `OVERHEAD`). Hal ini memungkinkan ekstraksi laporan perbandingan varian biaya dilakukan secara terstandardisasi lintas proyek.
-3. **Automated WIP Settlement Processor**: Pada akhir bulan fiskal, Naventra menyediakan modul kalkulasi *WIP Settlement* otomatis yang menghitung akumulasi biaya proyek yang belum ditagihkan dan memposting jurnal reklasifikasi neraca sesuai aturan akuntansi kontrak yang ditetapkan.
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-082).
 
 ---
 

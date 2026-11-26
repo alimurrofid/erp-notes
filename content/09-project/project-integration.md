@@ -135,11 +135,7 @@ Tabel berikut menyajikan ringkasan deskriptif pola implementasi pada software ER
 
 ## Naventra Consideration
 
-Dalam perancangan arsitektur inti modul manajemen proyek Naventra ERP:
-
-1. **Unified Project Anchor Object**: Setiap entitas operasional dan finansial dalam database Naventra memiliki relasi kunci asing (*Foreign Key*) langsung ke `project_id` dan `wbs_id`, menjamin integritas data lintas modul tanpa memerlukan integrasi batch terpisah.
-2. **Real-time Closed-Loop Control**: Mengintegrasikan mesin *Availability Control* (AVC) bertingkat untuk mengontrol konsumsi budget, komitmen (*commitment*), dan biaya aktual (*actual cost*) secara konsisten saat *Purchase Requisition*, *Purchase Order*, atau *Timesheet* diajukan oleh pengguna lapangan sesuai kebijakan organisasi.
-3. **Automated End-to-End Orchestration**: Dari penandatanganan kontrak komersial hingga penutupan finansial (*WIP Settlement*), Naventra memandu pengguna melalui antarmuka *Project Lifecycle Wizard* terpandu yang meminimalkan entri manual dan mencegah salah saji akuntansi.
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-083).
 
 ---
 

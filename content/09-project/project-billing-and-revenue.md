@@ -178,11 +178,7 @@ Penerapan Project Billing and Revenue pada platform ERP enterprise (disajikan se
 
 ## Naventra Consideration
 
-Dalam perancangan modul penagihan proyek Naventra ERP:
-
-1. **Digital BAST Sign-Off Workflow**: Tombol *Create Invoice* pada proyek terkunci secara sistemik hingga BAST digital yang ditandatangani oleh wakil pelanggan diunggah dan disetujui oleh *Account Executive*.
-2. **Dual-Ledger Support for IFRS 15**: Naventra menyediakan mesin kalkulasi otomatis yang membandingkan realisasi biaya (*Cost-to-Cost Progress*) dengan nilai penagihan milestone, menghasilkan jurnal penyesuaian otomatis untuk *Contract Asset* atau *Contract Liability* pada setiap penutupan buku bulanan.
-3. **Peringatan Jatuh Tempo Pembayaran**: Menyediakan *aging analysis* piutang proyek yang secara otomatis membekukan rilis pengerjaan milestone berikutnya jika pembayaran termin sebelumnya telah jatuh tempo melebihi ambang batas toleransi kredit (*Credit Limit / Payment Terms Grace Period*).
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-078).
 
 ---
 

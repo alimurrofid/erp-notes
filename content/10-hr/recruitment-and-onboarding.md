@@ -133,11 +133,7 @@ Penerapan alur rekrutmen dan orientasi pada sistem ERP enterprise:
 
 ## Naventra Consideration
 
-Dalam perancangan modul rekrutmen dan orientasi Naventra ERP:
-
-1. **Otomatisasi Penutupan Kuota Formasi**: Konversi kandidat menjadi pegawai secara otomatis mengubah status posisi terkait dari *Vacant* menjadi *Filled*, serta membatalkan seluruh proses seleksi pelamar lain pada formasi tersebut yang belum mencapai tahap penawaran.
-2. **Digital Onboarding Checklist dengan Persetujuan Bertingkat**: Naventra menyediakan dasbor pelacak orientasi di mana staf IT dan GA wajib mencentang dan menandatangani secara digital bukti serah terima perangkat dan kartu akses sebelum status pegawai dialihkan dari *Pre-Hire* ke *Active (Probation)*.
-3. **Pencegahan Redundansi Dokumen**: Berkas kartu identitas, NPWP, dan buku rekening yang diunggah pelamar pada saat penawaran kerja otomatis dialokasikan ke direktori berkas terenkripsi pada master data pegawai tanpa perlu meminta pegawai mengunggah ulang.
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-111).
 
 ---
 

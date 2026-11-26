@@ -153,11 +153,7 @@ Perbandingan fungsional modul revaluasi aset tetap pada berbagai platform ERP:
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Asset Revaluation pada Naventra ERP:
-
-1. **Revaluation Batch Transaction**: Naventra mengeksekusi revaluasi melalui dokumen `asset_revaluation_batch` yang mewajibkan penentuan kode kelas aset dan unggahan berkas audit penilai independen. Seluruh aset aktif dalam kelas tersebut dievaluasi serentak.
-2. **Dual-Method Calculation Engine**: Pengguna dapat memilih metode pencatatan (*Elimination Method* vs *Proportional Restatement*). Sistem secara otomatis menghitung faktor pengali proporsional dan menghasilkan baris jurnal balancing ke akun `Revaluation Surplus (OCI)`.
-3. **Automated Equity Amortization Hook**: Naventra menyediakan fitur otomatisasi bulanan (*Surplus Amortization Hook*) yang bersamaan dengan eksekusi *Depreciation Run* mendebit akun *Revaluation Surplus* dan mengkredit akun *Retained Earnings* sebesar selisih penyusutan revaluasi vs historis.
+Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-071).
 
 ---
 

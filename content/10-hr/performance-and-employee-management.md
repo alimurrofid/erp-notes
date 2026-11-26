@@ -158,11 +158,7 @@ Penerapan manajemen kinerja pada platform ERP enterprise:
 
 ## Naventra Consideration
 
-Dalam perancangan modul manajemen kinerja Naventra ERP:
-
-1. **Objective System-Driven KPIs**: Naventra mengintegrasikan data kinerja langsung dari modul operasional: metrik ketepatan waktu pengiriman deliverable proyek WBS pada modul [[09-project/project-task-and-milestone|Project Management]] secara otomatis ditarik sebagai nilai capaian KPI teknis pegawai.
-2. **Automated Calibration Matrix**: Menyediakan antarmuka visual matriks 9 kotak (*9-Box Talent Matrix: Performance vs Potential*) yang memfasilitasi komite kalibrasi dalam mengelompokkan pegawai berkinerja tinggi (*High Performers*) untuk perencanaan suksesi kepemimpinan.
-3. **Seamless Payroll Promotion Sync**: Persetujuan akhir kenaikan jabatan pada modul kinerja secara otomatis memperbarui rekaman *Job Grade* dan *Salary Structure Assignment* bertanggal efektif pada master data pegawai tanpa entri manual ganda.
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-110).
 
 ---
 

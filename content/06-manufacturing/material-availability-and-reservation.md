@@ -117,27 +117,7 @@ Bagaimana komponen berpindah dari gudang penyimpanan menuju mesin pabrik diatur 
 
 ## Naventra Consideration
 
-Untuk perancangan modul Reservasi Material Manufaktur pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Alokasi Komponen MO**:
-   ```sql
-   CREATE TABLE mo_material_allocations (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       manufacturing_order_id UUID NOT NULL REFERENCES manufacturing_orders(id) ON DELETE CASCADE,
-       component_item_id UUID NOT NULL REFERENCES items(id),
-       required_quantity NUMERIC(15, 4) NOT NULL,
-       reserved_quantity NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       issued_quantity NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       source_storage_location_id UUID REFERENCES storage_locations(id),
-       allocated_batch_number VARCHAR(100),
-       status VARCHAR(30) NOT NULL DEFAULT 'PENDING', -- 'PENDING', 'FULLY_RESERVED', 'PARTIALLY_RESERVED', 'SHORTAGE', 'ISSUED'
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-   ```
-2. **Atomic Soft-to-Hard Reservation Transition**:
-   Saat status MO berpindah ke `RELEASED`, backend mengeksekusi fungsi transaksi yang mengubah status `mo_material_allocations` dari kuantitas abstrak menjadi penunjukan koordinat rak (`source_storage_location_id`) dan nomor batch (`allocated_batch_number`) secara spesifik.
-3. **Shortage Warning Dashboard API**:
-   Sediakan endpoint analitik (`GET /api/v1/manufacturing/orders/:id/shortage-analysis`) yang mengembalikan daftar rincian komponen yang mengalami defisit, tanggal ekspektasi kedatangan Purchase Order terkait, dan rekomendasi alternatif suku cadang yang tersedia di gudang lain.
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-034).
 
 ---
 

@@ -170,16 +170,7 @@ Dalam modul Tax Management ERP modern, sistem menyediakan antarmuka khusus penge
 
 ## Naventra Consideration
 
-Pada pengembangan sistem ERP Naventra, pengelolaan PPN Masukan dan Keluaran dirancang dengan mekanisme kendali berikut:
-
-1. **Explicit Deductibility Flag:**
-   Setiap baris penerimaan tagihan vendor (`purchase_invoice_lines`) memiliki kolom boolean `is_creditable`. Jika dinonaktifkan oleh petugas pajak, sistem secara otomatis menawarkan opsi:
-   - Kapitalisasi ke akun aset terkait (`capitalize_to_cost = TRUE`).
-   - Alokasi ke akun beban non-deductible fiskal (`account_id = GL_619100`).
-2. **Independent VAT Period Field:**
-   Naventra memisahkan `posting_date` (tanggal pengakuan jurnal AP) dari `vat_filing_period` (format `YYYY-MM`). Staf perpajakan dapat mengubah `vat_filing_period` sepanjang masih dalam rentang 3 bulan kalender sejak tanggal faktur tanpa membatalkan jurnal akuntansi.
-3. **Pemberitahuan Kadaluwarsa Faktur Masukan (Expiry Alert):**
-   Sistem secara otomatis menampilkan peringatan pada dasbor pajak jika terdapat Faktur Masukan belum dikreditkan yang usianya telah mendekati batas akhir 3 bulan, mencegah hilangnya hak kredit pajak perusahaan.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-116).
 
 ---
 

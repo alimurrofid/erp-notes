@@ -216,11 +216,7 @@ Penerapan modul penggajian pada platform ERP enterprise:
 
 ## Naventra Consideration
 
-Dalam perancangan modul penggajian Naventra ERP:
-
-1. **High-Performance Payroll Calculation Engine**: Naventra mengadopsi mesin kalkulasi paralel terisolasi (*worker-thread processing*) yang mampu menghitung ribuan slip gaji lengkap dengan formula pajak dan lembur dalam hitungan detik.
-2. **Maker-Checker Security Workflow**: Proses penggajian mewajibkan otorisasi digital ganda: draf disusun oleh HR Payroll (*Maker*), ditinjau oleh HR Manager (*Checker*), dan disahkan oleh Finance Director (*Approver*) sebelum berkas transfer bank dapat diekspor.
-3. **Automated Salary Variance Analyzer**: Sistem secara otomatis membandingkan total gaji kotor bulan berjalan terhadap bulan sebelumnya, menyoroti anomali deviasi lebih dari 10% untuk mencegah kebocoran kas akibat salah input.
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-108).
 
 ---
 

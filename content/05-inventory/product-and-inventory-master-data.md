@@ -154,15 +154,7 @@ Sangat penting untuk memahami batas antara master data dan transaksi:
 
 ## Naventra Consideration
 
-Untuk perancangan modul Master Data Produk pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Normalisasi Multi-Entitas yang Efisien**: Pisahkan katalog produk menjadi struktur bersih:
-   * `products`: Definisi global (nama, deskripsi, kategori, brand).
-   * `product_skus`: Varian operasional spesifik (SKU code, barcode, berat, volume, tracking policy).
-   * `product_sku_uom_conversions`: Multi-satuan konversi UOM.
-   * `product_accounting_configs`: Pemetaan akun GL per legal entity/company.
-2. **Audit Trail Perubahan Master Data**: Terapkan histori perubahan (*audit versioning*) untuk atribut kritis seperti `costing_method`, `tracking_policy`, dan `tax_category_id`. Perubahan pada atribut ini tidak boleh diizinkan secara langsung jika SKU tersebut telah memiliki saldo persediaan (*on-hand stock > 0*) tanpa melalui prosedur penyesuaian formal.
-3. **Validasi Keunikan Global Barcode & SKU**: Terapkan *unique constraint* pada kolom `sku_code` dan `barcode` pada tingkat perusahaan untuk mencegah duplikasi pemindaian di lantai gudang.
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-025).
 
 ---
 

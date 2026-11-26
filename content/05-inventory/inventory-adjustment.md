@@ -123,40 +123,7 @@ Jika ditemukan 1 unit berlebih yang sah secara fisik tanpa adanya kewajiban utan
 
 ## Naventra Consideration
 
-Untuk perancangan modul Penyesuaian Persediaan pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Dokumen Penyesuaian Terkontrol**:
-   ```sql
-   CREATE TABLE inventory_adjustments (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       adjustment_number VARCHAR(50) NOT NULL UNIQUE,
-       warehouse_id UUID NOT NULL REFERENCES warehouses(id),
-       posting_date DATE NOT NULL,
-       reason_code VARCHAR(50) NOT NULL, -- 'DAMAGED_IN_WH', 'SHRINKAGE', 'EXPIRED_SCRAP', 'FOUND'
-       supporting_document_ref VARCHAR(100),
-       status VARCHAR(30) NOT NULL DEFAULT 'DRAFT', -- 'DRAFT', 'PENDING_APPROVAL', 'APPROVED', 'REJECTED'
-       approved_by UUID REFERENCES users(id),
-       approved_at TIMESTAMP WITH TIME ZONE,
-       total_loss_value NUMERIC(18, 4) NOT NULL DEFAULT 0,
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-
-   CREATE TABLE inventory_adjustment_lines (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       adjustment_id UUID NOT NULL REFERENCES inventory_adjustments(id),
-       item_id UUID NOT NULL REFERENCES items(id),
-       storage_location_id UUID REFERENCES storage_locations(id),
-       batch_number VARCHAR(100),
-       serial_number VARCHAR(100),
-       quantity_delta NUMERIC(15, 4) NOT NULL, -- Positif untuk gain, Negatif untuk loss
-       unit_cost NUMERIC(18, 4) NOT NULL,
-       total_amount NUMERIC(18, 4) NOT NULL,
-       expense_account_id UUID REFERENCES chart_of_accounts(id)
-   );
-   ```
-2. **Validasi Ambang Batas Otorisasi Otomatis (DOA Validation Hook)**:
-   Backend wajib memeriksa `total_loss_value`. Jika nilai penyesuaian melampaui limit wewenang pengguna yang sedang login, sistem menolak posting langsung dan secara otomatis mengubah status transaksi menjadi `PENDING_APPROVAL` dengan meneruskan tiket persetujuan ke atasan terkait.
-3. **Audit Trail Mutasi Stok Tidak Terhapus**: Setiap baris penyesuaian yang disetujui wajib menciptakan baris mutasi resmi pada `stock_ledger_entries` dan baris jurnal di `gl_entries` dengan referensi nomor dokumen penyesuaian.
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-013).
 
 ---
 

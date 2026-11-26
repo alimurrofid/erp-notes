@@ -132,11 +132,7 @@ Perbandingan kapabilitas tata kelola dan kontrol finansial lintas sistem:
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Financial Controls & Governance pada Naventra ERP:
-
-1. **Native SoD Conflict Matrix Engine**: Naventra memelihara tabel aturan benturan peran `sod_conflict_rules`. Setiap kali administrator menetapkan hak akses baru kepada seorang staf, mesin sistem mengevaluasi matriks benturan secara *real-time* dan menolak penugasan jika teridentifikasi kombinasi peran beracun.
-2. **Tamper-Proof Append-Only Audit Trail**: Log audit finansial pada Naventra dicatat ke dalam tabel partisi khusus yang hanya mengizinkan operasi *append* (sisip data baru). Setiap baris rekaman dilengkapi dengan tanda tangan kriptografi (*SHA-256 Hash Chaining*), sehingga manipulasi riwayat log akan seketika merusak validitas rantai hash audit.
-3. **Emergency Four-Eyes Break-Glass Procedure**: Dalam situasi darurat di mana sistem membutuhkan *override* operasional mendesak di luar batas wewenang normal, Naventra menyediakan prosedur *Break-Glass* yang mewajibkan input kata sandi ganda seketika dari dua pejabat level Direktur yang berbeda, disertai kewajiban mengisi formulir alasan darurat yang langsung diteruskan ke Komite Audit.
+Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-056).
 
 ---
 

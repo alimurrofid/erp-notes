@@ -144,27 +144,7 @@ Di samping angka finansial, ERP memantau efisiensi pabrik melalui metrik fisik s
 
 ## Naventra Consideration
 
-Untuk perancangan modul Analisis Varians Manufaktur pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Catatan Varians Produksi (Variance Ledgers)**:
-   ```sql
-   CREATE TABLE mo_production_variances (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       manufacturing_order_id UUID NOT NULL REFERENCES manufacturing_orders(id),
-       variance_type VARCHAR(30) NOT NULL, -- 'MATERIAL_USAGE', 'MATERIAL_PRICE', 'LABOR_RATE', 'LABOR_EFFICIENCY', 'SCRAP'
-       cost_element_code VARCHAR(50) NOT NULL,
-       standard_amount NUMERIC(18, 4) NOT NULL,
-       actual_amount NUMERIC(18, 4) NOT NULL,
-       variance_amount NUMERIC(18, 4) GENERATED ALWAYS AS (actual_amount - standard_amount) STORED,
-       is_favorable BOOLEAN GENERATED ALWAYS AS ((actual_amount - standard_amount) <= 0) STORED,
-       gl_variance_account_id UUID NOT NULL REFERENCES chart_of_accounts(id),
-       calculated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-   ```
-2. **Kalkulasi Varians Otomatis Saat Eksekusi Order Close**:
-   Saat status pesanan beralih ke `CLOSED`, backend mengeksekusi fungsi kalkulasi varians yang membandingkan baris `mo_material_consumptions` dan `mo_operation_confirmations` terhadap standar BOM dan Routing, lalu secara otomatis memposting baris jurnal ke akun varians GL yang relevan.
-3. **Penyediaan Dashboard Eksekutif Pabrik (Factory Floor Scorecard)**:
-   Sediakan antarmuka dashboard yang menampilkan perbandingan visual antara target biaya standar vs biaya riil per unit produk jadi, dilengkapi dengan metrik tren OEE stasiun kerja untuk membantu manajemen pabrik mengidentifikasi sumber inefisiensi biaya secara cepat.
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-042).
 
 ---
 

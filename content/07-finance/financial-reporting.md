@@ -156,11 +156,7 @@ Perbandingan fungsional dasbor dan pelaporan manajemen lintas platform:
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Financial Reporting & Dashboards pada Naventra ERP:
-
-1. **Real-Time Materialized Metric Views**: Naventra menggunakan tabel agregasi terindeks (*materialized analytics tables*) yang diperbarui secara asinkron setiap kali terjadi pembukuan transaksi jurnal. Hal ini memungkinkan dasbor eksekutif memuat grafik performa ratusan ribu transaksi dalam waktu kurang dari 500 milidetik tanpa membebani basis data transaksi utama.
-2. **Deterministic Drill-To-Source Engine**: Setiap baris metrik keuangan pada Naventra memelihara *Lineage Pointer* yang mengaitkan saldo angka dengan ID tabel transaksi operasional sumber (`origin_document_type`, `origin_document_id`). Satu klik pada dasbor langsung mengarahkan pengguna ke dokumen fisik aslinya.
-3. **Customizable Executive Widget Canvas**: Naventra menyediakan antarmuka perancang dasbor berbasis kartu (*card widget canvas*) yang memungkinkan Direktur Keuangan menyusun, memfilter, dan mengatur tata letak KPI penting sesuai preferensi kerja individu tanpa memerlukan bantuan staf pemrograman IT.
+Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-058).
 
 ---
 

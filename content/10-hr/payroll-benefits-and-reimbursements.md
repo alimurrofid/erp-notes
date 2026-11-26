@@ -174,11 +174,7 @@ Penerapan manajemen tunjangan dan reimbursement pada software ERP enterprise:
 
 ## Naventra Consideration
 
-Dalam perancangan modul tunjangan dan klaim biaya Naventra ERP:
-
-1. **Receipt OCR & Digital Fraud Prevention**: Naventra mengintegrasikan modul pemindaian gambar pintar yang mendeteksi nomor transaksi struk dan stempel tanggal, secara otomatis menolak berkas struk yang terindikasi telah diunggah oleh pegawai lain.
-2. **Dual-Channel Disbursement Routing**: Sistem memungkinkan pemisahan fleksibel: klaim bernilai kecil (< Rp500.000) disalurkan langsung via transfer harian kas kecil (*Petty Cash / Fast AP*), sedangkan klaim fasilitas berkala dapat digabungkan ke slip gaji bulanan sebagai komponen *Non-Taxable Reimbursement*.
-3. **Penyelarasan Biaya Proyek Instan**: Klaim perjalanan dinas yang mencantumkan kode WBS proyek secara otomatis memicu pembaruan biaya riil pengeluaran (*Expenses Cost Category*) pada modul [[09-project/project-cost-management|Project Cost Management]], memantau margin laba kotor proyek secara *real-time*.
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-106).
 
 ---
 

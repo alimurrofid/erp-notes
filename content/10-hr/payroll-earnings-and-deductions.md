@@ -189,11 +189,7 @@ Penerapan komponen kompensasi pada platform ERP terkemuka:
 
 ## Naventra Consideration
 
-Dalam perancangan modul komponen gaji Naventra ERP:
-
-1. **Visual Formula Builder**: Naventra menyediakan antarmuka perancang formula visual yang ramah pengguna, memungkinkan staf HR menyusun aturan gaji ketergantungan kompleks tanpa perlu menulis kode pemrograman teknis.
-2. **Dynamic Tax Bracket Synchronization**: Komponen pemotongan pajak dirancang modular yang dapat disinkronkan secara otomatis dengan pembaruan tabel tarif pajak resmi (seperti Tarif Efektif Rata-rata / TER PPh 21) tanpa memerlukan perubahan skema basis data.
-3. **Automated Negative Net Pay Shield**: Sistem dilengkapi proteksi otomatis yang memvalidasi hasil kalkulasi slip gaji. Jika potongan sukarela menyebabkan gaji bersih berada di bawah ambang batas minimum, sistem secara otomatis menangguhkan potongan pinjaman terendah dan memunculkan peringatan audit.
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-107).
 
 ---
 

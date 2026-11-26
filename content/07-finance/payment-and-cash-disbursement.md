@@ -159,11 +159,7 @@ Perbandingan kapabilitas pemrosesan pembayaran massal lintas platform:
 
 ## Naventra Consideration
 
-Rancangan arsitektur pembayaran dan pengeluaran kas pada Naventra ERP:
-
-1. **Automated Vendor Bank Account Verification**: Modul Master Vendor Naventra mewajibkan verifikasi API penamaan rekening bank (*Bank Account Name Inquiry API*) sebelum nomor rekening supplier dinyatakan valid. Nama pada rekening bank supplier harus memiliki tingkat kecocokan teks $\ge 90\%$ dengan nama resmi perusahaan rekanan.
-2. **Cooling-Off Lockout on Bank Changes**: Setiap pembaruan nomor rekening supplier memicu penguncian otomatis selama 72 jam untuk pembayaran tagihan supplier tersebut, disertai pengiriman notifikasi instan melalui email dan WhatsApp ke tim Purchasing dan Internal Audit.
-3. **Atomic API Payment Submission**: Transmisi pembayaran batch via API perbankan dirancang dengan jaminan transaksi atomik (*ACID guarantee*) dan mekanisme penanganan *idempotency*. Jika terjadi kegagalan jaringan di tengah proses transfer, Naventra tidak memposting status pembayaran secara sembarangan sebelum menerima konfirmasi balik status pasti dari server bank.
+Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-060).
 
 ---
 

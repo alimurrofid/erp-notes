@@ -167,11 +167,7 @@ Penerapan manajemen lembur pada platform ERP enterprise:
 
 ## Naventra Consideration
 
-Dalam perancangan modul manajemen lembur Naventra ERP:
-
-1. **Dual Validation Engine (Biometrik vs Surat Tugas)**: Sistem secara otomatis membandingkan stempel presensi biometrik dengan jam surat perintah lembur. Jika pegawai lembur 3 jam tetapi surat tugas hanya mengizinkan 2 jam, sistem membatasi pembayaran maksimal 2 jam.
-2. **Real-time Project Budget Check**: Pengajuan lembur dengan pembebanan kode WBS proyek secara otomatis memverifikasi ketersediaan saldo anggaran tenaga kerja (*WBS Labor Budget*) sebelum persetujuan dapat disahkan.
-3. **Peringatan Kelelahan Tenaga Kerja (*Fatigue Monitoring Alert*)**: Naventra menampilkan indikator peringatan visual kepada manajer jika seorang staf teknis telah bekerja lembur lebih dari 12 jam dalam minggu berjalan untuk menjaga *Work-Life Balance* dan kualitas kode perangkat lunak.
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-104).
 
 ---
 

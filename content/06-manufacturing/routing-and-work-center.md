@@ -140,51 +140,7 @@ flowchart TD
 
 ## Naventra Consideration
 
-Untuk perancangan modul Routing dan Work Center pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Relasional Work Center dan Routing**:
-   ```sql
-   CREATE TABLE work_centers (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       code VARCHAR(20) NOT NULL UNIQUE,
-       name VARCHAR(100) NOT NULL,
-       work_center_type VARCHAR(30) NOT NULL, -- 'MACHINE', 'LABOR_LINE', 'OUTSOURCED'
-       capacity_per_day_hours NUMERIC(6, 2) NOT NULL DEFAULT 8.00,
-       efficiency_percentage NUMERIC(5, 2) NOT NULL DEFAULT 100.00,
-       cost_per_hour_labor NUMERIC(18, 4) NOT NULL DEFAULT 0,
-       cost_per_hour_machine NUMERIC(18, 4) NOT NULL DEFAULT 0,
-       cost_per_hour_overhead NUMERIC(18, 4) NOT NULL DEFAULT 0,
-       calendar_id UUID NOT NULL REFERENCES production_calendars(id),
-       is_active BOOLEAN NOT NULL DEFAULT TRUE
-   );
-
-   CREATE TABLE routings (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       routing_code VARCHAR(50) NOT NULL UNIQUE,
-       name VARCHAR(100) NOT NULL,
-       product_id UUID NOT NULL REFERENCES items(id),
-       is_active BOOLEAN NOT NULL DEFAULT TRUE,
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-
-   CREATE TABLE routing_operations (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       routing_id UUID NOT NULL REFERENCES routings(id) ON DELETE CASCADE,
-       sequence_number INT NOT NULL, -- 10, 20, 30...
-       operation_name VARCHAR(100) NOT NULL,
-       work_center_id UUID NOT NULL REFERENCES work_centers(id),
-       setup_time_minutes NUMERIC(8, 2) NOT NULL DEFAULT 0,
-       run_time_minutes_per_unit NUMERIC(8, 2) NOT NULL DEFAULT 0,
-       wait_time_minutes NUMERIC(8, 2) NOT NULL DEFAULT 0,
-       move_time_minutes NUMERIC(8, 2) NOT NULL DEFAULT 0,
-       work_instructions_text TEXT,
-       UNIQUE (routing_id, sequence_number)
-   );
-   ```
-2. **Kalkulasi Total Lead Time Terotomasi**:
-   Sediakan fungsi backend yang menghitung proyeksi tanggal selesai (*Projected Completion Date*) berdasarkan ukuran pesanan produksi dan kalender kerja stasiun kerja (mengabaikan hari libur dan jam non-operasional).
-3. **Pemberlakuan Kaitan Komponen BOM ke Nomor Operasi**:
-   Saat mengeksekusi *Shop Floor Control*, operator hanya disajikan daftar komponen yang memiliki `operation_sequence_no` yang cocok dengan tahapan kerja yang sedang aktif di stasiun kerjanya.
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-043).
 
 ---
 

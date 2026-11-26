@@ -119,42 +119,7 @@ Dalam manufaktur berteknologi tinggi (seperti pembuatan Laptop Pro), pengujian m
 
 ## Naventra Consideration
 
-Untuk perancangan modul Manajemen Mutu Manufaktur pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Pemeriksaan Mutu Terintegrasi**:
-   ```sql
-   CREATE TABLE quality_inspection_orders (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       inspection_number VARCHAR(50) NOT NULL UNIQUE,
-       source_doc_type VARCHAR(50) NOT NULL, -- 'MANUFACTURING_ORDER', 'GOODS_RECEIPT'
-       source_doc_id UUID NOT NULL,
-       operation_id UUID REFERENCES routing_operations(id),
-       item_id UUID NOT NULL REFERENCES items(id),
-       lot_number VARCHAR(100),
-       serial_number VARCHAR(100),
-       inspected_quantity NUMERIC(15, 4) NOT NULL,
-       passed_quantity NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       failed_quantity NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       inspection_result VARCHAR(20) NOT NULL DEFAULT 'PENDING', -- 'PENDING', 'PASSED', 'FAILED'
-       inspector_user_id UUID REFERENCES users(id),
-       inspected_at TIMESTAMP WITH TIME ZONE,
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-
-   CREATE TABLE quality_inspection_parameters (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       inspection_order_id UUID NOT NULL REFERENCES quality_inspection_orders(id) ON DELETE CASCADE,
-       parameter_name VARCHAR(100) NOT NULL, -- Contoh: 'Tegangan Baterai (Volt)', 'Suhu CPU (C)'
-       specification_min NUMERIC(12, 4),
-       specification_max NUMERIC(12, 4),
-       actual_reading NUMERIC(12, 4),
-       is_passed BOOLEAN NOT NULL
-   );
-   ```
-2. **Quality Gate Hook pada Output Confirmation**:
-   Backend wajib menolak pemindahan status kuantitas ke `Available ATP` jika `quality_inspection_orders` yang ditautkan belum berstatus `PASSED`. Kuantitas yang gagal uji secara otomatis diarahkan ke tabel `inventory_balances` dengan status `quarantine_qty`.
-3. **Penyediaan Alur Otomasi Dokumen NCR**:
-   Saat `failed_quantity > 0`, sistem secara otomatis menerbitkan draft dokumen *Non-Conformance Report (NCR)* dan mengirimkan notifikasi ke tim *Quality Engineer* untuk segera menentukan keputusan disposisi (*Scrap* atau *Rework*).
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-041).
 
 ---
 

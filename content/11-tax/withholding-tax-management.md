@@ -190,16 +190,7 @@ Arsitektur modul Withholding Tax dalam ERP modern mencakup:
 
 ## Naventra Consideration
 
-Pada perancangan modul Withholding Tax di ERP Naventra, fitur-fitur berikut diimplementasikan:
-
-1. **Dual-Trigger Withholding Engine:**
-   Naventra mendukung konfigurasi saat pemotongan pajak:
-   - *Option A (Default Indonesia):* Terpotong saat pengakuan faktur tagihan (*Invoice Posting*).
-   - *Option B:* Terpotong saat eksekusi pembayaran kas (*Payment Settlement*).
-2. **Automated Gross-Up Calculator:**
-   Pada baris tagihan jasa vendor, disediakan sakelar (*toggle*) `Is Gross-Up`. Saat diaktifkan, sistem secara otomatis menghitung ulang nilai DPP dan PPh tanpa memerlukan perhitungan manual di luar sistem.
-3. **Bukti Potong Reconciliation Matrix:**
-   Naventra menyediakan tabel verifikasi bukti potong pelanggan (`customer_tax_withholding_slips`). Staf pajak dapat mencentang status verifikasi dokumen fisik sebelum kredit pajak diikutsertakan dalam rekonsiliasi SPT Tahunan PPh Badan.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-130).
 
 ---
 

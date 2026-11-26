@@ -185,14 +185,7 @@ Dalam arsitektur modular ERP, komponen fundamental PPN mencakup:
 
 ## Naventra Consideration
 
-Pada pengembangan ERP Naventra, modul PPN fundamental dirancang dengan prinsip keandalan berikut:
-
-1. **Otomatisasi Tax Point Trigger:**
-   Naventra secara otomatis mendeteksi apakah penerimaan uang muka (*Customer Advance Receipt*) terjadi sebelum pengiriman fisik (*Goods Delivery*). Jika uang muka diterima, sistem mewajibkan penerbitan Faktur Pajak Uang Muka pada tanggal penerimaan kas tersebut.
-2. **Pemisahan Tegas Akun Settlement:**
-   Naventra tidak mengizinkan pembayaran kas dialokasikan langsung ke akun `PPN Keluaran`. Seluruh transaksi pelunasan PPN ke kas negara wajib melalui akun kliring `Utang PPN Settlement` yang terbentuk dari proses penutupan masa pajak resmi.
-3. **Validasi Status PKP Internal dan Eksternal:**
-   Jika entitas internal perusahaan belum berstatus PKP, Naventra menonaktifkan pemungutan PPN Keluaran pada modul Sales secara otomatis guna mencegah penagihan pajak ilegal.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-127).
 
 ---
 

@@ -114,18 +114,7 @@ flowchart TD
 
 ## Naventra Consideration
 
-Untuk perancangan modul Picking dan Outbound Logistics pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Pemisahan Dokumen Perencanaan vs Eksekusi Fisik**:
-   * Tabel `delivery_orders`: Dokumen pengiriman komersial/legal ke pelanggan (merujuk `sales_order_id`, alamat tujuan, kurir, nomor resi).
-   * Tabel `picking_lists` dan `picking_tasks`: Dokumen kerja lantai gudang yang memuat daftar koordinat rak (`source_location_id`), kuantitas yang harus diambil, dan urutan rute jalan operator (*optimal walk path*).
-2. **Pemberlakuan Locking Kuantitas Saat Picking Berjalan**:
-   Saat `picking_task` diterbitkan, sistem memindahkan status kuantitas dari `reserved_qty` menjadi `allocated_qty` pada tabel `inventory_balances`. Hal ini mencegah staf gudang lain mengambil barang fisik yang sama untuk pesanan darurat yang berbeda.
-3. **Konfirmasi Pemindaian Barcode Dua Titik (Two-Point Verification)**:
-   Aplikasi mobile operator wajib mengharuskan dua pemindaian berurutan:
-   1. Pindai barcode rak/bin untuk memvalidasi operator berada di koordinat yang benar.
-   2. Pindai barcode produk/lot untuk memvalidasi barang yang diambil tidak keliru.
-4. **POD Image Attachment & Geo-Tagging**: Sediakan kapabilitas penyimpanan bukti foto tanda terima fisik (*Proof of Delivery*) dan koordinat GPS penerimaan saat barang diserahkan oleh armada internal perusahaan.
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-017).
 
 ---
 

@@ -147,36 +147,7 @@ Akun kredit bertindak sebagai akun kontra beban (*contra-expense*) yang menetral
 
 ## Naventra Consideration
 
-Untuk perancangan modul Shop Floor Execution pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Konfirmasi Operasi Kerja (Job Confirmations)**:
-   ```sql
-   CREATE TABLE mo_operation_confirmations (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       manufacturing_order_id UUID NOT NULL REFERENCES manufacturing_orders(id),
-       operation_id UUID NOT NULL REFERENCES routing_operations(id),
-       work_center_id UUID NOT NULL REFERENCES work_centers(id),
-       operator_user_id UUID NOT NULL REFERENCES users(id),
-       
-       start_time TIMESTAMP WITH TIME ZONE NOT NULL,
-       end_time TIMESTAMP WITH TIME ZONE NOT NULL,
-       setup_duration_minutes NUMERIC(8, 2) NOT NULL DEFAULT 0,
-       run_duration_minutes NUMERIC(8, 2) NOT NULL DEFAULT 0,
-       downtime_duration_minutes NUMERIC(8, 2) NOT NULL DEFAULT 0,
-       downtime_reason_code VARCHAR(50),
-       
-       good_quantity NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       scrapped_quantity NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       rework_quantity NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       
-       status VARCHAR(30) NOT NULL DEFAULT 'CONFIRMED',
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-   ```
-2. **Desain Antarmuka Touchscreen Tanpa Keyboard (Operator-Centric UI)**:
-   Rancang layar antarmuka *Shop Floor Terminal* berbasis tombol besar yang dapat ditekan menggunakan sarung tangan pabrik, dengan pemindaian barcode otomatis untuk nomor lencana dan nomor surat perintah kerja (*Single-Scan Authentication*).
-3. **Pemberlakuan Logika Validasi Urutan Operasi (Sequence Enforcer)**:
-   Backend wajib memvalidasi bahwa Operasi 20 dilarang mencatat kuantitas masuk melebihi kuantitas *Good Quantity* yang telah dikonfirmasi selesai oleh Operasi 10, guna mencegah anomali di mana stasiun kerja hilir menyelesaikan produk yang belum pernah dirakit oleh stasiun kerja hulu.
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-044).
 
 ---
 

@@ -131,42 +131,7 @@ flowchart LR
 
 ## Naventra Consideration
 
-Untuk perancangan modul BOM pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Relasional BOM Multi-Level Terindeks**:
-   ```sql
-   CREATE TABLE bill_of_materials (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       bom_number VARCHAR(50) NOT NULL UNIQUE,
-       parent_item_id UUID NOT NULL REFERENCES items(id),
-       bom_version VARCHAR(20) NOT NULL DEFAULT '1.0',
-       bom_type VARCHAR(30) NOT NULL DEFAULT 'MANUFACTURING', -- 'MANUFACTURING', 'PHANTOM', 'SUBCONTRACT'
-       quantity NUMERIC(15, 4) NOT NULL DEFAULT 1.0, -- Basis kuantitas induk
-       uom_id UUID NOT NULL REFERENCES uoms(id),
-       is_active BOOLEAN NOT NULL DEFAULT TRUE,
-       valid_from DATE NOT NULL,
-       valid_to DATE,
-       routing_id UUID REFERENCES routings(id),
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-       UNIQUE (parent_item_id, bom_version)
-   );
-
-   CREATE TABLE bill_of_material_lines (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       bom_id UUID NOT NULL REFERENCES bill_of_materials(id) ON DELETE CASCADE,
-       component_item_id UUID NOT NULL REFERENCES items(id),
-       quantity_per NUMERIC(15, 4) NOT NULL,
-       uom_id UUID NOT NULL REFERENCES uoms(id),
-       scrap_factor_pct NUMERIC(5, 2) NOT NULL DEFAULT 0.00,
-       is_phantom BOOLEAN NOT NULL DEFAULT FALSE,
-       operation_sequence_no INT, -- Ditautkan ke nomor operasi routing
-       line_position INT NOT NULL
-   );
-   ```
-2. **Pencegahan Struktur Sirkular (*Circular Reference Check*)**:
-   Backend wajib menerapkan fungsi validasi rekursif (menggunakan *Common Table Expression / CTE*) untuk mencegah pembuatan BOM yang merujuk dirinya sendiri secara langsung atau tidak langsung (misal: Item A membutuhkan Subassembly B, dan Subassembly B diatur membutuhkan Item A).
-3. **BOM Cost Roll-up Engine**:
-   Sediakan fungsi otomatis untuk menghitung ulang biaya bahan baku standar produk jadi: sistem menjumlahkan $(\text{unit\_cost} \times \text{quantity\_per} \times (1 + \text{scrap\_factor})) $ dari seluruh komponen anak secara berjenjang ke atas.
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-037).
 
 ---
 

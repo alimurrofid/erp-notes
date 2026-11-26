@@ -107,29 +107,7 @@ Di dalam ERP enterprise, pengelolaan persediaan dibagi menjadi dua lapisan fungs
 
 ## Naventra Consideration
 
-Untuk perancangan modul Persediaan pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Immutable Stock Ledger Table**: Desain tabel `stock_ledger_entries` sebagai tabel *append-only*:
-   ```sql
-   CREATE TABLE stock_ledger_entries (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       posting_date TIMESTAMP WITH TIME ZONE NOT NULL,
-       voucher_type VARCHAR(50) NOT NULL, -- 'GOODS_RECEIPT', 'DELIVERY_ORDER', 'ADJUSTMENT'
-       voucher_no VARCHAR(100) NOT NULL,
-       item_id UUID NOT NULL REFERENCES items(id),
-       warehouse_id UUID NOT NULL REFERENCES warehouses(id),
-       location_id UUID REFERENCES storage_locations(id),
-       batch_lot_number VARCHAR(100),
-       serial_number VARCHAR(100),
-       quantity_delta NUMERIC(15, 4) NOT NULL, -- Positif untuk Masuk, Negatif untuk Keluar
-       unit_cost NUMERIC(18, 4) NOT NULL,
-       total_value_delta NUMERIC(18, 4) NOT NULL,
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-   ```
-2. **Snapshot Caching untuk Performa Tinggi**: Untuk mencegah pemindaian jutaan baris `stock_ledger_entries` saat mengecek ketersediaan stok (*stock availability check*), sediakan tabel agregasi snapshot `inventory_balances` (`item_id`, `warehouse_id`, `on_hand_qty`, `reserved_qty`, `updated_at`). Setiap mutasi memperbarui tabel snapshot ini secara atomik di dalam satu *database transaction* (`BEGIN ... COMMIT`).
-3. **Pemberian ID Transaksi Unik & Idempotensi**: Setiap pergerakan persediaan wajib memiliki *idempotency key* berbasis nomor dokumen sumber untuk mencegah eksekusi ganda mutasi stok saat terjadi *retry* jaringan atau klik ganda oleh operator gudang.
-4. **Pencegahan Saldo Negatif**: Sediakan konfigurasi sistem `allow_negative_stock = FALSE` pada level perusahaan dan gudang untuk mencegah distorsi valuasi HPP dan anomali akuntansi persediaan.
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-015).
 
 ---
 

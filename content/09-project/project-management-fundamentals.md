@@ -226,11 +226,7 @@ Perbandingan kapabilitas dasar modul Project Management lintas sistem ERP enterp
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Project Management pada Naventra ERP:
-
-1. **Project as a First-Class Financial Dimension**: Di dalam arsitektur Naventra, entitas `project_id` diperlakukan sebagai dimensi global (*Global Financial Dimension*). Setiap tabel transaksi—mulai dari baris jurnal akuntansi (`journal_item`), baris pemesanan pembelian (`purchase_order_line`), mutasi stok (`stock_move`), hingga baris faktur (`invoice_line`)—memiliki kolom referensi `project_id` terindeks.
-2. **Strict Lifecycle State-Machine**: Naventra menerapkan transisi status proyek terprogram: `DRAFT` $\rightarrow$ `APPROVED` $\rightarrow$ `PLANNED` $\rightarrow$ `IN_PROGRESS` $\rightarrow$ `COMPLETED` $\rightarrow$ `CLOSED`. Transisi ke status berikutnya memvalidasi prasyarat dokumen (misal: transisi ke `IN_PROGRESS` memerlukan persetujuan pagu anggaran dan penunjukan Manajer Proyek).
-3. **Unified Commitment & Cost Aggregation Engine**: Naventra memelihara tabel ringkasan kinerja proyek `project_cost_summaries` yang mengakumulasikan nilai *Budget*, *Committed Cost*, *Actual Cost*, dan *Invoiced Amount* secara asinkron setiap kali terjadi transaksi terikat, memungkinkan dasbor proyek memuat status varian dalam hitungan milidetik.
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-084).
 
 ---
 

@@ -142,28 +142,7 @@ Berdasarkan prinsip **Theory of Constraints (TOC)**:
 
 ## Naventra Consideration
 
-Untuk perancangan modul Perencanaan Kapasitas pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Pembebanan Kapasitas Stasiun Kerja**:
-   ```sql
-   CREATE TABLE work_center_capacity_loads (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       work_center_id UUID NOT NULL REFERENCES work_centers(id),
-       calendar_date DATE NOT NULL,
-       total_available_hours NUMERIC(6, 2) NOT NULL,
-       allocated_setup_hours NUMERIC(6, 2) NOT NULL DEFAULT 0,
-       allocated_run_hours NUMERIC(6, 2) NOT NULL DEFAULT 0,
-       allocated_downtime_hours NUMERIC(6, 2) NOT NULL DEFAULT 0,
-       utilization_percentage NUMERIC(5, 2) GENERATED ALWAYS AS (
-           ((allocated_setup_hours + allocated_run_hours) / NULLIF(total_available_hours, 0)) * 100.0
-       ) STORED,
-       UNIQUE (work_center_id, calendar_date)
-   );
-   ```
-2. **Algoritma Finite Forward Scheduling pada Level Backend**:
-   Saat pesanan dijadwalkan, sistem memeriksa tabel `work_center_capacity_loads`. Jika `utilization_percentage >= 100%`, algoritma secara otomatis melompat ke tanggal hari kerja berikutnya (`calendar_date + 1`) hingga menemukan slot waktu luang yang mencukupi.
-3. **Pemberitahuan Peringatan Overload (Overload Warning Alerts)**:
-   Sediakan antarmuka grafik batang kapasitas (*Capacity Load Profile*) yang secara visual mewarnai tanggal stasiun kerja menjadi merah jika utilisasi melampaui 90%, membantu manajer pabrik mengambil keputusan pembukaan shift lembur secara proaktif.
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-029).
 
 ---
 

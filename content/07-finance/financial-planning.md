@@ -182,11 +182,7 @@ Perbandingan kapabilitas perencanaan finansial dan peramalan:
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Financial Planning & Forecasting pada Naventra ERP:
-
-1. **Snapshot-Based Versioning Engine**: Naventra menyimpan data rencana keuangan dalam struktur *multi-version cube* berlabel: `VERSION_TYPE` (Budget, Actual, Forecast), `VERSION_CODE` (v1.0, v2.0), dan status integritas data (`DRAFT`, `FROZEN`, `ARCHIVED`).
-2. **Bi-Directional Driver Calculation Pipeline**: Formula driver (misal: Unit $\times$ Price) dieksekusi secara asinkron melalui antrean *worker*. Perubahan pada satu parameter volume penjualan secara otomatis memicu pembaruan berantai pada proyeksi beban pokok persediaan dan estimasi saldo piutang dagang.
-3. **Visual What-If Interactive Sandbox**: Pengguna level manajerial dapat mengakses antarmuka *Simulation Sandbox* untuk menggeser *slider* parameter biaya dan pendapatan secara langsung pada layar dashboard guna melihat kurva dampak terhadap posisi laba dan kas tanpa mengubah data operasional riil perusahaan.
+Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-057).
 
 ---
 

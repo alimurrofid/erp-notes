@@ -181,11 +181,7 @@ Perbandingan kapabilitas modul timesheet proyek pada software ERP terkemuka:
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Timesheet & Effort Tracking pada Naventra ERP:
-
-1. **One-Click Mobile Timer & Weekly Grid**: Naventra menyediakan dua mode penginputan: (1) *Live Stopwatch Timer* pada aplikasi web/mobile yang dapat dinyalakan saat staf mulai bekerja pada suatu task, dan (2) *Weekly Timesheet Matrix* untuk penginputan cepat berbasis matriks hari $\times$ tugas.
-2. **Dual-Lock Approval Pipeline**: Sistem menerapkan pipa validasi otomatis: saat tombol *Submit* ditekan, mesin sistem memvalidasi batas maksimum jam kerja dan status keterbukaan periode GL. Manajer Proyek dapat menyetujui seluruh lembar kerja secara massal (*Bulk Approval*) atau menolak baris tertentu dengan menyertakan catatan koreksi.
-3. **Atomic Cost & Backlog Generation**: Persetujuan *timesheet* memicu transaksi basis data atomik yang secara simultan memperbarui tabel akumulasi biaya proyek `project_actual_costs` dan tabel penagihan piutang belum tertagih `project_unbilled_revenue`.
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-094).
 
 ---
 

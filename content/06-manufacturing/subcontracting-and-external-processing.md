@@ -117,38 +117,7 @@ Bagian Accounts Payable memverifikasi tagihan jasa maklon:
 
 ## Naventra Consideration
 
-Untuk perancangan modul Subcontracting pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Pesanan Maklon Terintegrasi**:
-   ```sql
-   CREATE TABLE subcontract_orders (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       order_number VARCHAR(50) NOT NULL UNIQUE,
-       vendor_id UUID NOT NULL REFERENCES partners(id),
-       finished_item_id UUID NOT NULL REFERENCES items(id),
-       ordered_quantity NUMERIC(15, 4) NOT NULL,
-       received_quantity NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       service_unit_price NUMERIC(18, 4) NOT NULL,
-       vendor_warehouse_id UUID NOT NULL REFERENCES warehouses(id), -- Gudang virtual vendor
-       status VARCHAR(30) NOT NULL DEFAULT 'DRAFT',
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-
-   CREATE TABLE subcontract_order_supplied_materials (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       subcontract_order_id UUID NOT NULL REFERENCES subcontract_orders(id) ON DELETE CASCADE,
-       component_item_id UUID NOT NULL REFERENCES items(id),
-       required_quantity NUMERIC(15, 4) NOT NULL,
-       transferred_quantity NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       consumed_quantity NUMERIC(15, 4) NOT NULL DEFAULT 0
-   );
-   ```
-2. **Otomasi Pemotongan Bahan Bersamaan dengan Penerimaan Jasa**:
-   Saat API penerimaan barang jadi (`POST /api/v1/subcontract-receipts/post`) dipanggil, backend wajib mengeksekusi dua mutasi stok secara atomik dalam satu transaksi:
-   1. Menambah kuantitas produk jadi di gudang utama.
-   2. Memotong kuantitas bahan baku dari `vendor_warehouse_id`.
-3. **Peringatan Defisit Bahan di Lokasi Vendor**:
-   Sistem harus memblokir validasi penerimaan barang jadi jika saldo fisik bahan baku yang telah ditransfer ke `vendor_warehouse_id` tidak mencukupi untuk memenuhi kuantitas backflush resep BOM.
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-045).
 
 ---
 

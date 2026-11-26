@@ -164,11 +164,7 @@ Perbandingan fungsional modul penurunan nilai aset tetap pada software ERP terke
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Asset Impairment pada Naventra ERP:
-
-1. **Impairment Test Workbench**: Naventra menyediakan antarmuka kerja analitik yang memandu Controller: memilih aset/CGU, menginput nilai FVLCOD dan estimasi arus kas DCF untuk menghitung VIU secara otomatis, serta menampilkan rekomendasi nilai penurunan nilai.
-2. **Ceiling-Enforced Reversal Engine**: Saat pembalikan penurunan nilai diinisiasi, sistem Naventra menghitung secara dinamis batas atas nilai buku historis tanpa penurunan nilai (*Theoretical Unimpaired Carrying Amount*). Sistem secara otomatis menolak nilai pembalikan yang melampaui batas tersebut.
-3. **Automated Subledger-to-Schedule Hook**: Pengesahan dokumen penurunan nilai secara seketika memperbarui field `current_carrying_amount` pada tabel master aset dan secara otomatis meregenerasi sisa baris jadwal penyusutan di masa depan.
+Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-067).
 
 ---
 

@@ -174,11 +174,7 @@ Perbandingan kapabilitas mesin penyusutan aset tetap lintas software ERP:
 
 ## Naventra Consideration
 
-Rancangan arsitektur mesin Depreciation Management pada Naventra ERP:
-
-1. **Pre-Computed Schedule Table**: Naventra membentuk tabel terindeks `asset_depreciation_schedules` berisi baris rencana penyusutan untuk setiap bulan sejak hari pertama aset dikapitalisasi. Baris memiliki status `SCHEDULED`, `POSTED`, atau `CANCELLED`.
-2. **Idempotent Background Worker**: Eksekusi penyusutan bulanan massal dijalankan oleh pekerja latar belakang (*worker job*). Pekerja mengevaluasi jadwal berstatus `SCHEDULED` yang jatuh tempo pada periode tersebut dan memposting jurnal GL secara atomik. Jika proses gagal di tengah jalan, sistem dapat dilanjutkan kembali tanpa menduplikasi baris yang telah berstatus `POSTED`.
-3. **Prospective Recalculation Engine**: Ketika pengguna berwenang menyimpan perubahan masa manfaat atau nilai sisa, mesin Naventra menghapus baris jadwal masa depan yang masih berstatus `SCHEDULED`, menghitung ulang dasar tersusutkan baru dari NBV saat ini, dan menghasilkan baris jadwal baru dalam satu transaksi basis data.
+Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-074).
 
 ---
 

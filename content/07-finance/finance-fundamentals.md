@@ -117,23 +117,7 @@ Modul Finance di dalam ERP enterprise mengintegrasikan serangkaian kapabilitas t
 
 ## Naventra Consideration
 
-Untuk perancangan modul Finance pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Pemisahan Domain Model Finansial dari Jurnal Umum (GL)**:
-   Meskipun transaksi keuangan bermuara pada pencatatan debit/kredit di buku besar, rancang entitas operasional keuangan (`payment_proposals`, `bank_accounts`, `budget_allocations`, `cash_positions`) sebagai lapisan layanan terpisah (*Finance Service*). Hal ini memungkinkan tim perbendaharaan mengelola draf pembayaran dan simulasi arus kas tanpa mengotori buku besar akuntansi dengan transaksi yang belum definitif.
-2. **Arsitektur Kontrol Komitmen Anggaran Terdistribusi**:
-   Terapkan mekanisme pemeriksaan anggaran (*Budget Validation Hook*) pada saat pembuatan dokumen hulu:
-   ```sql
-   -- Logika validasi komitmen anggaran sebelum rilis PO
-   IF (v_actual_spend + v_committed_spend + new_order_amount) > v_budget_limit THEN
-       IF v_enforcement_type = 'STRICT_BLOCK' THEN
-           RAISE EXCEPTION 'Pengeluaran sebesar % melebihi sisa anggaran tersedia (%) untuk departemen %',
-               new_order_amount, (v_budget_limit - v_actual_spend - v_committed_spend), v_department_code;
-       END IF;
-   END IF;
-   ```
-3. **Pemberlakuan Audit Trail Immutability pada Transaksi Kas**:
-   Seluruh catatan pengeluaran kas dan persetujuan transfer perbankan wajib menerapkan prinsip pencatatan permanen (*append-only ledger*) dengan tanda tangan digital otorisator untuk memenuhi standar audit kepatuhan internal dan eksternal.
+Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-051).
 
 ---
 

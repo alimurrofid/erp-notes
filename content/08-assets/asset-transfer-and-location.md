@@ -160,11 +160,7 @@ Perbandingan kapabilitas pengelolaan mutasi dan pelacakan lokasi aset lintas pla
 
 ## Naventra Consideration
 
-Rancangan arsitektur Asset Transfer pada Naventra ERP:
-
-1. **Transactional Asset Movement Document**: Naventra tidak mengizinkan pengubahan langsung field lokasi atau penanggung jawab pada layar master data. Seluruh mutasi wajib melalui dokumen transaksi `asset_transfer_order` yang mencatat alasan bisnis, pengirim, penerima, dan tanda tangan digital BAST.
-2. **Time-Slice Interval Engine**: Tabel master aset Naventra memelihara tabel relasional berdimensi waktu `asset_assignments` (`cost_center_id`, `custodian_id`, `valid_from`, `valid_to`). Saat mutasi terjadi, sistem otomatis menutup tanggal interval lama (*closes the time slice*) dan membuka interval baru tanpa menghapus jejak histori.
-3. **Automated Intercompany Mirroring**: Saat transfer antar-perusahaan disahkan, modul Naventra mengeksekusi *Dual-Ledger Posting Engine* yang secara atomik memposting jurnal pelepasan di entitas pengirim dan jurnal perolehan di entitas penerima secara tersinkronisasi.
+Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-072).
 
 ---
 

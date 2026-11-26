@@ -165,11 +165,7 @@ Perbandingan kapabilitas pengelolaan struktur WBS lintas sistem ERP:
 
 ## Naventra Consideration
 
-Rancangan arsitektur struktur WBS pada Naventra ERP:
-
-1. **Adjacency-List with Materialized Path**: Tabel `project_wbs_nodes` pada Naventra menggunakan kombinasi model relasional *Adjacency List* (`parent_id`) dan *Materialized Path* (`path = 'PRJ-001/PRJ-001.2/PRJ-001.2.1'`). Struktur ini memungkinkan kueri pohon WBS dan kalkulasi akumulasi biaya seluruh anak cabang dieksekusi dalam satu kueri SQL cepat tanpa perulangan komputasi yang berat.
-2. **Decoupled Financial WBS & Operational Task**: Naventra memisahkan node pengumpul biaya (*WBS Element*) dari unit kerja personal (*Operational Task*). Satu node WBS dapat menaungi puluhan tugas teknis harian tanpa mengotori laporan keuangan manajerial dengan baris tugas mikro.
-3. **Automated Budget Ceiling Gatekeeper**: Saat pengguna menginput perubahan anggaran pada suatu sub-elemen WBS, sistem Naventra mengeksekusi *validation trigger* yang memastikan jumlah alokasi anak cabang tidak melanggar batas plafon node induk di atasnya.
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-092).
 
 ---
 

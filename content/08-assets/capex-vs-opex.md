@@ -143,11 +143,7 @@ Perbandingan tata kelola pemisahan CAPEX dan OPEX lintas sistem ERP:
 
 ## Naventra Consideration
 
-Rancangan arsitektur pemisahan CAPEX dan OPEX pada Naventra ERP:
-
-1. **Intelligent Requisition Routing Wizard**: Saat staf teknis membuat permintaan pengadaan (*Purchase Requisition*) terkait aset, Naventra menyajikan *Decision Tree Wizard* interaktif yang menanyakan tujuan teknis pengeluaran (apakah servis berkala atau peningkatan kapasitas). Sistem secara otomatis merekomendasikan kode akun dan rute alur persetujuan yang sesuai.
-2. **Automated Threshold Validation Hook**: Naventra memeriksa nilai pengeluaran terhadap batas `capitalization_threshold` pada kelas aset terkait secara *real-time*. Pengajuan CAPEX di bawah batas ambang akan ditandai dengan peringatan (*Warning Flag*) dan memerlukan dispensasi tertulis Financial Controller.
-3. **Seamless Asset Addition Ledger**: Ketika tagihan peningkatan aset disetujui, Naventra memposting penambahan nilai ke tabel `asset_value_adjustments` yang secara atomik merevisi dasar penyusutan aset induk tanpa perlu membuat ulang data master dari awal.
+Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-073).
 
 ---
 

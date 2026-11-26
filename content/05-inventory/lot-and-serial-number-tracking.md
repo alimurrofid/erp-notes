@@ -100,38 +100,7 @@ flowchart LR
 
 ## Naventra Consideration
 
-Untuk perancangan modul Lot dan Serial Number pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Relasional Terpisah**:
-   ```sql
-   CREATE TABLE item_lots (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       item_id UUID NOT NULL REFERENCES items(id),
-       lot_number VARCHAR(100) NOT NULL,
-       manufacturing_date DATE,
-       expiration_date DATE,
-       removal_date DATE, -- Tanggal mulai ditarik dari rak
-       status VARCHAR(30) NOT NULL DEFAULT 'ACTIVE', -- 'ACTIVE', 'QUARANTINE', 'EXPIRED'
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-       UNIQUE (item_id, lot_number)
-   );
-
-   CREATE TABLE item_serials (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       item_id UUID NOT NULL REFERENCES items(id),
-       serial_number VARCHAR(100) NOT NULL UNIQUE,
-       lot_id UUID REFERENCES item_lots(id), -- Opsional: Serial number dari lot tertentu
-       current_warehouse_id UUID REFERENCES warehouses(id),
-       current_location_id UUID REFERENCES storage_locations(id),
-       status VARCHAR(30) NOT NULL DEFAULT 'IN_STOCK', -- 'IN_STOCK', 'DELIVERED', 'SCRAPPED', 'RETURNED'
-       warranty_start_date DATE,
-       warranty_end_date DATE,
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-   ```
-2. **Enforcement Mutlak pada Layer Mutasi Stok**:
-   Jika sebuah SKU memiliki atribut `tracking_policy = 'SERIAL'`, maka seluruh API mutasi persediaan (`/api/v1/goods-receipts/post`, `/api/v1/deliveries/post`) wajib memvalidasi bahwa jumlah elemen array `serial_numbers` yang dikirimkan **harus tepat sama dengan kuantitas transaksi**, dan setiap nomor seri belum pernah aktif sebelumnya di gudang (mencegah duplikasi).
-3. **Pohon Genealogi Berbasis Relasi Atomik**: Sediakan tabel relasi `production_genealogy` (`parent_serial_id`, `child_serial_id`, `child_lot_id`, `work_order_id`) untuk merekam jejak perakitan komponen ke dalam produk jadi secara permanen.
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-023).
 
 ---
 

@@ -160,11 +160,7 @@ Perbandingan kapabilitas rekonsiliasi operasional lintas platform:
 
 ## Naventra Consideration
 
-Rancangan arsitektur mesin rekonsiliasi bank pada Naventra ERP:
-
-1. **Deterministic Multi-Stage Match Pipeline**: Naventra mengeksekusi pencocokan dalam pipa berurutan: (1) UUID / Payment Hash Match $\rightarrow$ (2) Virtual Account Match $\rightarrow$ (3) Document & Amount Match $\rightarrow$ (4) Tolerance Fuzzy Match. Setiap tahap mencatat kode algoritma pemenang (*match algorithm stamp*) untuk kemudahan audit forensik.
-2. **Dynamic Exception Workbench**: Antarmuka rekonsiliasi Naventra mengelompokkan item yang belum cocok ke dalam tab prioritas: *Missing Payment Document*, *Difference in Bank Fee*, dan *Duplicate Suspicion*, lengkap dengan *Action Button* satu-klik untuk membuat jurnal penyesuaian biaya bank atau memo kredit selisih kurs.
-3. **Automated Stale-Check Escalation**: Naventra menyediakan daemon terjadwal yang otomatis menandai cek gantung yang telah melampaui umur 60 hari dan mengirimkan pengingat kepada Treasury Officer untuk segera menghubungi supplier penerima.
+Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-047).
 
 ---
 

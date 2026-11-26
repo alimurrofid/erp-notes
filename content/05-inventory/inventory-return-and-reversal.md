@@ -115,40 +115,7 @@ flowchart TD
 
 ## Naventra Consideration
 
-Untuk perancangan modul Retur Persediaan pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database RMA dan RTV Berbasis Status Disposisi**:
-   ```sql
-   CREATE TABLE inventory_returns (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       return_number VARCHAR(50) NOT NULL UNIQUE,
-       return_type VARCHAR(20) NOT NULL, -- 'CUSTOMER_RETURN_RMA', 'VENDOR_RETURN_RTV'
-       reference_document_type VARCHAR(50) NOT NULL, -- 'DELIVERY_ORDER', 'GOODS_RECEIPT'
-       reference_document_id UUID NOT NULL,
-       partner_id UUID NOT NULL, -- Customer ID atau Vendor ID
-       warehouse_id UUID NOT NULL REFERENCES warehouses(id),
-       status VARCHAR(30) NOT NULL DEFAULT 'RECEIVED_AT_DOCK',
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-
-   CREATE TABLE inventory_return_lines (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       return_id UUID NOT NULL REFERENCES inventory_returns(id),
-       item_id UUID NOT NULL REFERENCES items(id),
-       batch_number VARCHAR(100),
-       serial_number VARCHAR(100),
-       returned_qty NUMERIC(15, 4) NOT NULL,
-       disposition_code VARCHAR(50) NOT NULL, -- 'RESTOCK', 'REWORK', 'SCRAP', 'RETURN_TO_VENDOR'
-       target_storage_location_id UUID REFERENCES storage_locations(id),
-       unit_cost NUMERIC(18, 4) NOT NULL,
-       notes TEXT
-   );
-   ```
-2. **Karantina Default untuk Retur Pelanggan**:
-   Backend wajib secara otomatis menetapkan `target_storage_location_id` ke zona *QC Quarantine* pada saat RMA dibuat. Sistem harus memblokir pengalihan langsung ke rak barang jadi (*Finished Goods*) sebelum staf QC mengunggah lembar hasil inspeksi teknis (*Inspection Form*).
-3. **Validasi Kuantitas Maksimal Retur**:
-   Sistem harus memvalidasi bahwa total kuantitas yang diretur tidak boleh melebihi sisa kuantitas bersih yang pernah dikirim pada dokumen pengiriman asalnya:
-   $$\sum \text{Kuantitas Retur} \le \text{Kuantitas Terkirim Dokumen Asal} - \sum \text{Retur Sebelumnya}$$
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-020).
 
 ---
 

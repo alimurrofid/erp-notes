@@ -153,11 +153,7 @@ Perbandingan kapabilitas pengelolaan dasar aset tetap lintas platform ERP:
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Fixed Assets pada Naventra ERP:
-
-1. **Clean Domain Separation**: Naventra memisahkan entitas aset menjadi dua lapis yang terkoordinasi: `AssetRegistry` (mengelola atribut fisik, lokasi, serial number, spesifikasi, dan *custodian*) dan `AssetBookLedger` (mengelola nilai buku, riwayat kapitalisasi, metode penyusutan, dan integrasi jurnal GL).
-2. **Deterministic Lifecycle States**: Status siklus hidup aset diatur melalui mesin status (*State Machine*) yang ketat: `PLANNED` $\rightarrow$ `ACQUIRED` $\rightarrow$ `CAPITALIZED` $\rightarrow$ `IN_SERVICE` $\rightarrow$ `DISPOSED`. Transisi status hanya dapat dipicu oleh dokumen transaksi bisnis yang valid.
-3. **Automated Split for Multi-Book Rules**: Naventra secara native mendukung konfigurasi *Commercial Book* (basis IFRS) dan *Tax Book* (basis UU Pajak Penghasilan Indonesia) sejak master aset pertama kali dibuat, memastikan perhitungan beban penyusutan komersial dan koreksi fiskal dapat diekstraksi tanpa duplikasi input data.
+Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-075).
 
 ---
 

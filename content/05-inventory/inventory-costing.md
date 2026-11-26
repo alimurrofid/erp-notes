@@ -166,27 +166,7 @@ Jika perusahaan menerapkan **Standard Costing** (misal untuk perakitan laptop di
 
 ## Naventra Consideration
 
-Untuk perancangan modul Costing Engine pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Pemisahan Tabel Cost Layer (Khusus Metode FIFO)**:
-   ```sql
-   CREATE TABLE inventory_cost_layers (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       item_id UUID NOT NULL REFERENCES items(id),
-       warehouse_id UUID NOT NULL REFERENCES warehouses(id),
-       goods_receipt_line_id UUID REFERENCES goods_receipt_lines(id),
-       original_quantity NUMERIC(15, 4) NOT NULL,
-       remaining_quantity NUMERIC(15, 4) NOT NULL,
-       unit_cost NUMERIC(18, 4) NOT NULL,
-       layer_date TIMESTAMP WITH TIME ZONE NOT NULL,
-       is_exhausted BOOLEAN NOT NULL DEFAULT FALSE
-   );
-   ```
-2. **Cost Engine Service yang Terisolasi**: Rancang perhitungan COGS sebagai modul layanan independen (*Costing Service*). Saat terjadi mutasi keluar:
-   * Jika metode FIFO: Ambil baris `inventory_cost_layers` tertua yang `is_exhausted = FALSE`, potong `remaining_quantity`, dan hitung jumlah biaya kumulatif.
-   * Jika metode Moving Average: Ambil `current_moving_avg_cost` dari tabel `inventory_balances` dan kalikan dengan kuantitas keluar.
-3. **Pemberlakuan Kunci Concurrency Saat Re-Averaging**:
-   Saat memposting penerimaan barang baru dengan harga berbeda pada metode Moving Average, lakukan *Row-Level Locking* pada tabel saldo barang untuk memastikan tidak ada pengeluaran barang yang terjadi bersamaan saat biaya rata-rata sedang dihitung ulang.
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-014).
 
 ---
 

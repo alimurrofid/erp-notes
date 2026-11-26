@@ -169,11 +169,7 @@ Perbandingan fungsional modul Working Capital Management pada berbagai sistem ER
 
 ## Naventra Consideration
 
-Rancangan arsitektur Working Capital Management pada Naventra ERP:
-
-1. **Holistic CCC Command Center**: Naventra menyatukan metrik DSO, DIO, dan DPO ke dalam satu layar eksekutif terpadu (*Working Capital Cockpit*). Setiap metrik dapat di-klik (*drill-down*) secara langsung hingga ke daftar faktur AR yang terlambat dibayar, daftar item gudang yang tidak bergerak, atau tagihan AP yang dapat dinegosiasikan.
-2. **Automated Pre-Delivery Credit Check**: Sebelum gudang mencetak dokumen pengeluaran barang (*Delivery Order Pick Slip*), sistem memvalidasi sisa limit kredit pelanggan secara atomik. Jika pelanggan memiliki faktur macet melampaui toleransi, pesanan otomatis berstatus `CREDIT_HOLD`.
-3. **Vendor Term Optimization Engine**: Naventra menyediakan rekomendasi pintar (*Payment Timing Advisor*) yang memberi tahu staf keuangan waktu paling menguntungkan untuk membayar tagihan: apakah memanfaatkan diskon tunai awal atau menahan dana hingga hari jatuh tempo terakhir.
+Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-061).
 
 ---
 

@@ -121,38 +121,7 @@ Tabel berikut mengilustrasikan kisi-kisi kalkulasi MPS standar untuk produk jadi
 
 ## Naventra Consideration
 
-Untuk perancangan modul Production Planning pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Perencanaan MPS**:
-   ```sql
-   CREATE TABLE master_production_schedules (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       plan_code VARCHAR(50) NOT NULL UNIQUE,
-       planning_horizon_start DATE NOT NULL,
-       planning_horizon_end DATE NOT NULL,
-       bucket_type VARCHAR(20) NOT NULL DEFAULT 'WEEKLY', -- 'DAILY', 'WEEKLY', 'MONTHLY'
-       status VARCHAR(30) NOT NULL DEFAULT 'ACTIVE',
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-
-   CREATE TABLE mps_line_items (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       schedule_id UUID NOT NULL REFERENCES master_production_schedules(id) ON DELETE CASCADE,
-       product_id UUID NOT NULL REFERENCES items(id),
-       warehouse_id UUID NOT NULL REFERENCES warehouses(id),
-       time_bucket_date DATE NOT NULL,
-       forecast_quantity NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       sales_order_quantity NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       projected_available_balance NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       mps_planned_receipt_qty NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       mps_planned_start_qty NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       is_firmed BOOLEAN NOT NULL DEFAULT FALSE
-   );
-   ```
-2. **Kalkulasi Latar Belakang Asinkron (*Background Planning Engine*)**:
-   Komputasi MPS dan perataan permintaan melibatkan ribuan baris data. Jalankan perhitungan pada *background worker* terpisah dan simpan hasilnya pada tabel `mps_line_items`, sehingga antarmuka pengguna dapat menampilkan kisi-kisi perencanaan (*planning matrix*) secara instan tanpa membebani thread transaksi utama.
-3. **Mekanisme Firming Transaksional**:
-   Sediakan tombol *Firm Order* pada kisi MPS yang secara atomik mengunci baris rencana (`is_firmed = TRUE`) dan mengubahnya menjadi draf pesanan resmi pada tabel `manufacturing_orders`.
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-040).
 
 ---
 

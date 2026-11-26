@@ -168,16 +168,7 @@ Sistem ERP modern menyediakan modul otomatisasi rekonsiliasi:
 
 ## Naventra Consideration
 
-Pada pengembangan ERP Naventra, fitur rekonsiliasi dan pelaporan SPT Masa dirancang dengan kendali otomatisasi tinggi:
-
-1. **Integrated 3-Way Reconciliation Screen:**
-   Naventra menyediakan dasbor visual yang menampilkan perbandingan sisi berdampingan (*side-by-side comparison*) antara Subledger AR/AP, Akun Buku Besar Pajak, dan Register e-Faktur. Selisih numerik ditampilkan dengan penanda warna merah dan dapat ditelusuri langsung ke dokumen sumber.
-2. **Two-Stage Period Locking Mechanism:**
-   Naventra menerapkan penguncian dua tahap:
-   - *Soft Lock:* Mengunci entri data bagi staf operasional saat proses rekonsiliasi dimulai oleh tim perpajakan.
-   - *Hard Lock:* Mengunci seluruh dokumen secara permanen setelah nomor Bukti Penerimaan Elektronik (BPE) dan Nomor Transaksi Penerimaan Negara (NTPN) diinput ke dalam sistem.
-3. **Automated SPT Pembetulan Tracking:**
-   Ketika koreksi transaksi masa lampau disetujui, Naventra secara otomatis membuat draf *Tax Return Amendment* (SPT Pembetulan) dengan menghitung nilai inkremental kurang bayar beserta potensi sanksi bunga administrasi.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-128).
 
 ---
 

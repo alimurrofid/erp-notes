@@ -159,14 +159,7 @@ Dalam ERP modern, modul Corporate Income Tax beroperasi dengan fungsionalitas:
 
 ## Naventra Consideration
 
-Pada rancangan sistem ERP Naventra, pengelolaan PPh Badan diimplementasikan melalui pendekatan modern:
-
-1. **Transaction-Level Tax Tagging:**
-   Setiap pembuatan akun beban pada Chart of Accounts dilengkapi atribut default `fiscal_treatment` (`FULLY_DEDUCTIBLE`, `NON_DEDUCTIBLE_PERMANENT`, `NON_DEDUCTIBLE_TEMPORARY`). Saat jurnal dibukukan, tag ini otomatis melekat pada baris transaksi.
-2. **Dedicated Fiscal Adjustment Worksheet:**
-   Naventra menyediakan modul kertas kerja rekonsiliasi fiskal virtual yang memungkinkan penyesuaian koreksi fiskal akhir tahun tanpa harus memposting jurnal balik ke buku besar komersial.
-3. **Integrated Tax Asset Depreciation Schedule:**
-   Naventra secara otomatis mengelola dua jadwal depresiasi untuk setiap aktiva tetap: jadwal depresiasi komersial dan jadwal depresiasi fiskal sesuai kelompok tarif pajak Indonesia, menghasilkan perhitungan beda temporer secara instan.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-114).
 
 ---
 

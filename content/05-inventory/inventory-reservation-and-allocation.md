@@ -124,47 +124,7 @@ Mencadangkan stok tanpa batas waktu dapat membahayakan perputaran modal kerja pe
 
 ## Naventra Consideration
 
-Untuk perancangan modul Reservasi dan Alokasi pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Tabel Reservasi Khusus (Reservation Ledger)**:
-   ```sql
-   CREATE TABLE inventory_reservations (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       demand_document_type VARCHAR(50) NOT NULL, -- 'SALES_ORDER', 'WORK_ORDER', 'TRANSFER_ORDER'
-       demand_document_id UUID NOT NULL,
-       demand_line_id UUID NOT NULL,
-       item_id UUID NOT NULL REFERENCES items(id),
-       warehouse_id UUID NOT NULL REFERENCES warehouses(id),
-       
-       -- Spesifikasi Alokasi (NULL jika Soft Reservation)
-       storage_location_id UUID REFERENCES storage_locations(id),
-       batch_number VARCHAR(100),
-       serial_number VARCHAR(100),
-       
-       reserved_quantity NUMERIC(15, 4) NOT NULL,
-       allocated_quantity NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       is_hard_allocated BOOLEAN NOT NULL DEFAULT FALSE,
-       
-       expires_at TIMESTAMP WITH TIME ZONE,
-       status VARCHAR(30) NOT NULL DEFAULT 'ACTIVE', -- 'ACTIVE', 'FULFILLED', 'RELEASED', 'EXPIRED'
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-   ```
-2. **Atomic Check-and-Reserve Function**:
-   Terapkan fungsi *stored procedure* dengan transaksi berkunci untuk menjamin kuantitas tersedia mencukupi sebelum reservasi disetujui:
-   ```sql
-   -- Menggunakan transactional lock pada tabel balance
-   PERFORM on_hand_qty, reserved_qty 
-   FROM inventory_balances 
-   WHERE item_id = p_item_id AND warehouse_id = p_warehouse_id 
-   FOR UPDATE;
-   
-   IF (v_on_hand - v_reserved) < p_requested_qty THEN
-       RAISE EXCEPTION 'Kuantitas persediaan bebas tidak mencukupi untuk melakukan reservasi.';
-   END IF;
-   ```
-3. **Daemon Worker untuk Auto-Expire**:
-   Jalankan background worker berkala (misal: setiap 15 menit) untuk memindai baris reservasi berstatus `ACTIVE` dengan `expires_at < NOW()`, lalu ubah statusnya menjadi `EXPIRED` dan pulihkan saldo `available_qty` pada tabel ringkasan persediaan.
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-019).
 
 ---
 

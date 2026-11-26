@@ -143,40 +143,7 @@ Jika setelah penghitungan ulang independen (*recount*) dan investigasi tuntas se
 
 ## Naventra Consideration
 
-Untuk perancangan modul Penghitungan Fisik pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Dokumen Stock Opname**:
-   ```sql
-   CREATE TABLE stock_opname_sessions (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       session_number VARCHAR(50) NOT NULL UNIQUE,
-       warehouse_id UUID NOT NULL REFERENCES warehouses(id),
-       count_type VARCHAR(30) NOT NULL, -- 'FULL_COUNT', 'CYCLE_COUNT_ABC', 'SPOT_CHECK'
-       is_blind_count BOOLEAN NOT NULL DEFAULT TRUE,
-       freeze_stock BOOLEAN NOT NULL DEFAULT FALSE,
-       snapshot_timestamp TIMESTAMP WITH TIME ZONE NOT NULL,
-       status VARCHAR(30) NOT NULL DEFAULT 'IN_PROGRESS', -- 'DRAFT', 'IN_PROGRESS', 'RECOUNT_REQUIRED', 'APPROVED', 'POSTED'
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-
-   CREATE TABLE stock_opname_lines (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       session_id UUID NOT NULL REFERENCES stock_opname_sessions(id),
-       item_id UUID NOT NULL REFERENCES items(id),
-       storage_location_id UUID REFERENCES storage_locations(id),
-       batch_number VARCHAR(100),
-       serial_number VARCHAR(100),
-       system_snapshot_qty NUMERIC(15, 4) NOT NULL, -- Dibekukan saat sesi dimulai
-       counted_qty NUMERIC(15, 4), -- Input dari tim pencacah lapangan
-       recounted_qty NUMERIC(15, 4), -- Input pencacahan ulang jika ada varians
-       variance_qty NUMERIC(15, 4) GENERATED ALWAYS AS (COALESCE(recounted_qty, counted_qty) - system_snapshot_qty) STORED,
-       investigation_notes TEXT
-   );
-   ```
-2. **Prinsip Snapshot Beku (System Snapshot Lock)**:
-   Saat sesi dimulai, sistem wajib membekukan saldo buku sistem (`system_snapshot_qty`) pada detik tersebut. Jika selama proses penghitungan fisik berlangsung masih ada mutasi pengiriman darurat, varians dihitung secara independen terhadap saldo beku tersebut dengan memperhitungkan log mutasi transaksi yang terjadi pasca-snapshot.
-3. **Pemicu Recount Otomatis Berbasis Toleransi**:
-   Backend secara otomatis menandai baris yang memiliki nilai deviasi moneter $|\text{variance\_qty} \times \text{unit\_cost}| > \text{Threshold}$ (misal: selisih $> \text{Rp}500.000$) untuk mewajibkan verifikasi hitung ulang (*Recount Required*) oleh staf pengawas independen sebelum tombol persetujuan dapat diakses.
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-024).
 
 ---
 

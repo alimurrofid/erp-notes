@@ -175,14 +175,7 @@ Perbandingan struktur dan pengelolaan master data aset tetap lintas software ERP
 
 ## Naventra Consideration
 
-Rancangan arsitektur data master aset tetap pada Naventra ERP:
-
-1. **Entity-Component-Value Architecture**: Naventra membagi data aset menjadi tiga tabel relasional normal:
-   - `asset_core`: Menyimpan identitas legal, nama, kelas aset, dan status siklus hidup.
-   - `asset_physical`: Menyimpan lokasi fisik, geolokasi, penanggung jawab (*custodian*), nomor seri sasis, dan tanggal garansi.
-   - `asset_valuation_book`: Menyimpan parameter buku komersial dan fiskal, harga perolehan, estimasi residu, dan masa manfaat secara multi-baris.
-2. **Strict Change Control with Approval Workflow**: Modifikasi pada atribut finansial (seperti perubahan masa manfaat atau nilai sisa) memerlukan tiket persetujuan (*Change Request*) yang disahkan oleh Financial Controller sebelum diterapkan pada jadwal penyusutan aktif.
-3. **Immutable Audit Trail on Custody Movement**: Setiap kali field *Custodian* atau *Location* diperbarui, Naventra secara otomatis menyisipkan rekaman ke tabel `asset_custody_history` lengkap dengan stempel waktu dan ID dokumen mutasi pendukung.
+Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-069).
 
 ---
 

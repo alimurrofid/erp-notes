@@ -177,11 +177,7 @@ Perbandingan fungsional modul perencanaan jadwal proyek lintas software ERP ente
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Planning & Scheduling pada Naventra ERP:
-
-1. **Topological Sort Scheduling Engine**: Penjadwalan Naventra dieksekusi oleh mesin algoritma graf terarah (*Directed Acyclic Graph - DAG*) yang menerapkan algoritma *Topological Sort* dan *Critical Path Method*. Sistem menghitung tanggal awal tercepat, tanggal akhir terlambat, dan total float untuk ribuan tugas dalam hitungan detik.
-2. **Immutable Baseline Snapshotting**: Naventra menyimpan rekaman snapshot jadwal ke dalam tabel `project_schedule_baselines` setiap kali proyek beralih status ke `IN_PROGRESS`. Dasbor Gantt Chart menyajikan tampilan dua lapis (*Dual-Bar Gantt*): bilah abu-abu untuk jadwal rencana awal (*Baseline*) dan bilah biru/merah untuk jadwal realisasi berjalan (*Current Schedule*).
-3. **Conflict Detection Webhook**: Jika pengubahan jadwal pada suatu tugas berdampak pada pergeseran tanggal penagihan milestone atau tanggal ketersediaan material gudang, Naventra memicu *event webhook* yang memperingatkan manajer pengadaan dan akuntan proyek secara *real-time*.
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-087).
 
 ---
 

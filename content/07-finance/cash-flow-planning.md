@@ -167,11 +167,7 @@ Perbandingan fungsional modul Cash Flow Planning lintas sistem:
 
 ## Naventra Consideration
 
-Rancangan arsitektur mesin Cash Flow Planning pada Naventra ERP:
-
-1. **Dynamic Cash Ladder Grid**: Antarmuka visual Naventra menyajikan *13-Week Rolling Cash Ladder* interaktif dengan kemampuan *drag-and-drop* penggeseran tanggal pembayaran tagihan untuk melihat simulasi dampak saldo akhir kas secara *real-time*.
-2. **Machine-Learning Behavioral Due Date**: Sistem tidak hanya membaca tanggal *Due Date* statis pada faktur penjualan, melainkan menghitung *Predicted Collection Date* berdasarkan algoritma perilaku historis pembayaran masing-masing pelanggan (apakah pelanggan memiliki kebiasaan membayar tepat waktu, telat 7 hari, atau selalu menunggu batas akhir bulan).
-3. **Threshold Breaching Webhook**: Jika proyeksi saldo kas pada hari kerja mana pun di masa depan diestimasi melanggar batas *Minimum Cash Policy*, Naventra secara otomatis memicu peringatan kritis via dashboard CFO dan mengirim notifikasi email ke komite likuiditas perusahaan.
+Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-049).
 
 ---
 

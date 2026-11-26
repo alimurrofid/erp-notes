@@ -159,17 +159,7 @@ Pelanggan meminta koreksi karena terdapat penyesuaian spesifikasi perangkat yang
 
 ## Naventra Consideration
 
-Pada pengembangan modul Faktur Pajak di ERP Naventra, arsitektur dirancang dengan fokus pada kepatuhan modern:
-
-1. **Direct Coretax API Adapter:**
-   Naventra memprioritaskan integrasi langsung (*direct adapter*) ke sistem Coretax DJP untuk mengirimkan data faktur secara *real-time* dan menerima nomor faktur resmi yang dihasilkan sistem.
-2. **Pre-Flight Validation Engine:**
-   Sebelum berkas dikirimkan ke gateway pajak, Naventra menjalankan validasi internal:
-   - Memastikan NPWP/NIK/NITKU valid dan terdaftar.
-   - Memastikan tanggal dokumen selaras dengan aturan pisah batas (*tax point*).
-   - Memvalidasi Dasar Pengenaan Pajak (apakah menggunakan DPP Standar atau DPP Nilai Lain 11/12).
-3. **State Machine Faktur Terpadu:**
-   Status faktur dikelola melalui siklus hidup: `Draft` -> `Queued for Submission` -> `Approved` -> `Amendment In Progress` -> `Cancelled`. Faktur berstatus `Approved` dikunci (*read-only*) permanen di buku besar komersial.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-129).
 
 ---
 

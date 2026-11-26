@@ -166,15 +166,7 @@ Untuk mendemonstrasikan integrasi penuh dari awal hingga akhir, berikut adalah p
 
 ## Naventra Consideration
 
-Untuk perancangan arsitektur integrasi Persediaan pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Transactional Event Pipeline (Arsitektur Event-Driven Terisolasi)**:
-   * Saat mutasi stok terjadi (misal: penyerahan Delivery Order), sistem mempublikasikan domain event internal: `InventoryIssuedEvent` (`item_id`, `warehouse_id`, `quantity`, `cost_method`, `cost_amount`, `source_doc_ref`).
-   * Layanan akuntansi (*Accounting Subscriber*) menerima event ini dan membuat baris jurnal `gl_entries` secara asinkron atau dalam transaksi terdistribusi yang aman (*Saga Pattern / Outbox Pattern*).
-2. **Kepatuhan Audit Trail Kekal (Append-Only Journaling)**:
-   Pastikan tidak ada perintah `UPDATE` atau `DELETE` pada tabel mutasi persediaan (`stock_ledger_entries`) atau tabel jurnal keuangan (`gl_entries`). Koreksi wajib dilakukan dengan memposting baris mutasi cermin berpasangan (*Compensating Transaction*).
-3. **Pemberlakuan Kunci Idempotensi Lintas Modul**:
-   Setiap transaksi integrasi antar-modul (misal: pembuatan mutasi dari SO) wajib menyertakan kunci `idempotency_key = hash(source_doc_type, source_doc_id, line_number)`. Hal ini menjamin bahwa kegagalan jaringan atau proses *retry* tidak akan pernah menduplikasi mutasi stok fisik maupun pencatatan jurnal akuntansi ganda.
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-016).
 
 ---
 

@@ -124,32 +124,7 @@ Sangat krusial untuk memisahkan antara aturan penentu kebutuhan dengan eksekusi 
 
 ## Naventra Consideration
 
-Untuk perancangan modul Replenishment pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Aturan Pengisian Ulang Multi-Gudang**:
-   ```sql
-   CREATE TABLE item_replenishment_rules (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       item_id UUID NOT NULL REFERENCES items(id),
-       warehouse_id UUID NOT NULL REFERENCES warehouses(id),
-       strategy VARCHAR(30) NOT NULL DEFAULT 'MIN_MAX', -- 'MIN_MAX', 'ROP_EOQ', 'MANUAL'
-       safety_stock_qty NUMERIC(15, 4) NOT NULL DEFAULT 0,
-       reorder_point_qty NUMERIC(15, 4) NOT NULL,
-       min_order_qty NUMERIC(15, 4) NOT NULL DEFAULT 1,
-       max_order_qty NUMERIC(15, 4),
-       order_multiple_qty NUMERIC(15, 4) DEFAULT 1, -- Kelipatan kemasan pabrik (pack size)
-       replenishment_source VARCHAR(30) NOT NULL, -- 'PURCHASE', 'INTERNAL_TRANSFER', 'MANUFACTURE'
-       source_warehouse_id UUID REFERENCES warehouses(id), -- Jika internal transfer
-       is_active BOOLEAN NOT NULL DEFAULT TRUE,
-       UNIQUE (item_id, warehouse_id)
-   );
-   ```
-2. **Automated Planning Worker (MRP/Replenishment Runner)**:
-   Rancang background worker berkala (misal: berjalan setiap malam pukul 01:00) yang mengevaluasi persamaan ketersediaan:
-   $$\text{Net Available} = \text{On-Hand} + \text{On-Order (PO/TR)} - \text{Reserved (SO/WO)}$$
-   Jika $\text{Net Available} \le \text{reorder\_point\_qty}$, sistem membangkitkan record draft baru pada tabel `purchase_requisitions` atau `internal_transfer_orders`.
-3. **Pencegahan Pemesanan Ganda (*Duplicate Suggestion Prevention*)**:
-   Sebelum membangkitkan rekomendasi baru, sistem wajib memeriksa apakah sudah ada dokumen draft PR atau PO terbuka (*unfulfilled inbound*) yang dibuat oleh siklus sebelumnya untuk item dan gudang yang sama.
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-026).
 
 ---
 

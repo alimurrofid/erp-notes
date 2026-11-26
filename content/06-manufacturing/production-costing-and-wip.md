@@ -154,26 +154,7 @@ $$\text{Transfer ke Finished Goods} = 90 \text{ unit} \times \text{Rp}75.000 = \
 
 ## Naventra Consideration
 
-Untuk perancangan modul Akuntansi Biaya Manufaktur pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Akumulasi Biaya Pesanan Produksi (Cost Ledgers)**:
-   ```sql
-   CREATE TABLE mo_cost_accumulations (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       manufacturing_order_id UUID NOT NULL REFERENCES manufacturing_orders(id),
-       cost_category VARCHAR(30) NOT NULL, -- 'DIRECT_MATERIAL', 'DIRECT_LABOR', 'MACHINE_OVERHEAD', 'SUBCONTRACT'
-       standard_cost_amount NUMERIC(18, 4) NOT NULL DEFAULT 0,
-       actual_cost_amount NUMERIC(18, 4) NOT NULL DEFAULT 0,
-       variance_amount NUMERIC(18, 4) GENERATED ALWAYS AS (actual_cost_amount - standard_cost_amount) STORED,
-       gl_wip_account_id UUID NOT NULL REFERENCES chart_of_accounts(id),
-       gl_variance_account_id UUID REFERENCES chart_of_accounts(id),
-       updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-   ```
-2. **Kalkulasi Otomatis Ending WIP pada Penutupan Periode**:
-   Sediakan prosedur akhir bulan yang memindai seluruh MO berstatus `IN_PROGRESS`. Sistem menghitung nilai `ending_wip_value` berdasarkan material yang telah di-issue dikurangi proporsi unit yang telah di-*receipt*, memastikan neraca keuangan mencerminkan nilai aset yang sah sebelum pembukuan ditutup.
-3. **Pemberlakuan Kunci Mutasi Pasca Financial Close**:
-   Segera setelah status MO berubah menjadi `CLOSED`, backend wajib memblokir seluruh upaya posting baru (baik material issue, timesheet labor, maupun penyesuaian tambahan) untuk menjamin integritas laporan keuangan audit.
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-038).
 
 ---
 

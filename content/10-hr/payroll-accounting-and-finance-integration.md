@@ -189,11 +189,7 @@ Penerapan integrasi akuntansi penggajian pada software ERP enterprise:
 
 ## Naventra Consideration
 
-Dalam perancangan modul integrasi akuntansi penggajian Naventra ERP:
-
-1. **Automated Journal Consolidation Engine**: Naventra sebaiknya menggunakan payroll batch sebagai boundary posting ke GL secara teragregasi per pusat biaya pada akhir bulan, sementara rincian transaksi per komponen tetap berada pada payroll subledger guna menjaga performa pelaporan buku besar.
-2. **Treasury Pre-Flight Balance Validation**: Modul perbendaharaan Naventra dapat memindai saldo rekening bank penggajian sebelum jadwal transfer massal, memberikan notifikasi otomatis jika saldo kas di bawah kebutuhan pencairan gaji bersih.
-3. **Audit Trail for Payment Files**: Setiap berkas transaksi perbankan yang diekspor (*Bank Transfer File*) diamankan dengan jejak audit dan tanda tangan digital (*Digital Hash*) guna mencegah modifikasi di luar sistem ERP.
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-105).
 
 ---
 

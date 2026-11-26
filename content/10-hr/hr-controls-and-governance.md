@@ -143,11 +143,7 @@ Penerapan pengendalian internal dan tata kelola HR pada software ERP enterprise:
 
 ## Naventra Consideration
 
-Dalam perancangan modul kontrol dan tata kelola HR Naventra ERP:
-
-1. **Role Conflict Block Engine**: Mesin otorisasi Naventra secara otomatis memblokir penugasan peran ganda beracun (misalnya pengguna yang memiliki peran *Payroll Operator* dilarang menerima penugasan peran *Treasury Cash Disburser*).
-2. **Cryptographic Field-Level Security**: Kolom data sensitif (gaji pokok, nomor rekening bank, dan nomor KTP) dienkripsi menggunakan kunci enkripsi independen (*Envelope Encryption*). Data ditampilkan dalam format bertopeng (*Masked* - misalnya `123-XX-XXXX543-2`) kecuali dibuka secara eksplisit oleh pengguna berotoritas audit.
-3. **Automated Ghost Employee Screening**: Setiap sebelum menjalankan *Payroll Run*, Naventra menjalankan skrip pemindaian otomatis untuk mendeteksi nomor rekening duplikat, pegawai aktif tanpa atasan, atau pegawai yang tidak memiliki rekaman kehadiran selama periode berjalan.
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-099).
 
 ---
 

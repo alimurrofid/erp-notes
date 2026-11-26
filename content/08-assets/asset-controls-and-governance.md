@@ -130,11 +130,7 @@ Perbandingan kapabilitas tata kelola dan kontrol aktiva tetap lintas platform ER
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Asset Controls & Governance pada Naventra ERP:
-
-1. **Native Asset SoD Matrix Engine**: Naventra memelihara tabel matriks benturan peran `asset_sod_rules`. Setiap kali administrator menetapkan hak akses baru kepada staf, sistem mengevaluasi potensi konflik secara *real-time* dan menolak kombinasi beracun (misal: merangkap sebagai *Asset Custodian* sekaligus *Asset Write-Off Approver*).
-2. **Cryptographic Append-Only Custody Log**: Riwayat penyerahan aset, pemindahan ruangan, dan pergantian penanggung jawab dicatat ke dalam tabel log partisi yang diamankan dengan *SHA-256 Hash Chaining*, dirancang untuk mengurangi risiko manipulasi atau penghapusan jejak histori tanpa terdeteksi.
-3. **Dual-Key Break-Glass Disposal Protocol**: Untuk transaksi penghapusan buku (*write-off*) atas aset bernilai material, Naventra mewajibkan otentikasi ganda (*Two-Factor Dual Signoff*) dari Manajer Pabrik dan Direktur Keuangan secara bersamaan sebelum jurnal penghapusan diposting ke General Ledger.
+Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-065).
 
 ---
 

@@ -138,14 +138,7 @@ Dalam arsitektur ERP modern, analitika perpajakan didukung oleh:
 
 ## Naventra Consideration
 
-Pada arsitektur ERP Naventra, fitur pelaporan dan analitika perpajakan dirancang dengan pendekatan desain teknis berikut:
-
-1. **Built-in Equalization Dashboard:**
-   Naventra menyajikan modul *Tax Equalization Workbench* yang secara *real-time* menghitung selisih antara akun Laba Rugi komersial dan Dasar Pengenaan Pajak per jenis pajak (PPN, PPh 21, PPh 23, PPh 4(2)) tanpa memerlukan proses ekstraksi manual.
-2. **Tax Risk Early Warning System (SP2DK Radar):**
-   Sistem secara otomatis mendeteksi anomali transaksi yang sering menjadi pemicu surat himbauan pajak, seperti lonjakan rasio biaya promosi terhadap omzet atau transaksi dengan lawan transaksi yang teridentifikasi bermasalah.
-3. **Multi-Format Statutory Generator:**
-   Naventra menyediakan konverter data terintegrasi yang mampu menghasilkan berkas CSV impor e-Faktur lama, format XML e-Bupot Unifikasi, hingga konektor API langsung ke sistem Coretax DJP.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-124).
 
 ---
 

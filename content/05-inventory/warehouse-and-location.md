@@ -116,35 +116,7 @@ Organisasi skala menengah hingga besar mengoperasikan jaringan rantai pasok terd
 
 ## Naventra Consideration
 
-Untuk perancangan topologi gudang pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Topologi Hierarkis**:
-   ```sql
-   CREATE TABLE warehouses (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       company_id UUID NOT NULL REFERENCES companies(id),
-       warehouse_code VARCHAR(20) NOT NULL UNIQUE,
-       warehouse_name VARCHAR(100) NOT NULL,
-       is_in_transit BOOLEAN DEFAULT FALSE,
-       address TEXT,
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-
-   CREATE TABLE storage_locations (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       warehouse_id UUID NOT NULL REFERENCES warehouses(id),
-       parent_location_id UUID REFERENCES storage_locations(id), -- Self-referencing untuk hierarki zona/rak
-       location_code VARCHAR(50) NOT NULL, -- Contoh: ZN-DRY-A-01-1
-       location_type VARCHAR(30) NOT NULL, -- 'STORAGE', 'RECEIVING', 'SHIPPING', 'QC', 'SCRAP'
-       is_scrap BOOLEAN DEFAULT FALSE,
-       is_available_for_atp BOOLEAN DEFAULT TRUE,
-       max_weight_capacity NUMERIC(12, 2),
-       max_volume_cbm NUMERIC(12, 4),
-       UNIQUE (warehouse_id, location_code)
-   );
-   ```
-2. **Flagging Ketersediaan ATP pada Level Lokasi**: Kolom `is_available_for_atp` memungkinkan sistem menyaring secara instan lokasi mana saja yang kuantitasnya boleh diperhitungkan dalam perhitungan [[05-inventory/stock-quantity-and-availability|Available-to-Promise (ATP)]]. Area *Receiving Bay*, *QC Hold*, dan *Damaged Area* wajib diset `is_available_for_atp = FALSE`.
-3. **Pemberian Label Barcode Standar**: Sistem wajib mampu menghasilkan label barcode berformat Code 128 atau QR Code untuk setiap `location_code` agar operator gudang dapat memindai lokasi secara presisi saat melakukan putaway dan picking menggunakan perangkat mobile.
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-028).
 
 ---
 

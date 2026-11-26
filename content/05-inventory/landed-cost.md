@@ -140,29 +140,7 @@ Dalam praktik rantai pasok global, sering kali faktur ekspedisi internasional at
 
 ## Naventra Consideration
 
-Untuk perancangan modul Landed Cost pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Struktur Data Landed Cost Voucher**:
-   * Tabel header: `landed_cost_vouchers` (`voucher_no`, `posting_date`, `vendor_bill_id`, `allocation_basis`, `total_landed_cost_amount`).
-   * Tabel baris penerimaan target: `landed_cost_target_receipts` (`voucher_id`, `goods_receipt_id`).
-   * Tabel baris alokasi item: `landed_cost_allocation_lines` (`voucher_id`, `item_id`, `receipt_line_id`, `allocated_amount`, `cost_per_unit_increase`).
-2. **Algoritma Deteksi Kuantitas Tersisa (Remaining Qty Check)**:
-   ```sql
-   -- Menentukan porsi persediaan vs COGS
-   v_remaining_qty := get_remaining_on_hand_qty(target_line.item_id, target_line.goods_receipt_id);
-   
-   IF v_remaining_qty >= target_line.received_qty THEN
-       -- Seluruh barang masih ada di gudang -> 100% debit persediaan
-       v_inventory_debit := target_line.allocated_amount;
-       v_cogs_debit := 0;
-   ELSE
-       -- Sebagian atau seluruh barang telah terjual -> bagi proporsional
-       v_inventory_debit := (v_remaining_qty / target_line.received_qty) * target_line.allocated_amount;
-       v_cogs_debit := target_line.allocated_amount - v_inventory_debit;
-   END IF;
-   ```
-3. **Pembaruan Stock Ledger & Moving Average**:
-   Setiap posting landed cost wajib menciptakan mutasi penyesuaian nilai (*Value Adjustment Entry*) pada tabel `stock_ledger_entries` dengan `quantity_delta = 0` dan `total_value_delta = v_inventory_debit`, serta memperbarui kolom `unit_cost` pada tabel persediaan.
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-022).
 
 ---
 

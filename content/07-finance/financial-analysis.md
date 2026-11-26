@@ -164,11 +164,7 @@ Perbandingan kapabilitas analisis performa finansial lintas sistem:
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Financial Analysis & Performance Evaluation pada Naventra ERP:
-
-1. **Automated Financial Ratio Engine**: Naventra menyertakan kalkulator rasio otomatis yang memproses seluruh metrik likuiditas, aktivitas, solvabilitas, dan profitabilitas secara otomatis setiap kali neraca saldo ditutup. Nilai rasio disajikan lengkap dengan indikator lampu lalu lintas (*Traffic-Light KPI System*) yang membandingkan performa dengan target internal.
-2. **Interactive DuPont Explorer Canvas**: Pengguna manajerial dapat membuka tampilan visual pohon dekomposisi DuPont. Dengan mengklik cabang komponen (misal *Asset Turnover*), sistem secara otomatis membedah komponen sub-aset yang mengalami perlambatan perputaran.
-3. **Automated Two-Way Variance Decomposer**: Pada modul manufaktur dan biaya, Naventra secara otomatis memecah setiap selisih beban pokok produksi menjadi komponen *Price Effect* dan *Usage Effect*, sehingga manajemen pabrik dan manajer pengadaan mengetahui secara pasti pihak yang bertanggung jawab atas varian tersebut.
+Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-054).
 
 ---
 

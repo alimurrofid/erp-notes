@@ -157,11 +157,7 @@ Dalam mengintegrasikan aktiva tetap dengan modul-modul lain, sistem ERP menerapk
 
 ## Naventra Consideration
 
-Rancangan arsitektur integrasi lintas modul pada Naventra ERP:
-
-1. **Transactional Event-Bus Architecture**: Setiap kali terjadi transaksi fisik di modul rantai pasok (misal konfirmasi penerimaan barang modal atau pengeluaran suku cadang perawatan), sistem mempublikasikan peristiwa (*Domain Event*: `AssetDeliveredEvent`, `MaintenanceCompletedEvent`). Modul aktiva tetap mendengarkan (*listens*) dan mengeksekusi pembaruan status atau pencatatan biaya secara asinkron tanpa memperlambat antarmuka pengguna di gudang.
-2. **Atomic Asset Clearing Guarantee**: Naventra mewajibkan seluruh pengadaan barang modal melewati akun perantara `Fixed Asset Clearing`. Transaksi penerimaan barang dan pencatatan komitmen aset diikat dalam transaksi basis data atomik (*ACID guarantee*), mencegah kemungkinan terbentuknya master aset aktif tanpa adanya dokumen pengadaan resmi yang mendasarinya.
-3. **Cross-Module Integrity Daemon**: Naventra menyertakan daemon latar belakang yang secara berkala memvalidasi integritas relasional: memastikan bahwa setiap mesin produksi yang terdaftar pada *Work Center* manufaktur memiliki nomor aset aktif yang valid di subledger aktiva tetap, dan total saldo subledger aktiva cocok 100% dengan akun kontrol neraca GL.
+Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-076).
 
 ---
 

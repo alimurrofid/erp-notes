@@ -162,37 +162,7 @@ classDiagram
 
 ## Naventra Consideration
 
-Untuk perancangan modul Master Data Keuangan pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Rekening Bank Terstruktur**:
-   ```sql
-   CREATE TABLE bank_masters (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       bank_code VARCHAR(20) NOT NULL UNIQUE,
-       bank_name VARCHAR(100) NOT NULL,
-       swift_code VARCHAR(20),
-       clearing_code VARCHAR(20),
-       is_active BOOLEAN NOT NULL DEFAULT TRUE
-   );
-
-   CREATE TABLE company_bank_accounts (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       company_id UUID NOT NULL REFERENCES companies(id),
-       bank_id UUID NOT NULL REFERENCES bank_masters(id),
-       account_number VARCHAR(50) NOT NULL,
-       account_name VARCHAR(100) NOT NULL,
-       currency_code VARCHAR(3) NOT NULL,
-       account_purpose VARCHAR(30) NOT NULL, -- 'OPERATING', 'COLLECTION', 'DISBURSEMENT', 'PAYROLL', 'ESCROW'
-       gl_account_id UUID NOT NULL REFERENCES chart_of_accounts(id),
-       is_active BOOLEAN NOT NULL DEFAULT TRUE,
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-       UNIQUE (company_id, bank_id, account_number)
-   );
-   ```
-2. **Normalisasi Multi-Dimensi Finansial (Financial Dimensions)**:
-   Hindari membuat akun buku besar terpisah untuk setiap departemen (misal: `6100-Beban-Gaji-IT`, `6100-Beban-Gaji-HR`). Desain tabel `financial_dimension_values` (`dimension_type`, `code`, `name`) dan sematkan kolom `cost_center_id` serta `project_id` pada setiap baris jurnal transaksi (`gl_entry_lines`).
-3. **Pemberlakuan Penguncian Historis pada Perubahan Data Induk**:
-   Terapkan kontrol validasi di mana atribut kritis (seperti `currency_code` atau `gl_account_id` pada rekening bank) **dilarang diubah secara langsung** jika rekening tersebut telah memiliki riwayat transaksi di buku besar atau rekonsiliasi.
+Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-053).
 
 ---
 

@@ -181,18 +181,7 @@ Untuk membuktikan keutuhan integrasi dari awal hingga akhir, berikut adalah pene
 
 ## Naventra Consideration
 
-Untuk perancangan modul Integrasi Manufaktur pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Pola Desain Arsitektur Event-Driven (Domain Events Pipeline)**:
-   * Saat pesanan produksi selesai, sistem mempublikasikan domain event internal: `ManufacturingOrderCompletedEvent` (`mo_id`, `product_id`, `produced_qty`, `scrap_qty`, `total_cost_incurred`).
-   * Layanan-layanan konsumen (*Subscribers*) merespons secara terisolasi:
-     * *Inventory Service*: Menambah saldo barang jadi di gudang target.
-     * *Accounting Service*: Menutup akun WIP dan mencatat jurnal persediaan barang jadi serta varians.
-     * *Sales Service*: Memperbarui status pemenuhan pada Sales Order yang ditautkan (*Pegged SO*).
-2. **Kepatuhan Transaksional dan Idempotensi Mutlak**:
-   Setiap transaksi konfirmasi produksi wajib menggunakan kunci idempotensi (`idempotency_key = hash(mo_id, operation_id, confirmation_timestamp)`). Hal ini menjamin bahwa gangguan koneksi jaringan pada terminal operator lantai pabrik tidak akan pernah menggandakan pencatatan output fisik maupun penjurnalan biaya di buku besar.
-3. **Penyediaan Visualisasi Pohon Genealogi Produk (Product Traceability Tree)**:
-   Rancang antarmuka penelusuran grafis yang memungkinkan auditor mengklik nomor seri laptop jadi untuk langsung melihat nomor lot baterai, nomor surat jalan penerimaan pemasok (P2P), stasiun kerja yang merakitnya, dan nomor faktur penjualan ke pelanggan (O2C).
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-031).
 
 ---
 

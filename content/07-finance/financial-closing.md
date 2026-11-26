@@ -145,11 +145,7 @@ Perbandingan kapabilitas manajemen penutupan buku pada berbagai platform:
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Closing Governance pada Naventra ERP:
-
-1. **Progressive Period Freeze Pipeline**: Naventra menyediakan panel kontrol status periode yang memungkinkan penguncian dilakukan bertahap per modul operasional: `INVENTORY_FROZEN` $\rightarrow$ `BILLING_FROZEN` $\rightarrow$ `AP_FROZEN` $\rightarrow$ `GL_SOFT_LOCKED` $\rightarrow$ `GL_HARD_LOCKED`.
-2. **Interactive Closing Cockpit & Dependency Graph**: Sistem menyajikan visualisasi graf dependensi tugas penutupan buku. Pengguna tidak dapat menandai suatu tugas selesai sebelum tugas pendahulunya (*predecessor task*) disahkan oleh penanggung jawabnya.
-3. **Emergency Unfreeze Audit Workflow**: Jika ditemukan kesalahan material setelah masa *Hard Lock*, periode hanya dapat dibuka kembali (*unlocked*) melalui tiket darurat yang disetujui bersama oleh CFO dan Lead Auditor Internal. Setiap mutasi yang terjadi selama masa pembukaan darurat dicatat dalam log forensik khusus (*Red-Flag Audit Trail*).
+Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-055).
 
 ---
 

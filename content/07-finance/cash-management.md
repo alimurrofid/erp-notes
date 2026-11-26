@@ -176,11 +176,7 @@ Perbandingan fungsional modul Cash Management pada berbagai software ERP terkemu
 
 ## Naventra Consideration
 
-Dalam perancangan arsitektur Cash Management pada Naventra ERP:
-
-1. **Strict Clearing Account Policy**: Modul Treasury Naventra mewajibkan seluruh mutasi dana antar-rekening melewati *Cash-in-Transit Account* (`111900`). Tidak diperbolehkan jurnal manual satu baris Debit Bank A - Kredit Bank B untuk menjamin integritas audit rekonsiliasi bank.
-2. **Digital Imprest Fund Ledger**: Kasir kas kecil tidak perlu mengakses modul GL penuh; Naventra menyediakan antarmuka khusus *Petty Cash Custodian* untuk menginput kuitansi, mengunggah foto bukti fisik, dan menekan tombol *Request Replenishment* yang otomatis membentuk draft Journal Entry untuk disetujui Finance Manager.
-3. **Threshold Alert System**: Naventra menyertakan *early warning notification* otomatis melalui dashboard dan webhook ketika saldo rekening operasional turun di bawah *Minimum Cash Reserve* atau saldo kas kecil terpakai melampaui 75%.
+Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-050).
 
 ---
 

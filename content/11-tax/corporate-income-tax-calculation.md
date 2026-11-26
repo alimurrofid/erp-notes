@@ -139,17 +139,7 @@ Arsitektur mesin perhitungan PPh Badan dalam ERP terintegrasi mencakup:
 
 ## Naventra Consideration
 
-Pada pengembangan ERP Naventra, modul perhitungan PPh Badan dirancang dengan fitur otomatisasi terdepan:
-
-1. **Automated Article 31E Evaluation Engine:**
-   Naventra secara otomatis mengeksekusi formula Pasal 31E saat proses penutupan tahun pajak dijalankan:
-   - Menghitung total `gross_turnover` dari seluruh transaksi penjualan dan pendapatan di luar usaha.
-   - Mengklasifikasikan entitas ke dalam Kategori Penuh (omzet <= 4,8M), Proporsional (4,8M < omzet <= 50M), atau Non-Fasilitas (omzet > 50M).
-   - Menghitung nilai PPh terutang secara otomatis tanpa memerlukan intervensi manual.
-2. **Dual Rounding Support:**
-   Sistem secara otomatis menerapkan pemotongan ribuan rupiah ke bawah (*floor to thousands*) pada Dasar Pengenaan Pajak PKP sebelum mengalikan dengan tarif, menghasilkan angka yang identik dengan kertas kerja DJP.
-3. **Tax Provision Workflow & Audit Trace:**
-   Kalkulasi beban pajak menghasilkan dokumen draf `tax_provision_assessment` yang mencantumkan seluruh variabel perhitungan (Omzet, PKP, Fasilitas, Tarif) yang harus disetujui secara digital oleh pejabat berwenang sebelum memicu jurnal buku besar.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-113).
 
 ---
 

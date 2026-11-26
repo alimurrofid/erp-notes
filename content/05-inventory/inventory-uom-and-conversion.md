@@ -124,37 +124,7 @@ Dalam industri tertentu (seperti daging potong, hasil laut, keju, atau baja bata
 
 ## Naventra Consideration
 
-Untuk perancangan modul UOM pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Konversi UOM Dinamis**:
-   ```sql
-   CREATE TABLE uom_categories (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       category_name VARCHAR(50) NOT NULL UNIQUE -- 'UNIT', 'WEIGHT', 'VOLUME', 'LENGTH'
-   );
-
-   CREATE TABLE uoms (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       uom_category_id UUID NOT NULL REFERENCES uom_categories(id),
-       uom_code VARCHAR(20) NOT NULL UNIQUE, -- 'PCS', 'BOX', 'KG'
-       uom_name VARCHAR(100) NOT NULL,
-       is_reference_uom BOOLEAN DEFAULT FALSE,
-       conversion_ratio NUMERIC(15, 6) NOT NULL DEFAULT 1.0, -- Rasio terhadap reference UOM kategori
-       decimal_places INT NOT NULL DEFAULT 0
-   );
-
-   CREATE TABLE item_uom_conversions (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       item_id UUID NOT NULL REFERENCES items(id),
-       from_uom_id UUID NOT NULL REFERENCES uoms(id),
-       to_uom_id UUID NOT NULL REFERENCES uoms(id),
-       conversion_factor NUMERIC(15, 6) NOT NULL, -- Contoh: 1 Box = 12 Pcs
-       created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-       UNIQUE (item_id, from_uom_id, to_uom_id)
-   );
-   ```
-2. **Aturan Mutlak: Base UOM Adalah Kebenaran Tunggal**: Seluruh kolom `quantity` pada tabel transaksional inti (`stock_ledger_entries`, `inventory_balances`, `gl_entries`) **wajib selalu disimpan dalam satuan Base UOM**. Kuantitas dalam dokumen komersial (PO, SO) hanya bertindak sebagai representasi presentasi antarmuka yang dikonversi sebelum data masuk ke lapisan penyimpanan persediaan.
-3. **Pemberlakuan Batas Desimal Validasi (Input Validation)**: Jika sebuah UOM memiliki `decimal_places = 0` (seperti unit fisik `Pcs`), backend wajib menolak transaksi yang memasukkan kuantitas pecahan desimal (misal: `2.5 Pcs`) dengan pesan error validasi yang jelas.
+Keputusan desain: [[30-naventra/design-inventory|Design inventory]] (NAV-D-021).
 
 ---
 

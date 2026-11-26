@@ -163,11 +163,7 @@ Penerapan kepatuhan pajak penggajian pada platform ERP terkemuka:
 
 ## Naventra Consideration
 
-Dalam perancangan modul kepatuhan pajak penggajian Naventra ERP:
-
-1. **Tabel Tarif Efektif Terkonfigurasi (TER Engine)**: Naventra menyediakan pustaka tabel tarif pajak yang dapat diperbarui melalui antarmuka administratif (*Tax Configuration UI*) tanpa perlu melakukan kompilasi ulang kode sumber saat pemerintah memperbarui batasan lapisan tarif.
-2. **December Tax Equalization Wizard**: Sistem menyediakan panduan wizard otomatis pada penutupan penggajian bulan Desember untuk menghitung ulang seluruh pajak tahunan pegawai, mendeteksi selisih lebih/kurang bayar, dan menerbitkan berkas formulir bukti potong digital secara massal.
-3. **Validasi NPWP Format Baru (16 Digit / NIK)**: Formulir master data pajak Naventra telah diselaraskan dengan integrasi NIK menjadi NPWP 16 digit sesuai kebijakan standardisasi identitas perpajakan nasional.
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-109).
 
 ---
 

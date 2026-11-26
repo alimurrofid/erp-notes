@@ -176,11 +176,7 @@ Penerapan manajemen cuti pada platform ERP enterprise:
 
 ## Naventra Consideration
 
-Dalam perancangan modul manajemen cuti Naventra ERP:
-
-1. **Calendar Collision Engine**: Sistem secara otomatis memeriksa jadwal komitmen kerja kritis pegawai (jadwal *Milestone Sign-Off* proyek atau perintah produksi pabrik) dan memberikan peringatan dini kepada manajer jika cuti pegawai berbenturan dengan deliverable penting.
-2. **Automated Carry-Forward & Lapsing Processor**: Naventra menjalankan layanan latar belakang otomatis pada tanggal 31 Desember untuk menghitung kuota transfer cuti tahun baru, serta pada tanggal 30 Juni untuk menghanguskan sisa cuti kedaluwarsa tanpa intervensi manual tim HR.
-3. **Penyelarasan Hak Cuti Masa Percobaan**: Sistem secara otomatis mengunci pengajuan cuti tahunan selama pegawai berstatus *Probation*, dan secara otomatis melepaskan kuota prorata begitu status pegawai beralih menjadi *Confirmed (Active)*.
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-102).
 
 ---
 

@@ -156,11 +156,7 @@ Perbandingan penanganan pengadaan proyek pada sistem ERP utama:
 
 ## Naventra Consideration
 
-Dalam perancangan fungsionalitas Project Procurement pada Naventra ERP:
-
-1. **Mandatory WBS Tagging on PR**: Setiap pembuatan *Purchase Requisition* dengan kategori proyek wajib menyertakan kode WBS tingkat terendah (*Work Package*). Sistem memvalidasi ketersediaan saldo anggaran WBS sebelum PR dapat dikirim ke departemen *Procurement*.
-2. **BAST Subkontraktor Terintegrasi**: Naventra menyediakan dokumen digital *Service Acceptance Sheet* / BAST yang mewajibkan lampiran bukti kerja (*deliverables*). Persetujuan dokumen ini otomatis melepaskan *hold* pada pembuatan faktur tagihan vendor.
-3. **Penyelarasan Tanggal Pengiriman ke Gantt Chart**: Perubahan tanggal estimasi pengiriman barang/jasa dari vendor secara otomatis memicu notifikasi peringatan jika tanggal tersebut berisiko memundurkan *Task* pada jalur kritis (*Critical Path*).
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-088).
 
 ---
 

@@ -157,11 +157,7 @@ Perbandingan implementasi struktur klasifikasi aset pada berbagai sistem ERP:
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Asset Classification pada Naventra ERP:
-
-1. **Hierarchical Class Inheritance**: Naventra menyusun kelas aset dalam hierarki pohon (*tree structure*), misal: `TANGIBLE` $\rightarrow$ `MACHINERY` $\rightarrow$ `PROD_SMT_LINE`. Sub-kelas secara otomatis mewarisi pemetaan akun GL dan aturan validasi dari kelas induknya, namun dapat mengesampingkan (*override*) parameter masa manfaat default.
-2. **Built-in Tri-Dimensional Mapping Matrix**: Setiap kelas aset di Naventra memiliki tabel relasi bawaan yang menghubungkan kode kelas komersial, kode golongan fiskal perpajakan, dan kategori peralatan pemeliharaan pabrik, mencegah redundansi pengisian data oleh staf operasional.
-3. **Automated Fiscal Difference Calculation**: Naventra secara otomatis membandingkan akumulasi penyusutan komersial vs penyusutan fiskal dan menyediakan laporan *Tax Reconciliation Bridge* siap pakai untuk lampiran SPT Pajak Penghasilan Badan.
+Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-063).
 
 ---
 

@@ -138,11 +138,7 @@ Penerapan sistem kehadiran pada platform ERP enterprise:
 
 ## Naventra Consideration
 
-Dalam perancangan modul kehadiran dan jadwal kerja Naventra ERP:
-
-1. **Mesin Pemroses Log Biometrik Terpadu**: Naventra menyediakan *API Gateway Ingestion* yang mampu menampung puluhan ribu stempel presensi per menit dari mesin sidik jari dan RFID lintas cabang, memproses status kehadiran secara *near real-time*.
-2. **Sistem Pengenalan Shift Otomatis (*Auto-Shift Detection*)**: Untuk staf operasional yang bekerja tanpa jadwal shift kaku, mesin Naventra secara cerdas mencocokkan jam *clock-in* pertama pegawai ke jadwal shift terdekat tanpa memerlukan penugasan manual dari HR.
-3. **Penyelarasan Presensi dengan Lembar Waktu Proyek**: Sistem melakukan validasi silang antara total jam kehadiran harian pada modul HR dengan total jam lembar kerja (*Timesheet*) yang diinput pegawai pada modul [[09-project/timesheet-and-effort-tracking|Project Management]]. Pengguna diperingatkan jika jam kerja proyek melebihi jam kehadiran fisik di kantor.
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-095).
 
 ---
 

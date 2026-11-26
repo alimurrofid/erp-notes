@@ -163,11 +163,7 @@ Perbandingan fungsional modul pelepasan aset tetap lintas software ERP terkemuka
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Asset Disposal & Retirement pada Naventra ERP:
-
-1. **Guided Disposal Wizard**: Naventra memandu pengguna melalui wizard pelepasan multi-langkah: (1) Verifikasi tanggal efektif pelepasan $\rightarrow$ (2) Pemilihan saluran pelepasan (*Sale*, *Scrap*, *Donation*, *Loss*) $\rightarrow$ (3) Input pembeli dan harga jual $\rightarrow$ (4) Pratinjau simulasi jurnal dan laba/rugi pelepasan secara seketika.
-2. **Automated Tax Compliance Integration**: Saat tipe pelepasan *Sale to Customer* dipilih, Naventra secara otomatis memicu pembuatan dokumen *Tax Invoice* (Faktur Pajak PPN 16D) dan mengalokasikan nilai PPN ke akun kewajiban pajak yang tepat.
-3. **Atomic Derecognition Engine**: Seluruh rangkaian transaksi—penyusutan periode terakhir, penghapusan nilai aset di neraca, pengakuan kas/piutang, dan penguncian status master aset menjadi `DISPOSED`—dieksekusi dalam satu transaksi basis data atomik (*single ACID transaction*).
+Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-066).
 
 ---
 

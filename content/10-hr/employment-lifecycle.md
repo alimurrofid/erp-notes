@@ -146,11 +146,7 @@ Pola pengelolaan siklus hidup pegawai pada software ERP enterprise:
 
 ## Naventra Consideration
 
-Dalam perancangan modul siklus hidup pegawai Naventra ERP:
-
-1. **State Machine Terotomatisasi Penuh**: Mesin transisi status Naventra mengunci perubahan status manual di basis data. Perubahan dari *Active* ke *Terminated* wajib melalui alur *Offboarding Wizard* yang memvalidasi persetujuan atasan dan kliring logistik.
-2. **Instant Deprovisioning Webhook**: Penandatanganan dokumen pemutusan hubungan kerja memicu *webhook* otomatis yang secara instan mencabut token sesi login web/mobile pegawai dan membekukan kartu akses RFID gedung kantor.
-3. **Automated Final Settlement Engine**: Sistem secara otomatis menghitung kalkulasi hak pesangon dan kompensasi cuti berdasarkan masa kerja historis yang tercatat sejak tanggal *Hire Date*, menghasilkan usulan voucher pembayaran (*Payment Proposal*) yang siap dieksekusi oleh bagian *Treasury*.
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-098).
 
 ---
 

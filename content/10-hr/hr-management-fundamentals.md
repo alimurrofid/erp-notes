@@ -155,11 +155,7 @@ Pola penerapan konsep dasar HR pada platform ERP enterprise:
 
 ## Naventra Consideration
 
-Dalam perancangan modul Human Resources pada Naventra ERP:
-
-1. **Pemisahan Ketat Entitas Orang, Pegawai, dan Pengguna**: Naventra memisahkan entitas `Person` (data biodata individu), `Employee` (hubungan kerja legal dengan perusahaan), dan `User` (kredensial login sistem). Satu individu dapat memiliki riwayat sebagai kontraktor lalu beralih menjadi pegawai tanpa duplikasi data profil.
-2. **Mesin Effective Dating Terpadu**: Setiap entitas jabatan, gaji, dan alokasi pusat biaya wajib memiliki atribut `effective_from` dan `effective_to`. Perubahan gaji masa depan tidak memerlukan intervensi manual pada tanggal pergantian bulan.
-3. **Universal Audit Trail & Granular Privacy Control**: Data sensitif seperti riwayat gaji, nomor rekening bank, dan nomor identitas kependudukan dilindungi dengan enkripsi tingkat kolom dan hanya dapat diakses oleh peran HR Payroll bersertifikasi dengan pencatatan log akses (*Access Log*).
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-101).
 
 ---
 

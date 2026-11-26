@@ -160,14 +160,7 @@ Dalam modul Tax Management ERP modern, tata kelola angsuran mencakup:
 
 ## Naventra Consideration
 
-Pada rancangan sistem ERP Naventra, pengelolaan angsuran dan kredit pajak badan dikembangkan dengan mekanisme berikut:
-
-1. **Automated Payment Voucher Generation:**
-   Setiap tanggal 5 setiap bulan, Naventra secara otomatis membuat draf *Payment Voucher* untuk angsuran PPh Pasal 25 yang menampilkan nominal angsuran aktif, siap disetujui oleh manajer keuangan sebelum batas waktu tanggal 15.
-2. **Automatic Baseline Switching (April Transition):**
-   Naventra secara otomatis menerapkan besaran angsuran baru pada modul pembayaran rutin segera setelah draf SPT Tahunan berstatus `FINAL_APPROVED`, menggantikan baseline masa Desember tahun lalu secara mulus.
-3. **Tax Credit Matching Lock:**
-   Sistem mengunci (*lock*) catatan Uang Muka PPh yang telah dipasangkan dengan laporan SPT Tahunan, mencegah pembatalan transaksi masa lampau yang dapat merusak saldo kredit pajak yang telah dilaporkan.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-115).
 
 ---
 

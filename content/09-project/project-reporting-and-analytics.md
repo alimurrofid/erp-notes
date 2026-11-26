@@ -141,11 +141,7 @@ Kapabilitas pelaporan proyek pada platform ERP enterprise (disajikan secara desk
 
 ## Naventra Consideration
 
-Dalam perancangan modul pelaporan dan analitik proyek Naventra ERP:
-
-1. **Eksekutif Dashboard Real-Time**: Antarmuka PMO yang memvisualisasikan seluruh portofolio proyek dalam bentuk matriks kuadran interaktif (Margin vs Jadwal) dengan penanda otomatis status kesehatan proyek (*RAG Status*).
-2. **Automated Weekly Progress Report Generator**: Sistem secara otomatis menyusun ringkasan kemajuan mingguan berformat PDF resmi (mencakup progres fisik, grafik S-Curve, status penagihan BAST, dan daftar isu kritis) yang siap dikirimkan kepada pemangku kepentingan klien.
-3. **Komprehensif Audit Trail & Snapshot**: Naventra menyimpan rekaman jejak (*snapshot*) mingguan untuk seluruh metrik proyek, memungkinkan rekonstruksi historis atas evolusi estimasi biaya dan pergeseran jalur kritis sepanjang siklus hidup proyek.
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-090).
 
 ---
 

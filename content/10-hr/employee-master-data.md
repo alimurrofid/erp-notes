@@ -175,11 +175,7 @@ Penerapan struktur Employee Master Data pada software ERP terkemuka:
 
 ## Naventra Consideration
 
-Dalam perancangan modul master data pegawai Naventra ERP:
-
-1. **Arsitektur Tiga Lapis (Party - Employment - User)**: Mengadopsi arsitektur data model di mana entitas `Person` memegang biodata personal permanen, entitas `Employment` memegang kontrak legal dan penempatan departemen per entitas usaha, dan entitas `User` mengelola kredensial sistem.
-2. **Validasi Format Statutori Otomatis**: Formulir input pegawai dilengkapi modul validasi otomatis untuk panjang digit dan *checksum* NIK (16 digit), NPWP (16 digit format baru), serta format nomor rekening bank utama di Indonesia.
-3. **Kustodian Aset Terintegrasi Real-Time**: Kolom penugasan aset pada formulir pegawai tertaut langsung dengan modul [[08-assets/asset-master-data|Fixed Assets]], sehingga mutasi posisi pegawai otomatis mengirimkan notifikasi ke petugas logistik umum (*General Affairs*) untuk pemutakhiran lokasi barang aktiva.
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-096).
 
 ---
 

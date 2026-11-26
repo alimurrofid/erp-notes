@@ -193,11 +193,7 @@ Perbandingan kapabilitas alur perolehan dan kapitalisasi lintas platform ERP:
 
 ## Naventra Consideration
 
-Rancangan arsitektur perolehan dan kapitalisasi aset tetap pada Naventra ERP:
-
-1. **Asset Clearing Reconciliation Engine**: Naventra mengunci seluruh perolehan aset melalui akun perantara `Fixed Asset Clearing` (`159100`). Modul menyediakan dasbor rekonsiliasi yang memvalidasi bahwa total invoice vendor pendukung sama persis dengan total nominal yang dikapitalisasi sebelum status aset dialihkan ke `CAPITALIZED`.
-2. **Staged CWIP Settlement Pipeline**: Untuk proyek konstruksi atau perakitan mandiri, Naventra memelihara tabel `cwip_cost_allocations`. Biaya material gudang, jasa subkontraktor, dan upah internal dapat dialokasikan ke satu atau banyak nomor aset definitif (*Split Settlement*) dengan persentase atau nominal tetap.
-3. **Automated Non-Capitalizable Cost Filter**: Formulir pengadaan barang modal Naventra menyertakan kotak centang (*Expense Allocation Rule*) yang secara otomatis memisahkan baris pelatihan (*training*) atau biaya pembukaan (*opening expenses*) ke akun beban operasional saat transaksi faktur vendor diproses.
+Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-062).
 
 ---
 

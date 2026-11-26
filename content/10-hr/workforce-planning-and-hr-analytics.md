@@ -161,11 +161,7 @@ Penerapan analitik tenaga kerja pada platform ERP enterprise:
 
 ## Naventra Consideration
 
-Dalam perancangan modul perencanaan tenaga kerja dan analitik Naventra ERP:
-
-1. **Automated Headcount vs Payroll Variance Engine**: Naventra menyediakan dasbor keuangan SDM terpadu yang memvisualisasikan korelasi antara posisi formasi yang lowong (*Vacancies*) dengan deviasi penyerapan anggaran belanja kas perbendaharaan secara *real-time*.
-2. **Project Workforce Capacity Heatmap**: Modul analitik menyajikan peta panas (*heatmap*) alokasi sumber daya manusia lintas proyek, memungkinkan manajer operasional mendeteksi staf teknis yang mengalami kelebihan beban kerja (*over-allocated*) atau kekurangan penugasan (*under-utilized*).
-3. **Role-Based Privacy Masking**: Data agregasi jumlah pegawai dan jam kerja dapat diakses oleh manajer departemen, sementara seluruh kolom nilai moneter gaji dienkripsi dan disamarkan secara otomatis bagi pengguna non-eksekutif.
+Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-112).
 
 ---
 

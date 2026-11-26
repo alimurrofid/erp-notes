@@ -207,11 +207,7 @@ Perbandingan pengelolaan master data dan templat proyek lintas sistem ERP:
 
 ## Naventra Consideration
 
-Rancangan arsitektur Project Master Data pada Naventra ERP:
-
-1. **Decoupled Commercial & Execution Entities**: Naventra memisahkan entitas komersial (`project_contracts`) dari entitas eksekusi operasional (`projects`). Satu kontrak induk klien dapat menaungi beberapa sub-proyek eksekusi dengan anggaran terpisah namun penagihan terkonsolidasi.
-2. **Template Instantiation Engine**: Modul Naventra menyediakan generator instansiasi templat berbasis aturan (`project_template_builder`). Saat templat dipilih dan tanggal kick-off diinput, sistem secara otomatis mengkalkulasi seluruh tanggal mulai tugas, dependensi pendahulu (*predecessors*), dan mengonversi persentase termin kontrak menjadi nominal rupiah riil.
-3. **Audit Trail on Master Amendments**: Setiap perubahan pada data kritis (seperti nilai kontrak, tanggal target selesai, penunjukan PM baru, atau perubahan margin) wajib menyertakan alasan penyesuaian dan disimpan dalam tabel log terenkripsi `project_master_audit_logs`.
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-085).
 
 ---
 

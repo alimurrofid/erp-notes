@@ -181,14 +181,7 @@ Rangkuman seluruh entri jurnal akuntansi pada skenario kanonikal `PT Maju Bersam
 
 ## Naventra Consideration
 
-Pada perancangan arsitektur terintegrasi ERP Naventra, modul perpajakan dirancang dengan pertimbangan arsitektur berikut:
-
-1. **Centralized Tax Event Bus (Publish-Subscribe Pattern):**
-   Naventra menggunakan pola *Event-Driven Architecture*. Setiap kali modul operasional memicu peristiwa bisnis yang memiliki implikasi pajak (misalnya `INVOICE_POSTED`, `PAYMENT_RECEIVED`, `GOODS_SCRAPPED`), peristiwa tersebut dipublikasikan ke antrean *Tax Event Bus* untuk diproses secara asinkron tanpa membebani performa modul utama.
-2. **Universal Tax Ledger & Subledger Binding:**
-   Seluruh catatan transaksi pajak disimpan dalam tabel terpadu `tax_subledger_entries` yang menghubungkan modul transaksi asal (`source_module`), nomor dokumen komersial (`source_document_id`), nomor dokumen pajak resmi (`official_tax_document_no`), serta nomor jurnal buku besar (`gl_voucher_id`).
-3. **Cross-Module Pre-Closing Guard:**
-   Modul penutupan akuntansi Naventra tidak mengizinkan penutupan periode finansial jika terdapat modul operasional yang belum menyelesaikan status pajaknya (misalnya masih terdapat faktur penjualan yang belum dialokasikan nomor serinya atau tagihan jasa yang belum dibuatkan bukti potongnya).
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-120).
 
 ---
 

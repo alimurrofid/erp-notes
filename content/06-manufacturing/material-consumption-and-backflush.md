@@ -129,33 +129,7 @@ $$\text{MUV} = (102 - 100) \times \text{Rp}500.000 = +2 \text{ set} \times \text
 
 ## Naventra Consideration
 
-Untuk perancangan modul Konsumsi Material pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Mutasi Konsumsi Bahan**:
-   ```sql
-   CREATE TABLE mo_material_consumptions (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       manufacturing_order_id UUID NOT NULL REFERENCES manufacturing_orders(id),
-       operation_id UUID REFERENCES routing_operations(id),
-       component_item_id UUID NOT NULL REFERENCES items(id),
-       source_warehouse_id UUID NOT NULL REFERENCES warehouses(id),
-       source_storage_location_id UUID REFERENCES storage_locations(id),
-       batch_number VARCHAR(100),
-       serial_number VARCHAR(100),
-       
-       consumption_type VARCHAR(20) NOT NULL, -- 'MANUAL_ISSUE', 'BACKFLUSH'
-       standard_quantity NUMERIC(15, 4) NOT NULL,
-       actual_quantity NUMERIC(15, 4) NOT NULL,
-       unit_cost NUMERIC(18, 4) NOT NULL,
-       total_cost NUMERIC(18, 4) GENERATED ALWAYS AS (actual_quantity * unit_cost) STORED,
-       
-       posted_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-   ```
-2. **Flag Flushing Principle pada Master BOM**:
-   Sediakan kolom `flushing_principle` pada tabel `bill_of_material_lines` (`'MANUAL'`, `'AT_START'`, `'AT_FINISH'`). Saat memproses API output barang jadi, backend secara otomatis memicu fungsi *backflush worker* hanya untuk komponen yang berstatus non-manual.
-3. **Pemberlakuan Kunci Mutasi Stok Atomik**:
-   Setiap konsumsi bahan wajib dieksekusi di dalam blok transaksi database bersamaan dengan pemotongan stok pada tabel `inventory_balances` dan penambahan saldo pada akun buku besar WIP, guna menjamin tidak ada ketimpangan antara kartu stok dan neraca keuangan.
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-035).
 
 ---
 

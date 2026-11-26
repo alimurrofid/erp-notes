@@ -115,33 +115,7 @@ flowchart TD
 
 ## Naventra Consideration
 
-Untuk perancangan modul Hasil Produksi dan By-Products pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Skema Database Hasil Produksi Multi-Output**:
-   ```sql
-   CREATE TABLE mo_production_outputs (
-       id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-       manufacturing_order_id UUID NOT NULL REFERENCES manufacturing_orders(id),
-       output_type VARCHAR(20) NOT NULL, -- 'PRIMARY_FG', 'CO_PRODUCT', 'BY_PRODUCT', 'SCRAP'
-       item_id UUID NOT NULL REFERENCES items(id),
-       target_warehouse_id UUID NOT NULL REFERENCES warehouses(id),
-       target_storage_location_id UUID REFERENCES storage_locations(id),
-       lot_number VARCHAR(100),
-       serial_number VARCHAR(100),
-       
-       quantity_completed NUMERIC(15, 4) NOT NULL,
-       cost_allocation_pct NUMERIC(5, 2) NOT NULL DEFAULT 100.00, -- Persentase alokasi biaya WIP
-       unit_cost NUMERIC(18, 4) NOT NULL,
-       total_value NUMERIC(18, 4) GENERATED ALWAYS AS (quantity_completed * unit_cost) STORED,
-       
-       received_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-   ```
-2. **Pemberlakuan Batas Alokasi Biaya Total (100% Cost Rule)**:
-   Backend wajib memvalidasi bahwa total persentase alokasi biaya gabungan antara produk utama dan seluruh co-products tepat sama dengan 100%:
-   $$\sum \text{cost\_allocation\_pct} = 100,00\%$$
-3. **Pemisahan Jalur Penerimaan Fisik**:
-   Sediakan otomatisasi penentuan lokasi gudang target: baris bertipe `PRIMARY_FG` dialokasikan ke *Finished Goods Warehouse*, sedangkan baris bertipe `SCRAP` secara otomatis diarahkan ke *Quarantine/Scrap Yard* agar tidak bercampur dengan stok komersial.
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-039).
 
 ---
 

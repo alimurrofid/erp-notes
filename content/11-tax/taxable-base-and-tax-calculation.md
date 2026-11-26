@@ -165,26 +165,7 @@ Arsitektur mesin kalkulasi perpajakan di dalam ERP dirancang dengan modul *Tax C
 
 ## Naventra Consideration
 
-Pada pengembangan ERP Naventra, modul kalkulasi pajak dibangun dengan spesifikasi teknis berikut:
-
-1. **Explicit Line-Level Calculation:**
-   Naventra menerapkan pendekatan *Line-by-Line Tax Calculation* untuk mendukung konsistensi dengan validasi sistem perpajakan resmi:
-   $$\text{Tax Line} = \text{Round}(\text{DPP Line} \times \text{Rate}, 0)$$
-   $$\text{Total Document Tax} = \sum \text{Tax Line}$$
-2. **Tabel Kurs Terpisah (Dual Currency Exchange Tables):**
-   Naventra memisahkan penyimpanan kurs operasional (`exchange_rates`) dan kurs fiskal resmi (`tax_exchange_rates`):
-   ```sql
-   CREATE TABLE tax_exchange_rates (
-       id UUID PRIMARY KEY,
-       currency_code VARCHAR(3) NOT NULL,
-       kmk_decree_number VARCHAR(100) NOT NULL,
-       exchange_rate DECIMAL(18,4) NOT NULL,
-       valid_from DATE NOT NULL,
-       valid_to DATE NOT NULL
-   );
-   ```
-3. **Audit Immutability of Calculated Base:**
-   Setelah faktur diterbitkan, nilai `base_amount`, `tax_amount`, dan `tax_exchange_rate_applied` disimpan secara permanen pada baris invoice untuk mencegah perhitungan ulang yang tidak disengaja jika tabel kurs diperbarui di masa mendatang.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-125).
 
 ---
 

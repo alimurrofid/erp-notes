@@ -166,11 +166,7 @@ Perbandingan kapabilitas kontrol anggaran pada berbagai software ERP:
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Budget Management pada Naventra ERP:
-
-1. **Inline Real-Time AVC Engine**: Pengecekan ketersediaan anggaran pada Naventra diintegrasikan langsung pada middleware transaksi (*transaction hook*) saat tombol *Submit* atau *Approve* ditekan pada formulir Purchase Requisition dan Purchase Order. Kueri ketersediaan dieksekusi secara instan dengan mengunci baris rekaman (*row-level locking*) untuk mencegah kondisi balapan (*race condition*) ketika dua staf memesan barang serentak pada pos anggaran yang sama.
-2. **Encumbrance Lifecycle Table**: Naventra memelihara tabel relasional mandiri `budget_commitments` yang menyimpan status transisi saldo: `RESERVATION` (PR) $\rightarrow$ `COMMITTED` (PO) $\rightarrow$ `CONSUMED` (Vendor Invoice) $\rightarrow$ `RELEASED` (Pembatalan Dokumen).
-3. **Configurable Tolerance Matrix**: Administrator sistem dapat menetapkan toleransi berbasis peran pengguna, misalnya: staf biasa memiliki toleransi 0% (hard stop mutlak), sedangkan Direktur Divisi dapat menyetujui toleransi pembengkakan hingga 10% dengan rekaman alasan bisnis yang wajib diisi.
+Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-048).
 
 ---
 

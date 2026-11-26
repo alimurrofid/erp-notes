@@ -143,11 +143,7 @@ Penyajian laporan profitabilitas proyek pada platform ERP enterprise:
 
 ## Naventra Consideration
 
-Dalam perancangan modul analisis profitabilitas Naventra ERP:
-
-1. **Real-time Margin Tracking Dashboard**: Dashboard manajer proyek menampilkan visualisasi *burn rate* biaya dan prediksi margin akhir (*Projected Final Margin*) yang diperbarui setiap hari berdasarkan entri timesheet yang disetujui.
-2. **Automated Overhead Surcharge Engine**: Naventra mengintegrasikan modul *Cost Accounting* yang secara otomatis menghitung dan membebankan alokasi *indirect overhead* bulanan ke WBS proyek berdasarkan formula yang dapat disesuaikan tanpa intervensi manual.
-3. **Variance Drill-Down to Source Documents**: Klik pada deviasi margin langsung membuka rincian dokumen sumber pendukung (misalnya klik pada deviasi biaya tenaga kerja langsung membuka daftar lembar kerja timesheet konsultan terkait).
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-089).
 
 ---
 

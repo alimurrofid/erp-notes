@@ -151,11 +151,7 @@ Penerapan logistik material proyek pada platform ERP enterprise:
 
 ## Naventra Consideration
 
-Dalam arsitektur modul logistik proyek Naventra ERP:
-
-1. **Otomatisasi Reservasi dari Jadwal WBS**: Jadwal aktivitas instalasi pada diagram Gantt secara otomatis menghasilkan *Material Reservation* dengan tanggal pemenuhan (*Requirement Date*) yang disinkronkan dengan lead time pengadaan gudang.
-2. **Mobile Warehouse Scanning untuk BAST Fisik**: Tim lapangan melakukan konfirmasi serah terima fisik perangkat di lokasi klien menggunakan aplikasi mobile barcode scanner, yang secara instan memicu dokumen *Goods Issue to Project* dan memperbarui status aktivitas proyek menjadi *Installed*.
-3. **Workflow Rekonsiliasi Material Sisa**: Pada saat milestone instalasi selesai, sistem mewajibkan verifikasi status material sisa sebelum tahapan proyek dapat ditutup (*Technical Completion*). Kelebihan material wajib diproses melalui antarmuka *Return to Warehouse* atau *Scrap Confirmation*.
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-086).
 
 ---
 

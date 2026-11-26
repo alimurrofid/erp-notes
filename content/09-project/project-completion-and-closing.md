@@ -162,11 +162,7 @@ Prosedur penutupan proyek pada platform ERP enterprise:
 
 ## Naventra Consideration
 
-Dalam perancangan modul penutupan proyek Naventra ERP:
-
-1. **Automated Closing Pre-Flight Check**: Naventra menyediakan *Closing Wizard* interaktif yang memindai sistem dalam 1 klik untuk mendeteksi apakah masih ada lembar timesheet belum disetujui, reservasi stok aktif, atau komitmen PO terbuka sebelum mengizinkan penutupan.
-2. **One-Click WIP Settlement Execution**: Tombol *Execute Final Settlement* secara otomatis menyusun dan memvalidasi jurnal pemindahan WIP ke COGS dengan perhitungan varians biaya otomatis.
-3. **Automated Warranty Ticket Routing**: Begitu status beralih ke *Closed*, Naventra secara otomatis membuat entitas *Maintenance Contract* baru dengan masa aktif 90 hari, memetakan tim helpdesk yang berhak menerima tiket garansi dari pelanggan *PT Maju Bersama*.
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-081).
 
 ---
 

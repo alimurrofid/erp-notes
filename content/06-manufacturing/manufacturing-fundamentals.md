@@ -122,14 +122,7 @@ Menjaga integritas data manufaktur mengharuskan pemisahan tegas antara definisi 
 
 ## Naventra Consideration
 
-Untuk perancangan modul Manufaktur pada sistem ERP enterprise seperti **Naventra**:
-
-1. **State Machine Pesanan Produksi yang Ketat**: Terapkan mesin status berbasis FSM pada entitas pesanan produksi:
-   `DRAFT` $\to$ `PLANNED` $\to$ `CONFIRMED` $\to$ `RELEASED` $\to$ `IN_PROGRESS` $\to$ `COMPLETED` $\to$ `CLOSED` (atau `CANCELLED`). Mutasi persediaan fisik hanya diizinkan pada status `RELEASED` dan `IN_PROGRESS`.
-2. **Snapshotting BOM dan Routing pada Saat Order Release**:
-   Saat status pesanan beralih ke `RELEASED`, sistem wajib menyalin (*snapshot*) seluruh baris komponen BOM dan urutan operasi Routing ke dalam tabel kerja transaksi (`mo_materials` dan `mo_operations`). Hal ini mencegah terganggunya proses produksi yang sedang berjalan jika tim R&D merevisi master data BOM pada saat bersamaan.
-3. **Pemisahan Jalur Transaksi (Decoupled Services)**:
-   Pisahkan modul perencanaan (*MRP Service*) yang bersifat komputasi berat (*batch calculation*) dari modul eksekusi lantai pabrik (*Shop Floor Execution Service*) yang menuntut latensi rendah (*low latency*) saat operator memindai barcode pekerjaan.
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-030).
 
 ---
 

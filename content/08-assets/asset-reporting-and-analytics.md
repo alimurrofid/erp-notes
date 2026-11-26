@@ -142,11 +142,7 @@ Perbandingan kapabilitas pelaporan dan analitik aset tetap lintas sistem ERP:
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Asset Reporting & Analytics pada Naventra ERP:
-
-1. **Real-Time Materialized Roll-Forward Cube**: Naventra memelihara tabel agregasi terindeks `asset_rollforward_summary` yang diperbarui secara otomatis saat transaksi perolehan, penyusutan bulanan, revaluasi, atau pelepasan terjadi. Hal ini memungkinkan Laporan Mutasi Aset (Asset History Sheet) dibuka seketika tanpa perlu memindai jutaan baris jurnal historis.
-2. **Automated Subledger-to-GL Health Checker**: Sistem menjalankan daemon validasi harian yang membandingkan saldo subledger aset dengan saldo akun neraca GL. Jika terdeteksi selisih sekecil apa pun, sistem memicu peringatan kritis (*Integrity Breached Alert*) ke dashboard CFO.
-3. **Interactive Executive Asset Cockpit**: Naventra menyediakan dasbor visual interaktif yang menyajikan metrik TCO, rasio utilisasi mesin, persentase penyerapan anggaran CAPEX, dan grafik penuaan aset (*Asset Aging Pyramid*) dengan kemampuan *drill-down* langsung hingga ke foto fisik aset di lantai pabrik.
+Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-070).
 
 ---
 

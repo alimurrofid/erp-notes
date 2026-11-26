@@ -137,16 +137,7 @@ flowchart LR
 
 ## Naventra Consideration
 
-Untuk perancangan modul Pelaporan Manufaktur pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Denormalisasi untuk Analitik Kinerja Cepat (Materialized Views)**:
-   Perhitungan metrik manufaktur melibatkan penggabungan tabel yang sangat besar (`mo`, `lines`, `operations`, `confirmations`, `scraps`). Bangun tabel agregat atau *materialized view* khusus (misal: `analytics_daily_factory_performance`) yang diperbarui secara terjadwal setiap pergantian shift kerja.
-2. **Kalkulasi Metrik OEE Otomatis pada Database Events**:
-   Saat operator men-submit `mo_operation_confirmations`, trigger sistem secara otomatis menghitung durasi produktif vs downtime dan menyimpan metrik OEE parsial per mesin di tabel `work_center_oee_logs`.
-3. **Penyediaan Widget Dasbor Pabrik Out-of-the-Box**:
-   Sediakan widget bawaan pada halaman beranda staf manufaktur:
-   * Widget *Andon Board*: Menampilkan status lampu hijau/kuning/merah untuk setiap stasiun kerja secara real-time.
-   * Widget *Scrap Pareto Chart*: Diagram batang yang mengurutkan penyebab kecacatan produk terbesar untuk memandu program perbaikan berkelanjutan (*Kaizen / Six Sigma*).
+Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV-D-033).
 
 ---
 

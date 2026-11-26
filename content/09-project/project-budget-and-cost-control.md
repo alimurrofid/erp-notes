@@ -195,11 +195,7 @@ Tinjauan pola implementasi modul Budget and Cost Control pada software ERP enter
 
 ## Naventra Consideration
 
-Dalam perancangan modul proyek Naventra ERP:
-
-1. **Kombinasi Hard Stop dan Toleransi Fleksibel**: Menerapkan konfigurasi AVC yang dapat dipilih per jenis biaya (misalnya *Labor Expense* berstatus *Warn* dengan batas 10%, sedangkan *Procurement Subcontractor* berstatus *Hard Stop* 100%).
-2. **Otomatisasi Commitment Ledger**: Setiap PO yang diterbitkan ke vendor otomatis mengunci pagu sisa anggaran WBS tanpa harus menunggu proses *Approval Hierarchy* tingkat korporat selesai.
-3. **EVM Dashboard Real-Time**: Naventra menyediakan visualisasi kurva-S (*S-Curve*) otomatis yang mempertemukan kurva PV, EV, dan AC secara langsung dari sinkronisasi harian *timesheet* dan transaksi *procurement*.
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-079).
 
 ---
 

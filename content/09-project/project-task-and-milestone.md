@@ -182,11 +182,7 @@ Perbandingan kapabilitas pengelolaan tugas dan milestone lintas sistem ERP enter
 
 ## Naventra Consideration
 
-Rancangan arsitektur Task & Milestone pada Naventra ERP:
-
-1. **Automated Billing Signal Dispatcher**: Saat status suatu record di tabel `project_milestones` diperbarui menjadi `ACHIEVED`, sistem Naventra mempublikasikan domain event `MilestoneAchievedEvent`. Modul penagihan (*Billing Service*) menangkap sinyal ini dan secara otomatis menerbitkan draf faktur piutang di modul Sales tanpa campur tangan staf admin.
-2. **Digital BAST Attachment Hook**: Formulir pengesahan milestone pada Naventra mewajibkan pengunggahan berkas bukti (PDF BAST) dan tanda tangan digital penanggung jawab. Sistem mencatat stempel waktu SHA-256 pada berkas untuk mencegah modifikasi dokumen bukti audit di masa depan.
-3. **Interactive Progress Barometer**: Dasbor Naventra menyajikan visualisasi *Milestone Timeline* interaktif yang menampilkan status lampu lalu lintas (*Traffic-Light Status*): hijau untuk milestone selesai tepat waktu, kuning untuk mendekati tenggat waktu, dan merah untuk milestone yang tertunda (*delayed*).
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-093).
 
 ---
 

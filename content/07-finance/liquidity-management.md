@@ -159,11 +159,7 @@ Perbandingan kapabilitas pengelolaan likuiditas lintas platform ERP:
 
 ## Naventra Consideration
 
-Rancangan arsitektur modul Liquidity Management pada Naventra ERP:
-
-1. **Centralized Liquidity Cockpit**: Naventra menyediakan dasbor terpadu tingkat korporat (*Corporate Liquidity Cockpit*) yang mengagregasikan seluruh saldo rekening operasional, deposito, pinjaman siaga, dan *restricted cash* dari seluruh anak perusahaan dalam tampilan visual hierarkis dengan konversi valuta asing otomatis ke mata uang pelaporan.
-2. **Automated Intercompany Lending Engine**: Ketika fitur *Internal Cash Sweeping* dijalankan, Naventra tidak hanya memindahkan dana antar-rekening melainkan secara otomatis membentuk dokumen transaksi *Intercompany Loan Agreement*, menghitung akrual bunga harian, dan menghitung potongan pajak PPh 23 secara otomatis pada saat pembayaran bunga jatuh tempo.
-3. **Credit Facility Utilization Tracker**: Sistem memantau batas plafon kredit bank rekanan (*facility headroom*), menghitung saldo ditarik vs saldo tersisa secara *real-time*, dan memperingatkan bendahara jika penggunaan pinjaman telah melampaui batas kovenan perbankan (*debt covenant ratio limits*).
+Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-059).
 
 ---
 

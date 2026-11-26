@@ -149,14 +149,7 @@ Dalam arsitektur ERP terpadu, modul pembayaran dan pelaporan perpajakan mencakup
 
 ## Naventra Consideration
 
-Pada rancangan sistem ERP Naventra, modul pembayaran dan pelaporan perpajakan dikembangkan dengan standar otomasi tinggi:
-
-1. **Integrated Tax Payment Voucher:**
-   Naventra membuat dokumen `tax_payment_voucher` yang menggabungkan informasi KAP, KJS, ID Billing, masa pajak, tahun pajak, dan nomor rekening sumber secara otomatis dari hasil rekonsiliasi pajak.
-2. **Automated NTPN Verification Hook:**
-   Setelah kasir menginput nomor NTPN dari bukti bayar perbankan, sistem memicu *webhook* validasi ke gateway DJP untuk memastikan dana telah benar-benar masuk ke kas negara sebelum mengizinkan tombol `Submit SPT` diaktifkan.
-3. **Immutable Compliance Binding:**
-   Ketika status SPT berubah menjadi `FILED`, seluruh berkas digital (kertas kerja rekonsiliasi, PDF laporan, NTPN, dan BPE) digabungkan menjadi berkas arsip ber-hash kriptografi unik yang tidak dapat dimodifikasi oleh pengguna mana pun.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-123).
 
 ---
 

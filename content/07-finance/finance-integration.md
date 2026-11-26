@@ -152,11 +152,7 @@ Dalam mengimplementasikan integrasi keuangan lintas modul, software ERP terkemuk
 
 ## Naventra Consideration
 
-Rancangan arsitektur integrasi lintas modul pada Naventra ERP:
-
-1. **Transactional Event-Bus Pipeline**: Setiap mutasi di modul rantai pasok (misal konfirmasi surat jalan atau penerimaan barang) memicu *Domain Event* terstandarisasi yang dieksekusi dalam transaksi basis data terisolasi. Hal ini menjamin bahwa kegagalan kalkulasi analitik keuangan di latar belakang tidak akan menggagalkan kelancaran proses fisik serah terima barang di gudang.
-2. **Atomic Consistency Guarantee**: Naventra menerapkan pola *Outbox Pattern* untuk komunikasi antar-layanan. Transaksi operasional dan pencatatan komitmen anggaran disimpan dalam satu blok transaksi atomik (*ACID guarantee*), mencegah terjadinya transaksi operasional yang lolos tanpa validasi pagu anggaran.
-3. **Automated Cross-Module Integrity Validator**: Naventra menyertakan daemon pemantau integritas data (*System Health Bot*) yang setiap malam memvalidasi konsistensi matematis antar-tabel: memastikan saldo stok gudang $\times$ harga pokok sama dengan saldo akun persediaan di GL, dan total faktur terbuka di modul AR sama dengan saldo akun kontrol piutang.
+Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-052).
 
 ---
 

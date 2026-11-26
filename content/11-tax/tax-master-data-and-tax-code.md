@@ -227,24 +227,7 @@ Arsitektur data master perpajakan modern dibangun dengan prinsip *loosely-couple
 
 ## Naventra Consideration
 
-Pada implementasi ERP Naventra, arsitektur master data perpajakan dibangun dengan fondasi relasional yang kokoh:
-
-1. **Relasi Granular `tax_codes` dan `tax_rates`:**
-   Tabel `tax_codes` bertindak sebagai *header* deklaratif, sementara tabel `tax_rates` menampung riwayat tarif berbasis tanggal:
-   ```sql
-   CREATE TABLE tax_rates (
-       id UUID PRIMARY KEY,
-       tax_code_id UUID REFERENCES tax_codes(id),
-       rate_percentage DECIMAL(5,2) NOT NULL,
-       valid_from DATE NOT NULL,
-       valid_to DATE,
-       is_active BOOLEAN DEFAULT TRUE
-   );
-   ```
-2. **Kategori Deterministik:**
-   Naventra mewajibkan setiap kode pajak memiliki relasi langsung ke `tax_type` (`VAT`, `WHT_21`, `WHT_23`, `WHT_4_2`, `CIT`) dan `reporting_box` (nomor formulir SPT) guna mengotomatisasi penyusunan laporan SPT tanpa proses pemetaan manual di akhir periode.
-3. **Pemberian Hak Akses Terbatas:**
-   Hanya staf dengan wewenang *Tax Administrator* atau *Financial Controller* yang memiliki izin untuk membuat atau mengubah data master pajak. Perubahan langsung dicatat ke tabel `tax_master_audit_trail`.
+Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-122).
 
 ---
 

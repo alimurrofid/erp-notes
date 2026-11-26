@@ -150,11 +150,7 @@ Penerapan manajemen perubahan, risiko, dan isu pada platform ERP utama:
 
 ## Naventra Consideration
 
-Dalam perancangan modul tata kelola proyek Naventra ERP:
-
-1. **Terintegrasi ke Matriks RACI**: Setiap isu yang tercatat secara otomatis menugaskan penanggung jawab (*Action Item Owner*) dan mengirimkan eskalasi bertahap jika isu tidak terselesaikan dalam SLA yang ditetapkan.
-2. **Impact Simulation Engine**: Antarmuka *Change Request* Naventra menyediakan simulator interaktif: memasukkan perubahan durasi aktivitas atau penambahan jam kerja langsung menampilkan prediksi dampak pada tanggal *Go-Live* dan margin laba kotor proyek.
-3. **Audit Trail Amandemen Baseline**: Setiap revisi jadwal atau pagu anggaran wajib mencantumkan nomor persetujuan CCB digital dan menyimpan salinan *snapshot* baseline sebelumnya untuk keperluan audit kepatuhan internal.
+Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-080).
 
 ---
 
