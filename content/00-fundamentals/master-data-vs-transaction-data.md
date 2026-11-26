@@ -141,4 +141,4 @@ Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-004) â€
 1. **SAP Documentation**: *Master Data and Transaction Data in Enterprise Systems*. URL: https://help.sap.com/
 2. **Microsoft Learn**: *Data entities and data packages in Dynamics 365 Finance and Operations*. URL: https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities
 3. **Frappe Documentation**: *DocType Anatomy and Document Lifecycle*. URL: https://frappeframework.com/docs/user/en/basics/doctypes
-4. **DAMA International**: *DAMA-DMBOK: Data Management Body of Knowledge* (2nd ed.). Technics Publications (Master Data & Reference Data chapters).
+4. **DAMA International**: *DAMA-DMBOK: Data Management Body of Knowledge* (2nd ed., 2017). Technics Publications. ISBN 978-1-63462-234-0 (Master Data & Reference Data chapters).
