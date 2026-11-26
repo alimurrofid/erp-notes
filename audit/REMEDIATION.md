@@ -49,7 +49,7 @@ Kedelapan item di bawah **sudah diputuskan** pemilik proyek; nilai kanoniknya ad
 
 | ID | Keputusan | Diterapkan di |
 |---|---|---|
-| ACC-06 / FIN-10 | Aset 2028: cost model 33 bulan untuk `AST-MAC-2026-0001`; revaluasi memakai `AST-MAC-2026-0002` | `08-assets`, `02-accounting` |
+| ACC-06 / FIN-10 | Aset 2028: cost model, umur 60 bulan, residu 10 jt; 31 Des 2028 akum 60,5 jt, NB 59,5 jt; revaluasi memakai `AST-MAC-2026-0002` | `08-assets`, `02-accounting` |
 | ACC-11 / FIN-09 | Fixed-price: WIP→COGS per progres; T&M: langsung beban | `09-project`, `02-accounting` |
 | ACC-26 | EBT 100 jt kanonik; EBT 15,35 jt = tahun pembanding | `07-finance`, `02-accounting` |
 | FIN-11 | Satu COA di `02-accounting/chart-of-accounts.md` | `02-accounting`, `08-assets` |

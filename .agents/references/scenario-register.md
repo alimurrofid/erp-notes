@@ -21,7 +21,7 @@ Keputusan berikut disetujui pemilik proyek dan menjadi basis Fase 2. Angka yang 
 
 | # | Objek | Keputusan kanonik |
 |---|---|---|
-| D-1 | Aset `AST-MAC-2026-0001` | Cost model + skedul 33 bulan (akumulasi 55 jt, nilai buku 65 jt, residu 10 jt). Artikel revaluasi memakai aset berbeda `AST-MAC-2026-0002` (revaluation model). |
+| D-1 | Aset `AST-MAC-2026-0001` | Cost model. Perolehan Rp120 jt pada 1 April 2026, residu Rp10 jt, umur 60 bulan (Rp1.833.333/bulan). Pada 31 Desember 2028 (33 bulan): akumulasi **Rp60,5 jt**, nilai buku **Rp59,5 jt**, sisa umur 27 bulan. Artikel revaluasi memakai aset berbeda `AST-MAC-2026-0002` (revaluation model). |
 | D-2 | Material proyek | Proyek fixed-price: WIP→COGS diakru per progres. Time-material/cost-reimbursable: langsung ke beban. |
 | D-3 | Skenario tahunan | EBT 100 jt menjadi kanonik. Skenario EBT 15,35 jt diberi label tahun pembanding, bukan skenario kedua. |
 | D-4 | Chart of accounts | `content/02-accounting/chart-of-accounts.md` kanonik; `08-assets` menyesuaikan. |

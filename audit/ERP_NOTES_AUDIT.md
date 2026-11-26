@@ -407,8 +407,8 @@ If the intended labour total is 90.000.000, the PM line must be 26.400.000 (176 
 
 | Measure at 31 Dec 2028 | Correct (33 months) | Used in revaluation/impairment |
 |---|---:|---:|
-| Accumulated depreciation | 55.000.000 | 60.000.000 |
-| Carrying amount | 65.000.000 | 60.000.000 |
+| Accumulated depreciation | 60.500.000 | 60.000.000 |
+| Carrying amount | 59.500.000 | 60.000.000 |
 | Residual value | 10.000.000 | 0 |
 | Remaining life | 27 months | 24 months |
 
