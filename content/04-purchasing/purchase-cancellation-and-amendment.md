@@ -125,12 +125,7 @@ Dalam operasional bisnis, sering kali terjadi situasi di mana pesanan telah dite
 
 ## Naventra Consideration
 
-Untuk perancangan modul Purchasing pada sistem ERP seperti **Naventra**:
-
-1. **State Machine yang Ketat**: Terapkan *finite-state machine* (FSM) pada entitas Purchase Order (`DRAFT` $\to$ `SUBMITTED` $\to$ `APPROVED` $\to$ `SENT` $\to$ `PARTIAL` $\to$ `FULFILLED` $\to$ `CLOSED` $\to$ `CANCELLED`). Transisi ke `CANCELLED` hanya diizinkan jika `received_qty == 0` dan `billed_qty == 0`.
-2. **PO Versioning Entity**: Pisahkan tabel header dan baris PO versi aktif (`purchase_orders`, `purchase_order_lines`) dengan tabel riwayat versi (`purchase_order_versions`, `purchase_order_version_lines`). Setiap revisi setelah status `APPROVED` harus menaikkan `revision_number` dan membekukan versi sebelumnya.
-3. **Force Close / Deliver Remainder Logic**: Sediakan aksi `Short Close Line` yang menghitung `cancelled_qty = ordered_qty - received_qty` dan mengatur `open_qty = 0`, sehingga PO dapat beralih ke status `COMPLETED` tanpa menunggu sisa barang yang tidak akan pernah datang.
-4. **Mandatory Cancellation Reason**: Mewajibkan pengguna memasukkan *Cancellation / Revision Reason Code* (misal: `VENDOR_OUT_OF_STOCK`, `PRICE_CORRECTION`, `INTERNAL_REQUEST_WITHDRAWN`) sebagai data terstruktur untuk kebutuhan analitik performa pengadaan.
+Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-010) — state machine dan versioning PO.
 
 ---
 

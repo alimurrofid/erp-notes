@@ -190,19 +190,7 @@ Untuk memastikan kontinuitas pemahaman yang utuh di seluruh modul *erp-notes*, b
 
 ## Naventra Consideration
 
-Untuk perancangan modul P2P pada sistem ERP enterprise seperti **Naventra**:
-
-1. **Atomic Transaction Pipeline**: Pastikan mutasi transaksional P2P dieksekusi secara atomik dalam basis data. Sebagai contoh, saat memposting `GoodsReceipt`:
-   * Mutasi tabel stok fisik (`stock_quants` / `inventory_ledgers`).
-   * Pembentukan baris jurnal akrual GL (`gl_entries`).
-   * Pembaruan kuantitas diterima pada baris PO (`po_lines.received_qty`).
-   
-   Ketiga mutasi ini harus berada dalam satu transaksi database (`BEGIN ... COMMIT`) guna mencegah anomali di mana kuantitas fisik bertambah namun jurnal akrual gagal terbentuk.
-2. **Dedicated Document Flow Tracker**: Sediakan visualisasi antarmuka pengguna (*UI Flow Chart*) interaktif yang memperlihatkan silsilah dokumen secara grafis:
-   $$\text{PR} \longrightarrow \text{PO} \longrightarrow [\text{GR-1}, \text{GR-2}] \longrightarrow \text{Bill} \longrightarrow [\text{Debit Note}] \longrightarrow \text{Payment}$$
-   Pengguna dapat mengklik setiap node untuk langsung membuka detail dokumen terkait (*drill-down navigation*).
-3. **Audit Immutability & Event Sourcing**: Terapkan catatan audit permanen (*append-only event log*) untuk setiap transisi status. Hindari pengubahan nilai finansial pada dokumen yang sudah disetujui; gunakan dokumen koreksi formal (RTV, Debit Note, PO Amendment) agar integritas pembukuan terjamin di mata auditor independen.
-4. **Idempotent Payment Allocation**: Pastikan modul pembayaran perbankan menerapkan kunci idempotensi (*idempotency key*) untuk mencegah risiko *double payment* ke vendor saat terjadi kegagalan jaringan perbankan atau klik ganda oleh pengguna.
+Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-008) — pipeline P2P atomik, flow tracker, idempotent payment.
 
 ---
 

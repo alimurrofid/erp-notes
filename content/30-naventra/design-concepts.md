@@ -68,6 +68,43 @@ Sumber: [[00-fundamentals/organizational-structure|Organizational Structure]]
 - Setiap baris transaksi wajib merujuk `company_id` dan `branch_id`.
 - Dimensi analitik dipisah dari COA sehingga laporan dapat difilter per cabang/divisi/proyek tanpa mengubah bagan akun.
 
+## NAV-D-008 — Pipeline P2P Atomik
+
+Sumber: [[04-purchasing/procure-to-pay-integration|Procure to Pay Integration]]
+
+- Satu posting goods receipt memutasi stok, jurnal akrual, dan `received_qty` PO dalam satu transaksi.
+- Document flow tracker menampilkan PR → PO → GR → Bill → Debit Note → Payment dengan drill-down.
+- Audit append-only; koreksi memakai dokumen formal (RTV, debit note, amendment).
+- Alokasi pembayaran memakai idempotency key untuk mencegah double payment.
+
+## NAV-D-009 — Agreement dan Release Order
+
+Sumber: [[04-purchasing/procurement-contract-and-agreement|Procurement Contract and Agreement]]
+
+- Header `procurement_agreements` dan baris `procurement_agreement_lines` menyimpan komitmen kuantitas dan harga.
+- Baris PO menyimpan `agreement_line_id`; approval memutasi `released_qty` secara atomik.
+- Over-fulfillment ditolak bila `max_enforced` aktif.
+- Dashboard burn-down menunjukkan serapan kontrak.
+
+## NAV-D-010 — State Machine dan Versioning PO
+
+Sumber: [[04-purchasing/purchase-cancellation-and-amendment|Purchase Cancellation and Amendment]]
+
+- FSM: DRAFT → SUBMITTED → APPROVED → SENT → PARTIAL → FULFILLED → CLOSED → CANCELLED.
+- Pembatalan hanya bila `received_qty = 0` dan `billed_qty = 0`.
+- Revisi setelah APPROVED menaikkan `revision_number` dan membekukan versi lama.
+- Short close menghitung `cancelled_qty` dan menutup `open_qty`.
+- Alasan pembatalan/revisi wajib berupa kode terstruktur.
+
+## NAV-D-011 — Read Model untuk Analitik P2P
+
+Sumber: [[04-purchasing/purchasing-reporting-and-analytics|Purchasing Reporting and Analytics]]
+
+- Dashboard membaca materialized view yang diperbarui asinkron, bukan tabel transaksi.
+- Metrik dihitung saat event: `delivery_variance_days`, `is_touchless`.
+- Widget actionable alerts dan spend breakdown tersedia bawaan.
+- Ekspor menyertakan nomor dokumen relasional lengkap.
+
 ## Traceability
 
 | ID | Sumber | Requirement terkait | Status |
@@ -79,6 +116,10 @@ Sumber: [[00-fundamentals/organizational-structure|Organizational Structure]]
 | NAV-D-005 | `00-fundamentals/cross-module-integration.md` | NAV-R-03, NAV-R-07 | Adopted |
 | NAV-D-006 | `00-fundamentals/documents-transactions-events.md` | NAV-R-10 | Adopted |
 | NAV-D-007 | `00-fundamentals/organizational-structure.md` | NAV-R-12 | Adopted |
+| NAV-D-008 | `04-purchasing/procure-to-pay-integration.md` | NAV-R-03, NAV-R-07, NAV-R-12 | Adopted |
+| NAV-D-009 | `04-purchasing/procurement-contract-and-agreement.md` | NAV-R-07, NAV-R-10 | Adopted |
+| NAV-D-010 | `04-purchasing/purchase-cancellation-and-amendment.md` | NAV-R-10, NAV-R-12 | Adopted |
+| NAV-D-011 | `04-purchasing/purchasing-reporting-and-analytics.md` | NAV-R-12 | Adopted |
 
 ## References
 

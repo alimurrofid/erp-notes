@@ -145,16 +145,7 @@ flowchart LR
 
 ## Naventra Consideration
 
-Untuk perancangan modul Purchasing Reporting pada sistem ERP seperti **Naventra**:
-
-1. **Denormalisasi untuk Kecepatan Query (Read-Model / Reporting Views)**: Transaksi P2P melibatkan relasi kompleks lintas tabel (`requisitions` $\to$ `po` $\to$ `gr` $\to$ `bills` $\to$ `payments`). Buat *materialized view* atau tabel analitik khusus (misal: `analytics_p2p_lifecycle_summary`) yang diperbarui secara asinkron (via event-driven worker) agar dashboard analitik tidak membebani transaksi OLTP.
-2. **Kalkulasi Metrik Otomatis pada Database Events**:
-   * Saat Goods Receipt diposting: Hitung deviasi tanggal janji vendor secara otomatis dan simpan ke `gr.delivery_variance_days`.
-   * Saat 3-Way Match divalidasi: Catat status `is_touchless = true/false` pada baris tagihan.
-3. **Pre-built Dashboard Widgets**: Sediakan widget bawaan out-of-the-box pada halaman beranda staf procurement:
-   * Widget *Actionable Alerts*: "5 PO membutuhkan konfirmasi pengiriman vendor hari ini", "3 Bill tertahan karena perbedaan harga".
-   * Widget *Spend Breakdown*: Diagram lingkaran (*donut chart*) belanja berdasarkan kategori 30 hari terakhir.
-4. **Ekspor Data Terstandarisasi**: Sediakan kapabilitas ekspor laporan dengan format terstruktur (Excel, CSV, PDF) yang menyertakan nomor dokumen relasional secara lengkap untuk memudahkan proses rekonsiliasi tim audit internal.
+Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-011) — read model analitik P2P.
 
 ---
 

@@ -107,20 +107,7 @@ Pengelolaan perjanjian pengadaan dalam ERP mencakup siklus pemantauan berkesinam
 
 ## Naventra Consideration
 
-Untuk perancangan modul Purchasing Agreement pada sistem ERP seperti **Naventra**:
-
-1. **Struktur Data Master Agreement**:
-   * Tabel header: `procurement_agreements` (`agreement_number`, `vendor_id`, `agreement_type`, `valid_from`, `valid_to`, `total_committed_value`, `status`).
-   * Tabel baris: `procurement_agreement_lines` (`item_id`, `committed_qty`, `unit_price`, `released_qty`, `invoiced_qty`, `max_enforced`).
-2. **Relasi ke Release Order**: Baris tabel PO (`purchase_order_lines`) wajib menyimpan relasi `agreement_line_id`. Saat PO disetujui, lakukan mutasi atomik pada kolom `released_qty` di tabel agreement.
-3. **Over-fulfillment Enforcement Logic**:
-   ```sql
-   -- Validasi sebelum approve Release Order
-   IF (line.released_qty + new_order_qty > line.committed_qty) AND line.max_enforced THEN
-       RAISE EXCEPTION 'Release quantity exceeds committed blanket order quantity for item %', line.item_id;
-   END IF;
-   ```
-4. **Dashboard Serapan Anggaran (*Commitment Burn-down Chart*)**: Sediakan visualisasi serapan kuantitas dan nilai kontrak terhadap garis waktu (*timeline progress*) untuk membantu tim procurement mengantisipasi kontrak yang *under-utilized* atau *over-utilized*.
+Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-009) — agreement dan release order.
 
 ---
 
