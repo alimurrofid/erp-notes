@@ -99,7 +99,7 @@ Berikut adalah contoh laporan keuangan terintegrasi yang dihasilkan dari transak
 > Angka pada laporan ini adalah **tahun pembanding** (EBT Rp15.350.000), bukan skenario kanonik tahun berjalan. Skenario kanonik memakai EBT Rp100.000.000 dan PKP Rp105.000.000 — lihat `11-tax/index.md`.
 
 ```text
-PT MAJU SEJAHTERA BERSAMA
+PT MAJU BERSAMA
 LAPORAN LABA RUGI (STATEMENT OF PROFIT OR LOSS)
 Untuk Periode yang Berakhir 31 Desember 2026
 
