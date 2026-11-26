@@ -92,7 +92,7 @@ Selama proyek dieksekusi, seluruh biaya operasional (tenaga kerja Rp91,6M, penga
 
 ### 2. Jurnal Penyelesaian Finansial Akhir (Contoh Skenario: Final WIP Settlement to COGS)
 
-Pada skenario pembelajaran proyek pelanggan ini, saldo akun perantara WIP dikreditkan menjadi Rp0 pada saat penutupan dan direklasifikasi secara definitif sebagai Harga Pokok Penjualan (COGS) pada Laporan Laba Rugi:
+Pada model kanonik fixed-price PT Maju Bersama, HPP diakui bertahap setiap BAST (lihat `09-project/project-billing-and-revenue.md`). Jurnal di bawah menunjukkan **total kumulatif** biaya proyek yang pada akhirnya direklasifikasi dari WIP ke COGS; dalam praktik akrual per BAST, sebagian jurnal ini sudah dibukukan tiap periode dan jurnal penutupan hanya membersihkan sisa saldo WIP:
 
 $$\begin{array}{llrr}
 \text{Debit:} & \text{Cost of Goods Sold (HPP Proyek Pelanggan)} & \text{Rp182.600.000} & \\
@@ -108,7 +108,7 @@ $$\begin{array}{llrr}
 > [!NOTE]
 > **Caveat Kebijakan Akuntansi & IFRS 15 / PSAK 72**:
 > Pemindahan saldo akumulasi biaya proyek dari akun neraca (WIP) ke COGS sekaligus pada penutupan akhir merupakan contoh perlakuan akuntansi berdasarkan kebijakan kontrak serah terima (*Point in Time*). Dalam praktik akuntansi riil, perlakuan ini bukan aturan mutlak dan dapat bervariasi bergantung pada:
-> 1. **Metode Pengakuan Pendapatan**: Pada proyek dengan pengakuan pendapatan sepanjang waktu (*Over Time* - metode *Cost-to-Cost*), beban pokok proyek umumnya diakui secara proporsional setiap periode bulanan bersamaan dengan pengakuan pendapatan, bukan ditumpuk di neraca hingga penutupan.
+> 1. **Metode Pengakuan Pendapatan**: Model kanonik proyek fixed-price PT Maju Bersama mengakui beban pokok secara proporsional setiap BAST, bersamaan dengan pengakuan pendapatan, bukan menumpuk seluruh biaya di neraca hingga penutupan. Varian *Point in Time* hanya berlaku bila seluruh proyek adalah satu kewajiban pelaksanaan yang dipenuhi pada serah terima akhir.
 > 2. **Kriteria Kapitalisasi Biaya Kontrak**: Biaya yang boleh ditangguhkan di neraca harus memenuhi kriteria biaya pemenuhan kontrak (*Costs to Fulfill a Contract* - IFRS 15.95). Biaya inefisiensi, biaya penawaran awal (*selling expenses*), atau beban administratif umum wajib langsung dibebankan (*expensed as incurred*).
 > 3. **Proyek Investasi Modal (CAPEX)**: Untuk proyek aset internal, saldo WIP dikapitalisasi ke Aset Tetap (*CWIP to PPE*), seperti dibahas pada [[08-assets/asset-acquisition-and-capitalization|Phase 9]]. Rujuk ke [[02-accounting/revenue-and-expense|Phase 3]] untuk standar akuntansi pendapatan dan beban.
 

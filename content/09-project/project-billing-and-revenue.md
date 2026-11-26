@@ -99,7 +99,20 @@ $$\begin{array}{llrr}
 
 Jangan memakai *contract liability* untuk milestone yang BAST-nya sudah ditandatangani; itu menunda pendapatan yang seharusnya sudah diakui.
 
-### 3. Saat Penerimaan Kas dari Pelanggan
+### 4. Pengakuan COGS pada Saat BAST (Proyek Fixed-Price)
+
+Untuk proyek fixed-price kanonik PT Maju Bersama, beban pokok diakui **pada periode yang sama** dengan pendapatan milestone, bukan ditahan di WIP sampai penutupan proyek:
+
+$$\begin{array}{llrr}
+\text{Debit:} & \text{Cost of Goods Sold (HPP Proyek)} & \text{biaya aktual periode} & \\
+\text{Kredit:} & \text{Work-in-Progress (WIP Proyek)} & & \text{biaya aktual periode}
+\end{array}$$
+
+Nilai "biaya aktual periode" diambil dari timesheet, material issue, dan biaya subkontraktor yang terposting ke WBS pada periode tersebut. Artikel ini tidak menetapkan angka tetap karena biaya bergerak mengikuti eksekusi; contoh angka lengkap ada di `09-project/project-completion-and-closing.md`.
+
+Untuk proyek **time-material / cost-reimbursable**, material dan tenaga kerja langsung dibebankan ke HPP saat terjadi, tanpa melewati WIP.
+
+### 5. Saat Penerimaan Kas dari Pelanggan
 
 Ketika pelanggan melunasi tagihan milestone via transfer bank:
 
