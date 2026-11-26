@@ -127,7 +127,7 @@ PT Maju Bersama memantau riwayat pemeliharaan **Mesin Perakitan Laptop Pro** (`A
 - Mesin mengalami 6 kali mogok mendadak (*unplanned downtime*) dengan total waktu henti 120 jam kerja pabrik.
 - Perbaikan darurat, pergantian kartu pengendali elektronik, dan jasa teknisi panggilan vendor menghabiskan biaya sebesar **Rp18.500.000** dalam satu tahun saja.
 - **Analisis Sistem ERP**:
-  $$\frac{\text{Biaya Perawatan Tahun 2029 (Rp18.500.000)}}{\text{Sisa Nilai Buku Bersih (Rp20.000.000)}} = 92,5\%$$
+  $$\frac{\text{Biaya Perawatan Tahun 2029 (Rp18.500.000)}}{\text{Sisa Nilai Buku Bersih akhir 2029 (Rp37.500.000)}} = 49,3\%$$
 - Sistem secara otomatis menandai mesin dengan status peringatan merah (*High Maintenance Drag Alert*).
 - Manajer Produksi dan CFO memutuskan untuk **tidak memperpanjang masa manfaat mesin** dan memasukkannya ke dalam proposal anggaran belanja modal (*CAPEX Plan*) Tahun 2030 untuk digantikan dengan mesin generasi terbaru.
 

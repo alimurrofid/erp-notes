@@ -90,14 +90,14 @@ sequenceDiagram
 
     Note over Whs,FA: Tahap 2: Penerimaan Fisik & Kapitalisasi (Mar - Apr 2026)
     Whs->>FA: Mesin Tiba di Pabrik Cikarang: Pasang Label Barcode "TAG-MB-88019"
-    FA->>FA: Buat Master Aset AST-MAC-2026-0001 (Residu Rp20M, Umur 5 Th, Garis Lurus)
+    FA->>FA: Buat Master Aset AST-MAC-2026-0001 (Residu Rp10 jt, Umur 60 Bulan, Garis Lurus)
     FA->>GL: Eksekusi Kapitalisasi (15 Mar 2026): Debit Mesin Rp120M, Kredit Asset Clearing Rp120M
     FA->>FA: Set Status "IN_SERVICE" per 01 April 2026 (Penyusutan Dimulai)
 
     Note over Prod,GL: Tahap 3: Operasional Pabrik & Penyerapan Biaya (2026 - 2027)
     Prod->>Prod: Mesin Terhubung ke Work Center WC-ASM-01 (Lini Perakitan Laptop Pro)
     loop Setiap Akhir Bulan
-        FA->>GL: Monthly Depreciation Run: Debit Beban Depresiasi Rp1.666.667, Kredit Akumulasi Depresiasi
+        FA->>GL: Monthly Depreciation Run: Debit Beban Depresiasi Rp1.833.333, Kredit Akumulasi Depresiasi
         Prod->>GL: Serap Beban Depresiasi ke Biaya Overhead Pabrik (Membentuk Nilai Barang Jadi Laptop Pro)
     end
 
@@ -127,7 +127,7 @@ sequenceDiagram
 
 3. **Manufaktur & Penyerapan Beban Depresiasi (Tahun 2026–2027)**:
    - Mesin didaftarkan sebagai mesin utama pada pusat kerja `WC-ASM-01` di modul Manufacturing.
-   - Setiap akhir bulan, modul Fixed Assets memposting beban penyusutan garis lurus sebesar Rp1.666.667 (Dasar tersusutkan Rp100.000.000 / 60 bulan).
+   - Setiap akhir bulan, modul Fixed Assets memposting beban penyusutan garis lurus sebesar Rp1.833.333 (Dasar tersusutkan Rp110.000.000 / 60 bulan).
    - Beban penyusutan ini diserap (*absorbed*) ke dalam biaya overhead pabrik, yang kemudian membentuk nilai pokok persediaan barang jadi 100 unit Laptop Pro yang dijual kepada **PT Mitra Niaga**.
 
 4. **Mutasi Antar-Pabrik & Audit Fisik Berkala (Tahun 2027–2028)**:
@@ -135,7 +135,7 @@ sequenceDiagram
    - Pada audit fisik tahunan November 2028, auditor memindai barcode mesin menggunakan aplikasi mobile: status terkonfirmasi cocok (*Matched & Verified*).
 
 5. **Pelepasan Aset Komersial & Penghentian Pengakuan (Maret 2031 / Akhir Tahun ke-5)**:
-   - Setelah 5 tahun beroperasi penuh (60 bulan), akumulasi penyusutan mencapai Rp100.000.000, menyisakan nilai buku bersih tepat sebesar estimasi nilai residu awal: **Rp20.000.000**.
+   - Setelah 5 tahun beroperasi penuh (60 bulan), akumulasi penyusutan mencapai Rp110.000.000, menyisakan nilai buku bersih tepat sebesar estimasi nilai residu awal: **Rp10.000.000**.
    - Manajemen menjual mesin tersebut kepada pihak ketiga seharga **Rp25.000.000** (ditambah PPN efektif 11% Rp2.750.000).
    - Modul Sales menerbitkan faktur komersial dan Faktur Pajak Keluaran PPN Pasal 16D.
    - Modul Fixed Assets mengeksekusi penghentian pengakuan (*Derecognition*): menghapus harga perolehan Rp120.000.000, menghapus akumulasi penyusutan Rp100.000.000, mengakui kas/piutang Rp27.750.000, dan membukukan **Keuntungan Pelepasan Aset Tetap sebesar Rp5.000.000** di Laporan Laba Rugi.

@@ -109,24 +109,24 @@ sequenceDiagram
 Mekanisme akuntansi pelepasan aset menghapus akun aktiva dan akumulasi depresiasinya dari neraca:
 
 ### 1. Pelepasan Melalui Penjualan Untung (Gain on Sale)
-PT Maju Bersama menjual mesin yang memiliki Harga Perolehan Rp120.000.000 dan Akumulasi Penyusutan Rp100.000.000 (Nilai Buku Bersih Rp20.000.000) dengan harga jual Rp25.000.000 (belum termasuk PPN efektif 11% = Rp2.750.000):
+PT Maju Bersama menjual mesin yang memiliki Harga Perolehan Rp120.000.000 dan Akumulasi Penyusutan Rp110.000.000 (Nilai Buku Bersih Rp10.000.000) dengan harga jual Rp25.000.000 (belum termasuk PPN efektif 11% = Rp2.750.000):
 
 | Akun | Debit (IDR) | Kredit (IDR) | Keterangan |
 | :--- | :--- | :--- | :--- |
 | `112100 - Piutang Penjualan Aset Tetap` | 27.750.000 | - | Tagihan ke pembeli pihak ketiga |
-| `153090 - Akumulasi Penyusutan Mesin` | 100.000.000 | - | Menghapus seluruh akumulasi penyusutan |
+| `153090 - Akumulasi Penyusutan Mesin` | 110.000.000 | - | Menghapus seluruh akumulasi penyusutan |
 | `153000 - Mesin & Peralatan Pabrik` | - | 120.000.000 | Menghapus harga perolehan historis aset |
 | `213100 - PPN Keluaran (PPN Pasal 16D - 11%)` | - | 2.750.000 | Pajak pertambahan nilai atas penjualan aset |
-| `710100 - Keuntungan Penjualan Aset Tetap` | - | 5.000.000 | Laba pelepasan di Laporan Laba Rugi |
+| `710100 - Keuntungan Penjualan Aset Tetap` | - | 15.000.000 | Laba pelepasan di Laporan Laba Rugi |
 
-### 2. Pelepasan Melalui Pemusnahan / Scrap (Loss on Scrapping)
-Jika mesin yang sama (Nilai Buku Rp20.000.000) rusak parah dan hanya laku dijual sebagai besi tua rongsokan senilai Rp12.000.000 (terjadi rugi Rp8.000.000):
+### 2. Pelepasan Melalui Pemusnahan / Scrap
+Jika mesin yang sama (Nilai Buku Rp10.000.000) rusak parah dan hanya laku dijual sebagai besi tua rongsokan senilai Rp12.000.000 (terjadi laba Rp2.000.000):
 
 | Akun | Debit (IDR) | Kredit (IDR) | Keterangan |
 | :--- | :--- | :--- | :--- |
 | `111200 - Kas Bank Operasional` | 12.000.000 | - | Penerimaan uang tunai dari pedagang besi tua |
-| `153090 - Akumulasi Penyusutan Mesin` | 100.000.000 | - | Menghapus akumulasi penyusutan |
-| `710200 - Kerugian Pelepasan Aset Tetap` | 8.000.000 | - | Pengakuan rugi pelepasan di Laba Rugi |
+| `153090 - Akumulasi Penyusutan Mesin` | 110.000.000 | - | Menghapus akumulasi penyusutan |
+| `710100 - Keuntungan Pelepasan Aset Tetap` | - | 2.000.000 | Laba pelepasan di Laba Rugi |
 | `153000 - Mesin & Peralatan Pabrik` | - | 120.000.000 | Menghapus harga perolehan historis aset |
 
 ---
@@ -137,14 +137,14 @@ Pada tanggal 31 Maret 2031 (Tepat pada akhir Tahun ke-5 operasional), PT Maju Be
 
 1. **Posisi Buku Menjelang Pelepasan**:
    - Biaya Perolehan Historis: Rp120.000.000.
-   - Akumulasi Penyusutan (5 Tahun Penuh @ Rp20.000.000/tahun): Rp100.000.000.
-   - Sisa Nilai Buku Bersih (*Carrying Amount*): **Rp20.000.000** (Persis sama dengan estimasi nilai residu awal).
+   - Akumulasi Penyusutan (60 bulan penuh × Rp1.833.333): Rp110.000.000.
+   - Sisa Nilai Buku Bersih (*Carrying Amount*): **Rp10.000.000** (Persis sama dengan estimasi nilai residu awal).
 
 2. **Eksekusi Penjualan ke Perusahaan Rekondisi**:
    - Manajemen menjual mesin tersebut kepada PT Rekondisi Presisi seharga **Rp25.000.000** tunai (ditambah PPN efektif 11% Rp2.750.000).
    - **Kalkulasi Laba Pelepasan**:
-     $$\text{Keuntungan Pelepasan} = \text{Rp25.000.000 (Harga Jual)} - \text{Rp20.000.000 (Nilai Buku)} = \mathbf{Rp5.000.000}$$
-   - Sistem menerbitkan Faktur Pajak Standar PPN Pasal 16D, memposting jurnal laba penjualan aset Rp5.000.000, dan mencabut nomor seri mesin dari daftar fasilitas pabrik aktif.
+     $$\text{Keuntungan Pelepasan} = \text{Rp25.000.000 (Harga Jual)} - \text{Rp10.000.000 (Nilai Buku)} = \mathbf{Rp15.000.000}$$
+   - Sistem menerbitkan Faktur Pajak Standar PPN Pasal 16D, memposting jurnal laba penjualan aset Rp15.000.000, dan mencabut nomor seri mesin dari daftar fasilitas pabrik aktif.
 
 ---
 

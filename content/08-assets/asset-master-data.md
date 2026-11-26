@@ -59,7 +59,7 @@ Pembedaan tanggal merupakan aspek tata kelola krusial dalam ERP:
 - **Asset Class / Category**: Kelompok aset yang menentukan pemetaan akun GL otomatis.
 - **Acquisition Value**: Biaya historis perolehan aset yang dikapitalisasi.
 - **Depreciation Books**: Konfigurasi parameter depresiasi per buku:
-  - *Commercial Book*: Garis lurus, 5 tahun, nilai residu Rp20.000.000.
+  - *Commercial Book*: Garis lurus, 60 bulan, nilai residu Rp10.000.000 (Rp1.833.333/bulan).
   - *Tax Book*: Saldo menurun / garis lurus golongan 2 pajak, 8 tahun, nilai residu Rp0.
 
 ---
@@ -143,7 +143,7 @@ Berikut adalah rincian rekaman master data untuk mesin perakitan yang baru diope
 | **Nomor Aset Utama** | `AST-MAC-2026-0001` | Identifikasi unik aset dalam subledger aktiva tetap |
 | **Nomor Tag Fisik** | `TAG-MB-88019` | Barcode label tahan panas yang ditempel di rangka mesin |
 | **Nama Aset** | Mesin Perakitan Otomatis Laptop Pro | Nama deskriptif untuk pelaporan manajerial |
-| **Kelas Aset (*Asset Class*)** | `MACHINERY_PROD` | Kategori mesin pabrik (Penyusutan garis lurus 5 tahun) |
+| **Kelas Aset (*Asset Class*)** | `MACHINERY_PROD` | Kategori mesin pabrik (garis lurus 60 bulan, residu Rp10 jt) |
 | **Merek & Model** | TechAuto SMT-Pro 400 | Spesifikasi pabrikan untuk kebutuhan suku cadang |
 | **Nomor Seri Pabrikan** | `SN-TA-998231-ID` | Nomor seri sasis pabrik untuk klaim garansi vendor |
 | **Perusahaan Pemilik** | PT Maju Bersama (IDR) | Entitas hukum pemilik sah aset |
@@ -154,7 +154,7 @@ Berikut adalah rincian rekaman master data untuk mesin perakitan yang baru diope
 | **Tanggal Kapitalisasi** | 15 Maret 2026 | Tanggal penyelesaian kalibrasi & pengakuan di neraca |
 | **Tanggal Mulai Pakai (*In-Service*)** | 01 April 2026 | Titik awal dimulainya beban penyusutan operasional |
 | **Biaya Perolehan (*Cost*)** | Rp120.000.000 | Biaya beli + ongkos kirim + biaya instalasi spesialis |
-| **Nilai Residu (*Residual Value*)** | Rp20.000.000 | Taksiran harga jual sisa besi tua di akhir tahun ke-5 |
+| **Nilai Residu (*Residual Value*)** | Rp10.000.000 | Taksiran harga jual sisa besi tua di akhir tahun ke-5 |
 | **Masa Manfaat (*Useful Life*)** | 5 Tahun (60 Bulan) | Masa pakai ekonomis terencana sesuai rekomendasi teknis |
 | **Status Siklus Hidup** | `IN_SERVICE` | Mesin beroperasi normal dan disusutkan rutin |
 

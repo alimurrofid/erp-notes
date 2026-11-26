@@ -113,24 +113,24 @@ Aset Mesin Pabrik memiliki Harga Perolehan Rp120.000.000 dan Akumulasi Penyusuta
 
 ## Example: Revaluasi Mesin Perakitan di PT Maju Bersama
 
-Pada 31 Desember 2028 (akhir Tahun ke-3 operasional), PT Maju Bersama merevaluasi kelompok Mesin Pabrik untuk memperkuat struktur ekuitas perusahaan:
+Pada 31 Desember 2028 (akhir Tahun ke-3 operasional), PT Maju Bersama merevaluasi kelompok Mesin Pabrik. Agar tidak bertabrakan dengan aset cost model, contoh ini memakai aset terpisah `AST-MAC-2026-0002` (revaluation model):
 
 1. **Posisi Buku Sebelum Revaluasi**:
    - Biaya Perolehan Historis: Rp120.000.000.
-   - Akumulasi Penyusutan (3 tahun @ Rp20.000.000): Rp60.000.000.
-   - Nilai Buku Bersih (*Carrying Amount*): **Rp60.000.000**.
-   - Sisa Masa Manfaat: **2 Tahun (24 Bulan)**; Nilai Residu: **Rp0** (disesuaikan).
+   - Akumulasi Penyusutan (33 bulan × Rp1.833.333): Rp60.500.000.
+   - Nilai Buku Bersih (*Carrying Amount*): **Rp59.500.000**.
+   - Sisa Masa Manfaat: **27 bulan**; Nilai Residu: **Rp10.000.000**.
 
 2. **Hasil Penilaian Penilai Publik Independen**:
    - Nilai Wajar Mesin (*Fair Value*): **Rp80.000.000**.
    - Terjadi kenaikan nilai wajar di atas nilai buku tercatat sebesar:
-     $$\text{Surplus Revaluasi} = \text{Rp80.000.000} - \text{Rp60.000.000} = \mathbf{Rp20.000.000}$$
+     $$\text{Surplus Revaluasi} = \text{Rp80.000.000} - \text{Rp59.500.000} = \mathbf{Rp20.500.000}$$
 
 3. **Pembaruan Depresiasi Masa Depan di ERP**:
-   - Nilai dasar baru yang disusutkan untuk Tahun ke-4 dan ke-5: Rp80.000.000.
-   - Beban Penyusutan Baru: $\text{Rp80.000.000} / 2 = \mathbf{Rp40.000.000 \text{ per tahun}}$ ($\text{Rp3.333.333 per bulan}$).
-   - Peningkatan beban tahunan: Rp40.000.000 - Rp20.000.000 (lama) = Rp20.000.000.
-   - Transfer tahunan dari Surplus Revaluasi ke Saldo Laba: **Rp20.000.000 per tahun** (menyeimbangkan dampak penurunan laba bersih akibat kenaikan beban depresiasi).
+   - Nilai dasar baru yang disusutkan: Rp80.000.000 dikurangi residu Rp10.000.000.
+   - Beban Penyusutan Baru: $\frac{\text{Rp70.000.000}}{27} = \mathbf{Rp2.592.593 \text{ per bulan}}$ ($\approx \text{Rp31.111.111 per tahun}$).
+   - Peningkatan beban tahunan: Rp31.111.111 - Rp22.000.000 (lama) = Rp9.111.111.
+   - Transfer tahunan dari Surplus Revaluasi ke Saldo Laba: **Rp9.111.111 per tahun** (Rp20.500.000 dialokasikan sepanjang 27 bulan tersisa).
 
 ---
 

@@ -124,9 +124,9 @@ Pada akhir Tahun ke-3 (31 Desember 2028), industri perakitan mengalami disrupsi 
 
 ### 1. Data Nilai Buku Tercatat Sebelum Pengujian
 - Harga Perolehan Historis: Rp120.000.000.
-- Akumulasi Penyusutan (3 tahun): Rp60.000.000.
-- **Nilai Tercatat (*Carrying Amount*)**: **Rp60.000.000**.
-- Sisa Masa Manfaat: **2 Tahun (24 Bulan)**; Nilai Residu: **Rp0**.
+- Akumulasi Penyusutan (33 bulan × Rp1.833.333): Rp60.500.000.
+- **Nilai Tercatat (*Carrying Amount*)**: **Rp59.500.000**.
+- Sisa Masa Manfaat: **27 bulan**; Nilai Residu: **Rp10.000.000**.
 
 ### 2. Evaluasi Jumlah Terpulihkan (Recoverable Amount)
 - **Estimasi Nilai Wajar Dikurangi Biaya Jual (FVLCOD)**: Berdasarkan penawaran pasar sekunder mesin bekas sejenis, harga jual adalah Rp40.000.000 dengan biaya pembongkaran dan angkut Rp2.000.000.
@@ -137,15 +137,15 @@ Pada akhir Tahun ke-3 (31 Desember 2028), industri perakitan mengalami disrupsi 
   $$\text{Recoverable Amount} = \max(\text{Rp38.000.000}, \text{Rp42.000.000}) = \mathbf{Rp42.000.000}$$
 
 ### 3. Perhitungan dan Pembukuan Rugi Penurunan Nilai
-Karena Nilai Tercatat (Rp60.000.000) $>$ Jumlah Terpulihkan (Rp42.000.000):
-$$\text{Rugi Penurunan Nilai} = \text{Rp60.000.000} - \text{Rp42.000.000} = \mathbf{Rp18.000.000}$$
-ERP memposting debit Beban Penurunan Nilai Rp18.000.000 dan kredit Akumulasi Penurunan Nilai Rp18.000.000.
+Karena Nilai Tercatat (Rp59.500.000) $>$ Jumlah Terpulihkan (Rp42.000.000):
+$$\text{Rugi Penurunan Nilai} = \text{Rp59.500.000} - \text{Rp42.000.000} = \mathbf{Rp17.500.000}$$
+ERP memposting debit Beban Penurunan Nilai Rp17.500.000 dan kredit Akumulasi Penurunan Nilai Rp17.500.000.
 
 ### 4. Dampak Terhadap Jadwal Depresiasi Masa Depan
 - Nilai Buku Bersih Baru: **Rp42.000.000**.
-- Sisa Masa Manfaat: 2 Tahun (24 Bulan).
-- **Beban Depresiasi Baru Tahun ke-4 dan ke-5**:
-  $$\text{Beban Tahunan Baru} = \frac{\text{Rp42.000.000}}{2 \text{ tahun}} = \mathbf{Rp21.000.000 \text{ per tahun}} \quad (\text{Rp1.750.000 per bulan})$$
+- Sisa Masa Manfaat: 27 bulan; nilai residu Rp10.000.000.
+- **Beban Depresiasi Baru**:
+  $$\text{Beban Bulanan Baru} = \frac{\text{Rp42.000.000} - \text{Rp10.000.000}}{27} = \mathbf{Rp1.185.185 \text{ per bulan}} \quad (\approx \text{Rp14.222.222 per tahun})$$
 
 ---
 

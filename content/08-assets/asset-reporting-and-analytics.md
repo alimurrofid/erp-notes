@@ -123,7 +123,7 @@ Berikut adalah ringkasan Laporan Mutasi Aset Tetap (*Asset History Sheet*) PT Ma
 | | | | | | |
 | **NILAI BUKU BERSIH (31 Des 2026)** | **300.000.000** | **187.500.000** | **189.000.000** | **32.000.000** | **708.500.000** |
 
-*(Catatan: Penambahan Mesin Pabrik mencakup Mesin Perakitan Laptop Pro Rp120.000.000 dengan penyusutan 9 bulan berjalan di tahun 2026 sebesar Rp15.000.000).*
+*(Catatan: Penambahan Mesin Pabrik mencakup Mesin Perakitan Laptop Pro Rp120.000.000 dengan penyusutan 9 bulan berjalan di tahun 2026 sebesar Rp16.500.000).*
 
 ---
 

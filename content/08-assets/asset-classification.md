@@ -129,15 +129,15 @@ Untuk pengadaan **Mesin Perakitan Otomatis Laptop Pro** senilai Rp120.000.000:
 1. **Dimensi Akuntansi Komersial (IAS 16)**:
    - Kelas Aset: `MACHINERY_PROD` (Mesin Pabrik).
    - Masa Manfaat Komersial: **5 Tahun (60 Bulan)** berdasarkan rekomendasi teknis pabrikan.
-   - Nilai Residu: **Rp20.000.000**.
-   - Penyusutan Garis Lurus: $(\text{Rp120.000.000} - \text{Rp20.000.000}) / 5 = \mathbf{Rp20.000.000 \text{ per tahun}}$.
+   - Nilai Residu: **Rp10.000.000**.
+   - Penyusutan Garis Lurus: $(\text{Rp120.000.000} - \text{Rp10.000.000}) / 5 = \mathbf{Rp22.000.000 \text{ per tahun}}$ (Rp1.833.333/bulan).
 2. **Dimensi Perpajakan Fiskal (UU PPh Indonesia)**:
    - Golongan Fiskal: **Kelompok 2 (Harta Berwujud Bukan Bangunan)**.
    - Masa Manfaat Fiskal: **8 Tahun**.
    - Nilai Residu Fiskal: **Rp0** (Ketentuan pajak Indonesia tidak mengakui nilai sisa dalam perhitungan penyusutan).
    - Penyusutan Garis Lurus Fiskal: $\text{Rp120.000.000} / 8 = \mathbf{Rp15.000.000 \text{ per tahun}}$.
 3. **Dampak Rekonsiliasi Fiskal Akhir Tahun**:
-   - Selisih Beban Penyusutan: $\text{Rp20.000.000 (Komersial)} - \text{Rp15.000.000 (Fiskal)} = \mathbf{Rp5.000.000}$.
+   - Selisih Beban Penyusutan: $\text{Rp22.000.000 (Komersial)} - \text{Rp15.000.000 (Fiskal)} = \mathbf{Rp7.000.000}$.
    - PT Maju Bersama mencatat **Koreksi Fiskal Positif** sebesar Rp5.000.000 pada formulir SPT Tahunan Badan 1771-I.
 
 ---
