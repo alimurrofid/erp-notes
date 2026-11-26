@@ -30,6 +30,7 @@ Naventra
 
 ## Sections
 
+- [[00-orientation/index|Orientation]] — learning path dan glossary
 - [[00-fundamentals/index|Fundamentals]]
 - [[01-business-processes/index|Business Processes]]
 - [[02-accounting/index|Accounting]]
