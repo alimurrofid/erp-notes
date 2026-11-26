@@ -37,6 +37,9 @@ Legenda: **Fixed** = materi sudah diperbaiki. **Open** = belum. **Invalid** = te
 | FIN-11 | Satu COA; akun mesin konsisten `153000` di 02 dan 08 | `02-accounting`, `08-assets` |
 | BIZ-06 / BIZ-07 | Pola nomor 4 segmen; `MO-2026-0042` dikecualikan sebagai ID cost sheet | `00`, `02`, `04`, `05`, `06`, `07` |
 | INV-05 / INV-08 | 1 Pack = 6 Unit; cost sheet tunggal di `production-costing-and-wip.md` | `05-inventory`, `06-manufacturing` |
+| LRN-01 | Learning path 4 jalur + checkpoint | `00-orientation/learning-path.md` |
+| LRN-02 | Glosarium lintas modul (50+ istilah) | `00-orientation/glossary.md` |
+| LRN-04 | Capstone + kunci jawaban terpisah | `00-orientation/capstone*.md` |
 | UX-02 | Label Mermaid di kutip / tanda baca dihapus | 10 file diagram |
 
 ### Fixed pada fase sebelumnya
@@ -75,7 +78,7 @@ Seluruh item konten sudah diterapkan dan dipindahkan ke tabel **Fixed** di atas.
 |---|---|
 | STR-01 / SW-01 | Artikel implementasi per produk |
 | STR-02 / NAV-01 / NAV-02 / NAV-03 | Requirements, functional, technical, implementation Naventra + traceability |
-| LRN-01 … LRN-04 | Learning path, glossary, exercises, capstone |
+| LRN-03 | Latihan per section (10–15 soal) |
 | PROC-01 / PROC-02 | Document lifecycle dan exception path |
 | ACC-16 … ACC-22, ACC-24, ACC-25 | NRV, normal capacity, availability taxonomy, MRP grid, discount VAT, komisi, restatement, LIFO rationale |
 | INV-01 … INV-04, INV-06, INV-07, INV-09 … INV-13, INV-15 | Akun bahan baku, WIP conversion, ROP, diagram, UOM, klaim Odoo/D365, kapasitas, yield, traceability |
