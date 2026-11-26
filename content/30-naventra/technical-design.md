@@ -22,8 +22,17 @@ Dokumen ini tidak memilih teknologi vendor tertentu; istilah tabel dipakai sebag
 | `production_orders` | `id`, `bom_id`, `qty`, `status` | Konsumsi dan output terpisah |
 | `project_costs` | `id`, `project_id`, `wbs_id`, `amount`, `recognized_at` | Waktu pengakuan HPP |
 | `audit_log` | `id`, `table`, `record_id`, `before`, `after`, `user_id`, `at` | Jejak perubahan |
+| `sales_orders` | `id`, `customer_id`, `document_date`, `due_date`, `status`, `currency` | Header order; status FSM kanonik |
+| `sales_order_lines` | `id`, `order_id`, `item_id`, `ordered_qty`, `shipped_qty`, `invoiced_qty`, `returned_qty`, `price_snapshot` | Kuantitas pemenuhan per baris |
+| `credit_profiles` | `customer_id`, `limit`, `terms`, `hold_status` | Limit dan status kredit |
+| `price_rules` | `id`, `scope_type`, `scope_id`, `valid_from`, `valid_to`, `priority` | Presedensi harga/diskon |
+| `revenue_schedules` | `id`, `contract_id`, `obligation_id`, `period`, `amount`, `method` | Jadwal pengakuan pendapatan |
+| `period_locks` | `entity_id`, `period`, `status`, `approved_by` | Kontrol tutup buku |
+| `outbox_events` | `id`, `event_type`, `payload`, `published_at` | Publikasi event setelah commit |
 
-Relasi wajib: `journal_lines.journal_id → journals.id`, `journals.source_id` menunjuk dokumen sumber (PO, invoice, MO, BAST).
+Relasi wajib: `journal_lines.journal_id → journals.id`, `journals.source_id` menunjuk dokumen sumber (PO, invoice, MO, BAST), dan `sales_order_lines.order_id → sales_orders.id`.
+
+Tabel transaksi menyimpan snapshot nilai master (harga, alamat, NPWP, tarif pajak) agar dokumen historis tidak berubah ketika master diperbarui.
 
 ## Posting Engine
 
@@ -59,6 +68,12 @@ Format: `JENIS-TAHUN-BULAN-URUT`, contoh `PO-2026-09-0081`.
 - `period_locks` menyimpan entitas, periode, status, dan otorisator.
 - Posting ke periode terkunci ditolak di mesin posting, bukan hanya di UI.
 - Kurs pajak dan kurs akuntansi disimpan terpisah; nilai kurs yang dipakai dibekukan pada baris transaksi agar tidak berubah saat tabel kurs diperbarui.
+
+## Integrasi
+
+- Event ditulis ke `outbox_events` dalam transaksi yang sama dengan dokumen sumber, lalu dikirim setelah commit.
+- Kontrak event, API, idempotency, dan error ada di [[30-naventra/integration-and-api|Integration and API]].
+- Peran, SoD, dan audit akses ada di [[30-naventra/security-and-roles|Security and Roles]].
 
 ## Audit dan Rekonsiliasi
 

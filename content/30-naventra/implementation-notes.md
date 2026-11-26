@@ -19,6 +19,9 @@ Urutan implementasi Naventra dari konfigurasi sampai cutover, beserta prasyarat 
 | 5 | Aturan posting dan penomoran | Jurnal uji seimbang; nomor sesuai pola |
 | 6 | Pengguna, peran, pemisahan tugas | Tidak ada satu pengguna yang membuat dan menyetujui |
 | 7 | Saldo awal | Neraca uji coba seimbang sebelum go-live |
+| 8 | Sales: kredit, harga, pajak, revenue schedule | Satu SO dari quotation sampai kas berjalan tanpa jurnal manual |
+| 9 | Accounting: subledger, jurnal, rekonsiliasi, laporan | Subledger = GL; laporan dapat drill-down ke jurnal |
+| 10 | Kontrol: peran, SoD, period lock, audit | Tidak ada pengguna yang membuat dan menyetujui dokumen yang sama |
 
 ## Migrasi Saldo Awal
 
@@ -31,9 +34,11 @@ Saldo awal tidak boleh dibuat dengan membuka kembali periode lama.
 
 ## Pengujian
 
-- **Uji satuan**: aturan posting per peristiwa (GR, bill, BAST, konsumsi, output).
+Rincian level, dataset, kasus wajib, dan kriteria keluar ada di [[30-naventra/test-strategy|Test Strategy]]. Ringkasnya:
+
+- **Uji satuan**: aturan posting per peristiwa (GR, bill, delivery, BAST, konsumsi, output).
 - **Uji siklus**: satu PO dari PR sampai pembayaran; satu SO dari quotation sampai kas.
-- **Uji negatif**: posting ke periode terkunci, akun non-daun, dokumen ganda.
+- **Uji negatif**: posting ke periode terkunci, akun non-daun, dokumen ganda, kredit terlampaui.
 - **UAT**: pengguna menjalankan skenario harian tanpa bantuan tim implementasi.
 
 ## Cutover
@@ -50,6 +55,7 @@ Saldo awal tidak boleh dibuat dengan membuka kembali periode lama.
 - Pantau tiga hal: jurnal gagal, selisih rekonsiliasi, dan dokumen tertahan.
 - Kunci periode sesuai jadwal; jangan menunda karena menunggu perbaikan data.
 - Catat setiap perubahan konfigurasi sebagai perubahan bertanggal (NAV-R-11).
+- Pantau outbox lag, dead-letter, dan selisih rekonsiliasi (lihat [[30-naventra/non-functional-requirements|NFR]]).
 
 ## Kriteria Selesai
 
