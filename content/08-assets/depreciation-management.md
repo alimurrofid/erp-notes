@@ -143,18 +143,18 @@ PT Maju Bersama mengoperasikan **Mesin Perakitan Laptop Pro** dengan data awal:
 
 ### 1. Perhitungan Periode Parsial Tahun Pertama (Tahun 2026)
 Karena mesin baru mulai beroperasi pada 01 April 2026 (berjalan 9 bulan di tahun 2026):
-- Beban Penyusutan Tahun 2026: $9 \times \text{Rp1.833.333} = \mathbf{Rp15.000.000}$.
-- Akumulasi Penyusutan per 31 Desember 2026: **Rp15.000.000**.
-- Nilai Buku Bersih (*Net Book Value*) per 31 Desember 2026: Rp120.000.000 - Rp15.000.000 = **Rp105.000.000**.
+- Beban Penyusutan Tahun 2026: $9 \times \text{Rp1.833.333} = \mathbf{Rp16.500.000}$.
+- Akumulasi Penyusutan per 31 Desember 2026: **Rp16.500.000**.
+- Nilai Buku Bersih (*Net Book Value*) per 31 Desember 2026: Rp120.000.000 - Rp16.500.000 = **Rp103.500.000**.
 
 ### 2. Skenario Perubahan Estimasi di Awal Tahun ke-3 (01 Januari 2028)
 Setelah beroperasi selama 21 bulan (9 bulan tahun 2026 + 12 bulan tahun 2027):
-- Total Akumulasi Penyusutan yang telah dibukukan: $21 \times \text{Rp1.833.333} = \mathbf{Rp35.000.000}$.
-- Nilai Buku Bersih per 01 Januari 2028: Rp120.000.000 - Rp35.000.000 = **Rp85.000.000**.
-- **Peristiwa**: Berdasarkan evaluasi teknis, mesin dirawat sangat baik sehingga sisa masa manfaat yang semula tersisa 39 bulan diperpanjang menjadi **51 bulan (diperpanjang 12 bulan)**, dan nilai residu diturunkan menjadi **Rp10.000.000**.
+- Total Akumulasi Penyusutan yang telah dibukukan: $21 \times \text{Rp1.833.333} = \mathbf{Rp38.500.000}$.
+- Nilai Buku Bersih per 01 Januari 2028: Rp120.000.000 - Rp38.500.000 = **Rp81.500.000**.
+- **Peristiwa**: Berdasarkan evaluasi teknis, mesin dirawat sangat baik sehingga sisa masa manfaat yang semula tersisa 39 bulan diperpanjang menjadi **51 bulan (diperpanjang 12 bulan)**; nilai residu tetap **Rp10.000.000**.
 - **Kalkulasi Ulang Prospektif di ERP**:
-  $$\text{Dasar Tersusutkan Baru} = \text{Rp85.000.000 (NBV)} - \text{Rp10.000.000 (Residu Baru)} = \mathbf{Rp75.000.000}$$
-  $$\text{Beban Bulanan Baru} = \frac{\text{Rp75.000.000}}{51 \text{ bulan}} = \mathbf{Rp1.470.588 \text{ per bulan}}$$
+  $$\text{Dasar Tersusutkan Baru} = \text{Rp81.500.000 (NBV)} - \text{Rp10.000.000 (Residu)} = \mathbf{Rp71.500.000}$$
+  $$\text{Beban Bulanan Baru} = \frac{\text{Rp71.500.000}}{51 \text{ bulan}} = \mathbf{Rp1.401.961 \text{ per bulan}}$$
 - Sistem ERP secara otomatis memperbarui tabel jadwal masa depan tanpa mengubah jurnal masa lalu.
 
 ---

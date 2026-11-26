@@ -42,15 +42,15 @@ flowchart TD
 
 ### 1. Acquisition & Capitalization (Perolehan Aset)
 * **Kasus A: Pembelian Langsung Siap Pakai**:
-  Membeli mesin produksi seharga Rp100.000.000 (belum termasuk PPN efektif 11% = Rp11.000.000) dan membayar ongkos instalasi mesin sebesar Rp5.000.000.
+  Membeli mesin produksi seharga Rp110.000.000, ongkos kirim Rp4.000.000, dan instalasi Rp6.000.000 (total Rp120.000.000, belum termasuk PPN efektif 11% = Rp13.200.000).
   * *Sesuai IAS 16, seluruh biaya persiapan hingga aset siap digunakan wajib dikapitalisasi ke nilai perolehan.*
-  * Total Biaya Kapitalisasi: Rp100.000.000 + Rp5.000.000 = **Rp105.000.000**.
+  * Total Biaya Kapitalisasi: Rp110.000.000 + Rp4.000.000 + Rp6.000.000 = **Rp120.000.000**.
 
 | Akun | Kategori | Debit (Rp) | Kredit (Rp) |
 |---|---|---:|---:|
-| Aset Tetap - Mesin Pabrik | Asset | 105.000.000 | - |
-| PPN Masukan (*VAT Input*) | Asset | 11.000.000 | - |
-| Utang Usaha / Kas Bank | Liability / Asset | - | 116.000.000 |
+| Aset Tetap - Mesin Pabrik | Asset | 120.000.000 | - |
+| PPN Masukan (*VAT Input*) | Asset | 13.200.000 | - |
+| Utang Usaha / Kas Bank | Liability / Asset | - | 133.200.000 |
 
 * **Kasus B: Aset dalam Penyelesaian (*Capital Work in Progress / CWIP*)**:
   Jika aset dibangun bertahap (misal pembangunan pabrik selama 6 bulan), pengeluaran ditampung di akun aset perantara `Aset dalam Pengerjaan (CWIP)`. Saat pabrik selesai dibangun dan siap beroperasi, sistem melakukan reklasifikasi (*capitalization run*):
@@ -60,37 +60,37 @@ flowchart TD
 ---
 
 ### 2. Periodic Depreciation (Penyusutan Bulanan)
-Berdasarkan estimasi masa manfaat 5 tahun (60 bulan) dengan nilai sisa (*residual value*) Rp5.000.000:
-$$\text{Dasar Penyusutan} = \text{Harga Perolehan} - \text{Nilai Sisa} = 105.000.000 - 5.000.000 = 100.000.000$$
-$$\text{Penyusutan per Bulan} = \frac{100.000.000}{60 \text{ bulan}} = \text{Rp1.666.667}$$
+Berdasarkan estimasi masa manfaat 5 tahun (60 bulan) dengan nilai sisa (*residual value*) Rp10.000.000 (aset `AST-MAC-2026-0001`):
+$$\text{Dasar Penyusutan} = \text{Harga Perolehan} - \text{Nilai Sisa} = 120.000.000 - 10.000.000 = 110.000.000$$
+$$\text{Penyusutan per Bulan} = \frac{110.000.000}{60 \text{ bulan}} = \text{Rp1.833.333}$$
 
 ERP secara otomatis memposting jurnal depresiasi bulanan (lihat [[02-accounting/depreciation-and-amortization|Depreciation and Amortization]]):
 
 | Akun | Kategori | Debit (Rp) | Kredit (Rp) |
 |---|---|---:|---:|
-| Beban Penyusutan Mesin Pabrik | Expense (P&L) | 1.666.667 | - |
-| Akumulasi Penyusutan Mesin | Contra Asset (Neraca) | - | 1.666.667 |
+| Beban Penyusutan Mesin Pabrik | Expense (P&L) | 1.833.333 | - |
+| Akumulasi Penyusutan Mesin | Contra Asset (Neraca) | - | 1.833.333 |
 
 ---
 
 ### 3. Disposal & De-recognition (Pelepasan & Penjualan Aset)
 Ketika aset dijual atau dihentikan penggunaannya:
 * **Kasus**: Setelah 3 tahun (36 bulan), mesin dijual tunai seharga Rp50.000.000.
-  * Harga Perolehan: Rp105.000.000.
-  * Akumulasi Penyusutan (36 bulan $\times$ Rp1.666.667): **Rp60.000.000**.
-  * Nilai Buku Bersih (*Net Book Value / Carrying Amount*): Rp105.000.000 - Rp60.000.000 = **Rp45.000.000**.
-  * Harga Jual Kas: Rp50.000.000 $\implies$ **Keuntungan Pelepasan Aset = Rp5.000.000**.
+  * Harga Perolehan: Rp120.000.000.
+  * Akumulasi Penyusutan (36 bulan $\times$ Rp1.833.333): **Rp66.000.000**.
+  * Nilai Buku Bersih (*Net Book Value / Carrying Amount*): Rp120.000.000 - Rp66.000.000 = **Rp54.000.000**.
+  * Harga Jual Kas: Rp50.000.000 $\implies$ **Kerugian Pelepasan Aset = Rp4.000.000**.
 
 * **Jurnal Pelepasan Aset (Disposal Entry)**:
 
 | Akun | Kategori | Debit (Rp) | Kredit (Rp) |
 |---|---|---:|---:|
 | Bank Operasional (Kas Diterima) | Asset | 50.000.000 | - |
-| Akumulasi Penyusutan Mesin (Menutup Akun) | Contra Asset | 60.000.000 | - |
-| Aset Tetap - Mesin Pabrik (Menghapus Aset) | Asset | - | 105.000.000 |
-| Keuntungan Penjualan Aset Tetap (*Gain on Disposal*) | Other Income (P&L) | - | 5.000.000 |
+| Akumulasi Penyusutan Mesin (Menutup Akun) | Contra Asset | 66.000.000 | - |
+| Kerugian Penjualan Aset Tetap (*Loss on Disposal*) | Expense (P&L) | 4.000.000 | - |
+| Aset Tetap - Mesin Pabrik (Menghapus Aset) | Asset | - | 120.000.000 |
 
-*Jika aset dijual seharga Rp40.000.000 (di bawah nilai buku Rp45.000.000), selisih Rp5.000.000 didebit ke akun `Kerugian Pelepasan Aset (Loss on Disposal)`.*
+*Jika aset dijual seharga Rp40.000.000 (di bawah nilai buku Rp54.000.000), selisih Rp14.000.000 didebit ke akun `Kerugian Pelepasan Aset (Loss on Disposal)`.*
 
 ---
 
