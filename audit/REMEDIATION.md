@@ -11,8 +11,8 @@ Legenda: **Fixed** = materi sudah diperbaiki dan diverifikasi. **Partial** = seb
 | `check:content` | 0 error | 0 error, 0 warning |
 | URL mati | 0 | **0** (12 blocked: ISO/OECD/ILO/APQC) |
 | `check:refs:strict` | gagal (193 tanpa identitas, 85 gap bertanda) | **lolos** (0 tanpa identitas, 0 marker) |
-| Entri referensi | 1001 | 896 (128 entri tak terverifikasi dihapus/diganti) |
-| Artikel | 203 | 208 |
+| Entri referensi | 1001 | 900 (128 entri tak terverifikasi dihapus/diganti) |
+| Artikel | 203 | 209 |
 | `npx quartz build` | sukses | sukses |
 
 ## Fixed — Akuntansi dan Proses (ACC, INV, FIN, BIZ)
@@ -78,6 +78,7 @@ Legenda: **Fixed** = materi sudah diperbaiki dan diverifikasi. **Partial** = seb
 | ID | Hasil | File |
 |---|---|---|
 | STR-01 | Artikel implementasi SAP S/4HANA 2025: Universal Journal/ACDOCA, Material Ledger wajib, Actual Costing opsional, titik posting, caveat | `20-software/sap-s4hana/` |
+| TAX-04/05 (lanjutan) | Artikel PPh 21/22 sebagai jembatan Payroll–Procurement; tarif tidak diduplikasi; indeks 11-tax diperbarui dan label PPN 11% → efektif 11% | `11-tax/pph-21-and-22.md`, `11-tax/index.md` |
 | LRN-03 | **140 soal** (10 per section, 14 section) + kunci terpisah | `00-orientation/section-exercises*.md` |
 | PROC-01/02 | Dua artikel proses kanonik | `01-business-processes/document-lifecycle.md`, `exception-path.md` |
 
