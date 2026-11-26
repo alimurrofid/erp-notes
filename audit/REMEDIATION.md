@@ -40,6 +40,7 @@ Legenda: **Fixed** = materi sudah diperbaiki. **Open** = belum. **Invalid** = te
 | LRN-01 | Learning path 4 jalur + checkpoint | `00-orientation/learning-path.md` |
 | LRN-02 | Glosarium lintas modul (50+ istilah) | `00-orientation/glossary.md` |
 | LRN-04 | Capstone + kunci jawaban terpisah | `00-orientation/capstone*.md` |
+| LRN-03 | 40 soal lintas section + kunci | `00-orientation/exercises.md` |
 | UX-02 | Label Mermaid di kutip / tanda baca dihapus | 10 file diagram |
 
 ### Fixed pada fase sebelumnya
