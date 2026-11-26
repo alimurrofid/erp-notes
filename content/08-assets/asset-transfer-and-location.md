@@ -100,8 +100,8 @@ Tidak ada perubahan pada nilai aset di neraca. Pada jadwal penyusutan berikutnya
 
 | Periode | Akun Beban (Laba Rugi) | Cost Center | Akun Kredit (Neraca) | Nominal (IDR) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Bulan Lalu** | `610420 - Beban Depr. Mesin` | `CC-PROD-01 (Cikarang)` | `153090 - Akum. Depr. Mesin` | 1.666.667 |
-| **Bulan Baru** | `610420 - Beban Depr. Mesin` | `CC-PROD-02 (Karawang)` | `153090 - Akum. Depr. Mesin` | 1.666.667 |
+| **Bulan Lalu** | `610420 - Beban Depr. Mesin` | `CC-PROD-01 (Cikarang)` | `153090 - Akum. Depr. Mesin` | 1.833.333 |
+| **Bulan Baru** | `610420 - Beban Depr. Mesin` | `CC-PROD-02 (Karawang)` | `153090 - Akum. Depr. Mesin` | 1.833.333 |
 
 ### 2. Mutasi Antar-Entitas Hukum (Intercompany Asset Transfer at NBV)
 PT Maju Bersama mengalihkan mesin ke anak perusahaannya (PT Maju Distribusi) pada Nilai Buku Bersih (NBV) Rp80.000.000 (Harga Perolehan Rp120.000.000, Akumulasi Penyusutan Rp40.000.000) ditambah PPN efektif 11%:
@@ -141,7 +141,7 @@ Pada tanggal 15 Juli 2027 (Tahun ke-2 operasional), manajemen PT Maju Bersama me
    - Agus Hermawan memindai barcode mesin via aplikasi mobile ERP dan menandatangani BAST digital.
 
 3. **Penerapan Aturan Penyusutan**:
-   - Sesuai aturan batas tanggal 15 (*Cut-off Rule*), mutasi disetujui pada tanggal 15 Juli. Beban penyusutan bulan Juli 2027 sebesar Rp1.666.667 dibebankan penuh ke pusat biaya baru `CC-PROD-02 (Karawang)`.
+   - Sesuai aturan batas tanggal 15 (*Cut-off Rule*), mutasi disetujui pada tanggal 15 Juli. Beban penyusutan bulan Juli 2027 sebesar Rp1.833.333 dibebankan penuh ke pusat biaya baru `CC-PROD-02 (Karawang)`.
 
 ---
 

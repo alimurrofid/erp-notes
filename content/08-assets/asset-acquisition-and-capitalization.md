@@ -171,7 +171,7 @@ PT Maju Bersama memproses pengadaan mesin otomatis untuk perakitan **Laptop Pro*
    - **10 Maret 2026**: Mesin tiba di Pabrik Cikarang. Dokumen penerimaan (*GRN*) ditandatangani. Ditempelkan nomor tag fisik `TAG-MB-88019`.
    - **12 Maret 2026**: Teknisi menyelesaikan instalasi mekanis dan pengujian jalur listrik (Biaya instalasi Rp6.000.000; biaya pengiriman Rp4.000.000).
    - **15 Maret 2026**: Eksekusi kapitalisasi sistem (*Capitalization Date*). Total nilai perolehan diakui: **Rp120.000.000**.
-   - **01 April 2026**: Produksi massal Laptop Pro resmi dimulai (*In-Service Date*). Jadwal depresiasi bulanan pertama (Rp1.666.667) dieksekusi pada tanggal 30 April 2026.
+   - **01 April 2026**: Produksi massal Laptop Pro resmi dimulai (*In-Service Date*). Jadwal depresiasi bulanan pertama (Rp1.833.333) dieksekusi pada tanggal 30 April 2026.
 
 2. **Pemisahan Beban Non-Kapitalisasi**:
    - Pelatihan operator mesin oleh instruktur vendor sebesar Rp5.000.000 dibukukan langsung ke akun `610700 - Employee Training Expense` pada laba rugi bulan Maret, tidak digabungkan ke harga mesin.

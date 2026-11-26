@@ -126,8 +126,8 @@ Membukukan alokasi beban penyusutan mesin pabrik ke akun pusat biaya produksi:
 
 | Akun | Debit (IDR) | Kredit (IDR) | Keterangan |
 | :--- | :--- | :--- | :--- |
-| `610420 - Beban Penyusutan Mesin Pabrik` | 1.666.667 | - | Diakui di Laba Rugi pada Cost Center `CC-PROD-01` |
-| `153090 - Akumulasi Penyusutan Mesin` | - | 1.666.667 | Akun kontra aset tetap di Neraca |
+| `610420 - Beban Penyusutan Mesin Pabrik` | 1.833.333 | - | Diakui di Laba Rugi pada Cost Center `CC-PROD-01` |
+| `153090 - Akumulasi Penyusutan Mesin` | - | 1.833.333 | Akun kontra aset tetap di Neraca |
 
 ---
 
@@ -137,19 +137,19 @@ PT Maju Bersama mengoperasikan **Mesin Perakitan Laptop Pro** dengan data awal:
 - **Biaya Perolehan**: Rp120.000.000.
 - **Tanggal Mulai Pakai (*In-Service*)**: 01 April 2026.
 - **Masa Manfaat Awal**: 5 Tahun (60 Bulan).
-- **Nilai Residu**: Rp20.000.000.
-- **Dasar Penyusutan**: Rp120.000.000 - Rp20.000.000 = Rp100.000.000.
-- **Beban Bulanan Normal**: $\text{Rp100.000.000} / 60 = \mathbf{Rp1.666.667 \text{ per bulan}}$.
+- **Nilai Residu**: Rp10.000.000.
+- **Dasar Penyusutan**: Rp120.000.000 - Rp10.000.000 = Rp110.000.000.
+- **Beban Bulanan Normal**: $\text{Rp100.000.000} / 60 = \mathbf{Rp1.833.333 \text{ per bulan}}$.
 
 ### 1. Perhitungan Periode Parsial Tahun Pertama (Tahun 2026)
 Karena mesin baru mulai beroperasi pada 01 April 2026 (berjalan 9 bulan di tahun 2026):
-- Beban Penyusutan Tahun 2026: $9 \times \text{Rp1.666.667} = \mathbf{Rp15.000.000}$.
+- Beban Penyusutan Tahun 2026: $9 \times \text{Rp1.833.333} = \mathbf{Rp15.000.000}$.
 - Akumulasi Penyusutan per 31 Desember 2026: **Rp15.000.000**.
 - Nilai Buku Bersih (*Net Book Value*) per 31 Desember 2026: Rp120.000.000 - Rp15.000.000 = **Rp105.000.000**.
 
 ### 2. Skenario Perubahan Estimasi di Awal Tahun ke-3 (01 Januari 2028)
 Setelah beroperasi selama 21 bulan (9 bulan tahun 2026 + 12 bulan tahun 2027):
-- Total Akumulasi Penyusutan yang telah dibukukan: $21 \times \text{Rp1.666.667} = \mathbf{Rp35.000.000}$.
+- Total Akumulasi Penyusutan yang telah dibukukan: $21 \times \text{Rp1.833.333} = \mathbf{Rp35.000.000}$.
 - Nilai Buku Bersih per 01 Januari 2028: Rp120.000.000 - Rp35.000.000 = **Rp85.000.000**.
 - **Peristiwa**: Berdasarkan evaluasi teknis, mesin dirawat sangat baik sehingga sisa masa manfaat yang semula tersisa 39 bulan diperpanjang menjadi **51 bulan (diperpanjang 12 bulan)**, dan nilai residu diturunkan menjadi **Rp10.000.000**.
 - **Kalkulasi Ulang Prospektif di ERP**:

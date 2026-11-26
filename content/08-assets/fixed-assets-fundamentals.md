@@ -131,10 +131,10 @@ PT Maju Bersama membeli 1 unit mesin perakitan otomatis (*Laptop Assembly Machin
 - **Biaya Instalasi & Pengujian Awal oleh Teknisi Spesialis**: Rp6.000.000.
 - **Total Biaya Perolehan (*Acquisition Cost*)**: Rp110.000.000 + Rp4.000.000 + Rp6.000.000 = **Rp120.000.000**.
 - **Ambang Batas Kapitalisasi Internal PT Maju Bersama**: Rp10.000.000 per unit (Pengadaan ini memenuhi syarat kapitalisasi).
-- **Nilai Residu (*Residual Value*)**: Ditetapkan sebesar **Rp20.000.000** pada akhir tahun ke-5.
+- **Nilai Residu (*Residual Value*)**: Ditetapkan sebesar **Rp10.000.000** pada akhir tahun ke-5.
 - **Masa Manfaat (*Useful Life*)**: **5 tahun (60 bulan)**.
-- **Dasar Penyusutan (*Depreciable Base*)**: Rp120.000.000 - Rp20.000.000 = **Rp100.000.000**.
-- **Beban Penyusutan Tahunan (Garis Lurus)**: $\text{Rp100.000.000} / 5 = \mathbf{Rp20.000.000 \text{ per tahun}}$ ($\text{Rp1.666.667 per bulan}$).
+- **Dasar Penyusutan (*Depreciable Base*)**: Rp120.000.000 - Rp10.000.000 = **Rp110.000.000**.
+- **Beban Penyusutan Tahunan (Garis Lurus)**: $\text{Rp110.000.000} / 5 = \mathbf{Rp22.000.000 \text{ per tahun}}$ ($\text{Rp1.833.333 per bulan}$).
 
 ---
 
