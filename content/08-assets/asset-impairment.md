@@ -171,7 +171,5 @@ Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-067).
 ## References
 
 1. **IFRS Foundation** — *IAS 36 Impairment of Assets*. https://www.ifrs.org/issued-standards/list-of-standards/ias-36-impairment-of-assets/ — diakses 24 November 2026.
-2. **SAP SE** — *Unplanned Depreciation and Impairment*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-3. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
-4. **KPMG** — *Insights into IFRS: Impairment of Non-Financial Assets* (cetak).
-5. **PSAK 48** — *Penurunan Nilai Aset* (cetak).
+2. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+3. **PSAK 48** — *Penurunan Nilai Aset* (cetak).

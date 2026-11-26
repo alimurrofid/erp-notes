@@ -23,5 +23,11 @@ $$\text{Trigger} \to \text{Business Event} \to \text{Document} \to \text{Validat
 4. [[01-business-processes/inventory-process|Inventory Process]]  
    Siklus manajemen persediaan: penerimaan barang (*receipt*), mutasi internal antar-gudang (*transfer*), pemakaian internal (*issue/consumption*), penghitungan fisik (*stock opname*), penyesuaian selisih (*adjustment*), pemusnahan barang rusak (*scrap*), dan evaluasi nilai pasar (IAS 2 LCNRV).
 
-5. [[01-business-processes/manufacturing-process|Manufacturing Process]]  
+5. [[01-business-processes/document-lifecycle|Document Lifecycle]]  
+   Siklus status dokumen transaksi dari draft hingga arsip, titik posted, dan aturan kapan efek akuntansi timbul.
+
+6. [[01-business-processes/exception-path|Exception Path]]  
+   Jalur sah untuk pembatalan, short-close, retur, pembalikan jurnal, koreksi, dan write-off — agar pengecualian tidak merusak jejak audit.
+
+7. [[01-business-processes/manufacturing-process|Manufacturing Process]]  
    Siklus manufaktur dan produksi: perencanaan kebutuhan bahan (*MRP*), penerbitan perintah kerja (*work order*), pengeluaran bahan baku ke lantai pabrik (*WIP*), pencatatan tenaga kerja dan pembebanan overhead pabrik, penerimaan barang jadi, dan penyelesaian varians biaya (*standard costing*).

@@ -149,9 +149,8 @@ Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-089).
 
 ## References
 
-1. **Kaplan, R. S., & Atkinson, A. A.** — *Advanced Management Accounting*, edisi ke-3 (cetak).
-2. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, edisi ke-7 (cetak).
-3. **SAP Help Portal** — *Project Profitability Analysis (CO-PA)*: halaman spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
-5. **ERPNext Documentation** — *Project*. https://docs.frappe.io/erpnext/project — diakses 24 November 2026.
-6. **Odoo 20.0 Documentation** — *Project*. https://www.odoo.com/documentation/20.0/applications/services/project.html — diakses 24 November 2026.
+- Kaplan, R. S., & Atkinson, A. A. *Advanced Management Accounting* (3rd ed., 1998). Prentice Hall. ISBN 0-13-262288-2.
+- Project Management Institute. *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (6th ed., 2017). PMI. ISBN 978-1-62825-392-4.
+1. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Project*. https://docs.frappe.io/erpnext/project — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Project*. https://www.odoo.com/documentation/20.0/applications/services/project.html — diakses 24 November 2026.

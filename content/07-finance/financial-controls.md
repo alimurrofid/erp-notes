@@ -138,8 +138,6 @@ Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-056).
 
 ## References
 
-1. **COSO** — *Internal Control — Integrated Framework* (2013) (cetak).
-2. **ISACA** — *IT Control Objectives for Sarbanes-Oxley*, edisi ke-4 (cetak).
-3. **SAP SE** — *Governance, Risk, and Compliance*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — dokumentasi segregation of duties D365 untuk topik ini belum terverifikasi [belum terverifikasi].
-5. **IIA** — *International Standards for the Professional Practice of Internal Auditing* (cetak).
+- COSO. *Internal Control — Integrated Framework* (2013). https://www.coso.org/guidance-on-ic Diakses 26 November 2026.
+- ISACA. *COBIT: IT Governance Framework*. https://www.isaca.org/resources/cobit Diakses 26 November 2026.
+- The Institute of Internal Auditors. *International Standards for the Professional Practice of Internal Auditing*. https://www.theiia.org/en/standards/ Diakses 26 November 2026.

@@ -161,6 +161,5 @@ Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-071).
 
 1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment* (paragraf 31–42: revaluation model). https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
 2. **IFRS Foundation** — *IFRS 13 Fair Value Measurement*. https://www.ifrs.org/issued-standards/list-of-standards/ifrs-13-fair-value-measurement/ — diakses 24 November 2026.
-3. **SAP SE** — *Revaluation of Fixed Assets*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
-5. **PMK No. 79/PMK.010/2008** — Penilaian Kembali Aktiva Tetap Perusahaan untuk Tujuan Perpajakan. https://jdih.kemenkeu.go.id/dok/pmk-79-tahun-2008 — diakses 24 November 2026.
+3. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+4. **PMK No. 79/PMK.010/2008** — Penilaian Kembali Aktiva Tetap Perusahaan untuk Tujuan Perpajakan. https://jdih.kemenkeu.go.id/dok/pmk-79-tahun-2008 — diakses 24 November 2026.

@@ -170,8 +170,6 @@ Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-054).
 
 ## References
 
-1. **CFA Institute** — *Financial Reporting and Analysis* (cetak).
-2. **Brigham, E. F., & Ehrhardt, M. C.** — *Financial Management: Theory & Practice*, edisi ke-16 (cetak).
-3. **SAP SE** — *Profitability and Performance Management*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Financial reporting getting started* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-reporting-getting-started — diakses 24 November 2026.
-5. **Robinson, T. R., et al.** — *International Financial Statement Analysis* (cetak).
+- Brigham, E. F., & Ehrhardt, M. C. *Financial Management: Theory & Practice* (15th ed., 2016). Cengage. ISBN 978-1-337-13025-7.
+1. **Microsoft Learn** — *Financial reporting getting started* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-reporting-getting-started — diakses 24 November 2026.
+- Robinson, T. R., Henry, E., Pirie, W. L., & Broihahn, M. A. *International Financial Statement Analysis* (4th ed., 2020). Wiley. ISBN 978-1-119-62814-9.

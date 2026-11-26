@@ -86,14 +86,24 @@ ERP mengendalikan siklus hidup proyek melalui mesin status (*State Machine*) ter
 stateDiagram-v2
     [*] --> Draft: Pembuatan Proposal / Estimasi Biaya
     Draft --> Approved: Persetujuan Manajemen & Kontrak Klien
+    Draft --> Lost: Penawaran Kalah / Klien Menolak
     Approved --> Planned: Penyusunan WBS, Jadwal, & Anggaran
     Planned --> InProgress: Rilis Proyek (Mulai Catat Biaya & Jam Kerja)
     InProgress --> OnHold: Penundaan Proyek / Evaluasi Masalah
     OnHold --> InProgress: Pembukaan Kembali
+    Approved --> Cancelled: Kontrak Dibatalkan Sebelum Eksekusi
+    Planned --> Cancelled: Proyek Dibatalkan Sebelum Rilis
+    InProgress --> Terminated: Kontrak Diakhiri Dini (Terminasi)
     InProgress --> Completed: Serah Terima Fisik Pekerjaan (BAST Terbit)
     Completed --> Closed: Seluruh Tagihan Lunas & Akun Ditutup
     Closed --> [*]
+    Lost --> [*]
+    Cancelled --> [*]
+    Terminated --> [*]
 ```
+
+> [!note] Empat jalan keluar yang berbeda
+> `Lost` = penawaran tidak pernah menjadi kontrak (tidak ada biaya proyek). `Cancelled` = kontrak batal sebelum pekerjaan dimulai. `Terminated` = kontrak diakhiri saat pekerjaan sudah berjalan; WIP, biaya yang dapat dipulihkan, dan klaim harus diselesaikan sebelum proyek ditutup. `Closed` = pekerjaan selesai dan seluruh tagihan lunas. Jangan memakai `Closed` untuk proyek yang berhenti di tengah jalan.
 
 1. **Draft (Konsep / Penawaran)**: Tahap inisiasi awal saat tim penjualan atau operasional menyusun proposal penawaran (*Quotation*). Belum ada pencatatan akuntansi atau pemotongan anggaran.
 2. **Approved (Disetujui)**: Kontrak kerja disahkan oleh pelanggan atau disetujui direksi untuk proyek internal. Nomor ID Proyek resmi diterbitkan.
@@ -232,8 +242,7 @@ Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-084).
 
 ## References
 
-1. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, edisi ke-7 (cetak).
-2. **ISO 21500** — *Project, Programme and Portfolio Management — Context and Concepts* (cetak).
-3. **SAP SE** — *SAP Project System*: halaman Help spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
-5. **IFRS Foundation** — *IFRS 15 Revenue from Contracts with Customers*. https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/ — diakses 24 November 2026.
+- Project Management Institute. *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (6th ed., 2017). PMI. ISBN 978-1-62825-392-4.
+- ISO. *ISO 21500:2021 — Project, programme and portfolio management — Context and concepts*. https://www.iso.org/standard/75704.html Diakses 26 November 2026.
+1. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+2. **IFRS Foundation** — *IFRS 15 Revenue from Contracts with Customers*. https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/ — diakses 24 November 2026.

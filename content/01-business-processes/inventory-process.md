@@ -158,6 +158,15 @@ Selisih lebih tidak diakui sebagai pendapatan; IFRS 15 tidak berlaku untuk perbe
 
 ---
 
+## Process Contract
+
+| Elemen | Isi |
+|---|---|
+| **Trigger** | Permintaan mutasi (receipt, transfer, issue, adjustment) dari dokumen operasional atau keputusan opname. |
+| **Validation** | Lokasi asal/tujuan, UOM dan faktor konversi, lot/serial, kebijakan stok negatif, otorisasi penyesuaian. |
+| **Exception** | Selisih opname → adjustment; barang rusak/kedaluwarsa → scrap + write-down NRV; kehilangan dalam transit → klaim ekspedisi (lihat [[01-business-processes/exception-path|Exception Path]]). |
+| **Next Process** | Valuasi persediaan/COGS di Record to Report; pemicu replenishment atau produksi. |
+
 ## Ringkasan Jurnal Transaksi Persediaan
 
 | Peristiwa Persediaan | Dampak Fisik | Dampak GL Finansial |
@@ -174,7 +183,7 @@ Selisih lebih tidak diakui sebagai pendapatan; IFRS 15 tidak berlaku untuk perbe
 
 ## References
 
-1. **IFRS Foundation**: *IAS 2 Inventories - Measurement, Net Realizable Value, and Cost Formulas*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/
-2. **Microsoft Learn**: *Inventory management overview in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-home-page
-3. **Frappe / ERPNext Documentation**: *Stock Module: Stock Entry, Stock Reconciliation, and Valuation*. URL: https://docs.frappe.io/erpnext/user/manual/en/stock
-4. **Odoo Documentation**: *Inventory Adjustments, Scrap, and Transfers*. URL: https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory.html
+1. **IFRS Foundation**: *IAS 2 Inventories - Measurement, Net Realizable Value, and Cost Formulas*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ Diakses 26 November 2026.
+2. **Microsoft Learn**: *Inventory management overview in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-home-page Diakses 26 November 2026.
+3. **Frappe / ERPNext Documentation**: *Stock Module: Stock Entry, Stock Reconciliation, and Valuation*. URL: https://docs.frappe.io/erpnext/user/manual/en/stock Diakses 26 November 2026.
+4. **Odoo Documentation**: *Inventory Adjustments, Scrap, and Transfers*. URL: https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory.html Diakses 26 November 2026.

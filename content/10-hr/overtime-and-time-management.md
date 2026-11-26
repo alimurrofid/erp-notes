@@ -37,9 +37,9 @@ flowchart TD
     DAY -- "Hari Kerja Reguler (Working Day)" --> W1["Jam Pertama: Pengali 1,5x"]
     W1 --> W2["Jam Kedua & Seterusnya: Pengali 2,0x"]
     
-    DAY -- "Hari Istirahat Mingguan / Libur Resmi" --> H1["7-8 Jam Pertama: Pengali 2,0x"]
+    DAY -- "Hari Istirahat Mingguan / Libur Resmi (5 hari kerja)" --> H1["Jam ke-1 s.d. ke-8: Pengali 2,0x"]
     H1 --> H2["Jam Kesembilan: Pengali 3,0x"]
-    H2 --> H3["Jam Kesepuluh & Seterusnya: Pengali 4,0x"]
+    H2 --> H3["Jam ke-10 s.d. ke-12: Pengali 4,0x"]
     
     W2 & H3 --> COMP{"Opsi Penyelesaian Kompensasi"}
     COMP -- "Pembayaran Tunai" --> PAY["Penghasilan Lembur via Modul Payroll"]
@@ -60,14 +60,17 @@ $$
 
 ---
 
-## Klasifikasi Kelayakan Lembur (Exempt vs Non-Exempt)
+## Golongan Jabatan Tertentu dan Kompensasi Lembur
 
-Tidak semua pegawai berhak menerima kompensasi uang lembur:
+Indonesia **tidak mengenal konsep *exempt/non-exempt* ala FLSA Amerika**. Kewajiban membayar upah lembur berlaku bagi pekerja yang bekerja melebihi waktu kerja (PP 35/2021 Pasal 31), dengan pengecualian terbatas untuk **golongan jabatan tertentu** yang diatur dalam perjanjian kerja, peraturan perusahaan, atau perjanjian kerja bersama (PP 35/2021 Pasal 30 jo. Pasal 23–24).
 
-| Klasifikasi Status | Tingkat Kepangkatan / Posisi | Kebijakan Kompensasi Lembur di ERP |
+| Golongan | Contoh | Perlakuan di ERP |
 | :--- | :--- | :--- |
-| **Non-Exempt (Eligible)** | Staf pelaksana, teknisi, operator pabrik, *Software Engineer* (Grade 1 – Grade 4). | **Berhak Penuh**: Setiap jam lembur yang disetujui dihitung kompensasinya sesuai tarif pengali resmi via modul Payroll. |
-| **Exempt (Ineligible)** | Manajer, kepala departemen, direksi, konsultan eksekutif (Grade 5 ke atas). | **Tidak Berhak**: Jam kerja berorientasi pada pencapaian hasil (*results-oriented*); kelebihan jam kerja dianggap sebagai tanggung jawab manajerial dan tidak menghasilkan uang lembur. |
+| **Berhak upah lembur** | Staf pelaksana, teknisi, operator pabrik | Setiap jam lembur yang disetujui dihitung sesuai tarif PP 35/2021 melalui Payroll. |
+| **Golongan jabatan tertentu** | Manajer/direksi dengan lingkup tanggung jawab dan jam kerja yang diatur perjanjian | Dikecualikan **hanya jika** dasar pengecualian tercantum dalam perjanjian kerja/peraturan perusahaan; ERP menandai golongan ini dan tidak menghitung upah lembur otomatis. |
+
+> [!warning] Jangan memakai konsep FLSA
+> "Kelebihan jam kerja adalah tanggung jawab manajerial" adalah doktrin hukum AS, bukan dasar hukum Indonesia. Tanpa dasar tertulis dalam perjanjian kerja/peraturan perusahaan, pekerja tetap berhak atas upah lembur meskipun jabatannya manajerial.
 
 ---
 
@@ -173,11 +176,10 @@ Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-104).
 
 ## References
 
-1. **PP No. 35 Tahun 2021** — Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja. https://peraturan.go.id/id/pp-no-35-tahun-2021 — diakses 24 November 2026.
-2. **PP No. 49 Tahun 2025** — Perubahan Kedua atas PP No. 36 Tahun 2021 tentang Pengupahan. https://peraturan.go.id/id/pp-no-49-tahun-2025 — diakses 24 November 2026.
-3. **ILO** — *Hours of Work (Industry) Convention (No. 1)* (cetak).
-4. **Armstrong, M., & Taylor, S.** — *Armstrong's Handbook of Human Resource Management Practice*, edisi ke-15 (cetak).
-5. **SAP Help Portal** — *Overtime Processing*: halaman spesifik belum terverifikasi [belum terverifikasi].
-6. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
-7. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
-8. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.
+- **PP No. 35 Tahun 2021** — Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja (Pasal 21, 26, 30–32). https://peraturan.go.id/files/pp35-2021bt.pdf. Diakses 26 November 2026.
+- **PP No. 49 Tahun 2025** — Perubahan Kedua atas PP No. 36 Tahun 2021 tentang Pengupahan. https://peraturan.go.id/id/pp-no-49-tahun-2025. Diakses 26 November 2026.
+- International Labour Organization. *Hours of Work (Industry) Convention, 1919 (No. 1)*. https://normlex.ilo.org/dyn/normlex/en/f?p=NORMLEXPUB:12100:0::NO::P12100_ILO_CODE:C001. Diakses 26 November 2026.
+- Armstrong, M., & Taylor, S. *Armstrong's Handbook of Human Resource Management Practice* (15th ed., 2020). Kogan Page. ISBN 978-1-78966-103-3.
+- Microsoft Learn. *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/. Diakses 26 November 2026.
+- Frappe. *HR Documentation*. https://docs.frappe.io/hr. Diakses 26 November 2026.
+- Odoo 20.0 Documentation. *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html. Diakses 26 November 2026.

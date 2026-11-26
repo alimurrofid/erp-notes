@@ -71,11 +71,24 @@ ERP modern membedakan antara **di mana barang berada secara fisik (*Physical Cus
 
 ```mermaid
 flowchart LR
-        Own1["(1) Owned Stock, On-Premise<br/>(Persediaan Reguler Milik Sendiri di Gudang Sendiri)"]
-        Own2["(2) Consignment In (Vendor-Owned)<br/>(Barang Milik Vendor Dititipkan di Gudang Kita)<br/>Tidak ada nilai aset di Neraca kita."]
-        Own3["(3) Consignment Out (Customer-Held)<br/>(Barang Milik Kita Dititipkan di Toko Pelanggan)<br/>Tercatat sebagai Aset kita di lokasi eksternal."]
-        Own4["(4) In-Transit Stock<br/>(Barang Dalam Perjalanan Antar-Gudang / Pembelian FOB)<br/>Secara fisik di jalan, legalitas diakui."]
+    Vendor["Pemasok"]
+    Customer["Pelanggan"]
+    Branch["Gudang Cabang"]
+
+    Own2["(2) Consignment In (Vendor-Owned)<br/>(Barang Milik Vendor Dititipkan di Gudang Kita)<br/>Tidak ada nilai aset di Neraca kita."]
+    Own1["(1) Owned Stock, On-Premise<br/>(Persediaan Reguler Milik Sendiri di Gudang Sendiri)"]
+    Own3["(3) Consignment Out (Customer-Held)<br/>(Barang Milik Kita Dititipkan di Toko Pelanggan)<br/>Tercatat sebagai Aset kita di lokasi eksternal."]
+    Own4["(4) In-Transit Stock<br/>(Barang Dalam Perjalanan Antar-Gudang / Pembelian FOB)<br/>Secara fisik di jalan, legalitas diakui."]
+
+    Vendor -->|"Titip jual (tanpa transfer kepemilikan)"| Own2
+    Own2 -->|"Dipakai/dijual → baru diakui sebagai pembelian"| Own1
+    Own1 -->|"Kirim konsinyasi (kepemilikan tetap pada kita)"| Own3
+    Own3 -->|"Terjual → terbit faktur & akui pendapatan"| Customer
+    Own1 -->|"Transfer antar-gudang (FOB Shipping Point)"| Own4
+    Own4 -->|"Diterima di gudang tujuan"| Branch
 ```
+
+Kepemilikan menentukan apakah barang masuk neraca; lokasi hanya menentukan di mana barang berada. Karena itu barang konsinyasi masuk (2) dan barang dalam perjalanan (4) dapat berada secara fisik di tempat berbeda dengan pengakuan asetnya.
 
 ---
 

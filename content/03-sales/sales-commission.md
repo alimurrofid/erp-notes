@@ -83,7 +83,7 @@ flowchart LR
 ## Dampak Akuntansi & Penggajian (Accounting Impact)
 
 > [!important] Komisi adalah Beban Operasional, Bukan Pengurang Pendapatan Langsung
-> Beban komisi diklasifikasikan sebagai **Beban Penjualan (*Operating / Selling Expense*)**, bukan pengurang langsung dari akun Pendapatan di Laba Rugi.
+> Beban komisi diklasifikasikan sebagai **Beban Penjualan (*Operating / Selling Expense*)**, bukan pengurang langsung dari akun Pendapatan di Laba Rugi. Namun waktu pengakuannya mengikuti IFRS 15.91: komisi incremental yang dapat dipulihkan dikapitalisasi lebih dulu, bukan langsung dibebankan (lihat subbagian di bawah).
 
 ### Skenario Transaksi Acuan:
 Staf penjualan "Budi" berhasil menjual 10 unit *Laptop Pro* seharga Rp10.000.000 (DPP) dengan COGS Rp7.000.000. Sesuai kebijakan perusahaan, komisi ditetapkan sebesar **2% dari penjualan bersih** (Rp200.000), yang dibayarkan setelah pelanggan melunasi tagihan.
@@ -102,6 +102,34 @@ Staf penjualan "Budi" berhasil menjual 10 unit *Laptop Pro* seharga Rp10.000.000
 | Utang Komisi Penjualan (*Commissions Payable*) | Liability (Neraca) | 200.000 | - |
 | Kas / Bank Operasional (Transfer Gaji) | Asset (Neraca) | - | 200.000 |
 
+### Perlakuan IFRS 15.91: Kapitalisasi Biaya Perolehan Kontrak
+
+Komisi penjualan yang hanya timbul jika kontrak diperoleh (*incremental cost of obtaining a contract*) dan diperkirakan dapat dipulihkan **wajib dikapitalisasi** sebagai aset biaya perolehan kontrak, lalu diamortisasi secara sistematis sejalan dengan pengakuan pendapatan (IFRS 15.91–94). Membebankan seluruh komisi pada saat pesanan diterima hanya dibenarkan jika masa manfaat aset tersebut satu tahun atau kurang — praktik yang diizinkan sebagai *practical expedient* (IFRS 15.94).
+
+| Kondisi | Perlakuan |
+|---|---|
+| Komisi bersifat incremental (tidak akan timbul tanpa kontrak) dan dapat dipulihkan | Kapitalisasi; amortisasi sejalan dengan pendapatan |
+| Masa amortisasi ≤ 1 tahun | Boleh langsung dibebankan (*practical expedient*), diungkapkan |
+| Komisi tidak incremental (mis. gaji tetap staf penjualan) | Beban saat terjadinya |
+
+**Contoh**: komisi Rp200.000 atas kontrak 12 bulan dikapitalisasi pada 1 Oktober 2026, lalu diamortisasi Rp16.666,67/bulan (Rp200.000 ÷ 12). Jika jurnal dibulatkan ke rupiah penuh, selisih pembulatan disesuaikan pada angsuran terakhir agar total amortisasi tepat Rp200.000.
+
+| Akun | Debit (Rp) | Kredit (Rp) |
+|---|---:|---:|
+| Aset Biaya Perolehan Kontrak (*Contract Acquisition Cost*) | 200.000 | - |
+| Utang Komisi Penjualan (*Commissions Payable*) | - | 200.000 |
+
+Setiap bulan, saat pendapatan diakui:
+
+| Akun | Debit (Rp) | Kredit (Rp) |
+|---|---:|---:|
+| Beban Komisi Penjualan (*Commissions Expense*) | 16.667 | - |
+| Aset Biaya Perolehan Kontrak | - | 16.667 |
+
+*(pembulatan; lihat catatan penyesuaian angsuran terakhir)*
+
+Jika kontrak berakhir lebih cepat atau dihentikan, sisa aset diuji penurunan nilai dan dihapus pada periode tersebut. ERP umumnya menangani ini melalui jadwal amortisasi pada dokumen kontrak, bukan jurnal manual bulanan.
+
 ---
 
 ## Related Concepts
@@ -115,8 +143,7 @@ Staf penjualan "Budi" berhasil menjual 10 unit *Laptop Pro* seharga Rp10.000.000
 
 ## References
 
-1. **Association for Supply Chain Management (ASCM)**: *APICS Operations Management - Incentive and Commission Plan Design*.
-2. **Microsoft Learn** — dokumentasi komisi penjualan D365 untuk topik ini tidak lagi tersedia di URL lama; perlu sumber pengganti [belum terverifikasi].
-3. **ERPNext Documentation** — *Sales Person*. https://docs.frappe.io/erpnext/sales-person — diakses 24 November 2026.
-4. **ERPNext Documentation** — *How to Give Commission to Sales Partner*. https://docs.frappe.io/erpnext/how-to-give-commission-to-sales-partner — diakses 24 November 2026.
-5. **Odoo 20.0 Documentation** — *Sales*. https://www.odoo.com/documentation/20.0/applications/sales/sales.html — diakses 24 November 2026.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+1. **ERPNext Documentation** — *Sales Person*. https://docs.frappe.io/erpnext/sales-person — diakses 24 November 2026.
+2. **ERPNext Documentation** — *How to Give Commission to Sales Partner*. https://docs.frappe.io/erpnext/how-to-give-commission-to-sales-partner — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Sales*. https://www.odoo.com/documentation/20.0/applications/sales/sales.html — diakses 24 November 2026.

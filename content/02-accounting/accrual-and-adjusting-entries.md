@@ -127,7 +127,7 @@ Dengan *Auto-Reversal*:
 
 ## References
 
-1. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements (Accrual Basis of Accounting)*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/
-2. **Kieso, D. E., Weygandt, J. J., & Warfield, T. D.** (2020). *Intermediate Accounting* (Chapter: Accrual Accounting Concepts and Adjusting Process). Wiley.
-3. **Microsoft Learn**: *Auto-reversing journal entries in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/general-journal-processing
-4. **Frappe / ERPNext Documentation**: *Period Closing Voucher and Auto-Repeating Journal Entries*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/period-closing-voucher
+1. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements (Accrual Basis of Accounting)*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/ Diakses 26 November 2026.
+- Kieso, D. E., Weygandt, J. J., & Warfield, T. D. *Intermediate Accounting* (18th ed., 2024). Wiley. ISBN 978-1-394-24616-8.
+2. **Microsoft Learn**: *Auto-reversing journal entries in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/general-journal-processing Diakses 26 November 2026.
+3. **Frappe / ERPNext Documentation**: *Period Closing Voucher and Auto-Repeating Journal Entries*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/period-closing-voucher Diakses 26 November 2026.

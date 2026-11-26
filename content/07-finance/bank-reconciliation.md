@@ -166,8 +166,6 @@ Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-047).
 
 ## References
 
-1. **ISO 20022** — *Cash Management Messages (CAMT.052, CAMT.053, CAMT.054)* (cetak; spesifikasi berbayar).
-2. **SWIFT** — *MT940 Customer Statement Message* (cetak; standar berbayar).
-3. **SAP SE** — *Electronic Bank Statement*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Reconcile bank statements by using advanced bank reconciliation* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation — diakses 24 November 2026.
-5. **Odoo 20.0 Documentation** — *Bank reconciliation*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/bank/reconciliation.html — diakses 24 November 2026.
+- ISO. *ISO 20022 — Universal financial industry message scheme*. https://www.iso20022.org/ Diakses 26 November 2026.
+1. **Microsoft Learn** — *Reconcile bank statements by using advanced bank reconciliation* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation — diakses 24 November 2026.
+2. **Odoo 20.0 Documentation** — *Bank reconciliation*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/bank/reconciliation.html — diakses 24 November 2026.

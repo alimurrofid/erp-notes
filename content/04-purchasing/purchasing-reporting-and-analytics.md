@@ -151,9 +151,9 @@ Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-011) �
 
 ## References
 
-- APQC (American Productivity & Quality Center). *Procurement Performance Metrics and Benchmarks*.
-- Microsoft Learn. *Procurement and Sourcing Power BI Content in Dynamics 365*.
-- Frappe ERPNext Documentation. *Purchasing Reports and Analytics*.
+- APQC. *Process Classification Framework*. https://www.apqc.org/process-frameworks Diakses 26 November 2026.
+- Microsoft Learn. *Procurement and sourcing overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/procurement-sourcing-overview Diakses 26 November 2026.
+- Frappe. *Buying Module* (ERPNext Documentation). https://docs.frappe.io/erpnext/buying Diakses 26 November 2026.
 - Odoo 20 Documentation. *Purchase Analysis report*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/purchase/advanced/analyze.html. Diakses 23 November 2026.
 - Odoo 20 Documentation. *Purchase & Vendor analysis dashboard*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/purchase/advanced/purchase_dashboard.html. Diakses 23 November 2026.
-- CIPS (Chartered Institute of Procurement & Supply). *Measuring Procurement Performance and KPIs*.
+- ISO. *ISO 20400:2017 — Sustainable procurement — Guidance*. https://www.iso.org/standard/63026.html Diakses 26 November 2026.

@@ -77,16 +77,17 @@ Tabel berikut merangkum hubungan sebab-akibat antara peristiwa operasional di mo
 
 | Domain Sumber | Peristiwa Bisnis (*Event*) | Dokumen Sumber | Dampak terhadap Persediaan | Dampak Akuntansi Keuangan (GL) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Purchasing (P2P)** | Penerimaan barang dari pemasok | [[04-purchasing/goods-receipt-and-service-receipt\|Goods Receipt (GR)]] | **Kuantitas Bertambah (+)** di zona Receiving / Storage Rak. | *(Dr)* Persediaan Barang Dagang<br/>*(Cr)* Utang Barang Belum Ditagih (GR/IR Accrual) |
-| **Purchasing (P2P)** | Kapitalisasi ongkos angkut inbound | [[05-inventory/landed-cost\|Landed Cost Voucher]] | **Kuantitas Tetap (0)**; Nilai per unit naik. | *(Dr)* Persediaan Barang Dagang<br/>*(Cr)* Kliring Landed Cost / Utang Ekspedisi |
-| **Purchasing (P2P)** | Pengembalian barang cacat ke pemasok | [[04-purchasing/purchase-return-and-debit-note\|Return to Vendor (RTV)]] | **Kuantitas Berkurang (-)** dari gudang. | *(Dr)* Utang Usaha (Debit Note)<br/>*(Cr)* Persediaan Barang Dagang<br/>*(Cr)* Koreksi PPN Masukan |
+| **Purchasing (P2P)** | Penerimaan barang dari pemasok | [[04-purchasing/goods-receipt-and-service-receipt\|Goods Receipt (GR)]] | **Kuantitas Bertambah (+)** di zona Receiving / Storage Rak. | *(Dr)* Persediaan Bahan Baku<br/>*(Cr)* Utang Barang Belum Ditagih (GR/IR Accrual) |
+| **Purchasing (P2P)** | Kapitalisasi ongkos angkut inbound | [[05-inventory/landed-cost\|Landed Cost Voucher]] | **Kuantitas Tetap (0)**; Nilai per unit naik. | *(Dr)* Persediaan Bahan Baku<br/>*(Cr)* Kliring Landed Cost / Utang Ekspedisi |
+| **Purchasing (P2P)** | Pengembalian barang cacat ke pemasok | [[04-purchasing/purchase-return-and-debit-note\|Return to Vendor (RTV)]] | **Kuantitas Berkurang (-)** dari gudang. | *(Dr)* Utang Usaha (Debit Note)<br/>*(Cr)* Persediaan Bahan Baku<br/>*(Cr)* Koreksi PPN Masukan |
 | **Sales (O2C)** | Otorisasi pesanan penjualan | [[03-sales/sales-order\|Sales Order (SO)]] | **Kuantitas Fisik Tetap (0)**; Kuantitas *Reserved* bertambah (+), *Available* berkurang (-). | **Tidak Ada Jurnal Akuntansi** (Komitmen Komersial). |
-| **Sales (O2C)** | Pengeluaran barang ke pelanggan | [[03-sales/delivery-and-shipping\|Delivery Order (DO)]] | **Kuantitas Berkurang (-)** dari gudang aktif. | *(Dr)* Beban Pokok Penjualan (COGS)<br/>*(Cr)* Persediaan Barang Dagang |
-| **Sales (O2C)** | Penerimaan barang retur dari pelanggan | [[03-sales/sales-return-and-credit-note\|Sales Return / RMA]] | **Kuantitas Bertambah (+)** di area Karantina Mutu. | *(Dr)* Persediaan Barang Dagang<br/>*(Cr)* Pemulihan Beban COGS (Credit Note terpisah) |
+| **Sales (O2C)** | Pengeluaran barang ke pelanggan | [[03-sales/delivery-and-shipping\|Delivery Order (DO)]] | **Kuantitas Berkurang (-)** dari gudang aktif. | *(Dr)* Beban Pokok Penjualan (COGS)<br/>*(Cr)* Persediaan Barang Jadi |
+| **Sales (O2C)** | Penerimaan barang retur dari pelanggan | [[03-sales/sales-return-and-credit-note\|Sales Return / RMA]] | **Kuantitas Bertambah (+)** di area Karantina Mutu. | *(Dr)* Persediaan Barang Jadi<br/>*(Cr)* Pemulihan Beban COGS (Credit Note terpisah) |
 | **Internal Logistics** | Pemindahan stok antar-gudang | [[05-inventory/internal-stock-transfer\|Transfer Order (TO)]] | Berkurang di gudang asal (-), masuk *In-Transit*, bertambah di gudang tujuan (+). | **Umumnya Nihil terhadap Laba/Rugi**; hanya mutasi subledger cabang/akun antar-kantor. |
-| **Warehouse Control** | Penyesuaian selisih fisik (*Opname*) | [[05-inventory/inventory-adjustment\|Inventory Adjustment]] | Kuantitas bertambah (+) atau berkurang (-) sesuai varians fisik. | *(Dr/Cr)* Beban/Pendapatan Selisih Persediaan<br/>*(Cr/Dr)* Persediaan Barang Dagang |
-| **Manufacturing (Preview)** | Pengeluaran bahan baku ke lini perakitan | *Material Issue for Production* | Bahan baku berkurang (-) dari gudang. | *(Dr)* Barang Dalam Proses (WIP)<br/>*(Cr)* Persediaan Bahan Baku |
-| **Manufacturing (Preview)** | Penerimaan barang jadi dari pabrik | *Production Receipt / Completion* | Barang jadi bertambah (+) di gudang. | *(Dr)* Persediaan Barang Jadi<br/>*(Cr)* Barang Dalam Proses (WIP) |
+| **Warehouse Control** | Penyesuaian selisih fisik (*Opname*) | [[05-inventory/inventory-adjustment\|Inventory Adjustment]] | Kuantitas bertambah (+) atau berkurang (-) sesuai varians fisik. | *(Dr/Cr)* Beban/Pendapatan Selisih Persediaan<br/>*(Cr/Dr)* Persediaan (sesuai kelas barang) |
+| **Manufacturing (Preview)** | Pengeluaran bahan baku ke lini perakitan | *Material Issue for Production* | Bahan baku berkurang (-) dari gudang. | *(Dr)* Barang Dalam Proses (WIP) — bahan<br/>*(Cr)* Persediaan Bahan Baku |
+| **Manufacturing (Preview)** | Penyerapan tenaga kerja langsung dan overhead pabrik | *Labour and Overhead Absorption* | Kuantitas fisik tetap (0). | *(Dr)* Barang Dalam Proses (WIP) — konversi<br/>*(Cr)* Upah Terutang / Overhead Pabrik Dialokasikan |
+| **Manufacturing (Preview)** | Penerimaan barang jadi dari pabrik | *Production Receipt / Completion* | Barang jadi bertambah (+) di gudang. | *(Dr)* Persediaan Barang Jadi (bahan + konversi)<br/>*(Cr)* Barang Dalam Proses (WIP) |
 
 ---
 

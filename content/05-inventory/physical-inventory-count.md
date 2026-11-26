@@ -137,7 +137,7 @@ Jika setelah penghitungan ulang independen (*recount*) dan investigasi tuntas se
 | :--- | :--- | :--- | :--- |
 | **Model Dokumen** | Menggunakan menu *Inventory Adjustments* (tampilan tabular seluruh quant yang dapat difilter per lokasi atau produk). | Menggunakan dokumen formal `Stock Reconciliation` yang membandingkan *Current Qty* vs *Real Qty*. | Menggunakan jurnal formal: **Counting Journal** dengan dukungan konfigurasi *Cycle Counting Plans*. |
 | **Dukungan Blind Count** | Opsi sembunyikan kolom *Counted Quantity* pada lembar cetak hitung. | Memerlukan kustomisasi format cetak (*Print Format*) untuk menyembunyikan kuantitas sistem. | Fitur bawaan (*native*): Parameter *Display quantity on count sheet = False* untuk pelaksanaan Blind Count. |
-| **Otomasi Jadwal Cycle Count** | Dikelola melalui field *Annual Inventory Day and Month* pada level lokasi atau integrasi modul barcode. | Memiliki fitur *Cycle Count* yang secara otomatis memilih item secara acak berbasis frekuensi yang ditentukan. | Sangat komprehensif: Mesin *Cycle count threshold* (memicu hitung saat stok menyentuh angka tertentu) dan integrasi aplikasi seluler WMS. |
+| **Otomasi Jadwal Cycle Count** | Field *Inventory Frequency* (jumlah hari) pada level lokasi untuk cycle count, dan *Annual Inventory Day and Month* pada level pengaturan perusahaan untuk hitung penuh tahunan; eksekusi hitung dapat memakai aplikasi Barcode. | Memiliki fitur *Cycle Count* yang secara otomatis memilih item secara acak berbasis frekuensi yang ditentukan. | Sangat komprehensif: Mesin *Cycle count threshold* (memicu hitung saat stok menyentuh angka tertentu) dan integrasi aplikasi seluler WMS. |
 
 ---
 

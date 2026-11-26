@@ -139,7 +139,7 @@ Dalam sistem ERP kelas enterprise (seperti skema *Revenue Recognition Workspace*
 
 ## References
 
-1. **IFRS Foundation**: *IFRS 15 Revenue from Contracts with Customers - Complete Standard and Illustrative Examples*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/
-2. **Kieso, D. E., Weygandt, J. J., & Warfield, T. D.** (2020). *Intermediate Accounting* (IFRS Edition, Chapter: Revenue Recognition). Wiley.
-3. **Microsoft Learn**: *Revenue recognition overview and setup in Dynamics 365 Finance and Operations*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/revenue-recognition-overview
-4. **Frappe / ERPNext Documentation**: *Deferred Revenue and Revenue Recognition Scheduler*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/deferred-revenue
+1. **IFRS Foundation**: *IFRS 15 Revenue from Contracts with Customers - Complete Standard and Illustrative Examples*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/ Diakses 26 November 2026.
+- Kieso, D. E., Weygandt, J. J., & Warfield, T. D. *Intermediate Accounting* (18th ed., 2024). Wiley. ISBN 978-1-394-24616-8.
+2. **Microsoft Learn**: *Revenue recognition overview and setup in Dynamics 365 Finance and Operations*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/revenue-recognition-overview Diakses 26 November 2026.
+3. **Frappe / ERPNext Documentation**: *Deferred Revenue and Revenue Recognition Scheduler*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/deferred-revenue Diakses 26 November 2026.

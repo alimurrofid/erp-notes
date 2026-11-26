@@ -202,5 +202,4 @@ Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-062).
 1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment*. https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
 2. **IFRS Foundation** — *IAS 23 Borrowing Costs*. https://www.ifrs.org/issued-standards/list-of-standards/ias-23-borrowing-costs/ — diakses 24 November 2026.
 3. **IFRS Foundation** — *IAS 37 Provisions, Contingent Liabilities and Contingent Assets*. https://www.ifrs.org/issued-standards/list-of-standards/ias-37-provisions-contingent-liabilities-and-contingent-assets/ — diakses 24 November 2026.
-4. **SAP SE** — *Asset Acquisition and Capital Work in Progress*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-5. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.

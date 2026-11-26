@@ -35,6 +35,9 @@ stateDiagram-v2
     
     Released --> InProgress : Pengeluaran Bahan Pertama (Material Issue) / Jam Kerja Dimulai
     
+    InProgress --> OnHold : Kendala Mutu / Bahan / Mesin (Produksi Dihentikan)
+    OnHold --> InProgress : Kendala Selesai, Produksi Dilanjutkan
+    InProgress --> Scrapped : Pesanan Tidak Dapat Diselesaikan (WIP Diasuransikan/Dihapus)
     InProgress --> Completed : Seluruh Target Fisik Selesai & Lolos QC
     
     Completed --> Closed : Rekonsiliasi Finansial & Penyelesaian Varians (Cost Settlement)
@@ -46,7 +49,11 @@ stateDiagram-v2
     
     Closed --> [*]
     Cancelled --> [*]
+    Scrapped --> [*]
 ```
+
+> [!warning] MO yang sudah mengonsumsi bahan tidak bisa sekadar "dibatalkan"
+> Status `Cancelled` hanya sah jika belum ada bahan yang dikeluarkan dari gudang. Jika produksi sudah berjalan, gunakan `OnHold` untuk penghentian sementara, atau `Scrapped` untuk menghentikan pesanan secara permanen: bahan yang sudah dikonsumsi dan WIP yang tidak dapat dipakai harus dihapus ke beban scrap/kerugian, bukan dikembalikan diam-diam ke stok. Menutup MO tanpa jurnal ini meninggalkan saldo WIP menggantung.
 
 ---
 
@@ -157,8 +164,8 @@ Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV
 
 ## References
 
-1. **ASCM / APICS** — *APICS Dictionary* (manufacturing order, work order lifecycle, dispatching, status) (cetak).
-2. **Vollmann, T. E., et al.** — *Manufacturing Planning and Control for Supply Chain Management* (cetak).
-3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management; siklus status production order). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
-4. **ERPNext Documentation** — *Work Order*. https://docs.frappe.io/erpnext/work-order — diakses 24 November 2026.
-5. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+- Vollmann, T. E., Berry, W. L., Whybark, D. C., & Jacobs, F. R. *Manufacturing Planning and Control for Supply Chain Management* (5th ed., 2005). McGraw-Hill. ISBN 0-07-144033-X.
+1. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management; siklus status production order). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Work Order*. https://docs.frappe.io/erpnext/work-order — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

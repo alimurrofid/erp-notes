@@ -122,7 +122,6 @@ Melanjutkan proses pengadaan komponen laptop PT Sumber Teknologi:
 
 ## References
 
-1. **Committee of Sponsoring Organizations of the Treadway Commission (COSO)**: *Internal Control - Integrated Framework (Control Activities in Procure-to-Pay)*.
-2. **Institute of Management Accountants (IMA)**: *Accounts Payable Best Practices and Automated Invoice Matching Controls*.
-3. **Microsoft Learn**: *Accounts payable invoice matching overview and 2-way, 3-way matching in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/accounts-payable-invoice-matching
-4. **Frappe / ERPNext Documentation**: *Purchase Invoice 3-Way Matching and Tolerance Validation*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/purchase-invoice#3-way-matching
+- COSO. *Internal Control — Integrated Framework* (2013). https://www.coso.org/guidance-on-ic Diakses 26 November 2026.
+1. **Microsoft Learn**: *Accounts payable invoice matching overview and 2-way, 3-way matching in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/accounts-payable-invoice-matching Diakses 26 November 2026.
+2. **Frappe / ERPNext Documentation**: *Purchase Invoice 3-Way Matching and Tolerance Validation*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/purchase-invoice#3-way-matching Diakses 26 November 2026.

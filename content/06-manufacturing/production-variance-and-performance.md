@@ -62,8 +62,8 @@ Untuk memahami bagaimana ERP menghitung setiap varians secara terisolasi, perhat
 ### Data Standar vs Data Aktual (Batch 100 Unit Laptop Pro):
 * **Bahan Baku (Sasis Laptop)**:
   * Standar: 100 set @ Rp500.000 = Rp50.000.000.
-  * Aktual Pembelian: Dibeli seharga Rp520.000/set (Harga naik Rp20.000/set).
-  * Aktual Pemakaian: Terpakai 103 set (Terjadi pemborosan 3 set sasis).
+  * Aktual Pembelian: Dibeli 102 set seharga Rp520.000/set (Harga naik Rp20.000/set).
+  * Aktual Pemakaian: Terpakai 102 set (Terjadi pemborosan 2 set sasis).
 * **Tenaga Kerja Langsung (Lini Perakitan)**:
   * Standar: 100 jam @ Rp15.000/jam = Rp1.500.000 (1 jam per laptop).
   * Aktual Upah: Rata-rata upah operator Rp16.000/jam (karena ada porsi jam lembur).
@@ -77,13 +77,13 @@ Untuk memahami bagaimana ERP menghitung setiap varians secara terisolasi, perhat
 Mengukur dampak finansial akibat perbedaan harga beli aktual terhadap harga standar:
 
 $$\mathbf{\text{MPV} = (\text{Actual Price} - \text{Standard Price}) \times \text{Actual Quantity Purchased}}$$
-$$\text{MPV} = (\text{Rp}520.000 - \text{Rp}500.000) \times 103 \text{ set} = +\text{Rp}20.000 \times 103 = \mathbf{+\text{Rp}2.060.000 \text{ (Unfavorable / Merugikan)}}$$
+$$\text{MPV} = (\text{Rp}520.000 - \text{Rp}500.000) \times 102 \text{ set} = +\text{Rp}20.000 \times 102 = \mathbf{+\text{Rp}2.040.000 \text{ (Unfavorable / Merugikan)}}$$
 
 #### B. Material Usage Variance (MUV - Tanggung Jawab Bagian Pabrik):
 Mengukur dampak finansial akibat pemborosan fisik material yang melebihi standar BOM:
 
 $$\mathbf{\text{MUV} = (\text{Actual Quantity Used} - \text{Standard Quantity Allowed}) \times \text{Standard Price}}$$
-$$\text{MUV} = (103 \text{ set} - 100 \text{ set}) \times \text{Rp}500.000 = +3 \text{ set} \times \text{Rp}500.000 = \mathbf{+\text{Rp}1.500.000 \text{ (Unfavorable / Merugikan)}}$$
+$$\text{MUV} = (102 \text{ set} - 100 \text{ set}) \times \text{Rp}500.000 = +2 \text{ set} \times \text{Rp}500.000 = \mathbf{+\text{Rp}1.000.000 \text{ (Unfavorable / Merugikan)}}$$
 
 ---
 
@@ -107,11 +107,14 @@ $$\text{LEV} = (110 \text{ jam} - 100 \text{ jam}) \times \text{Rp}15.000 = +10 
 
 | Komponen Varians | Nilai (Rp) | Kategori Sifat | Penanggung Jawab Teridentifikasi |
 | :--- | ---:| :---: | :--- |
-| **Material Price Variance (MPV)** | 2.060.000 | Unfavorable (Rugi) | Departemen Pengadaan / Kenaikan Harga Vendor |
-| **Material Usage Variance (MUV)** | 1.500.000 | Unfavorable (Rugi) | Operator Lantai Pabrik / Kerusakan Penanganan |
+| **Material Price Variance (MPV)** | 2.040.000 | Unfavorable (Rugi) | Departemen Pengadaan / Kenaikan Harga Vendor |
+| **Material Usage Variance (MUV)** | 1.000.000 | Unfavorable (Rugi) | Operator Lantai Pabrik / Kerusakan Penanganan |
 | **Labor Rate Variance (LRV)** | 110.000 | Unfavorable (Rugi) | HRD / Otorisasi Kebijakan Jam Lembur |
 | **Labor Efficiency Variance (LEV)** | 150.000 | Unfavorable (Rugi) | Supervisor Produksi / Produktivitas Kerja Rendah |
-| **Total Inefisiensi Biaya Produksi** | **3.820.000** | **Unfavorable** | **Dibebankan ke Laporan Laba Rugi Periode Berjalan** |
+| **Total Varians Bahan dan Tenaga Kerja** | **3.300.000** | **Unfavorable** | **Dibebankan ke Laporan Laba Rugi Periode Berjalan** |
+
+> [!note] Varians overhead dihitung terpisah
+> Tabel di atas hanya mencakup varians bahan dan tenaga kerja. Varians overhead (mis. *overhead spending variance* dan *overhead volume variance*) memerlukan data anggaran overhead tetap dan variabel serta jam standar; angka itu tidak ada dalam skenario ini sehingga tidak boleh disebut sebagai bagian dari total. Jika ingin satu angka "total varians produksi", tambahkan komponen overhead secara eksplisit lebih dulu.
 
 ---
 
@@ -150,9 +153,9 @@ Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV
 
 ## References
 
-1. **Horngren, C. T., Datar, S. M., & Rajan, M. V.** — *Cost Accounting: A Managerial Emphasis* (variance analysis dan standard costing) (cetak).
-2. **ASCM / APICS** — *APICS Dictionary* (variance analysis, material usage variance, labour efficiency, OEE) (cetak).
-3. **Nakajima, S.** — *Introduction to TPM* (metodologi OEE) (cetak).
+- Horngren, C. T., Datar, S. M., & Rajan, M. V. *Horngren's Cost Accounting: A Managerial Emphasis* (16th ed., 2017). Pearson. ISBN 978-0-13-447558-5.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+- Nakajima, S. *Introduction to TPM* (1988). Productivity Press. ISBN 0-915299-23-2.
 4. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
 5. **ERPNext Documentation** — *Work Order*. https://docs.frappe.io/erpnext/work-order — diakses 24 November 2026.
 6. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

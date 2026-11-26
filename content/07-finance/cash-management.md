@@ -183,8 +183,6 @@ Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-050).
 ## References
 
 1. **IFRS Foundation** — *IAS 7 Statement of Cash Flows*. https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/ — diakses 24 November 2026.
-2. **AFP** — *Treasury Management Body of Knowledge (TMBoK)*, edisi ke-5 (cetak).
-3. **SAP SE** — *Cash Operations*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Cash and bank management* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-bank-management — diakses 24 November 2026.
-5. **Odoo 20.0 Documentation** — *Bank reconciliation*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/bank/reconciliation.html — diakses 24 November 2026.
-6. **ERPNext Documentation** — *Bank Account*. https://docs.frappe.io/erpnext/bank-account — diakses 24 November 2026.
+2. **Microsoft Learn** — *Cash and bank management* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-bank-management — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Bank reconciliation*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/bank/reconciliation.html — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Bank Account*. https://docs.frappe.io/erpnext/bank-account — diakses 24 November 2026.

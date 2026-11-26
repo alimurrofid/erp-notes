@@ -167,9 +167,7 @@ Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-112).
 
 ## References
 
-1. **Fitz-enz, J., & Mattox, J. R.** — *Predictive Analytics for Human Resources* (cetak).
-2. **SHRM** — *Workforce Planning and Analytics Standards* (cetak).
-3. **SAP Help Portal** — *Workforce Planning and Analytics*: halaman spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
-5. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
-6. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.
+- Fitz-enz, J., & Mattox, J. R. *Predictive Analytics for Human Resources* (2014). Wiley. ISBN 978-1-118-91504-2.
+1. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+2. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.

@@ -125,7 +125,7 @@ Jika satu tagihan ekspedisi sebesar Rp500.000 mengangkut beberapa jenis barang y
 
 ## References
 
-1. **IFRS Foundation**: *IAS 2 Inventories - Costs of Purchase and Other Costs Incurred*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/
-2. **International Chamber of Commerce (ICC)**: *Incoterms 2020 Rules and Obligations of Buyer and Seller*.
-3. **Microsoft Learn**: *Landed cost module overview, cost categories, and allocation rules in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/landed-cost-overview
-4. **ERPNext Documentation** — *Landed Cost Voucher*. https://docs.frappe.io/erpnext/landed-cost-voucher — diakses 24 November 2026.
+1. **IFRS Foundation**: *IAS 2 Inventories - Costs of Purchase and Other Costs Incurred*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ Diakses 26 November 2026.
+- International Chamber of Commerce. *Incoterms 2020*. https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/ Diakses 26 November 2026.
+2. **Microsoft Learn**: *Landed cost module overview, cost categories, and allocation rules in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/landed-cost-overview Diakses 26 November 2026.
+3. **ERPNext Documentation** — *Landed Cost Voucher*. https://docs.frappe.io/erpnext/landed-cost-voucher — diakses 24 November 2026.

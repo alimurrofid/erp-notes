@@ -161,10 +161,9 @@ Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-100).
 
 ## References
 
-1. **Armstrong, M., & Taylor, S.** — *Armstrong's Handbook of Human Resource Management Practice*, edisi ke-15 (cetak).
-2. **COSO** — *Internal Control — Integrated Framework* (2013) (cetak).
-3. **IFRS Foundation** — *IAS 19 Employee Benefits*. https://www.ifrs.org/issued-standards/list-of-standards/ias-19-employee-benefits/ — diakses 24 November 2026.
-4. **SAP Help Portal** — *Cross-Application Architecture in SAP HCM*: halaman spesifik belum terverifikasi [belum terverifikasi].
-5. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
-6. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
-7. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.
+- Armstrong, M., & Taylor, S. *Armstrong's Handbook of Human Resource Management Practice* (15th ed., 2020). Kogan Page. ISBN 978-1-78966-103-3.
+- COSO. *Internal Control — Integrated Framework* (2013). https://www.coso.org/guidance-on-ic Diakses 26 November 2026.
+1. **IFRS Foundation** — *IAS 19 Employee Benefits*. https://www.ifrs.org/issued-standards/list-of-standards/ias-19-employee-benefits/ — diakses 24 November 2026.
+2. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+3. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+4. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.

@@ -178,6 +178,15 @@ Jika terdapat selisih (*variance*) di luar toleransi (misal: harga di faktur Rp7
 
 ---
 
+## Process Contract
+
+| Elemen | Isi |
+|---|---|
+| **Trigger** | Purchase requisition dari pengguna, reorder point/MRP, atau kontrak payung yang akan berakhir. |
+| **Validation** | Ketersediaan anggaran, kelayakan pemasok, harga dan termin, persetujuan sesuai ambang nilai, lalu 3-way match pada faktur (PO–GR–invoice). |
+| **Exception** | Anggaran tidak cukup → `UnderApproval`; kuantitas kurang → short-close; barang ditolak → return + debit note; harga faktur berbeda → toleransi atau sengketa (lihat [[01-business-processes/exception-path|Exception Path]]). |
+| **Next Process** | Payment run, kliring GR/IR, lalu Record to Report. |
+
 ## Ringkasan Transaksi Finansial P2P
 
 Skenario standar pengadaan 10 unit barang dagang @ Rp700.000 (PPN Masukan efektif 11%):
@@ -206,7 +215,7 @@ Skenario standar pengadaan 10 unit barang dagang @ Rp700.000 (PPN Masukan efekti
 
 ## References
 
-1. **IFRS Foundation**: *IAS 2 Inventories - Acquisition Costs and Capitalization*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/
-2. **Microsoft Learn**: *Procure-to-pay business process in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/procure-to-pay-overview
-3. **Frappe / ERPNext Documentation**: *Procurement and Buying Workflows*. URL: https://docs.frappe.io/erpnext/user/manual/en/buying
-4. **Odoo Documentation**: *Purchase to Vendor Bill and 3-Way Matching*. URL: https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/purchase.html
+1. **IFRS Foundation**: *IAS 2 Inventories - Acquisition Costs and Capitalization*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ Diakses 26 November 2026.
+2. **Microsoft Learn**: *Procure-to-pay business process in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/procure-to-pay-overview Diakses 26 November 2026.
+3. **Frappe / ERPNext Documentation**: *Procurement and Buying Workflows*. URL: https://docs.frappe.io/erpnext/user/manual/en/buying Diakses 26 November 2026.
+4. **Odoo Documentation**: *Purchase to Vendor Bill and 3-Way Matching*. URL: https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/purchase.html Diakses 26 November 2026.

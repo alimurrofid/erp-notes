@@ -86,6 +86,19 @@ flowchart LR
 2. **Minimum Remaining Shelf Life for Delivery**: Batas waktu minimal yang disyaratkan oleh jaringan supermarket besar (misal: tolak pengiriman jika sisa masa kedaluwarsa $< 75\%$).
 3. **Quarantine Before Expiry**: Sistem secara otomatis memindahkan status batch ke *Blocked / Quarantine* 30 hari sebelum tanggal kedaluwarsa agar tidak dapat terambil secara tidak sengaja oleh operator picking.
 
+### Konsekuensi Akuntansi: Batch Kedaluwarsa dan Karantina
+
+Status fisik (karantina, *blocked*, kedaluwarsa) tidak otomatis mengubah nilai persediaan. Selama barang masih tercatat sebagai aset, nilainya tetap pada biaya perolehan. Dampak akuntansi baru timbul ketika nilai realisasi bersih (NRV) turun di bawah biaya atau ketika barang dihapuskan:
+
+| Kondisi | Perlakuan | Jurnal |
+|---|---|---|
+| Batch mendekati kedaluwarsa, masih dapat dijual dengan diskon | Turunkan ke NRV (IAS 2.28) | Dr Beban Penurunan Nilai Persediaan / Cr Cadangan Penurunan Nilai |
+| Batch kedaluwarsa dan tidak dapat dijual | Hapus nilai persediaan; kuantitas dipindahkan ke lokasi *scrap* | Dr Beban Kerugian Persediaan (atau Beban Scrap) / Cr Persediaan |
+| Batch dikarantina tetapi masih berpotensi dijual | Tidak ada jurnal; hanya status ketersediaan yang berubah | — |
+| Batch ditarik dari pelanggan (*recall*) | Barang kembali ke karantina; jika tidak dapat dipakai, hapus ke beban | Dr Persediaan (karantina) / Cr COGS saat retur; lalu Dr Beban Scrap / Cr Persediaan |
+
+Jejak lot/serial memungkinkan penghapusan dilakukan **per batch**, bukan menaksir seluruh saldo. ERP yang mendukung *valuation layer* per lot dapat membebankan kerugian tepat ke batch yang kedaluwarsa; tanpa pelacakan batch, kerugian harus dialokasikan secara estimasi.
+
 ---
 
 ## ERP Implementation Comparison

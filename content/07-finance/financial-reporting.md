@@ -162,8 +162,5 @@ Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-058).
 
 ## References
 
-1. **CIMA** — *Management Accounting Guidelines: Performance Management & Reporting* (cetak).
-2. **IMA** — *Management Accounting Quarterly* (cetak).
-3. **SAP SE** — *Embedded Analytics*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Financial reporting getting started* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-reporting-getting-started — diakses 24 November 2026.
-5. **Eckerson, W. W.** — *Performance Dashboards* (cetak).
+1. **Microsoft Learn** — *Financial reporting getting started* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-reporting-getting-started — diakses 24 November 2026.
+- Eckerson, W. W. *Performance Dashboards* (2005). Wiley. ISBN 978-0-471-75765-8.

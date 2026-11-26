@@ -61,12 +61,16 @@ Proses ini menghasilkan dokumen bukti pemotongan pajak resmi (seperti Formulir 1
 
 Program jaminan sosial wajib (seperti BPJS Ketenagakerjaan dan BPJS Kesehatan di Indonesia) dikelola melalui mekanisme pembagian beban:
 
-| Program Jaminan Sosial | Beban Porsi Pegawai (Employee Deduction) | Beban Porsi Perusahaan (Employer Contribution) | Plafon Batas Atas Upah (Wage Cap) |
-| :--- | :--- | :--- | :--- |
-| **Jaminan Kesehatan** | Dipotong dari gaji bruto (e.g. 1%) | Dibayar oleh perusahaan (e.g. 4%) | Terdapat plafon batas maksimal upah bulanan resmi. |
-| **Jaminan Hari Tua (JHT)** | Dipotong dari upah pokok (e.g. 2%) | Dibayar oleh perusahaan (e.g. 3,7%) | Berdasarkan upah riil / ketentuan yang berlaku. |
-| **Jaminan Pensiun (JP)** | Dipotong dari upah (e.g. 1%) | Dibayar oleh perusahaan (e.g. 2%) | Terdapat plafon batas maksimal upah yang diperbarui berkala. |
-| **Kecelakaan Kerja & Kematian (JKK/JKM)** | **0% (Nihil)** | Ditanggung penuh perusahaan (e.g. 0,24% - 1,74% & 0,3%) | Bergantung pada tingkat risiko lingkungan kerja perusahaan. |
+| Program | Porsi Pegawai | Porsi Perusahaan | Plafon upah (berlaku) | Dasar |
+|---|---:|---:|---|---|
+| **Jaminan Kesehatan** | 1% | 4% | Rp12.000.000/bulan | Perpres 82/2018 (iuran 5%; plafon upah Rp12 juta) |
+| **JHT** | 2% | 3,7% | Tidak ada plafon | PP 46/2015 |
+| **JP** | 1% | 2% | **Rp11.086.300/bulan sejak 1 Maret 2026** (sebelumnya Rp10.547.400) | PP 45/2015 Pasal 29; SE BPJS Ketenagakerjaan B/1226/022026 |
+| **JKK** | 0% | 0,24%–1,74% | Tidak ada plafon | PP 44/2015 |
+| **JKM** | 0% | 0,3% | Tidak ada plafon | PP 44/2015 |
+
+> [!warning] Plafon JP berubah setiap tahun
+> Batas upah JP disesuaikan setiap Maret mengikuti pertumbuhan PDB tahun sebelumnya (PP 45/2015 Pasal 29). Angka Rp11.086.300 hanya berlaku sejak 1 Maret 2026; konfigurasi payroll harus memakai tabel berlaku dan tanggal efektif, bukan angka tetap di kode program. Batas upah BPJS Kesehatan (Rp12 juta) adalah kebijakan terpisah dan tidak ikut berubah setiap tahun.
 
 ---
 
@@ -173,7 +177,6 @@ Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-109).
 2. **PP No. 58 Tahun 2023** — Tarif Pemotongan PPh Pasal 21 atas Penghasilan sehubungan dengan Pekerjaan, Jasa, atau Kegiatan Wajib Pajak Orang Pribadi. https://peraturan.go.id/id/pp-no-58-tahun-2023 — diakses 24 November 2026.
 3. **Perpres No. 82 Tahun 2018** — Jaminan Kesehatan (BPJS Kesehatan). https://peraturan.go.id/id/perpres-no-82-tahun-2018 — diakses 24 November 2026.
 4. **PP No. 45 Tahun 2015** — Penyelenggaraan Program Jaminan Pensiun (BPJS Ketenagakerjaan). https://peraturan.go.id/id/pp-no-45-tahun-2015 — diakses 24 November 2026.
-5. **SAP Help Portal** — *Payroll Tax Processing and Statutory Reporting*: halaman spesifik belum terverifikasi [belum terverifikasi].
-6. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
-7. **Frappe HR Documentation** — *Payroll*. https://docs.frappe.io/hr/payroll — diakses 24 November 2026.
-8. **Odoo 20.0 Documentation** — *Payroll*. https://www.odoo.com/documentation/20.0/applications/hr/payroll.html — diakses 24 November 2026.
+5. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+6. **Frappe HR Documentation** — *Payroll*. https://docs.frappe.io/hr/payroll — diakses 24 November 2026.
+7. **Odoo 20.0 Documentation** — *Payroll*. https://www.odoo.com/documentation/20.0/applications/hr/payroll.html — diakses 24 November 2026.

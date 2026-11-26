@@ -91,10 +91,23 @@ Ketika 1 unit laptop tersebut diterima kembali di gudang dan dinilai masih layak
 * **Dampak**: Beban pokok penjualan (COGS) berkurang Rp700.000, dan nilai aset persediaan di neraca pulih kembali sebesar Rp700.000.
 
 #### Variasi: Jika Barang Hancur dan Harus Dimusnahkan (*Scrap*):
-Jika laptop rusak total dan tidak memiliki nilai residu:
-* **Debit**: Beban Kerugian Barang Rusak / Pemusnahan (*Scrap Expense*) = Rp700.000
-* **Kredit**: Beban Pokok Penjualan (*COGS Reversal*) = Rp700.000
-*(Nilai persediaan tidak bertambah karena barang fisik langsung dibuang/dihapus).*
+Jika laptop rusak total dan tidak memiliki nilai residu, retur tetap dicatat sebagai pengembalian persediaan lebih dulu, lalu persediaan dihapus ke beban scrap. Jangan mengkredit COGS reversal dua kali.
+
+Langkah 1 — retur diterima (sama seperti retur normal):
+
+| Akun | Debit (Rp) | Kredit (Rp) |
+|---|---:|---:|
+| Persediaan Barang Dagang | 700.000 | - |
+| Beban Pokok Penjualan (*COGS Reversal*) | - | 700.000 |
+
+Langkah 2 — barang dimusnahkan:
+
+| Akun | Debit (Rp) | Kredit (Rp) |
+|---|---:|---:|
+| Beban Kerugian Barang Rusak / Pemusnahan (*Scrap Expense*) | 700.000 | - |
+| Persediaan Barang Dagang | - | 700.000 |
+
+* **Dampak**: COGS tetap berkurang Rp700.000 karena barang secara fisik dikembalikan; kerugian pemusnahan Rp700.000 muncul sebagai beban terpisah. Jika barang langsung dimusnahkan di lokasi pelanggan tanpa pernah masuk kembali ke gudang, lewati langkah 1 dan catat langsung Dr Scrap Expense / Cr Persediaan dengan memo bahwa barang tidak diterima kembali.
 
 ---
 
@@ -119,7 +132,6 @@ Pada beberapa industri B2B, penjual membebankan biaya penanganan (*Restocking Fe
 
 ## References
 
-1. **IFRS Foundation**: *IFRS 15 Revenue from Contracts with Customers - Sales with a Right of Return (Paragraphs B20-B27)*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/
-2. **Direktorat Jenderal Pajak (DJP) RI**: *Peraturan Tata Cara Penerbitan Nota Retur dan Pembatalan Faktur Pajak*.
-3. **Microsoft Learn**: *Manage sales returns and credit notes in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/sales-returns
-4. **Frappe / ERPNext Documentation**: *Sales Return, Credit Note, and Standalone Return Entries*. URL: https://docs.frappe.io/erpnext/user/manual/en/stock/sales-return
+1. **IFRS Foundation**: *IFRS 15 Revenue from Contracts with Customers - Sales with a Right of Return (Paragraphs B20-B27)*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/ Diakses 26 November 2026.
+2. **Microsoft Learn**: *Manage sales returns and credit notes in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/sales-returns Diakses 26 November 2026.
+3. **Frappe / ERPNext Documentation**: *Sales Return, Credit Note, and Standalone Return Entries*. URL: https://docs.frappe.io/erpnext/user/manual/en/stock/sales-return Diakses 26 November 2026.

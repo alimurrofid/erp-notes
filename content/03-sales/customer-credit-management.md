@@ -135,7 +135,5 @@ Melanjutkan data acuan PT Maju Bersama:
 
 ## References
 
-1. **Credit Research Foundation (CRF)**: *Best Practices in Credit and Accounts Receivable Management*.
-2. **Microsoft Learn** — *Collections and credit in Accounts receivable* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/collections-credit-accounts-receivable — diakses 24 November 2026.
-3. **ERPNext Documentation** — *Credit Limit*. https://docs.frappe.io/erpnext/credit-limit — diakses 24 November 2026.
-4. **Odoo 20.0** — *Credit limit*: halaman dokumentasi versi 20.0 belum ditemukan saat verifikasi [belum terverifikasi].
+1. **Microsoft Learn** — *Collections and credit in Accounts receivable* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/collections-credit-accounts-receivable — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Credit Limit*. https://docs.frappe.io/erpnext/credit-limit — diakses 24 November 2026.

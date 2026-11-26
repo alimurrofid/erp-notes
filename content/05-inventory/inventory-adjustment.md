@@ -117,7 +117,7 @@ Jika ditemukan 1 unit berlebih yang sah secara fisik tanpa adanya kewajiban utan
 | :--- | :--- | :--- | :--- |
 | **Model Dokumen** | Menggunakan mekanisme mutasi ke/dari lokasi virtual khusus: `Virtual Locations / Inventory adjustment` atau `Virtual Locations / Scrap`. | Menggunakan dokumen formal `Stock Entry` dengan tipe *Material Issue* (penyesuaian keluar) atau *Material Receipt* (penyesuaian masuk). | Menggunakan jurnal formal: **Inventory Adjustment Journal**, **Counting Journal**, dan **Movement Journal**. |
 | **Enforcement Reason Code** | Tersedia melalui field *Reason* (dapat dikonfigurasi wajib pada modul tingkat lanjut). | Kolom *Difference Account* dan field deskripsi/alasan pada tabel baris Stock Entry. | Sangat ketat: Mewajibkan pemilihan *Reason Code* terstruktur yang terintegrasi dengan pemetaan akun GL otomatis. |
-| **Pemisahan Scrap vs Adjustment** | Memiliki tombol dan wizard khusus *Scrap* yang langsung memindahkan barang ke lokasi pemusnahan permanen. | Memiliki fitur *Scrap Item* yang mengeluarkan barang dari gudang operasional ke gudang sisa (*Scrap Warehouse*). | Memiliki jurnal khusus *Scrap Journal* atau integrasi dengan modul *Quality Order* dan penanganan limbah. |
+| **Pemisahan Scrap vs Adjustment** | Memiliki tombol dan wizard khusus *Scrap* yang langsung memindahkan barang ke lokasi pemusnahan permanen. | Memiliki fitur *Scrap Item* yang mengeluarkan barang dari gudang operasional ke gudang sisa (*Scrap Warehouse*). | Tidak memiliki tipe jurnal *Scrap Journal* tersendiri. Scrap dicatat melalui **Inventory Adjustment Journal** (atau movement journal) dengan alasan/kode referensi, atau lewat transaksi scrap pada order produksi; integrasi *Quality Order* menangani barang yang ditolak. |
 
 ---
 

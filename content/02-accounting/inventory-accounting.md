@@ -49,7 +49,7 @@ Standar IAS 2 memperbolehkan dua rumus biaya utama untuk barang yang saling dapa
 |---|---|---|---|
 | **FIFO (First-In, First-Out)** | Barang yang masuk lebih awal diasumsikan keluar/dijual lebih awal. Nilai persediaan akhir mencerminkan harga pembelian terkini. | Laba kotor cenderung lebih tinggi; nilai aset persediaan di neraca lebih mendekati harga pasar terkini. | **Diizinkan penuh** oleh IFRS dan PSAK. |
 | **Weighted Average Cost (Moving Average)** | Biaya setiap unit ditentukan dari rata-rata tertimbang biaya barang serupa yang tersedia pada saat transaksi terjadi. | Menghaluskan fluktuasi harga ekstrem (*smoothing effect*). | **Diizinkan penuh** oleh IFRS dan PSAK. |
-| **LIFO (Last-In, First-Out)** | Barang yang terakhir masuk diasumsikan keluar lebih dulu. | Menghasilkan laba lebih rendah dan nilai neraca usang. | **DILARANG KERAS** oleh IFRS (IAS 2 Paragraf 25) karena tidak mencerminkan aliran fisik barang yang wajar. |
+| **LIFO (Last-In, First-Out)** | Barang yang terakhir masuk diasumsikan keluar lebih dulu. | Menghasilkan laba lebih rendah dan nilai neraca usang. | **Tidak diizinkan** oleh IAS 2.25, yang membatasi formula biaya pada FIFO dan weighted average. Larangan ini adalah ketentuan pengukuran, bukan karena LIFO dianggap menyalahi aliran fisik — aliran fisik memang boleh berbeda dari aliran biaya. |
 | **Standard Costing** | Nilai barang ditetapkan di awal berdasarkan estimasi biaya standar; selisih dengan harga riil dialokasikan ke akun varians. | Mengharuskan penyesuaian berkala (*variance analysis*). | Diizinkan sebagai metode pendekatan jika hasilnya mendekati biaya historis. |
 
 ---
@@ -129,7 +129,7 @@ Jika pada akhir tahun harga pasar produk tersebut anjlok dan estimasi nilai real
 
 ## References
 
-1. **IFRS Foundation**: *IAS 2 Inventories - Measurement, Cost Formulas, and Disclosures*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/
-2. **Kieso, D. E., Weygandt, J. J., & Warfield, T. D.** (2020). *Intermediate Accounting* (IFRS Edition, Chapter: Inventories: Additional Valuation Issues). Wiley.
-3. **Microsoft Learn**: *Cost management and inventory costing in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/costing-sheets
-4. **ERPNext Documentation** — *Item Valuation Setup and Transactions*. https://docs.frappe.io/erpnext/item-valuation-transactions — diakses 24 November 2026.
+1. **IFRS Foundation**: *IAS 2 Inventories - Measurement, Cost Formulas, and Disclosures*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ Diakses 26 November 2026.
+- Kieso, D. E., Weygandt, J. J., & Warfield, T. D. *Intermediate Accounting* (18th ed., 2024). Wiley. ISBN 978-1-394-24616-8.
+2. **Microsoft Learn**: *Cost management and inventory costing in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/costing-sheets Diakses 26 November 2026.
+3. **ERPNext Documentation** — *Item Valuation Setup and Transactions*. https://docs.frappe.io/erpnext/item-valuation-transactions — diakses 24 November 2026.

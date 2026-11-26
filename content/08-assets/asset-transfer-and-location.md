@@ -131,7 +131,8 @@ Pada tanggal 15 Juli 2027 (Tahun ke-2 operasional), manajemen PT Maju Bersama me
    - Lokasi: Pabrik Cikarang / Hall B / Line 2.
    - Pusat Biaya: `CC-PROD-01` (Lini Perakitan Cikarang).
    - Penanggung Jawab: Budi Santoso (NIP: `EMP-0412`).
-   - Nilai Perolehan: Rp120.000.000; Akumulasi Penyusutan: Rp30.000.000; Nilai Buku: Rp90.000.000.
+   - Nilai Perolehan: Rp120.000.000; Akumulasi Penyusutan: Rp29.333.333; Nilai Buku: Rp90.666.667.
+   - *Dasar*: jadwal kanonik `AST-MAC-2026-0001` — penyusutan Rp1.833.333/bulan sejak April 2026. Pada Juli 2027 telah 16 bulan (kebijakan bulan penuh), sehingga akumulasi = 16 × Rp1.833.333 = Rp29.333.333.
 
 2. **Pengajuan & Eksekusi Mutasi**:
    - Manajer Produksi membuat tiket `TRF-AST-2027-042` memindahkan mesin ke **Pabrik Karawang / Gedung C**.
@@ -168,6 +169,5 @@ Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-072).
 
 1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment*. https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
 2. **IFRS Foundation** — *IFRS 10 Consolidated Financial Statements*. https://www.ifrs.org/issued-standards/list-of-standards/ifrs-10-consolidated-financial-statements/ — diakses 24 November 2026.
-3. **SAP SE** — *Asset Transfers*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance; transfer aset). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
-5. **ERPNext Documentation** — *Asset*. https://docs.frappe.io/erpnext/asset — diakses 24 November 2026.
+3. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance; transfer aset). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Asset*. https://docs.frappe.io/erpnext/asset — diakses 24 November 2026.

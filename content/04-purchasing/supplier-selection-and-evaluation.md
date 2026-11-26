@@ -117,7 +117,6 @@ Daftar Pemasok Resmi (*Approved Supplier List / ASL*) berfungsi sebagai pagar pe
 
 ## References
 
-1. **CIPS** — situs memblokir akses otomatis dan tidak menyediakan dokumen spesifik; klaim penilaian pemasok perlu sumber pengganti [belum terverifikasi].
-2. **International Organization for Standardization (ISO)**: *ISO 9001:2015 Clause 8.4 - Control of Externally Provided Processes, Products and Services* (cetak).
-3. **Microsoft Learn** — *Supplier engagement overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/supplier-engagement/supplier-engagement-overview — diakses 24 November 2026.
-4. **ERPNext Documentation** — *Supplier Scorecard*. https://docs.frappe.io/erpnext/supplier-scorecard — diakses 24 November 2026.
+- ISO. *ISO 9001:2015 — Quality management systems — Requirements*. https://www.iso.org/standard/62085.html Diakses 26 November 2026.
+1. **Microsoft Learn** — *Supplier engagement overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/supplier-engagement/supplier-engagement-overview — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Supplier Scorecard*. https://docs.frappe.io/erpnext/supplier-scorecard — diakses 24 November 2026.

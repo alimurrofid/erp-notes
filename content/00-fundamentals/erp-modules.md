@@ -150,7 +150,7 @@ Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-003) â€
 
 ## References
 
-1. **APICS / ASCM**: *APICS Dictionary - The Standard for Supply Chain and Operations Management Terminology*.
-2. **Microsoft Learn**: *Dynamics 365 Business Applications architecture overview*. URL: https://learn.microsoft.com/en-us/dynamics365/
-3. **Frappe Documentation**: *ERPNext Module Directory and Workflows*. URL: https://docs.frappe.io/erpnext
-4. **Odoo Documentation**: *Odoo Apps and Integration Ecosystem*. URL: https://www.odoo.com/documentation/20.0/applications.html
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+1. **Microsoft Learn**: *Dynamics 365 Business Applications architecture overview*. URL: https://learn.microsoft.com/en-us/dynamics365/ Diakses 26 November 2026.
+2. **Frappe Documentation**: *ERPNext Module Directory and Workflows*. URL: https://docs.frappe.io/erpnext Diakses 26 November 2026.
+3. **Odoo Documentation**: *Odoo Apps and Integration Ecosystem*. URL: https://www.odoo.com/documentation/20.0/applications.html Diakses 26 November 2026.

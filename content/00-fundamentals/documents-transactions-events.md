@@ -143,7 +143,7 @@ Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-006) �
 
 ## References
 
-1. **Romney, M. B., & Steinbart, P. J.** (2018). *Accounting Information Systems* (14th ed.). Pearson (cetak; ISBN belum terverifikasi).
+1. **Romney, M. B., & Steinbart, P. J.** (2017). *Accounting Information Systems* (14th ed.). Pearson. ISBN 978-0-13-447402-1.
 2. **Microsoft Learn** — *Sales and marketing overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/overview-sales-marketing — diakses 24 November 2026.
 3. **Microsoft Learn** — *Create sales orders* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/tasks/create-sales-orders — diakses 24 November 2026.
 4. **Frappe Documentation** — *Understanding DocTypes*. https://docs.frappe.io/framework/user/en/basics/doctypes — diakses 24 November 2026.

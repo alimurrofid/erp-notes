@@ -110,7 +110,6 @@ Untuk memenuhi standar kepatuhan regulasi audit (seperti SOX, ISO 9001, dan stan
 
 ## References
 
-1. **Information Systems Audit and Control Association (ISACA)**: *Audit Trail and Change Management Controls in Enterprise ERP Systems*.
-2. **Microsoft Learn** — dokumentasi perubahan/pembatalan sales order D365 untuk topik ini tidak lagi tersedia di URL lama; perlu sumber pengganti [belum terverifikasi].
-3. **ERPNext Documentation** — *Amending Sales Order after Submit*. https://docs.frappe.io/erpnext/amending-sales-order-after-submit — diakses 24 November 2026.
-4. **Odoo 20.0 Documentation** — *Sales*. https://www.odoo.com/documentation/20.0/applications/sales/sales.html — diakses 24 November 2026.
+- ISACA. *COBIT: IT Governance Framework*. https://www.isaca.org/resources/cobit Diakses 26 November 2026.
+1. **ERPNext Documentation** — *Amending Sales Order after Submit*. https://docs.frappe.io/erpnext/amending-sales-order-after-submit — diakses 24 November 2026.
+2. **Odoo 20.0 Documentation** — *Sales*. https://www.odoo.com/documentation/20.0/applications/sales/sales.html — diakses 24 November 2026.

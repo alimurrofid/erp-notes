@@ -151,7 +151,7 @@ Seluruh rantai transaksi di atas membuktikan **konsistensi logika dan angka 100%
 
 ## References
 
-1. **Association for Supply Chain Management (ASCM)**: *Supply Chain Operations Reference (SCOR) Model - Order-to-Cash Workflow*.
-2. **IFRS Foundation**: *IFRS 15 Revenue from Contracts with Customers*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/
-3. **Microsoft Learn**: *End-to-end Order-to-Cash business process flow in Dynamics 365*. URL: https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/order-to-cash-overview
-4. **Frappe / ERPNext Documentation**: *Selling and Accounts Receivable Architecture*. URL: https://docs.frappe.io/erpnext/user/manual/en/selling
+- ASCM. *Supply Chain Operations Reference (SCOR) Model*. https://www.ascm.org/process-transformation/scor/ Diakses 26 November 2026.
+1. **IFRS Foundation**: *IFRS 15 Revenue from Contracts with Customers*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/ Diakses 26 November 2026.
+2. **Microsoft Learn**: *End-to-end Order-to-Cash business process flow in Dynamics 365*. URL: https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/order-to-cash-overview Diakses 26 November 2026.
+3. **Frappe / ERPNext Documentation**: *Selling and Accounts Receivable Architecture*. URL: https://docs.frappe.io/erpnext/user/manual/en/selling Diakses 26 November 2026.

@@ -134,8 +134,8 @@ Berdasarkan prinsip **Theory of Constraints (TOC)**:
 
 | Aspek | Odoo Enterprise | ERPNext | Microsoft Dynamics 365 SCM |
 | :--- | :--- | :--- | :--- |
-| **Model Penjadwalan** | Mendukung Finite Capacity berbasis efisiensi Work Center; visualisasi jadwal via **Gantt Chart View** dengan drag-and-drop. | Penjadwalan kapasitas sederhana pada Workstation; fitur penyesuaian jam kerja dan kalender hari libur. | Sangat komprehensif: Menggunakan mesin **Scheduling Engine** dengan opsi *Job Scheduling* (detail menit) dan *Operation Scheduling* (agregat hari). |
-| **Dukungan Finite vs Infinite** | Parameter kapasitas harian pada Work Center; sistem menggeser pesanan berikutnya jika kapasitas hari ini telah penuh. | Default mengasumsikan kapasitas tidak terbatas kecuali opsi pemeriksaan beban diaktifkan pada modul kustom. | Parameter formal: Pilihan checklist *Finite capacity* dan *Finite material* yang dapat diaktifkan per resource atau group. |
+| **Model Penjadwalan** | Menjadwalkan work order berdasarkan durasi operasi, kalender kerja, kapasitas, dan efisiensi Work Center; visualisasi beban via **Planning by Workcenter** (Gantt) dengan drag-and-drop. | Penjadwalan kapasitas sederhana pada Workstation; fitur penyesuaian jam kerja dan kalender hari libur. | Sangat komprehensif: Menggunakan mesin **Scheduling Engine** dengan opsi *Job Scheduling* (detail menit) dan *Operation Scheduling* (agregat hari). |
+| **Dukungan Finite vs Infinite** | Penjadwalan standar bersifat *infinite capacity*: work order ditempatkan pada slot kalender Work Center, tetapi antrean tidak diurutkan ulang dan kelebihan beban hanya terlihat sebagai overload di tampilan Planning. Penjadwalan finite yang benar-benar meratakan beban memerlukan modul pihak ketiga atau kustomisasi. | Default mengasumsikan kapasitas tidak terbatas kecuali opsi pemeriksaan beban diaktifkan pada modul kustom. | Parameter formal: Pilihan checklist *Finite capacity* dan *Finite material* yang dapat diaktifkan per resource atau group. |
 | **Optimasi Penjadwalan Visual** | Fitur *Planning App* terintegrasi dengan penugasan operator dan stasiun kerja berbasis kalender interaktif. | Visualisasi sederhana jadwal produksi melalui tampilan *Gantt View* pada daftar Work Order. | Fitur tingkat industri: **Gantt Chart for Operations / Job Scheduling** dengan kapabilitas simulasi penjadwalan ulang dinamis. |
 
 ---
@@ -148,9 +148,9 @@ Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV
 
 ## References
 
-1. **ASCM / APICS** — *Detailed Scheduling and Planning* (CRP, finite vs infinite loading, theory of constraints) (cetak).
-2. **Goldratt, E. M., & Cox, J.** — *The Goal* (cetak).
-3. **Vollmann, T. E., et al.** — *Manufacturing Planning and Control for Supply Chain Management* (cetak).
-4. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
-5. **ERPNext Documentation** — *Workstation*. https://docs.frappe.io/erpnext/workstation — diakses 24 November 2026.
-6. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+- Goldratt, E. M., & Cox, J. *The Goal* (3rd ed., 2004). North River Press. ISBN 978-0-88427-178-9.
+- Vollmann, T. E., Berry, W. L., Whybark, D. C., & Jacobs, F. R. *Manufacturing Planning and Control for Supply Chain Management* (5th ed., 2005). McGraw-Hill. ISBN 0-07-144033-X.
+1. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Workstation*. https://docs.frappe.io/erpnext/workstation — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

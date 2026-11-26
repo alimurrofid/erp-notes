@@ -123,7 +123,7 @@ flowchart LR
 
 ## References
 
-1. **Weygandt, J. J., Kimmel, P. D., & Kieso, D. E.** (2019). *Financial Accounting* (Chapter: Fraud, Internal Control, and Cash). John Wiley & Sons.
-2. **Microsoft Learn** — *Reconcile bank statements by using advanced bank reconciliation* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation — diakses 24 November 2026.
-3. **ERPNext Documentation** — *Bank Reconciliation*. https://docs.frappe.io/erpnext/bank-reconciliation — diakses 24 November 2026.
-4. **Odoo 20.0 Documentation** — *Bank reconciliation*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/bank/reconciliation.html — diakses 24 November 2026.
+- Kieso, D. E., Weygandt, J. J., & Warfield, T. D. *Intermediate Accounting* (18th ed., 2024). Wiley. ISBN 978-1-394-24616-8.
+1. **Microsoft Learn** — *Reconcile bank statements by using advanced bank reconciliation* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Bank Reconciliation*. https://docs.frappe.io/erpnext/bank-reconciliation — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Bank reconciliation*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/bank/reconciliation.html — diakses 24 November 2026.

@@ -144,7 +144,7 @@ ERP enterprise menyediakan modul otomatisasi jadwal penangguhan (*Revenue & Expe
 
 ## References
 
-1. **IFRS Foundation**: *IFRS 15 Revenue from Contracts with Customers*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/
-2. **IFRS Foundation**: *Conceptual Framework for Financial Reporting (Elements and Recognition Chapters)*.
-3. **Microsoft Learn**: *Subscription billing and revenue recognition in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/revenue-recognition-overview
-4. **Frappe / ERPNext Documentation**: *Deferred Accounting (Deferred Revenue and Deferred Expense)*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/deferred-revenue
+1. **IFRS Foundation**: *IFRS 15 Revenue from Contracts with Customers*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/ Diakses 26 November 2026.
+- IFRS Foundation. *Conceptual Framework for Financial Reporting*. https://www.ifrs.org/issued-standards/list-of-standards/conceptual-framework/ Diakses 26 November 2026.
+2. **Microsoft Learn**: *Subscription billing and revenue recognition in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/revenue-recognition-overview Diakses 26 November 2026.
+3. **Frappe / ERPNext Documentation**: *Deferred Accounting (Deferred Revenue and Deferred Expense)*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/deferred-revenue Diakses 26 November 2026.

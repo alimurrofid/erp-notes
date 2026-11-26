@@ -172,8 +172,6 @@ Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-048).
 
 ## References
 
-1. **CIMA** — *Official Terminology of Management Accounting* (cetak).
-2. **SAP SE** — *Budget Management and Availability Control*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-3. **Microsoft Learn** — *Budgeting overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budgeting-overview — diakses 24 November 2026.
-4. **ERPNext Documentation** — *Budget*. https://docs.frappe.io/erpnext/budget — diakses 24 November 2026.
-5. **Odoo 20.0 Documentation** — *Accounting and invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.
+1. **Microsoft Learn** — *Budgeting overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budgeting-overview — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Budget*. https://docs.frappe.io/erpnext/budget — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Accounting and invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.

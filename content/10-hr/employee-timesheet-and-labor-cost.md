@@ -188,9 +188,8 @@ Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-097).
 
 ## References
 
-1. **Kaplan, R. S., & Atkinson, A. A.** — *Advanced Management Accounting*, edisi ke-3 (cetak).
-2. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, edisi ke-7 (cetak).
-3. **SAP Help Portal** — *Cross-Application Time Sheet (CATS)*: halaman spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Project Operations* (Dynamics 365; time entry dan labor costing). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
-5. **ERPNext Documentation** — *Timesheet*. https://docs.frappe.io/erpnext/timesheet — diakses 24 November 2026.
-6. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.
+- Kaplan, R. S., & Atkinson, A. A. *Advanced Management Accounting* (3rd ed., 1998). Prentice Hall. ISBN 0-13-262288-2.
+- Project Management Institute. *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (6th ed., 2017). PMI. ISBN 978-1-62825-392-4.
+1. **Microsoft Learn** — *Project Operations* (Dynamics 365; time entry dan labor costing). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Timesheet*. https://docs.frappe.io/erpnext/timesheet — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.

@@ -149,7 +149,20 @@ Catatan saldo hak cuti tahunan pegawai kanonikal `Andi Pratama` (`EMP-2026-0042`
 
 > [!NOTE]
 > **Kebijakan Cuti Skenario Pembelajaran**:
-> Alokasi cuti tahunan 12 hari kerja, izin carry-forward 2 hari dengan kedaluwarsa 30 Juni, serta penahanan cuti saat masa probation dalam skenario PT Maju Bersama merupakan **asumsi kebijakan internal perusahaan (*illustrative company policy*)** untuk mendemonstrasikan kapabilitas konfigurasi modul cuti ERP, bukan aturan universal seluruh organisasi.
+> Alokasi cuti tahunan 12 hari kerja mengikuti **minimum statutori** UU 13/2003 Pasal 79; izin carry-forward 2 hari dengan kedaluwarsa 30 Juni serta penahanan cuti saat masa probation adalah **asumsi kebijakan internal** PT Maju Bersama, bukan aturan universal.
+
+### Dasar Hukum Indonesia
+
+| Hak | Dasar hukum | Ketentuan inti |
+|---|---|---|
+| Cuti tahunan | UU 13/2003 Pasal 79 | Paling sedikit 12 hari kerja setelah 12 bulan masa kerja terus-menerus; perusahaan boleh memberi lebih. |
+| Cuti melahirkan | UU 13/2003 Pasal 82; UU 4/2024 Pasal 4–5 | Paling singkat 3 bulan; dapat ditambah paling lama 3 bulan jika ada kondisi khusus dengan surat keterangan dokter. Upah penuh 3 bulan pertama dan bulan ke-4, 75% untuk bulan ke-5 dan ke-6. |
+| Cuti pendamping persalinan | UU 4/2024 Pasal 6 | Suami berhak 2 hari, dapat ditambah paling lama 3 hari berikutnya sesuai kesepakatan. |
+| Cuti sakit | UU 13/2003 Pasal 93 ayat (2) | Upah dibayar bertahap: 100% untuk 4 bulan pertama, 75% untuk 4 bulan kedua, 50% untuk 4 bulan ketiga, 25% untuk bulan berikutnya, dengan bukti medis. |
+| Cuti keguguran | UU 13/2003 Pasal 82 ayat (2); UU 4/2024 Pasal 4 | 1,5 bulan atau sesuai surat keterangan dokter/bidan. |
+
+> [!warning] Perubahan aturan
+> UU 4/2024 berlaku sejak diundangkan 2 Juli 2024, tetapi peraturan pelaksananya belum tentu lengkap. Kebijakan perusahaan dan konfigurasi ERP harus ditinjau ulang setiap ada PP baru; jangan menganggap angka di tabel ini permanen.
 
 ---
 
@@ -182,10 +195,11 @@ Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-102).
 
 ## References
 
-1. **IFRS Foundation** — *IAS 19 Employee Benefits* (short-term compensated absences). https://www.ifrs.org/issued-standards/list-of-standards/ias-19-employee-benefits/ — diakses 24 November 2026.
-2. **PSAK 24** — *Imbalan Kerja* (cetak).
-3. **SHRM** — *Managing Paid Time Off and Leave Programs* (cetak).
-4. **SAP Help Portal** — *Time Management and Leave Accruals*: halaman spesifik belum terverifikasi [belum terverifikasi].
-5. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
-6. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
-7. **Odoo 20.0 Documentation** — *Time off*. https://www.odoo.com/documentation/20.0/applications/hr/time_off.html — diakses 24 November 2026.
+1. **UU No. 13 Tahun 2003** — Ketenagakerjaan (Pasal 79, 82, 93). https://peraturan.go.id/id/uu-no-13-tahun-2003 — diakses 26 November 2026.
+2. **UU No. 4 Tahun 2024** — Kesejahteraan Ibu dan Anak pada Fase Seribu Hari Pertama Kehidupan (Pasal 4–6). https://peraturan.bpk.go.id/Download/349268/UU%20Nomor%204%20Tahun%202024.pdf — diakses 26 November 2026.
+3. **PP No. 35 Tahun 2021** — Waktu Kerja dan Waktu Istirahat. https://peraturan.go.id/files/pp35-2021bt.pdf — diakses 26 November 2026.
+4. **IFRS Foundation** — *IAS 19 Employee Benefits* (short-term compensated absences). https://www.ifrs.org/issued-standards/list-of-standards/ias-19-employee-benefits/ — diakses 24 November 2026.
+5. **PSAK 24** — *Imbalan Kerja* (cetak).
+6. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+7. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+8. **Odoo 20.0 Documentation** — *Time off*. https://www.odoo.com/documentation/20.0/applications/hr/time_off.html — diakses 24 November 2026.

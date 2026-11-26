@@ -206,8 +206,8 @@ Sistem ERP enterprise menghasilkan laporan keuangan melalui mesin pelaporan dina
 
 ## References
 
-1. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements - Complete Set of Financial Statements*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/
-2. **IFRS Foundation**: *IAS 7 Statement of Cash Flows*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/
+1. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements - Complete Set of Financial Statements*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/ Diakses 26 November 2026.
+2. **IFRS Foundation**: *IAS 7 Statement of Cash Flows*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/ Diakses 26 November 2026.
 3. **Microsoft Learn** — *Financial reporting getting started* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-reporting-getting-started — diakses 24 November 2026.
 4. **ERPNext Documentation** — *Balance Sheet*. https://docs.frappe.io/erpnext/balance-sheet — diakses 24 November 2026.
 5. **ERPNext Documentation** — *Profit and Loss Report*. https://docs.frappe.io/erpnext/profit-and-loss-report — diakses 24 November 2026.

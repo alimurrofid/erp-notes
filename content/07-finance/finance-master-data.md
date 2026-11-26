@@ -168,9 +168,9 @@ Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-053).
 
 ## References
 
-1. **ISO 4217** — *Codes for the Representation of Currencies and Funds* (cetak; halaman resmi berbayar).
-2. **ISO 20022** — *Universal Financial Industry Message Scheme* (cetak; spesifikasi berbayar).
-3. **Microsoft Learn** — *Ledger, subledger, and subledger journal accounting entries overview* (Dynamics 365 Finance; struktur akun dan dimensi). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-subledger — diakses 24 November 2026.
-4. **ERPNext Documentation** — *Bank Account*. https://docs.frappe.io/erpnext/bank-account — diakses 24 November 2026.
-5. **ERPNext Documentation** — *Cost Center*. https://docs.frappe.io/erpnext/cost-center — diakses 24 November 2026.
-6. **Odoo 20.0 Documentation** — *Accounting and invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.
+- ISO. *ISO 4217 — Codes for the representation of currencies*. https://www.iso.org/iso-4217-currency-codes.html Diakses 26 November 2026.
+- ISO. *ISO 20022 — Universal financial industry message scheme*. https://www.iso20022.org/ Diakses 26 November 2026.
+1. **Microsoft Learn** — *Ledger, subledger, and subledger journal accounting entries overview* (Dynamics 365 Finance; struktur akun dan dimensi). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-subledger — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Bank Account*. https://docs.frappe.io/erpnext/bank-account — diakses 24 November 2026.
+3. **ERPNext Documentation** — *Cost Center*. https://docs.frappe.io/erpnext/cost-center — diakses 24 November 2026.
+4. **Odoo 20.0 Documentation** — *Accounting and invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.

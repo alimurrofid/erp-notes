@@ -137,8 +137,8 @@ Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-005) â€
 
 ## References
 
-1. **Wallace, T. F., & Kremzar, M. H.** (2001). *ERP: Making It Happen - The Implementers' Guide to Success with Enterprise Resource Planning*. John Wiley & Sons.
-2. **IFRS Foundation**: *IAS 2 Inventories - Measurement and Recognition of Cost*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/
-3. **Microsoft Learn**: *Accounts payable invoice matching in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/accounts-payable-invoice-matching
-4. **Frappe Documentation**: *Purchase Receipt and Stock Received But Not Billed Account*. URL: https://docs.frappe.io/erpnext/user/manual/en/stock/purchase-receipt
-5. **Odoo Documentation**: *Automated Inventory Valuation and Interim Accounts*. URL: https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_valuation/using_inventory_valuation.html
+- Wallace, T. F., & Kremzar, M. H. *ERP: Making It Happen â€” The Implementers' Guide to Success with Enterprise Resource Planning* (2001). Wiley. ISBN 978-0-471-39201-9.
+1. **IFRS Foundation**: *IAS 2 Inventories - Measurement and Recognition of Cost*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ Diakses 26 November 2026.
+2. **Microsoft Learn**: *Accounts payable invoice matching in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/accounts-payable-invoice-matching Diakses 26 November 2026.
+3. **Frappe Documentation**: *Purchase Receipt and Stock Received But Not Billed Account*. URL: https://docs.frappe.io/erpnext/user/manual/en/stock/purchase-receipt Diakses 26 November 2026.
+4. **Odoo Documentation**: *Automated Inventory Valuation and Interim Accounts*. URL: https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_valuation/using_inventory_valuation.html Diakses 26 November 2026.

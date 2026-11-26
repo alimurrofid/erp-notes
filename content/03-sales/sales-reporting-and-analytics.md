@@ -111,7 +111,5 @@ flowchart LR
 
 ## References
 
-1. **Supply Chain Council (APICS/ASCM)**: *SCOR Model (Supply Chain Operations Reference) - Delivery Performance and OTIF Metrics*.
-2. **Association for Financial Professionals (AFP)**: *Financial Planning and Analysis (FP&A) - Revenue Metrics and DSO Benchmarks*.
-3. **Microsoft Learn** — dokumentasi analitika penjualan D365 untuk topik ini tidak lagi tersedia di URL lama; perlu sumber pengganti [belum terverifikasi].
-4. **ERPNext Documentation** — *Sales Analytics*. https://docs.frappe.io/erpnext/sales-analytics — diakses 24 November 2026.
+- ASCM. *Supply Chain Operations Reference (SCOR) Model*. https://www.ascm.org/process-transformation/scor/ Diakses 26 November 2026.
+1. **ERPNext Documentation** — *Sales Analytics*. https://docs.frappe.io/erpnext/sales-analytics — diakses 24 November 2026.

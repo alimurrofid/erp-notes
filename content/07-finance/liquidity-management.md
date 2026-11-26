@@ -166,7 +166,5 @@ Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-059).
 ## References
 
 1. **Basel Committee on Banking Supervision** — *Basel III: The Liquidity Coverage Ratio and liquidity risk monitoring tools*. https://www.bis.org/publ/bcbs238.htm — diakses 24 November 2026.
-2. **AFP** — *Treasury Management Body of Knowledge* (liquidity management) (cetak).
-3. **SAP SE** — *Treasury and Risk Management*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Cash and bank management* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-bank-management — diakses 24 November 2026.
-5. **PMK No. 169/PMK.010/2015** — Penentuan Besarnya Perbandingan antara Utang dan Modal Perusahaan untuk Keperluan Penghitungan Pajak Penghasilan. https://jdih.kemenkeu.go.id/dok/pmk-169-tahun-2015 — diakses 24 November 2026.
+2. **Microsoft Learn** — *Cash and bank management* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-bank-management — diakses 24 November 2026.
+3. **PMK No. 169/PMK.010/2015** — Penentuan Besarnya Perbandingan antara Utang dan Modal Perusahaan untuk Keperluan Penghitungan Pajak Penghasilan. https://jdih.kemenkeu.go.id/dok/pmk-169-tahun-2015 — diakses 24 November 2026.

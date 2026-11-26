@@ -87,7 +87,9 @@ Setelah periode ditutup, ERP menerapkan mekanisme kontrol keamanan:
 ### Bagaimana Jika Ditemukan Kesalahan Material Setelah Buku Ditutup?
 Sesuai standar **IAS 8 (*Accounting Policies, Changes in Accounting Estimates and Errors*)**:
 * Entitas **tidak boleh membuka kembali periode lama secara sembarangan** jika laporan keuangan telah diaudit dan dipublikasikan.
-* Koreksi kesalahan masa lalu dicatat pada periode berjalan dengan melakukan penyesuaian saldo awal akun Laba Ditahan (*Retrospective Restatement*), bukan dengan mengedit transaksi historis.
+* Kesalahan material periode lalu dikoreksi secara **retrospektif**: saldo awal laba ditahan dan jumlah komparatif disajikan ulang seolah kesalahan tidak pernah terjadi (IAS 8.42). Yang disesuaikan adalah **saldo awal dan angka pembanding**, bukan laba periode berjalan — sehingga laba tahun berjalan tidak menyerap koreksi masa lalu.
+* Jika kesalahan tidak material, koreksi dilakukan pada periode ditemukan dan dijelaskan di catatan; entitas tidak menyajikan ulang komparatif.
+* Mengedit transaksi historis di ERP bukan restatement: jejak audit hilang dan angka komparatif tetap salah. Praktik yang benar adalah jurnal koreksi periode berjalan ke akun laba ditahan awal, disertai pengungkapan sifat dan dampak kesalahan (IAS 8.49).
 
 ---
 
@@ -101,7 +103,7 @@ Sesuai standar **IAS 8 (*Accounting Policies, Changes in Accounting Estimates an
 
 ## References
 
-1. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements - Frequency of Reporting*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/
-2. **IFRS Foundation**: *IAS 8 Accounting Policies, Changes in Accounting Estimates and Errors*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-8-accounting-policies-changes-in-accounting-estimates-and-errors/
-3. **Microsoft Learn**: *Perform financial period close in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-period-close-workspace
-4. **Frappe / ERPNext Documentation**: *Fiscal Year Closing and Period Closing Voucher*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/period-closing-voucher
+1. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements - Frequency of Reporting*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/ Diakses 26 November 2026.
+2. **IFRS Foundation**: *IAS 8 Accounting Policies, Changes in Accounting Estimates and Errors*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-8-accounting-policies-changes-in-accounting-estimates-and-errors/ Diakses 26 November 2026.
+3. **Microsoft Learn**: *Perform financial period close in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-period-close-workspace Diakses 26 November 2026.
+4. **Frappe / ERPNext Documentation**: *Fiscal Year Closing and Period Closing Voucher*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/period-closing-voucher Diakses 26 November 2026.

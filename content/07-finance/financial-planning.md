@@ -188,7 +188,4 @@ Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-057).
 
 ## References
 
-1. **CIMA** — *Planning, Budgeting, and Forecasting in the Digital Age* (cetak).
-2. **SAP SE** — *Integrated Financial Planning*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-3. **Microsoft Learn** — *Budgeting overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budgeting-overview — diakses 24 November 2026.
-4. **AFP** — *FP&A Body of Knowledge* (cetak).
+1. **Microsoft Learn** — *Budgeting overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budgeting-overview — diakses 24 November 2026.

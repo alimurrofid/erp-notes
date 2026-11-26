@@ -125,9 +125,8 @@ Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV
 
 ## References
 
-1. **ISO 9001:2015** — Klausul 8.6 dan 8.7 (release of products, control of nonconforming outputs) (cetak).
-2. **ASCM / APICS** — *APICS Dictionary* (quality control, inspection, non-conformance, rework, cost of quality) (cetak).
-3. **Juran, J. M., & Godfrey, A. B.** — *Juran's Quality Handbook* (cetak).
-4. **Microsoft Learn** — dokumentasi quality management D365 untuk topik ini [belum terverifikasi].
-5. **ERPNext Documentation** — *Quality Inspection*. https://docs.frappe.io/erpnext/quality-inspection — diakses 24 November 2026.
-6. **Odoo 20.0 Documentation** — *Quality*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/quality.html — diakses 24 November 2026.
+- ISO. *ISO 9001:2015 — Quality management systems — Requirements*. https://www.iso.org/standard/62085.html Diakses 26 November 2026.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+- Juran, J. M., & Godfrey, A. B. (eds.). *Juran's Quality Handbook* (5th ed., 1999). McGraw-Hill. ISBN 978-0-07-034003-9.
+1. **ERPNext Documentation** — *Quality Inspection*. https://docs.frappe.io/erpnext/quality-inspection — diakses 24 November 2026.
+2. **Odoo 20.0 Documentation** — *Quality*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/quality.html — diakses 24 November 2026.

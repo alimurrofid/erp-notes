@@ -113,8 +113,8 @@ Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-009) �
 
 ## References
 
-- APQC (American Productivity & Quality Center). *Procure-to-Pay Process Classification Framework: Manage Long-Term Supplier Contracts*.
-- Microsoft Learn. *Purchase Agreements in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Blanket Order in Procurement*.
+- APQC. *Process Classification Framework*. https://www.apqc.org/process-frameworks Diakses 26 November 2026.
+- Microsoft Learn. *Purchase agreements* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/purchase-agreements Diakses 26 November 2026.
+- Frappe. *Buying Module* (ERPNext Documentation). https://docs.frappe.io/erpnext/buying Diakses 26 November 2026.
 - Odoo 20 Documentation. *Blanket orders*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/purchase/manage_deals/blanket_orders.html. Diakses 23 November 2026.
-- CIPS (Chartered Institute of Procurement & Supply). *Contract Management and Procurement Agreements Guide*.
+- ISO. *ISO 20400:2017 — Sustainable procurement — Guidance*. https://www.iso.org/standard/63026.html Diakses 26 November 2026.

@@ -49,9 +49,9 @@ Dokumen Faktur Penjualan memadukan data komersial dari *Sales Order* dan data fi
   * *Posting Date*: Tanggal efektif transaksi memengaruhi laporan laba rugi dan buku besar.
   * *Document Date*: Tanggal fisik diterbitkannya lembar faktur komersial.
 * **Kalkulasi Tanggal Jatuh Tempo (*Due Date Calculation*)**:
-  Dihitung otomatis dari tanggal faktur ditambah termin pembayaran (*Payment Terms*):
-  $$\mathbf{Due\ Date = Invoice\ Posting\ Date + Payment\ Term\ Days}$$
-  *Contoh*: Faktur diposting 20 September 2026 dengan termin *Net 30* $\implies$ Jatuh tempo: **20 Oktober 2026**.
+  Dihitung otomatis dari **tanggal dokumen faktur** ditambah termin pembayaran (*Payment Terms*), bukan dari tanggal posting:
+  $$\mathbf{Due\ Date = Invoice\ Document\ Date + Payment\ Term\ Days}$$
+  *Contoh*: Faktur bertanggal 20 September 2026 (diposting 22 September) dengan termin *Net 30* $\implies$ Jatuh tempo: **20 Oktober 2026**. Memakai tanggal posting akan menggeser jatuh tempo dan membuat ageing AR berbeda dari dokumen yang diterima pelanggan.
 * **Identitas Pajak Resmi**: Nomor faktur pajak elektronik (Coretax) untuk validasi SPT Masa PPN (lihat [[03-sales/sales-tax|Sales Tax]]).
 * **Detail Baris Tagihan**: Kuantitas yang dikirim, harga satuan terkunci, diskon yang disepakati, dan tarif PPN per item.
 
@@ -128,7 +128,7 @@ flowchart TD
 
 ## References
 
-1. **IFRS Foundation**: *IFRS 9 Financial Instruments - Financial Assets at Amortised Cost (Trade Receivables)*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-9-financial-instruments/
+1. **IFRS Foundation**: *IFRS 9 Financial Instruments - Financial Assets at Amortised Cost (Trade Receivables)*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-9-financial-instruments/ Diakses 26 November 2026.
 2. **Microsoft Learn** — *Accounts receivable home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/accounts-receivable — diakses 24 November 2026.
 3. **ERPNext Documentation** — *Sales Invoice*. https://docs.frappe.io/erpnext/sales-invoice — diakses 24 November 2026.
 4. **Odoo 20.0 Documentation** — *Customer invoices*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/customer_invoices.html — diakses 24 November 2026.

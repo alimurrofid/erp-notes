@@ -97,7 +97,7 @@ $$\text{Forecast Accuracy (\%)} = \left( 1 - \frac{|\text{Actual Cash Mutation} 
 
 1. **Safety Buffer Maintenance**: Proyeksi saldo kas akhir (*projected closing balance*) pada periode apa pun dilarang jatuh di bawah batas *Minimum Cash Reserve* yang ditetapkan oleh dewan komisaris/direksi.
 2. **Behavioral Customer Payment Adjustment**: Tanggal arus kas masuk dari faktur penjualan tidak boleh hanya mengandalkan tanggal jatuh tempo formal (*due date*), melainkan wajib disesuaikan dengan rata-rata keterlambatan historis pelanggan (*Average Days Delinquent / Historic DSO Adjustment*).
-3. **Mandatory Inclusion of Statutory Dates**: Seluruh tanggal pembayaran kewajiban regulasi (pembayaran PPN tanggal akhir bulan berikutnya, PPh 21 tanggal 15, BPJS Ketenagakerjaan tanggal 10) wajib dikunci secara otomatis sebagai arus kas keluar prioritas mutlak yang tidak dapat digeser tanggalnya.
+3. **Mandatory Inclusion of Statutory Dates**: Seluruh tanggal pembayaran kewajiban regulasi wajib dikunci otomatis sebagai arus kas keluar prioritas: **PPN akhir bulan berikutnya**, **PPh 21/23/4(2) tanggal 15 bulan berikutnya** (PMK 81/2024 Pasal 94, berlaku sejak masa pajak Januari 2025; sebelumnya tanggal 10), dan **iuran BPJS Ketenagakerjaan tanggal 15 bulan berikutnya** (PP 44/2015 Pasal 21). Jika tanggal jatuh tempo jatuh pada hari libur, pembayaran dilakukan pada hari kerja berikutnya.
 4. **Intercompany Netting in Forecasting**: Dalam struktur multi-anak perusahaan, arus kas masuk dan keluar antar-entitas terafiliasi wajib dieliminasi (*netting*) pada konsolidasi kas grup untuk mencegah penggelembungan likuiditas semu.
 5. **No Negative Cash Permitted**: Jika simulasi menghasilkan saldo kas negatif pada suatu hari, sistem wajib memunculkan peringatan kritis (*Critical Liquidity Deficit Alert*) dan menandai hari tersebut sebagai *Negative Cash Gap*.
 
@@ -174,7 +174,6 @@ Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-049).
 ## References
 
 1. **IFRS Foundation** — *IAS 7 Statement of Cash Flows*. https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/ — diakses 24 November 2026.
-2. **AFP** — *Treasury Management Body of Knowledge* (peramalan arus kas jangka pendek) (cetak).
-3. **SAP SE** — *Cash Flow Analyzer*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
+2. **PMK No. 81 Tahun 2024** — Ketentuan Perpajakan dalam Rangka Pelaksanaan Coretax (Pasal 94: jatuh tempo penyetoran PPh Masa). https://jdih.kemenkeu.go.id/dok/pmk-81-tahun-2024 — diakses 26 November 2026.
+3. **PP No. 44 Tahun 2015** — Penyelenggaraan Program JKK dan JKM (Pasal 21: iuran paling lambat tanggal 15 bulan berikutnya). https://www.bpjsketenagakerjaan.go.id/assets/uploads/peraturan/15122015_104557_PP%2044%20Tahun%202015.pdf — diakses 26 November 2026.
 4. **Microsoft Learn** — *Cash and bank management* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-bank-management — diakses 24 November 2026.
-5. **European Treasury Center** — praktik 13-week cash flow forecasting (cetak; terbitan daring belum terverifikasi).

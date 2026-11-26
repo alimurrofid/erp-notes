@@ -47,7 +47,7 @@ stateDiagram-v2
 ### Penjelasan Status Utama:
 
 1. **Draft**: Dokumen masih dalam tahap penyusunan oleh staf penjualan; data dapat diubah bebas.
-2. **Under Approval**: Penawaran tertahan sistem karena mengandung parameter khusus (misal diskon > 10% atau termin pembayaran > 60 hari) yang mewajibkan tanda tangan digital manajer.
+2. **Under Approval**: Penawaran tertahan sistem karena mengandung parameter khusus yang mewajibkan tanda tangan digital sesuai matriks persetujuan — diskon di atas 5% (Manajer Penjualan) atau di atas 15% (Direktur Komersial), atau termin pembayaran di atas 60 hari.
 3. **Sent / Submitted**: Penawaran telah disahkan dan dikirimkan secara fisik atau via email/PDF ke pelanggan. Dokumen menjadi *read-only*.
 4. **Accepted / Won**: Pelanggan menyetujui penawaran dan menerbitkan surat pesanan (*Purchase Order* dari pihak pelanggan). Dokumen siap dikonversi menjadi *Sales Order*.
 5. **Rejected / Lost**: Pelanggan menolak penawaran (misal karena harga kalah saing atau waktu pengiriman terlalu lama). Sistem mewajibkan input alasan penolakan (*Lost Reason*) untuk analitik bisnis.
@@ -133,7 +133,7 @@ Saat PT Maju Bersama menyetujui penawaran ini pada tanggal 15 September 2026, st
 
 ## References
 
-1. **Association for Supply Chain Management (ASCM)**: *APICS Dictionary - Quotation Management and Available-to-Promise*.
-2. **Microsoft Learn** — *Sales and marketing overview* (Dynamics 365 Supply Chain Management; bagian sales quotations). https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/overview-sales-marketing — diakses 24 November 2026.
-3. **ERPNext Documentation** — *Quotation*. https://docs.frappe.io/erpnext/quotation — diakses 24 November 2026.
-4. **Odoo 20.0 Documentation** — *Send quotations*. https://www.odoo.com/documentation/20.0/applications/sales/sales/send_quotations.html — diakses 24 November 2026.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+1. **Microsoft Learn** — *Sales and marketing overview* (Dynamics 365 Supply Chain Management; bagian sales quotations). https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/overview-sales-marketing — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Quotation*. https://docs.frappe.io/erpnext/quotation — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Send quotations*. https://www.odoo.com/documentation/20.0/applications/sales/sales/send_quotations.html — diakses 24 November 2026.

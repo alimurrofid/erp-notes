@@ -159,7 +159,6 @@ Jika sistem mendeteksi selisih sebesar Rp1 sekalipun ($\sum \text{Dr} \neq \sum 
 
 ## References
 
-1. **Sangster, A.** (2018). *Pacioli's Prophetic Accounting*. Journal of Accounting, Auditing & Accountability.
-2. **Weygandt, J. J., Kimmel, P. D., & Kieso, D. E.** (2019). *Financial Accounting: Tools for Business Decision Making* (Chapter: The Accounting Information System). John Wiley & Sons.
-3. **Microsoft Learn** — *Ledger, subledger, and subledger journal accounting entries overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-subledger — diakses 24 November 2026.
-4. **ERPNext Documentation** — *Accounts*. https://docs.frappe.io/erpnext/accounts — diakses 24 November 2026.
+- Kieso, D. E., Weygandt, J. J., & Warfield, T. D. *Intermediate Accounting* (18th ed., 2024). Wiley. ISBN 978-1-394-24616-8.
+1. **Microsoft Learn** — *Ledger, subledger, and subledger journal accounting entries overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-subledger — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Accounts*. https://docs.frappe.io/erpnext/accounts — diakses 24 November 2026.

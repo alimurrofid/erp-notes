@@ -55,12 +55,15 @@ Sistem ERP membedakan perlakuan persediaan dan akuntansi biaya berdasarkan kateg
 Dalam mengevaluasi keandalan proses manufaktur, ERP menghitung indikator hasil secara matematis:
 
 ### 1. Production Yield (Rasio Keberhasilan Produksi)
-Persentase bahan atau unit yang berhasil diubah menjadi produk jadi yang memenuhi standar kualitas:
+Persentase **input** yang berhasil diubah menjadi produk jadi yang memenuhi standar kualitas:
 
-$$\mathbf{\text{Yield (\%)} = \frac{\text{Actual Good Output}}{\text{Planned Output}} \times 100\%}$$
+$$\mathbf{\text{Yield (\%)} = \frac{\text{Good Output}}{\text{Total Input}} \times 100\%}$$
 
-* *Contoh*: Manufacturing Order menargetkan 100 unit Laptop Pro. Di akhir lini perakitan, 96 unit dinyatakan lolos uji QC, 4 unit dinyatakan cacat permanen (*scrap*).
+* *Contoh*: 100 unit bahan dimasukkan ke lini perakitan. Di akhir lini, 96 unit dinyatakan lolos uji QC dan 4 unit cacat permanen (*scrap*).
 $$\text{Yield} = \frac{96}{100} \times 100\% = \mathbf{96\%}$$
+
+> [!note] Mengapa pembaginya input, bukan *planned output*
+> *Yield* dan *scrap rate* harus memakai basis yang sama agar saling melengkapi: `yield + scrap rate = 100%`. Jika pembaginya *planned output* sementara pembilang scrap memakai input, kedua angka tidak dapat dijumlahkan. *Planned output* hanya sama dengan input bila BOM 1:1; untuk BOM dengan rasio berbeda, konversi dulu ke kuantitas input.
 
 ### 2. Scrap Rate (Tingkat Kehilangan / Afkir)
 Persentase material yang terbuang selama proses pengerjaan:
@@ -109,7 +112,7 @@ flowchart TD
 | :--- | :--- | :--- | :--- |
 | **Konfigurasi By-Products** | Tab khusus *By-products* pada formulir BOM: mendefinisikan produk turunan, kuantitas per unit, dan lokasi penyimpanan target. | Tabel anak *Scrap Item* pada dokumen BOM atau penerbitan dokumen *Stock Entry* bertipe scrap. | Konfigurasi formal pada formulir *Formula / BOM*: tab **Co-products and By-products** dengan metode alokasi biaya. |
 | **Metode Alokasi Biaya Bersama** | Nilai biaya dialokasikan berdasarkan persentase biaya (*Cost Share %*) yang dikonfigurasi pada baris by-product. | Nilai scrap dialokasikan sebagai pengurang biaya produksi dasar secara otomatis. | Sangat komprehensif: Mendukung metode alokasi joint-cost tingkat lanjut (*TCA - Total Cost Allocation*, *Relative Sales Value*, *Physical Quantity*). |
-| **Pencatatan Scrap di Shop Floor** | Tombol khusus *Scrap* pada antarmuka *Work Order* lantai kerja yang memindahkan barang ke lokasi afkir sistemik. | Tombol *Scrap Item* pada Work Order yang memotong saldo material dari proses manufaktur. | Menggunakan jurnal afkir khusus: **Scrap Journal** atau pelaporan afkir langsung pada layar kartu rute (*Route Card*). |
+| **Pencatatan Scrap di Shop Floor** | Tombol khusus *Scrap* pada antarmuka *Work Order* lantai kerja yang memindahkan barang ke lokasi afkir sistemik. | Tombol *Scrap Item* pada Work Order yang memotong saldo material dari proses manufaktur. | Tidak ada tipe jurnal *Scrap Journal*. Afkir dicatat sebagai **inventory adjustment** (dengan kode alasan) atau sebagai *scrap* pada order produksi; pelaporan afkir juga tersedia pada kartu rute (*Route Card*). |
 
 ---
 
@@ -122,7 +125,7 @@ Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV
 ## References
 
 1. **IFRS Foundation** — *IAS 2 Inventories* (paragraf 14: alokasi biaya produk bersama dan sampingan). https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ — diakses 24 November 2026.
-2. **ASCM / APICS** — *APICS Dictionary* (co-product, by-product, scrap factor, yield) (cetak).
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
 3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
 4. **ERPNext Documentation** — *Manufacturing*. https://docs.frappe.io/erpnext/manufacturing — diakses 24 November 2026.
 5. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

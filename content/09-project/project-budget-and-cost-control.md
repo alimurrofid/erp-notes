@@ -201,8 +201,7 @@ Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-079).
 
 ## References
 
-1. **PMI** — *Practice Standard for Earned Value Management* (cetak).
-2. **SAP Help Portal** — *Availability Control in Project System*: halaman spesifik belum terverifikasi [belum terverifikasi].
-3. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
-4. **ERPNext Documentation** — *Budget*. https://docs.frappe.io/erpnext/budget — diakses 24 November 2026.
-5. **Odoo 20.0 Documentation** — *Accounting and invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.
+- Project Management Institute. *Practice Standard for Earned Value Management* (2nd ed., 2011). PMI. ISBN 978-1-935589-35-8.
+1. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Budget*. https://docs.frappe.io/erpnext/budget — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Accounting and invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.

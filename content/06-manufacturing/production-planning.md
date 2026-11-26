@@ -105,7 +105,7 @@ Tabel berikut mengilustrasikan kisi-kisi kalkulasi MPS standar untuk produk jadi
 | **Proyeksi Akhir Bersih** | **2** | **27** | $27 + 50 - 30 = \mathbf{47}$ | **12** | $12 + 50 - 40 = \mathbf{22}$ |
 | **Pelepasan Rencana (*MPS Start / Release*)** | 0 | **50** (Mulai Mgg 2) | 0 | **50** (Mulai Mgg 4) | 0 |
 
-*Penjelasan*: Pada Minggu 3, proyeksi stok turun di bawah batas Safety Stock (10 unit) menjadi -3. Sistem MPS secara otomatis merekomendasikan penerimaan rencana (*MPS Receipt*) sebesar 50 unit pada awal Minggu 3, yang berarti produksi harus dimulai (*MPS Start*) pada Minggu 2 dengan memperhitungkan waktu pengerjaan pabrik (*lead time*) selama 1 minggu.
+*Penjelasan*: Aturan lot pada contoh ini memicu *MPS Receipt* hanya ketika proyeksi saldo menjadi **negatif** (kekurangan fisik), bukan setiap kali saldo berada di bawah *safety stock*. Pada Minggu 1 proyeksi 2 unit masih positif dan penerimaan terjadwal 50 unit tiba pada Minggu 2, sehingga tidak ada pelepasan baru; *safety stock* 10 unit tetap menjadi target yang ditinjau saat rapat pelepasan pesanan. Pada Minggu 3, proyeksi turun menjadi -3 (kekurangan fisik). Sistem MPS merekomendasikan penerimaan rencana (*MPS Receipt*) 50 unit pada awal Minggu 3, yang berarti produksi harus dimulai (*MPS Start*) pada Minggu 2 dengan memperhitungkan *lead time* pabrik selama 1 minggu. Jika kebijakan perusahaan menetapkan *safety stock* sebagai pemicu keras, maka pelepasan 50 unit harus dimajukan ke Minggu 1 — pilihan kebijakan ini harus dinyatakan eksplisit, bukan dibiarkan implisit.
 
 ---
 
@@ -127,8 +127,8 @@ Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV
 
 ## References
 
-1. **ASCM / APICS** — *Master Planning of Resources* (MPS dan aturan demand reduction) (cetak).
-2. **Vollmann, T. E., et al.** — *Manufacturing Planning and Control for Supply Chain Management* (cetak).
-3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
-4. **ERPNext Documentation** — *Production Plan*. https://docs.frappe.io/erpnext/production-plan — diakses 24 November 2026.
-5. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+- Vollmann, T. E., Berry, W. L., Whybark, D. C., & Jacobs, F. R. *Manufacturing Planning and Control for Supply Chain Management* (5th ed., 2005). McGraw-Hill. ISBN 0-07-144033-X.
+1. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Production Plan*. https://docs.frappe.io/erpnext/production-plan — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

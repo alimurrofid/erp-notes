@@ -80,7 +80,7 @@ $$\begin{array}{llrr}
 *Dampak Neraca*: Akun *Salaries & Wages Payable* menjadi **Rp0 (Lunas)**.
 
 ### 3. Jurnal Penyetoran Pajak dan Iuran Jaminan Sosial ke Kas Negara (Tax & Statutory Remittance - J3)
-Saat perusahaan menyetorkan potongan PPh 21 dan total iuran BPJS ke kas negara dan kas BPJS pada awal bulan berikutnya (misalnya tanggal 10):
+Saat perusahaan menyetorkan potongan PPh 21 dan total iuran BPJS ke kas negara dan kas BPJS pada awal bulan berikutnya (paling lambat tanggal 15; lihat PMK 81/2024 dan PP 44/2015):
 
 $$\begin{array}{llrr}
 \text{Debit:} & \text{Withholding Tax Payable PPh 21} & \text{Rp400.000} & \\
@@ -197,8 +197,7 @@ Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-105).
 
 1. **IFRS Foundation** — *IAS 19 Employee Benefits*. https://www.ifrs.org/issued-standards/list-of-standards/ias-19-employee-benefits/ — diakses 24 November 2026.
 2. **PSAK 24** — *Imbalan Kerja* (cetak).
-3. **Kaplan, R. S., & Atkinson, A. A.** — *Advanced Management Accounting*, edisi ke-3 (cetak).
-4. **SAP Help Portal** — *Payroll Posting to Accounting*: halaman spesifik belum terverifikasi [belum terverifikasi].
-5. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
-6. **Frappe HR Documentation** — *Payroll*. https://docs.frappe.io/hr/payroll — diakses 24 November 2026.
-7. **Odoo 20.0 Documentation** — *Payroll*. https://www.odoo.com/documentation/20.0/applications/hr/payroll.html — diakses 24 November 2026.
+- Kaplan, R. S., & Atkinson, A. A. *Advanced Management Accounting* (3rd ed., 1998). Prentice Hall. ISBN 0-13-262288-2.
+3. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+4. **Frappe HR Documentation** — *Payroll*. https://docs.frappe.io/hr/payroll — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Payroll*. https://www.odoo.com/documentation/20.0/applications/hr/payroll.html — diakses 24 November 2026.

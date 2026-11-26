@@ -149,9 +149,8 @@ Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-099).
 
 ## References
 
-1. **COSO** — *Internal Control — Integrated Framework* (2013) (cetak).
-2. **ISACA** — *Segregation of Duties in ERP Systems and HR Auditing* (cetak).
-3. **SAP Help Portal** — *Security and Data Privacy in SAP HCM/SuccessFactors*: halaman spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
-5. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
-6. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.
+- COSO. *Internal Control — Integrated Framework* (2013). https://www.coso.org/guidance-on-ic Diakses 26 November 2026.
+- ISACA. *COBIT: IT Governance Framework*. https://www.isaca.org/resources/cobit Diakses 26 November 2026.
+1. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+2. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.

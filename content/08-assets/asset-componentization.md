@@ -40,8 +40,8 @@ graph TD
 **Tidak semua aset tetap perusahaan harus dipecah menjadi komponen.** Pemecahan aset ke tingkat yang terlalu rinci akan menimbulkan beban administrasi dan biaya pencatatan (*recordkeeping costs*) yang tidak sebanding dengan manfaatnya.
 
 Komponen wajib dipisahkan jika memenuhi dua kriteria utama:
-1. **Materialitas Biaya (*Significant Cost*)**: Nilai perolehan komponen tersebut signifikan terhadap total nilai aset (misal: $\ge 15 - 20\%$ dari total harga paket aset).
-2. **Perbedaan Pola Manfaat (*Differing Useful Life / Consumption Pattern*)**: Masa manfaat komponen berbeda secara substansial dari masa manfaat aset induknya.
+1. **Materialitas Biaya (*Significant Cost*)**: Nilai perolehan komponen signifikan terhadap total nilai aset. **IAS 16 tidak menetapkan ambang persentase**; angka seperti 15–20% hanyalah *heuristik kebijakan* yang boleh dipakai sebagai panduan internal, bukan uji standar. Yang menentukan adalah apakah komponen itu material bagi laporan keuangan secara keseluruhan (IAS 16.43; IAS 1.7).
+2. **Perbedaan Pola Manfaat (*Differing Useful Life / Consumption Pattern*)**: Masa manfaat komponen berbeda secara substansial dari masa manfaat aset induknya. Komponen dengan umur sama dan pola konsumsi sama tidak perlu dipisah meskipun nilainya besar.
 
 ### Contoh Klasik Penerapan Componentization:
 
@@ -156,6 +156,5 @@ Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-064).
 ## References
 
 1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment* (paragraf 43–47 komponen penyusutan; paragraf 13–14 overhaul dan inspeksi). https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
-2. **SAP SE** — *Asset Sub-Numbers*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-3. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
-4. **EY** — *Applying IFRS: Component Depreciation under IAS 16* (cetak).
+2. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+3. **EY** — *Applying IFRS: Component Depreciation under IAS 16* (cetak).

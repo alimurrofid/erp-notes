@@ -148,7 +148,7 @@ $$\text{Transfer ke Finished Goods} = 90 \text{ unit} \times \text{Rp}75.000 = \
 | :--- | :--- | :--- | :--- |
 | **Model Akun WIP** | Menggunakan akun *Stock Interim (Production)* atau *WIP Account* yang dikonfigurasi pada Product Category. | Menggunakan akun penampung *Work In Progress - Company* yang terhubung ke dokumen Stock Entry. | Menggunakan kelompok akun pembebanan formal: *WIP issue, WIP labor, WIP machine, WIP indirect cost*. |
 | **Penyelesaian Varians** | Pada metode AVCO, selisih biaya langsung menambah nilai rata-rata unit; pada Standard Costing dialokasikan ke akun Price Variance. | Selisih biaya operasional dialokasikan ke *Cost of Goods Sold* atau akun penyesuaian biaya persediaan. | Memiliki proses bulanan formal: **Inventory Close and Cost Recalculation** yang merekonsiliasi seluruh lapisan biaya WIP dan Varians ke GL. |
-| **Penilaian Unit Ekuivalen (EUP)** | Dihitung otomatis berdasarkan persentase penyelesaian Work Order yang dilaporkan di Shop Floor App. | Memerlukan input manual estimasi penyelesaian atau pencatatan transfer parsial. | Sangat canggih: Modul *Cost Accounting* mendukung pemodelan formula alokasi biaya berbasis *Cost Objects* dan *Cost Element Dimensions*. |
+| **Penilaian Unit Ekuivalen (EUP)** | Tidak menghitung EUP secara standar. WIP dinilai dari komponen yang benar-benar dikonsumsi dan waktu kerja yang dilaporkan; EUP untuk laporan manajemen harus dihitung manual atau lewat modul kustom. | Memerlukan input manual estimasi penyelesaian atau pencatatan transfer parsial. | Sangat canggih: Modul *Cost Accounting* mendukung pemodelan formula alokasi biaya berbasis *Cost Objects* dan *Cost Element Dimensions*. |
 
 ---
 
@@ -161,8 +161,8 @@ Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV
 ## References
 
 1. **IFRS Foundation** — *IAS 2 Inventories* (paragraf 12–14: biaya konversi dan alokasi overhead). https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ — diakses 24 November 2026.
-2. **Horngren, C. T., Datar, S. M., & Rajan, M. V.** — *Cost Accounting: A Managerial Emphasis* (cetak).
-3. **ASCM / APICS** — *APICS Dictionary* (WIP, equivalent units, cost absorption) (cetak).
-4. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management; penilaian dan costing produksi). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
-5. **ERPNext Documentation** — *Stock Entry* (konsumsi material dan produksi). https://docs.frappe.io/erpnext/stock-entry — diakses 24 November 2026.
-6. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.
+- Horngren, C. T., Datar, S. M., & Rajan, M. V. *Horngren's Cost Accounting: A Managerial Emphasis* (16th ed., 2017). Pearson. ISBN 978-0-13-447558-5.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+2. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management; penilaian dan costing produksi). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+3. **ERPNext Documentation** — *Stock Entry* (konsumsi material dan produksi). https://docs.frappe.io/erpnext/stock-entry — diakses 24 November 2026.
+4. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

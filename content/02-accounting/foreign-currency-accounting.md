@@ -115,7 +115,7 @@ Modul perbankan dan buku besar ERP menyediakan **Tabel Nilai Tukar (*Exchange Ra
 
 ## References
 
-1. **IFRS Foundation**: *IAS 21 The Effects of Changes in Foreign Exchange Rates*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-21-the-effects-of-changes-in-foreign-exchange-rates/
-2. **Kieso, D. E., Weygandt, J. J., & Warfield, T. D.** (2020). *Intermediate Accounting* (Foreign Currency Transactions chapter). Wiley.
-3. **Microsoft Learn**: *Foreign currency revaluation for General Ledger in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/foreign-currency-revaluation-general-ledger
-4. **Frappe / ERPNext Documentation**: *Multi-Currency Accounting and Exchange Rate Revaluation*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/multi-currency-accounting
+1. **IFRS Foundation**: *IAS 21 The Effects of Changes in Foreign Exchange Rates*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-21-the-effects-of-changes-in-foreign-exchange-rates/ Diakses 26 November 2026.
+- Kieso, D. E., Weygandt, J. J., & Warfield, T. D. *Intermediate Accounting* (18th ed., 2024). Wiley. ISBN 978-1-394-24616-8.
+2. **Microsoft Learn**: *Foreign currency revaluation for General Ledger in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/foreign-currency-revaluation-general-ledger Diakses 26 November 2026.
+3. **Frappe / ERPNext Documentation**: *Multi-Currency Accounting and Exchange Rate Revaluation*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/multi-currency-accounting Diakses 26 November 2026.

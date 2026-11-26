@@ -13,6 +13,8 @@ Titik masuk untuk pembelajar. Halaman ini tidak mengajarkan konsep baru; ia meng
 - [[00-orientation/capstone|Capstone Case]] — kasus tertutup untuk ujian akhir.
 - [[00-orientation/exercises|Exercises]] — 40 soal lintas section.
 - [[00-orientation/exercise-answer-key|Exercise Answer Key]] — kunci latihan.
+- [[00-orientation/section-exercises|Section Exercises]] — 10 soal per section sebagai checkpoint.
+- [[00-orientation/section-exercise-answer-key|Section Exercise Answer Key]] — kunci soal per section.
 - [[00-orientation/capstone-answer-key|Capstone Answer Key]] — kunci jawaban; buka setelah mengerjakan.
 
 ## Cara Memakai

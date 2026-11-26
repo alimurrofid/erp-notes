@@ -97,8 +97,9 @@ Work Center mendefinisikan kemampuan daya tampung produksi pabrik melalui bebera
 1. **Production Calendar (Kalender Kerja Pabrik)**:
    Mendefinisikan hari kerja aktif dan jam operasional reguler (misal: Shift 1: 08.00–16.00, Shift 2: 16.00–24.00, hari Sabtu/Minggu libur).
 2. **Kapasitas Teoretis vs Efisiensi Nyata**:
-   $$\text{Kapasitas Efektif (Jam)} = \text{Jam Kerja Kalender} \times \text{Jumlah Mesin/Tenaga Kerja} \times \text{Tingkat Efisiensi (\%)} \times \text{Tingkat Utilisasi (\%)}$$
-   * *Contoh*: Stasiun kerja memiliki 2 mesin yang bekerja 8 jam sehari (16 jam mesin bruto). Jika efisiensi historis 90% dan utilisasi 85%, maka kapasitas harian efektif yang dapat dijadwalkan adalah: $16 \times 0,90 \times 0,85 = \mathbf{12,24 \text{ jam}}$.
+   $$\text{Kapasitas Efektif (Jam)} = \text{Jam Kerja Kalender} \times \text{Jumlah Mesin/Tenaga Kerja} \times \text{Tingkat Efisiensi (\%)}$$
+   * *Contoh*: Stasiun kerja memiliki 2 mesin yang bekerja 8 jam sehari (16 jam mesin bruto). Jika efisiensi historis 90%, kapasitas harian efektif yang dapat dijadwalkan adalah $16 \times 0,90 = \mathbf{14,4 \text{ jam}}$.
+   * **Utilisasi bukan input kapasitas**, melainkan hasil: $\text{Utilisasi} = \frac{\text{Beban Terjadwal}}{\text{Kapasitas Efektif}}$. Jika beban terjadwal 12,24 jam, utilisasi = 12,24 ÷ 14,4 = 85%. Memasukkan utilisasi ke dalam rumus kapasitas menghitung pengurangan yang sama dua kali.
 3. **Tarif Pembebanan Biaya (*Cost Rates*)**:
    Setiap Work Center memiliki tarif penyerapan biaya per jam (*hourly absorption rates*):
    * **Tarif Tenaga Kerja Langsung (*Direct Labor Rate*)**: Upah operator per jam kerja.
@@ -146,8 +147,8 @@ Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV
 
 ## References
 
-1. **ASCM / APICS** — *APICS Dictionary* (routing, work center capacity, setup time, run time, lead time) (cetak).
-2. **Groover, M. P.** — *Fundamentals of Modern Manufacturing* (cetak).
-3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management; route dan operation). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
-4. **ERPNext Documentation** — *Workstation*. https://docs.frappe.io/erpnext/workstation — diakses 24 November 2026.
-5. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+- Groover, M. P. *Fundamentals of Modern Manufacturing* (2019). Wiley. ISBN 978-1-119-65937-2.
+1. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management; route dan operation). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Workstation*. https://docs.frappe.io/erpnext/workstation — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

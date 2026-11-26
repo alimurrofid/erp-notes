@@ -39,7 +39,7 @@ classDiagram
         +String Incoterms (FOB Shipping Point)
         +String Currency (IDR/USD)
         +Decimal Exchange_Rate
-        +String Status (Draft/Approved/Issued/Received/Invoiced/Closed)
+        +String Status (Draft/UnderApproval/Approved/Issued/Acknowledged/PartiallyReceived/FullyReceived/Invoiced/Closed/ClosedShort/Cancelled)
     }
 
     class PurchaseOrderLine {
@@ -95,9 +95,19 @@ stateDiagram-v2
     PartiallyReceived --> FullyReceived: Seluruh Barang Tiba di Gudang
     Acknowledged --> FullyReceived: Penerimaan 100% Sekaligus
     
+    Draft --> Cancelled: Dibatalkan Sebelum Disetujui
+    UnderApproval --> Cancelled: Ditolak Permanen
+    Approved --> Cancelled: Dibatalkan Sebelum Dikirim
+    Issued --> Cancelled: Dibatalkan dengan Persetujuan Vendor
+    Acknowledged --> Cancelled: Vendor Menolak / Force Majeure
+    
+    PartiallyReceived --> ClosedShort: Sisa Kuantitas Tidak Akan Diterima (Short-Close)
+    ClosedShort --> [*]
+    
     FullyReceived --> Invoiced: Faktur Tagihan Diposting ke AP
     Invoiced --> Closed: Pembayaran Kas Lunas Selesai
     Closed --> [*]
+    Cancelled --> [*]
 ```
 
 ### Penjelasan Status Dokumen:
@@ -109,6 +119,8 @@ stateDiagram-v2
 6. **Fully Received**: Seluruh kuantitas barang fisik telah lengkap diterima di gudang.
 7. **Invoiced**: Bagian akuntansi telah mencocokkan tagihan pemasok (*3-Way Match*) dan memposting utang usaha resmi.
 8. **Closed**: Seluruh proses fisik dan pembayaran finansial telah rampung sempurna.
+9. **Closed (Short)**: Sebagian barang sudah diterima, tetapi sisa kuantitas disepakati tidak akan dikirim. Dokumen ditutup tanpa pelunasan kuantitas penuh; selisihnya harus dijelaskan pada catatan dokumen agar tidak dianggap penerimaan yang masih tertunda.
+10. **Cancelled**: Dokumen batal dan tidak boleh menghasilkan penerimaan, tagihan, atau pembayaran. Pembatalan setelah barang diterima tidak mengembalikan dokumen ke `Cancelled`; gunakan retur pembelian atau debit note.
 
 ---
 
@@ -169,7 +181,6 @@ Saat Purchase Order ini berstatus *Approved & Issued*:
 
 ## References
 
-1. **CIPS** — situs memblokir akses otomatis dan tidak menyediakan dokumen spesifik; klaim pembentukan kontrak perlu sumber pengganti [belum terverifikasi].
-2. **Association for Supply Chain Management (ASCM)**: *APICS Dictionary - Purchase Order Management and Delivery Scheduling* (cetak).
-3. **Microsoft Learn** — *Purchase order overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/purchase-order-overview — diakses 24 November 2026.
-4. **ERPNext Documentation** — *Purchase Order*. https://docs.frappe.io/erpnext/purchase-order — diakses 24 November 2026.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+1. **Microsoft Learn** — *Purchase order overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/purchase-order-overview — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Purchase Order*. https://docs.frappe.io/erpnext/purchase-order — diakses 24 November 2026.

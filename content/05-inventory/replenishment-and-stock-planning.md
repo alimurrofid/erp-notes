@@ -91,11 +91,14 @@ ERP enterprise menyediakan berbagai model perencanaan stok:
 
 | Strategi Perencanaan | Mekanisme Kerja Sistem | Cocok untuk Karakteristik Barang |
 | :--- | :--- | :--- |
-| **Min-Max Planning** | Menetapkan batas *Minimum* (setara ROP) dan *Maximum*. Saat stok menyentuh batas Minimum, sistem memesan sejumlah: $\text{Order Qty} = \text{Max} - \text{Current Stock}$. | Barang komoditas operasional, ATK, suku cadang MRO dengan permintaan relatif stabil. |
+| **Min-Max Planning** | Menetapkan batas *Minimum* (setara ROP) dan *Maximum*. Saat **posisi persediaan** menyentuh batas Minimum, sistem memesan sejumlah: $\text{Order Qty} = \text{Max} - \text{Inventory Position}$, dengan $\text{Inventory Position} = \text{On-Hand} + \text{On-Order} - \text{Reserved}$. | Barang komoditas operasional, ATK, suku cadang MRO dengan permintaan relatif stabil. |
 | **Fixed Order Quantity (EOQ)** | Saat stok menyentuh ROP, sistem selalu memesan kuantitas tetap yang telah dioptimalkan secara matematis (*Economic Order Quantity*). | Barang dengan biaya penyiapan pesanan (*ordering cost*) atau biaya kirim truk kontainer yang mahal. |
 | **Periodic Review (Order-Up-To-Level)** | Stok ditinjau pada interval waktu tetap (misal: setiap hari Senin). Kuantitas dipesan untuk mengembalikan stok ke tingkat target. | Toko retail yang dikunjungi armada distributor seminggu sekali. |
 | **Material Requirements Planning (MRP)** | Menghitung kebutuhan material berbasis waktu (*time-phased*) berdasarkan jadwal induk produksi (*MPS*) dan struktur pohon komponen (*BOM*). | Komponen manufaktur dan bahan baku perakitan industri diskrit. |
 | **Just-in-Time / Kanban** | Pengisian ulang dipicu secara visual atau elektronik oleh kartu sinyal konsumsi nyata di lini perakitan (*pull system*). | Manufaktur otomotif dan elektronik volume tinggi bebas gudang penyangga (*lean manufacturing*). |
+
+> [!warning] Jangan memakai stok fisik saja
+> Menghitung `Max − Current Stock` (on-hand saja) mengabaikan barang yang sudah dalam perjalanan dan permintaan yang sudah terikat. Akibatnya sistem memesan ulang barang yang sebenarnya sudah dipesan atau sudah dijanjikan ke pelanggan — pesanan ganda. Gunakan *inventory position* seperti pada formula di tabel.
 
 ---
 

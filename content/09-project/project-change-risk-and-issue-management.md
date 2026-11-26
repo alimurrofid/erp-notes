@@ -156,9 +156,8 @@ Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-080).
 
 ## References
 
-1. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, edisi ke-7 (cetak).
-2. **ISO 21502** — *Project, programme and portfolio management — Guidance on project management* (cetak).
-3. **SAP Help Portal** — *Claim and Change Management in Project System*: halaman spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
-5. **ERPNext Documentation** — *Issue*. https://docs.frappe.io/erpnext/issue — diakses 24 November 2026.
-6. **Odoo 20.0 Documentation** — *Project*. https://www.odoo.com/documentation/20.0/applications/services/project.html — diakses 24 November 2026.
+- Project Management Institute. *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (6th ed., 2017). PMI. ISBN 978-1-62825-392-4.
+- ISO. *ISO 21502:2020 — Project, programme and portfolio management — Guidance on project management*. https://www.iso.org/standard/74947.html Diakses 26 November 2026.
+1. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Issue*. https://docs.frappe.io/erpnext/issue — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Project*. https://www.odoo.com/documentation/20.0/applications/services/project.html — diakses 24 November 2026.

@@ -120,7 +120,7 @@ Proses pengiriman belum dianggap selesai sempurna (*Closed*) sebelum adanya konf
 
 ## References
 
-1. **International Chamber of Commerce (ICC)**: *Incoterms 2020 Rules for the Interpretation of Trade Terms*.
-2. **IFRS Foundation**: *IAS 2 Inventories - Recognition as an Expense (COGS)*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/
-3. **Microsoft Learn** — *Warehouse management overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview — diakses 24 November 2026.
-4. **ERPNext Documentation** — *Delivery Note*. https://docs.frappe.io/erpnext/delivery-note — diakses 24 November 2026.
+- International Chamber of Commerce. *Incoterms 2020*. https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/ Diakses 26 November 2026.
+1. **IFRS Foundation**: *IAS 2 Inventories - Recognition as an Expense (COGS)*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ Diakses 26 November 2026.
+2. **Microsoft Learn** — *Warehouse management overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview — diakses 24 November 2026.
+3. **ERPNext Documentation** — *Delivery Note*. https://docs.frappe.io/erpnext/delivery-note — diakses 24 November 2026.

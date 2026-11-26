@@ -186,7 +186,6 @@ Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-078).
 
 1. **IFRS Foundation** — *IFRS 15 Revenue from Contracts with Customers*. https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/ — diakses 24 November 2026.
 2. **PSAK 72** — *Pendapatan dari Kontrak dengan Pelanggan* (cetak).
-3. **SAP Help Portal** — *Billing and Revenue Recognition in Project System*: halaman spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
-5. **ERPNext Documentation** — *Sales Invoice*. https://docs.frappe.io/erpnext/sales-invoice — diakses 24 November 2026.
-6. **Odoo 20.0 Documentation** — *Customer invoices*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/customer_invoices.html — diakses 24 November 2026.
+3. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+4. **ERPNext Documentation** — *Sales Invoice*. https://docs.frappe.io/erpnext/sales-invoice — diakses 24 November 2026.
+5. **Odoo 20.0 Documentation** — *Customer invoices*. https://www.odoo.com/documentation/20.0/applications/finance/accounting/customer_invoices.html — diakses 24 November 2026.

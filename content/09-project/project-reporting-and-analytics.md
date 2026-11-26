@@ -147,9 +147,8 @@ Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-090).
 
 ## References
 
-1. **PMI** — *Practice Standard for Earned Value Management* (cetak).
-2. **Few, S.** — *Information Dashboard Design*, edisi ke-2 (cetak).
-3. **SAP Help Portal** — *Project Reporting and Information System*: halaman spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
-5. **ERPNext Documentation** — *Project*. https://docs.frappe.io/erpnext/project — diakses 24 November 2026.
-6. **Odoo 20.0 Documentation** — *Project*. https://www.odoo.com/documentation/20.0/applications/services/project.html — diakses 24 November 2026.
+- Project Management Institute. *Practice Standard for Earned Value Management* (2nd ed., 2011). PMI. ISBN 978-1-935589-35-8.
+- Few, S. *Information Dashboard Design* (2006). O'Reilly. ISBN 978-0-596-10016-2.
+1. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Project*. https://docs.frappe.io/erpnext/project — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Project*. https://www.odoo.com/documentation/20.0/applications/services/project.html — diakses 24 November 2026.

@@ -128,7 +128,6 @@ Dalam basis data relasional ERP, modul Purchasing dibangun di atas struktur enti
 
 ## References
 
-1. **CIPS** — situs memblokir akses otomatis dan tidak menyediakan dokumen spesifik; siklus pengadaan perlu sumber pengganti [belum terverifikasi].
-2. **Association for Supply Chain Management (ASCM)**: *APICS Dictionary - Procurement, Sourcing, and Total Cost of Ownership* (cetak).
-3. **Microsoft Learn** — *Procurement and sourcing overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/procurement-sourcing-overview — diakses 24 November 2026.
-4. **ERPNext Documentation** — *Buying*. https://docs.frappe.io/erpnext/buying — diakses 24 November 2026.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+1. **Microsoft Learn** — *Procurement and sourcing overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/procurement-sourcing-overview — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Buying*. https://docs.frappe.io/erpnext/buying — diakses 24 November 2026.

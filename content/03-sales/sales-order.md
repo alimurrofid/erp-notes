@@ -96,10 +96,18 @@ stateDiagram-v2
     PartiallyDelivered --> Delivered: Seluruh Barang Telah Dikirim
     InFulfillment --> Delivered: Pengiriman Penuh (100%)
     
+    Confirmed --> Cancelled: Dibatalkan Sebelum Pengiriman (Stok/Kredit Gagal)
+    InFulfillment --> Cancelled: Dibatalkan Sebelum Barang Keluar
+    PartiallyDelivered --> Cancelled: Sisa Pesanan Dibatalkan (Short-Close)
+    
     Delivered --> Invoiced: Faktur Penjualan Diposting
     Invoiced --> Closed: Pembayaran Lunas & Selesai
     Closed --> [*]
+    Cancelled --> [*]
 ```
+
+> [!note] Batas pembatalan
+> Setelah barang keluar (`Delivered`), pesanan tidak lagi dibatalkan; koreksi dilakukan melalui [[03-sales/sales-return-and-credit-note|Sales Return dan Credit Note]]. Pembatalan sebagian (`PartiallyDelivered → Cancelled`) menutup sisa kuantitas yang belum dikirim dan harus disertai alasan pada jejak audit; barang yang sudah dikirim tetap ditagihkan.
 
 ### Penjelasan Status Utama:
 
@@ -183,7 +191,7 @@ Sistem ERP enterprise mendukung beberapa variasi pemrosesan *Sales Order*:
 
 ## References
 
-1. **Association for Supply Chain Management (ASCM)**: *APICS Dictionary - Sales Order Processing and Allocation Rules*.
-2. **Microsoft Learn** — *Create sales orders* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/tasks/create-sales-orders — diakses 24 November 2026.
-3. **ERPNext Documentation** — *Sales Order*. https://docs.frappe.io/erpnext/sales-order — diakses 24 November 2026.
-4. **Odoo 20.0 Documentation** — *Sales*. https://www.odoo.com/documentation/20.0/applications/sales/sales.html — diakses 24 November 2026.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+1. **Microsoft Learn** — *Create sales orders* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/tasks/create-sales-orders — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Sales Order*. https://docs.frappe.io/erpnext/sales-order — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Sales*. https://www.odoo.com/documentation/20.0/applications/sales/sales.html — diakses 24 November 2026.

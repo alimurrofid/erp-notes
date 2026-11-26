@@ -128,7 +128,7 @@ flowchart LR
 
 ## References
 
-1. **IFRS Foundation**: *Conceptual Framework for Financial Reporting* (2018). URL: https://www.ifrs.org/issued-standards/list-of-standards/conceptual-framework/
-2. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements* (Accrual basis and financial elements). URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/
-3. **Weygandt, J. J., Kimmel, P. D., & Kieso, D. E.** (2019). *Financial Accounting* (IFRS edition). John Wiley & Sons.
-4. **Microsoft Learn** — *Ledger, subledger, and subledger journal accounting entries overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-subledger — diakses 24 November 2026.
+1. **IFRS Foundation**: *Conceptual Framework for Financial Reporting* (2018). URL: https://www.ifrs.org/issued-standards/list-of-standards/conceptual-framework/ Diakses 26 November 2026.
+2. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements* (Accrual basis and financial elements). URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/ Diakses 26 November 2026.
+- Kieso, D. E., Weygandt, J. J., & Warfield, T. D. *Intermediate Accounting* (18th ed., 2024). Wiley. ISBN 978-1-394-24616-8.
+3. **Microsoft Learn** — *Ledger, subledger, and subledger journal accounting entries overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-subledger — diakses 24 November 2026.

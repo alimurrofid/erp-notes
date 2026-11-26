@@ -160,7 +160,6 @@ flowchart LR
 
 ## References
 
-1. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements - Structure and Content of Financial Statements*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/
-2. **AICPA**: *Audit and Accounting Guide: General Ledger and Chart of Accounts Structure*.
-3. **Microsoft Learn**: *Plan your chart of accounts in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/plan-chart-of-accounts
-4. **Frappe / ERPNext Documentation**: *Chart of Accounts Management and Standard Templates*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/chart-of-accounts
+1. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements - Structure and Content of Financial Statements*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/ Diakses 26 November 2026.
+2. **Microsoft Learn**: *Plan your chart of accounts in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/plan-chart-of-accounts Diakses 26 November 2026.
+3. **Frappe / ERPNext Documentation**: *Chart of Accounts Management and Standard Templates*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/chart-of-accounts Diakses 26 November 2026.

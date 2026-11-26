@@ -42,8 +42,8 @@ flowchart LR
 | Parameter Kuantitas | Definisi & Titik Pencatatan | Dampak Fisik Pergudangan | Dampak Akuntansi |
 |---|---|---|---|
 | **1. Ordered Quantity** | Jumlah unit yang disepakati dalam kontrak *Purchase Order*. | Komitmen pengadaan masa depan (*On-Order Stock*). | Rp0 (tidak ada jurnal). |
-| **2. Received Quantity** | Jumlah unit fisik yang diturunkan dari truk pemasok di dermaga bongkar. | Berada di area penerimaan sementara gudang. | Belum masuk stok aktif; menunggu inspeksi. |
-| **3. Accepted Quantity** | Jumlah unit yang **dinyatakan lolos inspeksi mutu** oleh tim kendali mutu (*QC*). | **Masuk ke stok aktif gudang (*Available Stock*)** di rak penyimpanan. | **Memicu jurnal persediaan dan akrual penerimaan (GR/IR).** |
+| **2. Received Quantity** | Jumlah unit fisik yang diturunkan dari truk pemasok di dermaga bongkar. | Berada di area penerimaan sementara gudang. | Pada konfigurasi **tanpa quality gate**, kuantitas ini langsung menambah stok dan memicu GR/IR saat penerimaan diposting. Pada konfigurasi **dengan inspeksi QC** (mis. *3-step receipt* atau quality control point), kuantitas ditahan di lokasi input/karantina dan belum menambah stok tersedia sampai lolos inspeksi. |
+| **3. Accepted Quantity** | Jumlah unit yang **dinyatakan lolos inspeksi mutu** oleh tim kendali mutu (*QC*). | **Masuk ke stok aktif gudang (*Available Stock*)** di rak penyimpanan. | **Memicu jurnal persediaan dan akrual penerimaan (GR/IR)** pada konfigurasi ber-quality gate; tanpa quality gate, jurnal sudah terbentuk di langkah 2. |
 | **4. Invoiced Quantity** | Jumlah unit yang telah disahkan faktur tagihannya oleh bagian akuntansi. | Posisi hak tagih finansial pemasok. | Menutup akun interim menjadi Utang Usaha resmi. |
 | **5. Returned / Rejected Qty** | Jumlah unit yang ditolak karena cacat, rusak, atau salah spesifikasi. | Berada di area karantina gudang untuk dikirim kembali ke vendor. | Tidak diakui sebagai aset persediaan perusahaan. |
 
@@ -137,7 +137,7 @@ Penerimaan 10 unit komponen *Laptop Pro* dari PT Sumber Teknologi (harga peroleh
 
 ## References
 
-1. **Association for Supply Chain Management (ASCM)**: *APICS Dictionary - Receiving Operations, Quality Inspection, and Dock-to-Stock Time*.
-2. **IFRS Foundation**: *IAS 2 Inventories - Recognition of Inventories and Control of Assets*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/
-3. **Microsoft Learn** — *Procurement and sourcing overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/procurement-sourcing-overview — diakses 24 November 2026.
-4. **ERPNext Documentation** — *Purchase Receipt*. https://docs.frappe.io/erpnext/purchase-receipt — diakses 24 November 2026.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+1. **IFRS Foundation**: *IAS 2 Inventories - Recognition of Inventories and Control of Assets*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ Diakses 26 November 2026.
+2. **Microsoft Learn** — *Procurement and sourcing overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/procurement-sourcing-overview — diakses 24 November 2026.
+3. **ERPNext Documentation** — *Purchase Receipt*. https://docs.frappe.io/erpnext/purchase-receipt — diakses 24 November 2026.

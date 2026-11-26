@@ -171,8 +171,7 @@ Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-092).
 
 ## References
 
-1. **PMI** — *Practice Standard for Work Breakdown Structures*, edisi ke-3 (cetak).
-2. **ISO 21511** — *Work breakdown structures for project and programme management* (cetak).
-3. **SAP SE** — *Work Breakdown Structure (WBS)*: halaman Help spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Project Operations* (Dynamics 365; WBS). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
-5. **Kerzner, H.** — *Project Management: A Systems Approach*, edisi ke-13 (cetak).
+- Project Management Institute. *Practice Standard for Work Breakdown Structures* (3rd ed., 2019). PMI. ISBN 978-1-62825-622-2.
+- ISO. *ISO 21511:2018 — Work breakdown structures for project and programme management*. https://www.iso.org/standard/69702.html Diakses 26 November 2026.
+1. **Microsoft Learn** — *Project Operations* (Dynamics 365; WBS). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+- Kerzner, H. *Project Management: A Systems Approach to Planning, Scheduling, and Controlling* (13th ed., 2022). Wiley. ISBN 978-1-119-80539-7.

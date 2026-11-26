@@ -56,7 +56,7 @@ Sistem ERP enterprise mendukung berbagai metode rumus biaya:
 | **Moving Average (Weighted Average Perpetual)** | Setiap kali ada penerimaan barang baru (*Goods Receipt*), sistem menghitung ulang rata-rata tertimbang biaya per unit secara real-time. | Menghaluskan fluktuasi harga ekstrem (*smoothing effect*); laba kotor stabil. | **Diizinkan penuh**. |
 | **Standard Costing** | Nilai barang ditetapkan di awal tahun berdasarkan estimasi biaya standar; selisih antara harga riil faktur dan biaya standar dialokasikan ke akun selisih biaya (*Purchase Price Variance / PPV*). | Menghilangkan variasi biaya perolehan harian; memudahkan analisis varians biaya pabrik. | **Diizinkan bersyarat**: Hanya jika hasilnya mendekati biaya aktual historis. |
 | **Specific Identification** | Setiap unit barang secara eksplisit dilacak dengan biaya pembelian aktual individualnya menggunakan nomor seri unik (*Serial Number Tracking*). | Mencerminkan biaya riil 100% tanpa asumsi aliran. | **Wajib** untuk barang berharga tinggi yang tidak dapat saling menggantikan (mobil, perhiasan, karya seni, proyek pesanan khusus). |
-| **LIFO (Last-In, First-Out)** | Barang yang terakhir masuk diasumsikan keluar lebih awal. | Menghasilkan laba lebih rendah dan nilai neraca yang usang. | **DILARANG KERAS** oleh IFRS (IAS 2 Paragraf 25) dan PSAK karena tidak rasional terhadap aliran fisik yang wajar. |
+| **LIFO (Last-In, First-Out)** | Barang yang terakhir masuk diasumsikan keluar lebih awal. | Menghasilkan laba lebih rendah dan nilai neraca yang usang. | **Tidak diizinkan** oleh IAS 2.25 dan PSAK yang mengadopsinya: formula biaya dibatasi pada FIFO dan weighted average. Larangan bersifat pengukuran, bukan karena aliran fisik (lihat bagian *Physical Flow vs. Cost Flow*). |
 
 ---
 
@@ -151,6 +151,50 @@ Jika perusahaan menerapkan **Standard Costing** (misal untuk perakitan laptop di
     * *(Cr)* Utang Barang Belum Ditagih (GR/IR): Rp7.000.000
     * *(Cr)* Utang Ekspedisi Freight: Rp500.000
 * Keuntungan: Nilai persediaan di neraca selalu konstan pada angka standar, mempermudah kalkulasi biaya standar produksi (*BOM Costing*).
+
+---
+
+## Penurunan Nilai ke NRV dan Pemulihannya (IAS 2.28–33)
+
+Persediaan diukur pada nilai terendah antara biaya perolehan dan NRV **pada setiap tanggal pelaporan**, bukan hanya saat barang rusak atau kedaluwarsa. NRV adalah estimasi harga jual dalam kegiatan usaha biasa dikurangi estimasi biaya penyelesaian dan estimasi biaya penjualan (IAS 2.6).
+
+**Contoh**: sisa 20 unit Laptop Pro dengan biaya perolehan Rp725.000/unit = Rp14.500.000. Pada 31 Desember 2026 harga jual diperkirakan turun sehingga NRV menjadi Rp650.000/unit = Rp13.000.000.
+
+| Akun | Debit (Rp) | Kredit (Rp) |
+|---|---:|---:|
+| Beban Penurunan Nilai Persediaan (*Inventory Write-Down*) | 1.500.000 | - |
+| Cadangan Penurunan Nilai Persediaan (*Allowance*) | - | 1.500.000 |
+
+Pada 31 Maret 2027 NRV naik menjadi Rp700.000/unit = Rp14.000.000. Pemulihan diakui sebagai pengurang beban penurunan nilai, **dibatasi jumlah penurunan nilai yang pernah diakui** (IAS 2.33):
+
+| Akun | Debit (Rp) | Kredit (Rp) |
+|---|---:|---:|
+| Cadangan Penurunan Nilai Persediaan | 1.000.000 | - |
+| Pemulihan Penurunan Nilai Persediaan (*Reversal*) | - | 1.000.000 |
+
+Nilai tercatat setelah pemulihan = Rp14.000.000, tidak boleh melebihi biaya perolehan semula Rp14.500.000. ERP menerapkan ini melalui dokumen revaluasi persediaan (mis. `REVALUATION_NRV` di Odoo) yang mencatat kuantitas tetap dan nilai berubah.
+
+---
+
+## Alokasi Overhead Tetap pada Kapasitas Normal (IAS 2.12–13)
+
+Overhead produksi tetap dialokasikan ke biaya konversi berdasarkan **kapasitas normal** fasilitas, bukan berdasarkan output aktual. Jika produksi rendah atau pabrik menganggur, bagian overhead yang tidak teralokasi **dibebankan pada periode berjalan** dan tidak boleh menaikkan biaya per unit persediaan.
+
+**Contoh**: kapasitas normal 1.000 unit/bulan; overhead tetap Rp30.000.000/bulan → tarif Rp30.000/unit. Output aktual hanya 800 unit karena permintaan turun.
+
+| Komponen | Perhitungan | Nilai (Rp) |
+|---|---|---:|
+| Overhead dialokasikan ke WIP | 800 unit × Rp30.000 | 24.000.000 |
+| Overhead kapasitas menganggur (*idle capacity*) | Rp30.000.000 − Rp24.000.000 | 6.000.000 |
+| Total overhead tetap | — | 30.000.000 |
+
+| Akun | Debit (Rp) | Kredit (Rp) |
+|---|---:|---:|
+| Barang Dalam Proses (*WIP*) | 24.000.000 | - |
+| Beban Kapasitas Menganggur (*Idle Capacity Expense*) | 6.000.000 | - |
+| Overhead Pabrik Dialokasikan (*Manufacturing Overhead Applied*) | - | 30.000.000 |
+
+Tanpa aturan ini, biaya per unit naik menjadi Rp37.500 saat produksi turun — persediaan menjadi overstated dan laba periode berikutnya terdistorsi. Kapasitas normal adalah kapasitas yang dapat dicapai dalam kondisi operasi normal dengan mempertimbangkan pemeliharaan terencana dan waktu menganggur yang wajar; angka ini adalah kebijakan manajemen yang harus didokumentasikan, bukan angka yang ditetapkan standar.
 
 ---
 

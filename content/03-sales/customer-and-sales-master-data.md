@@ -143,7 +143,7 @@ Jika nama legal pelanggan, alamat kantor, atau harga produk pada master data diu
 
 ## References
 
-1. **Association for Supply Chain Management (ASCM)**: *APICS Dictionary - Master Data Management in Manufacturing and Distribution*.
-2. **Microsoft Learn** — *Sales and marketing overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/overview-sales-marketing — diakses 24 November 2026.
-3. **ERPNext Documentation** — *Customer*. https://docs.frappe.io/erpnext/customer — diakses 24 November 2026.
-4. **Odoo 20.0 Documentation** — *Send quotations*. https://www.odoo.com/documentation/20.0/applications/sales/sales/send_quotations.html — diakses 24 November 2026.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+1. **Microsoft Learn** — *Sales and marketing overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/overview-sales-marketing — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Customer*. https://docs.frappe.io/erpnext/customer — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Send quotations*. https://www.odoo.com/documentation/20.0/applications/sales/sales/send_quotations.html — diakses 24 November 2026.

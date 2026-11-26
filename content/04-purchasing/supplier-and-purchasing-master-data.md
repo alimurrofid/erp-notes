@@ -155,7 +155,6 @@ Jika pemasok menaikkan harga katalognya bulan depan, seluruh dokumen *Purchase O
 
 ## References
 
-1. **Chartered Institute of Procurement & Supply (CIPS)**: *Supplier Master Data Management and Onboarding Governance*.
-2. **Microsoft Learn** — *Supplier engagement overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/supplier-engagement/supplier-engagement-overview — diakses 24 November 2026.
-3. **ERPNext Documentation** — *Supplier*. https://docs.frappe.io/erpnext/supplier — diakses 24 November 2026.
-4. **SAP Help Portal**: *Business Partner (Supplier) Data Model and Purchasing View*.
+- ISO. *ISO 20400:2017 — Sustainable procurement — Guidance*. https://www.iso.org/standard/63026.html Diakses 26 November 2026.
+1. **Microsoft Learn** — *Supplier engagement overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/supplier-engagement/supplier-engagement-overview — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Supplier*. https://docs.frappe.io/erpnext/supplier — diakses 24 November 2026.

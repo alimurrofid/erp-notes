@@ -164,9 +164,7 @@ Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-110).
 
 ## References
 
-1. **Armstrong, M., & Taylor, S.** — *Armstrong's Handbook of Performance Management*, edisi ke-6 (cetak).
-2. **SHRM** — *Designing and Implementing Performance Appraisal Systems* (cetak).
-3. **SAP Help Portal** — *Performance and Goals Management*: halaman spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
-5. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
-6. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.
+- Armstrong, M., & Taylor, S. *Armstrong's Handbook of Performance Management* (6th ed., 2017). Kogan Page. ISBN 978-0-7494-8121-6.
+1. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+2. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.

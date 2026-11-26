@@ -118,7 +118,7 @@ Melanjutkan permohonan pembelian `PR-2026-09-0041`:
 
 ## References
 
-1. **Chartered Institute of Procurement & Supply (CIPS)**: *Sourcing and Competitive Bidding Methods (RFQ vs RFP vs ITT)*. URL: https://www.cips.org/
-2. **Association for Supply Chain Management (ASCM)**: *APICS Dictionary - Request for Quotation and Competitive Bidding*.
-3. **Microsoft Learn**: *Create and manage requests for quotations in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/request-quotations
-4. **Frappe / ERPNext Documentation**: *Request for Quotation and Supplier Quotation Comparison*. URL: https://docs.frappe.io/erpnext/user/manual/en/buying/request-for-quotation
+1. **ISO**: *ISO 20400:2017 — Sustainable procurement — Guidance* (kerangka proses pengadaan; bukan pengganti sumber CIPS yang memblokir akses otomatis). https://www.iso.org/standard/63026.html — diakses 26 November 2026.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+2. **Microsoft Learn**: *Create and manage requests for quotations in Dynamics 365 Supply Chain Management*. URL: https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/request-quotations Diakses 26 November 2026.
+3. **Frappe / ERPNext Documentation**: *Request for Quotation and Supplier Quotation Comparison*. URL: https://docs.frappe.io/erpnext/user/manual/en/buying/request-for-quotation Diakses 26 November 2026.

@@ -157,8 +157,7 @@ Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-086).
 
 ## References
 
-1. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, edisi ke-7 (cetak).
-2. **SAP Help Portal** — *Material Management in Project System*: halaman spesifik belum terverifikasi [belum terverifikasi].
-3. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
-4. **ERPNext Documentation** — *Stock Entry*. https://docs.frappe.io/erpnext/stock-entry — diakses 24 November 2026.
-5. **Odoo 20.0 Documentation** — *Inventory valuation*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/product_management/inventory_valuation/using_inventory_valuation.html — diakses 24 November 2026.
+- Project Management Institute. *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (6th ed., 2017). PMI. ISBN 978-1-62825-392-4.
+1. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Stock Entry*. https://docs.frappe.io/erpnext/stock-entry — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Inventory valuation*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/product_management/inventory_valuation/using_inventory_valuation.html — diakses 24 November 2026.

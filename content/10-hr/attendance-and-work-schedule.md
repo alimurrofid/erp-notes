@@ -144,9 +144,7 @@ Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-095).
 
 ## References
 
-1. **SHRM** — *Managing Employee Attendance and Work Schedules* (cetak).
-2. **ILO** — *Working Time Conventions and Recommendations* (cetak).
-3. **SAP Help Portal** — *Time and Attendance Management*: halaman spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
-5. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
-6. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.
+- International Labour Organization. *Hours of Work (Industry) Convention, 1919 (No. 1)*. https://normlex.ilo.org/dyn/normlex/en/f?p=NORMLEXPUB:12100:0::NO::P12100_ILO_CODE:C001 Diakses 26 November 2026.
+1. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+2. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.

@@ -135,8 +135,8 @@ Keputusan desain: [[30-naventra/design-manufacturing|Design manufacturing]] (NAV
 
 ## References
 
-1. **ASCM / APICS** — *APICS Dictionary* (backflushing, point-of-use inventory, material issue, usage variance) (cetak).
-2. **Vollmann, T. E., et al.** — *Manufacturing Planning and Control for Supply Chain Management* (cetak).
-3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management; flushing principle). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
-4. **ERPNext Documentation** — *Stock Entry*. https://docs.frappe.io/erpnext/stock-entry — diakses 24 November 2026.
-5. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+- Vollmann, T. E., Berry, W. L., Whybark, D. C., & Jacobs, F. R. *Manufacturing Planning and Control for Supply Chain Management* (5th ed., 2005). McGraw-Hill. ISBN 0-07-144033-X.
+1. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management; flushing principle). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Stock Entry*. https://docs.frappe.io/erpnext/stock-entry — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

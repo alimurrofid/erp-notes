@@ -124,8 +124,7 @@ Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-051).
 ## References
 
 1. **IFRS Foundation** — *IAS 7 Statement of Cash Flows* (definisi kas dan setara kas). https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/ — diakses 24 November 2026.
-2. **COSO** — *Internal Control — Integrated Framework* (2013) (cetak).
-3. **AFP** — *Treasury Management Body of Knowledge* (cetak).
-4. **Microsoft Learn** — *Cash and bank management* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-bank-management — diakses 24 November 2026.
-5. **ERPNext Documentation** — *Accounts*. https://docs.frappe.io/erpnext/accounts — diakses 24 November 2026.
-6. **Odoo 20.0 Documentation** — *Accounting and invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.
+- COSO. *Internal Control — Integrated Framework* (2013). https://www.coso.org/guidance-on-ic Diakses 26 November 2026.
+2. **Microsoft Learn** — *Cash and bank management* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-bank-management — diakses 24 November 2026.
+3. **ERPNext Documentation** — *Accounts*. https://docs.frappe.io/erpnext/accounts — diakses 24 November 2026.
+4. **Odoo 20.0 Documentation** — *Accounting and invoicing*. https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.

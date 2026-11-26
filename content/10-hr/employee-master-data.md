@@ -181,8 +181,6 @@ Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-096).
 
 ## References
 
-1. **SHRM** — *Managing Employee Master Data and Privacy* (cetak).
-2. **SAP Help Portal** — *Employee Master Data*: halaman spesifik belum terverifikasi [belum terverifikasi].
-3. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
-4. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
-5. **Odoo 20.0 Documentation** — *Employees*. https://www.odoo.com/documentation/20.0/applications/hr/employees.html — diakses 24 November 2026.
+1. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
+2. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
+3. **Odoo 20.0 Documentation** — *Employees*. https://www.odoo.com/documentation/20.0/applications/hr/employees.html — diakses 24 November 2026.

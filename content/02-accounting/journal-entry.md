@@ -137,7 +137,7 @@ Jejak audit (*Audit Trail*) menjamin bahwa setiap angka di laporan keuangan dapa
 
 ## References
 
-1. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/
-2. **Information Systems Audit and Control Association (ISACA)**: *Audit Trail Controls and Data Integrity in ERP Systems*.
-3. **Microsoft Learn**: *General journal processing and reversing entries in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/general-journal-processing
-4. **Frappe / ERPNext Documentation**: *Journal Entry Types and Reversal Mechanics*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/journal-entry
+1. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/ Diakses 26 November 2026.
+- ISACA. *COBIT: IT Governance Framework*. https://www.isaca.org/resources/cobit Diakses 26 November 2026.
+2. **Microsoft Learn**: *General journal processing and reversing entries in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/general-journal-processing Diakses 26 November 2026.
+3. **Frappe / ERPNext Documentation**: *Journal Entry Types and Reversal Mechanics*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/journal-entry Diakses 26 November 2026.

@@ -151,6 +151,4 @@ Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-073).
 
 1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment* (paragraf 12–14: subsequent costs). https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
 2. **IFRS Foundation** — *IAS 7 Statement of Cash Flows*. https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/ — diakses 24 November 2026.
-3. **SAP SE** — *Subsequent Costs and Maintenance*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
-5. **CIMA** — *CAPEX vs OPEX Management and Governance* (cetak).
+3. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.

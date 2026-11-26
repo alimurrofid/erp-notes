@@ -114,7 +114,7 @@ Setiap unit aset tetap dicatat dalam kartu aset tersendiri di dalam [[02-account
 
 ## References
 
-1. **IFRS Foundation**: *IAS 16 Property, Plant and Equipment - Recognition, Measurement, and Derecognition*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/
-2. **IFRS Foundation**: *IAS 36 Impairment of Assets*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-36-impairment-of-assets/
+1. **IFRS Foundation**: *IAS 16 Property, Plant and Equipment - Recognition, Measurement, and Derecognition*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ Diakses 26 November 2026.
+2. **IFRS Foundation**: *IAS 36 Impairment of Assets*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-36-impairment-of-assets/ Diakses 26 November 2026.
 3. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
-4. **Frappe / ERPNext Documentation**: *Asset Lifecycle Management, Maintenance, and Depreciation*. URL: https://docs.frappe.io/erpnext/user/manual/en/assets
+4. **Frappe / ERPNext Documentation**: *Asset Lifecycle Management, Maintenance, and Depreciation*. URL: https://docs.frappe.io/erpnext/user/manual/en/assets Diakses 26 November 2026.

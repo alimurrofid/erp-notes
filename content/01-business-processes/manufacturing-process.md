@@ -147,6 +147,15 @@ Sebelum proses manufaktur berjalan, sistem membutuhkan dua pilar Master Data (li
 
 ---
 
+## Process Contract
+
+| Elemen | Isi |
+|---|---|
+| **Trigger** | Planned order dari MPS/MRP, atau MO manual untuk pesanan khusus. |
+| **Validation** | Kelengkapan BOM dan routing, ketersediaan bahan, kapasitas work center, otorisasi rilis. |
+| **Exception** | Bahan kurang → tahan MO atau partial production; cacat → rework/scrap; pesanan dibatalkan setelah bahan keluar → scrap WIP, bukan cancel biasa (lihat [[01-business-processes/exception-path|Exception Path]]). |
+| **Next Process** | Penerimaan barang jadi, penyelesaian varians, lalu COGS dan Record to Report. |
+
 ## Ilustrasi Komponen Biaya Manufaktur (Product Cost Structure)
 
 Contoh struktur pembentukan harga pokok produksi untuk 1 unit Laptop:
@@ -184,7 +193,6 @@ Sistem ERP mendukung beberapa model manufaktur sesuai karakteristik industri:
 ## References
 
 1. **IFRS Foundation** — *IAS 2 Inventories* (biaya konversi dan alokasi overhead). https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ — diakses 24 November 2026.
-2. **ASCM / APICS** — *APICS Dictionary* (cetak; edisi daring belum terverifikasi tautannya).
-3. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
-4. **ERPNext Documentation** — *Manufacturing*. https://docs.frappe.io/erpnext/manufacturing — diakses 24 November 2026.
-5. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.
+2. **Microsoft Learn** — *Production process overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-process-overview — diakses 24 November 2026.
+3. **ERPNext Documentation** — *Manufacturing*. https://docs.frappe.io/erpnext/manufacturing — diakses 24 November 2026.
+4. **Odoo 20.0 Documentation** — *Manufacturing*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing.html — diakses 24 November 2026.

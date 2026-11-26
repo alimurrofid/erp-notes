@@ -120,7 +120,7 @@ Penerapan jadwal penutupan akhir periode pada `PT Maju Bersama`:
 * **Tanggal 31 Akhir Bulan:** Penutupan cut-off fisik gudang dan penerbitan commercial invoice.
 * **Tanggal 10 Bulan Berikutnya:** Batas akhir verifikasi dan impor seluruh Faktur Pajak Masukan rekanan.
 * **Tanggal 12 Bulan Berikutnya:** Eksekusi Rekonsiliasi Tiga Arah PPN dan PPh Unifikasi.
-* **Tanggal 14 Bulan Berikutnya:** Pengunggahan seluruh Faktur Pajak Keluaran ke DJP (memenuhi batas akhir tanggal 15).
+* **Tanggal 18 Bulan Berikutnya:** Pengunggahan seluruh Faktur Pajak Keluaran ke DJP. Batas **legal** adalah tanggal **20** bulan berikutnya setelah tanggal pembuatan e-Faktur (PER-11/PJ/2025 Pasal 44); tanggal 18 adalah target operasional internal agar masih ada waktu perbaikan jika faktur ditolak.
 * **Tanggal 25 Bulan Berikutnya:** Eksekusi Jurnal Kliring PPN (menolkan PPN Masukan Rp770.000 dan PPN Keluaran Rp1.100.000, membentuk Utang PPN Rp330.000).
 * **Tanggal 28 Bulan Berikutnya:** Pembayaran Kode Billing `DUMMY-BILLING-001` Rp330.000 (NTPN `DUMMY-NTPN-001` diperoleh) dan Pelaporan SPT Masa PPN (BPE `DUMMY-BPE-PPN-001` diterima).
 * **Tanggal 28 Pukul 23:59:** Modul Tax `PT Maju Bersama` mengaktifkan **Hard Lock** untuk masa pajak bersangkutan.
@@ -166,6 +166,7 @@ Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-117).
 2. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
 3. **PMK No. 243/PMK.03/2014** — Surat Pemberitahuan (SPT) (cetak; tautan JDIH belum terverifikasi).
 4. **PMK No. 81 Tahun 2024** — Ketentuan Perpajakan dalam rangka Pelaksanaan Coretax (pelaporan masa dan tahunan). https://jdih.kemenkeu.go.id/dok/pmk-81-tahun-2024 — diakses 24 November 2026.
-5. **Odoo 20.0 Documentation** — *Accounting and Invoicing* (penutupan periode dan pelaporan). https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.
-6. **ERPNext Documentation** — *Period Closing Voucher*. https://docs.frappe.io/erpnext/period-closing-voucher — diakses 24 November 2026.
-7. **Microsoft Learn** — *Close the general ledger at period end* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/close-general-ledger-at-period-end — diakses 24 November 2026.
+5. **PER-11/PJ/2025** — Bentuk, Isi, dan Tata Cara Pengisian Faktur Pajak (Pasal 44: unggah paling lambat tanggal 20 bulan berikutnya). https://datacenter.ortax.org/ortax/aturan/show/26241 — diakses 26 November 2026.
+6. **Odoo 20.0 Documentation** — *Accounting and Invoicing* (penutupan periode dan pelaporan). https://www.odoo.com/documentation/20.0/applications/finance/accounting.html — diakses 24 November 2026.
+7. **ERPNext Documentation** — *Period Closing Voucher*. https://docs.frappe.io/erpnext/period-closing-voucher — diakses 24 November 2026.
+8. **Microsoft Learn** — *Close the general ledger at period end* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/close-general-ledger-at-period-end — diakses 24 November 2026.

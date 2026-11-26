@@ -131,7 +131,7 @@ Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-010) â€
 
 ## References
 
-- Microsoft Learn. *Purchase Order Change Management in Dynamics 365 Supply Chain Management*.
-- Frappe ERPNext Documentation. *Purchase Order Cancellation and Amendment Workflow*.
+- Microsoft Learn. *Procurement and sourcing overview* (Dynamics 365 Supply Chain Management). https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/procurement-sourcing-overview Diakses 26 November 2026.
+- Frappe. *Buying Module* (ERPNext Documentation). https://docs.frappe.io/erpnext/buying Diakses 26 November 2026.
 - Odoo 20 Documentation. *Requests for quotation*. https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html. Diakses 23 November 2026.
-- APQC (American Productivity & Quality Center). *Procure-to-Pay Process Classification Framework: Purchase Order Maintenance and Administration*.
+- APQC. *Process Classification Framework*. https://www.apqc.org/process-frameworks Diakses 26 November 2026.

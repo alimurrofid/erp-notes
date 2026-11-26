@@ -122,12 +122,15 @@ Laptop staf yang hilang dan terkonfirmasi tidak dapat ditemukan setelah masa inv
 | `155000 - Peralatan Komputer` | - | 20.000.000 | Menghapus nilai perolehan historis di Neraca |
 
 ### 2. Pendaftaran Aset Fisik Ditemukan (Found Asset Capitalization)
-Ditemukan mesin las cadangan di gudang yang belum pernah dicatat di sistem (ditaksir nilai wajar Rp10.000.000):
+Ditemukan mesin las cadangan di gudang yang belum pernah dicatat di sistem (ditaksir nilai wajar Rp10.000.000). Aset ini seharusnya sudah tercatat pada periode sebelumnya, sehingga pengakuannya adalah **koreksi kesalahan periode lalu**, bukan pendapatan:
 
 | Akun | Debit (IDR) | Kredit (IDR) | Keterangan |
 | :--- | :--- | :--- | :--- |
-| `153000 - Mesin & Peralatan Pabrik` | 10.000.000 | - | Pengakuan aset tetap baru di Neraca |
-| `710400 - Pendapatan Lain-Lain (Aset Temuan)` | - | 10.000.000 | Diakui sebagai pendapatan lain-lain di Laba Rugi |
+| `153000 - Mesin & Peralatan Pabrik` | 10.000.000 | - | Pengakuan aset tetap yang sebelumnya terlewat |
+| `310100 - Saldo Laba Awal (Koreksi Periode Lalu)` | - | 10.000.000 | Penyesuaian saldo awal ekuitas, bukan laba berjalan |
+
+> [!important] Mengapa bukan pendapatan
+> Menurut IAS 8.41–42, kesalahan material yang ditemukan setelah laporan diterbitkan dikoreksi secara retrospektif terhadap saldo awal laba ditahan dan angka komparatif. Mengkredit "Pendapatan Lain-Lain" akan melebihkan laba tahun berjalan dan menyembunyikan bahwa aset sudah ada sebelumnya. Jika nilainya tidak material, koreksi boleh diakui pada periode ditemukan, tetapi kebijakan materialitas itu harus dinyatakan. Penyusutan yang terlewat untuk periode lalu juga perlu dihitung dan dibebankan ke saldo awal yang sama.
 
 *(Untuk mekanisme akuntansi penghapusan dan audit forensik lengkap, rujuk ke [[02-accounting/fixed-asset-accounting|Phase 3]]).*
 
@@ -173,8 +176,7 @@ Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-077).
 
 ## References
 
-1. **COSO** — *Internal Control — Integrated Framework* (control activities dan verifikasi fisik) (cetak).
-2. **ISO 55001** — *Asset Management — Management Systems — Requirements* (cetak; standar berbayar).
-3. **SAP SE** — *Physical Inventory of Fixed Assets*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
-5. **IIA** — *Auditing Fixed Assets and Physical Inventory Controls* (cetak).
+- COSO. *Internal Control — Integrated Framework* (2013). https://www.coso.org/guidance-on-ic Diakses 26 November 2026.
+- ISO. *ISO 55001:2014 — Asset management — Management systems — Requirements*. https://www.iso.org/standard/55089.html Diakses 26 November 2026.
+1. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+- The Institute of Internal Auditors. *International Standards for the Professional Practice of Internal Auditing*. https://www.theiia.org/en/standards/ Diakses 26 November 2026.

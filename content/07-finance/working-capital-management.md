@@ -175,8 +175,5 @@ Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-061).
 
 ## References
 
-1. **PwC** — *Annual Working Capital Study* (cetak).
-2. **CIMA** — *Working Capital Management: Theory and Practice* (cetak).
-3. **SAP SE** — *Working Capital Analytics*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Collections and credit in Accounts receivable* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/collections-credit-accounts-receivable — diakses 24 November 2026.
-5. **Brealey, R. A., Myers, S. C., & Allen, F.** — *Principles of Corporate Finance* (cetak).
+1. **Microsoft Learn** — *Collections and credit in Accounts receivable* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/collections-credit-accounts-receivable — diakses 24 November 2026.
+- Brealey, R. A., Myers, S. C., & Allen, F. *Principles of Corporate Finance* (13th ed., 2019). McGraw-Hill. ISBN 978-1-260-01390-0.

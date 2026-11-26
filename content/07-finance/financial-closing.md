@@ -151,8 +151,6 @@ Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-055).
 
 ## References
 
-1. **Bragg, S. M.** — *Fast Close: A Guide to Closing the Books Quickly* (cetak).
-2. **IMA** — *Transforming the Financial Close Process* (cetak).
-3. **SAP SE** — *Advanced Financial Closing*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Close the general ledger at period end* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/close-general-ledger-at-period-end — diakses 24 November 2026.
-5. **IFRS Foundation** — *IAS 10 Events after the Reporting Period*. https://www.ifrs.org/issued-standards/list-of-standards/ias-10-events-after-the-reporting-period/ — diakses 24 November 2026.
+- Bragg, S. M. *Fast Close: A Guide to Closing the Books Quickly* (2005). Wiley. ISBN 978-0-471-70897-1.
+1. **Microsoft Learn** — *Close the general ledger at period end* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/close-general-ledger-at-period-end — diakses 24 November 2026.
+2. **IFRS Foundation** — *IAS 10 Events after the Reporting Period*. https://www.ifrs.org/issued-standards/list-of-standards/ias-10-events-after-the-reporting-period/ — diakses 24 November 2026.

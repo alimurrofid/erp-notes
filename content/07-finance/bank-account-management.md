@@ -149,7 +149,5 @@ Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-046).
 
 1. **IFRS Foundation** — *IAS 1 Presentation of Financial Statements*. https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/ — diakses 24 November 2026.
 2. **IFRS Foundation** — *IAS 7 Statement of Cash Flows*. https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/ — diakses 24 November 2026.
-3. **ISO 20022** — *Bank Account Management (BAM) Schema* (cetak; spesifikasi berbayar).
-4. **AFP** — *Essentials of Treasury Management*, edisi ke-6 (cetak).
-5. **SAP SE** — *Bank Account Management*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-6. **Microsoft Learn** — *Cash and bank management* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-bank-management — diakses 24 November 2026.
+- ISO. *ISO 20022 — Universal financial industry message scheme*. https://www.iso20022.org/ Diakses 26 November 2026.
+3. **Microsoft Learn** — *Cash and bank management* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-bank-management — diakses 24 November 2026.

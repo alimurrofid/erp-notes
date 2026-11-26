@@ -120,8 +120,8 @@ Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-001) â€
 
 ## References
 
-1. **Monk, E., & Wagner, B.** (2012). *Concepts in Enterprise Resource Planning* (4th ed.). Cengage Learning.
-2. **Wallace, T. F., & Kremzar, M. H.** (2001). *ERP: Making It Happen - The Implementers' Guide to Success with Enterprise Resource Planning*. John Wiley & Sons.
-3. **Microsoft Learn**: *Dynamics 365 Supply Chain Management & Finance Documentation*. URL: https://learn.microsoft.com/en-us/dynamics365/
-4. **Frappe / ERPNext Documentation**: *Introduction to ERPNext & Architecture*. URL: https://docs.frappe.io/erpnext/
-5. **Odoo Documentation**: *Accounting and Invoicing Principles*. URL: https://www.odoo.com/documentation/20.0/applications/finance/accounting.html
+- Monk, E., & Wagner, B. *Concepts in Enterprise Resource Planning* (4th ed., 2012). Course Technology. ISBN 978-1-111-82039-8.
+- Wallace, T. F., & Kremzar, M. H. *ERP: Making It Happen â€” The Implementers' Guide to Success with Enterprise Resource Planning* (2001). Wiley. ISBN 978-0-471-39201-9.
+1. **Microsoft Learn**: *Dynamics 365 Supply Chain Management & Finance Documentation*. URL: https://learn.microsoft.com/en-us/dynamics365/ Diakses 26 November 2026.
+2. **Frappe / ERPNext Documentation**: *Introduction to ERPNext & Architecture*. URL: https://docs.frappe.io/erpnext/ Diakses 26 November 2026.
+3. **Odoo Documentation**: *Accounting and Invoicing Principles*. URL: https://www.odoo.com/documentation/20.0/applications/finance/accounting.html Diakses 26 November 2026.

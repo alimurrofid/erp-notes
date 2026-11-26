@@ -154,8 +154,5 @@ Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-082).
 
 ## References
 
-1. **PMI** — *Practice Standard for Project Estimating*, edisi ke-2 (cetak).
-2. **SAP SE** — *Cost and Revenue Planning*: halaman Help spesifik belum terverifikasi [belum terverifikasi].
-3. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
-4. **CIMA** — *Cost Accounting and Project Cost Management Guidelines* (cetak).
-5. **ERPNext Documentation** — *Project*. https://docs.frappe.io/erpnext/project — diakses 24 November 2026.
+1. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Project*. https://docs.frappe.io/erpnext/project — diakses 24 November 2026.

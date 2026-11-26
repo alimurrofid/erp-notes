@@ -165,8 +165,5 @@ Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-060).
 
 ## References
 
-1. **ISO 20022** — *Payment Initiation (PAIN.001) and Payment Status Report (PAIN.002)* (cetak; spesifikasi berbayar).
-2. **SAP SE** — *Automatic Payment Program*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-3. **Microsoft Learn** — *Cash and bank management* (Dynamics 365 Finance; disbursement dan rekonsiliasi bank). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-bank-management — diakses 24 November 2026.
-4. **AFP** — *Payments and Cash Settlement Systems Body of Knowledge* (cetak).
-5. **Bank Indonesia** — ketentuan BI-FAST/SKNBI: nomor peraturan belum terverifikasi [belum terverifikasi].
+- ISO. *ISO 20022 — Universal financial industry message scheme*. https://www.iso20022.org/ Diakses 26 November 2026.
+1. **Microsoft Learn** — *Cash and bank management* (Dynamics 365 Finance; disbursement dan rekonsiliasi bank). https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-bank-management — diakses 24 November 2026.

@@ -66,5 +66,5 @@ Aturan: jawab dengan kalimat sendiri, sebutkan akun dan alasan, bukan hanya angk
 
 1. **IFRS Foundation** — *IAS 2 Inventories*. https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ — diakses 26 November 2026.
 2. **IFRS Foundation** — *IFRS 15 Revenue from Contracts with Customers*. https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/ — diakses 26 November 2026.
-3. **ASCM / APICS** — *APICS Dictionary* (cetak).
-4. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan. https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 26 November 2026.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+3. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan. https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 26 November 2026.

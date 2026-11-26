@@ -42,7 +42,7 @@ flowchart TD
 ### Kategori Tarif Pajak Standar:
 1. **Standard Rate (Tarif Standar)**: Berlaku umum untuk sebagian besar barang dan jasa komersial (misal: Indonesia menerapkan tarif 12% dengan DPP Nilai Lain 11/12, sehingga beban efektif 11%).
 2. **Zero-Rated (Tarif 0%)**: Diberlakukan untuk transaksi ekspor barang ke luar negeri guna mendorong daya saing produk nasional. Penjual tidak memungut pajak keluaran, namun tetap berhak mengkreditkan pajak masukan produksinya.
-3. **Exempt / Non-Taxable (Bebas / Bukan Objek Pajak)**: Komoditas kebutuhan pokok tertentu (misal: beras, daging mentah, jasa medis dasar) yang dibebaskan dari pungutan pajak.
+3. **Non-Taxable / Bukan Objek PPN**: Komoditas kebutuhan pokok tertentu (misal: beras, daging mentah, jasa medis dasar) yang oleh undang-undang dinyatakan **bukan objek PPN**, bukan sekadar "dibebaskan". Perbedaan ini penting: atas penyerahan yang bukan objek atau dibebaskan, PPN Masukan yang terkait **tidak dapat dikreditkan**, berbeda dari ekspor bertarif 0% yang tetap berhak mengkreditkan pajak masukan. Klasifikasi produk di master data harus memakai kode pajak yang tepat agar kredit pajak tidak salah diambil (lihat [[11-tax/vat-fundamentals|VAT Fundamentals]]).
 
 ---
 

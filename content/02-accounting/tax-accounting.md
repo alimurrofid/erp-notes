@@ -134,8 +134,7 @@ Modul perpajakan ERP menyediakan laporan **VAT Reconciliation Report** untuk mem
 
 ## References
 
-1. **IFRS Foundation**: *IAS 12 Income Taxes*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-12-income-taxes/
+1. **IFRS Foundation**: *IAS 12 Income Taxes*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-12-income-taxes/ Diakses 26 November 2026.
 2. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
 3. **PMK No. 131 Tahun 2024** — Perlakuan PPN atas Impor dan Penyerahan BKP/JKP sehubungan dengan berlakunya tarif PPN 12%. https://jdih.kemenkeu.go.id/dok/pmk-131-tahun-2024 — diakses 24 November 2026.
-4. **OECD** — *Consumption Tax Trends* (cetak; edisi daring belum terverifikasi tautannya).
-5. **Microsoft Learn** — *Indirect taxes overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview — diakses 24 November 2026.
+4. **Microsoft Learn** — *Indirect taxes overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview — diakses 24 November 2026.

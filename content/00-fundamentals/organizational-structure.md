@@ -108,8 +108,8 @@ Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-007) â€
 
 ## References
 
-1. **IFRS Foundation**: *IFRS 8 Operating Segments*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-8-operating-segments/
-2. **SAP Help Portal**: *Organizational Structures in Financial Accounting and Logistics*. URL: https://help.sap.com/
-3. **Microsoft Learn**: *Organizations and organizational hierarchies in Dynamics 365*. URL: https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies
-4. **Frappe Documentation**: *Company and Cost Center Tree Structure*. URL: https://docs.frappe.io/erpnext/user/manual/en/setting-up/company-setup
-5. **Odoo Documentation**: *Multi-company Guidelines*. URL: https://www.odoo.com/documentation/20.0/applications/general/companies.html
+1. **IFRS Foundation**: *IFRS 8 Operating Segments*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-8-operating-segments/ Diakses 26 November 2026.
+2. **SAP Help Portal**: *Organizational Structures in Financial Accounting and Logistics*. URL: https://help.sap.com/ Diakses 26 November 2026.
+3. **Microsoft Learn**: *Organizations and organizational hierarchies in Dynamics 365*. URL: https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies Diakses 26 November 2026.
+4. **Frappe Documentation**: *Company and Cost Center Tree Structure*. URL: https://docs.frappe.io/erpnext/user/manual/en/setting-up/company-setup Diakses 26 November 2026.
+5. **Odoo Documentation**: *Multi-company Guidelines*. URL: https://www.odoo.com/documentation/20.0/applications/general/companies.html Diakses 26 November 2026.

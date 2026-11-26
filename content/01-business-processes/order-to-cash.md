@@ -155,6 +155,15 @@ flowchart TD
 
 ---
 
+## Process Contract
+
+| Elemen | Isi |
+|---|---|
+| **Trigger** | PO pelanggan diterima, atau quotation berstatus `Won` dikonversi menjadi Sales Order. |
+| **Validation** | Batas kredit, ketersediaan/ATP, harga dan kode pajak, otorisasi diskon, kelengkapan data pelanggan dan alamat kirim. |
+| **Exception** | Kredit ditolak → `OnHold`; stok kurang → backorder/partial delivery; pelanggan membatalkan → `Cancelled` sebelum kirim; barang dikembalikan → retur + credit note (lihat [[01-business-processes/exception-path|Exception Path]]). |
+| **Next Process** | Penerimaan kas dan aplikasi pembayaran (AR), rekonsiliasi bank, lalu Record to Report. |
+
 ## Ringkasan Transaksi Finansial O2C
 
 Menggunakan skenario standar penjualan 10 unit barang dagang @ Rp1.000.000 (HPP @ Rp700.000/unit, PPN efektif 11%):
@@ -188,8 +197,8 @@ Menggunakan skenario standar penjualan 10 unit barang dagang @ Rp1.000.000 (HPP 
 
 ## References
 
-1. **IFRS Foundation**: *IFRS 15 Revenue from Contracts with Customers*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/
-2. **IFRS Foundation**: *IAS 2 Inventories*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/
-3. **Microsoft Learn**: *Order-to-cash end-to-end business process in Dynamics 365*. URL: https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/order-to-cash-overview
-4. **Frappe / ERPNext Documentation**: *Sales Workflow and Selling Module*. URL: https://docs.frappe.io/erpnext/user/manual/en/selling
-5. **Odoo Documentation**: *Sales Flow: Quotation to Invoicing*. URL: https://www.odoo.com/documentation/20.0/applications/sales/sales.html
+1. **IFRS Foundation**: *IFRS 15 Revenue from Contracts with Customers*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/ Diakses 26 November 2026.
+2. **IFRS Foundation**: *IAS 2 Inventories*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/ Diakses 26 November 2026.
+3. **Microsoft Learn**: *Order-to-cash end-to-end business process in Dynamics 365*. URL: https://learn.microsoft.com/en-us/dynamics365/guidance/business-processes/order-to-cash-overview Diakses 26 November 2026.
+4. **Frappe / ERPNext Documentation**: *Sales Workflow and Selling Module*. URL: https://docs.frappe.io/erpnext/user/manual/en/selling Diakses 26 November 2026.
+5. **Odoo Documentation**: *Sales Flow: Quotation to Invoicing*. URL: https://www.odoo.com/documentation/20.0/applications/sales/sales.html Diakses 26 November 2026.

@@ -96,5 +96,5 @@ Daftar istilah yang dipakai lintas modul, ditulis sebelum pembaca menemukannya d
 3. **IFRS Foundation** — *IAS 36 Impairment of Assets*. https://www.ifrs.org/issued-standards/list-of-standards/ias-36-impairment-of-assets/ — diakses 26 November 2026.
 4. **IFRS Foundation** — *IFRS 9 Financial Instruments*. https://www.ifrs.org/issued-standards/list-of-standards/ifrs-9-financial-instruments/ — diakses 26 November 2026.
 5. **IFRS Foundation** — *IFRS 15 Revenue from Contracts with Customers*. https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/ — diakses 26 November 2026.
-6. **ASCM / APICS** — *APICS Dictionary* (cetak).
-7. **Microsoft Learn** — *Ledger, subledger, and subledger journal accounting entries overview*. https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-subledger — diakses 26 November 2026.
+- ASCM. *APICS Dictionary*. https://www.ascm.org/ascm-insights/apics-dictionary/ Diakses 26 November 2026.
+6. **Microsoft Learn** — *Ledger, subledger, and subledger journal accounting entries overview*. https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-subledger — diakses 26 November 2026.

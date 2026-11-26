@@ -176,8 +176,7 @@ Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-125).
 3. **PMK No. 131 Tahun 2024** — Perlakuan PPN atas Impor dan Penyerahan BKP/JKP sehubungan dengan berlakunya tarif PPN 12%. https://jdih.kemenkeu.go.id/dok/pmk-131-tahun-2024 — diakses 24 November 2026.
 4. **PMK No. 11 Tahun 2025** — Ketentuan Nilai Lain sebagai Dasar Pengenaan Pajak dan Besaran Tertentu PPN. https://jdih.kemenkeu.go.id/dok/pmk-11-tahun-2025 — diakses 24 November 2026.
 5. **PMK No. 53 Tahun 2025** — Perubahan atas PMK No. 11 Tahun 2025 (nilai lain dan besaran tertentu PPN). https://jdih.kemenkeu.go.id/dok/pmk-53-tahun-2025 — diakses 24 November 2026.
-6. **Keputusan Menteri Keuangan tentang Nilai Kurs** — KMK mingguan sebagai dasar pelunasan bea masuk dan PPN (cetak; nomor berubah tiap minggu sehingga tautan tunggal belum terverifikasi).
-7. **PER-03/PJ/2022** — Faktur Pajak (cetak; konteks transisi e-Faktur).
-8. **Odoo 20.0 Documentation** — *Taxes* (perhitungan pajak, pajak termasuk dalam harga, pembulatan). https://www.odoo.com/documentation/20.0/applications/finance/accounting/taxes.html — diakses 24 November 2026.
-9. **ERPNext Documentation** — *Types in Tax Template* (dasar perhitungan baris pajak). https://docs.frappe.io/erpnext/types-in-tax-template — diakses 24 November 2026.
-10. **Microsoft Learn** — *Indirect taxes overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview — diakses 24 November 2026.
+6. **PER-03/PJ/2022** — Faktur Pajak (cetak; konteks transisi e-Faktur).
+7. **Odoo 20.0 Documentation** — *Taxes* (perhitungan pajak, pajak termasuk dalam harga, pembulatan). https://www.odoo.com/documentation/20.0/applications/finance/accounting/taxes.html — diakses 24 November 2026.
+8. **ERPNext Documentation** — *Types in Tax Template* (dasar perhitungan baris pajak). https://docs.frappe.io/erpnext/types-in-tax-template — diakses 24 November 2026.
+9. **Microsoft Learn** — *Indirect taxes overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview — diakses 24 November 2026.

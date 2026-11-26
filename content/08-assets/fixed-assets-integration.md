@@ -165,6 +165,5 @@ Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-076).
 
 1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment*. https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
 2. **IFRS Foundation** — *IAS 23 Borrowing Costs*. https://www.ifrs.org/issued-standards/list-of-standards/ias-23-borrowing-costs/ — diakses 24 November 2026.
-3. **SAP SE** — *FI-AA Integration*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
-5. **Fowler, M.** — *Patterns of Enterprise Application Architecture* (cetak).
+3. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+- Fowler, M. *Patterns of Enterprise Application Architecture* (2002). Addison-Wesley. ISBN 978-0-321-12742-6.

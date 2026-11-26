@@ -158,8 +158,5 @@ Keputusan desain: [[30-naventra/design-finance|Design finance]] (NAV-D-052).
 
 ## References
 
-1. **SAP SE** — *Universal Journal (ACDOCA)*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-2. **Microsoft Learn** — *Ledger, subledger, and subledger journal accounting entries overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-subledger — diakses 24 November 2026.
-3. **AFP** — *Integrated Treasury and ERP Architecture* (cetak; terbitan daring belum terverifikasi).
-4. **CIMA** — *Enterprise Governance and Inter-Departmental Control Systems* (cetak).
-5. **Fowler, M.** — *Patterns of Enterprise Application Architecture* (cetak).
+1. **Microsoft Learn** — *Ledger, subledger, and subledger journal accounting entries overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-subledger — diakses 24 November 2026.
+- Fowler, M. *Patterns of Enterprise Application Architecture* (2002). Addison-Wesley. ISBN 978-0-321-12742-6.

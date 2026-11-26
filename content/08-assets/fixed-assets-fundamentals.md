@@ -161,6 +161,5 @@ Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-075).
 
 1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment*. https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
 2. **IFRS Foundation** — *IAS 38 Intangible Assets*. https://www.ifrs.org/issued-standards/list-of-standards/ias-38-intangible-assets/ — diakses 24 November 2026.
-3. **SAP SE** — *Asset Accounting (FI-AA) Overview*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
-5. **PSAK 16** — *Aset Tetap* (cetak).
+3. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+4. **PSAK 16** — *Aset Tetap* (cetak).

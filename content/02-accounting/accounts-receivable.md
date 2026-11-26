@@ -61,13 +61,19 @@ flowchart TD
 
 ### 3. Sales Discounts (Potongan Pelunasan Dini)
 Jika pelanggan membayar lebih cepat dan memanfaatkan syarat pembayaran (misal: termin *2/10, Net 30* di mana pelanggan berhak atas diskon 2% jika melunasi dalam 10 hari):
-* Nilai Piutang: Rp11.100.000 (Dasar pengenaan diskon atas nilai barang Rp10.000.000 = diskon Rp200.000).
-* Kas Diterima: Rp10.900.000.
+* Nilai Piutang: Rp11.100.000 (DPP Rp10.000.000 + PPN Keluaran Rp1.100.000).
+* Diskon 2% atas DPP: 2% $\times$ Rp10.000.000 = Rp200.000.
+* Koreksi PPN Keluaran atas diskon: 11% $\times$ Rp200.000 = Rp22.000.
+* Kas Diterima: Rp11.100.000 − Rp200.000 − Rp22.000 = **Rp10.878.000**.
+
+> [!important] Asumsi pajak
+> Contoh mengasumsikan DPP berkurang karena diskon, sehingga PPN Keluaran dikoreksi dan faktur pajak disesuaikan. Jika diskon tidak mengubah DPP pada faktur pajak, PPN tidak dikoreksi dan kas diterima Rp10.900.000; perlakuan ini harus konsisten dengan faktur dan dikonfirmasi ke penasihat pajak.
 
 | Akun | Kategori | Debit (Rp) | Kredit (Rp) |
 |---|---|---:|---:|
-| Bank Operasional | Asset | 10.900.000 | - |
+| Bank Operasional | Asset | 10.878.000 | - |
 | Potongan Penjualan (*Sales Cash Discount*) | Contra Revenue | 200.000 | - |
+| PPN Keluaran | Liability (Contra Asset) | 22.000 | - |
 | Piutang Usaha (*Accounts Receivable*) | Asset | - | 11.100.000 |
 
 ---
@@ -132,7 +138,7 @@ Timing timbulnya piutang di ERP sangat bergantung pada kebijakan bisnis (*Policy
 
 ## References
 
-1. **IFRS Foundation**: *IFRS 9 Financial Instruments - Classification and Measurement of Financial Assets, Impairment (ECL)*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-9-financial-instruments/
-2. **IFRS Foundation**: *IFRS 15 Revenue from Contracts with Customers*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/
+1. **IFRS Foundation**: *IFRS 9 Financial Instruments - Classification and Measurement of Financial Assets, Impairment (ECL)*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-9-financial-instruments/ Diakses 26 November 2026.
+2. **IFRS Foundation**: *IFRS 15 Revenue from Contracts with Customers*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/ Diakses 26 November 2026.
 3. **Microsoft Learn** — *Accounts receivable home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/accounts-receivable — diakses 24 November 2026.
 4. **ERPNext Documentation** — *Accounts Receivable and Payable*. https://docs.frappe.io/erpnext/accounts-receivable-and-payable — diakses 24 November 2026.

@@ -93,7 +93,7 @@ flowchart TD
     E1["(1) Warehouse Operation (Picking & Packing)<br/>Status Stok: Dialokasikan (Allocated / Picked)<br/>Dampak Akuntansi: BELUM ADA (Barang masih di dalam gedung)"]
     --> E2["(2) Goods Issue / Delivery Outbound<br/>Status Stok: Berkurang dari On-Hand Gudang<br/>Dampak Akuntansi: Dr COGS, Cr Persediaan (Perpetual)"]
     --> E3["(3) Proof of Delivery (POD) / Customer Acceptance<br/>Status Hukum: Risiko dan manfaat barang beralih ke pembeli"]
-    --> E4["(4) Financial Invoice (Vendor Bill / Customer Invoice)<br/>Dampak Akuntansi: Pengakuan Piutang Usaha (AR) & Pendapatan (IFRS 15)"]
+    --> E4["(4) Customer Invoice<br/>Dampak Akuntansi: Pengakuan Piutang Usaha (AR) & Pendapatan (IFRS 15)"]
 ```
 
 * Mengambil barang dari rak (*picking*) **bukanlah** pengiriman ke pelanggan.

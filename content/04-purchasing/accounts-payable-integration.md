@@ -130,7 +130,7 @@ Bagaimana perlakuan akuntansi untuk pengadaan jasa (seperti sewa gedung atau jas
 
 ## References
 
-1. **IFRS Foundation**: *IFRS 9 Financial Instruments - Financial Liabilities at Amortised Cost (Trade Payables)*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-9-financial-instruments/
-2. **Microsoft Learn**: *Vendor invoices overview, matching, and payment processing in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/vendor-invoices-overview
-3. **Frappe / ERPNext Documentation**: *Purchase Invoice, Accounts Payable, and Payment Reconciliation*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/purchase-invoice
-4. **Odoo Documentation**: *Vendor Bills and Payment Registration*. URL: https://www.odoo.com/documentation/20.0/applications/finance/accounting/vendor_bills.html
+1. **IFRS Foundation**: *IFRS 9 Financial Instruments - Financial Liabilities at Amortised Cost (Trade Payables)*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-9-financial-instruments/ Diakses 26 November 2026.
+2. **Microsoft Learn**: *Vendor invoices overview, matching, and payment processing in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/vendor-invoices-overview Diakses 26 November 2026.
+3. **Frappe / ERPNext Documentation**: *Purchase Invoice, Accounts Payable, and Payment Reconciliation*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts/purchase-invoice Diakses 26 November 2026.
+4. **Odoo Documentation**: *Vendor Bills and Payment Registration*. URL: https://www.odoo.com/documentation/20.0/applications/finance/accounting/vendor_bills.html Diakses 26 November 2026.

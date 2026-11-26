@@ -68,11 +68,14 @@ Tidak ada satu formula tunggal yang berlaku mutlak sebagai hukum universal bagi 
 ### Skenario Dasar:
 Misalkan kondisi persediaan untuk komponen Laptop Pro di Gudang Utama:
 * $\text{On-Hand} = 100 \text{ unit}$
-* $\text{Reserved (Sales Order terkonfirmasi)} = 30 \text{ unit}$
+* $\text{Reserved (Sales Order terkonfirmasi, belum di-pick)} = 30 \text{ unit}$
 * $\text{Allocated (Pick list aktif di lantai gudang)} = 20 \text{ unit}$
 * $\text{Quarantine (Menunggu uji QC)} = 10 \text{ unit}$
 * $\text{Blocked (Kerusakan fisik)} = 5 \text{ unit}$
 * $\text{On-Order (PO ke PT Sumber Teknologi)} = 40 \text{ unit}$
+
+> [!note] Taksonomi kuantitas pada skenario ini
+> *Reserved* dan *Allocated* adalah **dua tahap komitmen yang berbeda**, bukan himpunan bagian: 30 unit sudah dijanjikan ke Sales Order tetapi belum diambil, dan 20 unit sudah masuk *pick list* untuk pengiriman. Total komitmen = **50 unit**. Jika ERP Anda mendefinisikan *Allocated* sebagai bagian dari *Reserved*, gunakan angka *Reserved* tunggal (50 unit) dan jangan mengurangi unsur yang sama dua kali.
 
 ---
 
@@ -80,14 +83,14 @@ Misalkan kondisi persediaan untuk komponen Laptop Pro di Gudang Utama:
 
 #### 1. Kebijakan Konservatif (Strict Physical Availability)
 Hanya memperhitungkan stok fisik yang sempurna dan benar-benar belum terikat komitmen sama sekali:
-$$\text{Available} = \text{On-Hand} - \text{Reserved} - \text{Allocated} - \text{Quarantine} - \text{Blocked}$$
-$$\text{Available} = 100 - 30 - 20 - 10 - 5 = \mathbf{35 \text{ unit}}$$
+$$\text{Available} = \text{On-Hand} - (\text{Reserved} + \text{Allocated}) - \text{Quarantine} - \text{Blocked}$$
+$$\text{Available} = 100 - (30 + 20) - 10 - 5 = \mathbf{35 \text{ unit}}$$
 * *Karakteristik*: Mencegah risiko *backorder* sekecil apa pun; sangat cocok untuk bisnis retail dan *same-day delivery*.
 
 #### 2. Kebijakan Operasional Standar (Operational Usable Stock)
-Jika sistem telah memisahkan kuantitas *Allocated* sebagai bagian dari *Reserved*, atau barang rusak telah dipindahkan ke lokasi virtual non-stok:
-$$\text{Available} = \text{On-Hand Usable} - \text{Reserved}$$
-$$\text{Available} = 85 - 50 = \mathbf{35 \text{ unit}}$$
+Jika barang rusak dan karantina telah dipindahkan ke lokasi virtual non-stok, sehingga *on-hand usable* = 100 − 10 − 5 = 85 unit:
+$$\text{Available} = \text{On-Hand Usable} - (\text{Reserved} + \text{Allocated})$$
+$$\text{Available} = 85 - (30 + 20) = \mathbf{35 \text{ unit}}$$
 
 #### 3. Kebijakan Prospektif / Available-to-Promise (ATP)
 Memperhitungkan pasokan masa depan yang sudah memiliki komitmen tanggal pasti dari pemasok (*Inbound PO*):

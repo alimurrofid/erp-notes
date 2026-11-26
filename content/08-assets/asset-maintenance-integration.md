@@ -127,7 +127,8 @@ PT Maju Bersama memantau riwayat pemeliharaan **Mesin Perakitan Laptop Pro** (`A
 - Mesin mengalami 6 kali mogok mendadak (*unplanned downtime*) dengan total waktu henti 120 jam kerja pabrik.
 - Perbaikan darurat, pergantian kartu pengendali elektronik, dan jasa teknisi panggilan vendor menghabiskan biaya sebesar **Rp18.500.000** dalam satu tahun saja.
 - **Analisis Sistem ERP**:
-  $$\frac{\text{Biaya Perawatan Tahun 2029 (Rp18.500.000)}}{\text{Sisa Nilai Buku Bersih akhir 2029 (Rp37.500.000)}} = 49,3\%$$
+  $$\frac{\text{Biaya Perawatan Tahun 2029 (Rp18.500.000)}}{\text{Nilai Buku Bersih akhir 2029 (Rp37.500.000)}} = 49,3\%$$
+  *Nilai buku dihitung dari jadwal kanonik `AST-MAC-2026-0001`: perolehan Rp120.000.000, residu Rp10.000.000, umur 60 bulan, penyusutan Rp1.833.333/bulan. Sampai 31 Desember 2029 (45 bulan) akumulasi Rp82.500.000, sehingga nilai buku Rp37.500.000.*
 - Sistem secara otomatis menandai mesin dengan status peringatan merah (*High Maintenance Drag Alert*).
 - Manajer Produksi dan CFO memutuskan untuk **tidak memperpanjang masa manfaat mesin** dan memasukkannya ke dalam proposal anggaran belanja modal (*CAPEX Plan*) Tahun 2030 untuk digantikan dengan mesin generasi terbaru.
 
@@ -155,7 +156,6 @@ Keputusan desain: [[30-naventra/design-assets|Design assets]] (NAV-D-068).
 ## References
 
 1. **IFRS Foundation** — *IAS 16 Property, Plant and Equipment* (paragraf 12–14: servicing harian vs inspeksi besar). https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/ — diakses 24 November 2026.
-2. **ISO 55000** — *Asset Management — Overview, Principles and Terminology* (cetak; standar berbayar).
-3. **SAP SE** — *PM–FI-AA Integration*: halaman Help S/4HANA spesifik belum terverifikasi [belum terverifikasi].
-4. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
-5. **Wireman, T.** — *Developing Performance Indicators for Managing Maintenance*, edisi ke-2 (cetak).
+- ISO. *ISO 55000:2014 — Asset management — Overview, principles and terminology*. https://www.iso.org/standard/55088.html Diakses 26 November 2026.
+2. **Microsoft Learn** — *Fixed assets home page* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-assets — diakses 24 November 2026.
+- Wireman, T. *Developing Performance Indicators for Managing Maintenance* (2nd ed., 2005). Industrial Press. ISBN 0-8311-3184-5.

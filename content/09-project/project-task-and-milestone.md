@@ -188,8 +188,7 @@ Keputusan desain: [[30-naventra/design-project|Design project]] (NAV-D-093).
 
 ## References
 
-1. **PMI** — *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (deliverables dan milestones) (cetak).
-2. **SAP SE** — *Milestones and Billing Plans*: halaman Help spesifik belum terverifikasi [belum terverifikasi].
-3. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
-4. **ERPNext Documentation** — *Task*. https://docs.frappe.io/erpnext/task — diakses 24 November 2026.
-5. **IFRS Foundation** — *IFRS 15 Revenue from Contracts with Customers* (performance obligation terpenuhi pada titik waktu). https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/ — diakses 24 November 2026.
+- Project Management Institute. *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (6th ed., 2017). PMI. ISBN 978-1-62825-392-4.
+1. **Microsoft Learn** — *Project Operations* (Dynamics 365). https://learn.microsoft.com/en-us/dynamics365/project-operations/ — diakses 24 November 2026.
+2. **ERPNext Documentation** — *Task*. https://docs.frappe.io/erpnext/task — diakses 24 November 2026.
+3. **IFRS Foundation** — *IFRS 15 Revenue from Contracts with Customers* (performance obligation terpenuhi pada titik waktu). https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/ — diakses 24 November 2026.

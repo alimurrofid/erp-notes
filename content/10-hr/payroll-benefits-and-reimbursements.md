@@ -10,7 +10,19 @@ title: Payroll Benefits and Reimbursements
 
 Di dalam arsitektur ERP, pengelolaan antara **Kompensasi Gaji (Remuneration)** dan **Penggantian Biaya Operasional (Reimbursement)** lazimnya dibedakan:
 - **Salary / Remunerasi**: Pembayaran imbalan atas jasa kerja pegawai yang umumnya merupakan penghasilan bruto objek pajak (*Taxable Employee Income*) dan dibukukan sebagai beban kompensasi pegawai (*Salaries Expense*).
-- **Reimbursement**: Klaim dinas sebaiknya dikelola melalui channel reimbursement/expense terpisah dari remuneration payroll apabila organisasi memerlukan pemisahan tersebut. Pengembalian biaya operasional yang sah yang ditalangi pegawai umumnya bukan merupakan penghasilan kena pajak karyawan, dan perlakuan akuntansi serta perpajakannya mengikuti kebijakan organisasi dan ketentuan peraturan yang berlaku. Pembayaran dapat disalurkan melalui modul Accounts Payable (AP) maupun melalui baris *non-taxable reimbursement* terpisah pada siklus penggajian.
+- **Reimbursement**: Klaim dinas sebaiknya dikelola melalui channel reimbursement/expense terpisah dari remuneration payroll apabila organisasi memerlukan pemisahan tersebut. Pengembalian biaya operasional yang sah yang ditalangi pegawai bukan penghasilan kena pajak karyawan **selama merupakan penggantian biaya aktual dengan bukti**, bukan imbalan atas jasa. Pembayaran dapat disalurkan melalui modul Accounts Payable (AP) maupun melalui baris *non-taxable reimbursement* terpisah pada siklus penggajian.
+
+### Batas Pajak: Reimbursement vs Tunjangan
+
+| Bentuk pembayaran | Sifat | Perlakuan PPh 21 | Syarat |
+|---|---|---|---|
+| Penggantian biaya aktual (perjalanan, akomodasi, transport dinas) | Reimbursement | **Bukan penghasilan**; tidak dipotong PPh 21 | Ada bukti/kuitansi dan sesuai kebijakan; bukan pembayaran tunai bebas |
+| Tunjangan tetap (transport allowance, meal allowance) | Remunerasi | **Penghasilan bruto**; objek PPh 21 | Dibayar rutin tanpa bukti pemakaian |
+| Kelebihan reimbursement di atas kebijakan | Remunerasi/benefit | Bagian kelebihan menjadi penghasilan; objek PPh 21 | Selisih di atas plafon harus dipisahkan |
+| Natura/fasilitas (mobil, perumahan, BPJS tambahan) | Benefit | Diatur PMK 66/2023; sebagian dikecualikan, sebagian menjadi objek PPh 21 | Nilai pasar dan batas pengecualian harus dihitung |
+
+> [!warning] Bukti menentukan, bukan nama akun
+> Menamai pembayaran "reimbursement" tidak otomatis membebaskannya dari PPh 21. Jika tidak ada bukti biaya aktual atau nilainya melebihi kebijakan, bagian tersebut adalah penghasilan. Konfirmasi perlakuan natura dan reimbursement ke penasihat pajak; aturan dapat berubah.
 
 ---
 
@@ -181,8 +193,8 @@ Keputusan desain: [[30-naventra/design-hr|Design hr]] (NAV-D-106).
 ## References
 
 1. **IFRS Foundation** — *IAS 19 Employee Benefits*. https://www.ifrs.org/issued-standards/list-of-standards/ias-19-employee-benefits/ — diakses 24 November 2026.
-2. **SHRM** — *Designing Competitive Employee Benefits and Travel Policies* (cetak).
-3. **SAP Help Portal** — *Travel and Expense Management*: halaman spesifik belum terverifikasi [belum terverifikasi].
+2. **PMK No. 168 Tahun 2023** — Petunjuk Pelaksanaan Pemotongan PPh Pasal 21. https://jdih.kemenkeu.go.id/dok/pmk-168-tahun-2023 — diakses 26 November 2026.
+3. **PMK No. 66 Tahun 2023** — Perlakuan Pajak Penghasilan atas Penggantian atau Imbalan sehubungan dengan Pekerjaan atau Jasa yang Diterima atau Diperoleh dalam Bentuk Natura dan/atau Kenikmatan. https://jdih.kemenkeu.go.id/dok/pmk-66-tahun-2023 — diakses 26 November 2026.
 4. **Microsoft Learn** — *Dynamics 365 Human Resources*. https://learn.microsoft.com/en-us/dynamics365/human-resources/ — diakses 24 November 2026.
 5. **Frappe HR Documentation** — *HR*. https://docs.frappe.io/hr — diakses 24 November 2026.
 6. **Odoo 20.0 Documentation** — *Human resources*. https://www.odoo.com/documentation/20.0/applications/hr.html — diakses 24 November 2026.

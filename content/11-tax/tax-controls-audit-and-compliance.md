@@ -141,5 +141,5 @@ Keputusan desain: [[30-naventra/design-tax|Design tax]] (NAV-D-118).
 2. **UU No. 7 Tahun 2021** — Harmonisasi Peraturan Perpajakan (UU HPP). https://peraturan.go.id/id/uu-no-7-tahun-2021 — diakses 24 November 2026.
 3. **PMK No. 17/PMK.03/2013** — Tata Cara Pemeriksaan Pajak, sebagaimana diubah dengan PMK No. 18/PMK.03/2021 (cetak; tautan JDIH belum terverifikasi).
 4. **SE-05/PJ/2022** — Pengawasan Kepatuhan Wajib Pajak (cetak; tautan resmi belum terverifikasi).
-5. **COSO** — *Internal Control — Integrated Framework* (2013) (cetak).
-6. **PMK No. 81 Tahun 2024** — Ketentuan Perpajakan dalam rangka Pelaksanaan Coretax. https://jdih.kemenkeu.go.id/dok/pmk-81-tahun-2024 — diakses 24 November 2026.
+- COSO. *Internal Control — Integrated Framework* (2013). https://www.coso.org/guidance-on-ic Diakses 26 November 2026.
+5. **PMK No. 81 Tahun 2024** — Ketentuan Perpajakan dalam rangka Pelaksanaan Coretax. https://jdih.kemenkeu.go.id/dok/pmk-81-tahun-2024 — diakses 24 November 2026.

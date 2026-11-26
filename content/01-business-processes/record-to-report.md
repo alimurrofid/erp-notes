@@ -134,6 +134,15 @@ flowchart TD
 
 ---
 
+## Process Contract
+
+| Elemen | Isi |
+|---|---|
+| **Trigger** | Kalender tutup buku periode (bulanan/tahunan) atau permintaan pelaporan interim. |
+| **Validation** | Rekonsiliasi subledger–GL, rekonsiliasi bank, kelengkapan akrual/amortisasi, rekonsiliasi PPN dan PPh, saldo akun suspense. |
+| **Exception** | Dokumen belum diposting → lengkapi atau akru; selisih bank → rekonsiliasi; kesalahan periode lalu → koreksi retrospektif jika material (lihat [[01-business-processes/exception-path|Exception Path]]). |
+| **Next Process** | Penyusunan laporan keuangan, konsolidasi, audit, dan publikasi. |
+
 ## Ringkasan Transaksi Finansial R2R Akhir Periode
 
 Contoh pos-pos jurnal penyesuaian bulanan tipikal dalam R2R:
@@ -161,8 +170,8 @@ Dalam struktur korporasi dengan banyak anak perusahaan (lihat [[00-fundamentals/
 
 ## References
 
-1. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/
-2. **IFRS Foundation**: *IAS 21 The Effects of Changes in Foreign Exchange Rates*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-21-the-effects-of-changes-in-foreign-exchange-rates/
-3. **Microsoft Learn**: *Financial close process in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-period-close-workspace
-4. **Frappe / ERPNext Documentation**: *Accounts Closing, Period Closing Voucher, and Financial Reports*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts
-5. **Odoo Documentation**: *Fiscal Year and Accounting Closing Guidelines*. URL: https://www.odoo.com/documentation/20.0/applications/finance/accounting/reporting/year_end.html
+1. **IFRS Foundation**: *IAS 1 Presentation of Financial Statements*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/ Diakses 26 November 2026.
+2. **IFRS Foundation**: *IAS 21 The Effects of Changes in Foreign Exchange Rates*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-21-the-effects-of-changes-in-foreign-exchange-rates/ Diakses 26 November 2026.
+3. **Microsoft Learn**: *Financial close process in Dynamics 365 Finance*. URL: https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-period-close-workspace Diakses 26 November 2026.
+4. **Frappe / ERPNext Documentation**: *Accounts Closing, Period Closing Voucher, and Financial Reports*. URL: https://docs.frappe.io/erpnext/user/manual/en/accounts Diakses 26 November 2026.
+5. **Odoo Documentation**: *Fiscal Year and Accounting Closing Guidelines*. URL: https://www.odoo.com/documentation/20.0/applications/finance/accounting/reporting/year_end.html Diakses 26 November 2026.

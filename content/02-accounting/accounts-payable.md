@@ -96,14 +96,19 @@ Saat tagihan jatuh tempo dan pembayaran dieksekusi via transfer perbankan:
 
 ### 5. Purchase Discounts (Diskon Pelunasan Lebih Cepat)
 Jika perusahaan memanfaatkan diskon pembayaran dini dari pemasok (misal: termin *2/10, Net 30*):
-* Nilai Utang Dihapus: Rp7.770.000
-* Diskon 2% atas DPP barang (2% $\times$ Rp7.000.000 = Rp140.000)
-* Kas Dibayarkan: Rp7.630.000
+* Nilai Utang Dihapus: Rp7.770.000 (DPP Rp7.000.000 + PPN Masukan Rp770.000)
+* Diskon 2% atas DPP barang: 2% $\times$ Rp7.000.000 = Rp140.000
+* Koreksi PPN Masukan atas diskon: 11% $\times$ Rp140.000 = Rp15.400
+* Kas Dibayarkan: Rp7.770.000 − Rp140.000 − Rp15.400 = **Rp7.614.600**
+
+> [!important] Asumsi pajak
+> Contoh ini mengasumsikan **DPP berkurang** karena diskon pelunasan, sehingga PPN Masukan ikut dikoreksi. Jika kontrak menetapkan diskon sebagai pengurang harga jual setelah PPN dihitung (nilai faktur tidak berubah), PPN tidak dikoreksi dan kas dibayarkan Rp7.630.000; pilih satu perlakuan sesuai faktur pajak dan konfirmasi ke penasihat pajak.
 
 | Akun | Kategori | Debit (Rp) | Kredit (Rp) |
 |---|---|---:|---:|
 | Utang Usaha (*Accounts Payable*) | Liability | 7.770.000 | - |
-| Bank Operasional | Asset | - | 7.630.000 |
+| Bank Operasional | Asset | - | 7.614.600 |
+| PPN Masukan | Asset (Contra Liability) | - | 15.400 |
 | Diskon Pembelian / Pengurang Biaya | Income / Contra Expense | - | 140.000 |
 
 ---
@@ -141,7 +146,7 @@ Data ini menjadi input langsung modul Treasury untuk membuat proposal pembayaran
 
 ## References
 
-1. **IFRS Foundation**: *IFRS 9 Financial Instruments - Financial Liabilities at Amortised Cost*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-9-financial-instruments/
-2. **IFRS Foundation**: *IAS 37 Provisions, Contingent Liabilities and Contingent Assets*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-37-provisions-contingent-liabilities-and-contingent-assets/
+1. **IFRS Foundation**: *IFRS 9 Financial Instruments - Financial Liabilities at Amortised Cost*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-9-financial-instruments/ Diakses 26 November 2026.
+2. **IFRS Foundation**: *IAS 37 Provisions, Contingent Liabilities and Contingent Assets*. URL: https://www.ifrs.org/issued-standards/list-of-standards/ias-37-provisions-contingent-liabilities-and-contingent-assets/ Diakses 26 November 2026.
 3. **Microsoft Learn** — *Configure Accounts payable overview* (Dynamics 365 Finance). https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/accounts-payable-overview — diakses 24 November 2026.
 4. **ERPNext Documentation** — *Accounts Receivable and Payable*. https://docs.frappe.io/erpnext/accounts-receivable-and-payable — diakses 24 November 2026.
