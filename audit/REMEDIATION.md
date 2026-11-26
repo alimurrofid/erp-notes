@@ -80,6 +80,7 @@ Legenda: **Fixed** = materi sudah diperbaiki dan diverifikasi. **Partial** = seb
 | STR-01 | Artikel implementasi SAP S/4HANA 2025: Universal Journal/ACDOCA, Material Ledger wajib, Actual Costing opsional, titik posting, caveat | `20-software/sap-s4hana/` |
 | TAX-04/05 (lanjutan) | Artikel PPh 21/22 sebagai jembatan Payroll–Procurement; tarif tidak diduplikasi; indeks 11-tax diperbarui dan label PPN 11% → efektif 11% | `11-tax/pph-21-and-22.md`, `11-tax/index.md` |
 | LRN-03 | **140 soal** (10 per section, 14 section) + kunci terpisah | `00-orientation/section-exercises*.md` |
+| LRN-05 | Learning path diselaraskan dengan 14 section (PROC, HR, tax, SAP); capstone diperluas ke manufacturing/aset/proyek/payroll; kunci jawaban diberi alasan dan rubrik penilaian | `00-orientation/learning-path.md`, `capstone*.md`, `*answer-key.md` |
 | PROC-01/02 | Dua artikel proses kanonik | `01-business-processes/document-lifecycle.md`, `exception-path.md` |
 
 ## Fixed — Referensi
