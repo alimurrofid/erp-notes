@@ -14,7 +14,7 @@ Dalam sistem ERP enterprise, componentization dimodelkan melalui hierarki hubung
 
 ```mermaid
 graph TD
-    Parent["Aset Induk: Lini Perakitan Mesin Laptop (Rp120 Juta)<br/>[Main Asset: AST-MAC-001]"]
+    Parent["Aset Induk: Lini Perakitan Mesin Laptop (Rp120 Juta)<br/>[Main Asset: AST-MAC-2026-0003]"]
     C1["Komponen 1: Rangka & Konveyor Mekanikal (Rp70 Juta)<br/>Masa Manfaat: 10 Tahun (Sub-No: .01)"]
     C2["Komponen 2: Robot SMT Placement Head (Rp35 Juta)<br/>Masa Manfaat: 3 Tahun (Sub-No: .02)"]
     C3["Komponen 3: Unit Kamera Inspeksi Optik (Rp15 Juta)<br/>Masa Manfaat: 5 Tahun (Sub-No: .03)"]
@@ -112,24 +112,24 @@ Pemasangan unit SMT Head baru berkecepatan tinggi seharga Rp40.000.000:
 
 ## Example: Dekomposisi Mesin Perakitan di PT Maju Bersama
 
-Pada saat pengadaan mesin perakitan Laptop Pro senilai total **Rp120.000.000**, Finance Controller PT Maju Bersama memutuskan membagi aset menjadi 3 komponen utama berdasarkan rekomendasi teknis:
+Pada saat pengadaan mesin perakitan Laptop Pro senilai total **Rp120.000.000**, Finance Controller PT Maju Bersama memutuskan membagi aset menjadi 3 komponen utama berdasarkan rekomendasi teknis. Skenario ini memakai aset terpisah **`AST-MAC-2026-0003`** agar tidak bertabrakan dengan jadwal satu-umur `AST-MAC-2026-0001` di artikel lain.
 
 ### 1. Struktur Komponen Awal (Tahun 0)
 
 | Sub-Nomor Aset | Nama Komponen Mesin | Nilai Perolehan (IDR) | Masa Manfaat | Metode Depresiasi | Beban Depresiasi Tahunan (IDR) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `AST-MAC-001.01` | Rangka Utama & Konveyor Mekanis | 70.000.000 | 10 Tahun (120 bln) | Garis Lurus (Residu Rp10M) | 6.000.000 |
-| `AST-MAC-001.02` | SMT Precision Robotic Head | 35.000.000 | 3 Tahun (36 bln) | Garis Lurus (Residu Rp5M) | 10.000.000 |
-| `AST-MAC-001.03` | Unit Kamera Inspeksi Optik (AOI) | 15.000.000 | 5 Tahun (60 bln) | Garis Lurus (Residu Rp5M) | 2.000.000 |
+| `AST-MAC-2026-0003.01` | Rangka Utama & Konveyor Mekanis | 70.000.000 | 10 Tahun (120 bln) | Garis Lurus (Residu Rp10M) | 6.000.000 |
+| `AST-MAC-2026-0003.02` | SMT Precision Robotic Head | 35.000.000 | 3 Tahun (36 bln) | Garis Lurus (Residu Rp5M) | 10.000.000 |
+| `AST-MAC-2026-0003.03` | Unit Kamera Inspeksi Optik (AOI) | 15.000.000 | 5 Tahun (60 bln) | Garis Lurus (Residu Rp5M) | 2.000.000 |
 | **Total Aset Induk** | **Mesin Perakitan Laptop Pro** | **120.000.000** | — | — | **18.000.000 / tahun** |
 
 ### 2. Peristiwa Bisnis di Akhir Tahun ke-3
-- Komponen `AST-MAC-001.02` (SMT Head) telah disusutkan penuh selama 3 tahun hingga mencapai nilai residunya (Rp5.000.000).
+- Komponen `AST-MAC-2026-0003.02` (SMT Head) telah disusutkan penuh selama 3 tahun hingga mencapai nilai residunya (Rp5.000.000).
 - Tim teknik mengganti kepala robot tersebut dengan model generasi baru senilai **Rp42.000.000** dengan masa manfaat 4 tahun.
 - Unit lama dijual sebagai besi tua khusus seharga Rp4.000.000.
 - Hasil Akuntansi di ERP:
   - Komponen lama dihapusbukukan: Mengakui kas Rp4.000.000, menghapus nilai buku Rp5.000.000, mencatat Rugi Pelepasan Rp1.000.000.
-  - Komponen baru didaftarkan sebagai sub-nomor `AST-MAC-001.04` senilai Rp42.000.000 dengan masa manfaat 4 tahun (beban depresiasi baru Rp10.500.000 per tahun).
+  - Komponen baru didaftarkan sebagai sub-nomor `AST-MAC-2026-0003.04` senilai Rp42.000.000 dengan masa manfaat 4 tahun (beban depresiasi baru Rp10.500.000 per tahun).
   - Rangka utama (`.01`) dan kamera (`.03`) terus berjalan dengan jadwal depresiasinya masing-masing tanpa terganggu.
 
 ---
