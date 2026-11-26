@@ -52,6 +52,9 @@ jobs:
       - name: Validate reference URLs
         run: node .agents/scripts/check-urls.mjs
 
+      - name: Audit dependencies (critical only)
+        run: npm run check:deps
+
   build:
     needs: validate
     runs-on: ubuntu-latest

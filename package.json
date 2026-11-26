@@ -17,6 +17,7 @@
     "check:urls": "node .agents/scripts/check-urls.mjs",
     "check:urls:strict": "node .agents/scripts/check-urls.mjs --strict",
     "check:structure": "node .agents/scripts/check-structure.mjs",
+    "check:deps": "npm audit --audit-level=critical",
     "check:content": "npm run check:links && npm run check:frontmatter && npm run check:mermaid && npm run check:structure && npm run check:refs"
   },
   "engines": {

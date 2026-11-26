@@ -30,6 +30,9 @@ export default (() => {
     // Url of current page
     const socialUrl =
       fileData.slug === "404" ? url.toString() : joinSegments(url.toString(), fileData.slug!)
+    // Folder index pages are emitted as <folder>/index.html; the public URL is
+    // <folder>/ so the canonical link must not include the trailing "index".
+    const canonicalUrl = socialUrl.replace(/\/index$/, "/")
 
     const usesCustomOgImage = ctx.cfg.plugins.emitters.some(
       (e) => e.name === CustomOgImagesEmitterName,
@@ -82,6 +85,7 @@ export default (() => {
           </>
         )}
 
+        <link rel="canonical" href={canonicalUrl} />
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />

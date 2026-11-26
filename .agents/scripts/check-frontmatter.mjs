@@ -88,8 +88,33 @@ for (const file of files) {
   }
 
   const reviewed = keys.get("reviewed");
-  if (reviewed && !/^\d{4}-\d{2}-\d{2}$/.test(reviewed.replace(/^["']|["']$/g, ""))) {
-    errors.push(`${rel}: invalid reviewed "${reviewed}" (expected YYYY-MM-DD)`);
+  if (reviewed) {
+    const value = reviewed.replace(/^["']|["']$/g, "");
+    const parsed = new Date(`${value}T00:00:00Z`);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(value) || Number.isNaN(parsed.getTime())) {
+      errors.push(`${rel}: invalid reviewed "${reviewed}" (expected YYYY-MM-DD)`);
+    }
+  }
+
+  const sources = keys.get("sources");
+  if (sources !== undefined && !/^\d+$/.test(sources.replace(/^["']|["']$/g, ""))) {
+    errors.push(`${rel}: invalid sources "${sources}" (expected a non-negative integer)`);
+  }
+
+  const softwareVersion = keys.get("software_version");
+  if (softwareVersion !== undefined && softwareVersion.replace(/^["']|["']$/g, "").trim() === "") {
+    errors.push(`${rel}: empty software_version`);
+  }
+
+  const tags = keys.get("tags");
+  if (tags !== undefined) {
+    const inline = /^\[.*\]$/.test(tags);
+    const fmLines = lines.slice(1, end);
+    const idx = fmLines.findIndex((l) => /^tags:\s*$/.test(l));
+    const block = idx !== -1 && /^\s+-\s+\S+/.test(fmLines[idx + 1] ?? "");
+    if (!inline && !block) {
+      warnings.push(`${rel}: "tags" should be a list (inline [a, b] or block "- tag")`);
+    }
   }
 }
 

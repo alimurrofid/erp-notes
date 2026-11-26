@@ -81,7 +81,15 @@ for (const file of files) {
   }
 
   if (names.includes("Naventra Consideration") && !isNaventra) {
-    naventraFiles.push(rel);
+    // NAV-01 keeps a single reference line in concept articles; only flag a
+    // section that still carries a full design block.
+    const navIdx = names.indexOf("Naventra Consideration")
+    const navStart = headings[navIdx].i
+    const navEnd = navIdx + 1 < headings.length ? headings[navIdx + 1].i : lines.length
+    const navLines = lines
+      .slice(navStart + 1, navEnd)
+      .filter((l) => l.trim() !== "" && !/^-{3,}$/.test(l.trim()))
+    if (navLines.length > 1) naventraFiles.push(rel)
   }
 
   if (isSoftware) {

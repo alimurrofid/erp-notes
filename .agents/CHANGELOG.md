@@ -2,6 +2,31 @@
 
 Perubahan pada aturan, skill, workflow, dan validasi. Bukan changelog konten.
 
+## 2026-11-26 — v1.1
+
+### Added
+
+- `quartz/plugins/emitters/robots.ts` — `robots.txt` di root situs dengan URL sitemap.
+- `npm run check:deps` — gate `npm audit --audit-level=critical`, dijalankan di CI.
+- Validasi frontmatter untuk `status`, `reviewed`, `sources`, `software_version`, dan bentuk `tags`.
+- `check:references` mengenali ISBN sebagai identitas dan menghitung entri ber-URL tanpa tanggal akses; strict gagal jika ada.
+
+### Changed
+
+- `quartz/components/Head.tsx` — menambahkan `<link rel="canonical">`; folder index memakai URL tanpa `/index`.
+- `check:structure` — peringatan Naventra hanya muncul jika section masih memuat blok desain, bukan satu baris rujukan.
+
+### Decided
+
+- ISBN dianggap identitas yang dapat ditelusuri (setara DOI/nomor standar).
+- Entri referensi yang tidak dapat diverifikasi dihapus, bukan dipertahankan sebagai sitasi palsu.
+- `blocked` (403) tidak dianggap URL mati; `dead`/`error` tetap menggagalkan strict.
+
+### Known Warnings
+
+- `check:urls`: 12 URL blocked (ISO, OECD, ILO, APQC) karena proteksi bot.
+- `npm audit`: 8 kerentanan tersisa (0 critical).
+
 ## 2026-11-23 — v1.0
 
 ### Added
