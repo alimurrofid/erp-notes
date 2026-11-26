@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
-    "build": "npx quartz build",
-    "serve": "npx quartz build --serve",
+    "build": "node .agents/scripts/generate-lesson-order.mjs && npx quartz build",
+    "serve": "node .agents/scripts/generate-lesson-order.mjs && npx quartz build --serve",
     "check": "tsc --noEmit",
     "check:links": "node .agents/scripts/check-links.mjs",
     "check:frontmatter": "node .agents/scripts/check-frontmatter.mjs",
@@ -18,7 +18,9 @@
     "check:urls:strict": "node .agents/scripts/check-urls.mjs --strict",
     "check:structure": "node .agents/scripts/check-structure.mjs",
     "check:deps": "npm audit --audit-level=critical",
-    "check:content": "npm run check:links && npm run check:frontmatter && npm run check:mermaid && npm run check:structure && npm run check:refs"
+    "check:content": "npm run check:lesson-order && npm run check:links && npm run check:frontmatter && npm run check:mermaid && npm run check:structure && npm run check:refs",
+    "lesson-order": "node .agents/scripts/generate-lesson-order.mjs",
+    "check:lesson-order": "node .agents/scripts/generate-lesson-order.mjs --check"
   },
   "engines": {
     "npm": ">=10.9.2",

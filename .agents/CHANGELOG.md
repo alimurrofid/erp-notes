@@ -2,6 +2,31 @@
 
 Perubahan pada aturan, skill, workflow, dan validasi. Bukan changelog konten.
 
+## 2026-11-26 — v1.2
+
+### Added
+
+- `quartz/components/LessonNav.tsx` — tombol Sebelumnya/Berikutnya di bawah setiap halaman, plus tautan kembali ke learning path.
+- `.agents/scripts/generate-lesson-order.mjs` — menghasilkan `quartz/generated/lessonOrder.ts` dari urutan tautan di index section.
+- `npm run check:lesson-order` — gagal jika urutan materi tidak sinkron dengan index.
+
+### Changed
+
+- **Penomoran section digeser** agar tidak ada dua folder `00`:
+  `00-fundamentals` → `01-fundamentals`, `01-business-processes` → `02-business-processes`,
+  `02-accounting` → `03-accounting`, `03-sales` → `04-sales`, `04-purchasing` → `05-purchasing`,
+  `05-inventory` → `06-inventory`, `06-manufacturing` → `07-manufacturing`, `07-finance` → `08-finance`,
+  `08-assets` → `09-assets`, `09-project` → `10-project`, `10-hr` → `11-hr`, `11-tax` → `12-tax`.
+  `00-orientation` tetap sebagai satu-satunya folder `00`.
+- Seluruh wiki link, path audit, aturan agent, dan label Explorer diperbarui.
+- `npm run build` dan `npm run serve` menjalankan generator urutan materi lebih dulu.
+- `check:content` sekarang juga memeriksa kesegaran urutan materi.
+
+### Notes
+
+- URL publik berubah mengikuti nama folder baru (mis. `/02-accounting/...` → `/03-accounting/...`). Tidak ada redirect lama; situs ini bukan rujukan eksternal yang stabil.
+- Urutan Next/Prev mengikuti urutan tautan di index section, bukan alfabetis.
+
 ## 2026-11-26 — v1.1
 
 ### Added
