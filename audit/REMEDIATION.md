@@ -80,8 +80,8 @@ Seluruh item konten sudah diterapkan dan dipindahkan ke tabel **Fixed** di atas.
 
 | ID | Kebutuhan |
 |---|---|
-| STR-01 / SW-01 | Artikel implementasi per produk |
-| LRN-03 | Latihan per section (10–15 soal) |
+| STR-01 | Artikel implementasi SAP S/4HANA (belum ada sumber yang dapat diverifikasi) |
+| LRN-03 (sisa) | 10–15 soal per section; versi sekarang 40 soal lintas section |
 | PROC-01 / PROC-02 | Document lifecycle dan exception path |
 | ACC-16 … ACC-22, ACC-24, ACC-25 | NRV, normal capacity, availability taxonomy, MRP grid, discount VAT, komisi, restatement, LIFO rationale |
 | INV-01 … INV-04, INV-06, INV-07, INV-09 … INV-13, INV-15 | Akun bahan baku, WIP conversion, ROP, diagram, UOM, klaim Odoo/D365, kapasitas, yield, traceability |
