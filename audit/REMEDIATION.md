@@ -42,6 +42,7 @@ Legenda: **Fixed** = materi sudah diperbaiki. **Open** = belum. **Invalid** = te
 | LRN-04 | Capstone + kunci jawaban terpisah | `00-orientation/capstone*.md` |
 | LRN-03 | 40 soal lintas section + kunci | `00-orientation/exercises.md` |
 | NAV-02 | Requirements → functional → technical → implementation + traceability NAV-R | `30-naventra/` |
+| NAV-01 | 119 blok desain diekstrak ke `30-naventra/design-*` dengan ID NAV-D-001…130; artikel konsep menyisakan satu baris rujukan | `30-naventra/`, 119 artikel |
 | SW-01 | Artikel implementasi Odoo 20, ERPNext 16, D365 10.0 (SAP belum) | `20-software/*/` |
 | UX-02 | Label Mermaid di kutip / tanda baca dihapus | 10 file diagram |
 
@@ -80,7 +81,6 @@ Seluruh item konten sudah diterapkan dan dipindahkan ke tabel **Fixed** di atas.
 | ID | Kebutuhan |
 |---|---|
 | STR-01 / SW-01 | Artikel implementasi per produk |
-| STR-02 / NAV-01 | Ekstraksi 130 blok desain Naventra dari artikel konsep |
 | LRN-03 | Latihan per section (10–15 soal) |
 | PROC-01 / PROC-02 | Document lifecycle dan exception path |
 | ACC-16 … ACC-22, ACC-24, ACC-25 | NRV, normal capacity, availability taxonomy, MRP grid, discount VAT, komisi, restatement, LIFO rationale |
