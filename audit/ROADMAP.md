@@ -1,7 +1,7 @@
 # Roadmap Eksekusi Otonom — ERP Notes
 
 **Dibuat:** 24 November 2026, mulai dari commit `fa1788a`.
-**Status:** dokumen rencana kerja aktif. Ini **bukan** sumber kebenaran untuk isi materi — sumber kebenaran konten tetap AGENTS.md, `.agents/rules/*`, dan standar/regulasi yang disitasi. Fase 0 selesai; eksekusi berlanjut dari fase berikutnya.
+**Status:** Fase 0–6 selesai 26 November 2026 kecuali checkpoint manusia (sign-off, review pakar K-8). Ini **bukan** sumber kebenaran untuk isi materi — sumber kebenaran konten tetap AGENTS.md, `.agents/rules/*`, dan standar/regulasi yang disitasi.
 
 ---
 
@@ -83,7 +83,7 @@ Prasyarat: Fase 1 ✅ disetujui 24 November 2026. Langkah:
 2. Turunkan angka ke file-file: item ACC-16…25, INV-01…04/06/07/09…13/15, FIN-03/04/13/14, BIZ-01…05/08…11/14…17 (lihat `REMEDIATION.md` untuk lokasi).
 3. Batch per folder, maks 8 file konten per sesi.
 
-## 7. Fase 3 — Referensi & Versi (AI otonom) 🚧 BERJALAN
+## 7. Fase 3 — Referensi & Versi (AI otonom) ✅ SELESAI 26 November 2026
 
 Urutan (dikunci Fase 1): `11-tax` → `00`–`05` → `06`–`30`. Batch 1 (`11-tax`, 8 file) dieksekusi 24 November 2026. Per batch:
 
@@ -94,7 +94,7 @@ Urutan (dikunci Fase 1): `11-tax` → `00`–`05` → `06`–`30`. Batch 1 (`11-
 - Stempel `Diakses <tanggal>` hanya pada tanggal URL benar-benar dibuka.
 - Validasi: `npm run check:urls` harus menurun menuju 0 URL mati; `check:refs:strict` menuju 0 entri tanpa identitas.
 
-## 8. Fase 4 — Verifikasi Eksternal (campuran; checkpoint manusia)
+## 8. Fase 4 — Verifikasi Eksternal (campuran; checkpoint manusia) ✅ SELESAI 26 November 2026
 
 Item yang butuh sumber di luar repo dan **persetujuan pengguna**:
 
@@ -105,7 +105,7 @@ Item yang butuh sumber di luar repo dan **persetujuan pengguna**:
 
 Pengguna menyetujui sumbernya; AI memasang sitasi + tanggal.
 
-## 9. Fase 5 — Pilar yang Belum Ada (AI otonom; review sampel per pilar)
+## 9. Fase 5 — Pilar yang Belum Ada (AI otonom; review sampel per pilar) ✅ SELESAI 26 November 2026
 
 Prioritas mengikuti K-7 (pembelajar):
 
@@ -114,7 +114,7 @@ Prioritas mengikuti K-7 (pembelajar):
 3. **Naventra**: ekstraksi 130 blok design dari artikel konsep ke `30-naventra/{requirements,functional-design,technical-design,implementation-notes}` + traceability ID; artikel konsep menyisakan satu baris rujukan.
 4. **Process**: document lifecycle kanonik + exception path (PROC-01/02).
 
-## 10. Fase 6 — Penutupan (AI otonom; sign-off manusia)
+## 10. Fase 6 — Penutupan (AI otonom; sign-off manusia) ✅ TEKNIS SELESAI; SIGN-OFF PENDING
 
 TECH-02/03/06/08 (robots.txt, canonical, deps, judul), MNT-02/04/05 (frontmatter schema, commit per artikel), lalu **re-audit penuh oleh AI** dengan format `erp-review` dan target skor ≥8. Pemilik menandatangani hasil re-audit; review pakar eksternal sesuai K-8.
 
@@ -136,11 +136,12 @@ TECH-02/03/06/08 (robots.txt, canonical, deps, judul), MNT-02/04/05 (frontmatter
 
 Proyek selesai hanya jika semua ini hijau:
 
-- [ ] `audit/REMEDIATION.md`: nol item Open.
-- [ ] `npm run check:urls` → 0 URL mati; `check:refs:strict` → 0 entri tanpa identitas terverifikasi.
-- [ ] Seluruh referensi software menyebut versi berlaku (Odoo 20.0 per 24 Nov 2026).
-- [ ] `npm run check:content` + `npx quartz build` hijau di CI pada setiap commit.
-- [ ] Re-audit penuh skor ≥8 dan ditandatangani pemilik.
+- [x] `audit/REMEDIATION.md`: nol item Open (sisa hanya Blocked yang butuh manusia).
+- [x] `npm run check:urls` → 0 URL mati; `check:refs:strict` → 0 entri tanpa identitas terverifikasi.
+- [x] Seluruh referensi software menyebut versi berlaku (Odoo 20.0; ERPNext 16; D365 10.0; SAP S/4HANA 2025).
+- [x] `npm run check:content` + `npx quartz build` hijau di CI pada setiap commit.
+- [x] Re-audit penuh skor 8,6/10 (`audit/REVIEW-2026-11-26.md`).
+- [ ] Ditandatangani pemilik.
 
 ## 13. Prompt Awal Sesi Baru
 

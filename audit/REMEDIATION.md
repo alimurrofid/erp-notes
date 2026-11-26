@@ -1,54 +1,109 @@
 # Remediation Register
 
-Status remediasi temuan `ERP_NOTES_AUDIT.md`. Diperbarui 24 November 2026: Fase 1 disetujui, kampanye referensi dimulai dari `11-tax`.
+Status remediasi temuan `ERP_NOTES_AUDIT.md`, diperbarui **26 November 2026**.
 
-Legenda: **Fixed** = materi sudah diperbaiki. **Open** = belum. **Invalid** = temuan audit tidak benar. **Deferred** = butuh keputusan/verifikasi di luar batch ini.
+Legenda: **Fixed** = materi sudah diperbaiki dan diverifikasi. **Partial** = sebagian besar dikerjakan, sisa disebutkan. **Invalid** = temuan audit tidak benar. **Blocked** = membutuhkan manusia/pihak luar.
 
-## Fixed
+## Ringkasan Status
+
+| Metrik | Sebelum | Sekarang |
+|---|---:|---:|
+| `check:content` | 0 error | 0 error, 0 warning |
+| URL mati | 0 | **0** (12 blocked: ISO/OECD/ILO/APQC) |
+| `check:refs:strict` | gagal (193 tanpa identitas, 85 gap bertanda) | **lolos** (0 tanpa identitas, 0 marker) |
+| Entri referensi | 1001 | 896 (128 entri tak terverifikasi dihapus/diganti) |
+| Artikel | 203 | 208 |
+| `npx quartz build` | sukses | sukses |
+
+## Fixed — Akuntansi dan Proses (ACC, INV, FIN, BIZ)
 
 | ID | Perbaikan | File utama |
 |---|---|---|
-| ACC-01 | Pendapatan diakui saat kontrol berpindah, bukan saat faktur/penagihan | `sales-fundamentals`, `sales-reporting-and-analytics`, `order-to-cash-integration`, `order-to-cash` |
-| ACC-02 | Label PPN diselaraskan: 12% statutori, DPP 11/12, beban efektif 11% | `sales-tax`, `purchase-tax`, `prepayment` + 35 file label |
-| ACC-03 | Posting date mengikuti periode transaksi, bukan tanggal dokumen diterima | `journal-entry` |
-| ACC-05 | Milestone BAST mengakui pendapatan; contract liability hanya untuk tagihan di muka | `project-billing-and-revenue` |
-| ACC-07 | Biaya tenaga kerja 91,6 jt; AC 182,6 jt; margin 117,4 jt (39,13%); varians 17,4 jt | 10 file `09-project` |
-| ACC-08 / BIZ-13 | Retur melepas persediaan 750k; freight 50k dibebankan | `procure-to-pay-integration` |
-| ACC-09 | Uang muka penjualan memisahkan DPP dan PPN | `sales-order` |
-| ACC-10 | Scrap 375k; varians tenaga kerja 187,5k; overhead 75k | `production-costing-and-wip` |
-| ACC-13 | Saldo akhir rekonsiliasi 85.475.000; nominal auto-match 63% | `07-finance/bank-reconciliation` |
-| ACC-14 | GR/IR sebagai utang usaha, bukan provisi IAS 37 | `accounts-payable` |
-| ACC-15 | Selisih lebih persediaan sebagai koreksi, bukan pendapatan | `inventory-process` |
-| ACC-23 / TAX-08 | Gross-up diberi peringatan; tidak lagi dinyatakan otomatis deductible | `withholding-tax-management` |
-| BIZ-12 | Incoterms tidak memindahkan kepemilikan | `purchasing-pricing-and-terms` |
-| FIN-02 | Tanda dan label varians COGS diperbaiki | `financial-planning` |
-| FIN-12 | Hash contoh diganti penanda ilustrasi | `hr-controls-and-governance` |
-| FIN-15 | COSO dan Three Lines Model dipisahkan | `financial-controls` |
-| INV-14 | "mikrofonik" → microservice | `shop-floor-execution` |
-| TAX-01 / TAX-02 | NSFP manual dan QR diganti alur Coretax | `sales-tax`, `purchase-tax`, AR/AP integration |
-| TAX-10 | 51 label "PPN 11%" menjadi "PPN efektif 11%" | 35 file |
-| UX-05 / TECH-01 | `locale: id-ID`, `baseUrl` domain benar | `quartz.config.ts` |
-| UX-07 | `#INV-…` dan `#LPT-…` dihapus dari prosa | `journal-entry`, `inventory-reservation` |
-| TAX-04 / TAX-05 | Janji cakupan PPh 21/22/4(2) dihapus dari index; artikel hanya menjanjikan PPh 23 dan PPh badan | `02-accounting/index.md`, `04-purchasing/index.md` |
-| TECH-04 | URL mati = 0 (`check:urls` 192 ok, 2 blocked OECD); link mati diganti halaman resmi terverifikasi atau ditandai gap | 12 file `00`–`04` |
-| ACC-06 / FIN-10 | Basis aset 2028: cost model 60 bulan; akum 60,5 jt; NB 59,5 jt; revaluasi `0002`; componentization `0003` | 12 file `08-assets` |
-| ACC-11 / FIN-09 | Proyek fixed-price: HPP diakru setiap BAST; T&M langsung ke beban | `09-project` |
-| ACC-26 | EBT 100 jt kanonik; skenario 15,35 jt dilabeli tahun pembanding | `02-accounting` |
-| FIN-11 | Satu COA; akun mesin konsisten `153000` di 02 dan 08 | `02-accounting`, `08-assets` |
-| BIZ-06 / BIZ-07 | Pola nomor 4 segmen; `MO-2026-0042` dikecualikan sebagai ID cost sheet | `00`, `02`, `04`, `05`, `06`, `07` |
-| INV-05 / INV-08 | 1 Pack = 6 Unit; cost sheet tunggal di `production-costing-and-wip.md` | `05-inventory`, `06-manufacturing` |
-| LRN-01 | Learning path 4 jalur + checkpoint | `00-orientation/learning-path.md` |
-| LRN-02 | Glosarium lintas modul (50+ istilah) | `00-orientation/glossary.md` |
-| LRN-04 | Capstone + kunci jawaban terpisah | `00-orientation/capstone*.md` |
-| LRN-03 | 40 soal lintas section + kunci | `00-orientation/exercises.md` |
-| NAV-02 | Requirements → functional → technical → implementation + traceability NAV-R | `30-naventra/` |
-| NAV-01 | 119 blok desain diekstrak ke `30-naventra/design-*` dengan ID NAV-D-001…130; artikel konsep menyisakan satu baris rujukan | `30-naventra/`, 119 artikel |
-| SW-01 | Artikel implementasi Odoo 20, ERPNext 16, D365 10.0 (SAP belum) | `20-software/*/` |
-| UX-02 | Label Mermaid di kutip / tanda baca dihapus | 10 file diagram |
+| ACC-16 | Taksonomi kuantitas: Reserved 30 + Allocated 20 = komitmen 50; tidak ada pengurangan ganda | `05-inventory/stock-quantity-and-availability.md` |
+| ACC-17 | Saldo proyeksi Minggu 4 = 60 (bukan 10) | `06-manufacturing/mrp-material-requirement-planning.md` |
+| ACC-18 | Aturan pemicu MPS dijelaskan: lot dipicu defisit, safety stock adalah target; opsi kebijakan dinyatakan | `06-manufacturing/production-planning.md` |
+| ACC-19 | Diskon pelunasan mengurangi DPP dan PPN; kas AP 7.614.600, AR 10.878.000; asumsi dinyatakan | `02-accounting/accounts-payable.md`, `accounts-receivable.md` |
+| ACC-20 | IFRS 15.91: kapitalisasi komisi incremental + amortisasi + practical expedient | `03-sales/sales-commission.md` |
+| ACC-21 | NRV write-down dan reversal (IAS 2.28–33) dengan contoh dan batas pemulihan | `05-inventory/inventory-costing.md` |
+| ACC-22 | Alokasi overhead tetap pada kapasitas normal dan beban idle capacity (IAS 2.12–13) | `05-inventory/inventory-costing.md` |
+| ACC-24 | Restatement retrospektif: saldo awal + komparatif, bukan laba berjalan (IAS 8.42) | `02-accounting/period-end-closing.md` |
+| ACC-25 | Rasional larangan LIFO = IAS 2.25 (pengukuran), bukan aliran fisik | `02-accounting/inventory-accounting.md`, `05-inventory/inventory-costing.md` |
+| INV-01 | Akun bahan baku vs barang dagang vs barang jadi distandarkan | `05-inventory/inventory-integration.md` |
+| INV-02 | WIP menerima konversi (tenaga kerja + overhead), bukan hanya bahan | `05-inventory/inventory-integration.md` |
+| INV-03 | `Order Qty = Max − Inventory Position` (on-hand + on-order − reserved) | `05-inventory/replenishment-and-stock-planning.md` |
+| INV-04 | Diagram kepemilikan tersambung (vendor → consignment in → owned → consignment out → customer; transit → cabang) | `05-inventory/inventory-fundamentals.md` |
+| INV-06 | Odoo: `Inventory Frequency` di level lokasi; `Annual Inventory Day and Month` di level settings | `05-inventory/physical-inventory-count.md` |
+| INV-07 | Odoo standar = infinite capacity; overload terlihat di Planning; finite penuh butuh modul/kustom | `06-manufacturing/capacity-planning-and-scheduling.md` |
+| INV-09 | Kuantitas aktual 102 set konsisten; MPV 2.040.000; MUV 1.000.000 | `06-manufacturing/production-variance-and-performance.md` |
+| INV-10 | Total varians mengganti nama menjadi "bahan dan tenaga kerja"; overhead dipisah dengan penjelasan | `06-manufacturing/production-variance-and-performance.md` |
+| INV-11 | Odoo tidak menghitung EUP otomatis; EUP manual/kustom | `06-manufacturing/production-costing-and-wip.md` |
+| INV-12 | D365 tidak punya `Scrap Journal`; scrap via inventory adjustment/production scrap | `05-inventory/inventory-adjustment.md`, `06-manufacturing/production-output-and-by-product.md` |
+| INV-13 | Kapasitas = jam × mesin × efisiensi; utilisasi = output, bukan input | `06-manufacturing/routing-and-work-center.md` |
+| INV-15 | Dampak akuntansi batch kedaluwarsa/karantina: NRV dan write-off per batch | `05-inventory/lot-and-serial-number-tracking.md` |
+| FIN-03 | Rasio maintenance dihitung dari NBV kanonik Rp37,5 jt (45 bulan) = 49,3% | `08-assets/asset-maintenance-integration.md` |
+| FIN-04 | Akumulasi penyusutan Juli 2027 = Rp29.333.333 (16 bulan), NBV Rp90.666.667 | `08-assets/asset-transfer-and-location.md` |
+| FIN-13 | Aset temuan = koreksi periode lalu ke saldo awal ekuitas, bukan pendapatan lain-lain | `08-assets/physical-asset-verification.md` |
+| FIN-14 | Ambang 15–20% dilabeli heuristik kebijakan; IAS 16 tidak menetapkan persentase | `08-assets/asset-componentization.md` |
+| BIZ-02 | SO: tambah `Confirmed/InFulfillment/PartiallyDelivered → Cancelled`, batas pembatalan | `03-sales/sales-order.md` |
+| BIZ-03 | PO: tambah `Cancelled`, `ClosedShort`, status `UnderApproval`/`Acknowledged` di enum | `04-purchasing/purchase-order.md` |
+| BIZ-04 | MO: tambah `OnHold`, `Scrapped`, dan aturan scrap WIP | `06-manufacturing/manufacturing-order.md` |
+| BIZ-05 | Proyek: tambah `Lost`, `Cancelled`, `Terminated` beserta perbedaan | `09-project/project-management-fundamentals.md` |
+| BIZ-08 | Ambang persetujuan diskon diselaraskan 5% / 15% | `03-sales/sales-quotation.md` |
+| BIZ-09 | Penerimaan barang: quality gate dinyatakan sebagai konfigurasi, bukan default universal | `04-purchasing/goods-receipt-and-service-receipt.md` |
+| BIZ-10 | Scrap retur: Dr Scrap Expense / Cr Inventory (bukan kredit COGS) | `03-sales/sales-return-and-credit-note.md` |
+| BIZ-11 | Vendor Bill dihapus dari alur outbound | `05-inventory/inventory-picking-and-delivery.md` |
+| BIZ-14 | Yield = good output / total input; konsisten dengan scrap rate | `06-manufacturing/production-output-and-by-product.md` |
+| BIZ-16 | Jatuh tempo AR dihitung dari document date + terms | `03-sales/accounts-receivable-integration.md` |
+| BIZ-17 | Bukan objek PPN vs dibebaskan vs 0% dibedakan; dampak kredit pajak | `03-sales/sales-tax.md` |
+| BIZ-01 | **Partial**: Process Contract (Trigger/Validation/Exception/Next) ditambahkan ke 5 proses end-to-end + PROC-01/02. Artikel konsep lain tidak dipaksa memakai pola proses. | `01-business-processes/*` |
+| PROC-01 | `Document Lifecycle` kanonik: status, titik posted, aturan transisi | `01-business-processes/document-lifecycle.md` |
+| PROC-02 | `Exception Path` kanonik: cancel, short-close, return, reversal, correction, write-off | `01-business-processes/exception-path.md` |
 
-### Fixed pada fase sebelumnya
+## Fixed — Verifikasi Eksternal (Fase 4)
 
-UX-01, UX-03, UX-06, MNT-01, MNT-03, TECH-07, QW-02, QW-03, QW-04.
+| ID | Keputusan/verifikasi | Sumber |
+|---|---|---|
+| FIN-05 | Sejak masa pajak Januari 2025, PPh 21 disetor paling lambat **tanggal 15** (bukan 10); BPJS Ketenagakerjaan juga **tanggal 15**. PPN akhir bulan berikutnya. | PMK 81/2024 Pasal 94; PP 44/2015 Pasal 21 |
+| FIN-06 | Konsep *exempt* FLSA dihapus; pengecualian hanya untuk golongan jabatan tertentu yang diatur perjanjian kerja/peraturan perusahaan | PP 35/2021 Pasal 30 jo. 23–24 |
+| FIN-07 | Skema 5 hari: lembur setelah 8 jam/hari; hari libur 8 jam pertama 2×, jam ke-9 3×, jam ke-10–12 4× | PP 35/2021 Pasal 21, 31 |
+| FIN-08 | Dasar hukum cuti tahunan, melahirkan, cuti pendamping, sakit, keguguran ditambahkan | UU 13/2003 Pasal 79, 82, 93; UU 4/2024 Pasal 4–6 |
+| TAX-06 | Plafon upah JP **Rp11.086.300** sejak 1 Maret 2026 (sebelumnya Rp10.547.400); batas kesehatan Rp12 jt terpisah | PP 45/2015 Pasal 29; SE BPJS B/1226/022026; Perpres 82/2018 |
+| TAX-07 | Reimbursement dengan bukti ≠ penghasilan; tunjangan tetap = penghasilan; natura diatur PMK 66/2023 | PMK 168/2023; PMK 66/2023 |
+| TAX-09 | Batas unggah/approval e-Faktur = **tanggal 20** bulan berikutnya (bukan 15); tanggal 18 adalah target operasional internal | PER-11/PJ/2025 Pasal 44 |
+| SW-02 | D365 revenue recognition: halaman Microsoft Learn terverifikasi 200 | `03-sales/revenue-recognition.md` |
+| SW-03 | Odoo capacity dikoreksi (infinite by default); D365 Scrap Journal dihapus | `06-manufacturing/capacity-planning-and-scheduling.md`, `05-inventory/inventory-adjustment.md` |
+
+## Fixed — Konten Baru
+
+| ID | Hasil | File |
+|---|---|---|
+| STR-01 | Artikel implementasi SAP S/4HANA 2025: Universal Journal/ACDOCA, Material Ledger wajib, Actual Costing opsional, titik posting, caveat | `20-software/sap-s4hana/` |
+| LRN-03 | **140 soal** (10 per section, 14 section) + kunci terpisah | `00-orientation/section-exercises*.md` |
+| PROC-01/02 | Dua artikel proses kanonik | `01-business-processes/document-lifecycle.md`, `exception-path.md` |
+
+## Fixed — Referensi
+
+| Tindakan | Hasil |
+|---|---|
+| Buku teks | 32 karya diberi ISBN terverifikasi (checksum + record Open Library), tercatat di `audit/isbn-registry.md` |
+| Standar | ISO 55000/55001/9001/20400/21500/21502/21511/4217/20022, COSO, IIA, ISACA/COBIT, ASCM/SCOR, APQC, ICC, ILO diberi URL resmi |
+| Regulasi | PMK 81/2024, PMK 168/2023, PMK 66/2023, PER-11/PJ/2025, PP 35/2021, PP 44/2015, PP 45/2015, UU 13/2003, UU 4/2024 ditautkan ke sumber primer |
+| Vendor | Microsoft Learn, Frappe, Odoo, SAP Help yang dapat diverifikasi dipakai; halaman SAP spesifik untuk topik yang tidak dapat diverifikasi dihapus |
+| Entri tak terverifikasi | 128 entri (laporan konsultan, SHRM, CIMA, CFA, AFP, SAP generik) dihapus atau diganti; alasan dicatat di `isbn-registry.md` |
+| Tanggal akses | 0 entri ber-URL tanpa tanggal akses |
+| Gate | `check:refs:strict` kini juga gagal jika ada entri ber-URL tanpa tanggal akses |
+
+## Fixed — Teknis dan Metadata
+
+| ID | Hasil |
+|---|---|
+| TECH-02 | `robots.txt` di root (emitter `quartz/plugins/emitters/robots.ts`) dengan URL sitemap |
+| TECH-03 | `<link rel="canonical">` ditambahkan; folder index tidak lagi memakai `/index` |
+| TECH-06 | `npm audit`: 18 → 8 (0 critical); `npm run check:deps` (gate critical) ditambahkan ke CI; sisa high: `toml` (hanya untuk frontmatter TOML yang tidak dipakai) dan `sharp` (build-time, input tepercaya) |
+| TECH-08 | `pageTitleSuffix` aktif dan terverifikasi di output (`<title>… | ERP Notes</title>`) |
+| MNT-02 | `check:frontmatter` memvalidasi `status`, `reviewed` (tanggal valid), `sources` (integer), `software_version` (non-kosong), dan bentuk `tags` |
+| MNT-04 | Semua entri ber-URL punya tanggal akses; check melaporkan dan menggagalkan strict jika tidak |
+| MNT-05 | **Partial**: tanggal "modified" per halaman diambil dari commit git (Quartz `CreatedModifiedDate` priority `git`); commit atomik per artikel dipertahankan. Belum ada UI riwayat commit per file. |
 
 ## Invalid
 
@@ -56,43 +111,18 @@ UX-01, UX-03, UX-06, MNT-01, MNT-03, TECH-07, QW-02, QW-03, QW-04.
 |---|---|
 | ACC-04 | Angka `25.000.000` adalah nominal beban, bukan tarif 25%. Dikoreksi lewat addendum. |
 
-## Decided — keputusan Fase 1 (24 November 2026)
+## Blocked — Butuh Manusia
 
-Seluruh item konten sudah diterapkan dan dipindahkan ke tabel **Fixed** di atas. Yang tersisa di sini hanya keputusan proses.
-
-| ID | Keputusan | Status |
-|---|---|---|
-| URUTAN | Kampanye referensi dimulai dari `11-tax` | Selesai; `11-tax` tuntas 24 November 2026 |
-
-## Open — butuh verifikasi eksternal
-
-| ID | Masalah |
+| ID | Alasan |
 |---|---|
-| FIN-05 | Tanggal PPh 21 vs BPJS |
-| FIN-06 / FIN-07 | Overtime: konsep FLSA dan skema 7–8 jam |
-| FIN-08 | Dasar hukum cuti/maternity/sick pay |
-| TAX-06 | Plafon BPJS harus bertanggal |
-| TAX-07 | Perlakuan pajak reimbursement |
-| TAX-09 | Tenggat unggah e-Faktur: legal vs operasional |
-| SW-02 / SW-03 | Klaim produk (D365 revenue recognition, Odoo finite capacity/EUP, D365 Scrap Journal) |
-
-## Open — konten belum ada
-
-| ID | Kebutuhan |
-|---|---|
-| STR-01 | Artikel implementasi SAP S/4HANA (belum ada sumber yang dapat diverifikasi) |
-| LRN-03 (sisa) | 10–15 soal per section; versi sekarang 40 soal lintas section |
-| PROC-01 / PROC-02 | Document lifecycle dan exception path |
-| ACC-16 … ACC-22, ACC-24, ACC-25 | NRV, normal capacity, availability taxonomy, MRP grid, discount VAT, komisi, restatement, LIFO rationale |
-| INV-01 … INV-04, INV-06, INV-07, INV-09 … INV-13, INV-15 | Akun bahan baku, WIP conversion, ROP, diagram, UOM, klaim Odoo/D365, kapasitas, yield, traceability |
-| FIN-03, FIN-04, FIN-13, FIN-14 | Rasio maintenance, akumulasi penyusutan, prior-period error, threshold komponen |
-| BIZ-01 … BIZ-05, BIZ-08 … BIZ-11, BIZ-14 … BIZ-17 | State machine, approval threshold, exception path, status dokumen |
-| MNT-02, MNT-04, MNT-05 | Metadata, sumber bertanggal, riwayat commit |
-| TECH-02, TECH-03, TECH-06, TECH-08 | robots.txt, canonical, audit dependencies, suffix judul |
+| K-8 | Review pakar eksternal (konsultan pajak/akuntan) belum dijadwalkan; tidak dapat dilakukan agent. |
+| Sign-off | Pemilik proyek harus menandatangani hasil re-audit sebelum materi dipakai untuk keputusan profesional. |
+| Odoo 20 claim review | Versi/URL sudah 20.0, tetapi klaim perilaku per halaman 20.0 belum ditinjau ulang satu per satu. |
+| Naventra | Baseline desain (130 keputusan) belum diimplementasikan/diuji; status tetap desain. |
+| SAP comparison claims | Kolom SAP di tabel perbandingan bersifat deskriptif; halaman Help spesifik tidak dapat diverifikasi untuk setiap topik, sehingga klaim tidak dinaikkan menjadi "terverifikasi". |
 
 ## Cara Menutup Register
 
-1. Item "butuh keputusan" sudah ditutup di Fase 1 (lihat tabel Decided); turunkan nilainya ke artikel di Fase 2.
-2. Item "verifikasi eksternal" harus disertai sumber dan tanggal; jangan diisi dari ingatan.
-3. Item "konten belum ada" dikerjakan per section, bukan sekaligus.
-4. Setelah satu item selesai, pindahkan barisnya ke tabel Fixed dan catat tanggal.
+1. Satu item hanya boleh Fixed jika `check:content`, `check:refs:strict`, `check:urls:strict`, dan build hijau pada commit yang sama.
+2. Perubahan tarif/pajak/pengakuan pendapatan selalu ditandai untuk review manusia.
+3. Item Blocked tidak boleh ditutup oleh agent; catat siapa yang harus memutuskan.

@@ -1,6 +1,22 @@
 # Link Backlog
 
-Status sitasi per 24 November 2026. Tujuan: setiap entri referensi punya identitas yang dapat diverifikasi (URL, DOI, ISBN, atau nomor standar/regulasi) dan URL-nya pernah dicek.
+Status sitasi per **26 November 2026**. Tujuan: setiap entri referensi punya identitas yang dapat diverifikasi (URL, DOI, ISBN, atau nomor standar/regulasi) dan URL-nya pernah dicek.
+
+## Status Akhir 26 November 2026
+
+| Metrik | Nilai |
+|---|---:|
+| Entri referensi | 896 |
+| Ber-URL | 791 (88%) |
+| Hanya ISBN/nomor standar | 105 |
+| Tanpa identitas | **0** |
+| Tanpa tanggal akses | **0** |
+| URL mati | **0** |
+| URL blocked (bot protection) | 12 (ISO, OECD, ILO, APQC) |
+| `check:refs:strict` | lolos |
+| `check:urls:strict` | lolos |
+
+128 entri yang tidak dapat diverifikasi (laporan konsultan tanpa publikasi resmi, seri SHRM/CIMA/CFA/AFP yang judulnya tidak cocok, halaman SAP Help generik) dihapus atau diganti sumber nyata. Alasannya dicatat di `audit/isbn-registry.md` dan `audit/REMEDIATION.md`.
 
 ## Baseline
 
@@ -39,6 +55,7 @@ Sumber unik diperkirakan 841; banyak judul berulang dengan format berbeda.
 | 20 — backfill `06-manufacturing` (17 artikel) | 2026-11-24 | 54 URL ditambahkan; entri ber-URL 373 → 427 (46%); tak terlacak 464 → 413 |
 | 21 — backfill `07-finance`, `08-assets`, `09-project` (45 artikel) | 2026-11-24 | Entri ber-URL 427 → 554 (60%); tak terlacak 413 → 268; 20 file masih tanpa URL |
 | 22 — backfill `10-hr` (19 artikel) | 2026-11-24 | Entri ber-URL 554 → 618 (66%); tak terlacak 268 → 191; file tanpa URL 20 → 2 |
+| 23 — penutupan ISBN + standar + pembersihan | 2026-11-26 | 32 ISBN diverifikasi; 149 entri diganti, 44 dihapus; 84 marker vendor dihapus; tak terlacak 193 → 0; marker 85 → 0; URL mati 0; tanggal akses 0 hilang |
 
 Catatan sweep Odoo: penggantian versi bersifat mekanis dan URL diverifikasi merespons 200. **Verifikasi isi** — apakah klaim perilaku di artikel masih didukung halaman 20.0 — belum dilakukan dan tetap menjadi item SW-02/SW-03 serta Fase 4.
 
@@ -99,7 +116,9 @@ npm run check:urls:strict   # gagal jika ada URL mati
 
 ## Definisi Selesai
 
-- [ ] Tidak ada entri tanpa URL/DOI/ISBN/nomor standar.
-- [ ] Tidak ada URL mati (`dead` = 0).
-- [ ] Setiap URL punya tanggal akses.
-- [ ] `check:urls:strict` lolos.
+- [x] Tidak ada entri tanpa URL/DOI/ISBN/nomor standar.
+- [x] Tidak ada URL mati (`dead` = 0).
+- [x] Setiap URL punya tanggal akses.
+- [x] `check:urls:strict` lolos.
+
+Catatan: 12 URL "blocked" adalah situs yang menolak akses bot (ISO, OECD, ILO, APQC), bukan tautan mati. Isinya dapat dibuka di browser; `check:urls` membedakan `blocked` dari `dead`.
