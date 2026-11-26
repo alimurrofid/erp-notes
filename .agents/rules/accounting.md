@@ -48,9 +48,9 @@ dan **jangan** mencantumkan angka pasti.
 
 ## Pajak Indonesia
 
-- Sumber kanonik PPN ada di `content/11-tax/` (`vat-fundamentals.md`, `taxable-base-and-tax-calculation.md`).
+- Sumber kanonik PPN ada di `content/12-tax/` (`vat-fundamentals.md`, `taxable-base-and-tax-calculation.md`).
 - Artikel sales/purchasing **tidak** mengulang tarif; tautkan ke artikel kanonik.
-- Jika tarif berubah, ubah di `11-tax` dan perbarui tanggal berlaku di sana.
+- Jika tarif berubah, ubah di `12-tax` dan perbarui tanggal berlaku di sana.
 - Prioritaskan DJP, Kementerian Keuangan, dan peraturan resmi. Jangan menganggap aturan lama masih berlaku.
 - Sebutkan periode dan nomor regulasi (mis. PMK) untuk setiap klaim tarif.
 

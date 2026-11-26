@@ -26,4 +26,4 @@ Titik masuk untuk pembelajar. Halaman ini tidak mengajarkan konsep baru; ia meng
 
 ## Prasyarat
 
-Tidak ada. Jalur Beginner dimulai dari [[00-fundamentals/erp-fundamentals|ERP Fundamentals]].
+Tidak ada. Jalur Beginner dimulai dari [[01-fundamentals/erp-fundamentals|ERP Fundamentals]].

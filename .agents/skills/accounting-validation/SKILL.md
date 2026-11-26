@@ -62,7 +62,7 @@ Status: OK | Perlu perbaikan
 | Pola | Periksa |
 |---|---|
 | Pendapatan diakui saat faktur/penagihan | Cari "saat penagihan", "saat difakturkan", label revenue pada langkah invoice |
-| Tarif pajak lama masih dipakai | Bandingkan dengan `content/11-tax/`; cek tahun contoh |
+| Tarif pajak lama masih dipakai | Bandingkan dengan `content/12-tax/`; cek tahun contoh |
 | Beban periode salah | Bandingkan document date, posting date, dan period |
 | Nilai persediaan tidak relief penuh | Cocokkan unit cost dengan nilai perolehan termasuk landed cost |
 | Total tabel tidak sama dengan narasi | Jumlahkan ulang; jangan percaya total yang ditulis |

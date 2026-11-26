@@ -22,18 +22,18 @@ Status sitasi per **26 November 2026**. Tujuan: setiap entri referensi punya ide
 
 | Section | Entri | Punya URL | URL mati | Tanpa URL |
 |---|---:|---:|---:|---:|
-| `00-fundamentals` | 31 | 25 | 3 | 6 |
-| `01-business-processes` | 23 | 22 | 1 | 1 |
-| `02-accounting` | 68 | 57 | 14 | 11 |
-| `03-sales` | 68 | 51 | 22 | 17 |
-| `04-purchasing` | 74 | 46 | 8 | 28 |
-| `05-inventory` | 85 | 0 | 0 | 85 |
-| `06-manufacturing` | 91 | 0 | 0 | 91 |
-| `07-finance` | 81 | 0 | 0 | 81 |
-| `08-assets` | 80 | 0 | 0 | 80 |
-| `09-project` | 90 | 0 | 0 | 90 |
-| `10-hr` | 113 | 0 | 0 | 113 |
-| `11-tax` | 127 | 0 | 0 | 127 |
+| `01-fundamentals` | 31 | 25 | 3 | 6 |
+| `02-business-processes` | 23 | 22 | 1 | 1 |
+| `03-accounting` | 68 | 57 | 14 | 11 |
+| `04-sales` | 68 | 51 | 22 | 17 |
+| `05-purchasing` | 74 | 46 | 8 | 28 |
+| `06-inventory` | 85 | 0 | 0 | 85 |
+| `07-manufacturing` | 91 | 0 | 0 | 91 |
+| `08-finance` | 81 | 0 | 0 | 81 |
+| `09-assets` | 80 | 0 | 0 | 80 |
+| `10-project` | 90 | 0 | 0 | 90 |
+| `11-hr` | 113 | 0 | 0 | 113 |
+| `12-tax` | 127 | 0 | 0 | 127 |
 | **Total** | **931** | **201** | **44** | **730** |
 
 Sumber unik diperkirakan 841; banyak judul berulang dengan format berbeda.
@@ -42,19 +42,19 @@ Sumber unik diperkirakan 841; banyak judul berulang dengan format berbeda.
 
 | Batch | Tanggal | Hasil |
 |---|---|---|
-| 1 — `11-tax` inti PPN (8 file) | 2026-11-24 | 67 entri ber-URL ditambahkan; 44 URL mati tidak berubah (tidak ada URL mati baru); 3 blocked (2 warisan + 1 OECD) |
-| 2 — `11-tax` PPh (7 file) | 2026-11-24 | 39 entri ber-URL ditambahkan; total entri ber-URL 358 (39%); URL mati tetap 44 |
-| 3 — `11-tax` penutup + index (5 file) | 2026-11-24 | `11-tax` tuntas: 17 entri ber-URL; TAX-04/05 ditutup; total entri ber-URL 375 (41%) |
+| 1 — `12-tax` inti PPN (8 file) | 2026-11-24 | 67 entri ber-URL ditambahkan; 44 URL mati tidak berubah (tidak ada URL mati baru); 3 blocked (2 warisan + 1 OECD) |
+| 2 — `12-tax` PPh (7 file) | 2026-11-24 | 39 entri ber-URL ditambahkan; total entri ber-URL 358 (39%); URL mati tetap 44 |
+| 3 — `12-tax` penutup + index (5 file) | 2026-11-24 | `12-tax` tuntas: 17 entri ber-URL; TAX-04/05 ditutup; total entri ber-URL 375 (41%) |
 | 4 — URL mati `00`–`01` (3 file) | 2026-11-24 | 3 URL mati diganti halaman resmi yang terverifikasi; Gartner (403) diganti DOI; URL mati 44 → 41 |
-| 5 — URL mati `02-accounting` (8 file) | 2026-11-24 | 9 URL diganti; URL mati 41 → 32 |
+| 5 — URL mati `03-accounting` (8 file) | 2026-11-24 | 9 URL diganti; URL mati 41 → 32 |
 | 6 — sisa `02` + `03` (8 file) | 2026-11-24 | 10 URL diganti; `pajak.go.id` homepage diganti UU HPP + PMK 131; URL mati 32 → 22 |
-| 7 — `03-sales` (8 file) | 2026-11-24 | 10 URL diganti; URL mati 22 → 10 |
-| 8 — `04-purchasing` (8 file) | 2026-11-24 | 9 URL diganti; CIPS homepage dihapus; URL mati 10 → 2 |
+| 7 — `04-sales` (8 file) | 2026-11-24 | 10 URL diganti; URL mati 22 → 10 |
+| 8 — `05-purchasing` (8 file) | 2026-11-24 | 9 URL diganti; CIPS homepage dihapus; URL mati 10 → 2 |
 | 9–10 — penutup (3 file) | 2026-11-24 | **URL mati = 0**; 2 blocked (OECD, halaman publikasi spesifik); `check:urls:strict` lolos |
 | 11–19 — Odoo 17 → 20.0 (64 file disentuh) | 2026-11-24 | **0 file menyebut Odoo 17/`documentation/17.0`**; seluruh URL Odoo 20.0 diuji 200 |
-| 20 — backfill `06-manufacturing` (17 artikel) | 2026-11-24 | 54 URL ditambahkan; entri ber-URL 373 → 427 (46%); tak terlacak 464 → 413 |
-| 21 — backfill `07-finance`, `08-assets`, `09-project` (45 artikel) | 2026-11-24 | Entri ber-URL 427 → 554 (60%); tak terlacak 413 → 268; 20 file masih tanpa URL |
-| 22 — backfill `10-hr` (19 artikel) | 2026-11-24 | Entri ber-URL 554 → 618 (66%); tak terlacak 268 → 191; file tanpa URL 20 → 2 |
+| 20 — backfill `07-manufacturing` (17 artikel) | 2026-11-24 | 54 URL ditambahkan; entri ber-URL 373 → 427 (46%); tak terlacak 464 → 413 |
+| 21 — backfill `08-finance`, `09-assets`, `10-project` (45 artikel) | 2026-11-24 | Entri ber-URL 427 → 554 (60%); tak terlacak 413 → 268; 20 file masih tanpa URL |
+| 22 — backfill `11-hr` (19 artikel) | 2026-11-24 | Entri ber-URL 554 → 618 (66%); tak terlacak 268 → 191; file tanpa URL 20 → 2 |
 | 23 — penutupan ISBN + standar + pembersihan | 2026-11-26 | 32 ISBN diverifikasi; 149 entri diganti, 44 dihapus; 84 marker vendor dihapus; tak terlacak 193 → 0; marker 85 → 0; URL mati 0; tanggal akses 0 hilang |
 
 Catatan sweep Odoo: penggantian versi bersifat mekanis dan URL diverifikasi merespons 200. **Verifikasi isi** — apakah klaim perilaku di artikel masih didukung halaman 20.0 — belum dilakukan dan tetap menjadi item SW-02/SW-03 serta Fase 4.
@@ -64,10 +64,10 @@ Catatan Batch 1:
 - Sumber primer diverifikasi dengan membuka halaman dan mencocokkan judul: `peraturan.go.id` (UU/PP) dan `jdih.kemenkeu.go.id` (PMK). Tanggal akses 24 November 2026.
 - **Temuan regulasi:** PMK 11/2025 telah diubah oleh **PMK 53/2025** (diundangkan 28 Juli 2025). Referensi PMK 53/2025 sudah ditambahkan ke 8 artikel, tetapi narasi tarif di badan artikel belum diubah — **menunggu review manusia**.
 - `PER-03/PJ/2022`, `PER-29/PJ/2015`, `SE-10/PJ/2020`, PMK 243/2014, PMK 173/2021, PMK 59/2022, dan KMK kurs ditandai `cetak`/belum terverifikasi karena tautan resminya tidak dapat dipastikan otomatis (situs DJP menolak akses otomatis).
-- **Temuan lokasi:** TAX-04/05 tidak berada di `11-tax/index.md`, melainkan di `02-accounting/index.md:53` dan `04-purchasing/index.md:50` (sesuai `ERP_NOTES_AUDIT.md`). Perbaikan index dipindahkan ke batch berikutnya; D-8 di `scenario-register.md` dikoreksi 24 November 2026.
+- **Temuan lokasi:** TAX-04/05 tidak berada di `12-tax/index.md`, melainkan di `03-accounting/index.md:53` dan `05-purchasing/index.md:50` (sesuai `ERP_NOTES_AUDIT.md`). Perbaikan index dipindahkan ke batch berikutnya; D-8 di `scenario-register.md` dikoreksi 24 November 2026.
 - **CIPS tidak dapat dipakai:** seluruh tautan `cips.org` mengembalikan 403 untuk akses otomatis dan tidak ada dokumen spesifik. Empat entri CIPS diganti penanda gap `[belum terverifikasi]` + sumber alternatif (ASCM, MS Learn, ISO 9001).
 - **Sisa pekerjaan kampanye:** 464 entri belum terlacak (tanpa URL/ID/marker) di `05`–`10`, dan 89 file masih menyebut Odoo 17.
-- Sisa `11-tax` yang belum disentuh: **0 artikel**. Folder `11-tax` selesai untuk kampanye referensi pada 24 November 2026; 3 artikel terakhir ditutup di batch 3.
+- Sisa `12-tax` yang belum disentuh: **0 artikel**. Folder `12-tax` selesai untuk kampanye referensi pada 24 November 2026; 3 artikel terakhir ditutup di batch 3.
 - Berikutnya: batch 4 dimulai dari URL mati `00`–`01`, lalu `02`–`05`.
 
 ## Aturan per Entri
@@ -82,18 +82,18 @@ Entri **tidak** selesai jika hanya berisi penerbit + judul.
 
 ## Urutan Batch
 
-Diubah 24 November 2026 sesuai keputusan Fase 1 (URUTAN): `11-tax` didahulukan karena folder itu sumber kanonik tarif.
+Diubah 24 November 2026 sesuai keputusan Fase 1 (URUTAN): `12-tax` didahulukan karena folder itu sumber kanonik tarif.
 
 | Batch | Isi | Jumlah | Alasan |
 |---|---|---:|---|
-| 1 | `11-tax` — referensi tanpa URL, mulai 8 file inti PPN | 127 | Folder kanonik pajak; salah tarif menular ke semua modul |
-| 2 | URL mati di `04-purchasing` | 8 | Section yang sedang dikerjakan; memperbaiki klaim link yang sudah ada |
-| 3 | URL mati di `02-accounting`, `03-sales`, `00`, `01` | 36 | Menghapus link yang gagal sebelum menambah yang baru |
-| 4 | Tanpa URL sisa `11-tax` + `00`–`03` | sisa | Melengkapi section yang sudah punya sebagian URL |
-| 5 | Tanpa URL `04-purchasing` | 28 | Melengkapi satu section sampai 100% |
-| 6 | `05-inventory`, `06-manufacturing` | 176 | Vendor docs + APICS/ASCM |
-| 7 | `07-finance`, `08-assets` | 161 | Standar + buku |
-| 8 | `09-project`, `10-hr` | 203 | PMI, HR books, regulasi |
+| 1 | `12-tax` — referensi tanpa URL, mulai 8 file inti PPN | 127 | Folder kanonik pajak; salah tarif menular ke semua modul |
+| 2 | URL mati di `05-purchasing` | 8 | Section yang sedang dikerjakan; memperbaiki klaim link yang sudah ada |
+| 3 | URL mati di `03-accounting`, `04-sales`, `00`, `01` | 36 | Menghapus link yang gagal sebelum menambah yang baru |
+| 4 | Tanpa URL sisa `12-tax` + `00`–`03` | sisa | Melengkapi section yang sudah punya sebagian URL |
+| 5 | Tanpa URL `05-purchasing` | 28 | Melengkapi satu section sampai 100% |
+| 6 | `06-inventory`, `07-manufacturing` | 176 | Vendor docs + APICS/ASCM |
+| 7 | `08-finance`, `09-assets` | 161 | Standar + buku |
+| 8 | `10-project`, `11-hr` | 203 | PMI, HR books, regulasi |
 
 ## Metode
 

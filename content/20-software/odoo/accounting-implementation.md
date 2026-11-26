@@ -9,7 +9,7 @@ software_version: "20.0"
 
 Catatan implementasi modul Accounting Odoo versi **20.0** untuk kebutuhan yang dibahas di repository ini: chart of accounts, pajak, posisi fiskal, rekonsiliasi bank, dan penutupan periode.
 
-Artikel ini bukan tutorial umum Odoo. Konsepnya tetap mengacu ke [[02-accounting/accounting-fundamentals|Accounting Fundamentals]] dan [[11-tax/vat-fundamentals|VAT Fundamentals]].
+Artikel ini bukan tutorial umum Odoo. Konsepnya tetap mengacu ke [[03-accounting/accounting-fundamentals|Accounting Fundamentals]] dan [[12-tax/vat-fundamentals|VAT Fundamentals]].
 
 ## ERP Implementation
 
@@ -19,7 +19,7 @@ Odoo memakai template COA per negara yang dapat di-install saat perusahaan dibua
 
 Praktik yang aman:
 
-1. Pilih template sesuai yurisdiksi, lalu sesuaikan kode akun ke COA kanonik [[02-accounting/chart-of-accounts|Chart of Accounts]].
+1. Pilih template sesuai yurisdiksi, lalu sesuaikan kode akun ke COA kanonik [[03-accounting/chart-of-accounts|Chart of Accounts]].
 2. Jangan membuat akun baru untuk kebutuhan sesaat; cek apakah akun yang ada sudah mencukupi.
 3. Nonaktifkan akun yang tidak dipakai, jangan hapus, agar jurnal lama tetap dapat dibaca.
 

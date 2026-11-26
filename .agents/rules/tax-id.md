@@ -5,8 +5,8 @@ Aturan untuk konten pajak Indonesia. Aturan akuntansi umum ada di `accounting.md
 ## Otoritas
 
 - **DJP** (https://www.pajak.go.id/) dan **Kementerian Keuangan** adalah sumber primer.
-- `content/11-tax/` adalah sumber kanonik untuk PPN, PPh, Coretax, dan kepatuhan.
-- Artikel sales, purchasing, inventory, payroll, project, dan assets **tidak mengulang tarif**; tautkan ke `11-tax`.
+- `content/12-tax/` adalah sumber kanonik untuk PPN, PPh, Coretax, dan kepatuhan.
+- Artikel sales, purchasing, inventory, payroll, project, dan assets **tidak mengulang tarif**; tautkan ke `12-tax`.
 
 ## Format Klaim Pajak
 
@@ -43,7 +43,7 @@ Tabel ini sengaja tidak memuat angka. Angka hanya boleh ditulis setelah sumber p
 
 | Topik | Mengapa berisiko |
 |---|---|
-| PPN: tarif dan dasar pengenaan | Artikel sales/purchasing masih memakai 11%, sedangkan `11-tax` memakai basis lain |
+| PPN: tarif dan dasar pengenaan | Artikel sales/purchasing masih memakai 11%, sedangkan `12-tax` memakai basis lain |
 | Penerbitan faktur pajak | Peralihan ke Coretax mengubah proses dan penomoran |
 | PPh 21 (TER) | Bergantung pada PP/PMK yang berlaku dan tanggal mulai |
 | PPh 23 dan PPh 4(2) | Tarif, syarat NPWP, dan objek pemotongan |
@@ -58,5 +58,5 @@ Agent tidak boleh menyatakan perubahan tarif sebagai final.
 
 ## Register
 
-Register pajak adalah bagian `References` di `content/11-tax/`.
+Register pajak adalah bagian `References` di `content/12-tax/`.
 Jangan membuat register kedua di `.agents/`; duplikasi akan menyimpang.

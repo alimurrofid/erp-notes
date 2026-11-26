@@ -21,7 +21,7 @@ Bukan artikel publik. Tidak menggantikan standar; ini hanya data skenario contoh
 | Laptop Pro — harga beli | Rp700.000/unit (DPP) | 10 unit = Rp7.000.000 |
 | Laptop Pro — landed cost | Rp750.000/unit | freight Rp500.000 untuk 10 unit |
 | Laptop Pro — harga jual | Rp1.000.000/unit (DPP) | 10 unit = Rp10.000.000 |
-| PPN | 12% statutori, DPP 11/12, beban efektif 11% | sumber: `content/11-tax/` |
+| PPN | 12% statutori, DPP 11/12, beban efektif 11% | sumber: `content/12-tax/` |
 | PPh 23 jasa | 2% (NPWP); 4% (tanpa NPWP) | sumber: UU PPh, PMK 141/2015 |
 
 ## 3. UOM (D-6)
@@ -84,11 +84,11 @@ Satu aset tidak boleh memakai dua model sekaligus.
 |---|---|
 | Proyek fixed-price | material masuk WIP, diakru ke COGS sesuai progres |
 | Proyek time-material / cost-reimbursable | material langsung ke beban |
-| Cost sheet `MO-2026-0042` | pemilik tunggal: `content/06-manufacturing/production-costing-and-wip.md` |
+| Cost sheet `MO-2026-0042` | pemilik tunggal: `content/07-manufacturing/production-costing-and-wip.md` |
 
 ## 9. COA (D-4)
 
-Chart of accounts kanonik hanya di `content/02-accounting/chart-of-accounts.md`. Artikel lain merujuk, tidak menyalin tabel.
+Chart of accounts kanonik hanya di `content/03-accounting/chart-of-accounts.md`. Artikel lain merujuk, tidak menyalin tabel.
 
 ## 10. Aturan Pemakaian
 

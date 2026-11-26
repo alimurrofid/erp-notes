@@ -113,7 +113,7 @@ Jika salah satu gagal: perbaiki dulu, jangan commit.
    - File: `.agents/skills/conventional-commit/SKILL.md`
    - Alasan: prosedur commit yang dapat dipakai ulang.
 2. `fix(content): repair broken links`
-   - File: `content/07-finance/cash-flow-planning.md`, ...
+   - File: `content/08-finance/cash-flow-planning.md`, ...
    - Alasan: 7 tautan menuju halaman 404.
 ```
 

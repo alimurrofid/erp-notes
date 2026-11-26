@@ -8,12 +8,12 @@ Status: **parsial** (2026-11-24). Keputusan Fase 1 sudah dikunci; konflik nomor 
 
 | Fakta | Nilai | Sumber |
 |---|---|---|
-| Entitas pembeli | PT Maju Bersama | `content/04-purchasing/procure-to-pay-integration.md:109` |
-| Pemasok contoh | PT Sumber Teknologi (PKP) | `content/04-purchasing/procure-to-pay-integration.md:109` |
+| Entitas pembeli | PT Maju Bersama | `content/05-purchasing/procure-to-pay-integration.md:109` |
+| Pemasok contoh | PT Sumber Teknologi (PKP) | `content/05-purchasing/procure-to-pay-integration.md:109` |
 | Mata uang default | IDR | seluruh contoh |
-| Harga PO contoh | Rp700.000/unit | `content/04-purchasing/goods-receipt-and-service-receipt.md:93` |
-| Landed cost contoh | Rp750.000/unit setelah freight Rp500.000 untuk 10 unit | `content/04-purchasing/procure-to-pay-integration.md:146` |
-| Format nomor dokumen | `<JENIS>-<TAHUN>-<BULAN>-<URUT>` mis. `SQ-2026-09-0042` | Keputusan Fase 1 (2026-11-24); pola penjualan di `content/03-sales/sales-order.md` |
+| Harga PO contoh | Rp700.000/unit | `content/05-purchasing/goods-receipt-and-service-receipt.md:93` |
+| Landed cost contoh | Rp750.000/unit setelah freight Rp500.000 untuk 10 unit | `content/05-purchasing/procure-to-pay-integration.md:146` |
+| Format nomor dokumen | `<JENIS>-<TAHUN>-<BULAN>-<URUT>` mis. `SQ-2026-09-0042` | Keputusan Fase 1 (2026-11-24); pola penjualan di `content/04-sales/sales-order.md` |
 
 ## Keputusan Kanonik Fase 1 (2026-11-24)
 
@@ -24,20 +24,20 @@ Keputusan berikut disetujui pemilik proyek dan menjadi basis Fase 2. Angka yang 
 | D-1 | Aset `AST-MAC-2026-0001` | Cost model. Perolehan Rp120 jt pada 1 April 2026, residu Rp10 jt, umur 60 bulan (Rp1.833.333/bulan). Pada 31 Desember 2028 (33 bulan): akumulasi **Rp60,5 jt**, nilai buku **Rp59,5 jt**, sisa umur 27 bulan. Artikel revaluasi memakai `AST-MAC-2026-0002`; artikel componentization memakai `AST-MAC-2026-0003`. |
 | D-2 | Material proyek | Proyek fixed-price: WIP→COGS diakru per progres. Time-material/cost-reimbursable: langsung ke beban. |
 | D-3 | Skenario tahunan | EBT 100 jt menjadi kanonik. Skenario EBT 15,35 jt diberi label tahun pembanding, bukan skenario kedua. |
-| D-4 | Chart of accounts | `content/02-accounting/chart-of-accounts.md` kanonik; `08-assets` menyesuaikan. |
+| D-4 | Chart of accounts | `content/03-accounting/chart-of-accounts.md` kanonik; `09-assets` menyesuaikan. |
 | D-5 | Nomor dokumen P2P | Pola 4 segmen. Nilai terverifikasi: `PR-2026-09-0041`, `PO-2026-09-0081`. `MO-2026-0042` dikecualikan karena merupakan ID cost sheet (D-7), bukan nomor dokumen transaksi. |
 | D-6 | Konversi UOM | 1 Pack = 6 Unit. Artikel yang memakai faktor "4" dikoreksi. |
-| D-7 | Cost sheet produksi | `content/06-manufacturing/production-costing-and-wip.md` pemilik tunggal; artikel lain merujuk. |
-| D-8 | Index `02-accounting` dan `04-purchasing` | Hapus janji cakupan PPh 21/22/4(2) yang tidak ada di artikel tujuan (temuan TAX-04/05). Perluasan materi PPh 21/22 masuk Fase 5. |
+| D-7 | Cost sheet produksi | `content/07-manufacturing/production-costing-and-wip.md` pemilik tunggal; artikel lain merujuk. |
+| D-8 | Index `03-accounting` dan `05-purchasing` | Hapus janji cakupan PPh 21/22/4(2) yang tidak ada di artikel tujuan (temuan TAX-04/05). Perluasan materi PPh 21/22 masuk Fase 5. |
 
 ## Konflik Belum Selesai
 
 | # | Objek | Nilai A | Nilai B | Dampak |
 |---|---|---|---|---|
 | 3 | Nilai retur | Rp700.000 | Rp750.000 (nilai perolehan termasuk landed cost) | Persediaan overstated Rp50.000 |
-| 4 | PPN | 12% statutory dengan DPP 11/12 (`11-tax/vat-fundamentals.md:116`) | 11% "efektif sejak 1 April 2022" (`03-sales/sales-tax.md:86`) | Regulasi yang diajarkan sudah usang |
+| 4 | PPN | 12% statutory dengan DPP 11/12 (`12-tax/vat-fundamentals.md:116`) | 11% "efektif sejak 1 April 2022" (`04-sales/sales-tax.md:86`) | Regulasi yang diajarkan sudah usang |
 
-Konflik #4 bukan berarti `11-tax` salah: artikel itu sudah menjelaskan beban efektif 11% dari tarif 12%. Yang salah adalah artikel sales/purchasing yang menyatakan 11% sebagai tarif statutori dengan tanggal berlaku lama.
+Konflik #4 bukan berarti `12-tax` salah: artikel itu sudah menjelaskan beban efektif 11% dari tarif 12%. Yang salah adalah artikel sales/purchasing yang menyatakan 11% sebagai tarif statutori dengan tanggal berlaku lama.
 
 ## Cara Memakai Register
 

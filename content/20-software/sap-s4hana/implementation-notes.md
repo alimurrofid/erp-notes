@@ -9,7 +9,7 @@ software_version: "S/4HANA 2025"
 
 Catatan implementasi **SAP S/4HANA 2025** untuk area yang dibahas repository ini: buku besar, penilaian persediaan, dan dampak konversi dari SAP ERP. Dokumen ini bukan tutorial konfigurasi dan bukan pengganti dokumentasi SAP.
 
-Konsep akuntansi tetap mengacu ke artikel kanonik (`02-accounting`, `05-inventory`, `11-tax`); artikel ini hanya menjelaskan mekanisme yang khas SAP.
+Konsep akuntansi tetap mengacu ke artikel kanonik (`03-accounting`, `06-inventory`, `12-tax`); artikel ini hanya menjelaskan mekanisme yang khas SAP.
 
 ## ERP Implementation
 

@@ -53,7 +53,7 @@ PT Maju Bersama (PKP, IDR), skenario kanonik yang sama dengan modul lain. Tahun 
 
 ## Batasan
 
-- Gunakan hanya akun yang ada di [[02-accounting/chart-of-accounts|Chart of Accounts]].
+- Gunakan hanya akun yang ada di [[03-accounting/chart-of-accounts|Chart of Accounts]].
 - Sebutkan asumsi bila ada angka yang tidak diberikan.
 - Jangan mengarang nomor dokumen; gunakan pola 4 segmen (`MO-2026-0042` adalah ID cost sheet, bukan nomor dokumen transaksi).
 - Bulatkan rupiah ke satuan penuh; sebutkan pembulatan jika ada.

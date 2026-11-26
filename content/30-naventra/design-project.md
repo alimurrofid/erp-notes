@@ -6,11 +6,11 @@ title: Naventra Design — project
 
 ## Definition
 
-Keputusan desain Naventra yang diekstrak dari artikel `09-project`. Teks keputusan dipindahkan apa adanya; artikel sumber menyisakan satu baris rujukan.
+Keputusan desain Naventra yang diekstrak dari artikel `10-project`. Teks keputusan dipindahkan apa adanya; artikel sumber menyisakan satu baris rujukan.
 
 ## NAV-D-078 — Project Billing and Revenue
 
-Sumber: [[09-project/project-billing-and-revenue|Project Billing and Revenue]]
+Sumber: [[10-project/project-billing-and-revenue|Project Billing and Revenue]]
 
 Dalam perancangan modul penagihan proyek Naventra ERP:
 
@@ -20,7 +20,7 @@ Dalam perancangan modul penagihan proyek Naventra ERP:
 
 ## NAV-D-079 — Project Budget and Cost Control
 
-Sumber: [[09-project/project-budget-and-cost-control|Project Budget and Cost Control]]
+Sumber: [[10-project/project-budget-and-cost-control|Project Budget and Cost Control]]
 
 Dalam perancangan modul proyek Naventra ERP:
 
@@ -30,7 +30,7 @@ Dalam perancangan modul proyek Naventra ERP:
 
 ## NAV-D-080 — Project Change, Risk, and Issue Management
 
-Sumber: [[09-project/project-change-risk-and-issue-management|Project Change, Risk, and Issue Management]]
+Sumber: [[10-project/project-change-risk-and-issue-management|Project Change, Risk, and Issue Management]]
 
 Dalam perancangan modul tata kelola proyek Naventra ERP:
 
@@ -40,7 +40,7 @@ Dalam perancangan modul tata kelola proyek Naventra ERP:
 
 ## NAV-D-081 — Project Completion and Closing
 
-Sumber: [[09-project/project-completion-and-closing|Project Completion and Closing]]
+Sumber: [[10-project/project-completion-and-closing|Project Completion and Closing]]
 
 Dalam perancangan modul penutupan proyek Naventra ERP:
 
@@ -50,7 +50,7 @@ Dalam perancangan modul penutupan proyek Naventra ERP:
 
 ## NAV-D-082 — Project Cost Management
 
-Sumber: [[09-project/project-cost-management|Project Cost Management]]
+Sumber: [[10-project/project-cost-management|Project Cost Management]]
 
 Rancangan arsitektur modul Project Cost Management pada Naventra ERP:
 
@@ -60,7 +60,7 @@ Rancangan arsitektur modul Project Cost Management pada Naventra ERP:
 
 ## NAV-D-083 — Project Integration
 
-Sumber: [[09-project/project-integration|Project Integration]]
+Sumber: [[10-project/project-integration|Project Integration]]
 
 Dalam perancangan arsitektur inti modul manajemen proyek Naventra ERP:
 
@@ -70,7 +70,7 @@ Dalam perancangan arsitektur inti modul manajemen proyek Naventra ERP:
 
 ## NAV-D-084 — Project Management Fundamentals
 
-Sumber: [[09-project/project-management-fundamentals|Project Management Fundamentals]]
+Sumber: [[10-project/project-management-fundamentals|Project Management Fundamentals]]
 
 Rancangan arsitektur modul Project Management pada Naventra ERP:
 
@@ -80,7 +80,7 @@ Rancangan arsitektur modul Project Management pada Naventra ERP:
 
 ## NAV-D-085 — Project Master Data & Templates
 
-Sumber: [[09-project/project-master-data|Project Master Data & Templates]]
+Sumber: [[10-project/project-master-data|Project Master Data & Templates]]
 
 Rancangan arsitektur Project Master Data pada Naventra ERP:
 
@@ -90,7 +90,7 @@ Rancangan arsitektur Project Master Data pada Naventra ERP:
 
 ## NAV-D-086 — Project Material and Inventory
 
-Sumber: [[09-project/project-material-and-inventory|Project Material and Inventory]]
+Sumber: [[10-project/project-material-and-inventory|Project Material and Inventory]]
 
 Dalam arsitektur modul logistik proyek Naventra ERP:
 
@@ -100,7 +100,7 @@ Dalam arsitektur modul logistik proyek Naventra ERP:
 
 ## NAV-D-087 — Project Planning & Scheduling
 
-Sumber: [[09-project/project-planning-and-scheduling|Project Planning & Scheduling]]
+Sumber: [[10-project/project-planning-and-scheduling|Project Planning & Scheduling]]
 
 Rancangan arsitektur modul Planning & Scheduling pada Naventra ERP:
 
@@ -110,7 +110,7 @@ Rancangan arsitektur modul Planning & Scheduling pada Naventra ERP:
 
 ## NAV-D-088 — Project Procurement
 
-Sumber: [[09-project/project-procurement|Project Procurement]]
+Sumber: [[10-project/project-procurement|Project Procurement]]
 
 Dalam perancangan fungsionalitas Project Procurement pada Naventra ERP:
 
@@ -120,7 +120,7 @@ Dalam perancangan fungsionalitas Project Procurement pada Naventra ERP:
 
 ## NAV-D-089 — Project Profitability
 
-Sumber: [[09-project/project-profitability|Project Profitability]]
+Sumber: [[10-project/project-profitability|Project Profitability]]
 
 Dalam perancangan modul analisis profitabilitas Naventra ERP:
 
@@ -130,7 +130,7 @@ Dalam perancangan modul analisis profitabilitas Naventra ERP:
 
 ## NAV-D-090 — Project Reporting and Analytics
 
-Sumber: [[09-project/project-reporting-and-analytics|Project Reporting and Analytics]]
+Sumber: [[10-project/project-reporting-and-analytics|Project Reporting and Analytics]]
 
 Dalam perancangan modul pelaporan dan analitik proyek Naventra ERP:
 
@@ -140,7 +140,7 @@ Dalam perancangan modul pelaporan dan analitik proyek Naventra ERP:
 
 ## NAV-D-091 — Project Resource Management
 
-Sumber: [[09-project/project-resource-management|Project Resource Management]]
+Sumber: [[10-project/project-resource-management|Project Resource Management]]
 
 Rancangan arsitektur modul Resource Management pada Naventra ERP:
 
@@ -150,7 +150,7 @@ Rancangan arsitektur modul Resource Management pada Naventra ERP:
 
 ## NAV-D-092 — Project Structure & Work Breakdown Structure (WBS)
 
-Sumber: [[09-project/project-structure-and-work-breakdown|Project Structure & Work Breakdown Structure (WBS)]]
+Sumber: [[10-project/project-structure-and-work-breakdown|Project Structure & Work Breakdown Structure (WBS)]]
 
 Rancangan arsitektur struktur WBS pada Naventra ERP:
 
@@ -160,7 +160,7 @@ Rancangan arsitektur struktur WBS pada Naventra ERP:
 
 ## NAV-D-093 — Project Task & Milestone Management
 
-Sumber: [[09-project/project-task-and-milestone|Project Task & Milestone Management]]
+Sumber: [[10-project/project-task-and-milestone|Project Task & Milestone Management]]
 
 Rancangan arsitektur Task & Milestone pada Naventra ERP:
 
@@ -170,7 +170,7 @@ Rancangan arsitektur Task & Milestone pada Naventra ERP:
 
 ## NAV-D-094 — Timesheet & Effort Tracking
 
-Sumber: [[09-project/timesheet-and-effort-tracking|Timesheet & Effort Tracking]]
+Sumber: [[10-project/timesheet-and-effort-tracking|Timesheet & Effort Tracking]]
 
 Rancangan arsitektur modul Timesheet & Effort Tracking pada Naventra ERP:
 
@@ -182,23 +182,23 @@ Rancangan arsitektur modul Timesheet & Effort Tracking pada Naventra ERP:
 
 | ID | Sumber | Status |
 |---|---|---|
-| NAV-D-078 | `09-project/project-billing-and-revenue.md` | Adopted |
-| NAV-D-079 | `09-project/project-budget-and-cost-control.md` | Adopted |
-| NAV-D-080 | `09-project/project-change-risk-and-issue-management.md` | Adopted |
-| NAV-D-081 | `09-project/project-completion-and-closing.md` | Adopted |
-| NAV-D-082 | `09-project/project-cost-management.md` | Adopted |
-| NAV-D-083 | `09-project/project-integration.md` | Adopted |
-| NAV-D-084 | `09-project/project-management-fundamentals.md` | Adopted |
-| NAV-D-085 | `09-project/project-master-data.md` | Adopted |
-| NAV-D-086 | `09-project/project-material-and-inventory.md` | Adopted |
-| NAV-D-087 | `09-project/project-planning-and-scheduling.md` | Adopted |
-| NAV-D-088 | `09-project/project-procurement.md` | Adopted |
-| NAV-D-089 | `09-project/project-profitability.md` | Adopted |
-| NAV-D-090 | `09-project/project-reporting-and-analytics.md` | Adopted |
-| NAV-D-091 | `09-project/project-resource-management.md` | Adopted |
-| NAV-D-092 | `09-project/project-structure-and-work-breakdown.md` | Adopted |
-| NAV-D-093 | `09-project/project-task-and-milestone.md` | Adopted |
-| NAV-D-094 | `09-project/timesheet-and-effort-tracking.md` | Adopted |
+| NAV-D-078 | `10-project/project-billing-and-revenue.md` | Adopted |
+| NAV-D-079 | `10-project/project-budget-and-cost-control.md` | Adopted |
+| NAV-D-080 | `10-project/project-change-risk-and-issue-management.md` | Adopted |
+| NAV-D-081 | `10-project/project-completion-and-closing.md` | Adopted |
+| NAV-D-082 | `10-project/project-cost-management.md` | Adopted |
+| NAV-D-083 | `10-project/project-integration.md` | Adopted |
+| NAV-D-084 | `10-project/project-management-fundamentals.md` | Adopted |
+| NAV-D-085 | `10-project/project-master-data.md` | Adopted |
+| NAV-D-086 | `10-project/project-material-and-inventory.md` | Adopted |
+| NAV-D-087 | `10-project/project-planning-and-scheduling.md` | Adopted |
+| NAV-D-088 | `10-project/project-procurement.md` | Adopted |
+| NAV-D-089 | `10-project/project-profitability.md` | Adopted |
+| NAV-D-090 | `10-project/project-reporting-and-analytics.md` | Adopted |
+| NAV-D-091 | `10-project/project-resource-management.md` | Adopted |
+| NAV-D-092 | `10-project/project-structure-and-work-breakdown.md` | Adopted |
+| NAV-D-093 | `10-project/project-task-and-milestone.md` | Adopted |
+| NAV-D-094 | `10-project/timesheet-and-effort-tracking.md` | Adopted |
 
 ## References
 

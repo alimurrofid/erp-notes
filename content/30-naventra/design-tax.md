@@ -6,11 +6,11 @@ title: Naventra Design — tax
 
 ## Definition
 
-Keputusan desain Naventra yang diekstrak dari artikel `11-tax`. Teks keputusan dipindahkan apa adanya; artikel sumber menyisakan satu baris rujukan.
+Keputusan desain Naventra yang diekstrak dari artikel `12-tax`. Teks keputusan dipindahkan apa adanya; artikel sumber menyisakan satu baris rujukan.
 
 ## NAV-D-113 — Corporate Income Tax Calculation
 
-Sumber: [[11-tax/corporate-income-tax-calculation|Corporate Income Tax Calculation]]
+Sumber: [[12-tax/corporate-income-tax-calculation|Corporate Income Tax Calculation]]
 
 Pada pengembangan ERP Naventra, modul perhitungan PPh Badan dirancang dengan fitur otomatisasi terdepan:
 
@@ -26,7 +26,7 @@ Pada pengembangan ERP Naventra, modul perhitungan PPh Badan dirancang dengan fit
 
 ## NAV-D-114 — Corporate Income Tax Fundamentals
 
-Sumber: [[11-tax/corporate-income-tax-fundamentals|Corporate Income Tax Fundamentals]]
+Sumber: [[12-tax/corporate-income-tax-fundamentals|Corporate Income Tax Fundamentals]]
 
 Pada rancangan sistem ERP Naventra, pengelolaan PPh Badan diimplementasikan melalui pendekatan modern:
 
@@ -39,7 +39,7 @@ Pada rancangan sistem ERP Naventra, pengelolaan PPh Badan diimplementasikan mela
 
 ## NAV-D-115 — Corporate Tax Installment and Prepayment
 
-Sumber: [[11-tax/corporate-tax-installment-and-prepayment|Corporate Tax Installment and Prepayment]]
+Sumber: [[12-tax/corporate-tax-installment-and-prepayment|Corporate Tax Installment and Prepayment]]
 
 Pada rancangan sistem ERP Naventra, pengelolaan angsuran dan kredit pajak badan dikembangkan dengan mekanisme berikut:
 
@@ -52,7 +52,7 @@ Pada rancangan sistem ERP Naventra, pengelolaan angsuran dan kredit pajak badan 
 
 ## NAV-D-116 — Input VAT and Output VAT
 
-Sumber: [[11-tax/input-vat-and-output-vat|Input VAT and Output VAT]]
+Sumber: [[12-tax/input-vat-and-output-vat|Input VAT and Output VAT]]
 
 Pada pengembangan sistem ERP Naventra, pengelolaan PPN Masukan dan Keluaran dirancang dengan mekanisme kendali berikut:
 
@@ -67,7 +67,7 @@ Pada pengembangan sistem ERP Naventra, pengelolaan PPN Masukan dan Keluaran dira
 
 ## NAV-D-117 — Tax Closing and Period-End
 
-Sumber: [[11-tax/tax-closing-and-period-end|Tax Closing and Period-End]]
+Sumber: [[12-tax/tax-closing-and-period-end|Tax Closing and Period-End]]
 
 Pada pengembangan ERP Naventra, fitur penutupan pajak akhir periode dirancang dengan arsitektur ketat:
 
@@ -80,7 +80,7 @@ Pada pengembangan ERP Naventra, fitur penutupan pajak akhir periode dirancang de
 
 ## NAV-D-118 — Tax Controls, Audit, and Compliance
 
-Sumber: [[11-tax/tax-controls-audit-and-compliance|Tax Controls, Audit, and Compliance]]
+Sumber: [[12-tax/tax-controls-audit-and-compliance|Tax Controls, Audit, and Compliance]]
 
 Pada pengembangan ERP Naventra, kerangka kepatuhan dan audit perpajakan dibangun dengan fondasi ketat:
 
@@ -93,7 +93,7 @@ Pada pengembangan ERP Naventra, kerangka kepatuhan dan audit perpajakan dibangun
 
 ## NAV-D-119 — Tax Determination and Tax Rules
 
-Sumber: [[11-tax/tax-determination-and-tax-rules|Tax Determination and Tax Rules]]
+Sumber: [[12-tax/tax-determination-and-tax-rules|Tax Determination and Tax Rules]]
 
 Pada arsitektur ERP Naventra, modul penentuan pajak dirancang dengan spesifikasi teknis berikut:
 
@@ -110,7 +110,7 @@ Pada arsitektur ERP Naventra, modul penentuan pajak dirancang dengan spesifikasi
 
 ## NAV-D-120 — Tax Integration
 
-Sumber: [[11-tax/tax-integration|Tax Integration]]
+Sumber: [[12-tax/tax-integration|Tax Integration]]
 
 Pada perancangan arsitektur terintegrasi ERP Naventra, modul perpajakan dirancang dengan pertimbangan arsitektur berikut:
 
@@ -123,7 +123,7 @@ Pada perancangan arsitektur terintegrasi ERP Naventra, modul perpajakan dirancan
 
 ## NAV-D-121 — Tax Management Fundamentals
 
-Sumber: [[11-tax/tax-management-fundamentals|Tax Management Fundamentals]]
+Sumber: [[12-tax/tax-management-fundamentals|Tax Management Fundamentals]]
 
 Dalam pengembangan ERP Naventra, modul perpajakan dirancang dengan prinsip-prinsip arsitektur berikut:
 
@@ -138,7 +138,7 @@ Dalam pengembangan ERP Naventra, modul perpajakan dirancang dengan prinsip-prins
 
 ## NAV-D-122 — Tax Master Data and Tax Code
 
-Sumber: [[11-tax/tax-master-data-and-tax-code|Tax Master Data and Tax Code]]
+Sumber: [[12-tax/tax-master-data-and-tax-code|Tax Master Data and Tax Code]]
 
 Pada implementasi ERP Naventra, arsitektur master data perpajakan dibangun dengan fondasi relasional yang kokoh:
 
@@ -161,7 +161,7 @@ Pada implementasi ERP Naventra, arsitektur master data perpajakan dibangun denga
 
 ## NAV-D-123 — Tax Payment and Tax Return
 
-Sumber: [[11-tax/tax-payment-and-tax-return|Tax Payment and Tax Return]]
+Sumber: [[12-tax/tax-payment-and-tax-return|Tax Payment and Tax Return]]
 
 Pada rancangan sistem ERP Naventra, modul pembayaran dan pelaporan perpajakan dikembangkan dengan standar otomasi tinggi:
 
@@ -174,7 +174,7 @@ Pada rancangan sistem ERP Naventra, modul pembayaran dan pelaporan perpajakan di
 
 ## NAV-D-124 — Tax Reporting and Tax Analytics
 
-Sumber: [[11-tax/tax-reporting-and-tax-analytics|Tax Reporting and Tax Analytics]]
+Sumber: [[12-tax/tax-reporting-and-tax-analytics|Tax Reporting and Tax Analytics]]
 
 Pada arsitektur ERP Naventra, fitur pelaporan dan analitika perpajakan dirancang dengan pendekatan desain teknis berikut:
 
@@ -187,7 +187,7 @@ Pada arsitektur ERP Naventra, fitur pelaporan dan analitika perpajakan dirancang
 
 ## NAV-D-125 — Taxable Base and Tax Calculation
 
-Sumber: [[11-tax/taxable-base-and-tax-calculation|Taxable Base and Tax Calculation]]
+Sumber: [[12-tax/taxable-base-and-tax-calculation|Taxable Base and Tax Calculation]]
 
 Pada pengembangan ERP Naventra, modul kalkulasi pajak dibangun dengan spesifikasi teknis berikut:
 
@@ -212,7 +212,7 @@ Pada pengembangan ERP Naventra, modul kalkulasi pajak dibangun dengan spesifikas
 
 ## NAV-D-126 — Taxable Income and Fiscal Reconciliation
 
-Sumber: [[11-tax/taxable-income-and-fiscal-reconciliation|Taxable Income and Fiscal Reconciliation]]
+Sumber: [[12-tax/taxable-income-and-fiscal-reconciliation|Taxable Income and Fiscal Reconciliation]]
 
 Pada arsitektur ERP Naventra, modul rekonsiliasi fiskal dirancang dengan pendekatan tata kelola data berikut:
 
@@ -228,7 +228,7 @@ Pada arsitektur ERP Naventra, modul rekonsiliasi fiskal dirancang dengan pendeka
 
 ## NAV-D-127 — VAT Fundamentals
 
-Sumber: [[11-tax/vat-fundamentals|VAT Fundamentals]]
+Sumber: [[12-tax/vat-fundamentals|VAT Fundamentals]]
 
 Pada pengembangan ERP Naventra, modul PPN fundamental dirancang dengan prinsip keandalan berikut:
 
@@ -241,7 +241,7 @@ Pada pengembangan ERP Naventra, modul PPN fundamental dirancang dengan prinsip k
 
 ## NAV-D-128 — VAT Return and Reconciliation
 
-Sumber: [[11-tax/vat-return-and-reconciliation|VAT Return and Reconciliation]]
+Sumber: [[12-tax/vat-return-and-reconciliation|VAT Return and Reconciliation]]
 
 Pada pengembangan ERP Naventra, fitur rekonsiliasi dan pelaporan SPT Masa dirancang dengan kendali otomatisasi tinggi:
 
@@ -256,7 +256,7 @@ Pada pengembangan ERP Naventra, fitur rekonsiliasi dan pelaporan SPT Masa diranc
 
 ## NAV-D-129 — VAT Transaction and Tax Invoice
 
-Sumber: [[11-tax/vat-transaction-and-tax-invoice|VAT Transaction and Tax Invoice]]
+Sumber: [[12-tax/vat-transaction-and-tax-invoice|VAT Transaction and Tax Invoice]]
 
 Pada pengembangan modul Faktur Pajak di ERP Naventra, arsitektur dirancang dengan fokus pada kepatuhan modern:
 
@@ -272,7 +272,7 @@ Pada pengembangan modul Faktur Pajak di ERP Naventra, arsitektur dirancang denga
 
 ## NAV-D-130 — Withholding Tax Management
 
-Sumber: [[11-tax/withholding-tax-management|Withholding Tax Management]]
+Sumber: [[12-tax/withholding-tax-management|Withholding Tax Management]]
 
 Pada perancangan modul Withholding Tax di ERP Naventra, fitur-fitur berikut diimplementasikan:
 
@@ -289,24 +289,24 @@ Pada perancangan modul Withholding Tax di ERP Naventra, fitur-fitur berikut diim
 
 | ID | Sumber | Status |
 |---|---|---|
-| NAV-D-113 | `11-tax/corporate-income-tax-calculation.md` | Adopted |
-| NAV-D-114 | `11-tax/corporate-income-tax-fundamentals.md` | Adopted |
-| NAV-D-115 | `11-tax/corporate-tax-installment-and-prepayment.md` | Adopted |
-| NAV-D-116 | `11-tax/input-vat-and-output-vat.md` | Adopted |
-| NAV-D-117 | `11-tax/tax-closing-and-period-end.md` | Adopted |
-| NAV-D-118 | `11-tax/tax-controls-audit-and-compliance.md` | Adopted |
-| NAV-D-119 | `11-tax/tax-determination-and-tax-rules.md` | Adopted |
-| NAV-D-120 | `11-tax/tax-integration.md` | Adopted |
-| NAV-D-121 | `11-tax/tax-management-fundamentals.md` | Adopted |
-| NAV-D-122 | `11-tax/tax-master-data-and-tax-code.md` | Adopted |
-| NAV-D-123 | `11-tax/tax-payment-and-tax-return.md` | Adopted |
-| NAV-D-124 | `11-tax/tax-reporting-and-tax-analytics.md` | Adopted |
-| NAV-D-125 | `11-tax/taxable-base-and-tax-calculation.md` | Adopted |
-| NAV-D-126 | `11-tax/taxable-income-and-fiscal-reconciliation.md` | Adopted |
-| NAV-D-127 | `11-tax/vat-fundamentals.md` | Adopted |
-| NAV-D-128 | `11-tax/vat-return-and-reconciliation.md` | Adopted |
-| NAV-D-129 | `11-tax/vat-transaction-and-tax-invoice.md` | Adopted |
-| NAV-D-130 | `11-tax/withholding-tax-management.md` | Adopted |
+| NAV-D-113 | `12-tax/corporate-income-tax-calculation.md` | Adopted |
+| NAV-D-114 | `12-tax/corporate-income-tax-fundamentals.md` | Adopted |
+| NAV-D-115 | `12-tax/corporate-tax-installment-and-prepayment.md` | Adopted |
+| NAV-D-116 | `12-tax/input-vat-and-output-vat.md` | Adopted |
+| NAV-D-117 | `12-tax/tax-closing-and-period-end.md` | Adopted |
+| NAV-D-118 | `12-tax/tax-controls-audit-and-compliance.md` | Adopted |
+| NAV-D-119 | `12-tax/tax-determination-and-tax-rules.md` | Adopted |
+| NAV-D-120 | `12-tax/tax-integration.md` | Adopted |
+| NAV-D-121 | `12-tax/tax-management-fundamentals.md` | Adopted |
+| NAV-D-122 | `12-tax/tax-master-data-and-tax-code.md` | Adopted |
+| NAV-D-123 | `12-tax/tax-payment-and-tax-return.md` | Adopted |
+| NAV-D-124 | `12-tax/tax-reporting-and-tax-analytics.md` | Adopted |
+| NAV-D-125 | `12-tax/taxable-base-and-tax-calculation.md` | Adopted |
+| NAV-D-126 | `12-tax/taxable-income-and-fiscal-reconciliation.md` | Adopted |
+| NAV-D-127 | `12-tax/vat-fundamentals.md` | Adopted |
+| NAV-D-128 | `12-tax/vat-return-and-reconciliation.md` | Adopted |
+| NAV-D-129 | `12-tax/vat-transaction-and-tax-invoice.md` | Adopted |
+| NAV-D-130 | `12-tax/withholding-tax-management.md` | Adopted |
 
 ## References
 

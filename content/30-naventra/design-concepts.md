@@ -12,7 +12,7 @@ Artikel konsep kini hanya menyimpan satu baris rujukan ke halaman ini.
 
 ## NAV-D-001 — Posting Engine Terpusat
 
-Sumber: [[00-fundamentals/erp-fundamentals|ERP Fundamentals]]
+Sumber: [[01-fundamentals/erp-fundamentals|ERP Fundamentals]]
 
 - Modul tidak boleh berupa aplikasi terisolasi dengan sinkronisasi batch.
 - Transaksi operasional (goods receipt, stock issue) memicu jurnal melalui posting engine terpusat.
@@ -20,7 +20,7 @@ Sumber: [[00-fundamentals/erp-fundamentals|ERP Fundamentals]]
 
 ## NAV-D-002 — Pemisahan State Dokumen
 
-Sumber: [[00-fundamentals/erp-architecture|ERP Architecture]]
+Sumber: [[01-fundamentals/erp-architecture|ERP Architecture]]
 
 - `Draft`: dapat diedit; tidak memengaruhi stok maupun akuntansi.
 - `Confirmed/Approved`: komitmen operasional terbentuk; belum ada jurnal.
@@ -30,7 +30,7 @@ Sumber: [[00-fundamentals/erp-architecture|ERP Architecture]]
 
 ## NAV-D-003 — Modular Monolith
 
-Sumber: [[00-fundamentals/erp-modules|ERP Modules]]
+Sumber: [[01-fundamentals/erp-modules|ERP Modules]]
 
 - Tidak memakai database-per-service; transaksi atomik dan pelaporan keuangan membutuhkan satu skema.
 - Kode diisolasi per domain, database dibagi bersama.
@@ -38,7 +38,7 @@ Sumber: [[00-fundamentals/erp-modules|ERP Modules]]
 
 ## NAV-D-004 — Header/Lines dan Snapshot
 
-Sumber: [[00-fundamentals/master-data-vs-transaction-data|Master Data vs Transaction Data]]
+Sumber: [[01-fundamentals/master-data-vs-transaction-data|Master Data vs Transaction Data]]
 
 - Tabel transaksi memisahkan header (nomor, tanggal, pihak) dan lines (item, kuantitas, harga, akun).
 - Baris berstatus `Posted` tidak boleh diubah.
@@ -46,7 +46,7 @@ Sumber: [[00-fundamentals/master-data-vs-transaction-data|Master Data vs Transac
 
 ## NAV-D-005 — Posting Atomik dan Toleransi 3-Way Match
 
-Sumber: [[00-fundamentals/cross-module-integration|Cross-Module Integration]]
+Sumber: [[01-fundamentals/cross-module-integration|Cross-Module Integration]]
 
 - Penerimaan/penyerahan barang memicu posting service dalam transaksi database yang sama (ACID).
 - Akun kliring GR/IR direkonsiliasi otomatis; selisih harga pembelian (PPV) terdeteksi.
@@ -54,7 +54,7 @@ Sumber: [[00-fundamentals/cross-module-integration|Cross-Module Integration]]
 
 ## NAV-D-006 — Referensi Dokumen dan Timeline
 
-Sumber: [[00-fundamentals/documents-transactions-events|Documents, Transactions, Events]]
+Sumber: [[01-fundamentals/documents-transactions-events|Documents, Transactions, Events]]
 
 - Setiap tabel dokumen memiliki `source_document_type` dan `source_document_id`.
 - Invoice tanpa dasar SO atau penerimaan/pengiriman ditolak, kecuali faktur non-operasional dengan otorisasi.
@@ -62,7 +62,7 @@ Sumber: [[00-fundamentals/documents-transactions-events|Documents, Transactions,
 
 ## NAV-D-007 — Hierarki Entitas dan Dimensi Analitik
 
-Sumber: [[00-fundamentals/organizational-structure|Organizational Structure]]
+Sumber: [[01-fundamentals/organizational-structure|Organizational Structure]]
 
 - Hierarki company/branch memakai nested set atau adjacency list untuk konsolidasi bertingkat.
 - Setiap baris transaksi wajib merujuk `company_id` dan `branch_id`.
@@ -70,7 +70,7 @@ Sumber: [[00-fundamentals/organizational-structure|Organizational Structure]]
 
 ## NAV-D-008 — Pipeline P2P Atomik
 
-Sumber: [[04-purchasing/procure-to-pay-integration|Procure to Pay Integration]]
+Sumber: [[05-purchasing/procure-to-pay-integration|Procure to Pay Integration]]
 
 - Satu posting goods receipt memutasi stok, jurnal akrual, dan `received_qty` PO dalam satu transaksi.
 - Document flow tracker menampilkan PR → PO → GR → Bill → Debit Note → Payment dengan drill-down.
@@ -79,7 +79,7 @@ Sumber: [[04-purchasing/procure-to-pay-integration|Procure to Pay Integration]]
 
 ## NAV-D-009 — Agreement dan Release Order
 
-Sumber: [[04-purchasing/procurement-contract-and-agreement|Procurement Contract and Agreement]]
+Sumber: [[05-purchasing/procurement-contract-and-agreement|Procurement Contract and Agreement]]
 
 - Header `procurement_agreements` dan baris `procurement_agreement_lines` menyimpan komitmen kuantitas dan harga.
 - Baris PO menyimpan `agreement_line_id`; approval memutasi `released_qty` secara atomik.
@@ -88,7 +88,7 @@ Sumber: [[04-purchasing/procurement-contract-and-agreement|Procurement Contract 
 
 ## NAV-D-010 — State Machine dan Versioning PO
 
-Sumber: [[04-purchasing/purchase-cancellation-and-amendment|Purchase Cancellation and Amendment]]
+Sumber: [[05-purchasing/purchase-cancellation-and-amendment|Purchase Cancellation and Amendment]]
 
 - FSM: DRAFT → SUBMITTED → APPROVED → SENT → PARTIAL → FULFILLED → CLOSED → CANCELLED.
 - Pembatalan hanya bila `received_qty = 0` dan `billed_qty = 0`.
@@ -98,7 +98,7 @@ Sumber: [[04-purchasing/purchase-cancellation-and-amendment|Purchase Cancellatio
 
 ## NAV-D-011 — Read Model untuk Analitik P2P
 
-Sumber: [[04-purchasing/purchasing-reporting-and-analytics|Purchasing Reporting and Analytics]]
+Sumber: [[05-purchasing/purchasing-reporting-and-analytics|Purchasing Reporting and Analytics]]
 
 - Dashboard membaca materialized view yang diperbarui asinkron, bukan tabel transaksi.
 - Metrik dihitung saat event: `delivery_variance_days`, `is_touchless`.
@@ -109,17 +109,17 @@ Sumber: [[04-purchasing/purchasing-reporting-and-analytics|Purchasing Reporting 
 
 | ID | Sumber | Requirement terkait | Status |
 |---|---|---|---|
-| NAV-D-001 | `00-fundamentals/erp-fundamentals.md` | NAV-R-02, NAV-R-03 | Adopted |
-| NAV-D-002 | `00-fundamentals/erp-architecture.md` | NAV-R-10, NAV-R-12 | Adopted |
-| NAV-D-003 | `00-fundamentals/erp-modules.md` | NAV-R-03 | Adopted |
-| NAV-D-004 | `00-fundamentals/master-data-vs-transaction-data.md` | NAV-R-10, NAV-R-12 | Adopted |
-| NAV-D-005 | `00-fundamentals/cross-module-integration.md` | NAV-R-03, NAV-R-07 | Adopted |
-| NAV-D-006 | `00-fundamentals/documents-transactions-events.md` | NAV-R-10 | Adopted |
-| NAV-D-007 | `00-fundamentals/organizational-structure.md` | NAV-R-12 | Adopted |
-| NAV-D-008 | `04-purchasing/procure-to-pay-integration.md` | NAV-R-03, NAV-R-07, NAV-R-12 | Adopted |
-| NAV-D-009 | `04-purchasing/procurement-contract-and-agreement.md` | NAV-R-07, NAV-R-10 | Adopted |
-| NAV-D-010 | `04-purchasing/purchase-cancellation-and-amendment.md` | NAV-R-10, NAV-R-12 | Adopted |
-| NAV-D-011 | `04-purchasing/purchasing-reporting-and-analytics.md` | NAV-R-12 | Adopted |
+| NAV-D-001 | `01-fundamentals/erp-fundamentals.md` | NAV-R-02, NAV-R-03 | Adopted |
+| NAV-D-002 | `01-fundamentals/erp-architecture.md` | NAV-R-10, NAV-R-12 | Adopted |
+| NAV-D-003 | `01-fundamentals/erp-modules.md` | NAV-R-03 | Adopted |
+| NAV-D-004 | `01-fundamentals/master-data-vs-transaction-data.md` | NAV-R-10, NAV-R-12 | Adopted |
+| NAV-D-005 | `01-fundamentals/cross-module-integration.md` | NAV-R-03, NAV-R-07 | Adopted |
+| NAV-D-006 | `01-fundamentals/documents-transactions-events.md` | NAV-R-10 | Adopted |
+| NAV-D-007 | `01-fundamentals/organizational-structure.md` | NAV-R-12 | Adopted |
+| NAV-D-008 | `05-purchasing/procure-to-pay-integration.md` | NAV-R-03, NAV-R-07, NAV-R-12 | Adopted |
+| NAV-D-009 | `05-purchasing/procurement-contract-and-agreement.md` | NAV-R-07, NAV-R-10 | Adopted |
+| NAV-D-010 | `05-purchasing/purchase-cancellation-and-amendment.md` | NAV-R-10, NAV-R-12 | Adopted |
+| NAV-D-011 | `05-purchasing/purchasing-reporting-and-analytics.md` | NAV-R-12 | Adopted |
 
 ## References
 

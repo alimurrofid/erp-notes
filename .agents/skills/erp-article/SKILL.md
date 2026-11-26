@@ -14,7 +14,7 @@ Wajib diketahui sebelum menulis:
 | Input | Contoh | Jika tidak ada |
 |---|---|---|
 | Topik | "inventory adjustment" | Tanya pengguna |
-| Section target | `05-inventory/` | Tentukan dari topik, sebutkan alasannya |
+| Section target | `06-inventory/` | Tentukan dari topik, sebutkan alasannya |
 | Tipe artikel | concept / process / software / Naventra | Tentukan dengan tabel di bawah |
 | Perubahan yang diminta | "tambah exception path" | Asumsikan artikel baru yang lengkap |
 

@@ -12,7 +12,7 @@ Daftar istilah yang dipakai lintas modul, ditulis sebelum pembaca menemukannya d
 
 | Istilah | Definisi |
 |---|---|
-| **COA (Chart of Accounts)** | Daftar terstruktur akun pembukuan. Satu COA kanonik ada di [[02-accounting/chart-of-accounts|Chart of Accounts]]. |
+| **COA (Chart of Accounts)** | Daftar terstruktur akun pembukuan. Satu COA kanonik ada di [[03-accounting/chart-of-accounts|Chart of Accounts]]. |
 | **General Ledger (GL)** | Buku besar utama tempat seluruh jurnal terposting dan menjadi dasar laporan keuangan. |
 | **Subledger** | Buku pembantu per modul (AR, AP, persediaan, aset) yang menjadi sumber jurnal ke GL. |
 | **Journal Entry** | Catatan debit-kredit yang seimbang untuk satu peristiwa ekonomi. |
@@ -29,7 +29,7 @@ Daftar istilah yang dipakai lintas modul, ditulis sebelum pembaca menemukannya d
 
 | Istilah | Definisi |
 |---|---|
-| **PPN** | Pajak Pertambahan Nilai. Tarif dan DPP mengikuti [[11-tax/vat-fundamentals|VAT Fundamentals]]. |
+| **PPN** | Pajak Pertambahan Nilai. Tarif dan DPP mengikuti [[12-tax/vat-fundamentals|VAT Fundamentals]]. |
 | **PPh** | Pajak Penghasilan; dapat bersifat final atau tidak final. |
 | **DPP** | Dasar Pengenaan Pajak. |
 | **Faktur Pajak** | Dokumen bukti pungutan PPN; sejak Coretax diterbitkan elektronik. |

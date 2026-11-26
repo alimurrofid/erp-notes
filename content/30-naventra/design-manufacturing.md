@@ -6,11 +6,11 @@ title: Naventra Design — manufacturing
 
 ## Definition
 
-Keputusan desain Naventra yang diekstrak dari artikel `06-manufacturing`. Teks keputusan dipindahkan apa adanya; artikel sumber menyisakan satu baris rujukan.
+Keputusan desain Naventra yang diekstrak dari artikel `07-manufacturing`. Teks keputusan dipindahkan apa adanya; artikel sumber menyisakan satu baris rujukan.
 
 ## NAV-D-029 — Capacity Planning and Production Scheduling
 
-Sumber: [[06-manufacturing/capacity-planning-and-scheduling|Capacity Planning and Production Scheduling]]
+Sumber: [[07-manufacturing/capacity-planning-and-scheduling|Capacity Planning and Production Scheduling]]
 
 Untuk perancangan modul Perencanaan Kapasitas pada sistem ERP enterprise seperti **Naventra**:
 
@@ -37,7 +37,7 @@ Untuk perancangan modul Perencanaan Kapasitas pada sistem ERP enterprise seperti
 
 ## NAV-D-030 — Manufacturing Fundamentals in ERP
 
-Sumber: [[06-manufacturing/manufacturing-fundamentals|Manufacturing Fundamentals in ERP]]
+Sumber: [[07-manufacturing/manufacturing-fundamentals|Manufacturing Fundamentals in ERP]]
 
 Untuk perancangan modul Manufaktur pada sistem ERP enterprise seperti **Naventra**:
 
@@ -50,7 +50,7 @@ Untuk perancangan modul Manufaktur pada sistem ERP enterprise seperti **Naventra
 
 ## NAV-D-031 — Manufacturing and Production Integration Architecture
 
-Sumber: [[06-manufacturing/manufacturing-integration|Manufacturing and Production Integration Architecture]]
+Sumber: [[07-manufacturing/manufacturing-integration|Manufacturing and Production Integration Architecture]]
 
 Untuk perancangan modul Integrasi Manufaktur pada sistem ERP enterprise seperti **Naventra**:
 
@@ -67,7 +67,7 @@ Untuk perancangan modul Integrasi Manufaktur pada sistem ERP enterprise seperti 
 
 ## NAV-D-032 — Manufacturing Order Lifecycle and State Machine
 
-Sumber: [[06-manufacturing/manufacturing-order|Manufacturing Order Lifecycle and State Machine]]
+Sumber: [[07-manufacturing/manufacturing-order|Manufacturing Order Lifecycle and State Machine]]
 
 Untuk perancangan modul Manufacturing Order pada sistem ERP enterprise seperti **Naventra**:
 
@@ -101,7 +101,7 @@ Untuk perancangan modul Manufacturing Order pada sistem ERP enterprise seperti *
 
 ## NAV-D-033 — Manufacturing Reporting and Operational Analytics
 
-Sumber: [[06-manufacturing/manufacturing-reporting-and-analytics|Manufacturing Reporting and Operational Analytics]]
+Sumber: [[07-manufacturing/manufacturing-reporting-and-analytics|Manufacturing Reporting and Operational Analytics]]
 
 Untuk perancangan modul Pelaporan Manufaktur pada sistem ERP enterprise seperti **Naventra**:
 
@@ -116,7 +116,7 @@ Untuk perancangan modul Pelaporan Manufaktur pada sistem ERP enterprise seperti 
 
 ## NAV-D-034 — Material Availability and Production Reservation
 
-Sumber: [[06-manufacturing/material-availability-and-reservation|Material Availability and Production Reservation]]
+Sumber: [[07-manufacturing/material-availability-and-reservation|Material Availability and Production Reservation]]
 
 Untuk perancangan modul Reservasi Material Manufaktur pada sistem ERP enterprise seperti **Naventra**:
 
@@ -142,7 +142,7 @@ Untuk perancangan modul Reservasi Material Manufaktur pada sistem ERP enterprise
 
 ## NAV-D-035 — Material Consumption and Backflushing Mechanics
 
-Sumber: [[06-manufacturing/material-consumption-and-backflush|Material Consumption and Backflushing Mechanics]]
+Sumber: [[07-manufacturing/material-consumption-and-backflush|Material Consumption and Backflushing Mechanics]]
 
 Untuk perancangan modul Konsumsi Material pada sistem ERP enterprise seperti **Naventra**:
 
@@ -174,7 +174,7 @@ Untuk perancangan modul Konsumsi Material pada sistem ERP enterprise seperti **N
 
 ## NAV-D-036 — Material Requirements Planning (MRP)
 
-Sumber: [[06-manufacturing/mrp-material-requirement-planning|Material Requirements Planning (MRP)]]
+Sumber: [[07-manufacturing/mrp-material-requirement-planning|Material Requirements Planning (MRP)]]
 
 Untuk perancangan modul MRP pada sistem ERP enterprise seperti **Naventra**:
 
@@ -209,7 +209,7 @@ Untuk perancangan modul MRP pada sistem ERP enterprise seperti **Naventra**:
 
 ## NAV-D-037 — Product Structure and Bill of Materials (BOM)
 
-Sumber: [[06-manufacturing/product-structure-and-bom|Product Structure and Bill of Materials (BOM)]]
+Sumber: [[07-manufacturing/product-structure-and-bom|Product Structure and Bill of Materials (BOM)]]
 
 Untuk perancangan modul BOM pada sistem ERP enterprise seperti **Naventra**:
 
@@ -250,7 +250,7 @@ Untuk perancangan modul BOM pada sistem ERP enterprise seperti **Naventra**:
 
 ## NAV-D-038 — Production Costing and Work in Process (WIP)
 
-Sumber: [[06-manufacturing/production-costing-and-wip|Production Costing and Work in Process (WIP)]]
+Sumber: [[07-manufacturing/production-costing-and-wip|Production Costing and Work in Process (WIP)]]
 
 Untuk perancangan modul Akuntansi Biaya Manufaktur pada sistem ERP enterprise seperti **Naventra**:
 
@@ -275,7 +275,7 @@ Untuk perancangan modul Akuntansi Biaya Manufaktur pada sistem ERP enterprise se
 
 ## NAV-D-039 — Production Output, Co-Products, and By-Products
 
-Sumber: [[06-manufacturing/production-output-and-by-product|Production Output, Co-Products, and By-Products]]
+Sumber: [[07-manufacturing/production-output-and-by-product|Production Output, Co-Products, and By-Products]]
 
 Untuk perancangan modul Hasil Produksi dan By-Products pada sistem ERP enterprise seperti **Naventra**:
 
@@ -307,7 +307,7 @@ Untuk perancangan modul Hasil Produksi dan By-Products pada sistem ERP enterpris
 
 ## NAV-D-040 — Production Planning and Master Production Scheduling (MPS)
 
-Sumber: [[06-manufacturing/production-planning|Production Planning and Master Production Scheduling (MPS)]]
+Sumber: [[07-manufacturing/production-planning|Production Planning and Master Production Scheduling (MPS)]]
 
 Untuk perancangan modul Production Planning pada sistem ERP enterprise seperti **Naventra**:
 
@@ -344,7 +344,7 @@ Untuk perancangan modul Production Planning pada sistem ERP enterprise seperti *
 
 ## NAV-D-041 — Production Quality Control and Rework Management
 
-Sumber: [[06-manufacturing/production-quality-and-rework|Production Quality Control and Rework Management]]
+Sumber: [[07-manufacturing/production-quality-and-rework|Production Quality Control and Rework Management]]
 
 Untuk perancangan modul Manajemen Mutu Manufaktur pada sistem ERP enterprise seperti **Naventra**:
 
@@ -385,7 +385,7 @@ Untuk perancangan modul Manajemen Mutu Manufaktur pada sistem ERP enterprise sep
 
 ## NAV-D-042 — Production Variance and Operational Performance
 
-Sumber: [[06-manufacturing/production-variance-and-performance|Production Variance and Operational Performance]]
+Sumber: [[07-manufacturing/production-variance-and-performance|Production Variance and Operational Performance]]
 
 Untuk perancangan modul Analisis Varians Manufaktur pada sistem ERP enterprise seperti **Naventra**:
 
@@ -411,7 +411,7 @@ Untuk perancangan modul Analisis Varians Manufaktur pada sistem ERP enterprise s
 
 ## NAV-D-043 — Routing and Work Center Architecture
 
-Sumber: [[06-manufacturing/routing-and-work-center|Routing and Work Center Architecture]]
+Sumber: [[07-manufacturing/routing-and-work-center|Routing and Work Center Architecture]]
 
 Untuk perancangan modul Routing dan Work Center pada sistem ERP enterprise seperti **Naventra**:
 
@@ -461,7 +461,7 @@ Untuk perancangan modul Routing dan Work Center pada sistem ERP enterprise seper
 
 ## NAV-D-044 — Shop Floor Control and Work Order Execution
 
-Sumber: [[06-manufacturing/shop-floor-execution|Shop Floor Control and Work Order Execution]]
+Sumber: [[07-manufacturing/shop-floor-execution|Shop Floor Control and Work Order Execution]]
 
 Untuk perancangan modul Shop Floor Execution pada sistem ERP enterprise seperti **Naventra**:
 
@@ -496,7 +496,7 @@ Untuk perancangan modul Shop Floor Execution pada sistem ERP enterprise seperti 
 
 ## NAV-D-045 — Subcontracting and External Processing
 
-Sumber: [[06-manufacturing/subcontracting-and-external-processing|Subcontracting and External Processing]]
+Sumber: [[07-manufacturing/subcontracting-and-external-processing|Subcontracting and External Processing]]
 
 Untuk perancangan modul Subcontracting pada sistem ERP enterprise seperti **Naventra**:
 
@@ -535,23 +535,23 @@ Untuk perancangan modul Subcontracting pada sistem ERP enterprise seperti **Nave
 
 | ID | Sumber | Status |
 |---|---|---|
-| NAV-D-029 | `06-manufacturing/capacity-planning-and-scheduling.md` | Adopted |
-| NAV-D-030 | `06-manufacturing/manufacturing-fundamentals.md` | Adopted |
-| NAV-D-031 | `06-manufacturing/manufacturing-integration.md` | Adopted |
-| NAV-D-032 | `06-manufacturing/manufacturing-order.md` | Adopted |
-| NAV-D-033 | `06-manufacturing/manufacturing-reporting-and-analytics.md` | Adopted |
-| NAV-D-034 | `06-manufacturing/material-availability-and-reservation.md` | Adopted |
-| NAV-D-035 | `06-manufacturing/material-consumption-and-backflush.md` | Adopted |
-| NAV-D-036 | `06-manufacturing/mrp-material-requirement-planning.md` | Adopted |
-| NAV-D-037 | `06-manufacturing/product-structure-and-bom.md` | Adopted |
-| NAV-D-038 | `06-manufacturing/production-costing-and-wip.md` | Adopted |
-| NAV-D-039 | `06-manufacturing/production-output-and-by-product.md` | Adopted |
-| NAV-D-040 | `06-manufacturing/production-planning.md` | Adopted |
-| NAV-D-041 | `06-manufacturing/production-quality-and-rework.md` | Adopted |
-| NAV-D-042 | `06-manufacturing/production-variance-and-performance.md` | Adopted |
-| NAV-D-043 | `06-manufacturing/routing-and-work-center.md` | Adopted |
-| NAV-D-044 | `06-manufacturing/shop-floor-execution.md` | Adopted |
-| NAV-D-045 | `06-manufacturing/subcontracting-and-external-processing.md` | Adopted |
+| NAV-D-029 | `07-manufacturing/capacity-planning-and-scheduling.md` | Adopted |
+| NAV-D-030 | `07-manufacturing/manufacturing-fundamentals.md` | Adopted |
+| NAV-D-031 | `07-manufacturing/manufacturing-integration.md` | Adopted |
+| NAV-D-032 | `07-manufacturing/manufacturing-order.md` | Adopted |
+| NAV-D-033 | `07-manufacturing/manufacturing-reporting-and-analytics.md` | Adopted |
+| NAV-D-034 | `07-manufacturing/material-availability-and-reservation.md` | Adopted |
+| NAV-D-035 | `07-manufacturing/material-consumption-and-backflush.md` | Adopted |
+| NAV-D-036 | `07-manufacturing/mrp-material-requirement-planning.md` | Adopted |
+| NAV-D-037 | `07-manufacturing/product-structure-and-bom.md` | Adopted |
+| NAV-D-038 | `07-manufacturing/production-costing-and-wip.md` | Adopted |
+| NAV-D-039 | `07-manufacturing/production-output-and-by-product.md` | Adopted |
+| NAV-D-040 | `07-manufacturing/production-planning.md` | Adopted |
+| NAV-D-041 | `07-manufacturing/production-quality-and-rework.md` | Adopted |
+| NAV-D-042 | `07-manufacturing/production-variance-and-performance.md` | Adopted |
+| NAV-D-043 | `07-manufacturing/routing-and-work-center.md` | Adopted |
+| NAV-D-044 | `07-manufacturing/shop-floor-execution.md` | Adopted |
+| NAV-D-045 | `07-manufacturing/subcontracting-and-external-processing.md` | Adopted |
 
 ## References
 

@@ -6,11 +6,11 @@ title: Naventra Design — inventory
 
 ## Definition
 
-Keputusan desain Naventra yang diekstrak dari artikel `05-inventory`. Teks keputusan dipindahkan apa adanya; artikel sumber menyisakan satu baris rujukan.
+Keputusan desain Naventra yang diekstrak dari artikel `06-inventory`. Teks keputusan dipindahkan apa adanya; artikel sumber menyisakan satu baris rujukan.
 
 ## NAV-D-012 — Internal Stock Transfer
 
-Sumber: [[05-inventory/internal-stock-transfer|Internal Stock Transfer]]
+Sumber: [[06-inventory/internal-stock-transfer|Internal Stock Transfer]]
 
 Untuk perancangan modul Transfer Internal pada sistem ERP enterprise seperti **Naventra**:
 
@@ -25,7 +25,7 @@ Untuk perancangan modul Transfer Internal pada sistem ERP enterprise seperti **N
 
 ## NAV-D-013 — Inventory Adjustment and Write-Off
 
-Sumber: [[05-inventory/inventory-adjustment|Inventory Adjustment and Write-Off]]
+Sumber: [[06-inventory/inventory-adjustment|Inventory Adjustment and Write-Off]]
 
 Untuk perancangan modul Penyesuaian Persediaan pada sistem ERP enterprise seperti **Naventra**:
 
@@ -64,7 +64,7 @@ Untuk perancangan modul Penyesuaian Persediaan pada sistem ERP enterprise sepert
 
 ## NAV-D-014 — Inventory Costing and Valuation Methods
 
-Sumber: [[05-inventory/inventory-costing|Inventory Costing and Valuation Methods]]
+Sumber: [[06-inventory/inventory-costing|Inventory Costing and Valuation Methods]]
 
 Untuk perancangan modul Costing Engine pada sistem ERP enterprise seperti **Naventra**:
 
@@ -90,7 +90,7 @@ Untuk perancangan modul Costing Engine pada sistem ERP enterprise seperti **Nave
 
 ## NAV-D-015 — Inventory Fundamentals in ERP
 
-Sumber: [[05-inventory/inventory-fundamentals|Inventory Fundamentals in ERP]]
+Sumber: [[06-inventory/inventory-fundamentals|Inventory Fundamentals in ERP]]
 
 Untuk perancangan modul Persediaan pada sistem ERP enterprise seperti **Naventra**:
 
@@ -118,7 +118,7 @@ Untuk perancangan modul Persediaan pada sistem ERP enterprise seperti **Naventra
 
 ## NAV-D-016 — Inventory and Warehouse Management Integration
 
-Sumber: [[05-inventory/inventory-integration|Inventory and Warehouse Management Integration]]
+Sumber: [[06-inventory/inventory-integration|Inventory and Warehouse Management Integration]]
 
 Untuk perancangan arsitektur integrasi Persediaan pada sistem ERP enterprise seperti **Naventra**:
 
@@ -132,7 +132,7 @@ Untuk perancangan arsitektur integrasi Persediaan pada sistem ERP enterprise sep
 
 ## NAV-D-017 — Inventory Picking, Packing, and Delivery
 
-Sumber: [[05-inventory/inventory-picking-and-delivery|Inventory Picking, Packing, and Delivery]]
+Sumber: [[06-inventory/inventory-picking-and-delivery|Inventory Picking, Packing, and Delivery]]
 
 Untuk perancangan modul Picking dan Outbound Logistics pada sistem ERP enterprise seperti **Naventra**:
 
@@ -149,7 +149,7 @@ Untuk perancangan modul Picking dan Outbound Logistics pada sistem ERP enterpris
 
 ## NAV-D-018 — Inventory Receiving and Inbound Logistics
 
-Sumber: [[05-inventory/inventory-receiving|Inventory Receiving and Inbound Logistics]]
+Sumber: [[06-inventory/inventory-receiving|Inventory Receiving and Inbound Logistics]]
 
 Untuk perancangan modul Penerimaan Inbound pada sistem ERP enterprise seperti **Naventra**:
 
@@ -169,7 +169,7 @@ Untuk perancangan modul Penerimaan Inbound pada sistem ERP enterprise seperti **
 
 ## NAV-D-019 — Inventory Reservation and Allocation
 
-Sumber: [[05-inventory/inventory-reservation-and-allocation|Inventory Reservation and Allocation]]
+Sumber: [[06-inventory/inventory-reservation-and-allocation|Inventory Reservation and Allocation]]
 
 Untuk perancangan modul Reservasi dan Alokasi pada sistem ERP enterprise seperti **Naventra**:
 
@@ -215,7 +215,7 @@ Untuk perancangan modul Reservasi dan Alokasi pada sistem ERP enterprise seperti
 
 ## NAV-D-020 — Inventory Return, Quarantine, and Reversal
 
-Sumber: [[05-inventory/inventory-return-and-reversal|Inventory Return, Quarantine, and Reversal]]
+Sumber: [[06-inventory/inventory-return-and-reversal|Inventory Return, Quarantine, and Reversal]]
 
 Untuk perancangan modul Retur Persediaan pada sistem ERP enterprise seperti **Naventra**:
 
@@ -254,7 +254,7 @@ Untuk perancangan modul Retur Persediaan pada sistem ERP enterprise seperti **Na
 
 ## NAV-D-021 — Inventory UOM and Unit Conversion
 
-Sumber: [[05-inventory/inventory-uom-and-conversion|Inventory UOM and Unit Conversion]]
+Sumber: [[06-inventory/inventory-uom-and-conversion|Inventory UOM and Unit Conversion]]
 
 Untuk perancangan modul UOM pada sistem ERP enterprise seperti **Naventra**:
 
@@ -290,7 +290,7 @@ Untuk perancangan modul UOM pada sistem ERP enterprise seperti **Naventra**:
 
 ## NAV-D-022 — Landed Cost and Capitalization
 
-Sumber: [[05-inventory/landed-cost|Landed Cost and Capitalization]]
+Sumber: [[06-inventory/landed-cost|Landed Cost and Capitalization]]
 
 Untuk perancangan modul Landed Cost pada sistem ERP enterprise seperti **Naventra**:
 
@@ -318,7 +318,7 @@ Untuk perancangan modul Landed Cost pada sistem ERP enterprise seperti **Naventr
 
 ## NAV-D-023 — Lot and Serial Number Tracking
 
-Sumber: [[05-inventory/lot-and-serial-number-tracking|Lot and Serial Number Tracking]]
+Sumber: [[06-inventory/lot-and-serial-number-tracking|Lot and Serial Number Tracking]]
 
 Untuk perancangan modul Lot dan Serial Number pada sistem ERP enterprise seperti **Naventra**:
 
@@ -355,7 +355,7 @@ Untuk perancangan modul Lot dan Serial Number pada sistem ERP enterprise seperti
 
 ## NAV-D-024 — Physical Inventory Count and Stock Opname
 
-Sumber: [[05-inventory/physical-inventory-count|Physical Inventory Count and Stock Opname]]
+Sumber: [[06-inventory/physical-inventory-count|Physical Inventory Count and Stock Opname]]
 
 Untuk perancangan modul Penghitungan Fisik pada sistem ERP enterprise seperti **Naventra**:
 
@@ -394,7 +394,7 @@ Untuk perancangan modul Penghitungan Fisik pada sistem ERP enterprise seperti **
 
 ## NAV-D-025 — Product and Inventory Master Data
 
-Sumber: [[05-inventory/product-and-inventory-master-data|Product and Inventory Master Data]]
+Sumber: [[06-inventory/product-and-inventory-master-data|Product and Inventory Master Data]]
 
 Untuk perancangan modul Master Data Produk pada sistem ERP enterprise seperti **Naventra**:
 
@@ -408,7 +408,7 @@ Untuk perancangan modul Master Data Produk pada sistem ERP enterprise seperti **
 
 ## NAV-D-026 — Replenishment and Stock Planning
 
-Sumber: [[05-inventory/replenishment-and-stock-planning|Replenishment and Stock Planning]]
+Sumber: [[06-inventory/replenishment-and-stock-planning|Replenishment and Stock Planning]]
 
 Untuk perancangan modul Replenishment pada sistem ERP enterprise seperti **Naventra**:
 
@@ -439,7 +439,7 @@ Untuk perancangan modul Replenishment pada sistem ERP enterprise seperti **Naven
 
 ## NAV-D-027 — Stock Quantity and Availability
 
-Sumber: [[05-inventory/stock-quantity-and-availability|Stock Quantity and Availability]]
+Sumber: [[06-inventory/stock-quantity-and-availability|Stock Quantity and Availability]]
 
 Untuk perancangan modul Ketersediaan Stok pada sistem ERP enterprise seperti **Naventra**:
 
@@ -485,7 +485,7 @@ Untuk perancangan modul Ketersediaan Stok pada sistem ERP enterprise seperti **N
 
 ## NAV-D-028 — Warehouse and Location Topology
 
-Sumber: [[05-inventory/warehouse-and-location|Warehouse and Location Topology]]
+Sumber: [[06-inventory/warehouse-and-location|Warehouse and Location Topology]]
 
 Untuk perancangan topologi gudang pada sistem ERP enterprise seperti **Naventra**:
 
@@ -514,30 +514,30 @@ Untuk perancangan topologi gudang pada sistem ERP enterprise seperti **Naventra*
        UNIQUE (warehouse_id, location_code)
    );
    ```
-2. **Flagging Ketersediaan ATP pada Level Lokasi**: Kolom `is_available_for_atp` memungkinkan sistem menyaring secara instan lokasi mana saja yang kuantitasnya boleh diperhitungkan dalam perhitungan [[05-inventory/stock-quantity-and-availability|Available-to-Promise (ATP)]]. Area *Receiving Bay*, *QC Hold*, dan *Damaged Area* wajib diset `is_available_for_atp = FALSE`.
+2. **Flagging Ketersediaan ATP pada Level Lokasi**: Kolom `is_available_for_atp` memungkinkan sistem menyaring secara instan lokasi mana saja yang kuantitasnya boleh diperhitungkan dalam perhitungan [[06-inventory/stock-quantity-and-availability|Available-to-Promise (ATP)]]. Area *Receiving Bay*, *QC Hold*, dan *Damaged Area* wajib diset `is_available_for_atp = FALSE`.
 3. **Pemberian Label Barcode Standar**: Sistem wajib mampu menghasilkan label barcode berformat Code 128 atau QR Code untuk setiap `location_code` agar operator gudang dapat memindai lokasi secara presisi saat melakukan putaway dan picking menggunakan perangkat mobile.
 
 ## Traceability
 
 | ID | Sumber | Status |
 |---|---|---|
-| NAV-D-012 | `05-inventory/internal-stock-transfer.md` | Adopted |
-| NAV-D-013 | `05-inventory/inventory-adjustment.md` | Adopted |
-| NAV-D-014 | `05-inventory/inventory-costing.md` | Adopted |
-| NAV-D-015 | `05-inventory/inventory-fundamentals.md` | Adopted |
-| NAV-D-016 | `05-inventory/inventory-integration.md` | Adopted |
-| NAV-D-017 | `05-inventory/inventory-picking-and-delivery.md` | Adopted |
-| NAV-D-018 | `05-inventory/inventory-receiving.md` | Adopted |
-| NAV-D-019 | `05-inventory/inventory-reservation-and-allocation.md` | Adopted |
-| NAV-D-020 | `05-inventory/inventory-return-and-reversal.md` | Adopted |
-| NAV-D-021 | `05-inventory/inventory-uom-and-conversion.md` | Adopted |
-| NAV-D-022 | `05-inventory/landed-cost.md` | Adopted |
-| NAV-D-023 | `05-inventory/lot-and-serial-number-tracking.md` | Adopted |
-| NAV-D-024 | `05-inventory/physical-inventory-count.md` | Adopted |
-| NAV-D-025 | `05-inventory/product-and-inventory-master-data.md` | Adopted |
-| NAV-D-026 | `05-inventory/replenishment-and-stock-planning.md` | Adopted |
-| NAV-D-027 | `05-inventory/stock-quantity-and-availability.md` | Adopted |
-| NAV-D-028 | `05-inventory/warehouse-and-location.md` | Adopted |
+| NAV-D-012 | `06-inventory/internal-stock-transfer.md` | Adopted |
+| NAV-D-013 | `06-inventory/inventory-adjustment.md` | Adopted |
+| NAV-D-014 | `06-inventory/inventory-costing.md` | Adopted |
+| NAV-D-015 | `06-inventory/inventory-fundamentals.md` | Adopted |
+| NAV-D-016 | `06-inventory/inventory-integration.md` | Adopted |
+| NAV-D-017 | `06-inventory/inventory-picking-and-delivery.md` | Adopted |
+| NAV-D-018 | `06-inventory/inventory-receiving.md` | Adopted |
+| NAV-D-019 | `06-inventory/inventory-reservation-and-allocation.md` | Adopted |
+| NAV-D-020 | `06-inventory/inventory-return-and-reversal.md` | Adopted |
+| NAV-D-021 | `06-inventory/inventory-uom-and-conversion.md` | Adopted |
+| NAV-D-022 | `06-inventory/landed-cost.md` | Adopted |
+| NAV-D-023 | `06-inventory/lot-and-serial-number-tracking.md` | Adopted |
+| NAV-D-024 | `06-inventory/physical-inventory-count.md` | Adopted |
+| NAV-D-025 | `06-inventory/product-and-inventory-master-data.md` | Adopted |
+| NAV-D-026 | `06-inventory/replenishment-and-stock-planning.md` | Adopted |
+| NAV-D-027 | `06-inventory/stock-quantity-and-availability.md` | Adopted |
+| NAV-D-028 | `06-inventory/warehouse-and-location.md` | Adopted |
 
 ## References
 

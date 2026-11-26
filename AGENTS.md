@@ -16,7 +16,7 @@ Panduan operasional AI agent untuk repository `erp-notes`.
    Tanpa sumber: tandai `> [!warning]` dan jangan cantumkan angka pasti.
 
 2. **Pajak punya satu sumber.**
-   `content/11-tax/` adalah sumber kanonik untuk PPN, PPh, dan Coretax.
+   `content/12-tax/` adalah sumber kanonik untuk PPN, PPh, dan Coretax.
    Artikel lain menautkan ke sana dan tidak mengulang tarif.
 
 3. **Akuntansi bersumber dari standar, bukan software.**
@@ -45,7 +45,7 @@ Panduan operasional AI agent untuk repository `erp-notes`.
 |---|---|---|
 | Menulis atau memperbarui artikel | `.agents/rules/domain.md` → `.agents/rules/writing-style.md` → `.agents/rules/content-format.md` → `.agents/document-template.md` | `erp-article` |
 | Jurnal, valuasi, COGS, WIP, pendapatan | tambah `.agents/rules/accounting.md` | `accounting-validation` |
-| Pajak, tarif, tanggal berlaku | `.agents/rules/tax-id.md` + `.agents/rules/accounting.md` (Pajak) + `content/11-tax/` | `accounting-validation` |
+| Pajak, tarif, tanggal berlaku | `.agents/rules/tax-id.md` + `.agents/rules/accounting.md` (Pajak) + `content/12-tax/` | `accounting-validation` |
 | Review, audit, cek konsistensi | rule yang relevan + `.agents/skills/erp-review/references/checklist.md` | `erp-review` |
 | Perilaku software tertentu | `.agents/rules/domain.md` (bagian Software) + dokumentasi resmi vendor | `erp-article` |
 | Desain Naventra | `.agents/rules/domain.md` (bagian Naventra) + `content/30-naventra/` | `erp-article` |

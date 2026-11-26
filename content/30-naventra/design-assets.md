@@ -6,11 +6,11 @@ title: Naventra Design — assets
 
 ## Definition
 
-Keputusan desain Naventra yang diekstrak dari artikel `08-assets`. Teks keputusan dipindahkan apa adanya; artikel sumber menyisakan satu baris rujukan.
+Keputusan desain Naventra yang diekstrak dari artikel `09-assets`. Teks keputusan dipindahkan apa adanya; artikel sumber menyisakan satu baris rujukan.
 
 ## NAV-D-062 — Asset Acquisition & Capitalization
 
-Sumber: [[08-assets/asset-acquisition-and-capitalization|Asset Acquisition & Capitalization]]
+Sumber: [[09-assets/asset-acquisition-and-capitalization|Asset Acquisition & Capitalization]]
 
 Rancangan arsitektur perolehan dan kapitalisasi aset tetap pada Naventra ERP:
 
@@ -20,7 +20,7 @@ Rancangan arsitektur perolehan dan kapitalisasi aset tetap pada Naventra ERP:
 
 ## NAV-D-063 — Asset Classification & Hierarchy
 
-Sumber: [[08-assets/asset-classification|Asset Classification & Hierarchy]]
+Sumber: [[09-assets/asset-classification|Asset Classification & Hierarchy]]
 
 Rancangan arsitektur modul Asset Classification pada Naventra ERP:
 
@@ -30,7 +30,7 @@ Rancangan arsitektur modul Asset Classification pada Naventra ERP:
 
 ## NAV-D-064 — Asset Componentization
 
-Sumber: [[08-assets/asset-componentization|Asset Componentization]]
+Sumber: [[09-assets/asset-componentization|Asset Componentization]]
 
 Rancangan arsitektur Asset Componentization pada Naventra ERP:
 
@@ -40,7 +40,7 @@ Rancangan arsitektur Asset Componentization pada Naventra ERP:
 
 ## NAV-D-065 — Asset Controls & Governance
 
-Sumber: [[08-assets/asset-controls-and-governance|Asset Controls & Governance]]
+Sumber: [[09-assets/asset-controls-and-governance|Asset Controls & Governance]]
 
 Rancangan arsitektur modul Asset Controls & Governance pada Naventra ERP:
 
@@ -50,7 +50,7 @@ Rancangan arsitektur modul Asset Controls & Governance pada Naventra ERP:
 
 ## NAV-D-066 — Asset Disposal & Retirement
 
-Sumber: [[08-assets/asset-disposal-and-retirement|Asset Disposal & Retirement]]
+Sumber: [[09-assets/asset-disposal-and-retirement|Asset Disposal & Retirement]]
 
 Rancangan arsitektur modul Asset Disposal & Retirement pada Naventra ERP:
 
@@ -60,7 +60,7 @@ Rancangan arsitektur modul Asset Disposal & Retirement pada Naventra ERP:
 
 ## NAV-D-067 — Asset Impairment Management
 
-Sumber: [[08-assets/asset-impairment|Asset Impairment Management]]
+Sumber: [[09-assets/asset-impairment|Asset Impairment Management]]
 
 Rancangan arsitektur modul Asset Impairment pada Naventra ERP:
 
@@ -70,7 +70,7 @@ Rancangan arsitektur modul Asset Impairment pada Naventra ERP:
 
 ## NAV-D-068 — Asset Maintenance Integration
 
-Sumber: [[08-assets/asset-maintenance-integration|Asset Maintenance Integration]]
+Sumber: [[09-assets/asset-maintenance-integration|Asset Maintenance Integration]]
 
 Rancangan arsitektur integrasi pemeliharaan dan aset tetap pada Naventra ERP:
 
@@ -80,7 +80,7 @@ Rancangan arsitektur integrasi pemeliharaan dan aset tetap pada Naventra ERP:
 
 ## NAV-D-069 — Asset Master Data
 
-Sumber: [[08-assets/asset-master-data|Asset Master Data]]
+Sumber: [[09-assets/asset-master-data|Asset Master Data]]
 
 Rancangan arsitektur data master aset tetap pada Naventra ERP:
 
@@ -93,7 +93,7 @@ Rancangan arsitektur data master aset tetap pada Naventra ERP:
 
 ## NAV-D-070 — Asset Reporting & Analytics
 
-Sumber: [[08-assets/asset-reporting-and-analytics|Asset Reporting & Analytics]]
+Sumber: [[09-assets/asset-reporting-and-analytics|Asset Reporting & Analytics]]
 
 Rancangan arsitektur modul Asset Reporting & Analytics pada Naventra ERP:
 
@@ -103,7 +103,7 @@ Rancangan arsitektur modul Asset Reporting & Analytics pada Naventra ERP:
 
 ## NAV-D-071 — Asset Revaluation
 
-Sumber: [[08-assets/asset-revaluation|Asset Revaluation]]
+Sumber: [[09-assets/asset-revaluation|Asset Revaluation]]
 
 Rancangan arsitektur modul Asset Revaluation pada Naventra ERP:
 
@@ -113,7 +113,7 @@ Rancangan arsitektur modul Asset Revaluation pada Naventra ERP:
 
 ## NAV-D-072 — Asset Transfer & Location Tracking
 
-Sumber: [[08-assets/asset-transfer-and-location|Asset Transfer & Location Tracking]]
+Sumber: [[09-assets/asset-transfer-and-location|Asset Transfer & Location Tracking]]
 
 Rancangan arsitektur Asset Transfer pada Naventra ERP:
 
@@ -123,7 +123,7 @@ Rancangan arsitektur Asset Transfer pada Naventra ERP:
 
 ## NAV-D-073 — CAPEX vs OPEX in Asset Lifecycle
 
-Sumber: [[08-assets/capex-vs-opex|CAPEX vs OPEX in Asset Lifecycle]]
+Sumber: [[09-assets/capex-vs-opex|CAPEX vs OPEX in Asset Lifecycle]]
 
 Rancangan arsitektur pemisahan CAPEX dan OPEX pada Naventra ERP:
 
@@ -133,7 +133,7 @@ Rancangan arsitektur pemisahan CAPEX dan OPEX pada Naventra ERP:
 
 ## NAV-D-074 — Depreciation Schedule & Management
 
-Sumber: [[08-assets/depreciation-management|Depreciation Schedule & Management]]
+Sumber: [[09-assets/depreciation-management|Depreciation Schedule & Management]]
 
 Rancangan arsitektur mesin Depreciation Management pada Naventra ERP:
 
@@ -143,7 +143,7 @@ Rancangan arsitektur mesin Depreciation Management pada Naventra ERP:
 
 ## NAV-D-075 — Fixed Assets Fundamentals
 
-Sumber: [[08-assets/fixed-assets-fundamentals|Fixed Assets Fundamentals]]
+Sumber: [[09-assets/fixed-assets-fundamentals|Fixed Assets Fundamentals]]
 
 Rancangan arsitektur modul Fixed Assets pada Naventra ERP:
 
@@ -153,7 +153,7 @@ Rancangan arsitektur modul Fixed Assets pada Naventra ERP:
 
 ## NAV-D-076 — Cross-Module Fixed Assets Integration
 
-Sumber: [[08-assets/fixed-assets-integration|Cross-Module Fixed Assets Integration]]
+Sumber: [[09-assets/fixed-assets-integration|Cross-Module Fixed Assets Integration]]
 
 Rancangan arsitektur integrasi lintas modul pada Naventra ERP:
 
@@ -163,7 +163,7 @@ Rancangan arsitektur integrasi lintas modul pada Naventra ERP:
 
 ## NAV-D-077 — Physical Asset Verification & Tagging
 
-Sumber: [[08-assets/physical-asset-verification|Physical Asset Verification & Tagging]]
+Sumber: [[09-assets/physical-asset-verification|Physical Asset Verification & Tagging]]
 
 Rancangan arsitektur modul Physical Asset Verification pada Naventra ERP:
 
@@ -175,22 +175,22 @@ Rancangan arsitektur modul Physical Asset Verification pada Naventra ERP:
 
 | ID | Sumber | Status |
 |---|---|---|
-| NAV-D-062 | `08-assets/asset-acquisition-and-capitalization.md` | Adopted |
-| NAV-D-063 | `08-assets/asset-classification.md` | Adopted |
-| NAV-D-064 | `08-assets/asset-componentization.md` | Adopted |
-| NAV-D-065 | `08-assets/asset-controls-and-governance.md` | Adopted |
-| NAV-D-066 | `08-assets/asset-disposal-and-retirement.md` | Adopted |
-| NAV-D-067 | `08-assets/asset-impairment.md` | Adopted |
-| NAV-D-068 | `08-assets/asset-maintenance-integration.md` | Adopted |
-| NAV-D-069 | `08-assets/asset-master-data.md` | Adopted |
-| NAV-D-070 | `08-assets/asset-reporting-and-analytics.md` | Adopted |
-| NAV-D-071 | `08-assets/asset-revaluation.md` | Adopted |
-| NAV-D-072 | `08-assets/asset-transfer-and-location.md` | Adopted |
-| NAV-D-073 | `08-assets/capex-vs-opex.md` | Adopted |
-| NAV-D-074 | `08-assets/depreciation-management.md` | Adopted |
-| NAV-D-075 | `08-assets/fixed-assets-fundamentals.md` | Adopted |
-| NAV-D-076 | `08-assets/fixed-assets-integration.md` | Adopted |
-| NAV-D-077 | `08-assets/physical-asset-verification.md` | Adopted |
+| NAV-D-062 | `09-assets/asset-acquisition-and-capitalization.md` | Adopted |
+| NAV-D-063 | `09-assets/asset-classification.md` | Adopted |
+| NAV-D-064 | `09-assets/asset-componentization.md` | Adopted |
+| NAV-D-065 | `09-assets/asset-controls-and-governance.md` | Adopted |
+| NAV-D-066 | `09-assets/asset-disposal-and-retirement.md` | Adopted |
+| NAV-D-067 | `09-assets/asset-impairment.md` | Adopted |
+| NAV-D-068 | `09-assets/asset-maintenance-integration.md` | Adopted |
+| NAV-D-069 | `09-assets/asset-master-data.md` | Adopted |
+| NAV-D-070 | `09-assets/asset-reporting-and-analytics.md` | Adopted |
+| NAV-D-071 | `09-assets/asset-revaluation.md` | Adopted |
+| NAV-D-072 | `09-assets/asset-transfer-and-location.md` | Adopted |
+| NAV-D-073 | `09-assets/capex-vs-opex.md` | Adopted |
+| NAV-D-074 | `09-assets/depreciation-management.md` | Adopted |
+| NAV-D-075 | `09-assets/fixed-assets-fundamentals.md` | Adopted |
+| NAV-D-076 | `09-assets/fixed-assets-integration.md` | Adopted |
+| NAV-D-077 | `09-assets/physical-asset-verification.md` | Adopted |
 
 ## References
 

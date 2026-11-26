@@ -6,11 +6,11 @@ title: Naventra Design — finance
 
 ## Definition
 
-Keputusan desain Naventra yang diekstrak dari artikel `07-finance`. Teks keputusan dipindahkan apa adanya; artikel sumber menyisakan satu baris rujukan.
+Keputusan desain Naventra yang diekstrak dari artikel `08-finance`. Teks keputusan dipindahkan apa adanya; artikel sumber menyisakan satu baris rujukan.
 
 ## NAV-D-046 — Bank Account Management
 
-Sumber: [[07-finance/bank-account-management|Bank Account Management]]
+Sumber: [[08-finance/bank-account-management|Bank Account Management]]
 
 Rancangan modul Bank Account Management pada Naventra ERP menetapkan:
 
@@ -20,7 +20,7 @@ Rancangan modul Bank Account Management pada Naventra ERP menetapkan:
 
 ## NAV-D-047 — Operational Bank Reconciliation
 
-Sumber: [[07-finance/bank-reconciliation|Operational Bank Reconciliation]]
+Sumber: [[08-finance/bank-reconciliation|Operational Bank Reconciliation]]
 
 Rancangan arsitektur mesin rekonsiliasi bank pada Naventra ERP:
 
@@ -30,7 +30,7 @@ Rancangan arsitektur mesin rekonsiliasi bank pada Naventra ERP:
 
 ## NAV-D-048 — Budget Management & Control
 
-Sumber: [[07-finance/budget-management|Budget Management & Control]]
+Sumber: [[08-finance/budget-management|Budget Management & Control]]
 
 Rancangan arsitektur modul Budget Management pada Naventra ERP:
 
@@ -40,7 +40,7 @@ Rancangan arsitektur modul Budget Management pada Naventra ERP:
 
 ## NAV-D-049 — Cash Flow Planning & Forecasting
 
-Sumber: [[07-finance/cash-flow-planning|Cash Flow Planning & Forecasting]]
+Sumber: [[08-finance/cash-flow-planning|Cash Flow Planning & Forecasting]]
 
 Rancangan arsitektur mesin Cash Flow Planning pada Naventra ERP:
 
@@ -50,7 +50,7 @@ Rancangan arsitektur mesin Cash Flow Planning pada Naventra ERP:
 
 ## NAV-D-050 — Cash Management
 
-Sumber: [[07-finance/cash-management|Cash Management]]
+Sumber: [[08-finance/cash-management|Cash Management]]
 
 Dalam perancangan arsitektur Cash Management pada Naventra ERP:
 
@@ -60,7 +60,7 @@ Dalam perancangan arsitektur Cash Management pada Naventra ERP:
 
 ## NAV-D-051 — Finance Fundamentals in ERP
 
-Sumber: [[07-finance/finance-fundamentals|Finance Fundamentals in ERP]]
+Sumber: [[08-finance/finance-fundamentals|Finance Fundamentals in ERP]]
 
 Untuk perancangan modul Finance pada sistem ERP enterprise seperti **Naventra**:
 
@@ -82,7 +82,7 @@ Untuk perancangan modul Finance pada sistem ERP enterprise seperti **Naventra**:
 
 ## NAV-D-052 — Cross-Module Finance Integration
 
-Sumber: [[07-finance/finance-integration|Cross-Module Finance Integration]]
+Sumber: [[08-finance/finance-integration|Cross-Module Finance Integration]]
 
 Rancangan arsitektur integrasi lintas modul pada Naventra ERP:
 
@@ -92,7 +92,7 @@ Rancangan arsitektur integrasi lintas modul pada Naventra ERP:
 
 ## NAV-D-053 — Finance Master Data Architecture
 
-Sumber: [[07-finance/finance-master-data|Finance Master Data Architecture]]
+Sumber: [[08-finance/finance-master-data|Finance Master Data Architecture]]
 
 Untuk perancangan modul Master Data Keuangan pada sistem ERP enterprise seperti **Naventra**:
 
@@ -128,7 +128,7 @@ Untuk perancangan modul Master Data Keuangan pada sistem ERP enterprise seperti 
 
 ## NAV-D-054 — Financial Analysis & Performance Evaluation
 
-Sumber: [[07-finance/financial-analysis|Financial Analysis & Performance Evaluation]]
+Sumber: [[08-finance/financial-analysis|Financial Analysis & Performance Evaluation]]
 
 Rancangan arsitektur modul Financial Analysis & Performance Evaluation pada Naventra ERP:
 
@@ -138,7 +138,7 @@ Rancangan arsitektur modul Financial Analysis & Performance Evaluation pada Nave
 
 ## NAV-D-055 — Financial & Management Closing
 
-Sumber: [[07-finance/financial-closing|Financial & Management Closing]]
+Sumber: [[08-finance/financial-closing|Financial & Management Closing]]
 
 Rancangan arsitektur modul Closing Governance pada Naventra ERP:
 
@@ -148,7 +148,7 @@ Rancangan arsitektur modul Closing Governance pada Naventra ERP:
 
 ## NAV-D-056 — Financial Controls & Governance
 
-Sumber: [[07-finance/financial-controls|Financial Controls & Governance]]
+Sumber: [[08-finance/financial-controls|Financial Controls & Governance]]
 
 Rancangan arsitektur modul Financial Controls & Governance pada Naventra ERP:
 
@@ -158,7 +158,7 @@ Rancangan arsitektur modul Financial Controls & Governance pada Naventra ERP:
 
 ## NAV-D-057 — Financial Planning & Forecasting
 
-Sumber: [[07-finance/financial-planning|Financial Planning & Forecasting]]
+Sumber: [[08-finance/financial-planning|Financial Planning & Forecasting]]
 
 Rancangan arsitektur modul Financial Planning & Forecasting pada Naventra ERP:
 
@@ -168,7 +168,7 @@ Rancangan arsitektur modul Financial Planning & Forecasting pada Naventra ERP:
 
 ## NAV-D-058 — Management Financial Reporting & Dashboards
 
-Sumber: [[07-finance/financial-reporting|Management Financial Reporting & Dashboards]]
+Sumber: [[08-finance/financial-reporting|Management Financial Reporting & Dashboards]]
 
 Rancangan arsitektur modul Financial Reporting & Dashboards pada Naventra ERP:
 
@@ -178,7 +178,7 @@ Rancangan arsitektur modul Financial Reporting & Dashboards pada Naventra ERP:
 
 ## NAV-D-059 — Liquidity Management
 
-Sumber: [[07-finance/liquidity-management|Liquidity Management]]
+Sumber: [[08-finance/liquidity-management|Liquidity Management]]
 
 Rancangan arsitektur modul Liquidity Management pada Naventra ERP:
 
@@ -188,7 +188,7 @@ Rancangan arsitektur modul Liquidity Management pada Naventra ERP:
 
 ## NAV-D-060 — Payment & Cash Disbursement
 
-Sumber: [[07-finance/payment-and-cash-disbursement|Payment & Cash Disbursement]]
+Sumber: [[08-finance/payment-and-cash-disbursement|Payment & Cash Disbursement]]
 
 Rancangan arsitektur pembayaran dan pengeluaran kas pada Naventra ERP:
 
@@ -198,7 +198,7 @@ Rancangan arsitektur pembayaran dan pengeluaran kas pada Naventra ERP:
 
 ## NAV-D-061 — Working Capital Management
 
-Sumber: [[07-finance/working-capital-management|Working Capital Management]]
+Sumber: [[08-finance/working-capital-management|Working Capital Management]]
 
 Rancangan arsitektur Working Capital Management pada Naventra ERP:
 
@@ -210,22 +210,22 @@ Rancangan arsitektur Working Capital Management pada Naventra ERP:
 
 | ID | Sumber | Status |
 |---|---|---|
-| NAV-D-046 | `07-finance/bank-account-management.md` | Adopted |
-| NAV-D-047 | `07-finance/bank-reconciliation.md` | Adopted |
-| NAV-D-048 | `07-finance/budget-management.md` | Adopted |
-| NAV-D-049 | `07-finance/cash-flow-planning.md` | Adopted |
-| NAV-D-050 | `07-finance/cash-management.md` | Adopted |
-| NAV-D-051 | `07-finance/finance-fundamentals.md` | Adopted |
-| NAV-D-052 | `07-finance/finance-integration.md` | Adopted |
-| NAV-D-053 | `07-finance/finance-master-data.md` | Adopted |
-| NAV-D-054 | `07-finance/financial-analysis.md` | Adopted |
-| NAV-D-055 | `07-finance/financial-closing.md` | Adopted |
-| NAV-D-056 | `07-finance/financial-controls.md` | Adopted |
-| NAV-D-057 | `07-finance/financial-planning.md` | Adopted |
-| NAV-D-058 | `07-finance/financial-reporting.md` | Adopted |
-| NAV-D-059 | `07-finance/liquidity-management.md` | Adopted |
-| NAV-D-060 | `07-finance/payment-and-cash-disbursement.md` | Adopted |
-| NAV-D-061 | `07-finance/working-capital-management.md` | Adopted |
+| NAV-D-046 | `08-finance/bank-account-management.md` | Adopted |
+| NAV-D-047 | `08-finance/bank-reconciliation.md` | Adopted |
+| NAV-D-048 | `08-finance/budget-management.md` | Adopted |
+| NAV-D-049 | `08-finance/cash-flow-planning.md` | Adopted |
+| NAV-D-050 | `08-finance/cash-management.md` | Adopted |
+| NAV-D-051 | `08-finance/finance-fundamentals.md` | Adopted |
+| NAV-D-052 | `08-finance/finance-integration.md` | Adopted |
+| NAV-D-053 | `08-finance/finance-master-data.md` | Adopted |
+| NAV-D-054 | `08-finance/financial-analysis.md` | Adopted |
+| NAV-D-055 | `08-finance/financial-closing.md` | Adopted |
+| NAV-D-056 | `08-finance/financial-controls.md` | Adopted |
+| NAV-D-057 | `08-finance/financial-planning.md` | Adopted |
+| NAV-D-058 | `08-finance/financial-reporting.md` | Adopted |
+| NAV-D-059 | `08-finance/liquidity-management.md` | Adopted |
+| NAV-D-060 | `08-finance/payment-and-cash-disbursement.md` | Adopted |
+| NAV-D-061 | `08-finance/working-capital-management.md` | Adopted |
 
 ## References
 

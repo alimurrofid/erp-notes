@@ -6,7 +6,7 @@
 **Method:** full or section-level read of all 200 Markdown files; programmatic verification of journal footing, wiki links, anchors, external URLs, Mermaid syntax, frontmatter, build, and live HTML; standards/regulatory spot-checks against primary sources.
 
 > [!warning]
-> **Addendum (23 November 2026).** Temuan **ACC-04** ("25% CIT") tidak valid: angka `25.000.000` pada `content/02-accounting/tax-accounting.md:109` adalah nominal beban, bukan tarif 25%. Temuan lain dalam laporan ini belum diverifikasi ulang dan tidak boleh diperlakukan sebagai aturan. Laporan ini bersifat historis; lihat `audit/README.md`.
+> **Addendum (23 November 2026).** Temuan **ACC-04** ("25% CIT") tidak valid: angka `25.000.000` pada `content/03-accounting/tax-accounting.md:109` adalah nominal beban, bukan tarif 25%. Temuan lain dalam laporan ini belum diverifikasi ulang dan tidak boleh diperlakukan sebagai aturan. Laporan ini bersifat historis; lihat `audit/README.md`.
 
 ---
 
@@ -32,18 +32,18 @@ Overall score: **6.1 / 10 — Needs Improvement**. The project can plausibly rea
 
 | Section | Files | Words | Ref. sections | Frontmatter | Naventra block | Files with journals | Status | Access |
 |---|---:|---:|---:|---:|---:|---:|---|---|
-| `00-fundamentals` | 8 | 7.404 | 7 | 8 | 7 | 3 | Complete | Read 8/8 |
-| `01-business-processes` | 6 | 7.781 | 5 | 6 | 0 | 5 | Complete | Read 6/6 |
-| `02-accounting` | 18 | 17.453 | 17 | 18 | 0 | 13 | Complete | Read 18/18 |
-| `03-sales` | 18 | 18.242 | 17 | 18 | 0 | 6 | Complete | Read 18/18 |
-| `04-purchasing` | 18 | 21.099 | 17 | 18 | 4 | 7 | Complete | Read 18/18 |
-| `05-inventory` | 18 | 23.673 | 17 | 18 | 17 | 7 | Complete | Read 18/18 |
-| `06-manufacturing` | 18 | 25.099 | 17 | 18 | 17 | 7 | Complete | Read 18/18 |
-| `07-finance` | 17 | 27.234 | 16 | 3 | 16 | 6 | Complete, metadata broken | Read 17/17 |
-| `08-assets` | 17 | 29.233 | 16 | 1 | 16 | 12 | Complete, metadata broken | Read 17/17 |
-| `09-project` | 18 | 29.798 | 17 | 1 | 17 | 5 | Complete, metadata broken | Read 18/18 |
-| `10-hr` | 19 | 32.473 | 18 | 1 | 18 | 2 | Complete, metadata broken | Read 19/19 |
-| `11-tax` | 19 | 32.507 | 18 | 19 | 18 | 15 | Complete | Read 19/19 |
+| `01-fundamentals` | 8 | 7.404 | 7 | 8 | 7 | 3 | Complete | Read 8/8 |
+| `02-business-processes` | 6 | 7.781 | 5 | 6 | 0 | 5 | Complete | Read 6/6 |
+| `03-accounting` | 18 | 17.453 | 17 | 18 | 0 | 13 | Complete | Read 18/18 |
+| `04-sales` | 18 | 18.242 | 17 | 18 | 0 | 6 | Complete | Read 18/18 |
+| `05-purchasing` | 18 | 21.099 | 17 | 18 | 4 | 7 | Complete | Read 18/18 |
+| `06-inventory` | 18 | 23.673 | 17 | 18 | 17 | 7 | Complete | Read 18/18 |
+| `07-manufacturing` | 18 | 25.099 | 17 | 18 | 17 | 7 | Complete | Read 18/18 |
+| `08-finance` | 17 | 27.234 | 16 | 3 | 16 | 6 | Complete, metadata broken | Read 17/17 |
+| `09-assets` | 17 | 29.233 | 16 | 1 | 16 | 12 | Complete, metadata broken | Read 17/17 |
+| `10-project` | 18 | 29.798 | 17 | 1 | 17 | 5 | Complete, metadata broken | Read 18/18 |
+| `11-hr` | 19 | 32.473 | 18 | 1 | 18 | 2 | Complete, metadata broken | Read 19/19 |
+| `12-tax` | 19 | 32.507 | 18 | 19 | 18 | 15 | Complete | Read 19/19 |
 | `20-software` | 4 | **63** | 0 | 4 | 0 | 0 | **Stub** | Read 4/4 |
 | `30-naventra` | 1 | **19** | 0 | 1 | 0 | 0 | **Stub** | Read 1/1 |
 | Root `index.md` | 1 | 118 | 0 | 1 | 0 | 0 | Thin | Read 1/1 |
@@ -52,13 +52,13 @@ Overall score: **6.1 / 10 — Needs Improvement**. The project can plausibly rea
 
 ### B.2 What was actually read
 
-All 200 files were opened and assessed. Sections 00–02 were read in full by the lead auditor; `11-tax` was read in full for 14 articles and in targeted sections for the 5 longest (index, tax-reporting, tax-controls, tax-integration, tax-payment); sections 03–10 were read end-to-end by delegated readers. Every numeric quote in this report was re-verified by grep against the source. No file was unreadable.
+All 200 files were opened and assessed. Sections 00–02 were read in full by the lead auditor; `12-tax` was read in full for 14 articles and in targeted sections for the 5 longest (index, tax-reporting, tax-controls, tax-integration, tax-payment); sections 03–10 were read end-to-end by delegated readers. Every numeric quote in this report was re-verified by grep against the source. No file was unreadable.
 
 ### B.3 Knowledge Map claim vs reality
 
 | Claim | Reality |
 |---|---|
-| Homepage map: Fundamentals → Business Processes → Accounting → Sales/Purchasing → Inventory → Manufacturing → Finance → Software → Naventra | Omits `08-assets`, `09-project`, `10-hr`, `11-tax` although all four exist and are listed below the map (`content/index.md:12-25`). |
+| Homepage map: Fundamentals → Business Processes → Accounting → Sales/Purchasing → Inventory → Manufacturing → Finance → Software → Naventra | Omits `09-assets`, `10-project`, `11-hr`, `12-tax` although all four exist and are listed below the map (`content/index.md:12-25`). |
 | README “Learning Progress” marks every 00–11 article `[x]` | Software and Naventra are unchecked — honest — but the published site does not communicate that gap. |
 | “ERP Software Implementation” is a stage of the map | The stage contains 63 words across three product pages. |
 
@@ -74,7 +74,7 @@ The main structural problems are **not** in the directory names but in what the 
 
 1. **The two terminal stages are empty.** `20-software` (4 files, 63 words) and `30-naventra` (1 file, 19 words) are placeholders. The project’s stated differentiator — “concept must remain valid in Odoo, ERPNext, Dynamics 365, SAP, Naventra” — is asserted but not demonstrated at article level.
 2. **Naventra content is misplaced.** 130 general articles end with a “Naventra Consideration” block, 28 of them containing `CREATE TABLE` schemas. There is no consolidated requirements, functional design, or implementation note. The learning reader must read product design decisions to finish a concept article.
-3. **Duplicated concepts across phases.** Four pairs claim a clean “Phase 3 vs Phase 7” boundary but repeat each other: `02-accounting/bank-reconciliation` ↔ `07-finance/bank-reconciliation`; `02-accounting/period-end-closing` ↔ `07-finance/financial-closing`; `02-accounting/financial-statements` ↔ `07-finance/financial-reporting`; `09-project/timesheet-and-effort-tracking` ↔ `10-hr/employee-timesheet-and-labor-cost`.
+3. **Duplicated concepts across phases.** Four pairs claim a clean “Phase 3 vs Phase 7” boundary but repeat each other: `03-accounting/bank-reconciliation` ↔ `08-finance/bank-reconciliation`; `03-accounting/period-end-closing` ↔ `08-finance/financial-closing`; `03-accounting/financial-statements` ↔ `08-finance/financial-reporting`; `10-project/timesheet-and-effort-tracking` ↔ `11-hr/employee-timesheet-and-labor-cost`.
 4. **Phase numbering is undefined.** Articles refer to “Phase 3 (Accounting)”, “Phase 4 (Sales)”, “Phase 5 (Purchasing)”, “Phase 12 (Tax)”, but no document defines the phase map, and folder numbers are one lower (02 = Phase 3). A reader cannot resolve the reference.
 5. **Taxonomy drift in file naming.** Labels generally match titles, but 20 H1s differ from frontmatter titles (e.g. `journal-entry` title “Journal Entry” vs H1 “Journal Entry & The Posting Process”), and 65 files have no title at all.
 
@@ -82,7 +82,7 @@ The main structural problems are **not** in the directory names but in what the 
 
 - Keep the numbered domain folders (they work) but add a `00-orientation` layer for learning path, glossary, and study guide.
 - Move Naventra prose out of concept articles into `30-naventra/{requirements,functional-design,technical-design,implementation}`; leave a one-line cross-reference in the concept article.
-- Demote `07-finance` overlap to “advanced/operational” articles that explicitly link back to the Phase 3 canonical explanation, or merge the duplicated ones.
+- Demote `08-finance` overlap to “advanced/operational” articles that explicitly link back to the Phase 3 canonical explanation, or merge the duplicated ones.
 - Publish a phase map (`00-orientation/phase-map.md`) if “Phase N” terminology is retained; otherwise remove phase numbers and use folder names.
 - Add `40-reference/` for glossary, standards index, and regulation register.
 
@@ -118,119 +118,119 @@ Jenis: **F** = Fakta, **D** = Dugaan, **S** = Saran.
 |---|---|---|---|---|---|---|---|---|
 | STR-01 | Struktur | P1 | F | `content/20-software/*` | “Catatan implementasi, modul, konfigurasi, dan alur kerja spesifik pada Odoo.” | Entire software pillar is 63 words; project promise unmet. | Write per-product articles or explicitly label section “coming soon” and remove from map. | L |
 | STR-02 | Struktur | P1 | F | `content/30-naventra/index.md:5` | “Keputusan desain (design decisions), requirement mapping, dan implementasi custom ERP Naventra” | 19-word page, zero requirements/design/implementation docs. | Build 4 sub-sections: requirements, functional design, technical design, implementation notes. | L |
-| STR-03 | Struktur | P1 | F | 130 files, e.g. `05-inventory/inventory-costing.md:171` | “CREATE TABLE inventory_cost_layers” | Product schema mixed into learning articles; no consolidated design. | Move to `30-naventra/technical-design`; keep a link only. | L |
-| STR-04 | Struktur | P2 | F | `02-accounting/bank-reconciliation.md` ↔ `07-finance/bank-reconciliation.md` | Both explain MT940/CAMT.053 matching and clearing journals. | Duplicate canonical explanation; drift risk. | Merge or make 07 a delta with explicit “see Phase 3 for model”. | M |
-| STR-05 | Struktur | P2 | F | `02-accounting/period-end-closing.md` ↔ `07-finance/financial-closing.md` | Both give a sequential close checklist ending in period lock. | Two “source of truth” closing procedures. | Keep one checklist; 07 covers governance/calendar only. | M |
-| STR-06 | Struktur | P2 | F | `09-project/timesheet-and-effort-tracking.md` ↔ `10-hr/employee-timesheet-and-labor-cost.md` | Same timesheet, rates and labour postings; different journals. | Reader cannot tell which posting is authoritative. | Define one owner (HR captures time, Project consumes cost) and cross-link. | M |
+| STR-03 | Struktur | P1 | F | 130 files, e.g. `06-inventory/inventory-costing.md:171` | “CREATE TABLE inventory_cost_layers” | Product schema mixed into learning articles; no consolidated design. | Move to `30-naventra/technical-design`; keep a link only. | L |
+| STR-04 | Struktur | P2 | F | `03-accounting/bank-reconciliation.md` ↔ `08-finance/bank-reconciliation.md` | Both explain MT940/CAMT.053 matching and clearing journals. | Duplicate canonical explanation; drift risk. | Merge or make 07 a delta with explicit “see Phase 3 for model”. | M |
+| STR-05 | Struktur | P2 | F | `03-accounting/period-end-closing.md` ↔ `08-finance/financial-closing.md` | Both give a sequential close checklist ending in period lock. | Two “source of truth” closing procedures. | Keep one checklist; 07 covers governance/calendar only. | M |
+| STR-06 | Struktur | P2 | F | `10-project/timesheet-and-effort-tracking.md` ↔ `11-hr/employee-timesheet-and-labor-cost.md` | Same timesheet, rates and labour postings; different journals. | Reader cannot tell which posting is authoritative. | Define one owner (HR captures time, Project consumes cost) and cross-link. | M |
 | STR-07 | Struktur | P2 | F | `content/index.md:12-25` | Map ends at Finance → Software → Naventra. | Assets, Project, HR, Tax invisible in the main mental model. | Redraw map with all 14 sections and dependency arrows. | S |
-| STR-08 | Struktur | P3 | F | `05-inventory/index.md:9`, `09-project/index.md` | “Phase 5 (Purchasing / P2P)”; “Phase 10” | Phase numbers undefined and offset from folder numbers. | Publish phase map or drop phase numbers. | S |
-| STR-09 | Struktur | P3 | F | 20 files, e.g. `02-accounting/journal-entry.md:5` | H1 “Journal Entry & The Posting Process” ≠ title “Journal Entry”. | Inconsistent page title vs browser/sidebar title. | Align title and H1; one canonical label. | S |
+| STR-08 | Struktur | P3 | F | `06-inventory/index.md:9`, `10-project/index.md` | “Phase 5 (Purchasing / P2P)”; “Phase 10” | Phase numbers undefined and offset from folder numbers. | Publish phase map or drop phase numbers. | S |
+| STR-09 | Struktur | P3 | F | 20 files, e.g. `03-accounting/journal-entry.md:5` | H1 “Journal Entry & The Posting Process” ≠ title “Journal Entry”. | Inconsistent page title vs browser/sidebar title. | Align title and H1; one canonical label. | S |
 
 ### D.2 Accounting and reporting
 
 | ID | Kategori | Severity | Jenis | Lokasi | Bukti (≤15 kata) | Dampak | Saran perbaikan | Effort |
 |---|---|---|---|---|---|---|---|---|
-| ACC-01 | Accounting | **P0** | F | `03-sales/sales-fundamentals.md:71`, `03-sales/sales-reporting-and-analytics.md:52`, `03-sales/order-to-cash-integration.md:30`, `01-business-processes/order-to-cash.md:108` | “pengakuan Pendapatan (Revenue) saat penagihan” vs “BUKAN semata-mata saat faktur dicetak” | Four articles recognise revenue at invoice/collection; one states IFRS 15 correctly. Reader learns the wrong rule. | Make control transfer the single rule; rewrite O2C, sales fundamentals, reporting, integration. | M |
-| ACC-02 | Accounting | **P0** | F | `03-sales/sales-tax.md:86`, `04-purchasing/purchase-tax.md:79` | “Ditetapkan sebesar 11% (efektif sejak 1 April 2022)” | States 11% as statutory rate in 2026; contradicts `11-tax/vat-fundamentals.md:116` (12% + DPP 11/12). | Add dated 12%/11-12 note everywhere; align with PMK 131/2024 and PMK 11/2025. | M |
-| ACC-03 | Accounting | P1 | F | `02-accounting/journal-entry.md:55` | “posting date dicatat 5 September agar masuk ke periode pembukuan September” | Endorses posting an August expense in September; violates cut-off/accrual. | Accrue in August (Dr expense/inventory, Cr accrued/GR-IR); clear in September. | S |
-| ACC-04 | Accounting | P1 | F | `02-accounting/tax-accounting.md:109` | “Beban Pajak Penghasilan Badan … 25.000.000” | 25% CIT contradicts 22% in `11-tax/corporate-income-tax-calculation.md:47`. | Use 22% or label the 25% as a non-Indonesian jurisdiction. | S |
-| ACC-05 | Accounting | P1 | F | `09-project/project-billing-and-revenue.md:87` | “Kredit: Contract Liability / Deferred Revenue Rp60.000.000” | Milestone already achieved (BAST) yet revenue deferred; contradicts IFRS 15. | Recognise revenue at performance; use contract liability only when billing precedes performance. | M |
-| ACC-06 | Accounting | P1 | F | `08-assets/depreciation-management.md:149` vs `08-assets/asset-revaluation.md:116` | “Akumulasi Penyusutan … Rp60.000.000” vs 33-month schedule (Rp55.000.000) | Same asset, same date, different accumulated depreciation/residual/life. | One versioned asset schedule driving depreciation, revaluation, impairment, disposal. | M |
-| ACC-07 | Accounting | P1 | F | `09-project/timesheet-and-effort-tracking.md:154` | “920 Jam … Rp90.000.000” | Line items sum to Rp91.600.000; corrupts margin 39,67% and variance +Rp19 jt. | Correct table or change rates; recompute AC 182,6 M, margin 39,13%, variance 17,4 M. | S |
-| ACC-08 | Accounting | P1 | F | `04-purchasing/procure-to-pay-integration.md:164` | “Persediaan Barang Dagang: Rp700.000” | Return relieved at 700k after inventory valued at 750k; 50k stranded. | Relieve 750k; expense the non-recoverable freight 50k. | S |
-| ACC-09 | Accounting | P1 | F | `03-sales/sales-order.md:136` vs `04-purchasing/prepayment-and-down-payment.md:112` | “Uang Muka Penjualan … Deferred Revenue” with no PPN line | Sales advance ignores output VAT; purchase advance computes but does not post it. | One advance-VAT policy; split DPP/VAT in both directions. | M |
-| ACC-10 | Accounting | P1 | F | `06-manufacturing/production-costing-and-wip.md:118` | “Biaya 5 Unit Scrap Rp437.500” | Scrap at 87,5k/unit vs standard 75k; 62,5k is unabsorbed WIP conversion. | Scrap 375k; labour variance 187,5k; overhead variance 75k. | S |
-| ACC-11 | Accounting | P1 | F | `09-project/project-cost-management.md:103` vs `09-project/project-material-and-inventory.md:85` | Material 28 M posted to expense in one, WIP in the other. | Same project material, two accounts. | Single WIP→COGS policy per revenue method. | M |
-| ACC-12 | Accounting | P1 | F | `10-hr/index.md:146` | “Employer BPJS Rp800.000” on Rp12 M wages | Own rate table implies ~1,2 M employer and 480k employee, not 800k/600k. | Recompute from JKK/JKM/JHT/JP/Kesehatan rates and caps. | S |
-| ACC-13 | Accounting | P2 | F | `07-finance/bank-reconciliation.md:131` | “Saldo Akhir: Rp65.475.000” | 45 + 25 + 15 + 0,5 − 0,025 = 85,475 M, not 65,475 M. | Correct to Rp85.475.000; recompute matched %. | S |
-| ACC-14 | Accounting | P2 | D | `02-accounting/accounts-payable.md:36` | “Unbilled Receipt Liability / IAS 37” | GR/IR accrual is a trade payable, not an IAS 37 provision. | Cite IFRS 9/Conceptual Framework or IAS 37.2 exclusion. | S |
-| ACC-15 | Accounting | P2 | F | `01-business-processes/inventory-process.md:129` | “Pendapatan Selisih Lebih Persediaan (Inventory Gain)” | Count gain credited to revenue; IFRS 15 does not apply. | Credit inventory adjustment/COGS, not revenue. | S |
-| ACC-16 | Accounting | P2 | F | `05-inventory/stock-quantity-and-availability.md:83-90` | “On-Hand − Reserved − Allocated … = 35” and “85 − 50 = 35” | Allocated is claimed to be part of reserved but subtracted twice. | Define one quantity taxonomy; remove double subtraction. | S |
-| ACC-17 | Accounting | P2 | F | `06-manufacturing/mrp-material-requirement-planning.md:93-96` | Week 4 shows “10” and “60” for the same balance. | Wrong ending balance copied by readers. | Correct to 60 in both rows. | S |
-| ACC-18 | Accounting | P2 | F | `06-manufacturing/production-planning.md:103` | Projected stock 2, below safety stock 10, no MPS receipt. | Grid violates its own trigger rule. | Trigger MPS in week 1 or explain safety-stock policy. | S |
-| ACC-19 | Accounting | P2 | D | `02-accounting/accounts-payable.md:107` and `03-sales/accounts-receivable.md:70` | 2% discount applied to VAT-inclusive total | Indonesian VAT base normally reduced by the discount; input/output VAT left overstated. | State assumption; if DPP reduced, adjust VAT and cash. | M |
-| ACC-20 | Accounting | P2 | F | `03-sales/sales-commission.md:95` | “Beban Komisi Penjualan (Commissions Expense)” | IFRS 15.91 requires capitalising incremental contract-acquisition costs if recoverable. | Add capitalise/amortise rule and practical expedient. | M |
-| ACC-21 | Accounting | P2 | F | `05-inventory/inventory-costing.md:19` | “nilai terendah antara Biaya Perolehan … dan NRV” | NRV write-down and IAS 2.33 reversal never demonstrated. | Add write-down and reversal examples. | M |
-| ACC-22 | Accounting | P2 | F | `05-inventory/inventory-costing.md` (no §) | No allocation of fixed overhead at normal capacity. | IAS 2.13 unallocated overhead absent across 18 inventory articles. | Add normal-capacity rule and idle-capacity expense. | M |
-| ACC-23 | Accounting | P2 | D | `11-tax/withholding-tax-management.md:67` | “gross-up dapat diakui sebagai biaya fiskal yang dapat dikurangkan” | PPh 23 borne by payer is commonly non-deductible; unsourced. | Verify with tax counsel; add citation or warning. | M |
-| ACC-24 | Accounting | P3 | F | `02-accounting/period-end-closing.md:90` | “dicatat pada periode berjalan dengan … Retrospective Restatement” | Contradictory: restatement adjusts opening balances/comparatives. | Reword per IAS 8.42. | S |
-| ACC-25 | Accounting | P3 | F | `05-inventory/inventory-accounting.md:52` | LIFO banned “karena tidak mencerminkan aliran fisik” | Wrong rationale; article itself says physical flow ≠ cost flow. | Cite IAS 2.25 measurement reliability. | S |
-| ACC-26 | Accounting | P2 | F | `02-accounting/financial-statements.md:124` vs `11-tax/tax-integration.md:115` | “Laba Sebelum Pajak Rp 15.350.000” vs “EBT: Rp100.000.000” | Same company has two incompatible annual results and tax charges. | Reconcile the tax scenario to the financial statements or label separate cases. | S |
+| ACC-01 | Accounting | **P0** | F | `04-sales/sales-fundamentals.md:71`, `04-sales/sales-reporting-and-analytics.md:52`, `04-sales/order-to-cash-integration.md:30`, `02-business-processes/order-to-cash.md:108` | “pengakuan Pendapatan (Revenue) saat penagihan” vs “BUKAN semata-mata saat faktur dicetak” | Four articles recognise revenue at invoice/collection; one states IFRS 15 correctly. Reader learns the wrong rule. | Make control transfer the single rule; rewrite O2C, sales fundamentals, reporting, integration. | M |
+| ACC-02 | Accounting | **P0** | F | `04-sales/sales-tax.md:86`, `05-purchasing/purchase-tax.md:79` | “Ditetapkan sebesar 11% (efektif sejak 1 April 2022)” | States 11% as statutory rate in 2026; contradicts `12-tax/vat-fundamentals.md:116` (12% + DPP 11/12). | Add dated 12%/11-12 note everywhere; align with PMK 131/2024 and PMK 11/2025. | M |
+| ACC-03 | Accounting | P1 | F | `03-accounting/journal-entry.md:55` | “posting date dicatat 5 September agar masuk ke periode pembukuan September” | Endorses posting an August expense in September; violates cut-off/accrual. | Accrue in August (Dr expense/inventory, Cr accrued/GR-IR); clear in September. | S |
+| ACC-04 | Accounting | P1 | F | `03-accounting/tax-accounting.md:109` | “Beban Pajak Penghasilan Badan … 25.000.000” | 25% CIT contradicts 22% in `12-tax/corporate-income-tax-calculation.md:47`. | Use 22% or label the 25% as a non-Indonesian jurisdiction. | S |
+| ACC-05 | Accounting | P1 | F | `10-project/project-billing-and-revenue.md:87` | “Kredit: Contract Liability / Deferred Revenue Rp60.000.000” | Milestone already achieved (BAST) yet revenue deferred; contradicts IFRS 15. | Recognise revenue at performance; use contract liability only when billing precedes performance. | M |
+| ACC-06 | Accounting | P1 | F | `09-assets/depreciation-management.md:149` vs `09-assets/asset-revaluation.md:116` | “Akumulasi Penyusutan … Rp60.000.000” vs 33-month schedule (Rp55.000.000) | Same asset, same date, different accumulated depreciation/residual/life. | One versioned asset schedule driving depreciation, revaluation, impairment, disposal. | M |
+| ACC-07 | Accounting | P1 | F | `10-project/timesheet-and-effort-tracking.md:154` | “920 Jam … Rp90.000.000” | Line items sum to Rp91.600.000; corrupts margin 39,67% and variance +Rp19 jt. | Correct table or change rates; recompute AC 182,6 M, margin 39,13%, variance 17,4 M. | S |
+| ACC-08 | Accounting | P1 | F | `05-purchasing/procure-to-pay-integration.md:164` | “Persediaan Barang Dagang: Rp700.000” | Return relieved at 700k after inventory valued at 750k; 50k stranded. | Relieve 750k; expense the non-recoverable freight 50k. | S |
+| ACC-09 | Accounting | P1 | F | `04-sales/sales-order.md:136` vs `05-purchasing/prepayment-and-down-payment.md:112` | “Uang Muka Penjualan … Deferred Revenue” with no PPN line | Sales advance ignores output VAT; purchase advance computes but does not post it. | One advance-VAT policy; split DPP/VAT in both directions. | M |
+| ACC-10 | Accounting | P1 | F | `07-manufacturing/production-costing-and-wip.md:118` | “Biaya 5 Unit Scrap Rp437.500” | Scrap at 87,5k/unit vs standard 75k; 62,5k is unabsorbed WIP conversion. | Scrap 375k; labour variance 187,5k; overhead variance 75k. | S |
+| ACC-11 | Accounting | P1 | F | `10-project/project-cost-management.md:103` vs `10-project/project-material-and-inventory.md:85` | Material 28 M posted to expense in one, WIP in the other. | Same project material, two accounts. | Single WIP→COGS policy per revenue method. | M |
+| ACC-12 | Accounting | P1 | F | `11-hr/index.md:146` | “Employer BPJS Rp800.000” on Rp12 M wages | Own rate table implies ~1,2 M employer and 480k employee, not 800k/600k. | Recompute from JKK/JKM/JHT/JP/Kesehatan rates and caps. | S |
+| ACC-13 | Accounting | P2 | F | `08-finance/bank-reconciliation.md:131` | “Saldo Akhir: Rp65.475.000” | 45 + 25 + 15 + 0,5 − 0,025 = 85,475 M, not 65,475 M. | Correct to Rp85.475.000; recompute matched %. | S |
+| ACC-14 | Accounting | P2 | D | `03-accounting/accounts-payable.md:36` | “Unbilled Receipt Liability / IAS 37” | GR/IR accrual is a trade payable, not an IAS 37 provision. | Cite IFRS 9/Conceptual Framework or IAS 37.2 exclusion. | S |
+| ACC-15 | Accounting | P2 | F | `02-business-processes/inventory-process.md:129` | “Pendapatan Selisih Lebih Persediaan (Inventory Gain)” | Count gain credited to revenue; IFRS 15 does not apply. | Credit inventory adjustment/COGS, not revenue. | S |
+| ACC-16 | Accounting | P2 | F | `06-inventory/stock-quantity-and-availability.md:83-90` | “On-Hand − Reserved − Allocated … = 35” and “85 − 50 = 35” | Allocated is claimed to be part of reserved but subtracted twice. | Define one quantity taxonomy; remove double subtraction. | S |
+| ACC-17 | Accounting | P2 | F | `07-manufacturing/mrp-material-requirement-planning.md:93-96` | Week 4 shows “10” and “60” for the same balance. | Wrong ending balance copied by readers. | Correct to 60 in both rows. | S |
+| ACC-18 | Accounting | P2 | F | `07-manufacturing/production-planning.md:103` | Projected stock 2, below safety stock 10, no MPS receipt. | Grid violates its own trigger rule. | Trigger MPS in week 1 or explain safety-stock policy. | S |
+| ACC-19 | Accounting | P2 | D | `03-accounting/accounts-payable.md:107` and `04-sales/accounts-receivable.md:70` | 2% discount applied to VAT-inclusive total | Indonesian VAT base normally reduced by the discount; input/output VAT left overstated. | State assumption; if DPP reduced, adjust VAT and cash. | M |
+| ACC-20 | Accounting | P2 | F | `04-sales/sales-commission.md:95` | “Beban Komisi Penjualan (Commissions Expense)” | IFRS 15.91 requires capitalising incremental contract-acquisition costs if recoverable. | Add capitalise/amortise rule and practical expedient. | M |
+| ACC-21 | Accounting | P2 | F | `06-inventory/inventory-costing.md:19` | “nilai terendah antara Biaya Perolehan … dan NRV” | NRV write-down and IAS 2.33 reversal never demonstrated. | Add write-down and reversal examples. | M |
+| ACC-22 | Accounting | P2 | F | `06-inventory/inventory-costing.md` (no §) | No allocation of fixed overhead at normal capacity. | IAS 2.13 unallocated overhead absent across 18 inventory articles. | Add normal-capacity rule and idle-capacity expense. | M |
+| ACC-23 | Accounting | P2 | D | `12-tax/withholding-tax-management.md:67` | “gross-up dapat diakui sebagai biaya fiskal yang dapat dikurangkan” | PPh 23 borne by payer is commonly non-deductible; unsourced. | Verify with tax counsel; add citation or warning. | M |
+| ACC-24 | Accounting | P3 | F | `03-accounting/period-end-closing.md:90` | “dicatat pada periode berjalan dengan … Retrospective Restatement” | Contradictory: restatement adjusts opening balances/comparatives. | Reword per IAS 8.42. | S |
+| ACC-25 | Accounting | P3 | F | `06-inventory/inventory-accounting.md:52` | LIFO banned “karena tidak mencerminkan aliran fisik” | Wrong rationale; article itself says physical flow ≠ cost flow. | Cite IAS 2.25 measurement reliability. | S |
+| ACC-26 | Accounting | P2 | F | `03-accounting/financial-statements.md:124` vs `12-tax/tax-integration.md:115` | “Laba Sebelum Pajak Rp 15.350.000” vs “EBT: Rp100.000.000” | Same company has two incompatible annual results and tax charges. | Reconcile the tax scenario to the financial statements or label separate cases. | S |
 
 ### D.3 Business process, sales, purchasing
 
 | ID | Kategori | Severity | Jenis | Lokasi | Bukti (≤15 kata) | Dampak | Saran perbaikan | Effort |
 |---|---|---|---|---|---|---|---|---|
 | BIZ-01 | Business Process | P1 | F | all content | Only 21 files contain “Trigger”; only 5 “Next Process”. | 160+ articles do not follow the required process pattern. | Add Trigger/Validation/Exception/Next to core process articles. | L |
-| BIZ-02 | Business Process | P2 | F | `03-sales/sales-order.md:88-96` | No `Confirmed → Cancelled`; enum omits Cancelled/Partially Delivered. | Cancellation after confirmation is unmodelled. | Complete state machine. | S |
-| BIZ-03 | Business Process | P2 | F | `04-purchasing/purchase-order.md:42` | “Draft/Approved/Issued/Received/Invoiced/Closed” | No Cancelled state despite a whole cancellation article. | Add Cancelled/Closed-for-shortage. | S |
-| BIZ-04 | Business Process | P2 | F | `06-manufacturing/manufacturing-order.md:42-45` | Cancel only from Draft/Planned/Scheduled/Released. | MO with consumed material has no exit path. | Add Hold/Cancel/Scrap-WIP transitions. | M |
-| BIZ-05 | Business Process | P2 | F | `09-project/project-management-fundamentals.md:82-91` | No Cancelled/Lost branch. | Rejected bid or terminated contract unmodelled. | Add Lost/Cancelled/Terminated. | S |
-| BIZ-06 | Business Process | P2 | F | `03-sales/sales-order.md:156` vs `03-sales/order-fulfillment.md:109` | ATS “50 → 40” vs “35 → 25” for same SO. | Same order, different stock baseline. | One stock ledger per scenario. | S |
-| BIZ-07 | Business Process | P2 | F | `04-purchasing/procure-to-pay-integration.md:120` vs other 04 files | PR-2026-00042 vs PR-2026-09-0041; PO/GR/Bill all differ. | “Canonical” P2P chain is not traceable. | Single document-ID table referenced by all articles. | S |
-| BIZ-08 | Business Process | P2 | F | `03-sales/sales-quotation.md:50` vs `:83-85` | Approval at “diskon > 10%” vs matrix 5%/15%. | Two approval thresholds. | Align or label one as example. | S |
-| BIZ-09 | Business Process | P2 | F | `04-purchasing/goods-receipt-and-service-receipt.md:45` | “Belum masuk stok aktif; menunggu inspeksi.” | Presented as universal; Odoo/ERPNext post stock at receipt. | Mark as QM configuration, not default. | S |
-| BIZ-10 | Business Process | P2 | F | `03-sales/sales-return-and-credit-note.md:96` | “Kredit: Beban Pokok Penjualan (COGS Reversal)” for scrap | Inventory bypassed; COGS/scrap presentation wrong. | Dr Scrap Expense / Cr Inventory. | S |
-| BIZ-11 | Business Process | P2 | F | `05-inventory/inventory-picking-and-delivery.md:96` | “(4) Financial Invoice (Vendor Bill / Customer Invoice)” | Vendor Bill in an outbound flow. | Remove vendor bill. | S |
-| BIZ-12 | Business Process | P2 | F | `04-purchasing/purchasing-pricing-and-terms.md:23` | Incoterms “menentukan … perpindahan risiko kepemilikan” | Incoterms do not transfer title. | Separate risk, cost, title. | S |
-| BIZ-13 | Business Process | P2 | F | `05-inventory/inventory-return-and-reversal.md:86` | “Rp700.000 (harga pokok perolehan DPP)” | Same root cause as ACC-08, second location: 50k stays in inventory. | Relieve 750k and expense freight. | S |
-| BIZ-14 | Business Process | P2 | F | `06-manufacturing/production-output-and-by-product.md:60` vs `:68` | Yield = good/planned and scrap = scrap/input. | Same 100 used as planned output and input. | Define yield = good/input. | S |
-| BIZ-15 | Business Process | P2 | F | `06-manufacturing/manufacturing-fundamentals.md:128` | “DRAFT → PLANNED → CONFIRMED → RELEASED” | Contradicts SCHEDULED chain in `manufacturing-order.md`. | One state model. | S |
-| BIZ-16 | Business Process | P3 | F | `03-sales/accounts-receivable-integration.md:53` vs `04-purchasing/accounts-payable-integration.md:55` | Due date from posting date vs document date. | AR/AP ageing diverge. | Standardise on document date + terms. | S |
-| BIZ-17 | Business Process | P3 | F | `03-sales/sales-tax.md:45` | Beras/daging/jasa medis labelled “dibebaskan” | Exempt vs not-object changes input VAT credit. | Align with `11-tax/vat-fundamentals.md:53`. | S |
+| BIZ-02 | Business Process | P2 | F | `04-sales/sales-order.md:88-96` | No `Confirmed → Cancelled`; enum omits Cancelled/Partially Delivered. | Cancellation after confirmation is unmodelled. | Complete state machine. | S |
+| BIZ-03 | Business Process | P2 | F | `05-purchasing/purchase-order.md:42` | “Draft/Approved/Issued/Received/Invoiced/Closed” | No Cancelled state despite a whole cancellation article. | Add Cancelled/Closed-for-shortage. | S |
+| BIZ-04 | Business Process | P2 | F | `07-manufacturing/manufacturing-order.md:42-45` | Cancel only from Draft/Planned/Scheduled/Released. | MO with consumed material has no exit path. | Add Hold/Cancel/Scrap-WIP transitions. | M |
+| BIZ-05 | Business Process | P2 | F | `10-project/project-management-fundamentals.md:82-91` | No Cancelled/Lost branch. | Rejected bid or terminated contract unmodelled. | Add Lost/Cancelled/Terminated. | S |
+| BIZ-06 | Business Process | P2 | F | `04-sales/sales-order.md:156` vs `04-sales/order-fulfillment.md:109` | ATS “50 → 40” vs “35 → 25” for same SO. | Same order, different stock baseline. | One stock ledger per scenario. | S |
+| BIZ-07 | Business Process | P2 | F | `05-purchasing/procure-to-pay-integration.md:120` vs other 04 files | PR-2026-00042 vs PR-2026-09-0041; PO/GR/Bill all differ. | “Canonical” P2P chain is not traceable. | Single document-ID table referenced by all articles. | S |
+| BIZ-08 | Business Process | P2 | F | `04-sales/sales-quotation.md:50` vs `:83-85` | Approval at “diskon > 10%” vs matrix 5%/15%. | Two approval thresholds. | Align or label one as example. | S |
+| BIZ-09 | Business Process | P2 | F | `05-purchasing/goods-receipt-and-service-receipt.md:45` | “Belum masuk stok aktif; menunggu inspeksi.” | Presented as universal; Odoo/ERPNext post stock at receipt. | Mark as QM configuration, not default. | S |
+| BIZ-10 | Business Process | P2 | F | `04-sales/sales-return-and-credit-note.md:96` | “Kredit: Beban Pokok Penjualan (COGS Reversal)” for scrap | Inventory bypassed; COGS/scrap presentation wrong. | Dr Scrap Expense / Cr Inventory. | S |
+| BIZ-11 | Business Process | P2 | F | `06-inventory/inventory-picking-and-delivery.md:96` | “(4) Financial Invoice (Vendor Bill / Customer Invoice)” | Vendor Bill in an outbound flow. | Remove vendor bill. | S |
+| BIZ-12 | Business Process | P2 | F | `05-purchasing/purchasing-pricing-and-terms.md:23` | Incoterms “menentukan … perpindahan risiko kepemilikan” | Incoterms do not transfer title. | Separate risk, cost, title. | S |
+| BIZ-13 | Business Process | P2 | F | `06-inventory/inventory-return-and-reversal.md:86` | “Rp700.000 (harga pokok perolehan DPP)” | Same root cause as ACC-08, second location: 50k stays in inventory. | Relieve 750k and expense freight. | S |
+| BIZ-14 | Business Process | P2 | F | `07-manufacturing/production-output-and-by-product.md:60` vs `:68` | Yield = good/planned and scrap = scrap/input. | Same 100 used as planned output and input. | Define yield = good/input. | S |
+| BIZ-15 | Business Process | P2 | F | `07-manufacturing/manufacturing-fundamentals.md:128` | “DRAFT → PLANNED → CONFIRMED → RELEASED” | Contradicts SCHEDULED chain in `manufacturing-order.md`. | One state model. | S |
+| BIZ-16 | Business Process | P3 | F | `04-sales/accounts-receivable-integration.md:53` vs `05-purchasing/accounts-payable-integration.md:55` | Due date from posting date vs document date. | AR/AP ageing diverge. | Standardise on document date + terms. | S |
+| BIZ-17 | Business Process | P3 | F | `04-sales/sales-tax.md:45` | Beras/daging/jasa medis labelled “dibebaskan” | Exempt vs not-object changes input VAT credit. | Align with `12-tax/vat-fundamentals.md:53`. | S |
 
 ### D.4 Inventory and manufacturing
 
 | ID | Kategori | Severity | Jenis | Lokasi | Bukti (≤15 kata) | Dampak | Saran perbaikan | Effort |
 |---|---|---|---|---|---|---|---|---|
-| INV-01 | Inventory | P1 | F | `05-inventory/inventory-integration.md:80,88` | “Persediaan Barang Dagang” then “Persediaan Bahan Baku” for same components | Raw material account inconsistent; 15 occurrences of merchandise account. | Standardise raw material vs merchandise accounts. | S |
-| INV-02 | Inventory | P1 | F | `05-inventory/inventory-integration.md:88-89` | WIP→FG moves material only, no labour/overhead. | Integration article produces WIP that never accumulates conversion. | Add conversion absorption to WIP flow. | M |
-| INV-03 | Inventory | P2 | F | `05-inventory/replenishment-and-stock-planning.md:94` | “Order Qty = Max − Current Stock” | Ignores on-order/reserved; double ordering. | Max − inventory position. | S |
-| INV-04 | Inventory | P2 | F | `05-inventory/inventory-fundamentals.md:72-78` | Five ownership nodes, zero edges. | Core diagram renders as disconnected boxes. | Connect nodes. | S |
-| INV-05 | Inventory | P2 | F | `05-inventory/inventory-uom-and-conversion.md:34,63` | Pack = 6 units vs Pack = 4 pcs. | Same UOM, two factors. | One conversion table. | S |
-| INV-06 | Inventory | P2 | D | `05-inventory/physical-inventory-count.md:140` | “Annual Inventory Day and Month pada level lokasi” (Odoo) | Likely SAP field, not Odoo location. | Verify against Odoo 17 docs or remove. | S |
-| INV-07 | Inventory | P2 | D | `06-manufacturing/capacity-planning-and-scheduling.md:137-138` | Odoo “finite capacity” shifting orders | Odoo shows overload; does not finite-schedule by default. | Re-verify; state configuration-dependent. | S |
-| INV-08 | Manufacturing | P1 | F | `06-manufacturing/manufacturing-integration.md:126` vs `production-costing-and-wip.md:64` | Same MO-2026-0042, component 700k/750k vs 50k. | Canonical MO has ~10× different material cost. | One manufacturing cost sheet. | M |
-| INV-09 | Manufacturing | P2 | F | `06-manufacturing/material-consumption-and-backflush.md:104` vs `production-variance-and-performance.md:66` | 102 sets vs 103 sets for same MO. | MUV 1 M vs 1,5 M. | Align waste quantity. | S |
-| INV-10 | Manufacturing | P2 | F | `06-manufacturing/production-variance-and-performance.md:114` | Total variance 3,82 M excludes overhead. | “Total” is incomplete. | Include OSEV/OVEV or rename. | S |
-| INV-11 | Manufacturing | P2 | D | `06-manufacturing/production-costing-and-wip.md:151` | Odoo EUP “dihitung otomatis berdasarkan persentase penyelesaian” | Odoo has no equivalent-unit calculation. | Remove or mark as custom. | S |
-| INV-12 | Manufacturing | P2 | D | `05-inventory/inventory-adjustment.md:120`, `06-.../production-output-and-by-product.md:112` | “Scrap Journal” in D365 | No such standard journal type. | Use inventory adjustment/movement. | S |
-| INV-13 | Manufacturing | P2 | F | `06-manufacturing/routing-and-work-center.md:100-101` | Capacity = hours × machines × efficiency × utilisation | Utilisation is an outcome; formula double-counts. | Capacity = available hours × efficiency; utilisation = load/capacity. | S |
-| INV-14 | Manufacturing | P3 | F | `06-manufacturing/shop-floor-execution.md:144` | “MES Integration API berbasis pesan mikrofonik” | Non-existent term; likely “microservice”. | Correct. | S |
-| INV-15 | Manufacturing | P3 | F | `05-inventory/lot-and-serial-number-tracking.md` | No valuation consequence for expired/quarantined stock. | Traceability article has no accounting leaf. | Add NRV/write-off treatment. | M |
+| INV-01 | Inventory | P1 | F | `06-inventory/inventory-integration.md:80,88` | “Persediaan Barang Dagang” then “Persediaan Bahan Baku” for same components | Raw material account inconsistent; 15 occurrences of merchandise account. | Standardise raw material vs merchandise accounts. | S |
+| INV-02 | Inventory | P1 | F | `06-inventory/inventory-integration.md:88-89` | WIP→FG moves material only, no labour/overhead. | Integration article produces WIP that never accumulates conversion. | Add conversion absorption to WIP flow. | M |
+| INV-03 | Inventory | P2 | F | `06-inventory/replenishment-and-stock-planning.md:94` | “Order Qty = Max − Current Stock” | Ignores on-order/reserved; double ordering. | Max − inventory position. | S |
+| INV-04 | Inventory | P2 | F | `06-inventory/inventory-fundamentals.md:72-78` | Five ownership nodes, zero edges. | Core diagram renders as disconnected boxes. | Connect nodes. | S |
+| INV-05 | Inventory | P2 | F | `06-inventory/inventory-uom-and-conversion.md:34,63` | Pack = 6 units vs Pack = 4 pcs. | Same UOM, two factors. | One conversion table. | S |
+| INV-06 | Inventory | P2 | D | `06-inventory/physical-inventory-count.md:140` | “Annual Inventory Day and Month pada level lokasi” (Odoo) | Likely SAP field, not Odoo location. | Verify against Odoo 17 docs or remove. | S |
+| INV-07 | Inventory | P2 | D | `07-manufacturing/capacity-planning-and-scheduling.md:137-138` | Odoo “finite capacity” shifting orders | Odoo shows overload; does not finite-schedule by default. | Re-verify; state configuration-dependent. | S |
+| INV-08 | Manufacturing | P1 | F | `07-manufacturing/manufacturing-integration.md:126` vs `production-costing-and-wip.md:64` | Same MO-2026-0042, component 700k/750k vs 50k. | Canonical MO has ~10× different material cost. | One manufacturing cost sheet. | M |
+| INV-09 | Manufacturing | P2 | F | `07-manufacturing/material-consumption-and-backflush.md:104` vs `production-variance-and-performance.md:66` | 102 sets vs 103 sets for same MO. | MUV 1 M vs 1,5 M. | Align waste quantity. | S |
+| INV-10 | Manufacturing | P2 | F | `07-manufacturing/production-variance-and-performance.md:114` | Total variance 3,82 M excludes overhead. | “Total” is incomplete. | Include OSEV/OVEV or rename. | S |
+| INV-11 | Manufacturing | P2 | D | `07-manufacturing/production-costing-and-wip.md:151` | Odoo EUP “dihitung otomatis berdasarkan persentase penyelesaian” | Odoo has no equivalent-unit calculation. | Remove or mark as custom. | S |
+| INV-12 | Manufacturing | P2 | D | `06-inventory/inventory-adjustment.md:120`, `06-.../production-output-and-by-product.md:112` | “Scrap Journal” in D365 | No such standard journal type. | Use inventory adjustment/movement. | S |
+| INV-13 | Manufacturing | P2 | F | `07-manufacturing/routing-and-work-center.md:100-101` | Capacity = hours × machines × efficiency × utilisation | Utilisation is an outcome; formula double-counts. | Capacity = available hours × efficiency; utilisation = load/capacity. | S |
+| INV-14 | Manufacturing | P3 | F | `07-manufacturing/shop-floor-execution.md:144` | “MES Integration API berbasis pesan mikrofonik” | Non-existent term; likely “microservice”. | Correct. | S |
+| INV-15 | Manufacturing | P3 | F | `06-inventory/lot-and-serial-number-tracking.md` | No valuation consequence for expired/quarantined stock. | Traceability article has no accounting leaf. | Add NRV/write-off treatment. | M |
 
 ### D.5 Finance, assets, project, HR
 
 | ID | Kategori | Severity | Jenis | Lokasi | Bukti (≤15 kata) | Dampak | Saran perbaikan | Effort |
 |---|---|---|---|---|---|---|---|---|
-| FIN-02 | Finance | P2 | F | `07-finance/financial-planning.md:153` | “+23.000.000 (Efisiensi unit turun)” | COGS fell 23 M; sign and label inverted. | −23.000.000; explain volume effect. | S |
-| FIN-03 | Finance | P2 | F | `08-assets/asset-maintenance-integration.md:126` | “18.500.000 / 20.000.000 = 92,5%” | NBV at end-2029 is ~45 M, ratio ~41%. | Recompute on correct NBV. | S |
-| FIN-04 | Finance | P2 | F | `08-assets/asset-transfer-and-location.md:130` | “Akumulasi Penyusutan: Rp30.000.000” at Jul 2027 | 16 months = 26,7 M on own schedule. | Correct to 26,7 M / NBV 93,3 M. | S |
-| FIN-05 | Finance | P2 | F | `07-finance/cash-flow-planning.md:96` | “PPh 21 tanggal 15, BPJS Ketenagakerjaan tanggal 10” | Dates appear swapped (PPh 21 = 10th; BPJS = 15th). | Verify and correct. | S |
-| FIN-06 | Finance | P2 | D | `10-hr/overtime-and-time-management.md:65` | “kelebihan jam kerja dianggap tanggung jawab manajerial” | Imports US FLSA exempt concept into Indonesian statutory overtime. | Remove or cite narrow statutory exclusion. | M |
-| FIN-07 | Finance | P2 | D | `10-hr/overtime-and-time-management.md:36` | “7-8 Jam Pertama: Pengali 2,0x” | Hybrid of 5-day (8h) and 6-day (7h) schemes; company is 5-day. | Use 8h for 5-day week. | S |
-| FIN-08 | Finance | P2 | F | `10-hr/leave-management.md:17` | Legal basis asserted without any Indonesian statute. | 12-day leave, maternity 3 months, sick-pay scale uncited. | Add UU 13/2003, UU 4/2024, PP 35/2021 citations. | M |
-| FIN-09 | Finance | P2 | F | `09-project/project-completion-and-closing.md:100` | All cost in WIP while revenue recognised progressively. | Revenue without matching cost for six months. | Accrue COGS periodically under over-time method. | M |
-| FIN-10 | Finance | P2 | F | `08-assets/asset-revaluation.md:121` vs `asset-impairment.md:133` | Fair value 80 M vs recoverable 42 M, same date/asset. | Two truths for one asset. | One valuation case per period. | M |
-| FIN-11 | Finance | P2 | F | `08-assets/asset-master-data.md:123` vs `asset-classification.md:114` | 151100/151190/610400 vs 153000/153090/610420. | Two charts of accounts for one machine. | Single COA mapping table. | S |
-| FIN-12 | Finance | P2 | F | `10-hr/hr-controls-and-governance.md:85` | “Hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4” | Empty-string SHA-256 truncated; fake audit hash. | Replace with illustrative but labelled hash. | S |
-| FIN-13 | Finance | P3 | F | `08-assets/physical-asset-verification.md:126` | Found asset credited to “Pendapatan Lain-Lain” | Prior-period error should adjust opening equity, not income. | Apply IAS 8.41-42 or state policy. | S |
-| FIN-14 | Finance | P3 | F | `08-assets/asset-componentization.md:39` | “≥ 15–20% dari total harga paket aset” | Invented threshold presented as IAS 16 test. | Remove number or label as policy heuristic. | S |
-| FIN-15 | Finance | P3 | F | `07-finance/financial-controls.md:7` | “COSO … tiga lini pertahanan” | Three Lines Model is IIA, not COSO. | Separate the frameworks. | S |
+| FIN-02 | Finance | P2 | F | `08-finance/financial-planning.md:153` | “+23.000.000 (Efisiensi unit turun)” | COGS fell 23 M; sign and label inverted. | −23.000.000; explain volume effect. | S |
+| FIN-03 | Finance | P2 | F | `09-assets/asset-maintenance-integration.md:126` | “18.500.000 / 20.000.000 = 92,5%” | NBV at end-2029 is ~45 M, ratio ~41%. | Recompute on correct NBV. | S |
+| FIN-04 | Finance | P2 | F | `09-assets/asset-transfer-and-location.md:130` | “Akumulasi Penyusutan: Rp30.000.000” at Jul 2027 | 16 months = 26,7 M on own schedule. | Correct to 26,7 M / NBV 93,3 M. | S |
+| FIN-05 | Finance | P2 | F | `08-finance/cash-flow-planning.md:96` | “PPh 21 tanggal 15, BPJS Ketenagakerjaan tanggal 10” | Dates appear swapped (PPh 21 = 10th; BPJS = 15th). | Verify and correct. | S |
+| FIN-06 | Finance | P2 | D | `11-hr/overtime-and-time-management.md:65` | “kelebihan jam kerja dianggap tanggung jawab manajerial” | Imports US FLSA exempt concept into Indonesian statutory overtime. | Remove or cite narrow statutory exclusion. | M |
+| FIN-07 | Finance | P2 | D | `11-hr/overtime-and-time-management.md:36` | “7-8 Jam Pertama: Pengali 2,0x” | Hybrid of 5-day (8h) and 6-day (7h) schemes; company is 5-day. | Use 8h for 5-day week. | S |
+| FIN-08 | Finance | P2 | F | `11-hr/leave-management.md:17` | Legal basis asserted without any Indonesian statute. | 12-day leave, maternity 3 months, sick-pay scale uncited. | Add UU 13/2003, UU 4/2024, PP 35/2021 citations. | M |
+| FIN-09 | Finance | P2 | F | `10-project/project-completion-and-closing.md:100` | All cost in WIP while revenue recognised progressively. | Revenue without matching cost for six months. | Accrue COGS periodically under over-time method. | M |
+| FIN-10 | Finance | P2 | F | `09-assets/asset-revaluation.md:121` vs `asset-impairment.md:133` | Fair value 80 M vs recoverable 42 M, same date/asset. | Two truths for one asset. | One valuation case per period. | M |
+| FIN-11 | Finance | P2 | F | `09-assets/asset-master-data.md:123` vs `asset-classification.md:114` | 151100/151190/610400 vs 153000/153090/610420. | Two charts of accounts for one machine. | Single COA mapping table. | S |
+| FIN-12 | Finance | P2 | F | `11-hr/hr-controls-and-governance.md:85` | “Hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4” | Empty-string SHA-256 truncated; fake audit hash. | Replace with illustrative but labelled hash. | S |
+| FIN-13 | Finance | P3 | F | `09-assets/physical-asset-verification.md:126` | Found asset credited to “Pendapatan Lain-Lain” | Prior-period error should adjust opening equity, not income. | Apply IAS 8.41-42 or state policy. | S |
+| FIN-14 | Finance | P3 | F | `09-assets/asset-componentization.md:39` | “≥ 15–20% dari total harga paket aset” | Invented threshold presented as IAS 16 test. | Remove number or label as policy heuristic. | S |
+| FIN-15 | Finance | P3 | F | `08-finance/financial-controls.md:7` | “COSO … tiga lini pertahanan” | Three Lines Model is IIA, not COSO. | Separate the frameworks. | S |
 
 ### D.6 Tax and compliance
 
 | ID | Kategori | Severity | Jenis | Lokasi | Bukti (≤15 kata) | Dampak | Saran perbaikan | Effort |
 |---|---|---|---|---|---|---|---|---|
-| TAX-01 | Tax | **P0** | F | `03-sales/sales-tax.md:87`, `04-purchasing/purchase-tax.md:80` | “Nomor Seri Faktur Pajak (NSFP) … dialokasikan oleh DJP” | Pre-Coretax invoice model taught as current; numbers are system-generated today. Rate issue is ACC-02. | Rewrite with Coretax, pre-population, and system-generated numbers. | M |
-| TAX-02 | Tax | P1 | F | `04-purchasing/purchase-tax.md:79-80` | “Dikenakan sebesar 11%” + QR scanner | No Coretax, no date, no DPP mechanism. | Rewrite to match `11-tax/input-vat-and-output-vat.md`. | M |
-| TAX-03 | Tax | P2 | F | `02-accounting/tax-accounting.md:88` | “PPh Pasal 23 - Tarif 2%” | Correct rate but no NPWP 4% rule, no e-Bupot. | Add withholding matrix. | S |
-| TAX-04 | Tax | P2 | F | `02-accounting/index.md:53` | Index promises PPh 21, 23 and 4(2). | Article covers only PPh 23 and CIT. | Fix index or add sections. | S |
-| TAX-05 | Tax | P2 | F | `04-purchasing/index.md:50` | Index promises PPh 22 and 4(2). | `purchase-tax.md` covers only PPh 23. | Fix index or add sections. | S |
-| TAX-06 | Tax | P2 | F | `10-hr/payroll-tax-and-statutory-compliance.md:62-64` | “Terdapat plafon … diperbarui berkala” | No cap values or dates; cannot configure BPJS. | Add dated caps (Kesehatan, JP) with source. | S |
-| TAX-07 | Tax | P2 | D | `10-hr/payroll-benefits-and-reimbursements.md:126` | Reimbursements “tidak dikenakan pemotongan pajak” | Only genuine receipted reimbursements are exempt; fixed allowances taxable. | Qualify the rule; cite PMK 168/2023. | S |
-| TAX-08 | Tax | P2 | F | `11-tax/withholding-tax-management.md:67` | Gross-up “dapat diakui sebagai biaya fiskal” | Contentious and unsourced; may teach non-deductible as deductible. | Verify with tax counsel; add warning. | M |
-| TAX-09 | Tax | P3 | D | `11-tax/tax-closing-and-period-end.md:70` | “Validasi Batas Unggah e-Faktur (Maksimal Tgl 15)” | Not a general statutory issuance deadline. | Clarify operational cut-off vs legal deadline. | S |
+| TAX-01 | Tax | **P0** | F | `04-sales/sales-tax.md:87`, `05-purchasing/purchase-tax.md:80` | “Nomor Seri Faktur Pajak (NSFP) … dialokasikan oleh DJP” | Pre-Coretax invoice model taught as current; numbers are system-generated today. Rate issue is ACC-02. | Rewrite with Coretax, pre-population, and system-generated numbers. | M |
+| TAX-02 | Tax | P1 | F | `05-purchasing/purchase-tax.md:79-80` | “Dikenakan sebesar 11%” + QR scanner | No Coretax, no date, no DPP mechanism. | Rewrite to match `12-tax/input-vat-and-output-vat.md`. | M |
+| TAX-03 | Tax | P2 | F | `03-accounting/tax-accounting.md:88` | “PPh Pasal 23 - Tarif 2%” | Correct rate but no NPWP 4% rule, no e-Bupot. | Add withholding matrix. | S |
+| TAX-04 | Tax | P2 | F | `03-accounting/index.md:53` | Index promises PPh 21, 23 and 4(2). | Article covers only PPh 23 and CIT. | Fix index or add sections. | S |
+| TAX-05 | Tax | P2 | F | `05-purchasing/index.md:50` | Index promises PPh 22 and 4(2). | `purchase-tax.md` covers only PPh 23. | Fix index or add sections. | S |
+| TAX-06 | Tax | P2 | F | `11-hr/payroll-tax-and-statutory-compliance.md:62-64` | “Terdapat plafon … diperbarui berkala” | No cap values or dates; cannot configure BPJS. | Add dated caps (Kesehatan, JP) with source. | S |
+| TAX-07 | Tax | P2 | D | `11-hr/payroll-benefits-and-reimbursements.md:126` | Reimbursements “tidak dikenakan pemotongan pajak” | Only genuine receipted reimbursements are exempt; fixed allowances taxable. | Qualify the rule; cite PMK 168/2023. | S |
+| TAX-08 | Tax | P2 | F | `12-tax/withholding-tax-management.md:67` | Gross-up “dapat diakui sebagai biaya fiskal” | Contentious and unsourced; may teach non-deductible as deductible. | Verify with tax counsel; add warning. | M |
+| TAX-09 | Tax | P3 | D | `12-tax/tax-closing-and-period-end.md:70` | “Validasi Batas Unggah e-Faktur (Maksimal Tgl 15)” | Not a general statutory issuance deadline. | Clarify operational cut-off vs legal deadline. | S |
 | TAX-10 | Tax | P3 | F | 03/04/05/06/08 files | PPN 11% unqualified in 2026-dated examples | Propagation of ACC-02 across examples. | Global note “effective 11%” or update numbers. | M |
 
 ### D.7 Learning experience
@@ -246,13 +246,13 @@ Jenis: **F** = Fakta, **D** = Dugaan, **S** = Saran.
 
 | ID | Kategori | Severity | Jenis | Lokasi | Bukti (≤15 kata) | Dampak | Saran perbaikan | Effort |
 |---|---|---|---|---|---|---|---|---|
-| UX-01 | UX/UI | P1 | F | 65 pages, e.g. live `/07-finance/bank-account-management` | Page title and H1 show “bank-account-management”. | One third of the site looks broken/unfinished. | Add `title:` frontmatter to all 65. | S |
-| UX-02 | UX/UI | P1 | F | 12 diagrams, e.g. `04-purchasing/goods-receipt-and-service-receipt.md:63` | Edge label “Lolos Uji Mutu (100%)” | Mermaid 11.4 parse error; diagram does not render. | Quote labels or remove parentheses. | S |
-| UX-03 | UX/UI | P2 | F | `10-hr/index.md:27-60` and 4 other indexes | Wiki-link syntax inside Mermaid node labels | Literal double-bracket text shown in diagram. | Remove wiki links from diagram labels. | S |
-| UX-04 | UX/UI | P2 | F | every article, e.g. live `/00-fundamentals/erp-architecture` | Two `<h1>` elements per page. | Accessibility/SEO heading hierarchy broken. | Remove content H1 or disable ArticleTitle H1. | S |
+| UX-01 | UX/UI | P1 | F | 65 pages, e.g. live `/08-finance/bank-account-management` | Page title and H1 show “bank-account-management”. | One third of the site looks broken/unfinished. | Add `title:` frontmatter to all 65. | S |
+| UX-02 | UX/UI | P1 | F | 12 diagrams, e.g. `05-purchasing/goods-receipt-and-service-receipt.md:63` | Edge label “Lolos Uji Mutu (100%)” | Mermaid 11.4 parse error; diagram does not render. | Quote labels or remove parentheses. | S |
+| UX-03 | UX/UI | P2 | F | `11-hr/index.md:27-60` and 4 other indexes | Wiki-link syntax inside Mermaid node labels | Literal double-bracket text shown in diagram. | Remove wiki links from diagram labels. | S |
+| UX-04 | UX/UI | P2 | F | every article, e.g. live `/01-fundamentals/erp-architecture` | Two `<h1>` elements per page. | Accessibility/SEO heading hierarchy broken. | Remove content H1 or disable ArticleTitle H1. | S |
 | UX-05 | UX/UI | P2 | F | `public/index.html` | `<html lang="en">` for Indonesian content. | Screen readers/SEO language mismatch. | Set `locale: "id-ID"` and html lang. | S |
-| UX-06 | UX/UI | **P0** | F | `07-finance/*` (7 links) | `[[06-manufacturing/bill-of-materials]]` → 404 | Seven internal links lead to 404 pages. | Point to `product-structure-and-bom.md`, etc. | S |
-| UX-07 | UX/UI | P2 | F | `02-accounting/journal-entry.md:56` | `#INV-2026-0042` in prose | Creates a public tag page `/tags/INV-2026-0042`. | Escape `#` or write “No. INV-2026-0042”. | S |
+| UX-06 | UX/UI | **P0** | F | `08-finance/*` (7 links) | `[[07-manufacturing/bill-of-materials]]` → 404 | Seven internal links lead to 404 pages. | Point to `product-structure-and-bom.md`, etc. | S |
+| UX-07 | UX/UI | P2 | F | `03-accounting/journal-entry.md:56` | `#INV-2026-0042` in prose | Creates a public tag page `/tags/INV-2026-0042`. | Escape `#` or write “No. INV-2026-0042”. | S |
 | UX-08 | UX/UI | P3 | F | layout | No prev/next article, no “edit this page”. | Weak sequential reading. | Add prev/next + edit link. | M |
 | TECH-01 | Technical | P1 | F | `quartz.config.ts:21` | `baseUrl: "erpnotes.rofid.me"` vs live `.my.id` | Sitemap, RSS, OG and Twitter URLs point to wrong domain. | Change to `erpnotes.rofid.my.id` and rebuild. | S |
 | TECH-02 | Technical | P2 | F | live `/robots.txt` | Returns 404. | Sitemap discovery not advertised. | Add `robots.txt` with sitemap URL. | S |
@@ -274,9 +274,9 @@ Jenis: **F** = Fakta, **D** = Dugaan, **S** = Saran.
 | MNT-05 | Maintainability | P3 | F | git history | One bulk content commit for 190 files. | No provenance per article. | Commit per section/article going forward. | S |
 | NAV-01 | Naventra | P1 | F | 130 articles | Median 126-word design block appended to concept article. | Learning flow interrupted; no design baseline. | Extract to `30-naventra` with traceability IDs. | L |
 | NAV-02 | Naventra | P1 | F | `30-naventra/index.md` | 19 words, no requirements/design/implementation. | Cannot evaluate Naventra implementation at all. | Write requirements → functional → technical → implementation. | L |
-| NAV-03 | Naventra | P3 | F | `09-project/project-billing-and-revenue.md:111` | “Example: Implementasi ERP Naventra” used for generic example | Mislabels general content as product-specific. | Rename to “Example” and link Naventra separately. | S |
+| NAV-03 | Naventra | P3 | F | `10-project/project-billing-and-revenue.md:111` | “Example: Implementasi ERP Naventra” used for generic example | Mislabels general content as product-specific. | Rename to “Example” and link Naventra separately. | S |
 | SW-01 | Software | P1 | F | `20-software/*/index.md` | 14–15 words per product. | No implementation knowledge beyond comparison tables. | Add per-product articles with menus, models, versions, screenshots. | L |
-| SW-02 | Software | P2 | F | `03-sales/revenue-recognition.md:124` | D365 “Revenue Recognition Workspace” | Microsoft deprecated it January 2024; subscription billing is current. | Update to current capability. | S |
+| SW-02 | Software | P2 | F | `04-sales/revenue-recognition.md:124` | D365 “Revenue Recognition Workspace” | Microsoft deprecated it January 2024; subscription billing is current. | Update to current capability. | S |
 | SW-03 | Software | P2 | D | 05/06 comparison tables | Odoo finite capacity, Odoo EUP, D365 Scrap Journal | Several product claims likely wrong for cited versions. | Verify each against vendor docs; add version tags. | M |
 
 ---
@@ -289,11 +289,11 @@ Jenis: **F** = Fakta, **D** = Dugaan, **S** = Saran.
 
 | Location | Statement | IFRS 15 status |
 |---|---|---|
-| `03-sales/revenue-recognition.md:13` | Revenue at transfer of control, “BUKAN … saat faktur dicetak” | Correct |
-| `03-sales/sales-fundamentals.md:71` | Revenue at “penagihan” | Wrong (collection ≠ performance) |
-| `03-sales/sales-reporting-and-analytics.md:52` | “telah benar-benar diserahkan dan difakturkan” | Wrong (adds invoicing condition) |
-| `03-sales/order-to-cash-integration.md:30` | Invoice step labelled “Pengakuan Pendapatan” | Wrong |
-| `01-business-processes/order-to-cash.md:108` | Revenue recognised at invoice, citing IFRS 15 | Wrong |
+| `04-sales/revenue-recognition.md:13` | Revenue at transfer of control, “BUKAN … saat faktur dicetak” | Correct |
+| `04-sales/sales-fundamentals.md:71` | Revenue at “penagihan” | Wrong (collection ≠ performance) |
+| `04-sales/sales-reporting-and-analytics.md:52` | “telah benar-benar diserahkan dan difakturkan” | Wrong (adds invoicing condition) |
+| `04-sales/order-to-cash-integration.md:30` | Invoice step labelled “Pengakuan Pendapatan” | Wrong |
+| `02-business-processes/order-to-cash.md:108` | Revenue recognised at invoice, citing IFRS 15 | Wrong |
 
 **Why it matters:** a learner implementing O2C will recognise revenue when the invoice is printed. That misstates revenue, receivables, contract assets/liabilities, and VAT timing whenever delivery and invoicing fall in different periods.
 
@@ -432,7 +432,7 @@ To avoid an unbalanced picture: all journal tables checked foot to the rupiah �
 
 ### E.14 Two annual scenarios for the same company
 
-**Finding ACC-26.** `02-accounting/financial-statements.md` presents EBT Rp15.350.000, tax Rp2.987.000 and net profit Rp12.363.000. `11-tax/tax-integration.md:115` and the corporate-tax articles use EBT Rp100.000.000, PKP Rp105.000.000 and tax Rp23.100.000 for the same `PT Maju Bersama`.
+**Finding ACC-26.** `03-accounting/financial-statements.md` presents EBT Rp15.350.000, tax Rp2.987.000 and net profit Rp12.363.000. `12-tax/tax-integration.md:115` and the corporate-tax articles use EBT Rp100.000.000, PKP Rp105.000.000 and tax Rp23.100.000 for the same `PT Maju Bersama`.
 
 Both are internally consistent; they are simply different scenarios presented as one. A reader cannot connect the tax computation to the financial statements.
 
@@ -449,7 +449,7 @@ AGENTS.md requires: Trigger → Business Event → Document → Validation → T
 Measured across 182 articles:
 - “Trigger”: 21 files.
 - “Validation”: 26 files.
-- “Next Process”: 5 files (only the five articles in `01-business-processes`).
+- “Next Process”: 5 files (only the five articles in `02-business-processes`).
 - “Exception”: 22 files.
 - “Business Process” heading: 28 files.
 - “Business Rules” heading: 61 files.
@@ -509,7 +509,7 @@ Legend: ✅ explained and consistent; ⚠️ explained but problematic; ❌ not 
 
 ### H.1 What is correct and current
 
-The `11-tax` section is the strongest part of the repository:
+The `12-tax` section is the strongest part of the repository:
 
 - Statutory PPN 12% with DPP Nilai Lain 11/12, citing **PMK 131/PMK.03/2024** and **PMK 11/2025** (`vat-fundamentals.md:116`, `taxable-base-and-tax-calculation.md:16`); PMK 11/2025 was verified via DJP’s press release.
 - Coretax as the current tax invoice environment, with e-Faktur/e-Nofa correctly framed as historical (`vat-transaction-and-tax-invoice.md:12-13`).
@@ -533,7 +533,7 @@ The `11-tax` section is the strongest part of the repository:
 | FIN-07 | Overtime “7–8 first hours” | `overtime-and-time-management.md:36` | **Wrong for a 5-day week.** PP 35/2021: 8 hours at 2×. |
 | FIN-06 | “Exempt” managerial overtime | `overtime-and-time-management.md:65` | **US concept.** Indonesian overtime is statutory. |
 | TAX-09 | “e-Faktur upload max 15th” | `tax-closing-and-period-end.md:70` | **Operational, not statutory.** Clarify. |
-| TAX-04/05 | Index promises PPh 21/22/4(2) coverage | `02-accounting/index.md:53`, `04-purchasing/index.md:50` | **Overclaim.** Articles do not cover them. |
+| TAX-04/05 | Index promises PPh 21/22/4(2) coverage | `03-accounting/index.md:53`, `05-purchasing/index.md:50` | **Overclaim.** Articles do not cover them. |
 
 ### H.3 Dates and versions that must be recorded
 
@@ -614,14 +614,14 @@ Every tax statement should carry an “as of” date. At minimum:
 
 | Issue | Scope | Evidence | Fix |
 |---|---|---|---|
-| Raw slug as page title | 65 pages | `/07-finance/bank-account-management` shows “bank-account-management” | Add `title` frontmatter. |
+| Raw slug as page title | 65 pages | `/08-finance/bank-account-management` shows “bank-account-management” | Add `title` frontmatter. |
 | Mermaid parse failure | 12 diagrams | `debit-credit-and-double-entry.md:144` etc. | Quote labels / remove parentheses. |
-| Wiki links inside Mermaid | 5 index diagrams, 85 links | `10-hr/index.md:27` | Remove `[[...]]` from labels. |
+| Wiki links inside Mermaid | 5 index diagrams, 85 links | `11-hr/index.md:27` | Remove `[[...]]` from labels. |
 | Duplicate H1 | all articles | live HTML has 2 `<h1>` | Remove content H1 or layout title. |
 | Wrong `lang` | all pages | `<html lang="en">` | Set `id-ID`. |
-| 404 internal links | 7 links / 5 targets | `07-finance/financial-closing.md:7` | Correct slugs. |
+| 404 internal links | 7 links / 5 targets | `08-finance/financial-closing.md:7` | Correct slugs. |
 | False tag pages | 2 tags | `/tags/INV-2026-0042`, `/tags/LPT-001` | Escape `#` in prose. |
-| Dangling Mermaid nodes | 5+ diagrams | `07-finance/financial-reporting.md:25` | Connect or remove nodes. |
+| Dangling Mermaid nodes | 5+ diagrams | `08-finance/financial-reporting.md:25` | Connect or remove nodes. |
 | Homepage title duplication | 1 page | “ERP Notes \| ERP Notes” | Skip suffix on home. |
 | No prev/next or edit link | all pages | layout | Add components. |
 
@@ -666,18 +666,18 @@ Every tax statement should carry an “as of” date. At minimum:
 
 | File | Approx. line | Cause |
 |---|---:|---|
-| `02-accounting/debit-credit-and-double-entry.md` | 144 | Parentheses in edge label |
-| `03-sales/customer-credit-management.md` | 57 | Parentheses in edge label |
-| `03-sales/pricing-and-discount.md` | 79 | Parentheses/colon in edge label |
-| `03-sales/sales-return-and-credit-note.md` | 40 | Parentheses in edge label |
-| `04-purchasing/goods-receipt-and-service-receipt.md` | 63 | Parentheses in edge label |
-| `04-purchasing/supplier-selection-and-evaluation.md` | 36 | Parentheses in edge label |
-| `05-inventory/inventory-receiving.md` | 30 | Parentheses in rhombus label |
-| `05-inventory/physical-inventory-count.md` | 63 | Parentheses in rhombus label |
-| `05-inventory/replenishment-and-stock-planning.md` | 31 | Parentheses + KaTeX in rhombus label |
-| `06-manufacturing/material-availability-and-reservation.md` | 66 | Parentheses + KaTeX in rhombus label |
-| `07-finance/finance-integration.md` | 97 | Parentheses in sequence message |
-| `09-project/timesheet-and-effort-tracking.md` | 66 | Parentheses in state transition label |
+| `03-accounting/debit-credit-and-double-entry.md` | 144 | Parentheses in edge label |
+| `04-sales/customer-credit-management.md` | 57 | Parentheses in edge label |
+| `04-sales/pricing-and-discount.md` | 79 | Parentheses/colon in edge label |
+| `04-sales/sales-return-and-credit-note.md` | 40 | Parentheses in edge label |
+| `05-purchasing/goods-receipt-and-service-receipt.md` | 63 | Parentheses in edge label |
+| `05-purchasing/supplier-selection-and-evaluation.md` | 36 | Parentheses in edge label |
+| `06-inventory/inventory-receiving.md` | 30 | Parentheses in rhombus label |
+| `06-inventory/physical-inventory-count.md` | 63 | Parentheses in rhombus label |
+| `06-inventory/replenishment-and-stock-planning.md` | 31 | Parentheses + KaTeX in rhombus label |
+| `07-manufacturing/material-availability-and-reservation.md` | 66 | Parentheses + KaTeX in rhombus label |
+| `08-finance/finance-integration.md` | 97 | Parentheses in sequence message |
+| `10-project/timesheet-and-effort-tracking.md` | 66 | Parentheses in state transition label |
 
 The fix is mechanical: quote every label (`A["text (x)"]`) or remove parentheses from labels.
 
@@ -725,7 +725,7 @@ Scoring rule: only categories actually read are scored. All 15 were read. Counts
 | 7 | Financial Management | **7,0** | 17/17 | Real treasury/cash/working-capital content with correct CCC math; but 30/34 files lack frontmatter, bank recon error, planning sign error, duplication with 02, and some statutory dates. |
 | 8 | Cross-Module Integration | **6,5** | 10 integration articles + cross-module references in 03–11 | O2C/P2P/inventory/manufacturing/tax integration flows are explained. No single integration matrix; revenue/COGS and HR labour postings conflict; intercompany and multi-company are thin. |
 | 9 | Software Implementation Knowledge | **4,0** | 200 (all mention), 4 product pages | Comparison tables are useful but shallow; product section is 63 words; versions pinned only for Odoo 17; several claims likely wrong; 44 dead vendor URLs; no screenshots/menu walkthroughs. |
-| 10 | Indonesian Tax and Compliance | **6,5** | 19 (11-tax) + 19 (payroll) | The tax section is strong and current (PMK 131/2024, PMK 11/2025, Coretax, TER). But sales/purchasing teach stale 11% and pre-Coretax, payroll lacks dated caps and cites no labour statute, and one gross-up claim is unverified. |
+| 10 | Indonesian Tax and Compliance | **6,5** | 19 (12-tax) + 19 (payroll) | The tax section is strong and current (PMK 131/2024, PMK 11/2025, Coretax, TER). But sales/purchasing teach stale 11% and pre-Coretax, payroll lacks dated caps and cites no labour statute, and one gross-up claim is unverified. |
 | 11 | Learning Experience | **4,0** | 200/200 | Logical order and canonical scenario, but no path, prerequisites, objectives, exercises, glossary, summaries, or capstone. |
 | 12 | Documentation UX/UI | **5,5** | 200 pages live | Good Quartz shell (search, graph, TOC, dark mode, mobile). Broken by slug titles on 65 pages, 7 dead links, 12 broken diagrams, duplicate H1, wrong lang. |
 | 13 | Content Quality | **6,5** | 200/200 | Deep, consistent tone, strong cross-references, no stubs in 00–11. Held back by contradictions, arithmetic errors, unsourced references, typos, and duplicated topics. |
@@ -745,14 +745,14 @@ The score is dragged down by missing software/Naventra, missing learning layer, 
 | Task ID | Area | Problem | Solution | Files | Priority | Expected outcome | Dependency | Effort |
 |---|---|---|---|---|---|---|---|---|
 | QW-01 | Technical | Wrong base URL | Set `baseUrl: "erpnotes.rofid.my.id"`, rebuild | `quartz.config.ts:21` | P1 | Correct OG, sitemap, RSS | — | S |
-| QW-02 | Links | 7 broken internal links + 1 anchor | Fix slugs (`period-end-closing`, `three-way-match`, `warehouse-and-location`, `product-structure-and-bom`) | 07-finance files; `purchase-cancellation...:91` | P0 | Zero 404 internal links | — | S |
+| QW-02 | Links | 7 broken internal links + 1 anchor | Fix slugs (`period-end-closing`, `three-way-match`, `warehouse-and-location`, `product-structure-and-bom`) | 08-finance files; `purchase-cancellation...:91` | P0 | Zero 404 internal links | — | S |
 | QW-03 | Mermaid | 12 parse failures | Quote labels/remove parentheses | 12 files (see K.5) | P1 | All diagrams render | — | S |
 | QW-04 | Metadata | 65 raw-slug titles | Add `title:` to all files in 07–10 | 65 files | P1 | Readable titles, better SEO | — | S |
 | QW-05 | Tags | False `#INV-…`/`#LPT-…` tags | Escape `#` or write “No. …” | `journal-entry.md:56`, `inventory-reservation...:70` | P2 | Clean tag pages | — | S |
-| QW-06 | Tax | 11% stated as statutory | Add dated 12%/11-12 note; align with 11-tax | `sales-tax.md:86`, `purchase-tax.md:79` | P0 | Correct regulatory statement | — | S |
-| QW-07 | Accounting | 25% CIT | Change to 22% or label jurisdiction | `tax-accounting.md:109` | P1 | Consistency with 11-tax | — | S |
-| QW-08 | Accounting | Bank recon closing balance | 65.475 → 85.475; matched 50% → 63% | `07-finance/bank-reconciliation.md:131,139` | P2 | Correct example | — | S |
-| QW-09 | Accounting | Project labour total | 90 → 91,6; recompute margin/variance | `09-project/timesheet...:154` and 6 files | P1 | Correct canonical numbers | Canonical sheet | S |
+| QW-06 | Tax | 11% stated as statutory | Add dated 12%/11-12 note; align with 12-tax | `sales-tax.md:86`, `purchase-tax.md:79` | P0 | Correct regulatory statement | — | S |
+| QW-07 | Accounting | 25% CIT | Change to 22% or label jurisdiction | `tax-accounting.md:109` | P1 | Consistency with 12-tax | — | S |
+| QW-08 | Accounting | Bank recon closing balance | 65.475 → 85.475; matched 50% → 63% | `08-finance/bank-reconciliation.md:131,139` | P2 | Correct example | — | S |
+| QW-09 | Accounting | Project labour total | 90 → 91,6; recompute margin/variance | `10-project/timesheet...:154` and 6 files | P1 | Correct canonical numbers | Canonical sheet | S |
 | QW-10 | Accounting | Scrap decomposition | 437,5 → 375; labour 187,5; overhead 75 | `production-costing-and-wip.md:118` | P1 | Correct variance teaching | — | S |
 | QW-11 | Accounting | Landed-cost return | Relieve 750k; expense 50k freight | `procure-to-pay-integration.md:164` | P1 | Inventory no longer overstated | — | S |
 | QW-12 | UX | Duplicate H1 | Remove content H1 or layout title | all articles | P2 | Valid heading structure | — | S |
@@ -765,7 +765,7 @@ The score is dragged down by missing software/Naventra, missing learning layer, 
 | Task ID | Area | Problem | Solution | Priority | Expected outcome | Dependency | Effort |
 |---|---|---|---|---|---|---|---|
 | AC-01 | Accounting | Revenue recognised at invoice in 4 places | Publish one IFRS 15 policy page; rewrite O2C, sales fundamentals, reporting, integration | P0 | One revenue rule; correct AR/contract asset | QW-06 | M |
-| AC-02 | Accounting | PPN/Coretax split across sections | Make `11-tax` the canonical source; sales/purchase link and summarise; update 11% examples | P0 | Consistent tax treatment | AC-01 | M |
+| AC-02 | Accounting | PPN/Coretax split across sections | Make `12-tax` the canonical source; sales/purchase link and summarise; update 11% examples | P0 | Consistent tax treatment | AC-01 | M |
 | AC-03 | Accounting | Posting-date cut-off error | Rewrite journal-entry example with accrual in August, clear in September | P1 | Correct cut-off teaching | — | S |
 | AC-04 | Accounting | Contract liability at achieved milestone | Rewrite project billing journal; add a period with revenue ≠ billing | P1 | Correct IFRS 15 project model | AC-01 | M |
 | AC-05 | Accounting | Asset 2028 schedule conflict | Build one asset schedule sheet; update revaluation, impairment, disposal, maintenance | P1 | One carrying amount per date | AC-09 | M |
@@ -829,18 +829,18 @@ erp-notes/
 │   │   ├── phase-map.md
 │   │   ├── canonical-dataset.md
 │   │   └── capstone-case.md
-│   ├── 00-fundamentals/          (unchanged)
-│   ├── 01-business-processes/    (unchanged)
-│   ├── 02-accounting/            (unchanged; remove duplicates only after redirects)
-│   ├── 03-sales/                 (unchanged)
-│   ├── 04-purchasing/            (unchanged)
-│   ├── 05-inventory/             (unchanged)
-│   ├── 06-manufacturing/         (unchanged)
-│   ├── 07-finance/               (unchanged)
-│   ├── 08-assets/                (unchanged)
-│   ├── 09-project/               (unchanged)
-│   ├── 10-hr/                    (unchanged)
-│   ├── 11-tax/                   (unchanged)
+│   ├── 01-fundamentals/          (unchanged)
+│   ├── 02-business-processes/    (unchanged)
+│   ├── 03-accounting/            (unchanged; remove duplicates only after redirects)
+│   ├── 04-sales/                 (unchanged)
+│   ├── 05-purchasing/            (unchanged)
+│   ├── 06-inventory/             (unchanged)
+│   ├── 07-manufacturing/         (unchanged)
+│   ├── 08-finance/               (unchanged)
+│   ├── 09-assets/                (unchanged)
+│   ├── 10-project/               (unchanged)
+│   ├── 11-hr/                    (unchanged)
+│   ├── 12-tax/                   (unchanged)
 │   ├── 20-software/
 │   │   ├── odoo/
 │   │   ├── erpnext/

@@ -38,7 +38,7 @@ Keputusan berikut sudah disetujui pemilik proyek dan **tidak perlu ditanyakan ul
 | K-2 | URL mati: cari padanan URL resmi; jika benar-benar tidak ada, hapus referensi dan tandai materi butuh sumber. |
 | K-3 | Referensi tanpa URL (±730 entri): dilengkapi satu per satu, mulai dari folder yang paling kritis. |
 | K-4 | Referensi homepage-only (CIPS/DJP/SAP): diganti dokumen spesifik. CIPS diganti sumber lain yang dapat diverifikasi (mis. ISO/APICS) karena memblokir akses otomatis. |
-| K-5 | 17 file 05-inventory dicommit apa adanya (URL ada, versi Odoo masih 17, tanggal akses warisan kampanye 23 Nov); dibenarkan dalam Fase 3. |
+| K-5 | 17 file 06-inventory dicommit apa adanya (URL ada, versi Odoo masih 17, tanggal akses warisan kampanye 23 Nov); dibenarkan dalam Fase 3. |
 | K-6 | Pemilik proyek adalah **pembelajar**, bukan pakar: delegasikan keputusan desak ke rekomendasi agent; keputusan akuntansi wajib bersitasi paragraf standar; klaim pajak kontensius diberi label peringatan, bukan "diselesaikan" dengan opini. |
 | K-7 | Lapisan pembelajaran (learning path, latihan, glosarium) adalah prioritas inti, bukan pelengkap. |
 | K-8 | Review pakar eksternal (konsultan pajak/akuntan) direncanakan sekali sebelum materi dipakai untuk keputusan profesional. |
@@ -54,8 +54,8 @@ Semua validasi hijau (`check:content` 0 error; `check:urls` exit 0; `npx quartz 
 | `76e9ee4` | Aturan referensi: identitas terverifikasi wajib |
 | `5d5c2f9` | `check-urls.mjs` + wiring CI (validate & deploy) |
 | `a91e0fc` | Register backlog kampanye referensi |
-| `7b73435` | 04-purchasing naik ke Odoo 20 |
-| `fa1788a` | 05-inventory: URL referensi ditambahkan (versi menyusul naik di Fase 3) |
+| `7b73435` | 05-purchasing naik ke Odoo 20 |
+| `fa1788a` | 06-inventory: URL referensi ditambahkan (versi menyusul naik di Fase 3) |
 
 Debris `scratch/` (62 file hasil scraping) dihapus permanen sebelum Fase 0.
 
@@ -68,12 +68,12 @@ Disetujui pemilik proyek 24 November 2026. Nilai kanonik ditulis ke `.agents/ref
 | ACC-06/FIN-10 | Basis jadwal aset AST-MAC-2026-0001 di 2028 | Cost model + skedul 33 bulan (akum. 55 jt, nilai buku 65 jt, residu 10 jt) kanonik; artikel revaluasi memakai `AST-MAC-2026-0002` |
 | ACC-11/FIN-09 | Material proyek: beban vs WIP | WIP→COGS per progres untuk fixed-price; langsung beban untuk time-material/cost-reimbursable |
 | ACC-26 | Dua skenario tahunan (EBT 15,35 jt vs 100 jt) | EBT 100 jt kanonik; 15,35 jt menjadi tahun pembanding |
-| FIN-11 | Dua COA untuk mesin yang sama | COA `02-accounting/chart-of-accounts.md` kanonik; `08-assets` menyesuaikan |
+| FIN-11 | Dua COA untuk mesin yang sama | COA `03-accounting/chart-of-accounts.md` kanonik; `09-assets` menyesuaikan |
 | BIZ-06/07 | Baseline stok & nomor dokumen P2P | Pola 4 segmen; `PR-2026-09-0041` dan `PO-2026-09-0081` kanonik |
 | INV-05 | Faktor konversi UOM | 1 Pack = 6 Unit; artikel pemakai "4" dikoreksi |
 | INV-08 | Cost sheet MO-2026-0042 | `production-costing-and-wip.md` pemilik tunggal |
-| TAX-04/05 | Index menjanjikan cakupan PPh yang tidak ada | Janji dihapus dari `02-accounting` dan `04-purchasing`; perluasan materi masuk Fase 5 |
-| URUTAN | Urutan batch kampanye referensi | `11-tax` didahulukan, lalu 00→05, lalu 06+ |
+| TAX-04/05 | Index menjanjikan cakupan PPh yang tidak ada | Janji dihapus dari `03-accounting` dan `05-purchasing`; perluasan materi masuk Fase 5 |
+| URUTAN | Urutan batch kampanye referensi | `12-tax` didahulukan, lalu 00→05, lalu 06+ |
 
 ## 6. Fase 2 — Satu Kebenaran Akuntansi (AI otonom)
 
@@ -85,12 +85,12 @@ Prasyarat: Fase 1 ✅ disetujui 24 November 2026. Langkah:
 
 ## 7. Fase 3 — Referensi & Versi (AI otonom) ✅ SELESAI 26 November 2026
 
-Urutan (dikunci Fase 1): `11-tax` → `00`–`05` → `06`–`30`. Batch 1 (`11-tax`, 8 file) dieksekusi 24 November 2026. Per batch:
+Urutan (dikunci Fase 1): `12-tax` → `00`–`05` → `06`–`30`. Batch 1 (`12-tax`, 8 file) dieksekusi 24 November 2026. Per batch:
 
 - Ganti seluruh referensi Odoo 17 → 20.0 (baca halaman tujuan; klaim yang tidak lagi didukung halaman baru = temuan, ditandai, bukan diam-diam direvisi). **Versi: selesai 24 November 2026 (0 sisa). Verifikasi klaim perilaku terhadap halaman 20.0: belum.**
 - Ganti 44 URL mati dengan padanan resmi (Microsoft Learn & Frappe merestrukturisasi URL — cari lokasi baru; jangan menebak).
 - Ganti homepage-only: DJP → naskah peraturan (JDIH/peraturan.go.id + nomor + tanggal); SAP → halaman Help spesifik; CIPS → sumber terverifikasi.
-- Lengkapi referensi tanpa URL (folder 06+ dan 11-tax).
+- Lengkapi referensi tanpa URL (folder 06+ dan 12-tax).
 - Stempel `Diakses <tanggal>` hanya pada tanggal URL benar-benar dibuka.
 - Validasi: `npm run check:urls` harus menurun menuju 0 URL mati; `check:refs:strict` menuju 0 entri tanpa identitas.
 

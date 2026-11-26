@@ -6,31 +6,31 @@ title: Naventra Design — hr
 
 ## Definition
 
-Keputusan desain Naventra yang diekstrak dari artikel `10-hr`. Teks keputusan dipindahkan apa adanya; artikel sumber menyisakan satu baris rujukan.
+Keputusan desain Naventra yang diekstrak dari artikel `11-hr`. Teks keputusan dipindahkan apa adanya; artikel sumber menyisakan satu baris rujukan.
 
 ## NAV-D-095 — Attendance and Work Schedule
 
-Sumber: [[10-hr/attendance-and-work-schedule|Attendance and Work Schedule]]
+Sumber: [[11-hr/attendance-and-work-schedule|Attendance and Work Schedule]]
 
 Dalam perancangan modul kehadiran dan jadwal kerja Naventra ERP:
 
 1. **Mesin Pemroses Log Biometrik Terpadu**: Naventra menyediakan *API Gateway Ingestion* yang mampu menampung puluhan ribu stempel presensi per menit dari mesin sidik jari dan RFID lintas cabang, memproses status kehadiran secara *near real-time*.
 2. **Sistem Pengenalan Shift Otomatis (*Auto-Shift Detection*)**: Untuk staf operasional yang bekerja tanpa jadwal shift kaku, mesin Naventra secara cerdas mencocokkan jam *clock-in* pertama pegawai ke jadwal shift terdekat tanpa memerlukan penugasan manual dari HR.
-3. **Penyelarasan Presensi dengan Lembar Waktu Proyek**: Sistem melakukan validasi silang antara total jam kehadiran harian pada modul HR dengan total jam lembar kerja (*Timesheet*) yang diinput pegawai pada modul [[09-project/timesheet-and-effort-tracking|Project Management]]. Pengguna diperingatkan jika jam kerja proyek melebihi jam kehadiran fisik di kantor.
+3. **Penyelarasan Presensi dengan Lembar Waktu Proyek**: Sistem melakukan validasi silang antara total jam kehadiran harian pada modul HR dengan total jam lembar kerja (*Timesheet*) yang diinput pegawai pada modul [[10-project/timesheet-and-effort-tracking|Project Management]]. Pengguna diperingatkan jika jam kerja proyek melebihi jam kehadiran fisik di kantor.
 
 ## NAV-D-096 — Employee Master Data
 
-Sumber: [[10-hr/employee-master-data|Employee Master Data]]
+Sumber: [[11-hr/employee-master-data|Employee Master Data]]
 
 Dalam perancangan modul master data pegawai Naventra ERP:
 
 1. **Arsitektur Tiga Lapis (Party - Employment - User)**: Mengadopsi arsitektur data model di mana entitas `Person` memegang biodata personal permanen, entitas `Employment` memegang kontrak legal dan penempatan departemen per entitas usaha, dan entitas `User` mengelola kredensial sistem.
 2. **Validasi Format Statutori Otomatis**: Formulir input pegawai dilengkapi modul validasi otomatis untuk panjang digit dan *checksum* NIK (16 digit), NPWP (16 digit format baru), serta format nomor rekening bank utama di Indonesia.
-3. **Kustodian Aset Terintegrasi Real-Time**: Kolom penugasan aset pada formulir pegawai tertaut langsung dengan modul [[08-assets/asset-master-data|Fixed Assets]], sehingga mutasi posisi pegawai otomatis mengirimkan notifikasi ke petugas logistik umum (*General Affairs*) untuk pemutakhiran lokasi barang aktiva.
+3. **Kustodian Aset Terintegrasi Real-Time**: Kolom penugasan aset pada formulir pegawai tertaut langsung dengan modul [[09-assets/asset-master-data|Fixed Assets]], sehingga mutasi posisi pegawai otomatis mengirimkan notifikasi ke petugas logistik umum (*General Affairs*) untuk pemutakhiran lokasi barang aktiva.
 
 ## NAV-D-097 — Employee Timesheet and Labor Cost
 
-Sumber: [[10-hr/employee-timesheet-and-labor-cost|Employee Timesheet and Labor Cost]]
+Sumber: [[11-hr/employee-timesheet-and-labor-cost|Employee Timesheet and Labor Cost]]
 
 Dalam perancangan modul lembar waktu dan biaya tenaga kerja Naventra ERP:
 
@@ -40,7 +40,7 @@ Dalam perancangan modul lembar waktu dan biaya tenaga kerja Naventra ERP:
 
 ## NAV-D-098 — Employment Lifecycle
 
-Sumber: [[10-hr/employment-lifecycle|Employment Lifecycle]]
+Sumber: [[11-hr/employment-lifecycle|Employment Lifecycle]]
 
 Dalam perancangan modul siklus hidup pegawai Naventra ERP:
 
@@ -50,7 +50,7 @@ Dalam perancangan modul siklus hidup pegawai Naventra ERP:
 
 ## NAV-D-099 — HR Controls and Governance
 
-Sumber: [[10-hr/hr-controls-and-governance|HR Controls and Governance]]
+Sumber: [[11-hr/hr-controls-and-governance|HR Controls and Governance]]
 
 Dalam perancangan modul kontrol dan tata kelola HR Naventra ERP:
 
@@ -60,7 +60,7 @@ Dalam perancangan modul kontrol dan tata kelola HR Naventra ERP:
 
 ## NAV-D-100 — HR Integration
 
-Sumber: [[10-hr/hr-integration|HR Integration]]
+Sumber: [[11-hr/hr-integration|HR Integration]]
 
 Dalam perancangan arsitektur inti modul Human Resources Naventra ERP:
 
@@ -70,7 +70,7 @@ Dalam perancangan arsitektur inti modul Human Resources Naventra ERP:
 
 ## NAV-D-101 — HR Management Fundamentals
 
-Sumber: [[10-hr/hr-management-fundamentals|HR Management Fundamentals]]
+Sumber: [[11-hr/hr-management-fundamentals|HR Management Fundamentals]]
 
 Dalam perancangan modul Human Resources pada Naventra ERP:
 
@@ -80,7 +80,7 @@ Dalam perancangan modul Human Resources pada Naventra ERP:
 
 ## NAV-D-102 — Leave Management
 
-Sumber: [[10-hr/leave-management|Leave Management]]
+Sumber: [[11-hr/leave-management|Leave Management]]
 
 Dalam perancangan modul manajemen cuti Naventra ERP:
 
@@ -90,7 +90,7 @@ Dalam perancangan modul manajemen cuti Naventra ERP:
 
 ## NAV-D-103 — Organization and Position Structure
 
-Sumber: [[10-hr/organization-and-position-structure|Organization and Position Structure]]
+Sumber: [[11-hr/organization-and-position-structure|Organization and Position Structure]]
 
 Dalam perancangan modul struktur organisasi Naventra ERP:
 
@@ -100,7 +100,7 @@ Dalam perancangan modul struktur organisasi Naventra ERP:
 
 ## NAV-D-104 — Overtime and Time Management
 
-Sumber: [[10-hr/overtime-and-time-management|Overtime and Time Management]]
+Sumber: [[11-hr/overtime-and-time-management|Overtime and Time Management]]
 
 Dalam perancangan modul manajemen lembur Naventra ERP:
 
@@ -110,7 +110,7 @@ Dalam perancangan modul manajemen lembur Naventra ERP:
 
 ## NAV-D-105 — Payroll Accounting and Finance Integration
 
-Sumber: [[10-hr/payroll-accounting-and-finance-integration|Payroll Accounting and Finance Integration]]
+Sumber: [[11-hr/payroll-accounting-and-finance-integration|Payroll Accounting and Finance Integration]]
 
 Dalam perancangan modul integrasi akuntansi penggajian Naventra ERP:
 
@@ -120,17 +120,17 @@ Dalam perancangan modul integrasi akuntansi penggajian Naventra ERP:
 
 ## NAV-D-106 — Payroll Benefits and Reimbursements
 
-Sumber: [[10-hr/payroll-benefits-and-reimbursements|Payroll Benefits and Reimbursements]]
+Sumber: [[11-hr/payroll-benefits-and-reimbursements|Payroll Benefits and Reimbursements]]
 
 Dalam perancangan modul tunjangan dan klaim biaya Naventra ERP:
 
 1. **Receipt OCR & Digital Fraud Prevention**: Naventra mengintegrasikan modul pemindaian gambar pintar yang mendeteksi nomor transaksi struk dan stempel tanggal, secara otomatis menolak berkas struk yang terindikasi telah diunggah oleh pegawai lain.
 2. **Dual-Channel Disbursement Routing**: Sistem memungkinkan pemisahan fleksibel: klaim bernilai kecil (< Rp500.000) disalurkan langsung via transfer harian kas kecil (*Petty Cash / Fast AP*), sedangkan klaim fasilitas berkala dapat digabungkan ke slip gaji bulanan sebagai komponen *Non-Taxable Reimbursement*.
-3. **Penyelarasan Biaya Proyek Instan**: Klaim perjalanan dinas yang mencantumkan kode WBS proyek secara otomatis memicu pembaruan biaya riil pengeluaran (*Expenses Cost Category*) pada modul [[09-project/project-cost-management|Project Cost Management]], memantau margin laba kotor proyek secara *real-time*.
+3. **Penyelarasan Biaya Proyek Instan**: Klaim perjalanan dinas yang mencantumkan kode WBS proyek secara otomatis memicu pembaruan biaya riil pengeluaran (*Expenses Cost Category*) pada modul [[10-project/project-cost-management|Project Cost Management]], memantau margin laba kotor proyek secara *real-time*.
 
 ## NAV-D-107 — Payroll Earnings and Deductions
 
-Sumber: [[10-hr/payroll-earnings-and-deductions|Payroll Earnings and Deductions]]
+Sumber: [[11-hr/payroll-earnings-and-deductions|Payroll Earnings and Deductions]]
 
 Dalam perancangan modul komponen gaji Naventra ERP:
 
@@ -140,7 +140,7 @@ Dalam perancangan modul komponen gaji Naventra ERP:
 
 ## NAV-D-108 — Payroll Fundamentals
 
-Sumber: [[10-hr/payroll-fundamentals|Payroll Fundamentals]]
+Sumber: [[11-hr/payroll-fundamentals|Payroll Fundamentals]]
 
 Dalam perancangan modul penggajian Naventra ERP:
 
@@ -150,7 +150,7 @@ Dalam perancangan modul penggajian Naventra ERP:
 
 ## NAV-D-109 — Payroll Tax and Statutory Compliance
 
-Sumber: [[10-hr/payroll-tax-and-statutory-compliance|Payroll Tax and Statutory Compliance]]
+Sumber: [[11-hr/payroll-tax-and-statutory-compliance|Payroll Tax and Statutory Compliance]]
 
 Dalam perancangan modul kepatuhan pajak penggajian Naventra ERP:
 
@@ -160,17 +160,17 @@ Dalam perancangan modul kepatuhan pajak penggajian Naventra ERP:
 
 ## NAV-D-110 — Performance and Employee Management
 
-Sumber: [[10-hr/performance-and-employee-management|Performance and Employee Management]]
+Sumber: [[11-hr/performance-and-employee-management|Performance and Employee Management]]
 
 Dalam perancangan modul manajemen kinerja Naventra ERP:
 
-1. **Objective System-Driven KPIs**: Naventra mengintegrasikan data kinerja langsung dari modul operasional: metrik ketepatan waktu pengiriman deliverable proyek WBS pada modul [[09-project/project-task-and-milestone|Project Management]] secara otomatis ditarik sebagai nilai capaian KPI teknis pegawai.
+1. **Objective System-Driven KPIs**: Naventra mengintegrasikan data kinerja langsung dari modul operasional: metrik ketepatan waktu pengiriman deliverable proyek WBS pada modul [[10-project/project-task-and-milestone|Project Management]] secara otomatis ditarik sebagai nilai capaian KPI teknis pegawai.
 2. **Automated Calibration Matrix**: Menyediakan antarmuka visual matriks 9 kotak (*9-Box Talent Matrix: Performance vs Potential*) yang memfasilitasi komite kalibrasi dalam mengelompokkan pegawai berkinerja tinggi (*High Performers*) untuk perencanaan suksesi kepemimpinan.
 3. **Seamless Payroll Promotion Sync**: Persetujuan akhir kenaikan jabatan pada modul kinerja secara otomatis memperbarui rekaman *Job Grade* dan *Salary Structure Assignment* bertanggal efektif pada master data pegawai tanpa entri manual ganda.
 
 ## NAV-D-111 — Recruitment and Onboarding
 
-Sumber: [[10-hr/recruitment-and-onboarding|Recruitment and Onboarding]]
+Sumber: [[11-hr/recruitment-and-onboarding|Recruitment and Onboarding]]
 
 Dalam perancangan modul rekrutmen dan orientasi Naventra ERP:
 
@@ -180,7 +180,7 @@ Dalam perancangan modul rekrutmen dan orientasi Naventra ERP:
 
 ## NAV-D-112 — Workforce Planning and HR Analytics
 
-Sumber: [[10-hr/workforce-planning-and-hr-analytics|Workforce Planning and HR Analytics]]
+Sumber: [[11-hr/workforce-planning-and-hr-analytics|Workforce Planning and HR Analytics]]
 
 Dalam perancangan modul perencanaan tenaga kerja dan analitik Naventra ERP:
 
@@ -192,24 +192,24 @@ Dalam perancangan modul perencanaan tenaga kerja dan analitik Naventra ERP:
 
 | ID | Sumber | Status |
 |---|---|---|
-| NAV-D-095 | `10-hr/attendance-and-work-schedule.md` | Adopted |
-| NAV-D-096 | `10-hr/employee-master-data.md` | Adopted |
-| NAV-D-097 | `10-hr/employee-timesheet-and-labor-cost.md` | Adopted |
-| NAV-D-098 | `10-hr/employment-lifecycle.md` | Adopted |
-| NAV-D-099 | `10-hr/hr-controls-and-governance.md` | Adopted |
-| NAV-D-100 | `10-hr/hr-integration.md` | Adopted |
-| NAV-D-101 | `10-hr/hr-management-fundamentals.md` | Adopted |
-| NAV-D-102 | `10-hr/leave-management.md` | Adopted |
-| NAV-D-103 | `10-hr/organization-and-position-structure.md` | Adopted |
-| NAV-D-104 | `10-hr/overtime-and-time-management.md` | Adopted |
-| NAV-D-105 | `10-hr/payroll-accounting-and-finance-integration.md` | Adopted |
-| NAV-D-106 | `10-hr/payroll-benefits-and-reimbursements.md` | Adopted |
-| NAV-D-107 | `10-hr/payroll-earnings-and-deductions.md` | Adopted |
-| NAV-D-108 | `10-hr/payroll-fundamentals.md` | Adopted |
-| NAV-D-109 | `10-hr/payroll-tax-and-statutory-compliance.md` | Adopted |
-| NAV-D-110 | `10-hr/performance-and-employee-management.md` | Adopted |
-| NAV-D-111 | `10-hr/recruitment-and-onboarding.md` | Adopted |
-| NAV-D-112 | `10-hr/workforce-planning-and-hr-analytics.md` | Adopted |
+| NAV-D-095 | `11-hr/attendance-and-work-schedule.md` | Adopted |
+| NAV-D-096 | `11-hr/employee-master-data.md` | Adopted |
+| NAV-D-097 | `11-hr/employee-timesheet-and-labor-cost.md` | Adopted |
+| NAV-D-098 | `11-hr/employment-lifecycle.md` | Adopted |
+| NAV-D-099 | `11-hr/hr-controls-and-governance.md` | Adopted |
+| NAV-D-100 | `11-hr/hr-integration.md` | Adopted |
+| NAV-D-101 | `11-hr/hr-management-fundamentals.md` | Adopted |
+| NAV-D-102 | `11-hr/leave-management.md` | Adopted |
+| NAV-D-103 | `11-hr/organization-and-position-structure.md` | Adopted |
+| NAV-D-104 | `11-hr/overtime-and-time-management.md` | Adopted |
+| NAV-D-105 | `11-hr/payroll-accounting-and-finance-integration.md` | Adopted |
+| NAV-D-106 | `11-hr/payroll-benefits-and-reimbursements.md` | Adopted |
+| NAV-D-107 | `11-hr/payroll-earnings-and-deductions.md` | Adopted |
+| NAV-D-108 | `11-hr/payroll-fundamentals.md` | Adopted |
+| NAV-D-109 | `11-hr/payroll-tax-and-statutory-compliance.md` | Adopted |
+| NAV-D-110 | `11-hr/performance-and-employee-management.md` | Adopted |
+| NAV-D-111 | `11-hr/recruitment-and-onboarding.md` | Adopted |
+| NAV-D-112 | `11-hr/workforce-planning-and-hr-analytics.md` | Adopted |
 
 ## References
 

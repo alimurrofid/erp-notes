@@ -66,7 +66,7 @@ Hapus section yang tidak relevan daripada mengisinya dengan konten generik.
 ## Penamaan File
 
 - Lowercase kebab-case: `inventory-costing.md`.
-- Prefix angka mengikuti folder: `05-inventory/`.
+- Prefix angka mengikuti folder: `06-inventory/`.
 - Satu konsep, satu file. Jangan membuat `-v2`, `-final`, atau `-new`.
 
 ## Nomor Dokumen
