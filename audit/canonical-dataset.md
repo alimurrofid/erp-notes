@@ -41,7 +41,9 @@ Pola: `<JENIS>-<TAHUN>-<BULAN>-<URUT>`.
 | Purchase Order | `PO-2026-09-0081` |
 | Goods Receipt | `GR-2026-09-0010`, `GR-2026-09-0014` |
 
-Nomor lain diturunkan dari pola ini dengan mempertahankan nomor urut yang sudah ada dan menambahkan segmen bulan. **Belum ditetapkan:** nomor Sales Order, Delivery Order, dan Invoice penjualan — jangan membuat nilai baru sebelum register diperbarui.
+| Sales Quotation | `SQ-2026-09-0042` |
+
+Nomor lain diturunkan dari pola ini dengan mempertahankan nomor urut yang sudah ada dan menambahkan segmen bulan. **Pengecualian:** `MO-2026-0042` tetap 3 segmen karena merupakan ID cost sheet (D-7), bukan nomor dokumen transaksi. **Belum ditetapkan:** nomor Sales Order, Delivery Order, dan Invoice penjualan — jangan membuat nilai baru sebelum register diperbarui.
 
 ## 5. Posisi PPN Bulanan
 

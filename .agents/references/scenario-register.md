@@ -25,7 +25,7 @@ Keputusan berikut disetujui pemilik proyek dan menjadi basis Fase 2. Angka yang 
 | D-2 | Material proyek | Proyek fixed-price: WIP→COGS diakru per progres. Time-material/cost-reimbursable: langsung ke beban. |
 | D-3 | Skenario tahunan | EBT 100 jt menjadi kanonik. Skenario EBT 15,35 jt diberi label tahun pembanding, bukan skenario kedua. |
 | D-4 | Chart of accounts | `content/02-accounting/chart-of-accounts.md` kanonik; `08-assets` menyesuaikan. |
-| D-5 | Nomor dokumen P2P | Pola 4 segmen. Nilai terverifikasi: `PR-2026-09-0041`, `PO-2026-09-0081`. Nomor lain diturunkan dari pola ini di Fase 2. |
+| D-5 | Nomor dokumen P2P | Pola 4 segmen. Nilai terverifikasi: `PR-2026-09-0041`, `PO-2026-09-0081`. `MO-2026-0042` dikecualikan karena merupakan ID cost sheet (D-7), bukan nomor dokumen transaksi. |
 | D-6 | Konversi UOM | 1 Pack = 6 Unit. Artikel yang memakai faktor "4" dikoreksi. |
 | D-7 | Cost sheet produksi | `content/06-manufacturing/production-costing-and-wip.md` pemilik tunggal; artikel lain merujuk. |
 | D-8 | Index `02-accounting` dan `04-purchasing` | Hapus janji cakupan PPh 21/22/4(2) yang tidak ada di artikel tujuan (temuan TAX-04/05). Perluasan materi PPh 21/22 masuk Fase 5. |
