@@ -60,7 +60,7 @@ stateDiagram-v2
 Dokumen penawaran harga dibangun dengan struktur dua tingkat:
 
 ### 1. Quotation Header
-* **Quotation Number & Revision Code**: Nomor unik dokumen dan penanda revisi (misal: `SQ-2026-0089-Rev02`).
+* **Quotation Number & Revision Code**: Nomor unik dokumen dan penanda revisi (misal: `SQ-2026-09-0042-Rev02`).
 * **Customer Reference**: Identitas pelanggan atau data prospek (*Lead/Opportunity*).
 * **Validity Period**: Tanggal terbit (*Quotation Date*) dan batas kedaluwarsa (*Valid Until Date*).
 * **Payment Terms & Currency**: Kesepakatan syarat pembayaran (misal: *Net 30*) dan mata uang transaksi.

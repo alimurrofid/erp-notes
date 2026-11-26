@@ -94,6 +94,10 @@ Menunjukkan rekonsiliasi antara saldo awal dan saldo akhir dari seluruh komponen
 Berikut adalah contoh laporan keuangan terintegrasi yang dihasilkan dari transaksi realistis yang telah kita bahas di seluruh siklus:
 
 ### A. Laporan Laba Rugi (Periode Berjalan)
+
+> [!note] Tahun pembanding
+> Angka pada laporan ini adalah **tahun pembanding** (EBT Rp15.350.000), bukan skenario kanonik tahun berjalan. Skenario kanonik memakai EBT Rp100.000.000 dan PKP Rp105.000.000 — lihat `11-tax/index.md`.
+
 ```text
 PT MAJU SEJAHTERA BERSAMA
 LAPORAN LABA RUGI (STATEMENT OF PROFIT OR LOSS)
