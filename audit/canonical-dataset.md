@@ -74,6 +74,7 @@ Skenario EBT Rp15.350.000 hanya boleh muncul sebagai **tahun pembanding**, bukan
 |---|---|---|
 | `AST-MAC-2026-0001` | Cost model | perolehan Rp120 jt (1 Apr 2026); residu Rp10 jt; umur 60 bulan; penyusutan Rp1.833.333/bulan. 31 Des 2028 (33 bulan): akumulasi Rp60,5 jt; nilai buku Rp59,5 jt; sisa 27 bulan |
 | `AST-MAC-2026-0002` | Revaluation model | dipakai **hanya** di artikel revaluasi |
+| `AST-MAC-2026-0003` | Componentized asset | komponen `.01`–`.04`; total perolehan Rp120 jt; umur komponen 10/3/5 tahun; dipakai **hanya** di artikel componentization |
 
 Satu aset tidak boleh memakai dua model sekaligus.
 
