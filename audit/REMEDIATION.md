@@ -31,6 +31,12 @@ Legenda: **Fixed** = materi sudah diperbaiki. **Open** = belum. **Invalid** = te
 | UX-07 | `#INV-…` dan `#LPT-…` dihapus dari prosa | `journal-entry`, `inventory-reservation` |
 | TAX-04 / TAX-05 | Janji cakupan PPh 21/22/4(2) dihapus dari index; artikel hanya menjanjikan PPh 23 dan PPh badan | `02-accounting/index.md`, `04-purchasing/index.md` |
 | TECH-04 | URL mati = 0 (`check:urls` 192 ok, 2 blocked OECD); link mati diganti halaman resmi terverifikasi atau ditandai gap | 12 file `00`–`04` |
+| ACC-06 / FIN-10 | Basis aset 2028: cost model 60 bulan; akum 60,5 jt; NB 59,5 jt; revaluasi `0002`; componentization `0003` | 12 file `08-assets` |
+| ACC-11 / FIN-09 | Proyek fixed-price: HPP diakru setiap BAST; T&M langsung ke beban | `09-project` |
+| ACC-26 | EBT 100 jt kanonik; skenario 15,35 jt dilabeli tahun pembanding | `02-accounting` |
+| FIN-11 | Satu COA; akun mesin konsisten `153000` di 02 dan 08 | `02-accounting`, `08-assets` |
+| BIZ-06 / BIZ-07 | Pola nomor 4 segmen; `MO-2026-0042` dikecualikan sebagai ID cost sheet | `00`, `02`, `04`, `05`, `06`, `07` |
+| INV-05 / INV-08 | 1 Pack = 6 Unit; cost sheet tunggal di `production-costing-and-wip.md` | `05-inventory`, `06-manufacturing` |
 | UX-02 | Label Mermaid di kutip / tanda baca dihapus | 10 file diagram |
 
 ### Fixed pada fase sebelumnya
@@ -45,17 +51,11 @@ UX-01, UX-03, UX-06, MNT-01, MNT-03, TECH-07, QW-02, QW-03, QW-04.
 
 ## Decided — keputusan Fase 1 (24 November 2026)
 
-Kedelapan item di bawah **sudah diputuskan** pemilik proyek; nilai kanoniknya ada di `.agents/references/scenario-register.md` (D-1…D-8). Status ini **bukan** Fixed: materi belum diubah. Baris dipindahkan ke tabel Fixed hanya setelah batch Fase 2 mengubah artikelnya dan `check:content` + build hijau pada commit yang sama.
+Seluruh item konten sudah diterapkan dan dipindahkan ke tabel **Fixed** di atas. Yang tersisa di sini hanya keputusan proses.
 
-| ID | Keputusan | Diterapkan di |
+| ID | Keputusan | Status |
 |---|---|---|
-| ACC-06 / FIN-10 | Aset 2028: cost model, umur 60 bulan, residu 10 jt; 31 Des 2028 akum 60,5 jt, NB 59,5 jt; revaluasi memakai `AST-MAC-2026-0002` | `08-assets`, `02-accounting` |
-| ACC-11 / FIN-09 | Fixed-price: WIP→COGS per progres; T&M: langsung beban | `09-project`, `02-accounting` |
-| ACC-26 | EBT 100 jt kanonik; EBT 15,35 jt = tahun pembanding | `07-finance`, `02-accounting` |
-| FIN-11 | Satu COA di `02-accounting/chart-of-accounts.md` | `02-accounting`, `08-assets` |
-| BIZ-06 / BIZ-07 | Pola nomor 4 segmen; `PR-2026-09-0041`, `PO-2026-09-0081` | `04-purchasing`, `00-fundamentals` |
-| INV-05 / INV-08 | 1 Pack = 6 Unit; cost sheet tunggal di `production-costing-and-wip.md` | `05-inventory`, `06-manufacturing` |
-| URUTAN | Kampanye referensi dimulai dari `11-tax` | `audit/LINK-BACKLOG.md` |
+| URUTAN | Kampanye referensi dimulai dari `11-tax` | Selesai; `11-tax` tuntas 24 November 2026 |
 
 ## Open — butuh verifikasi eksternal
 
