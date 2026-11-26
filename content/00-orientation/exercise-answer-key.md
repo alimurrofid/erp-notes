@@ -8,6 +8,14 @@ title: Exercise Answer Key
 
 Kunci jawaban [[00-orientation/exercises|Exercises]]. Jawaban di bawah adalah inti yang harus muncul; kalimat pembuka boleh berbeda.
 
+## Cara Menilai
+
+| Level | Kriteria |
+|---|---|
+| **Penuh** | Jawaban benar, akun/alasan disebut, dan rumus ditulis untuk soal hitungan |
+| **Sebagian** | Angka benar tanpa alasan, atau alasan benar dengan angka salah |
+| **Kurang** | Hanya menyebut istilah tanpa menjelaskan mekanisme |
+
 ## A. Fundamentals dan Business Process
 
 1. Master data relatif stabil dan dipakai berulang (item, vendor, COA). Transaction data lahir dari satu peristiwa (PO, invoice).
@@ -23,14 +31,14 @@ Kunci jawaban [[00-orientation/exercises|Exercises]]. Jawaban di bawah adalah in
 
 ## B. Accounting dan Tax
 
-11. Dr AR 11.100.000; Cr Revenue 10.000.000; Cr PPN Keluaran 1.100.000.
-12. Dr Inventory 7.000.000; Cr GR/IR 7.000.000.
-13. Nol: GR/IR didebit saat tagihan diposting, diganti utang usaha (AP).
+11. Dr AR 11.100.000; Cr Revenue 10.000.000; Cr PPN Keluaran 1.100.000. **Alasan:** PPN 11% × DPP 10.000.000 = 1.100.000; AR mencakup DPP + PPN.
+12. Dr Inventory 7.000.000; Cr GR/IR 7.000.000. **Alasan:** barang diterima sebelum tagihan, sehingga lawannya akun kliring GR/IR.
+13. Nol: GR/IR didebit saat tagihan diposting, diganti utang usaha (AP). **Alasan:** 3-way match menutup kliring; saldo tersisa berarti ada penerimaan/tagihan yang belum cocok.
 14. Karena tidak ada hak mengkreditkan; nilainya menjadi bagian biaya atau harga perolehan sesuai perlakuan pajak.
 15. Contoh: biaya perbaikan kecil (beban) vs penggantian komponen yang memperpanjang umur (aset).
 16. Menempatkan pendapatan/beban pada periode yang benar dan menyesuaikan saldo neraca (akrual, prepaid, depresiasi).
 17. Temporary difference menimbulkan pajak tangguhan dan berbalik; permanent difference tidak berbalik.
-18. 12% × 11/12 = 11% dari harga jual, sehingga beban efektif 11% untuk BKP/JKP non-mewah.
+18. 12% × 11/12 = 11% dari harga jual, sehingga beban efektif 11% untuk BKP/JKP non-mewah. **Alasan:** DPP Nilai Lain memperkecil dasar; tarif statutori tetap 12%.
 19. Saat membayar jasa/sewa kepada pihak dalam negeri; pihak yang membayar memotong dan menyetorkan.
 20. Karena tarif berubah menurut regulasi; tanpa tanggal berlaku, pembaca tidak tahu periode mana yang dimaksud.
 
