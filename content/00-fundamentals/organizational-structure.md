@@ -102,10 +102,7 @@ Istilah struktur organisasi sering kali berbeda antar-sistem, namun memetakan ko
 
 ## Naventra Consideration
 
-Dalam merancang struktur organisasi pada Naventra:
-* Gunakan model hierarki bersarang (*nested set* atau *adjacency list*) untuk representasi Company dan Branch agar mendukung konsolidasi bertingkat (*holding -> subsidiary -> sub-subsidiary*).
-* Wajibkan setiap baris transaksi operasional dan finansial memiliki referensi minimal ke `company_id` dan `branch_id`.
-* Terapkan arsitektur **Analytic Dimensions** terpisah dari COA akun dasar, sehingga pengguna dapat memfilter laporan Laba Rugi berdasarkan Cabang, Divisi, atau Proyek tanpa merusak bagan akun utama.
+Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-007) — hierarki entitas dan dimensi analitik.
 
 ---
 

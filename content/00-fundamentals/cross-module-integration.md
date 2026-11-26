@@ -131,10 +131,7 @@ Menggunakan akun perantara *Stock Interim (Received)* dan *Stock Interim (Delive
 
 ## Naventra Consideration
 
-Dalam perancangan Naventra:
-* **Posting Engine Atomik**: Pastikan setiap transaksi penyerahan/penerimaan barang (logistik) secara otomatis memicu pemanggilan *Posting Service* untuk membuat entri jurnal akuntansi dalam transaksi database yang sama (ACID).
-* **GR/IR Auto-Clearing**: Sediakan modul rekonsiliasi akun kliring penerimaan barang untuk mendeteksi secara otomatis selisih harga pembelian (*Purchase Price Variance / PPV*) jika harga pada faktur vendor berbeda dari harga pesanan pembelian awal.
-* **Toleransi 3-Way Matching**: Buat aturan konfigurasi toleransi persentase (misal: selisih harga maksimal 1% atau Rp10.000) agar transaksi minor tidak menghentikan alur operasional, namun deviasi besar otomatis masuk ke antrean persetujuan manajerial (*Approval Matrix*).
+Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-005) — posting atomik, GR/IR auto-clearing, dan toleransi 3-way match.
 
 ---
 

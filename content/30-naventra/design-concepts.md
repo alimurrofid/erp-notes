@@ -44,6 +44,30 @@ Sumber: [[00-fundamentals/master-data-vs-transaction-data|Master Data vs Transac
 - Baris berstatus `Posted` tidak boleh diubah.
 - Nilai master (harga, alamat) disalin sebagai snapshot saat transaksi dibuat agar dokumen historis tidak berubah.
 
+## NAV-D-005 — Posting Atomik dan Toleransi 3-Way Match
+
+Sumber: [[00-fundamentals/cross-module-integration|Cross-Module Integration]]
+
+- Penerimaan/penyerahan barang memicu posting service dalam transaksi database yang sama (ACID).
+- Akun kliring GR/IR direkonsiliasi otomatis; selisih harga pembelian (PPV) terdeteksi.
+- Toleransi 3-way match dapat dikonfigurasi (mis. 1% atau Rp10.000); deviasi besar masuk approval matrix.
+
+## NAV-D-006 — Referensi Dokumen dan Timeline
+
+Sumber: [[00-fundamentals/documents-transactions-events|Documents, Transactions, Events]]
+
+- Setiap tabel dokumen memiliki `source_document_type` dan `source_document_id`.
+- Invoice tanpa dasar SO atau penerimaan/pengiriman ditolak, kecuali faktur non-operasional dengan otorisasi.
+- UI menyediakan Document Timeline / Flow Tree untuk menelusuri dokumen hulu-hilir.
+
+## NAV-D-007 — Hierarki Entitas dan Dimensi Analitik
+
+Sumber: [[00-fundamentals/organizational-structure|Organizational Structure]]
+
+- Hierarki company/branch memakai nested set atau adjacency list untuk konsolidasi bertingkat.
+- Setiap baris transaksi wajib merujuk `company_id` dan `branch_id`.
+- Dimensi analitik dipisah dari COA sehingga laporan dapat difilter per cabang/divisi/proyek tanpa mengubah bagan akun.
+
 ## Traceability
 
 | ID | Sumber | Requirement terkait | Status |
@@ -52,6 +76,9 @@ Sumber: [[00-fundamentals/master-data-vs-transaction-data|Master Data vs Transac
 | NAV-D-002 | `00-fundamentals/erp-architecture.md` | NAV-R-10, NAV-R-12 | Adopted |
 | NAV-D-003 | `00-fundamentals/erp-modules.md` | NAV-R-03 | Adopted |
 | NAV-D-004 | `00-fundamentals/master-data-vs-transaction-data.md` | NAV-R-10, NAV-R-12 | Adopted |
+| NAV-D-005 | `00-fundamentals/cross-module-integration.md` | NAV-R-03, NAV-R-07 | Adopted |
+| NAV-D-006 | `00-fundamentals/documents-transactions-events.md` | NAV-R-10 | Adopted |
+| NAV-D-007 | `00-fundamentals/organizational-structure.md` | NAV-R-12 | Adopted |
 
 ## References
 

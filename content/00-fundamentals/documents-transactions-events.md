@@ -137,10 +137,7 @@ Manfaat Document Flow:
 
 ## Naventra Consideration
 
-Dalam perancangan Naventra:
-* Setiap tabel dokumen transaksi harus memiliki field referensi polimorfik atau relasional: `source_document_type` dan `source_document_id`.
-* Larang pembuatan dokumen tagihan (*Invoice*) yang berdiri sendiri tanpa dasar dokumen pesanan (*Sales Order*) atau penerimaan/pengiriman barang, kecuali untuk jenis faktur non-operasional tertentu (misal: jasa murni dengan otorisasi khusus).
-* Sediakan komponen UI **Document Timeline / Flow Tree** pada setiap detail transaksi agar pengguna dapat melacak riwayat dokumen hulu dan hilirnya dalam satu klik.
+Keputusan desain: [[30-naventra/design-concepts|Design Concepts]] (NAV-D-006) — referensi dokumen dan document timeline.
 
 ---
 
